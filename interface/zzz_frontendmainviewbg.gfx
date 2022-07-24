@@ -16,14 +16,4 @@ spriteTypes = {
 	#	tilingCenter = no
 	#	effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	#}
-	
-	spriteType = {
-		name = "GFX_ELF_flag_41_26"
-		texturefile = "gfx/flags/medium/ELF.tga"
-	}
-	
-	spriteType = {
-		name = "GFX_MAN_flag_41_26"
-		texturefile = "gfx/flags/medium/MAN_CHN_fascism.tga"
-	}
 }

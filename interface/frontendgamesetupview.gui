@@ -165,25 +165,25 @@ guiTypes = {
 	}
 	
 	### country entry
-	#containerWindowType = {
-	#	name = "country_entry_medium"
-	#			
-	#		
-	#	iconType = {
-	#		name = "country_flag"
-	#		quadTextureSprite ="GFX_shield_medium"
-	#		position = { x = 26 y = 22 }
-	#		Orientation = "UPPER_LEFT"
-	#		alwaystransparent = yes
-	#	}		
-	#	
-	#	buttonType = {
-	#		name = "country"	
-	#		quadTextureSprite = "GFX_country_selection_minor_entry"
-	#		position = { x=0 y =0 }
-	#		clicksound = click_checkbox
-	#	}		
-	#}
+	containerWindowType = {
+		name = "country_entry_medium"
+				
+			
+		iconType = {
+			name = "country_flag"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 26 y = 22 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}		
+		
+		buttonType = {
+			name = "country"	
+			quadTextureSprite = "GFX_country_selection_minor_entry"
+			position = { x=0 y =0 }
+			clicksound = click_checkbox
+		}		
+	}
 	
 	### country entry
 	containerWindowType = {
@@ -191,19 +191,18 @@ guiTypes = {
 	
 		iconType = {
 			name = "country_flag"
-			quadTextureSprite ="GFX_flag_small2"
-			position = { x = 9 y = -50 }
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 26 y = 22 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "country"	
-			#quadTextureSprite = "GFX_country_selection_minor_entry"
-			quadTextureSprite = "GFX_mini_country_selector"
-			position = { x=0 y =-59 }
+			quadTextureSprite = "GFX_country_selection_minor_entry"
+			position = { x=0 y =0 }
 			clicksound = click_checkbox
-		}
+		}		
 	}
 	
 	
@@ -665,187 +664,71 @@ guiTypes = {
 			
 		}
 			
-		#containerWindowType = {
-		#	name ="countries_medium"
-		#	position = { x = 15 y = 330 }
-		#	size = { width = -15 height = 120}
-		#	
-		#	gridboxType = {
-		#		name ="countries_grid"
-		#		position = { x = 0 y = 0 }
-		#		size = { width = 100% height = 100% }
-		#		slotsize = { width = 150 height = 0 }
-		#		add_horizontal = yes
-		#		max_slots_vertical = 1
-		#		max_slots_horizontal = 8
-		#		format = "UPPER_LEFT"
-		#	}
-		#}
-
 		containerWindowType = {
-			name ="countries_mini"
-			position = { x = 12 y = 404 }
+			name ="countries_medium"
+			position = { x = 15 y = 330 }
 			size = { width = -15 height = 120}
 			
 			gridboxType = {
 				name ="countries_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 63 height = 60 }
+				slotsize = { width = 150 height = 0 }
 				add_horizontal = yes
-				max_slots_vertical = 3
-				max_slots_horizontal = 19
+				max_slots_vertical = 1
+				max_slots_horizontal = 8
 				format = "UPPER_LEFT"
 			}
 		}
-		
-		containerWindowType = {
-			name = "Update1Box"
-			position = { x = 16 y = 349 }
-			size = { width=67 height=36 }
 
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_decisions_bg_small"
-			}
+		containerWindowType = {
+			name ="countries_mini"
+			position = { x = 15 y = 333 }
+			size = { width = -15 height = 120}
 			
-			instantTextboxType = {
-				position = { x = 0 y = 5 }
-				name = "Update1TextBox"
-				font = "hoi_24header"
-				text = "Update1Text"
-				maxWidth = 67
-				maxHeight = 100
-				format = center
-				
-				pdx_tooltip = "Update1Text_tt"
-				pdx_tooltip_delayed = "Update1Text_tt_delayed"
+			gridboxType = {
+				name ="countries_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100% }
+				slotsize = { width = 150 height = 86 }
+				add_horizontal = yes
+				max_slots_vertical = 2
+				max_slots_horizontal = 8
+				format = "UPPER_LEFT"
 			}
 		}
-		
-		containerWindowType = {
-			name = "Update2Box"
-			position = { x = 205 y = 349 }
-			size = { width=67 height=36 }
 
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_decisions_bg_small"
-			}
-			
-			instantTextboxType = {
-				position = { x = 0 y = 5 }
-				name = "Update2TextBox"
-				font = "hoi_24header"
-				text = "Update2Text"
-				maxWidth = 67
-				maxHeight = 100
-				format = center
-				
-				pdx_tooltip = "Update1Text_tt"
-				pdx_tooltip_delayed = "Update1Text_tt_delayed"
-			}
-		}
-		
-		containerWindowType = {
-			name = "Update3Box"
-			position = { x = 709 y = 349 }
-			size = { width=67 height=36 }
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_decisions_bg_small"
-			}
-			
-			instantTextboxType = {
-				position = { x = 0 y = 5 }
-				name = "Update3TextBox"
-				font = "hoi_24header"
-				text = "Update3Text"
-				maxWidth = 67
-				maxHeight = 100
-				format = center
-				
-				pdx_tooltip = "Update1Text_tt"
-				pdx_tooltip_delayed = "Update1Text_tt_delayed"
-			}
-		}
-		
-		containerWindowType = {
-			name = "MAN_entry_mini"
-			position = { x = 768 y = 345 }
-			
-			iconType = {
-				name = "MAN_FLAG"
-				spriteType ="GFX_MAN_flag_41_26"
-				position = { x = 9 y = 10 }
-			}
-		
-			iconType = {
-				name = "Overlay"
-				spriteType ="GFX_flag_small2"
-				position = { x = 9 y = 9 }
-			}
-			
-			iconType = {
-				name = "MAN_FRAME"
-				spriteType ="GFX_mini_country_selector"
-			}	
-		}
-		
-		containerWindowType = {
-			name = "ELF_entry_mini"
-			position = { x = 831 y = 345 } ##831
-			
-			iconType = {
-				name = "ELF_FLAG"
-				spriteType ="GFX_ELF_flag_41_26"
-				position = { x = 9 y = 10 }
-			}
-		
-			iconType = {
-				name = "Overlay"
-				spriteType ="GFX_flag_small2"
-				position = { x = 9 y = 9 }
-			}
-			
-			iconType = {
-				name = "ELF_FRAME"
-				spriteType ="GFX_mini_country_selector"
-			}	
+		iconType = {
+			name = "update_overlay_6"
+			quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
+			position = { x = 15 y = 333 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
 		}
 
-		#iconType = {
-		#	name = "update_overlay_6"
-		#	quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position = { x = 15 y = 333 }
-		#	Orientation = "UPPER_LEFT"
-		#	alwaystransparent = yes
-		#}
+		iconType = {
+			name = "update_overlay_5"
+			quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
+			position = { x = 165 y = 333 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
-		#iconType = {
-		#	name = "update_overlay_5"
-		#	quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position = { x = 165 y = 333 }
-		#	Orientation = "UPPER_LEFT"
-		#	alwaystransparent = yes
-		#}
+		iconType = {
+			name = "update_overlay_3"
+			quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
+			position = { x = 315 y = 333 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
-		#iconType = {
-		#	name = "update_overlay_3"
-		#	quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position = { x = 315 y = 333 }
-		#	Orientation = "UPPER_LEFT"
-		#	alwaystransparent = yes
-		#}
-
-		#iconType = {
-		#	name = "update_overlay_2"
-		#	quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
-		#	position = { x = 465 y = 333 }
-		#	Orientation = "UPPER_LEFT"
-		#	alwaystransparent = yes
-		#}
+		iconType = {
+			name = "update_overlay_2"
+			quadTextureSprite ="GFX_country_selection_minor_entry_new_113_overlay"
+			position = { x = 465 y = 333 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
 		# iconType = {
 		# 	name = "update_overlay"

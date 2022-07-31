@@ -137,34 +137,10 @@ bookmarks = {
 
 
 		# minors ####
-		"JER"={
+		"SOL"={ # placeholder
 		 	minor = yes
-			history = "JER_GATHERING_STORM_DESC"
+			history = "RANDOM_GATHERING_STORM_DESC"
 			ideology = neutrality
-			ideas = {
-				JER_memories 
-				JER_legacy_of_coltbert
-			}
-			focuses = {
-				JER_state_of_aquileia
-				JER_fight_for_freedom
-				JER_liberal_industry
-			}
-		}
-		"WNG"={
-			minor = yes
-			history = "WNG_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				WNG_garibald_talonuel_iii
-				WNG_political_deadlock
-				WNG_outdated_army
-			}
-			focuses = {
-				WNG_prepare_the_counterrevolution
-				WNG_declare_martial_law
-				WNG_meet_with_beakolini
-			}
 		}
 		"FRN"={
 			minor = yes
@@ -197,6 +173,11 @@ bookmarks = {
 			}
 		}
 		
+		"SOL"={ # placeholder
+		 	minor = yes
+			history = "RANDOM_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
 		"BAK"={
 			minor = yes
 			history = "BAK_GATHERING_STORM_DESC"
@@ -210,6 +191,20 @@ bookmarks = {
 				BAK_communists_win
 				BAK_admirality_takeover
 				BAK_harmony_win
+			}
+		}
+		"WIT"={
+			minor = yes
+			history = "WIT_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				WIT_unicorn_parties
+				RIV_member_state
+			}
+			focuses = {
+				WIT_next_stage
+				WIT_merchant_queen
+				WIT_back_to_good_old_days
 			}
 		}
 		"BAR"={
@@ -254,22 +249,6 @@ bookmarks = {
 				ZES_election
 			}
 		}
-		
-		
-		"WIT"={
-			minor = yes
-			history = "WIT_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				WIT_unicorn_parties
-				RIV_member_state
-			}
-			focuses = {
-				WIT_next_stage
-				WIT_merchant_queen
-				WIT_back_to_good_old_days
-			}
-		}
 		"HLQ"={
 			minor = yes
 			history = "HLQ_GATHERING_STORM_DESC"
@@ -299,6 +278,27 @@ bookmarks = {
 			}
 		}
 		
+		"SOL"={ # placeholder
+		 	minor = yes
+			history = "RANDOM_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"SOL"={ # placeholder - MAN
+		 	minor = yes
+			history = "RANDOM_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		"SOL"={ # placeholder - ELF
+		 	minor = yes
+			history = "RANDOM_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
+		
+		"SOL"={ # placeholder
+		 	minor = yes
+			history = "RANDOM_GATHERING_STORM_DESC"
+			ideology = neutrality
+		}
 		"FAT"={
 			minor = yes
 			history = "FAT_GATHERING_STORM_DESC"
@@ -329,7 +329,39 @@ bookmarks = {
 				GRF_free_elections
 			}
 		}
-		 #"STW"={
+		
+		"JER"={
+		 	minor = yes
+			history = "JER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				JER_memories 
+				JER_legacy_of_coltbert
+			}
+			focuses = {
+				JER_state_of_aquileia
+				JER_fight_for_freedom
+				JER_liberal_industry
+			}
+		}
+		"WNG"={
+			minor = yes
+			history = "WNG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				WNG_garibald_talonuel_iii
+				WNG_political_deadlock
+				WNG_outdated_army
+			}
+			focuses = {
+				WNG_prepare_the_counterrevolution
+				WNG_declare_martial_law
+				WNG_meet_with_beakolini
+			}
+		}
+		
+		
+		#"STW"={
 		#	minor = yes
 		#	history = "STW_GATHERING_STORM_DESC"
 		#	ideology = neutrality

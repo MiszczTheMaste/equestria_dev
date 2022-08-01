@@ -1,8 +1,10 @@
 ﻿l_english:
 
 ### CHARACTERS ###
-
 KIR_rain_shine:0 "Rain Shine"
+KIR_winter_frost:0 "Winter Frost"
+KIR_fickle_current:0 "Fickle Current"
+KIR_rising_sun:0 "Rising Sun"
 
 ### National Focuses ####
 
@@ -1729,9 +1731,7 @@ kirin_crisis.22.d:0 "Matriarch Superior Rain Shine retreated to her study after 
 kirin_crisis.22.a:0 "The Realm must come clean about its past if it wants to move forward."
 kirin_crisis.22.b:0 "The knowledge of what happened in Sunrise would do more harm than good."
 
-
 ### News Events ###
-
 kirin_news.1.t:0 "A Great Gallop Onward!"
 kirin_news.1.d:0 "[This.GetNewspaperHeader]On the steps of the Vermilion Palace with the Matriarch Superior of Kiria by her side, Premier Autumn Blaze proudly proclaimed to the world that the Realm of Kiria had concluded its ambitious Great Gallop Onward and was ready to rejoin the international community. Many thought that cramming a century's worth of technological and societal advancements into three and a half years of modernisation would be an impossible feat, but the kirin have managed to achieve it nevertheless. With a new major power entering the stage in Eastern Zebrica, many neighbors of the kirin are now left to wonder just what a resurgent Kiria means for them, and how they will tip the global balance of power."
 kirin_news.1.a:0 "With Concord's blessings, we have succeeded!"

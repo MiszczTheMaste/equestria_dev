@@ -25,14 +25,6 @@ if = {
         transport = 1
     }
 }
-if = {
-    limit = {
-        has_dlc = "Man the Guns"
-    }
-    set_technology = {
-        mtg_transport = 1
-    }
-}
 #if = {
 #	limit = {
 #		not = { has_dlc = "Man the Guns" }
@@ -44,6 +36,18 @@ if = {
 	#}
 	#set_naval_oob = "KIR_1007_naval_legacy"
 #}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		# early_ship_hull_light = 1
+		# early_ship_hull_cruiser = 1
+		# basic_battery = 1
+		# basic_depth_charges = 1
+		mtg_transport = 1
+	}
+}
 
 set_variable = { var = KIR_the_silence_stability_var value = 0 }
 set_variable = { var = KIR_the_silence_drift_defence_var value = 0.5 }

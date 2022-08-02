@@ -2597,6 +2597,18 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					OR = {
+						FROM = { original_tag = KIR }
+						ROOT = { original_tag = KIR }
+					}
+					has_completed_focus = KIR_CONSCRIPTION
+				}
+				KIR = {
+					add_ideas = KIR_VaKA_wartime_conscription
+				}
+			}
 		}
 	}
 
@@ -3406,6 +3418,18 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					FROM = { 
+						OR = {
+							original_tag = KIR 
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ZLU }
+				}
+				ROOT = { set_cosmetic_tag = ZLU_KIR }
+			}
+			if = {
+				limit = {
 					ROOT = {
 						OR = {
 							original_tag = HIN
@@ -3972,6 +3996,18 @@ on_actions = {
 					ROOT = { original_tag = GAZ }
 				}
 				ROOT = { set_cosmetic_tag = GAZ_KIR }
+			}
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							original_tag = KIR 
+							original_tag = KIS
+						}
+					}
+					ROOT = { original_tag = ZLU }
+				}
+				ROOT = { set_cosmetic_tag = ZLU_KIR }
 			}
 			if = {
 				limit = {

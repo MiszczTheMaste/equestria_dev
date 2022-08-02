@@ -119,6 +119,24 @@ SFDS_Modifier = {
 	category = military_equipment
 }
 
+KIR_WARCONSCRIPT_Modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	category = army
+	category = country
+	category = peace
+}
+
+KIR_PEACECONSCRIPT_Modifier = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	category = army
+	category = country
+	category = peace
+}
+
 BAT_opium_production_bushels = {
 	color_type = neutral
 	value_type = number

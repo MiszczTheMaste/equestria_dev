@@ -10,7 +10,17 @@ BAR_assasination_attempts = {
 		base = 100
 	}
 }
-BAR_leopold_clockwerks = {
+BAR_leopold_empire_decisions = {
+	icon = knife_blood
+	
+	allowed = {
+		original_tag = BAR
+	}
+	priority = {
+		base = 101
+	}
+}
+BAR_leopold_decisions = {
 	icon = GFX_decision_crystals
 	
 	allowed = {

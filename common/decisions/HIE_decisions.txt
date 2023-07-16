@@ -3706,7 +3706,7 @@ HIE_CTH_genocide_puppets = {
 					add_state_core = 460
 					add_state_core = 445
 					set_cosmetic_tag = JKR_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					add_ideas = CVA_genocide
 					add_ideas = HIE_fcommand
 					add_country_leader_role = {
@@ -3959,7 +3959,7 @@ HIE_CTH_genocide_puppets = {
 					add_ideas = HIE_sfindustry
 					add_ideas = HIE_rnp
 					set_cosmetic_tag = POM_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					add_country_leader_role = {
 						character = HIE_Henri_Fablenoir
 						promote_leader = yes
@@ -4145,7 +4145,7 @@ HIE_CTH_genocide_puppets = {
 					transfer_state = 561
 					transfer_state = 522
 					set_cosmetic_tag = NTR_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 				
 					add_country_leader_role = {
 						character = HIE_Frigus
@@ -4486,7 +4486,7 @@ HIE_CTH_genocide_puppets = {
 					add_state_core = 381
 					add_ideas = CVA_genocide
 					set_cosmetic_tag = JHZ_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 				
 					add_country_leader_role = {
 						character = HIE_Hautority
@@ -4687,7 +4687,7 @@ HIE_CTH_genocide_puppets = {
 					add_ideas = HIE_sfindustry_2
 					add_ideas = HIE_norg
 					set_cosmetic_tag = JNG_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 				
 					add_country_leader_role = {
 						character = HIE_Nautority
@@ -4821,7 +4821,7 @@ HIE_CTH_genocide_puppets = {
 					add_state_core = 571
 
 					set_cosmetic_tag = JHP_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					FIR_shinespark = {
 						set_portraits = {
 							civilian = {
@@ -5090,7 +5090,7 @@ HIE_CTH_genocide_puppets = {
 					add_state_core = 647
 
 					set_cosmetic_tag = JRV_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					LCT_westerly_leeward = {
 						set_portraits = {
 							civilian = {
@@ -5367,7 +5367,7 @@ HIE_CTH_puppet_rct = {
 					
 
 					set_cosmetic_tag = NIM_sf
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					BAR_oleander = {
 						set_portraits = {
 							civilian = {
@@ -5604,7 +5604,7 @@ HIE_CTH_puppet_ded = {
 					add_state_core = 416
 					add_state_core = 415
 					
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					add_country_leader_role ={
 						character = HIE_frank
 						promote_leader = yes
@@ -5843,7 +5843,7 @@ HIE_CTH_puppet_ded = {
 					add_ideas = CVA_genocide
 					add_ideas = HIE_fcommand
 					set_cosmetic_tag = GRF_SF
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 				
 					add_country_leader_role = {
 						character = HIE_equuscommand
@@ -6310,7 +6310,7 @@ HIE_CTH_puppet_ded = {
 					add_ideas = CVA_genocide
 					add_ideas = HIE_magic_state
 					set_cosmetic_tag = JGF_SF
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 				
 					add_country_leader_role = {
 						character = HIE_grfcouncil

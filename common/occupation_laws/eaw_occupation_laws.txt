@@ -658,3 +658,29 @@ GRI_AF_colony = { # Imperial colony, by default
 		base = 9000
 	}
 }
+
+
+BAR_leopold_occupation = {
+	visible = {
+		original_tag = BAR
+		has_completed_focus = BAR_leopold_clockworks
+	}
+	
+	icon = 6
+	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
+	fallback_law = local_police_force_garrison
+
+	state_modifier = {
+		resistance_target = -0.75
+		compliance_gain = -1
+		required_garrison_factor = 0.5
+		resistance_damage_to_garrison = 1
+		local_factories = 1
+		local_resources = 0.5
+		repair_speed_arms_factory_factor = 0.5
+		repair_speed_industrial_complex_factor = 0.5
+	}
+	ai_will_do = {
+		base = 100
+	}
+}

@@ -26,7 +26,7 @@ BAR_ambrosius_boredoom = {
 		fire_only_once = yes
 		cost = 300
 		complete_effect = {
-			country_event = { id = barrad_ambrosius.2 }
+			country_event = { id = bar_ambrosius_madness.2 }
 		}
 	}
 	BAR_end_this_farce_silver = { #entity with help of cult murders last member of pentarchy
@@ -56,7 +56,7 @@ BAR_ambrosius_boredoom = {
 		fire_only_once = yes
 		cost = 300
 		complete_effect = {
-			country_event = { id = barrad_ambrosius.21 }
+			country_event = { id = bar_ambrosius_madness.21 }
 		}
 	}
 	BAR_end_this_farce_asinti = { #entity with help of cult murders last member of pentarchy
@@ -86,7 +86,7 @@ BAR_ambrosius_boredoom = {
 		fire_only_once = yes
 		cost = 300
 		complete_effect = {
-			country_event = { id = barrad_ambrosius.22 }
+			country_event = { id = bar_ambrosius_madness.22 }
 		}
 	}
 	BAR_end_this_farce_viira = { #entity with help of cult murders last member of pentarchy
@@ -116,7 +116,7 @@ BAR_ambrosius_boredoom = {
 		fire_only_once = yes
 		cost = 300
 		complete_effect = {
-			country_event = { id = barrad_ambrosius.23 }
+			country_event = { id = bar_ambrosius_madness.23 }
 		}
 	}
 	BAR_ambrosius_boredom = {
@@ -725,7 +725,7 @@ BAR_ambrosius_boredoom = {
 						}
 					}
 				}
-				country_event = { days = 1 id = barrad_ambrosius.1 }
+				country_event = { days = 1 id = bar_ambrosius_madness.1 }
 				activate_mission = BAR_ambrosius_boredom
 			}
 		}
@@ -1214,7 +1214,7 @@ BAR_strike_the_earth_cat = {
 								has_country_flag = BAR_earth_struck_back
 							}
 						}
-						country_event = { days = 1 id = barrad_esb.1 }
+						country_event = { days = 1 id = bar_titan_fight.1 }
 						clr_country_flag = BAR_strike_the_earth_unlocked
 					}
 				}
@@ -1230,7 +1230,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1254,7 +1254,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1278,7 +1278,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1302,7 +1302,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1326,7 +1326,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1350,7 +1350,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1374,7 +1374,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1398,7 +1398,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -1419,7 +1419,7 @@ BAR_strike_the_earth_cat = {
 										has_country_flag = BAR_earth_struck_back
 									}
 								}
-								country_event = { days = 1 id = barrad_esb.1 }
+								country_event = { days = 1 id = bar_titan_fight.1 }
 								clr_country_flag = BAR_strike_the_earth_unlocked
 							}
 						}
@@ -2578,7 +2578,7 @@ BAR_silver_star_cat = {
 		}
 	}
 }
-BAR_silver_star_convert_cat = { #i hate myself
+BAR_silver_star_convert_cat = {
 	BAR_convert_populus_1 = {
 		days_remove = 120
 		icon = daggers
@@ -4847,7 +4847,7 @@ BAR_viira_cat = {
 			}
 		}
 		complete_effect = {
-			country_event = { id = barrad_firanka.1 days = 1}
+			country_event = { id = bar_viira_murders.1 days = 1}
 		}
 	}
 	BAR_collapse_temple = {
@@ -4897,7 +4897,7 @@ BAR_viira_cat = {
 			}
 		}
 		complete_effect = {
-			country_event = { id = barrad_firanka.2 days = 1}
+			country_event = { id = bar_viira_murders.3 days = 1}
 		}
 	}
 	BAR_reactor_build_viira = {
@@ -5331,282 +5331,6 @@ BAR_reactor_research = {
 		}
 		ai_will_do = {
 			factor = 500
-		}
-	}
-}
-BAR_leopold_smash = {
-	BAR_leopold_war_raid_prepare = {
-		icon = hol_draw_up_staff_plans
-
-		available = {
-			FROM = {
-				any_owned_state = {
-					is_controlled_by = FROM
-					any_neighbor_state = {
-						is_fully_controlled_by = ROOT
-						set_temp_variable = { var:attacker_state_temp = id }
-						has_ROOT_at_least_1_div_in_current_state_scope = yes
-					}
-					set_temp_variable = { var:defender_state_temp = id }
-				}
-			}
-			NOT = { 
-                has_non_aggression_pact_with = FROM	
-            }
-			
-			hidden_trigger = { 
-				has_country_flag = BAR_leololo_smash
-				command_power > 29
-			}
-		}
-
-		visible = {
-			NOT = { 
-                has_country_flag = preparing_raid
-                has_war_with = FROM
-                is_subject_of = FROM 
-            }
-			FROM = {
-                exists = yes
-				NOT = { 
-                    is_subject_of = ROOT
-                    is_in_faction_with = ROOT
-                    has_idea = detached_country
-                }
-			}
-			OR = {
-				NOT = { has_border_war_with = FROM }
-				AND = {
-					FROM = {
-						any_owned_state = {
-							is_controlled_by = FROM
-							any_neighbor_state = {
-								is_fully_controlled_by = ROOT
-							}
-						}
-					}
-				}
-			}
-			hidden_trigger = { 
-				has_country_flag = BAR_leololo_smash
-			}
-		}
-		cancel_trigger = {
-			hidden_trigger = { 
-				NOT = {
-					has_country_flag = BAR_leololo_smash
-				}
-			}
-		}
-		target_root_trigger = {
-			has_country_flag = BAR_leololo_smash
-		}
-		target_array = neighbors
-		target_trigger = {
-			FROM = {
-				is_neighbor_of = ROOT
-			}
-		}
-
-		highlight_states = {
-			highlight_states_trigger = {
-				OR = {
-					state = FROM.defender_state_vs_@ROOT
-					AND = {
-						is_owned_and_controlled_by = FROM
-						any_neighbor_state = {
-							has_ROOT_at_least_1_div_in_current_state_scope = yes
-							is_fully_controlled_by = ROOT
-						}
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 100
-		}
-
-		custom_cost_trigger = {
-			command_power > 29
-		}
-		custom_cost_text = raid_cost_CP_30
-
-		fire_only_once = no
-
-		days_re_enable = 60
-		days_remove = 10
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_war_raid_prepare target: [From.GetName]"
-			hidden_effect = {
-				random_state = {
-					limit = {
-						is_owned_and_controlled_by = FROM
-						any_neighbor_state = {
-							has_ROOT_at_least_1_div_in_current_state_scope = yes
-							is_fully_controlled_by = ROOT
-						}
-					}
-					save_event_target_as = defender_state
-					set_variable = { FROM.defender_state_vs_@ROOT = id }
-					set_temp_variable = { defender_state_temp = id }
-				}
-				random_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						has_ROOT_at_least_1_div_in_current_state_scope = yes
-						any_neighbor_state = {
-							state = var:FROM.defender_state_vs_@ROOT
-						}
-					}
-					save_event_target_as = attacker_state
-					set_variable = { FROM.attacker_state_vs_@ROOT = id }
-					set_temp_variable = { attacker_state_temp = id }
-				}
-				set_country_flag = preparing_raid
-			}
-			custom_effect_tooltip = BAR_leopold_smahs_tooltip
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove BAR_leopold_war_raid_prepare target: [From.GetName]"
-			activate_targeted_decision = { target = FROM decision = BAR_leopold_war_raid }
-		}
-	}
-
-	BAR_leopold_war_raid = {
-
-		icon = crossed_swords
-
-		allowed = { always = no } #Activated from effect
-
-		available = {
-			var:FROM.attacker_state_vs_@ROOT = {
-				is_fully_controlled_by = ROOT
-			}
-			OR = {
-				is_ai = yes
-				divisions_in_border_state = {
-					state = var:FROM.attacker_state_vs_@ROOT
-					border_state = var:FROM.defender_state_vs_@ROOT
-					size > 0
-				}
-			}
-			has_country_flag = BAR_leololo_smash
-		}
-		highlight_states = {
-			highlight_states_trigger = { state = var:FROM.attacker_state_vs_@ROOT }
-		}
-
-		ai_will_do = {
-			base = 100
-		}
-
-		cancel_trigger = {
-			OR = {
-                is_subject_of = FROM
-                is_in_faction_with = FROM
-                has_war_with = FROM
-                FROM = {
-                    is_subject_of = ROOT
-                }
-            }
-			hidden_trigger = {
-				NOT = {
-					has_country_flag = BAR_leololo_smash
-				}
-			}
-		}
-
-		fire_only_once = yes #Reactivation handled in effect
-
-		selectable_mission = yes
-
-		days_mission_timeout = 30
-
-		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout BAR_leopold_war_raid"
-			hidden_effect = {
-				FROM = {
-					clear_variable = attacker_state_vs_@ROOT
-					clear_variable = defender_state_vs_@ROOT
-				}
-				clr_country_flag = preparing_raid
-				# remove_targeted_decision = { target = FROM decision = BAR_leopold_war_raid }
-				activate_targeted_decision = { target = FROM decision = BAR_leopold_war_raid_prepare }
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_war_raid"
-			effect_tooltip = {
-				start_border_war = {
-					change_state_after_war = no
-					attacker = {
-						state = var:FROM.attacker_state_vs_@ROOT
-						num_provinces = 4
-						on_win = barrad_leopold_raid.1
-						on_lose = barrad_leopold_raid.3
-						on_cancel = barrad_leopold_raid.2
-					}
-
-					defender = {
-						state = var:FROM.defender_state_vs_@ROOT
-						num_provinces = 4
-						on_win = barrad_leopold_raid.6
-						on_lose = barrad_leopold_raid.7
-						on_cancel = barrad_leopold_raid.5
-					}
-				}
-			}
-			hidden_effect = {
-				add_command_power = -30
-				if = {
-					limit = { 
-						FROM = {
-							OR = {
-								is_ai = no
-								AND = {
-									has_war = yes
-									divisions_in_border_state = {
-										border_state = var:FROM.attacker_state_vs_@ROOT
-										state = var:FROM.defender_state_vs_@ROOT
-										size < 1
-									}
-								}
-							}
-						}
-					}
-					FROM = { country_event = barrad_leopold_raid.100 }
-				}
-				else = {
-					start_border_war = {
-						change_state_after_war = no
-						attacker = {
-							state = var:FROM.attacker_state_vs_@ROOT
-							num_provinces = 4
-							on_win = barrad_leopold_raid.1
-							on_lose = barrad_leopold_raid.3
-							on_cancel = barrad_leopold_raid.2
-						}
-
-						defender = {
-							state = var:FROM.defender_state_vs_@ROOT
-							num_provinces = 4
-							on_win = barrad_leopold_raid.6
-							on_lose = barrad_leopold_raid.7
-							on_cancel = barrad_leopold_raid.5
-						}
-					}
-				}
-			}
-			hidden_effect = {
-				set_country_flag = raid_in_progress
-				clr_country_flag = preparing_raid
-				# remove_targeted_decision = { target = FROM decision = BAR_leopold_war_raid }
-				activate_targeted_decision = { target = FROM decision = BAR_leopold_war_raid_prepare }
-			}
-			custom_effect_tooltip = BAR_leopold_smahs_tooltip
 		}
 	}
 }
@@ -6669,7 +6393,7 @@ BAR_ambrosius_diplomacy = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_invite_back_ponies"	
 			}
 			ZES = {
-				country_event = { id = barrad_ccamb.8 days = 2}
+				country_event = { id = bar_sane_ambrosius.8 days = 2}
 			}
 		}
 
@@ -6745,7 +6469,27 @@ BAR_silver_queen ={
 		}
 	}
 }	
-BAR_leopold_clockwerks = {
+BAR_leopold_empire_decisions = {
+	BAR_leopold_empire_form = {
+		icon = GFX_decision_ger_military_buildup
+		allowed = {
+			AND = {
+				original_tag = BAR
+				owns_state = 382
+			}
+		}
+		visible = {
+			has_completed_focus = BAR_leopold_conquest_7
+		}
+		complete_effect = {
+			set_cosmetic_tag = BAR_leopold_empire
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}	
+}
+BAR_leopold_decisions = {
 	BAR_repair_leopold = {
 		icon = GFX_decision_ger_military_buildup
 		allowed = {
@@ -6786,9 +6530,9 @@ BAR_leopold_clockwerks = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_tech = BAR_knights
+				has_tech = BAR_clockwerks
 				NOT = {
-					has_tech = BAR_knights_upgrade
+					has_tech = BAR_clockwerks_upgrade
 				}
 				OR = {
 					has_tech = magical_weapons
@@ -6802,11 +6546,156 @@ BAR_leopold_clockwerks = {
 		complete_effect = {
 			hidden_effect = {
 				set_technology = {
-					BAR_knights_upgrade = 1
+					BAR_clockwerks_upgrade = 1
 					popup = no
 				}
 			}
 			custom_effect_tooltip = BAR_upgrade_clockwerks_tooltip
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_1 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			has_tech = tech_bar_leopold_metal_denser_than_platinium
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_tech = BAR_clockwerks
+				NOT = {
+					has_tech = BAR_leopold_armor_upgrade_1
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					BAR_leopold_armor_upgrade_1 = 1
+					popup = no
+				}
+			}
+			custom_effect_tooltip = BAR_leopold_armor_upgrade_1_tooltip
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_2 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			has_tech = tech_bar_leopold_transparent_metal
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_tech = BAR_clockwerks
+				NOT = {
+					has_tech = BAR_leopold_armor_upgrade_2
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					BAR_leopold_armor_upgrade_2 = 1
+					popup = no
+				}
+			}
+			custom_effect_tooltip = BAR_leopold_armor_upgrade_2_tooltip
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_3 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			has_tech = tech_bar_leopold_crystalic_metal
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_tech = BAR_clockwerks
+				NOT = {
+					has_tech = BAR_leopold_armor_upgrade_3
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					BAR_leopold_armor_upgrade_3 = 1
+					popup = no
+				}
+			}
+			custom_effect_tooltip = BAR_leopold_armor_upgrade_3_tooltip
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_4 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			has_tech = tech_bar_leopold_new_steel
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_tech = BAR_clockwerks
+				NOT = {
+					has_tech = BAR_leopold_armor_upgrade_4
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					BAR_leopold_armor_upgrade_4 = 1
+					popup = no
+				}
+			}
+			custom_effect_tooltip = BAR_leopold_armor_upgrade_4_tooltip
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_5 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			has_tech = tech_bar_leopold_metal_lighter_than_air
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_tech = BAR_clockwerks
+				NOT = {
+					has_tech = BAR_leopold_armor_upgrade_5
+				}
+			}
+		}
+		cost = 20
+		complete_effect = {
+			hidden_effect = {
+				set_technology = {
+					BAR_leopold_armor_upgrade_5 = 1
+					popup = no
+				}
+			}
+			custom_effect_tooltip = BAR_leopold_armor_upgrade_5_tooltip
 		}
 		ai_will_do = {
 			factor = 100
@@ -6994,7 +6883,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7085,7 +6974,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7112,7 +7001,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7137,7 +7026,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7164,7 +7053,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7197,7 +7086,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7230,7 +7119,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7258,7 +7147,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7291,7 +7180,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7325,7 +7214,7 @@ BAR_asinti_blood_sacrifices = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = BAR_asinti_ded_count
+				has_country_flag = BAR_asinti_kill_count
 			}
 		}
 		available = {
@@ -7486,8 +7375,6 @@ BAR_viira_coring = {
 			factor = 30
 		}
 	}
-	
-	
 	
 	BAR_viira_core_kasa = {
 		icon = kasa
@@ -8238,7 +8125,6 @@ BAR_viira_coring = {
 			factor = 30
 		}
 	}
-
 
 	BAR_viira_core_wit = {
 		icon = wittenland
@@ -10787,7 +10673,7 @@ BAR_viira_puppets = {
 				    add_ideas = BAR_viira_anarchy
 					add_ideas = BAR_viira_opress
 					set_cosmetic_tag = NTR_viira
-					load_focus_tree = barrad_focus_viira_bonus
+					load_focus_tree = barrad_unhappy_ending
 					add_country_leader_role = {
 						character = BAR_far_northern_administration
 						promote_leader = yes

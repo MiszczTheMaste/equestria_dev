@@ -1285,7 +1285,7 @@ technologies = {
 			reliability = 0.1
 		}
 	}
-	BAR_knights = {
+	BAR_clockwerks = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -1297,7 +1297,7 @@ technologies = {
 		}
 
 	}
-	BAR_knights2 = {
+	BAR_clockwerks2 = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -1306,7 +1306,27 @@ technologies = {
 			bar_good_clockwerk
 		}
 	}
-	BAR_knights_upgrade = {
+	BAR_clockwerks_arty = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		enable_subunits = {
+			bar_clockwerk_arty
+		}
+	}
+	BAR_clockwerks_tanks = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		enable_subunits = {
+			bar_clockwerk_tank_light
+			bar_clockwerk_tank_medium
+			bar_clockwerk_tank_heavy
+		}
+	}
+	BAR_clockwerks_upgrade = {
 		research_cost = 1
 		allow = {
 			always = no
@@ -1322,6 +1342,202 @@ technologies = {
 				infantry_equipment = -500
 				magical_equipment = 500
 			}
+		}
+	}
+	BAR_clockwerks_upgrade_org = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		bar_commander_clockwerk = {
+			reliability = 0.1
+			max_organisation = 10
+		}
+		bar_ok_clockwerk = {
+			reliability = 0.1
+			max_organisation = 10
+		}
+		bar_good_clockwerk = {
+			reliability = 0.1
+			max_organisation = 10
+		}
+	}
+	BAR_clockwerks_combat_width = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		bar_weak_clockwerk = {
+			combat_width = -0.5
+		}
+		bar_commander_clockwerk = {
+			combat_width = -0.5
+		}
+		bar_ok_clockwerk = {
+			combat_width = -0.5
+		}
+	}
+	BAR_clockwerks_combat_attack = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		bar_good_clockwerk = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		bar_commander_clockwerk = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		bar_ok_clockwerk = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+	}
+	BAR_clockwerks_terrain_upgrade = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		bar_weak_clockwerk = {
+			hills = {
+				attack = 0.25
+				movement = 0.25
+			}
+			mountain = {
+				attack = 0.25
+				movement = 0.25
+			}
+			marsh = {
+				attack = 0.25
+				movement = 0.25
+			}
+			river = {
+				attack = 0.25
+				movement = 0.25
+			}
+		}
+		bar_good_clockwerk = {
+			hills = {
+				attack = 0.25
+				movement = 0.25
+			}
+			mountain = {
+				attack = 0.25
+				movement = 0.25
+			}
+			marsh = {
+				attack = 0.25
+				movement = 0.25
+			}
+			river = {
+				attack = 0.25
+				movement = 0.25
+			}
+		}
+		bar_commander_clockwerk = {
+			hills = {
+				attack = 0.25
+				movement = 0.25
+			}
+			mountain = {
+				attack = 0.25
+				movement = 0.25
+			}
+			marsh = {
+				attack = 0.25
+				movement = 0.25
+			}
+			river = {
+				attack = 0.25
+				movement = 0.25
+			}
+		}
+		bar_ok_clockwerk = {
+			hills = {
+				attack = 0.25
+				movement = 0.25
+			}
+			mountain = {
+				attack = 0.25
+				movement = 0.25
+			}
+			marsh = {
+				attack = 0.25
+				movement = 0.25
+			}
+			river = {
+				attack = 0.25
+				movement = 0.25
+			}
+		}
+	}
+	BAR_leopold_armor_upgrade_1 = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+
+		bar_leopold_equipment = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+	}
+	BAR_leopold_armor_upgrade_2 = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		
+		bar_leopold_equipment = {
+			build_cost_ic = -0.1
+		}
+	}
+	BAR_leopold_armor_upgrade_3 = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		
+		bar_leopold_equipment = {
+			build_cost_ic = -0.05
+			armor_value = 0.5
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+	}
+	BAR_leopold_armor_upgrade_4 = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		
+		bar_leopold_equipment = {
+			armor_value = 0.1
+			defense = 0.15
+			breakthrough = 0.15
+		}
+	}
+	BAR_leopold_armor_upgrade_5 = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		
+		bar_leopold_equipment = {
+			maximum_speed = 0.15
+		}
+	}
+	BAR_leopold_crystal_tanks = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		
+		enable_equipment_modules = {
+			tank_crystal_support
+			tank_crystal_armor
 		}
 	}
 }

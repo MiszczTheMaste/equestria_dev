@@ -540,6 +540,50 @@ spriteTypes = {
 		name = "GFX_goal_viira_manpower6"
 		texturefile = "gfx/interface/bar/goals/viira_manpower6.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_leopold_party_over"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_party_over.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_leopold_deus_irae"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_deus_irae.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_leopold_ascesion"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_ascesion.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_leopold_ascesion_2"
+		texturefile = "gfx/interface/bar/goals/leopold_ascesion_2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_cult_fanatism"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_cult_fanatism.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_into_the_fire"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_into_the_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_cult_mountains"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_cult_mountains.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_crystal_tanks"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_crystal_tanks.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_leopold_partial_ascesion"
+		texturefile = "gfx/interface/bar/ideas/leopold_partial_ascesion.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_leopold_titan_ascesion"
+		texturefile = "gfx/interface/bar/ideas/leopold_titan_ascesion.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_skull_and_fire"
+		texturefile = "gfx/interface/bar/ideas/skull_and_fire.dds"
+	}
 	SpriteType = {
 		name = "GFX_goal_viira_crack_unbelivers_shine"
 		texturefile = "gfx/interface/bar/goals/viira_crack.dds"
@@ -2709,10 +2753,6 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
-		name = "GFX_goal_leopold_ascesion"
-		texturefile = "gfx/interface/bar/goals/leopold_ascesion.dds"
-	}
-	spriteType = {
 		name = "GFX_goal_leopold_crystals"
 		texturefile = "gfx/interface/bar/goals/leopold_crystals.dds"
 	}
@@ -2727,14 +2767,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_leopold_industry"
 		texturefile = "gfx/interface/bar/goals/leopold_industry.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_leopold_party_is_over"
-		texturefile = "gfx/interface/bar/goals/leopold_party_is_over.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_leopold_party_is_over"
-		texturefile = "gfx/interface/bar/goals/leopold_party_is_over.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_leopold_industry_work"
@@ -2831,6 +2863,90 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_leopold_perpetum_mobile"
 		texturefile = "gfx/interface/bar/goals/leopold_perpetum_mobile.dds"
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_arty_icon_medium"
+		textureFile = "gfx/interface/bar/units/unit_clockwerk_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_arty_icon_medium_white"
+		textureFile = "gfx/interface/bar/units/onmap_unit_clockwerk_artillery_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_bar_clockwerk_arty_icon_small"
+		texturefile = "gfx/interface/bar/units/nato_unit_clockwerk_artillery_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_arty_icon_small"
+		texturefile = "gfx/interface/bar/units/unit_clockwerk_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_light_icon_medium"
+		textureFile = "gfx/interface/bar/units/tanks/unit_light_tank_clockwerk_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_light_icon_medium_white"
+		textureFile = "gfx/interface/bar/units/tanks/onmap_unit_light_tank_clockwerk_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_bar_clockwerk_tank_light_icon_small"
+		texturefile = "gfx/interface/bar/units/tanks/nato_unit_light_tank_clockwerk_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_light_icon_small"
+		texturefile = "gfx/interface/bar/units/tanks/unit_light_tank_clockwerk_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_medium_icon_medium"
+		textureFile = "gfx/interface/bar/units/tanks/unit_medium_tank_clockwerk_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_medium_medium_icon_white"
+		textureFile = "gfx/interface/bar/units/tanks/onmap_unit_medium_tank_clockwerk_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_bar_clockwerk_tank_medium_icon_small"
+		texturefile = "gfx/interface/bar/units/tanks/nato_unit_medium_tank_clockwerk_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_medium_icon_small"
+		texturefile = "gfx/interface/bar/units/tanks/unit_medium_tank_clockwerk_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_heavy_icon_medium"
+		textureFile = "gfx/interface/bar/units/tanks/unit_heavy_tank_clockwerk_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_heavy_medium_icon_white"
+		textureFile = "gfx/interface/bar/units/tanks/onmap_unit_heavy_tank_clockwerk_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_nato_unit_bar_clockwerk_tank_heavy_icon_small"
+		texturefile = "gfx/interface/bar/units/tanks/nato_unit_heavy_tank_clockwerk_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_bar_clockwerk_tank_heavy_icon_small"
+		texturefile = "gfx/interface/bar/units/tanks/unit_heavy_tank_clockwerk_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
 	}
 	SpriteType = {
 		name = "GFX_goal_viira_manpower6_shine"
@@ -3620,11 +3736,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_leopold_party_is_over_shine"
-		texturefile = "gfx/interface/bar/goals/leopold_party_is_over.dds"
+		name = "GFX_goal_leopold_party_over_shine"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_party_over.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/bar/goals/leopold_party_is_over.dds"
+			animationmaskfile = "gfx/interface/bar/goals/bar_leopold_party_over.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3637,7 +3753,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/bar/goals/leopold_party_is_over.dds"
+			animationmaskfile = "gfx/interface/bar/goals/bar_leopold_party_over.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3776,10 +3892,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_leopold_ascesion_shine"
-		texturefile = "gfx/interface/bar/goals/leopold_ascesion.dds"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_ascesion.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/bar/goals/leopold_ascesion.dds"
+			animationmaskfile = "gfx/interface/bar/goals/bar_leopold_ascesion.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3792,7 +3908,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/bar/goals/leopold_ascesion.dds"
+			animationmaskfile = "gfx/interface/bar/goals/bar_leopold_ascesion.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.tga"
 			animationrotation = 90.0
 			animationlooping = no

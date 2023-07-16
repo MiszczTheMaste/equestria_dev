@@ -230,7 +230,7 @@ the_goddess = {
     }
     
     happened = {
-		has_focus_tree = barrad_focus_tree_viira_col
+		has_focus_tree = barrad_focus_tree_goddess_viira
     }    
 }
 defying_fate = {

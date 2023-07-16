@@ -1,0 +1,1101 @@
+focus_tree = {
+	id = barrad_focus_tree_asinti
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = {
+		x = 290
+		y = 3000
+	}
+	focus = {
+		id = BAR_all_rejoice
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_asinti.1
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_drop
+		icon = GFX_goal_break_rifle
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_all_rejoice
+		}
+		completion_reward = {
+			add_ideas = volunteer_only
+			set_country_flag = manpower_laws_blocked
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	focus = {
+		id = BAR_your
+		icon = GFX_goal_generic_consumer_goods
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_all_rejoice
+		}
+		completion_reward = {
+			add_ideas = civilian_economy
+			set_country_flag = demilitarized
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_shakles
+		icon = GFX_goal_nim_break_chains
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_all_rejoice
+		}
+		completion_reward = {
+			remove_ideas = BAR_pentarchy
+		}
+	}
+	focus = {
+		id = BAR_and
+		icon = GFX_goal_generic_dangerous_deal_pony_pony
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_drop
+		}
+		prerequisite = {
+			focus = BAR_your
+		}
+		prerequisite = {
+			focus = BAR_shakles
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_asinti.2
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_embrace
+		icon = GFX_goal_conscription_pony
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = -2
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_and
+		}
+		completion_reward = {
+			add_ideas = barrad_demon_conscription
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	focus = {
+		id = BAR_new
+		icon = GFX_goal_industrial_pony
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_and
+		}
+		completion_reward = {
+			add_ideas = barrad_demon_economy
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_freedom
+		icon = GFX_goal_slavery
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_and
+		}
+		completion_reward = {
+			add_ideas = barrad_demon_hierarchy
+		}
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_WAR_SUPPORT
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BAR_a_price_to_be_paid
+		icon = GFX_goal_voodoo
+		cost = 7
+		relative_position_id = BAR_all_rejoice
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_embrace
+		}
+		prerequisite = {
+			focus = BAR_new
+		}
+		prerequisite = {
+			focus = BAR_freedom
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_asinti.3
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_demon_legions
+		icon = GFX_goal_riv_army
+		cost = 2
+		relative_position_id = BAR_a_price_to_be_paid
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_a_price_to_be_paid
+		}
+		completion_reward = {
+			add_ideas = BAR_possesed_soldiers
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_demon_commando
+		icon = GFX_goal_generic_special_forces
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_demon_mass_army
+		}
+		prerequisite = {
+			focus = BAR_demon_legions
+		}
+		completion_reward = {
+			add_ideas = BAR_demon_special_forces
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_demon_commando_mountain
+		icon = GFX_goal_GRF_beak_mines
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_commando
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_commando_marine
+		icon = GFX_goal_generic_coastal_navy
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 3
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_commando
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				category = marine_tech
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_mass_army
+		icon = GFX_goal_generic_pony_volunteer
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_demon_commando
+		}
+		prerequisite = {
+			focus = BAR_demon_legions
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = cat_mass_assault
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_mass_army_rifles
+		icon = GFX_goal_generic_small_arms
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -3
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_mass_army_rifles_magic
+		icon = GFX_goal_magical_weapon_focus
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = magical_bonus
+				bonus = 1
+				uses = 1
+				category = magical_tech
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_adapt_to_battlefield
+		icon = GFX_focus_research
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army_rifles_magic
+			focus = BAR_demon_commando_mountain
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = BAR_adapt_to_battlefield
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_demon_summon_generals
+		icon = GFX_goal_the_black_book
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 1
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_adapt_to_battlefield
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_asinti.4
+			}
+		}
+	}
+	focus = {
+		id = BAR_demonic_knowledge
+		icon = GFX_goal_cry_book
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -1
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_adapt_to_battlefield
+		}
+		completion_reward = {
+			Improve_Science_Base = yes
+		}
+	}
+	focus = {
+		id = BAR_demon_mass_assault
+		icon = GFX_goal_riv_army
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -2
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army_rifles_magic
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army_rifles
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = cat_mass_assault
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_support_comp
+		icon = GFX_goal_generic_construction2
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -4
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army_rifles_magic
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_army_rifles
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 1
+				category = engineers_tech
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_general_assault
+		icon = GFX_goal_planning_bonus
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = -3
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_support_comp
+		}
+		prerequisite = {
+			focus = BAR_demon_mass_assault
+		}
+		completion_reward = {
+			add_ideas = BAR_general_assault
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_demon_commando_rifles
+		icon = GFX_goal_military_academy
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_commando_marine
+		}
+		prerequisite = {
+			focus = BAR_demon_commando_mountain
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1
+				uses = 1
+				category = magical_tech
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_commando_arty
+		icon = GFX_goal_artillery
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 4
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_commando_marine
+		}
+		prerequisite = {
+			focus = BAR_demon_commando_mountain
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demon_commando_bonus
+		icon = GFX_goal_generic_special_forces
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 3
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demon_commando_arty
+		}
+		prerequisite = {
+			focus = BAR_demon_commando_rifles
+		}
+		completion_reward = {
+			add_ideas = BAR_demon_special_forces_bonus
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_rules_of_new_wolrd
+		icon = GFX_goal_new_temple
+		cost = 7
+		relative_position_id = BAR_demon_legions
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demonic_knowledge
+			focus = BAR_demon_summon_generals
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	focus = {
+		id = BAR_the_righteous
+		icon = GFX_goal_support_from_GRU
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			NOT = {
+				country_exists = GRU
+			}
+		}
+		prerequisite = {
+			focus = BAR_rules_of_new_wolrd
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = GRU
+				type = annex_everything
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = BAR_the_meek
+		icon = GFX_goal_riv_strike_south
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			NOT = {
+				country_exists = ZES
+			}
+		}
+		prerequisite = {
+			focus = BAR_rules_of_new_wolrd
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = ZES
+				type = annex_everything
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = BAR_will_kneel
+		icon = GFX_goal_enslave_the_deer
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			NOT = {
+				country_exists = OLV
+			}
+		}
+		prerequisite = {
+			focus = BAR_the_righteous
+		}
+		prerequisite = {
+			focus = BAR_the_meek
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = OLV
+				type = annex_everything
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = BAR_before_my_power
+		icon = GFX_goal_river_fed_suppression
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_will_kneel
+		}
+		completion_reward = {
+			declare_war_on = {
+				type = annex_everything
+				target = WIT
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = FRE
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NIM
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = RCT
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = DEP
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = LCT
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = BAK
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = DMT
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+	}
+	focus = {
+		id = BAR_forges_of_war
+		icon = GFX_goal_munitions_factories
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_rules_of_new_wolrd
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_inf
+		icon = GFX_goal_generic_construct_civilian
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 2
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_forges_of_war
+		}
+		completion_reward = {
+			two_random_infrastructure = yes
+			two_random_infrastructure = yes
+		}
+	}
+	focus = {
+		id = BAR_rock_crushers
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_inf
+		}
+		completion_reward = {
+			two_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_work_for_weak
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 4
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_forges_of_war
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_weapon_mastery
+		icon = GFX_goal_generic_military_equipment
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 4
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_work_for_weak
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_repurpose_temple
+		icon = GFX_goal_new_temple
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = 3
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAR_have_builded_temple
+				hidden_trigger = {
+					OR = {
+						has_idea = BAR_temple_construct
+						has_idea = BAR_temple_construct_z
+						has_idea = BAR_temple_construct_d
+						has_idea = BAR_temple_construct_z_f
+						has_idea = BAR_temple_construct_z_l
+						has_idea = BAR_temple_construct_d_f
+						has_idea = BAR_temple_construct_d_l
+						has_idea = BAR_temple_construct_z_f_p
+						has_idea = BAR_temple_construct_z_l_p
+						has_idea = BAR_temple_construct_z_f_g
+						has_idea = BAR_temple_construct_z_l_g
+						has_idea = BAR_temple_construct_d_f_p
+						has_idea = BAR_temple_construct_d_l_p
+						has_idea = BAR_temple_construct_d_f_g
+						has_idea = BAR_temple_construct_d_l_g
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = BAR_weapon_mastery
+		}
+		prerequisite = {
+			focus = BAR_rock_crushers
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_asinti.5
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_masters_of_sky
+		icon = GFX_goal_generic_build_airforce
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_rules_of_new_wolrd
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demonic_light_planes
+		icon = GFX_goal_generic_air_fighter
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -4
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_demonic_heavy_planes
+		}
+		prerequisite = {
+			focus = BAR_masters_of_sky
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = medium_air
+					bonus = 1
+					uses = 1
+					category = medium_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = tactical_bomber
+					bonus = 1
+					uses = 1
+					category = tactical_bomber
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demonic_heavy_planes
+		icon = GFX_focus_usa_escort_fighters
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -2
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_demonic_light_planes
+		}
+		prerequisite = {
+			focus = BAR_masters_of_sky
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = heavy_air
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1
+					uses = 1
+					category = cat_strategic_bomber
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demonic_hellfire_bringers
+		icon = GFX_goal_MAF_Napalm
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -3
+		y = 3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_demonic_heavy_planes
+			focus = BAR_demonic_light_planes
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = heavy_air
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1
+					uses = 1
+					category = cat_strategic_bomber
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_demonic_doom_bringers
+		icon = GFX_goal_bombs_away
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -2
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_demonic_grim_reapers
+		}
+		prerequisite = {
+			focus = BAR_demonic_heavy_planes
+			focus = BAR_demonic_light_planes
+		}
+		prerequisite = {
+			focus = BAR_demonic_hellfire_bringers
+		}
+		completion_reward = {
+			add_ideas = BAR_strat_bomber_bonus
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+	focus = {
+		id = BAR_demonic_grim_reapers
+		icon = GFX_goal_air_armada
+		cost = 7
+		relative_position_id = BAR_rules_of_new_wolrd
+		x = -4
+		y = 4
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_demonic_doom_bringers
+		}
+		prerequisite = {
+			focus = BAR_demonic_heavy_planes
+			focus = BAR_demonic_light_planes
+		}
+		prerequisite = {
+			focus = BAR_demonic_hellfire_bringers
+		}
+		completion_reward = {
+			add_ideas = BAR_fighters_bonus
+		}
+		search_filters = {
+			FOCUS_FILTER_AIRFORCE_BONUS
+		}
+	}
+}

@@ -1,0 +1,2723 @@
+focus_tree = {
+	id = barrad_focus_tree_leopold
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = {
+		x = 290
+		y = 3000
+	}
+	focus = {
+		id = BAR_leopold_ascension
+		icon = GFX_goal_leopold_ascesion
+		cost = 7
+		x = 8
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_leopold.1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+		}
+	}
+	focus = {
+		id = BAR_leopold_party_crasher
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_ascension
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_ascension
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_leopold.2
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+		}
+	}
+	focus = {
+		id = BAR_leopold_children_of_wrath
+		icon = GFX_goal_leopold_deus_irae
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_party_crasher
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_party_crasher
+		}
+		completion_reward = {
+			increase_science_base = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_convert_1
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_leopold_children_of_wrath
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_children_of_wrath
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_convert_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_children_of_wrath
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_children_of_wrath
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_convert_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_leopold_children_of_wrath
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_children_of_wrath
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = BAR_leopold_machine_cult
+		icon = GFX_goal_leopold_deus_irae
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cult_convert_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_convert_1
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_convert_2
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_convert_3
+		}
+		completion_reward = {
+			country_event = { id = barrad_leopold.11 }
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_leopold_cultist_warriors
+		icon = GFX_goal_bar_leopold_into_the_fire
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_machine_cult
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_machine_cult
+		}
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = BAR_leopold_cultist_warriors_2
+		icon = GFX_goal_bar_leopold_cult_mountains
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cultist_warriors
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cultist_warriors
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				category = mountaineers_tech
+				uses = 2
+				bonus = 1.5
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cultist_warriors_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 2
+		relative_position_id = BAR_leopold_cultist_warriors_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cultist_warriors_2
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_cultist_warriors_4
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 2
+				category = logistics_tech
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				category = hospital_tech
+			}
+			
+		}
+	}
+	focus = {
+		id = BAR_leopold_cultist_warriors_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 2
+		relative_position_id = BAR_leopold_cultist_warriors_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cultist_warriors_2
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_cultist_warriors_3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 2
+				category = engineers_tech
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cultist_warriors_5
+		icon = GFX_goal_bar_leopold_cult_fanatism
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_cultist_warriors_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cultist_warriors_3
+			focus = BAR_leopold_cultist_warriors_4
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_infantry_6
+			focus = BAR_leopold_cult_tanks_6
+		}
+		completion_reward = {
+			add_ideas = BAR_leopold_cult_fanatism
+			custom_effect_tooltip = super_combat_abilities_tt
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_tanks
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -3
+		y = 1
+		relative_position_id = BAR_leopold_machine_cult
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_machine_cult
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_tanks_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_cult_tanks
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_tanks
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_tanks_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cult_tanks_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_tanks_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_tanks_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_cult_tanks
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_tanks
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_tanks_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cult_tanks_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_tanks_4
+		}
+		completion_reward = {
+			add_ideas = BAR_tenks
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				ahead_reduction = 2
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_tanks_6
+		icon = GFX_goal_bar_leopold_crystal_tanks
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_cult_tanks_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_tanks_3
+			focus = BAR_leopold_cult_tanks_5
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				set_technology = {
+					BAR_leopold_crystal_tanks = 1
+				}
+			} 
+			else = {
+				add_ideas = BAR_magic_tenks
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_infantry
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 3
+		y = 1
+		relative_position_id = BAR_leopold_machine_cult
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_machine_cult
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 2
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_infantry_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_cult_infantry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_infantry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 2
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_infantry_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cult_infantry_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_infantry_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				category = logistics_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_infantry_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_cult_infantry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_infantry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_infantry_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cult_infantry_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_infantry_4
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_cult_infantry_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_cult_infantry_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_cult_infantry_3
+			focus = BAR_leopold_cult_infantry_5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1.0
+				uses = 1
+				technology = magical_weapons
+				technology = magical_weapons1
+				technology = magical_weapons2
+				technology = magical_weapons3
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_industry
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -7
+		y = 1
+		relative_position_id = BAR_leopold_machine_cult
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_machine_cult
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_industry_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_industry
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_industry_3
+		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_industry_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_industry
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_industry_2
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			check_variable = {
+				BAR_relations_asinti_leopold > 69
+			}
+		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+			add_ideas = BAR_leopold_asinti_help
+
+			country_event = { id = barrad_leopold.12 days = 8 }
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_industry_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_industry_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_industry_2
+			focus = BAR_leopold_industry_3
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_industry_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_industry_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_industry_4
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_industry_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 3
+		y = 1
+		relative_position_id = BAR_leopold_industry_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_industry_5
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_resources
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 7
+		y = 1
+		relative_position_id = BAR_leopold_machine_cult
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_machine_cult
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = excavation_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_resources_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_resources
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_resources
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_resources_3
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					owns_state = 624
+				}
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 624
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 626
+				}
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 626
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+					state = 626
+				}
+				add_resource = {
+					type = aluminium
+					amount = 3
+					state = 626
+				}
+				add_resource = {
+					type = tungsten
+					amount = 3
+					state = 626
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 626
+				}
+			}
+			country_event = { id = barrad_leopold.13 days = 3 }
+		}
+		available = {
+			has_country_flag = barrad_silver_star_alive
+			has_country_flag = BAR_silver_friendship_leopold
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_resources_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_resources
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_resources
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_resources_2
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					owns_state = 624
+				}
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 624
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_resources_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_resources_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_resources_2
+			focus = BAR_leopold_resources_3
+		}
+		completion_reward = {
+			add_ideas = BAR_crystalic_alloys_idea
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_resources_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_resources_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_resources_4
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = synth_resources
+				uses = 2
+				bonus = 1
+			}
+			increase_society_development_gradual = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_resources_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -3
+		y = 1
+		relative_position_id = BAR_leopold_resources_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_resources_5
+		}
+		completion_reward = {
+			one_random_synthetic_refinery = yes
+			one_random_synthetic_refinery = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks
+		icon = GFX_goal_leopold_party_over
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_cultist_warriors_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_resources_6
+		}
+		prerequisite = {
+			focus = BAR_leopold_industry_6
+		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+			add_stability = 0.05
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_1
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_leopold_clockworks
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks
+		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_clockworks
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks
+		}
+		completion_reward = {
+			build_railway = {
+				level = 2
+				start_state = 624
+				target_state = 626
+				build_only_on_allied = yes
+			}
+			build_railway = {
+				level = 2
+				start_state = 626
+				target_state = 625
+				build_only_on_allied = yes
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_leopold_clockworks
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+			one_random_arms_factory = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_2
+		}
+		available = {
+			has_idea = BAR_clockwerk_factories
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_2
+		}
+		completion_reward = {
+			country_event = { id = barrad_leopold.8 days = 3}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_2
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_7
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_4
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+			one_random_industrial_complex = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_8
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_5
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = BAR
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_9
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_5
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_10
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_6
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_6
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_11
+		icon = GFX_goal_leopold_party_over
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_7
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_7
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_8
+		}
+		available = {
+			OR = {
+				has_idea = outdated_industry2
+				has_idea = modern_society
+			}
+		}
+		completion_reward = {
+			add_ideas = clockwerk_industry
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_12
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_8
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_8
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_9
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+			one_random_arms_factory = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_clockworks_13
+		icon = GFX_goal_leopold_party_over
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_9
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_9
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_10
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAR_leopold_new_clockwerks_tooltip
+			hidden_effect = {
+				country_event = {
+					id = barrad_leopold.7
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_leopold_push_the_boundaries
+		icon = GFX_goal_leopold_ascesion_2
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_clockworks_12
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_clockworks_12
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_leopold.3
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_LEOPOLD_ASCESION
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 16
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_completed_focus = BAR_leopold_clockworks_13
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_1
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_military_clockwerks_2
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks
+		}
+		available = {
+			has_idea = BAR_clockwerk_soldiers
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_leopold.71
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_military_clockwerks_1
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks
+		}
+		available = {
+			NOT = {
+				has_idea = BAR_clockwerk_soldiers
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_leopold.72
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_military_clockwerks_4
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_1
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_military_clockwerks_3
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_1
+		}
+		available = {
+			has_country_flag = barrad_silver_star_alive
+			has_country_flag = BAR_silver_friendship_leopold
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_2
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_military_clockwerks_6
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_2
+		}
+		available = {
+			has_country_flag = barrad_silver_star_alive
+			has_country_flag = BAR_silver_friendship_leopold
+		}
+		completion_reward = {
+			army_experience = 75
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_2
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_leopold_military_clockwerks_5
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_2
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_7
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_3
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_clockwerks_upgrade_org = 1
+				popup = no
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_8
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_3
+			focus = BAR_leopold_military_clockwerks_4
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_clockwerks_arty = 1
+				popup = no
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_9
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_4
+			focus = BAR_leopold_military_clockwerks_5
+		}
+		completion_reward = {
+			add_ideas = BAR_leopold_bonus_planning
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_10
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_5
+			focus = BAR_leopold_military_clockwerks_6
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_clockwerks_combat_width = 1
+				popup = no
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_11
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_6
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_6
+		}
+		completion_reward = {
+			add_ideas = BAR_leopold_cheaper_guns
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_12
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_7
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_7
+			focus = BAR_leopold_military_clockwerks_8
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_clockwerks_combat_attack = 1
+				popup = no
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_13
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_8
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_8
+			focus = BAR_leopold_military_clockwerks_9
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_clockwerks_tanks = 1
+				popup = no
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_14
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_9
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_9
+			focus = BAR_leopold_military_clockwerks_10
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_clockwerks_terrain_upgrade = 1
+				popup = no
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_military_clockwerks_15
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_military_clockwerks_10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_military_clockwerks_10
+			focus = BAR_leopold_military_clockwerks_11
+		}
+		completion_reward = {
+			add_ideas = BAR_leopold_mass_clockwerks
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 0
+		available = {
+			has_completed_focus = BAR_leopold_clockworks_5
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAR_leopold_surreal_mathematic_idea
+				add_idea = BAR_leopold_surreal_mathematic_idea_1
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_1
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -3
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = electronics
+				bonus = 1
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				category = magical_tech
+				uses = 2
+				bonus = 1
+				ahead_reduction = 2
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAR_leopold_surreal_mathematic_idea_1
+				add_idea = BAR_leopold_surreal_mathematic_idea_2
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 3
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_1
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_2
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_3
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_4
+		}
+		available = {
+			665 = { is_controlled_by = BAR }
+		}
+		completion_reward = {
+			country_event = { id = barrad_leopold.10 }
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_5
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_7
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_5
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 624 }
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_stability = 0.1
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_8
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = radar_tech
+				bonus = 2
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_surreal_mathematic_9
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_surreal_mathematic_7
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_6
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_7
+		}
+		prerequisite = {
+			focus = BAR_leopold_surreal_mathematic_8
+		}
+		completion_reward = {
+			country_event = { id = barrad_leopold.9}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 23
+		y = 0
+		available = {
+			has_completed_focus = BAR_leopold_machine_cult
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_1
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_conquest
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZES
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_2
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_conquest
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = OLV
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_3
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_conquest_1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_1
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = GRU
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_4
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_conquest_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_1
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_2
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = WIT
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_5
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = BAR_leopold_conquest_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_3
+		}
+		available = {
+			has_completed_focus = BAR_leopold_push_the_boundaries
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					GRW = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = GRY
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GRW = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = LUS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					GRW = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = GRW
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BRF = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BRF
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_6
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_conquest_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_4
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					FRE = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					LCT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = LCT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					RCT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = RCT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NIM = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = NIM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BAK = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BAK
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					DMT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = DMT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_7
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_conquest_6
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_6
+		}
+		available = {
+			has_completed_focus = BAR_leopold_push_the_boundaries
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					LNS = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = LNS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					HLQ = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = HLQ
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_8
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_leopold_conquest_6
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_6
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					FIR = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FIR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FBK = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FBK
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					WAT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = WAT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_9
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_conquest_7
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_5
+			focus = BAR_leopold_conquest_7
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					GRI = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = GRI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					KAT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = KAT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ANG = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = ANG
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					YAL = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = YAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					PYT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = PYT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ROU = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = ROU
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FEA = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FEA
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					STW = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = STW
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BRZ = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BRZ
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_10
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_conquest_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_5
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					BAN = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BAN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BOI = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BOI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					LAK = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = LAK
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					MIT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = MIT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					SIC = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = SIC
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_11
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_leopold_conquest_9
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_9
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					JER = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = JER
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					JEB = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = JEB
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					JRR = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = JRR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					VIN = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = VIN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					JFT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = JFT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					POM = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = POM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FLO = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FLO
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ERI = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = ERI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					EYR = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = EYR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					AVI = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = AVI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					HEL = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = HEL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					AET = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = AET
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					TRD = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = TRD
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FEZ = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FEZ
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_12
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_conquest_10
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					FAL = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					WNG = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = WNG
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					TAL = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = TAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FRN = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FRN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					ARA = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = ARA
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_leopold_conquest_13
+		icon = GFX_goal_leopold_party_over
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_leopold_conquest_9
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_9
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					MNC = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = MNC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					FAT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FAT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					VED = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = VED
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					SRS = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = SRS
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

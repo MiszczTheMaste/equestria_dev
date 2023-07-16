@@ -1,0 +1,664 @@
+focus_tree = {
+	id = barrad_focus_tree_viira
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = {
+		x = 290
+		y = 3000
+	}
+	focus = {
+		id = BAR_shouts_from_the_darkness
+		icon = GFX_goal_forest_spirit
+		cost = 1
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAR_path_have_been_choosen
+		}
+	}
+	focus = {
+		id = BAR_come_to_the_light
+		icon = GFX_focus_indy_necromancers
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_shouts_from_the_darkness
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_viira_amb.1
+			}
+			hidden_effect = {
+				BAR_remove_cooperation = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_true_herald
+		icon = GFX_goal_ambrosius
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_come_to_the_light
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_viira_amb.2
+			}
+		}
+	}
+	focus = {
+		id = BAR_call_non_believers
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 0
+		y = 3
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_true_herald
+		}
+		completion_reward = {
+			remove_ideas = BAR_pentarchy
+		}
+	}
+	focus = {
+		id = BAR_protectors_of_new_age
+		icon = GFX_goal_conscription_pony
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_call_non_believers
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_call_non_believers
+		}
+		completion_reward = {
+			add_ideas = BAR_new_protectors
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	focus = {
+		id = BAR_sacrifice_to_be_made
+		icon = GFX_goal_generic_pony_soldier
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = BAR_call_non_believers
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_protectors_of_new_age
+		}
+		completion_reward = {
+			add_ideas = BAR_sacrifice
+		}
+	}
+	focus = {
+		id = BAR_great_effort
+		icon = GFX_goal_pony_labour
+		cost = 7
+		x = -1
+		y = 3
+		relative_position_id = BAR_call_non_believers
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_sacrifice_to_be_made
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+			one_random_arms_factory = yes
+			one_random_arms_factory = yes
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_asceticism
+		icon = GFX_goal_generic_consumer_goods
+		cost = 7
+		x = 1
+		y = 3
+		relative_position_id = BAR_call_non_believers
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_sacrifice_to_be_made
+		}
+		completion_reward = {
+			add_ideas = BAR_asceticism
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_avaiting_bright_future
+		icon = GFX_goal_sunshine
+		cost = 7
+		x = 0
+		y = 5
+		relative_position_id = BAR_call_non_believers
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_asceticism
+		}
+		prerequisite = {
+			focus = BAR_great_effort
+		}
+		prerequisite = {
+			focus = BAR_grand_design
+		}
+		completion_reward = {
+			add_ideas = modern_society
+		}
+	}
+	focus = {
+		id = BAR_power_of_machine
+		icon = GFX_goal_technological_supremacy
+		cost = 7
+		x = 5
+		y = 3
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_true_herald
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_improved_machines
+		icon = GFX_focus_Computer_2
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_power_of_machine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				uses = 2
+				bonus = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				uses = 2
+				category = electronics
+				ahead_reduction = 2
+			}
+		}
+	}
+	focus = {
+		id = BAR_theoretical_calculations
+		icon = GFX_goal_doctrine_tank_warfare
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_power_of_machine
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				uses = 2
+				bonus = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_underground_expansion
+		icon = GFX_focus_indy_excavations
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_power_of_machine
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = BAR
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_all_consciousness
+		icon = GFX_goal_supremacy_of_will
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_underground_expansion
+		}
+		prerequisite = {
+			focus = BAR_improved_machines
+			focus = BAR_theoretical_calculations
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_dream_of_flight
+		icon = GFX_goal_POL_recon_aircraft
+		cost = 7
+		x = -2
+		y = 3
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_all_consciousness
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_bonus
+				uses = 1
+				bonus = 1
+				category = air_equipment
+			}
+			add_tech_bonus = {
+				name = air_bonus
+				uses = 1
+				ahead_reduction = 1
+				category = air_equipment
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_beyond_the_horizon
+		icon = GFX_focus_rocketry
+		cost = 7
+		x = 0
+		y = 3
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_all_consciousness
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				uses = 1
+				bonus = 1
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = secret_bonus
+				uses = 1
+				ahead_reduction = 1
+				category = rocketry
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_resources_of_future
+		icon = GFX_goal_oil
+		cost = 7
+		x = 2
+		y = 3
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_all_consciousness
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				uses = 1
+				bonus = 1
+				category = synth_resources
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+				uses = 1
+				ahead_reduction = 1
+				category = synth_resources
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_grand_design
+		icon = GFX_goal_double_research
+		cost = 7
+		x = -1
+		y = 4
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+			OR = {
+				has_idea = big_science_base
+				has_idea = proper_science_base
+			}
+		}
+		prerequisite = {
+			focus = BAR_beyond_the_horizon
+		}
+		prerequisite = {
+			focus = BAR_dream_of_flight
+		}
+		completion_reward = {
+			add_ideas = big_science_base
+		}
+	}
+	focus = {
+		id = BAR_psionic_chemistry
+		icon = GFX_goal_national_artillery
+		cost = 7
+		x = 1
+		y = 4
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_beyond_the_horizon
+		}
+		prerequisite = {
+			focus = BAR_resources_of_future
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				uses = 2
+				bonus = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				uses = 2
+				ahead_reduction = 1
+				category = artillery
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_singularity
+		icon = GFX_goal_cry_com_sync
+		cost = 7
+		x = 0
+		y = 5
+		relative_position_id = BAR_power_of_machine
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			nuclear_reactor > 1
+		}
+		prerequisite = {
+			focus = BAR_psionic_chemistry
+		}
+		prerequisite = {
+			focus = BAR_grand_design
+		}
+		completion_reward = {
+			add_ideas = BAR_singularity_idea
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_desperate_defence
+		icon = GFX_goal_generic_small_arms
+		cost = 7
+		x = -3
+		y = 3
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_prepared_defence
+		}
+		prerequisite = {
+			focus = BAR_true_herald
+		}
+		completion_reward = {
+			add_ideas = BAR_remove_air
+			add_timed_idea = {
+				days = 1080
+				idea = BAR_desperate_defence_idea
+			}
+		}
+	}
+	focus = {
+		id = BAR_prepared_defence
+		icon = GFX_goal_generic_position_armies
+		cost = 7
+		x = -5
+		y = 3
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_desperate_defence
+		}
+		prerequisite = {
+			focus = BAR_true_herald
+		}
+		completion_reward = {
+			add_ideas = BAR_remove_air
+			add_timed_idea = {
+				days = 1080
+				idea = BAR_prepared_defence_idea
+			}
+		}
+	}
+	focus = {
+		id = BAR_mass_rifles
+		icon = GFX_goal_van_rifles
+		cost = 7
+		x = -3
+		y = 4
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_prepared_defence
+			focus = BAR_desperate_defence
+		}
+		completion_reward = {
+			add_ideas = BAR_amb_cheap_rifles
+		}
+	}
+	focus = {
+		id = BAR_magic_supremacy
+		icon = GFX_goal_magical_weapon_focus
+		cost = 7
+		x = -5
+		y = 4
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_prepared_defence
+			focus = BAR_desperate_defence
+		}
+		completion_reward = {
+			add_ideas = BAR_viira_magic_supremacy
+		}
+	}
+	focus = {
+		id = BAR_get_mountaineers
+		icon = GFX_goal_generic_special_forces
+		cost = 7
+		x = -4
+		y = 5
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_magic_supremacy
+			focus = BAR_mass_rifles
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				category = mountaineers_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		cost = 7
+		x = -6
+		y = 5
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_magic_supremacy
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_guns
+		icon = GFX_goal_generic_military_sphere
+		cost = 7
+		x = -2
+		y = 5
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_mass_rifles
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				category = infantry_weapons
+				uses = 2
+				bonus = 1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_harsh_enviroment
+		icon = GFX_goal_TEM_terror_campaign
+		cost = 7
+		x = -4
+		y = 6
+		relative_position_id = BAR_shouts_from_the_darkness
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_doctrine
+			focus = BAR_guns
+		}
+		prerequisite = {
+			focus = BAR_get_mountaineers
+		}
+		completion_reward = {
+			add_ideas = BAR_hey_stalker
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
+	}
+}

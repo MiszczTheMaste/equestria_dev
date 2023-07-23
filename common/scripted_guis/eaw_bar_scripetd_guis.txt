@@ -64,7 +64,9 @@ scripted_gui = {
 						bar_ambrosius_state = 1
 					}
 				}
-				add_to_variable = { bar_pen_screen_show = 1 }
+				add_to_variable = {
+					bar_pen_screen_show = 1
+				}
 			}
 			bar_pen_screen_asinti_button_click = {
 				set_variable = {
@@ -84,7 +86,9 @@ scripted_gui = {
 						bar_asinti_state = 3
 					}
 				}
-				add_to_variable = { bar_pen_screen_show = 1 }
+				add_to_variable = {
+					bar_pen_screen_show = 1
+				}
 			}
 			bar_pen_screen_leopold_button_click = {
 				set_variable = {
@@ -104,7 +108,9 @@ scripted_gui = {
 						bar_leopold_state = 3
 					}
 				}
-				add_to_variable = { bar_pen_screen_show = 1 }
+				add_to_variable = {
+					bar_pen_screen_show = 1
+				}
 			}
 			bar_pen_screen_silver_button_click = {
 				set_variable = {
@@ -124,7 +130,9 @@ scripted_gui = {
 						bar_silver_state = 3
 					}
 				}
-				add_to_variable = { bar_pen_screen_show = 1 }
+				add_to_variable = {
+					bar_pen_screen_show = 1
+				}
 			}
 			bar_pen_screen_viira_button_click = {
 				set_variable = {
@@ -144,7 +152,9 @@ scripted_gui = {
 						bar_viira_state = 3
 					}
 				}
-				add_to_variable = { bar_pen_screen_show = 1 }
+				add_to_variable = {
+					bar_pen_screen_show = 1
+				}
 			}
 		}
 	}
@@ -266,63 +276,6 @@ scripted_gui = {
 			}
 		}
 	}
-	bar_viira_zone = {
-		window_name = "bar_viira_zone"
-		context_type = selected_state_context
-		parent_window_token = selected_state_view
-		visible = {
-			ROOT = {
-				tag = BAR
-				OR = {
-					has_variable = BAR_viira_control
-					has_variable = BAR_viira_pup
-				}
-			}
-			controller = {
-				OR = {
-					tag = BAR
-					is_subject_of = BAR
-				}
-			}
-			NOT = {
-				has_state_flag = BAR_climate
-			}
-		}
-		effects = {
-			bar_viira_zone_button_click = {
-				set_state_flag = BAR_climate
-				add_province_modifier = {
-					static_modifiers = {
-						barrad_climate3
-					}
-					province = {
-						all_provinces = yes
-					}
-				}
-				add_resistance_target = {
-					amount = -10
-					occupier = BAR
-				}
-				add_compliance = 30
-				ROOT = {
-					if = {
-						limit = {
-							has_country_flag = unlock_viirapuppet
-						}
-						add_to_variable = {
-							viira_mana_overload = 1
-						}
-					}
-					else = {
-						add_to_variable = {
-							viira_mana_overload = 5
-						}
-					}
-					bar_viira_spells_max_overload = yes
-				}
-			}
-		}
-	}
 	bar_cpt_quest = {
 		window_name = "bar_cpt_quest"
 		context_type = selected_state_context
@@ -382,7 +335,6 @@ scripted_gui = {
 			tag = BAR
 		}
 	}
-	
 	bar_pentarchy_fight = {
 		window_name = "bar_pentarchy_fight_window"
 		dirty = bar_pentarchy_fight_show
@@ -493,8 +445,6 @@ scripted_gui = {
 			bar_pen_fight_viira_hp_280 = {
 				frame = v_hp_d_280
 			}
-
-
 			bar_pen_fight_viira_in_1 = {
 				frame = v_in_d_1
 			}
@@ -570,18 +520,30 @@ scripted_gui = {
 		triggers = {
 			bar_leopold_normal_attack_click_enabled = {
 				has_country_flag = barrad_leopold_alive
-				check_variable  = { l_in > 0 }
+				check_variable = {
+					l_in > 0
+				}
 			}
 			bar_leopold_strong_attack_click_enabled = {
 				has_country_flag = barrad_leopold_alive
-				check_variable = { l_in > 2}
-				check_variable = { BAR_resources_leopold > 49}
+				check_variable = {
+					l_in > 2
+				}
+				check_variable = {
+					BAR_resources_leopold > 49
+				}
 			}
 			bar_leopold_stun_attack_click_enabled = {
 				has_country_flag = barrad_leopold_alive
-				check_variable  = { v_stun = 0}
-				check_variable  = { l_in > 1}
-				check_variable  = { BAR_resources_leopold > 99}
+				check_variable = {
+					v_stun = 0
+				}
+				check_variable = {
+					l_in > 1
+				}
+				check_variable = {
+					BAR_resources_leopold > 99
+				}
 			}
 		}
 		effects = {
@@ -602,7 +564,6 @@ scripted_gui = {
 			bar_pen_fight_leopold_portrait = {
 				frame = bar_pen_fight_leopold_state
 			}
-
 			bar_pen_fight_leopold_hp_10 = {
 				frame = l_hp_d_10
 			}
@@ -669,7 +630,6 @@ scripted_gui = {
 			bar_pen_fight_leopold_hp_220 = {
 				frame = l_hp_d_220
 			}
-
 			bar_pen_fight_leopold_in_1 = {
 				frame = l_in_d_1
 			}
@@ -715,18 +675,28 @@ scripted_gui = {
 		triggers = {
 			bar_asinti_normal_attack_click_enabled = {
 				has_country_flag = barrad_asinti_alive
-				check_variable = { a_in > 0 }
+				check_variable = {
+					a_in > 0
+				}
 			}
 			bar_asinti_curse_click_enabled = {
 				has_country_flag = barrad_asinti_alive
-				check_variable = { a_in > 1}
-				check_variable = { BAR_resources_asinti > 49}
+				check_variable = {
+					a_in > 1
+				}
+				check_variable = {
+					BAR_resources_asinti > 49
+				}
 			}
 			bar_asinti_party_heal_click_enabled = {
 				has_country_flag = barrad_asinti_alive
-				check_variable = { a_in > 1}
-				check_variable = { BAR_resources_asinti > 99}
-			}	
+				check_variable = {
+					a_in > 1
+				}
+				check_variable = {
+					BAR_resources_asinti > 99
+				}
+			}
 		}
 		effects = {
 			bar_pen_fight_asinti_portrait_click = {
@@ -740,7 +710,7 @@ scripted_gui = {
 			}
 			bar_asinti_party_heal_click = {
 				BAR_pen_fight_asinti_heal = yes
-			}	
+			}
 			bar_pentarchy_rest_click = {
 				BAR_pen_fight_rest = yes
 			}
@@ -806,7 +776,6 @@ scripted_gui = {
 			bar_pen_fight_asinti_hp_190 = {
 				frame = a_hp_d_190
 			}
-
 			bar_pen_fight_asinti_in_1 = {
 				frame = a_in_d_1
 			}
@@ -852,17 +821,27 @@ scripted_gui = {
 		triggers = {
 			bar_silver_normal_attack_click_enabled = {
 				has_country_flag = barrad_silver_star_alive
-				check_variable = { s_in > 0}
+				check_variable = {
+					s_in > 0
+				}
 			}
 			bar_silver_lifesteal_attack_click_enabled = {
 				has_country_flag = barrad_silver_star_alive
-				check_variable = { s_in > 1}
-				check_variable = { BAR_resources_silver > 49}
+				check_variable = {
+					s_in > 1
+				}
+				check_variable = {
+					BAR_resources_silver > 49
+				}
 			}
 			bar_silver_heal_click_enabled = {
 				has_country_flag = barrad_silver_star_alive
-				check_variable = { s_in > 1 }
-				check_variable = { BAR_resources_silver > 99 }
+				check_variable = {
+					s_in > 1
+				}
+				check_variable = {
+					BAR_resources_silver > 99
+				}
 			}
 		}
 		effects = {
@@ -873,7 +852,7 @@ scripted_gui = {
 				BAR_pen_fight_silver_lifesteal_attack = yes
 			}
 			bar_silver_heal_click = {
-				BAR_silver_heal = yes 
+				BAR_silver_heal = yes
 			}
 			bar_pen_fight_silver_portrait_click = {
 				BAR_silver_heal_silver = yes
@@ -966,9 +945,6 @@ scripted_gui = {
 			}
 		}
 	}
-
-
-
 	bar_viira_fight = {
 		window_name = "bar_viira_fight_window"
 		dirty = bar_viira_fight_show
@@ -980,25 +956,43 @@ scripted_gui = {
 		triggers = {
 			bar_viira_heal_click_enabled = {
 				has_country_flag = barrad_viira_alive
-				check_variable = { v_stun < 1}
-				check_variable = { v_in > 0}
-				check_variable = { BAR_resources_viira > 199}
+				check_variable = {
+					v_stun < 1
+				}
+				check_variable = {
+					v_in > 0
+				}
+				check_variable = {
+					BAR_resources_viira > 199
+				}
 			}
 			bar_viira_strong_attack_click_enabled = {
 				has_country_flag = barrad_viira_alive
-				check_variable = { v_stun < 1}
-				check_variable = { v_in > 2}
-				check_variable = { BAR_resources_viira > 99}
+				check_variable = {
+					v_stun < 1
+				}
+				check_variable = {
+					v_in > 2
+				}
+				check_variable = {
+					BAR_resources_viira > 99
+				}
 			}
 			bar_viira_normal_attack_click_enabled = {
 				has_country_flag = barrad_viira_alive
-				check_variable = { v_stun < 1}
-				check_variable = { v_in > 0}
+				check_variable = {
+					v_stun < 1
+				}
+				check_variable = {
+					v_in > 0
+				}
 			}
 			bar_viira_rest_click_enabled = {
 				has_country_flag = barrad_viira_alive
-				check_variable = { v_stun < 1}
-			}	
+				check_variable = {
+					v_stun < 1
+				}
+			}
 			bar_pen_fight_stun_log_visible = {
 				has_variable = v_stun_turn
 			}
@@ -1105,8 +1099,6 @@ scripted_gui = {
 			bar_pen_fight_viira_hp_280 = {
 				frame = v_hp_d_280
 			}
-
-
 			bar_pen_fight_viira_in_1 = {
 				frame = v_in_d_1
 			}
@@ -1194,7 +1186,6 @@ scripted_gui = {
 			bar_pen_fight_leopold_portrait = {
 				frame = bar_pen_fight_leopold_state
 			}
-
 			bar_pen_fight_leopold_hp_10 = {
 				frame = l_hp_d_10
 			}
@@ -1261,7 +1252,6 @@ scripted_gui = {
 			bar_pen_fight_leopold_hp_220 = {
 				frame = l_hp_d_220
 			}
-
 			bar_pen_fight_leopold_in_1 = {
 				frame = l_in_d_1
 			}
@@ -1376,7 +1366,6 @@ scripted_gui = {
 			bar_pen_fight_asinti_hp_190 = {
 				frame = a_hp_d_190
 			}
-
 			bar_pen_fight_asinti_in_1 = {
 				frame = a_in_d_1
 			}

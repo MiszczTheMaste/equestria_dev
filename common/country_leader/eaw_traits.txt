@@ -3191,21 +3191,42 @@ apn_time_queen= {
 	}
 	BAR_asinti_witch_doctor = {
 		random = no
-		non_core_manpower = -1
-		military_leader_cost_factor = 100
+		war_support_factor = 0.1
 		hidden_modifier = {
 			send_volunteer_size = -1
 		}
 	}
-	BAR_asinti_puppet = {
+	BAR_asinti_witch_doctor_1 = {
 		random = no
-		non_core_manpower = -1
-		stability_factor = 0.1
 		war_support_factor = 0.1
-		military_leader_cost_factor = 100
+		political_power_gain = 0.15
 		hidden_modifier = {
 			send_volunteer_size = -1
 		}
+	}
+	BAR_asinti_witch_doctor_2 = {
+		random = no
+		war_support_factor = 0.1
+		political_power_gain = 0.15
+		army_morale_factor = 0.05
+		hidden_modifier = {
+			send_volunteer_size = -1
+		}
+	}
+	BAR_asinti_witch_doctor_3 = {
+		random = no
+		war_support_factor = 0.1
+		political_power_gain = 0.15
+		army_morale_factor = 0.05
+		research_speed_factor = 0.02
+		hidden_modifier = {
+			send_volunteer_size = -1
+		}
+	}
+	BAR_asinti_absent = {
+		random = no
+		political_power_gain = -0.15
+		war_support_factor = -0.1
 	}
 	BAR_cpt_novak_advisor = {
 		random = no

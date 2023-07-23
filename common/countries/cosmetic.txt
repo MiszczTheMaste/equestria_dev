@@ -1470,6 +1470,10 @@ BAR_leopold_empire = {
 	color = rgb { 114 21 0 }
 	color_ui = rgb { 140 140 140 }
 }
+BAR_free_state = {
+	color = rgb { 0 67 111 }
+	color_ui = rgb { 0 52 86 }
+}
 JHZ_viira = {
 	color = rgb { 187 46 5 }
 	color_ui = rgb { 187 46 5 }

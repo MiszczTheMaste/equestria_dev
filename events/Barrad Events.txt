@@ -2757,6 +2757,26 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.2.a
+		country_event = { id = barrad_second.22 days = 3 }
+	}
+}
+
+country_event = {
+	id = barrad_second.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.22"
+	}
+	title = barrad_second.22.t
+	desc = barrad_second.22.d
+	picture = GFX_event_feast
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.22.a
+		
+		swap_ideas = {
+			remove_idea = BAR_pentarchy
+			add_idea = BAR_pentarchy_2
+		}
 	}
 }
 
@@ -7755,19 +7775,37 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_asinti.1.a
-		hidden_effect = {
-			bar_kill_ambrosius = yes
-			add_country_leader_role = {
-				character = BAR_asinti
-				promote_leader = yes
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = magocracy
-					traits = {
-						BAR_asinti_witch_doctor
-					}
+		swap_ideas = {
+			remove_idea = BAR_pentarchy
+			add_idea = BAR_asinti_petnarchy
+		}
+
+		add_country_leader_role = {
+			character = BAR_asinti
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = religious_socialism
+				traits = {
+					BAR_asinti_witch_doctor
 				}
 			}
+		}
+		set_party_name = { 
+			ideology = communism
+			long_name = BAR_asinti_rule
+			name = BAR_asinti_rule
+		}
+		set_politics = {
+			ruling_party = communism
+		}
+		add_popularity = { 
+			ideology = communism 	
+			popularity = 0.06
+		}
+		set_cosmetic_tag = BAR_free_state
+		hidden_effect = {
+			bar_kill_ambrosius = yes
 			hidden_effect = {
 				change_all_province_names = yes
 				if = {
@@ -7801,24 +7839,7 @@ country_event = {
 								is_unit_leader = yes
 							}
 						}
-						remove_unit_leader_role = BAR_leopold_schmeller
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = barrad_viira_alive
-					}
-					set_technology = {
-						popup = no
-						barrad_viira_alive = 0
-					}
-					if = {
-						limit = {
-							BAR_viira_lehtola = {
-								is_unit_leader = yes
-							}
-						}
-						remove_unit_leader_role = BAR_viira_lehtola
+						set_country_flag = BAR_leopold_general_hidden
 					}
 				}
 				BAR_asinti = {
@@ -7838,385 +7859,116 @@ country_event = {
 }
 
 country_event = {
-	id = barrad_asinti.2
+	id = barrad_asinti.6
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.2"
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.6"
 	}
-	title = barrad_asinti.2.t
-	desc = barrad_asinti.2.d
+	title = barrad_asinti.6.t
+	desc = barrad_asinti.6.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		name = barrad_asinti.2.a
+		name = barrad_asinti.6.a
+		add_political_power = 50
 	}
 }
 
 country_event = {
-	id = barrad_asinti.3
+	id = barrad_asinti.7
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.3"
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.7"
 	}
-	title = barrad_asinti.3.t
-	desc = barrad_asinti.3.d
-	picture = GFX_event_forest_depression
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.3.a
-		hidden_effect = {
-			BAR_asinti = {
-				remove_trait = {
-					ideology = magocracy
-					trait = BAR_asinti_witch_doctor
-				}
-				add_trait = {
-					ideology = magocracy
-					trait = BAR_asinti_puppet
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = barrad_asinti.4
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.4"
-	}
-	title = barrad_asinti.4.t
-	desc = barrad_asinti.4.d
+	title = barrad_asinti.7.t
+	desc = barrad_asinti.7.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		name = barrad_asinti.4.a
-		BAR_count_ambrosius = {
-			set_character_name = BAR_ambrosius
-			add_corps_commander_role = {
-				traits = {
-					pony_race_trait
-					BAR_possesed
-					inflexible_strategist
-				}
-				skill = 3
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 4
-				logistics_skill = 2
-			}
-		}
-		custom_effect_tooltip = ambrosius_stats_tp_5
-		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_country_flag = barrad_silver_star_alive
-						has_country_flag = barrad_viira_alive
-						has_country_flag = barrad_leopold_alive
-					}
-				}
-				country_event = {
-					id = barrad_asinti.41
-				}
-			}
-		}
-		custom_effect_tooltip = BAR_ambrosius_general
-	}
-	option = {
-		name = barrad_asinti.4.b
-		BAR_captain_gasienica = {
-			set_character_name = BAR_gasienica
-			add_corps_commander_role = {
-				traits = {
-					griffon_race_trait
-					BAR_possesed
-					infantry_leader
-				}
-				skill = 3
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				legacy_id = 997003
-			}
-		}
-		custom_effect_tooltip = gasienica_stats_tp
-		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_country_flag = barrad_silver_star_alive
-						has_country_flag = barrad_leopold_alive
-					}
-				}
-				country_event = {
-					id = barrad_asinti.41
-				}
-			}
-		}
-		custom_effect_tooltip = BAR_gasienica_general
+		name = barrad_asinti.7.a
+		add_political_power = 50
 	}
 }
 
 country_event = {
-	id = barrad_asinti.41
+	id = barrad_asinti.8
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.41"
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.8"
 	}
-	title = barrad_asinti.41.t
-	desc = barrad_asinti.41.d
+	title = barrad_asinti.8.t
+	desc = barrad_asinti.8.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		name = barrad_asinti.41.a
-		trigger = {
-			has_country_flag = barrad_leopold_alive
-		}
-		add_corps_commander_role = {
-			character = BAR_leopold_schmeller
-			traits = {
-				griffon_race_trait
-				BAR_possesed
-			}
-			skill = 5
-			attack_skill = 5
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 2
-		}
-		custom_effect_tooltip = BAR_leopold_general
-	}
-	option = {
-		name = barrad_asinti.41.b
-		trigger = {
-			has_country_flag = barrad_silver_star_alive
-		}
-		add_corps_commander_role = {
-			character = BAR_silver_star
-			traits = {
-				pony_race_trait
-				BAR_possesed
-			}
-			skill = 5
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 5
-			logistics_skill = 5
-		}
-		custom_effect_tooltip = BAR_silver_general
+		name = barrad_asinti.8.a
+		add_war_support = 0.1
 	}
 }
 
 country_event = {
-	id = barrad_asinti.5
+	id = barrad_asinti.9
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.5"
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.9"
 	}
-	title = barrad_asinti.5.t
-	desc = barrad_asinti.5.d
-	picture = GFX_event_crypt
+	title = barrad_asinti.9.t
+	desc = barrad_asinti.9.d
+	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		name = barrad_asinti.5.a		#iz it a joke
-		trigger = {
-			has_idea = BAR_temple_construct
-		}
-		add_political_power = 150
-	}
-	option = {
-		name = barrad_asinti.5.b		#...
-		trigger = {
-			OR = {
-				has_idea = BAR_temple_construct_z
-				has_idea = BAR_temple_construct_d
-			}
-		}
-		one_random_arms_factory = yes
-		one_random_industrial_complex = yes
-		one_random_infrastructure = yes
-	}
-	option = {
-		name = barrad_asinti.5.c		#nice but no
-		trigger = {
-			OR = {
-				has_idea = BAR_temple_construct_z_f
-				has_idea = BAR_temple_construct_z_l
-				has_idea = BAR_temple_construct_d_f
-				has_idea = BAR_temple_construct_d_l
-			}
-		}
-		remove_ideas = BAR_temple_construct_z_f
-		remove_ideas = BAR_temple_construct_z_l
-		remove_ideas = BAR_temple_construct_d_f
-		remove_ideas = BAR_temple_construct_d_l
-		two_random_arms_factory = yes
-		two_random_industrial_complex = yes
-		two_random_infrastructure = yes
-	}
-	option = {
-		name = barrad_asinti.5.e		#that might have a potential
-		trigger = {
-			has_country_flag = BAR_temple_reactor_integration
-			OR = {
-				has_idea = BAR_temple_construct_z_f
-				has_idea = BAR_temple_construct_z_l
-				has_idea = BAR_temple_construct_d_f
-				has_idea = BAR_temple_construct_d_l
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_z_f
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_z_f
-				add_idea = BAR_temple_builded_z_f
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_z_l
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_z_l
-				add_idea = BAR_temple_builded_z_l
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_d_f
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_d_f
-				add_idea = BAR_temple_builded_d_f
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_d_l
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_d_l
-				add_idea = BAR_temple_builded_d_l
-			}
-		}
-		set_country_flag = BAR_asinti_kill_count
-	}
-	option = {
-		name = barrad_asinti.5.f		#great now tear it apart
-		trigger = {
-			has_country_flag = BAR_temple_reactor_integration
-			OR = {
-				has_idea = BAR_temple_construct_z_f_p
-				has_idea = BAR_temple_construct_z_l_p
-				has_idea = BAR_temple_construct_z_f_g
-				has_idea = BAR_temple_construct_z_l_g
-				has_idea = BAR_temple_construct_d_f_p
-				has_idea = BAR_temple_construct_d_l_p
-				has_idea = BAR_temple_construct_d_f_g
-				has_idea = BAR_temple_construct_d_l_g
-			}
-		}
-		remove_ideas = BAR_temple_construct_z_f_p
-		remove_ideas = BAR_temple_construct_z_l_p
-		remove_ideas = BAR_temple_construct_z_f_g
-		remove_ideas = BAR_temple_construct_z_l_g
-		remove_ideas = BAR_temple_construct_d_f_p
-		remove_ideas = BAR_temple_construct_d_l_p
-		remove_ideas = BAR_temple_construct_d_f_g
-		remove_ideas = BAR_temple_construct_d_l_g
-		two_random_arms_factory = yes
-		two_random_infrastructure_and_slot = yes
-		three_random_industrial_complex = yes
-	}
-	option = {
-		name = barrad_asinti.5.g		#now we are talkin
-		trigger = {
-			has_country_flag = BAR_temple_reactor_integration
-			OR = {
-				has_idea = BAR_temple_construct_z_f_p
-				has_idea = BAR_temple_construct_z_l_p
-				has_idea = BAR_temple_construct_z_f_g
-				has_idea = BAR_temple_construct_z_l_g
-				has_idea = BAR_temple_construct_d_f_p
-				has_idea = BAR_temple_construct_d_l_p
-				has_idea = BAR_temple_construct_d_f_g
-				has_idea = BAR_temple_construct_d_l_g
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_z_f_p
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_z_f_p
-				add_idea = BAR_temple_builded_z_f_p
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_z_l_p
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_z_l_p
-				add_idea = BAR_temple_builded_z_l_p
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_z_f_g
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_z_f_g
-				add_idea = BAR_temple_builded_z_f_g
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_z_l_g
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_z_l_g
-				add_idea = BAR_temple_builded_z_l_g
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_d_f_p
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_d_f_p
-				add_idea = BAR_temple_builded_d_f_p
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_d_l_p
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_d_l_p
-				add_idea = BAR_temple_builded_d_l_p
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_d_f_g
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_d_f_g
-				add_idea = BAR_temple_builded_d_f_g
-			}
-		}
-		if = {
-			limit = {
-				has_idea = BAR_temple_construct_d_l_g
-			}
-			swap_ideas = {
-				remove_idea = BAR_temple_construct_d_l_g
-				add_idea = BAR_temple_builded_d_l_g
-			}
-		}
-		set_country_flag = BAR_asinti_kill_count
+		name = barrad_asinti.9.a
+		add_ideas = BAR_asinti_invasion
+		add_political_power = 100
 	}
 }
+
+country_event = {
+	id = barrad_asinti.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.10"
+	}
+	title = barrad_asinti.10.t
+	desc = barrad_asinti.10.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.10.a
+		BAR_asinti = {
+			add_trait = {
+				ideology = religious_socialism
+				trait = BAR_asinti_absent
+			}
+		}
+		country_event = { id = barrad_asinti.11 }
+	}
+}
+
+country_event = {
+	id = barrad_asinti.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.11"
+	}
+	title = barrad_asinti.11.t
+	desc = barrad_asinti.11.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.11.a
+		add_ideas = BAR_asinti_end
+	}
+}
+
+country_event = {
+	id = barrad_asinti.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.12"
+	}
+	title = barrad_asinti.12.t
+	desc = barrad_asinti.12.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.12.a
+	}
+}
+
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -8308,8 +8060,7 @@ country_event = {
 			}
 		}
 		swap_ideas = {
-			remove_idea = BAR_pentarchy
-			add_idea = BAR_leopold_rule
+			remove_idea = BAR_pentarchy_2
 		}
 		
 		add_stability = 0.1
@@ -9393,7 +9144,6 @@ country_event = {
 		add_ideas = poverty1
 		add_ideas = lack_of_scientists1
 		hidden_effect = {
-			set_country_flag = BAR_upgrade_society_pp
 			set_country_flag = BAR_ambrosius_diplomacy_unlocked
 			remove_ideas = BAR_no_volunteers
 		}

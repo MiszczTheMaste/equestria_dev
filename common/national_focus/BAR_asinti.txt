@@ -9,328 +9,662 @@ focus_tree = {
 		y = 3000
 	}
 	focus = {
-		id = BAR_all_rejoice
+		id = BAR_grand_ritual_preparation
 		icon = GFX_goal_revolution_pony
-		cost = 7
-		x = 12
+		cost = 3.5
+		x = 15
 		y = 0
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
 			country_event = {
+				id = barrad_asinti.6
+			}
+		}
+	}
+	focus = {
+		id = BAR_summon_the_spirit
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_grand_ritual_preparation
+		prerequisite = {
+			focus = BAR_grand_ritual_preparation
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_asinti.7
+			}
+		}
+	}
+	focus = {
+		id = BAR_a_new_path
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_summon_the_spirit
+		prerequisite = {
+			focus = BAR_summon_the_spirit
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = {
 				id = barrad_asinti.1
-				days = 1
 			}
 		}
 	}
 	focus = {
-		id = BAR_drop
-		icon = GFX_goal_break_rifle
-		cost = 7
-		relative_position_id = BAR_all_rejoice
+		id = BAR_convert_population
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = -2
 		y = 1
+		relative_position_id = BAR_a_new_path
+		prerequisite = {
+			focus = BAR_a_new_path
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_all_rejoice
-		}
 		completion_reward = {
-			add_ideas = volunteer_only
-			set_country_flag = manpower_laws_blocked
-		}
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-	}
-	focus = {
-		id = BAR_your
-		icon = GFX_goal_generic_consumer_goods
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_all_rejoice
-		}
-		completion_reward = {
-			add_ideas = civilian_economy
-			set_country_flag = demilitarized
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_shakles
-		icon = GFX_goal_nim_break_chains
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_all_rejoice
-		}
-		completion_reward = {
-			remove_ideas = BAR_pentarchy
-		}
-	}
-	focus = {
-		id = BAR_and
-		icon = GFX_goal_generic_dangerous_deal_pony_pony
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = 0
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_drop
-		}
-		prerequisite = {
-			focus = BAR_your
-		}
-		prerequisite = {
-			focus = BAR_shakles
-		}
-		completion_reward = {
-			country_event = {
-				id = barrad_asinti.2
-				days = 1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
 			}
 		}
 	}
 	focus = {
-		id = BAR_embrace
-		icon = GFX_goal_conscription_pony
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = -2
-		y = 3
+		id = BAR_food_drugs
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_convert_population
+		prerequisite = {
+			focus = BAR_convert_population
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_and
-		}
 		completion_reward = {
-			add_ideas = barrad_demon_conscription
-		}
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-	}
-	focus = {
-		id = BAR_new
-		icon = GFX_goal_industrial_pony
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_and
-		}
-		completion_reward = {
-			add_ideas = barrad_demon_economy
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-	}
-	focus = {
-		id = BAR_freedom
-		icon = GFX_goal_slavery
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = 2
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_and
-		}
-		completion_reward = {
-			add_ideas = barrad_demon_hierarchy
-		}
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-			FOCUS_FILTER_WAR_SUPPORT
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-	focus = {
-		id = BAR_a_price_to_be_paid
-		icon = GFX_goal_voodoo
-		cost = 7
-		relative_position_id = BAR_all_rejoice
-		x = 0
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_embrace
-		}
-		prerequisite = {
-			focus = BAR_new
-		}
-		prerequisite = {
-			focus = BAR_freedom
-		}
-		completion_reward = {
-			country_event = {
-				id = barrad_asinti.3
-				days = 1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.07
 			}
+			add_stability = 0.1
 		}
 	}
 	focus = {
-		id = BAR_demon_legions
-		icon = GFX_goal_riv_army
-		cost = 2
-		relative_position_id = BAR_a_price_to_be_paid
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_a_price_to_be_paid
-		}
-		completion_reward = {
-			add_ideas = BAR_possesed_soldiers
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_demon_commando
-		icon = GFX_goal_generic_special_forces
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		mutually_exclusive = {
-			focus = BAR_demon_mass_army
-		}
-		prerequisite = {
-			focus = BAR_demon_legions
-		}
-		completion_reward = {
-			add_ideas = BAR_demon_special_forces
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_demon_commando_mountain
-		icon = GFX_goal_GRF_beak_mines
-		cost = 7
-		relative_position_id = BAR_demon_legions
+		id = BAR_week_to_the_weak
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = 1
-		y = 2
+		y = 1
+		relative_position_id = BAR_convert_population
+		prerequisite = {
+			focus = BAR_convert_population
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_demon_commando
-		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1
-				uses = 2
-				category = mountaineers_tech
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = BAR_demon_commando_marine
-		icon = GFX_goal_generic_coastal_navy
-		cost = 7
-		relative_position_id = BAR_demon_legions
+		id = BAR_fleece_the_herd
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 2
+		relative_position_id = BAR_convert_population
+		prerequisite = {
+			focus = BAR_week_to_the_weak
+		}
+		prerequisite = {
+			focus = BAR_food_drugs
+		}
+		prerequisite = {
+			focus = BAR_airborne_drugs
+		}
+		prerequisite = {
+			focus = BAR_intensive_preaching
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			save_current_manpower = yes
+			every_owned_state = {
+				THIS = {
+					add_manpower = -2000
+				}
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			restore_previous_manpower = yes
+			remove_ideas = BAR_asinti_petnarchy
+		}
+	}
+	focus = {
+		id = BAR_convert_cultists
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_a_new_path
+		prerequisite = {
+			focus = BAR_a_new_path
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = BAR_airborne_drugs
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_convert_cultists
+		prerequisite = {
+			focus = BAR_convert_cultists
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = BAR_intensive_preaching
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_convert_cultists
+		prerequisite = {
+			focus = BAR_convert_cultists
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.11
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = BAR_new_world_order
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_fleece_the_herd
+		prerequisite = {
+			focus = BAR_fleece_the_herd
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = BAR_call_for_blood
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -10
+		y = 1
+		relative_position_id = BAR_new_world_order
+		prerequisite = {
+			focus = BAR_new_world_order
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = BAR_asinti_research
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_call_for_blood
+		prerequisite = {
+			focus = BAR_call_for_blood
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BAR_asinti_battlefield_drugs
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -4
+		y = 1
+		relative_position_id = BAR_call_for_blood
+		prerequisite = {
+			focus = BAR_call_for_blood
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = BAR_asinti_drugs
+		}
+	}
+	focus = {
+		id = BAR_asinti_enable_chargers
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -3
+		y = 1
+		relative_position_id = BAR_asinti_battlefield_drugs
+		prerequisite = {
+			focus = BAR_asinti_battlefield_drugs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_technology = {
+				tech_spirit_warriors = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_enable_knights
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_battlefield_drugs
+		prerequisite = {
+			focus = BAR_asinti_battlefield_drugs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_technology = {
+				tech_knights = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_enable_pegasi
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_battlefield_drugs
+		prerequisite = {
+			focus = BAR_asinti_battlefield_drugs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_technology = {
+				tech_pegasi = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_enable_ironpaws
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = 3
-		y = 2
+		y = 1
+		relative_position_id = BAR_asinti_battlefield_drugs
+		prerequisite = {
+			focus = BAR_asinti_battlefield_drugs
+		}
 		ai_will_do = {
 			factor = 10
 		}
+		completion_reward = {
+			set_technology = {
+				tech_ironpaws = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_super_drugs
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_battlefield_drugs
 		prerequisite = {
-			focus = BAR_demon_commando
+			focus = BAR_asinti_enable_chargers
+			focus = BAR_asinti_enable_knights
+			focus = BAR_asinti_enable_pegasi
+			focus = BAR_asinti_enable_ironpaws
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAR_asinti_drugs
+				add_idea = BAR_asinti_drugs_2
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_upgrade_chargers
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_enable_chargers
+		prerequisite = {
+			focus = BAR_asinti_enable_chargers
+		}
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		available = {
+			has_completed_focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAR_asinti_upgrade_chargers_tooltip
+		}
+	}
+	focus = {
+		id = BAR_asinti_upgrade_knights
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_enable_knights
+		prerequisite = {
+			focus = BAR_asinti_enable_knights
+		}
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		available = {
+			has_completed_focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAR_asinti_upgrade_knights_tooltip
+		}
+	}
+	focus = {
+		id = BAR_asinti_upgrade_pegasi
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_enable_pegasi
+		prerequisite = {
+			focus = BAR_asinti_enable_pegasi
+		}
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		available = {
+			has_completed_focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAR_asinti_upgrade_pegasi_tooltip
+		}
+	}
+	focus = {
+		id = BAR_asinti_upgrade_ironpaws
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_enable_ironpaws
+		prerequisite = {
+			focus = BAR_asinti_enable_ironpaws
+		}
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		available = {
+			has_completed_focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = BAR_asinti_upgrade_ironpaws_tooltip
+		}
+	}
+	focus = {
+		id = BAR_asinti_mountaineers
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -2
+		y = 2
+		relative_position_id = BAR_asinti_super_drugs
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				category = mountaineers_tech
+				uses = 2
+				bonus = 2
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_spec_forces
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_super_drugs
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = BAR_asinti_special_forces
+		}
+	}
+	focus = {
+		id = BAR_asinti_marines
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 2
+		relative_position_id = BAR_asinti_super_drugs
+		prerequisite = {
+			focus = BAR_asinti_super_drugs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				category = marines_tech
+				uses = 2
+				bonus = 2
+			}
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 2
+				uses = 1
+				technology = landing_craft
+				technology = tank_landing_craft
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_spec_forces_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_spec_forces
+		prerequisite = {
+			focus = BAR_asinti_spec_forces
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = BAR_asinti_special_forces_bonus
+		}
+	}
+	focus = {
+		id = BAR_asinti_spec_forces_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_spec_forces
+		prerequisite = {
+			focus = BAR_asinti_spec_forces
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 1
 				uses = 2
-				category = marine_tech
+				category = special_forces_tech
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
 		}
 	}
 	focus = {
-		id = BAR_demon_mass_army
-		icon = GFX_goal_generic_pony_volunteer
-		cost = 7
-		relative_position_id = BAR_demon_legions
+		id = BAR_asinti_spec_forces_4
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_asinti_spec_forces
+		prerequisite = {
+			focus = BAR_asinti_spec_forces_2
+		}
+		prerequisite = {
+			focus = BAR_asinti_spec_forces_3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAR_asinti_special_forces_bonus
+				add_idea = BAR_asinti_special_forces_bonus_2
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_weapons
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 3
+		y = 1
+		relative_position_id = BAR_call_for_blood
+		prerequisite = {
+			focus = BAR_call_for_blood
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_weapons_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = -2
 		y = 1
+		relative_position_id = BAR_asinti_weapons
+		prerequisite = {
+			focus = BAR_asinti_weapons
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		mutually_exclusive = {
-			focus = BAR_demon_commando
-		}
-		prerequisite = {
-			focus = BAR_demon_legions
-		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_mass_assault
-				cost_reduction = 0.5
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
 				uses = 2
-				category = cat_mass_assault
+				category = artillery
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
 		}
 	}
 	focus = {
-		id = BAR_demon_mass_army_rifles
-		icon = GFX_goal_generic_small_arms
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = -3
-		y = 2
+		id = BAR_asinti_weapons_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_weapons_2
+		prerequisite = {
+			focus = BAR_asinti_weapons_2
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_army
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -340,137 +674,103 @@ focus_tree = {
 				category = infantry_weapons
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
 	}
 	focus = {
-		id = BAR_demon_mass_army_rifles_magic
-		icon = GFX_goal_magical_weapon_focus
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_army
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = magical_bonus
-				bonus = 1
-				uses = 1
-				category = magical_tech
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_demon_adapt_to_battlefield
-		icon = GFX_focus_research
-		cost = 7
-		relative_position_id = BAR_demon_legions
+		id = BAR_asinti_air
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = 0
-		y = 3
+		y = 1
+		relative_position_id = BAR_asinti_weapons
+		prerequisite = {
+			focus = BAR_asinti_weapons
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_demon_mass_army_rifles_magic
-			focus = BAR_demon_commando_mountain
-		}
 		completion_reward = {
-			add_research_slot = 1
-			add_ideas = BAR_adapt_to_battlefield
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-			FOCUS_FILTER_ARMY_BONUS
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 2
+					uses = 1
+					category = light_air
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 2
+					category = light_fighter
+				}
+			}
 		}
 	}
 	focus = {
-		id = BAR_demon_summon_generals
-		icon = GFX_goal_the_black_book
-		cost = 7
-		relative_position_id = BAR_demon_legions
+		id = BAR_asinti_air_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_air
+		prerequisite = {
+			focus = BAR_asinti_air
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			626 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_air_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = 1
-		y = 4
+		y = 1
+		relative_position_id = BAR_asinti_weapons_3
+		prerequisite = {
+			focus = BAR_asinti_air_2
+		}
+		prerequisite = {
+			focus = BAR_asinti_weapons_3
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_demon_adapt_to_battlefield
-		}
 		completion_reward = {
-			country_event = {
-				id = barrad_asinti.4
-			}
+			add_ideas = BAR_asinti_cas_bonus
 		}
 	}
 	focus = {
-		id = BAR_demonic_knowledge
-		icon = GFX_goal_cry_book
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = -1
-		y = 4
+		id = BAR_asinti_support
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_asinti_weapons
+		prerequisite = {
+			focus = BAR_asinti_weapons
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_adapt_to_battlefield
-		}
-		completion_reward = {
-			Improve_Science_Base = yes
-		}
-	}
-	focus = {
-		id = BAR_demon_mass_assault
-		icon = GFX_goal_riv_army
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = -2
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_army_rifles_magic
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_army_rifles
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_mass_assault
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mass_assault
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_demon_support_comp
-		icon = GFX_goal_generic_construction2
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = -4
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_army_rifles_magic
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_army_rifles
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -486,616 +786,1370 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
 	}
 	focus = {
-		id = BAR_demon_general_assault
-		icon = GFX_goal_planning_bonus
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = -3
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_support_comp
-		}
-		prerequisite = {
-			focus = BAR_demon_mass_assault
-		}
-		completion_reward = {
-			add_ideas = BAR_general_assault
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_demon_commando_rifles
-		icon = GFX_goal_military_academy
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = 2
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_commando_marine
-		}
-		prerequisite = {
-			focus = BAR_demon_commando_mountain
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
-			add_tech_bonus = {
-				name = magical_tech_bonus
-				bonus = 1
-				uses = 1
-				category = magical_tech
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_demon_commando_arty
-		icon = GFX_goal_artillery
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = 4
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_commando_marine
-		}
-		prerequisite = {
-			focus = BAR_demon_commando_mountain
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = arty_bonus
-				bonus = 1
-				uses = 2
-				category = artillery
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_demon_commando_bonus
-		icon = GFX_goal_generic_special_forces
-		cost = 7
-		relative_position_id = BAR_demon_legions
-		x = 3
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demon_commando_arty
-		}
-		prerequisite = {
-			focus = BAR_demon_commando_rifles
-		}
-		completion_reward = {
-			add_ideas = BAR_demon_special_forces_bonus
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_rules_of_new_wolrd
-		icon = GFX_goal_new_temple
-		cost = 7
-		relative_position_id = BAR_demon_legions
+		id = BAR_asinti_hospitals
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = 0
-		y = 5
+		y = 1
+		relative_position_id = BAR_asinti_support
+		prerequisite = {
+			focus = BAR_asinti_support
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_demonic_knowledge
-			focus = BAR_demon_summon_generals
-		}
 		completion_reward = {
-			add_political_power = 150
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 2
+				uses = 2
+				category = hospital_tech
+			}
 		}
 	}
 	focus = {
-		id = BAR_the_righteous
-		icon = GFX_goal_support_from_GRU
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
+		id = BAR_asinti_hospitals_1
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = -1
 		y = 1
+		relative_position_id = BAR_asinti_hospitals
+		prerequisite = {
+			focus = BAR_asinti_hospitals
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		bypass = {
-			NOT = {
-				country_exists = GRU
-			}
-		}
-		prerequisite = {
-			focus = BAR_rules_of_new_wolrd
-		}
 		completion_reward = {
-			declare_war_on = {
-				target = GRU
-				type = annex_everything
+			set_technology = {
+				BAR_asinti_hospitals_tech_1 = 1
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = BAR_the_meek
-		icon = GFX_goal_riv_strike_south
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
+		id = BAR_asinti_hospitals_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
 		x = 1
 		y = 1
+		relative_position_id = BAR_asinti_hospitals
+		prerequisite = {
+			focus = BAR_asinti_hospitals
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		bypass = {
-			NOT = {
-				country_exists = ZES
+		completion_reward = {
+			set_technology = {
+				BAR_asinti_hospitals_tech_2 = 1
 			}
 		}
+	}
+	focus = {
+		id = BAR_asinti_hospitals_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_hospitals_1
 		prerequisite = {
-			focus = BAR_rules_of_new_wolrd
+			focus = BAR_asinti_hospitals_1
+		}
+		prerequisite = {
+			focus = BAR_asinti_hospitals_2
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
-			declare_war_on = {
+			set_technology = {
+				BAR_asinti_hospitals_tech_3 = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_poverty_ascetism
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_new_world_order
+		prerequisite = {
+			focus = BAR_new_world_order
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = bar_asinti_poverty
+		}
+	}
+	focus = {
+		id = BAR_literacy_indoctrination
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_new_world_order
+		prerequisite = {
+			focus = BAR_new_world_order
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = BAR_literacy_indoctrination
+		}
+	}
+	focus = {
+		id = BAR_grand_sanctuary
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_new_world_order
+		prerequisite = {
+			focus = BAR_new_world_order
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = BAR_capital_temple_0
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -3
+		y = 1
+		relative_position_id = BAR_grand_sanctuary
+		prerequisite = {
+			focus = BAR_grand_sanctuary
+		}
+		mutually_exclusive = {
+			focus = BAR_capital_temple_1
+			focus = BAR_capital_temple_2
+			focus = BAR_capital_temple_3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 100
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_capital_temple_1
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_grand_sanctuary
+		prerequisite = {
+			focus = BAR_grand_sanctuary
+		}
+		available = {
+			OR = {
+				has_idea = BAR_temple_construct_z
+				has_idea = BAR_temple_construct_d
+			}
+		}
+		mutually_exclusive = {
+			focus = BAR_capital_temple_0
+			focus = BAR_capital_temple_2
+			focus = BAR_capital_temple_3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+			two_random_industrial_complex = yes
+			one_random_infrastructure = yes
+		}
+	}
+	focus = {
+		id = BAR_capital_temple_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_grand_sanctuary
+		prerequisite = {
+			focus = BAR_grand_sanctuary
+		}
+		available = {
+			OR = {
+				has_idea = BAR_temple_construct_z_f
+				has_idea = BAR_temple_construct_z_l
+				has_idea = BAR_temple_construct_d_f
+				has_idea = BAR_temple_construct_d_l
+			}
+		}
+		mutually_exclusive = {
+			focus = BAR_capital_temple_1
+			focus = BAR_capital_temple_0
+			focus = BAR_capital_temple_3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_z_f
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_z_f
+					add_idea = BAR_temple_builded_z_f
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_z_l
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_z_l
+					add_idea = BAR_temple_builded_z_l
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_d_f
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_d_f
+					add_idea = BAR_temple_builded_d_f
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_d_l
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_d_l
+					add_idea = BAR_temple_builded_d_l
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_capital_temple_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 3
+		y = 1
+		relative_position_id = BAR_grand_sanctuary
+		prerequisite = {
+			focus = BAR_grand_sanctuary
+		}
+		available = {
+			OR = {
+				has_idea = BAR_temple_construct_z_f_p
+				has_idea = BAR_temple_construct_z_l_p
+				has_idea = BAR_temple_construct_z_f_g
+				has_idea = BAR_temple_construct_z_l_g
+				has_idea = BAR_temple_construct_d_f_p
+				has_idea = BAR_temple_construct_d_l_p
+				has_idea = BAR_temple_construct_d_f_g
+				has_idea = BAR_temple_construct_d_l_g
+			}
+		}
+		mutually_exclusive = {
+			focus = BAR_capital_temple_1
+			focus = BAR_capital_temple_2
+			focus = BAR_capital_temple_0
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_z_f_p
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_z_f_p
+					add_idea = BAR_temple_builded_z_f_p
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_z_l_p
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_z_l_p
+					add_idea = BAR_temple_builded_z_l_p
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_z_f_g
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_z_f_g
+					add_idea = BAR_temple_builded_z_f_g
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_z_l_g
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_z_l_g
+					add_idea = BAR_temple_builded_z_l_g
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_d_f_p
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_d_f_p
+					add_idea = BAR_temple_builded_d_f_p
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_d_l_p
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_d_l_p
+					add_idea = BAR_temple_builded_d_l_p
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_d_f_g
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_d_f_g
+					add_idea = BAR_temple_builded_d_f_g
+				}
+			}
+			if = {
+				limit = {
+					has_idea = BAR_temple_construct_d_l_g
+				}
+				swap_ideas = {
+					remove_idea = BAR_temple_construct_d_l_g
+					add_idea = BAR_temple_builded_d_l_g
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_blood_rituals
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 2
+		relative_position_id = BAR_grand_sanctuary
+		prerequisite = {
+			focus = BAR_capital_temple_0
+			focus = BAR_capital_temple_1
+			focus = BAR_capital_temple_2
+			focus = BAR_capital_temple_3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_country_flag = BAR_asinti_kill_count
+			country_event = { id = barrad_asinti.12 }
+			custom_effect_tooltip = BAR_blood_rituals_tooltip
+		}
+	}
+	focus = {
+		id = BAR_asinti_new_economy
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_blood_rituals
+		prerequisite = {
+			focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = barrad_demon_economy
+		}
+	}
+	focus = {
+		id = BAR_asinti_new_conscription
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_blood_rituals
+		prerequisite = {
+			focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = barrad_demon_conscription
+		}
+	}
+	focus = {
+		id = BAR_blood_for_better_future
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_blood_rituals
+		prerequisite = {
+			focus = BAR_blood_rituals
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = barrad_asinti.8 }
+		}
+	}
+	focus = {
+		id = BAR_asinti_attack_kasa
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_blood_for_better_future
+		prerequisite = {
+			focus = BAR_blood_for_better_future
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
 				target = ZES
 				type = annex_everything
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
 	}
 	focus = {
-		id = BAR_will_kneel
-		icon = GFX_goal_enslave_the_deer
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 0
-		y = 2
+		id = BAR_asinti_core_kasa
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_asinti_attack_kasa
+		prerequisite = {
+			focus = BAR_asinti_attack_kasa
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		bypass = {
-			NOT = {
-				country_exists = OLV
+		completion_reward = {
+			ZES = {
+				add_to_ROOT_potential_cores = yes
 			}
 		}
+	}
+	focus = {
+		id = BAR_asinti_attack_wittenland
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_attack_kasa
 		prerequisite = {
-			focus = BAR_the_righteous
+			focus = BAR_asinti_attack_kasa
 		}
-		prerequisite = {
-			focus = BAR_the_meek
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
-			declare_war_on = {
+			create_wargoal = {
+				target = WIT
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_core_wittenland
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_asinti_attack_wittenland
+		prerequisite = {
+			focus = BAR_asinti_attack_wittenland
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			WIT = {
+				add_to_ROOT_potential_cores = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_attack_olv
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_blood_for_better_future
+		prerequisite = {
+			focus = BAR_blood_for_better_future
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
 				target = OLV
 				type = annex_everything
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
 	}
 	focus = {
-		id = BAR_before_my_power
-		icon = GFX_goal_river_fed_suppression
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 0
-		y = 3
+		id = BAR_asinti_core_olv
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_asinti_attack_olv
+		prerequisite = {
+			focus = BAR_asinti_attack_olv
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_will_kneel
 		}
 		completion_reward = {
-			declare_war_on = {
-				type = annex_everything
-				target = WIT
+			OLV = {
+				add_to_ROOT_potential_cores = yes
 			}
-			declare_war_on = {
-				type = annex_everything
-				target = FRE
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = NIM
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = RCT
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = DEP
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = LCT
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = BAK
-			}
-			declare_war_on = {
-				type = annex_everything
-				target = DMT
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = BAR_forges_of_war
-		icon = GFX_goal_munitions_factories
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 3
+		id = BAR_asinti_attack_gryphus
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
 		y = 1
+		relative_position_id = BAR_asinti_attack_olv
+		prerequisite = {
+			focus = BAR_asinti_attack_olv
+		}
 		ai_will_do = {
 			factor = 10
 		}
+		completion_reward = {
+			create_wargoal = {
+				target = GRU
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_core_gryphus
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_asinti_attack_gryphus
 		prerequisite = {
-			focus = BAR_rules_of_new_wolrd
+			focus = BAR_asinti_attack_gryphus
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			GRU = {
+				add_to_ROOT_potential_cores = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_attack_riverlands
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_attack_wittenland
+		prerequisite = {
+			focus = BAR_asinti_attack_gryphus
+		}
+		prerequisite = {
+			focus = BAR_asinti_attack_wittenland
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					FRE = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = FRE
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					LCT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = LCT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					RCT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = RCT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NIM = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = NIM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					BAK = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = BAK
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					DMT = {
+						exists = yes
+					}
+				}
+				declare_war_on = {
+					target = DMT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_second_grand_ritual
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_attack_riverlands
+		prerequisite = {
+			focus = BAR_asinti_attack_riverlands
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = barrad_asinti.9 }
+		}
+	}
+	focus = {
+		id = BAR_asinti_where_it_all_began
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_second_grand_ritual
+		prerequisite = {
+			focus = BAR_asinti_second_grand_ritual
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = CTH
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_find_exact_place
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_where_it_all_began
+		prerequisite = {
+			focus = BAR_asinti_where_it_all_began
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ZAR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CGI
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_get_jumpoints
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_where_it_all_began
+		prerequisite = {
+			focus = BAR_asinti_where_it_all_began
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = MIT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MCW
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_source_of_power
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_find_exact_place
+		prerequisite = {
+			focus = BAR_asinti_get_jumpoints
+		}
+		prerequisite = {
+			focus = BAR_asinti_find_exact_place
+		}
+		available = {
+			CTH = {
+				all_cores_owned_by_ROOT = yes
+			}
+			CGI = {
+				all_cores_owned_by_ROOT = yes
+			}
+			ZAR = {
+				all_cores_owned_by_ROOT = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = barrad_asinti.10 }
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 7
+		y = 1
+		relative_position_id = BAR_new_world_order
+		prerequisite = {
+			focus = BAR_new_world_order
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1
-				uses = 2
 				category = industry
+				uses = 2
+				bonus = 1
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
 	}
 	focus = {
-		id = BAR_inf
-		icon = GFX_goal_generic_construct_civilian
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 2
-		y = 2
+		id = BAR_asinti_industry_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_industry
+		prerequisite = {
+			focus = BAR_asinti_industry
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_forges_of_war
 		}
 		completion_reward = {
-			two_random_infrastructure = yes
-			two_random_infrastructure = yes
+			one_random_arms_factory = yes
 		}
 	}
 	focus = {
-		id = BAR_rock_crushers
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 2
-		y = 3
+		id = BAR_asinti_industry_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_industry
+		prerequisite = {
+			focus = BAR_asinti_industry
+		}
 		ai_will_do = {
 			factor = 10
 		}
+		completion_reward = {
+			increase_science_base = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_4
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_asinti_industry_2
 		prerequisite = {
-			focus = BAR_inf
+			focus = BAR_asinti_industry_2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+			increase_society_development = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_5
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_industry_2
+		prerequisite = {
+			focus = BAR_asinti_industry_2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_6
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_industry_3
+		prerequisite = {
+			focus = BAR_asinti_industry_3
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
 			two_random_industrial_complex = yes
 		}
 	}
 	focus = {
-		id = BAR_work_for_weak
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 4
-		y = 2
+		id = BAR_asinti_industry_7
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_asinti_industry_3
+		prerequisite = {
+			focus = BAR_asinti_industry_3
+		}
 		ai_will_do = {
 			factor = 10
 		}
+		completion_reward = {
+			one_random_industrial_complex = yes
+			increase_society_development = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_10
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_industry_5
 		prerequisite = {
-			focus = BAR_forges_of_war
+			focus = BAR_asinti_industry_5
+		}
+		prerequisite = {
+			focus = BAR_asinti_industry_6
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			increase_society_development = yes
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_11
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_industry_10
+		prerequisite = {
+			focus = BAR_asinti_industry_10
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
 			two_random_arms_factory = yes
 		}
 	}
 	focus = {
-		id = BAR_weapon_mastery
-		icon = GFX_goal_generic_military_equipment
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 4
-		y = 3
+		id = BAR_asinti_industry_12
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_industry_10
+		prerequisite = {
+			focus = BAR_asinti_industry_10
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_work_for_weak
-		}
 		completion_reward = {
-			two_random_arms_factory = yes
+			one_random_arms_factory = yes
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
-		id = BAR_repurpose_temple
-		icon = GFX_goal_new_temple
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = 3
-		y = 4
+		id = BAR_asinti_industry_13
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_industry_11
+		prerequisite = {
+			focus = BAR_asinti_industry_11
+		}
 		ai_will_do = {
 			factor = 10
+		}
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_14
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_industry_11
+		prerequisite = {
+			focus = BAR_asinti_industry_11
+			focus = BAR_asinti_industry_12
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_15
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_industry_12
+		prerequisite = {
+			focus = BAR_asinti_industry_12
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			625 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_16
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_industry_13
+		prerequisite = {
+			focus = BAR_asinti_industry_13
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_asinti_industry_17
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_industry_15
+		prerequisite = {
+			focus = BAR_asinti_industry_15
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_asinti_fleet
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 13
+		y = 1
+		relative_position_id = BAR_new_world_order
+		prerequisite = {
+			focus = BAR_new_world_order
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = BAR_have_builded_temple
-				hidden_trigger = {
-					OR = {
-						has_idea = BAR_temple_construct
-						has_idea = BAR_temple_construct_z
-						has_idea = BAR_temple_construct_d
-						has_idea = BAR_temple_construct_z_f
-						has_idea = BAR_temple_construct_z_l
-						has_idea = BAR_temple_construct_d_f
-						has_idea = BAR_temple_construct_d_l
-						has_idea = BAR_temple_construct_z_f_p
-						has_idea = BAR_temple_construct_z_l_p
-						has_idea = BAR_temple_construct_z_f_g
-						has_idea = BAR_temple_construct_z_l_g
-						has_idea = BAR_temple_construct_d_f_p
-						has_idea = BAR_temple_construct_d_l_p
-						has_idea = BAR_temple_construct_d_f_g
-						has_idea = BAR_temple_construct_d_l_g
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_coastal = yes
 					}
 				}
+				two_random_dockyards = yes
 			}
-		}
-		prerequisite = {
-			focus = BAR_weapon_mastery
-		}
-		prerequisite = {
-			focus = BAR_rock_crushers
-		}
-		completion_reward = {
-			country_event = {
-				id = barrad_asinti.5
-				days = 1
+			else = {
+				custom_effect_tooltip = two_dockyards_tooltip
 			}
 		}
 	}
 	focus = {
-		id = BAR_masters_of_sky
-		icon = GFX_goal_generic_build_airforce
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = -3
+		id = BAR_asinti_fleet_1
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
 		y = 1
+		relative_position_id = BAR_asinti_fleet
+		prerequisite = {
+			focus = BAR_asinti_fleet
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		prerequisite = {
-			focus = BAR_rules_of_new_wolrd
-		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 2
 				uses = 2
-				category = air_doctrine
+				category = cl_tech
+				category = ca_tech
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 2
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	focus = {
-		id = BAR_demonic_light_planes
-		icon = GFX_goal_generic_air_fighter
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = -4
-		y = 2
+		id = BAR_asinti_fleet_2
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_fleet
+		prerequisite = {
+			focus = BAR_asinti_fleet
+		}
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		mutually_exclusive = {
-			focus = BAR_demonic_heavy_planes
-		}
-		prerequisite = {
-			focus = BAR_masters_of_sky
 		}
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					any_owned_state = {
+						is_coastal = yes
+					}
 				}
-				add_tech_bonus = {
-					name = medium_air
-					bonus = 1
-					uses = 1
-					category = medium_air
-				}
+				two_random_dockyards = yes
+				one_random_dockyard = yes
 			}
 			else = {
-				add_tech_bonus = {
-					name = tactical_bomber
-					bonus = 1
-					uses = 1
-					category = tactical_bomber
-				}
+				custom_effect_tooltip = three_dockyards_tooltip
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
 		}
 	}
 	focus = {
-		id = BAR_demonic_heavy_planes
-		icon = GFX_focus_usa_escort_fighters
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = -2
-		y = 2
+		id = BAR_asinti_fleet_3
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_fleet_1
+		prerequisite = {
+			focus = BAR_asinti_fleet_1
+		}
+		prerequisite = {
+			focus = BAR_asinti_fleet_2
+		}
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		mutually_exclusive = {
-			focus = BAR_demonic_light_planes
+		completion_reward = {
+			hidden_effect = {
+				set_technology = {
+					ship_hull_super_heavy = 1
+					popup = no
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "Man the Guns"
+						}
+					}
+					load_oob = BAR_flying_dutchman_legacy
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Flying Feathisian"
+						type = ship_hull_super_heavy_1
+						name_group = BAR_BB_BC_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_super_heavy_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = heavy_ship_engine_2
+							fixed_ship_secondaries_slot = dp_ship_secondaries_3
+							fixed_ship_armor_slot = ship_armor_shbb
+							front_1_custom_slot = ship_super_heavy_battery_1
+							front_2_custom_slot = ship_super_heavy_battery_1
+							mid_1_custom_slot = dp_ship_secondaries_3
+							mid_2_custom_slot = dp_ship_secondaries_3
+							mid_3_custom_slot = dp_ship_secondaries_3
+							rear_1_custom_slot = ship_super_heavy_battery_1
+							rear_2_custom_slot = ship_super_heavy_battery_1
+						}
+					}
+					load_oob = BAR_flying_dutchman
+				}
+			}
+			custom_effect_trigger = BAR_flying_dutchman_tooltip
 		}
+	}
+	focus = {
+		id = BAR_asinti_fleet_4
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_asinti_fleet_3
 		prerequisite = {
-			focus = BAR_masters_of_sky
+			focus = BAR_asinti_fleet_3
+		}
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					any_owned_state = {
+						is_coastal = yes
+					}
 				}
-				add_tech_bonus = {
-					name = heavy_air
-					bonus = 1
-					uses = 1
-					category = heavy_air
-				}
+				two_random_dockyards = yes
 			}
 			else = {
-				add_tech_bonus = {
-					name = bomber_bonus
-					bonus = 1
-					uses = 1
-					category = cat_strategic_bomber
-				}
+				custom_effect_tooltip = two_dockyards_tooltip
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
 		}
 	}
 	focus = {
-		id = BAR_demonic_hellfire_bringers
-		icon = GFX_goal_MAF_Napalm
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = -3
-		y = 3
+		id = BAR_asinti_fleet_5
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_fleet_4
+		prerequisite = {
+			focus = BAR_asinti_fleet_4
+		}
+		available = {
+			any_owned_state = {
+				is_coastal = yes
+			}
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_demonic_heavy_planes
-			focus = BAR_demonic_light_planes
 		}
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					any_owned_state = {
+						is_coastal = yes
+					}
 				}
-				add_tech_bonus = {
-					name = heavy_air
-					bonus = 1
-					uses = 1
-					category = heavy_air
-				}
+				two_random_dockyards = yes
+				one_random_dockyard = yes
 			}
 			else = {
-				add_tech_bonus = {
-					name = bomber_bonus
-					bonus = 1
-					uses = 1
-					category = cat_strategic_bomber
-				}
+				custom_effect_tooltip = three_dockyards_tooltip
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
 	}
 	focus = {
-		id = BAR_demonic_doom_bringers
-		icon = GFX_goal_bombs_away
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = -2
-		y = 4
+		id = BAR_asinti_fleet_6
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_asinti_fleet_3
+		prerequisite = {
+			focus = BAR_asinti_fleet_3
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		mutually_exclusive = {
-			focus = BAR_demonic_grim_reapers
-		}
-		prerequisite = {
-			focus = BAR_demonic_heavy_planes
-			focus = BAR_demonic_light_planes
-		}
-		prerequisite = {
-			focus = BAR_demonic_hellfire_bringers
-		}
 		completion_reward = {
-			add_ideas = BAR_strat_bomber_bonus
-		}
-		search_filters = {
-			FOCUS_FILTER_AIRFORCE_BONUS
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 4
+				category = ship_modules_tech
+			}
 		}
 	}
 	focus = {
-		id = BAR_demonic_grim_reapers
-		icon = GFX_goal_air_armada
-		cost = 7
-		relative_position_id = BAR_rules_of_new_wolrd
-		x = -4
-		y = 4
+		id = BAR_asinti_fleet_7
+		icon = GFX_goal_revolution_pony
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_asinti_fleet_6
+		prerequisite = {
+			focus = BAR_asinti_fleet_6
+		}
 		ai_will_do = {
 			factor = 10
 		}
-		mutually_exclusive = {
-			focus = BAR_demonic_doom_bringers
-		}
-		prerequisite = {
-			focus = BAR_demonic_heavy_planes
-			focus = BAR_demonic_light_planes
-		}
-		prerequisite = {
-			focus = BAR_demonic_hellfire_bringers
-		}
 		completion_reward = {
-			add_ideas = BAR_fighters_bonus
-		}
-		search_filters = {
-			FOCUS_FILTER_AIRFORCE_BONUS
+			add_tech_bonus = {
+				name = navy_bonus
+				bonus = 1
+				uses = 4
+				category = ship_modules_tech
+			}
 		}
 	}
 }

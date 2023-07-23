@@ -11,17 +11,6 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "bar_viira_zone"
-		position = { x = 0 y = 0 }
-		
-		buttonType = {
-			name = "bar_viira_zone_button"
-			spriteType = "GFX_BAR_viira_spread_zone_button"
-			position = {x = 436 y = 8 }
-			pdx_tooltip = "bar_viira_zone_tooltip"
-		}
-	}
-	containerWindowType = {
 		name = "bar_viira_nukes"
 		position = { x = 0 y = 0 }
 		
@@ -2564,6 +2553,17 @@ guiTypes = {
 			position = { x=827 y=40 }
 			pdx_tooltip = "bar_pen_fight_silver_in"
 		}
-	
+	}
+
+	containerwindowtype = {
+		name = "bar_viira_bar_climate_container"
+		position = { x = -10 y = 5 }
+		size = { width = 86 height = 60 }
+
+		buttonType = {
+			name = "bar_viira_bar_climate_button"
+			position = { x = 0 y = 0 }
+			quadtexturesprite = "GFX_BAR_viira_spread_zone_button"
+		}
 	}
 }

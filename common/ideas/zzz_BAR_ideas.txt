@@ -521,6 +521,26 @@ ideas = {
 				political_power_gain = -0.30
 			}
 		}
+		BAR_pentarchy_2 = {
+			picture = DED_magehold
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				research_speed_factor = -0.35
+				political_power_gain = -0.25
+			}
+		}
+		BAR_pentarchy_3 = {
+			picture = DED_magehold
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				research_speed_factor = -0.2
+				political_power_gain = -0.20
+			}
+		}
 		BAR_ambrosius_goods = {
 			picture = BAR_money_party
 
@@ -1379,22 +1399,7 @@ ideas = {
 				}
 			}
 		}
-		barrad_demon_conscription = {
-			picture = pony_militarization
-			modifier = {
-				conscription = 0.335
-			}
-		}
-		barrad_demon_economy = {
-			picture = partial_economic_mobilisation_red
-			modifier = {
-				consumer_goods_factor = -0.25
-				conversion_cost_civ_to_mil_factor = -1
-				production_speed_arms_factory_factor = 0.6
-				fuel_gain_factor = 0.4
-				max_fuel_factor = 0.25
-			}
-		}
+		
 		barrad_demon_hierarchy = {
 			picture = FRA_scw_intervention_nationalists_focus
 			modifier = {
@@ -1429,35 +1434,13 @@ ideas = {
 				experience_gain_army_factor = 0.25 
 			}
 		}
-		BAR_demon_special_forces = {
-			picture = pony_soldier
-			modifier = {
-				special_forces_min = 0
-				special_forces_cap = 1
-				special_forces_training_time_factor = -0.5
-			}
-		}
-		BAR_demon_special_forces_bonus = {
-			picture = generic_army
-			modifier = {
-				special_forces_attack_factor = 0.15
-				special_forces_defence_factor = 0.25
-				army_org_factor = 0.1
-			}
-		}
 		BAR_strat_bomber_bonus = {
 			picture = strategic_bombing_focus
 			modifier = {
 				air_strategic_bomber_bombing_factor = 0.05
 			}
 		}
-		BAR_fighters_bonus = {
-			picture = generic_fighter_production_diverted
-			modifier = {
-				air_close_air_support_attack_factor = 0.15 
-				air_close_air_support_agility_factor = 0.15
-			}
-		}
+		
 		BAR_temple_builded_z_f = {
 			picture = generic_pp_unity_bonus
 			modifier = {
@@ -2227,13 +2210,13 @@ ideas = {
 		BAR_blood_curse_idea = {
 			picture = ELF_invincible
 			modifier = {
-				non_core_manpower = 1
+				non_core_manpower = 0.1
 			}
 		}
 		BAR_call_for_blood_idea = {
 			picture = generic_purge
 			modifier = {
-				justify_war_goal_time = -0.5
+				justify_war_goal_time = -0.25
 			}
 		}
 		BAR_leopold_asinti_help = {
@@ -2247,33 +2230,25 @@ ideas = {
 		BAR_leopold_surreal_mathematic_idea = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.03
 			}
 		}
 		BAR_leopold_surreal_mathematic_idea_1 = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.15
+				research_speed_factor = 0.05
 			}
 		}
 		BAR_leopold_surreal_mathematic_idea_2 = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.3
+				research_speed_factor = 0.1
 			}
 		}
 		BAR_leopold_surreal_mathematic_idea_3 = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.6
-			}
-		}
-		BAR_leopold_rule = {
-			picture = chi_war_of_resistance3
-
-			modifier = {
-				war_support_factor = 0.20
-				research_speed_factor = -0.5
+				research_speed_factor = 0.15
 			}
 		}
 		BAR_leopold_cult_fanatism = {
@@ -2306,6 +2281,80 @@ ideas = {
 			modifier = {
 				max_planning = 0.25
 				planning_speed = 0.3
+			}
+		}
+		BAR_asinti_drugs = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				army_speed_factor = 0.10
+				army_morale_factor = -0.05
+			}
+		}
+		BAR_asinti_drugs_2 = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				army_speed_factor = 0.15
+				army_morale_factor = -0.1
+			}
+		}
+		BAR_asinti_special_forces = {
+			picture = pony_soldier
+			modifier = {
+				special_forces_min = 100
+				special_forces_cap = 1
+				special_forces_training_time_factor = -0.5
+			}
+		}
+		BAR_asinti_special_forces_bonus = {
+			picture = generic_army
+			modifier = {
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.25
+				army_org_factor = 0.1
+			}
+		}
+		BAR_asinti_special_forces_bonus_2 = {
+			picture = generic_army
+			modifier = {
+				special_forces_attack_factor = 0.25
+				special_forces_defence_factor = 0.25
+				army_org_factor = 0.1
+				special_forces_training_time_factor = -0.25
+			}
+		}
+		BAR_asinti_cas_bonus = {
+			picture = generic_fighter_production_diverted
+			modifier = {
+				air_close_air_support_attack_factor = 0.15 
+				air_close_air_support_agility_factor = 0.15
+			}
+		}
+		BAR_asinti_petnarchy = {
+			picture = DED_magehold
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				research_speed_factor = -0.2
+			}
+		}
+		BAR_asinti_invasion = {
+			picture = DED_magehold
+
+			modifier = {
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.25
+			}
+		}
+		BAR_asinti_end = {
+			picture = DED_magehold
+
+			modifier = {
+				justify_war_goal_time = -0.75
 			}
 		}
 	}

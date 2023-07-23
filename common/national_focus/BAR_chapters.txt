@@ -425,6 +425,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		prerequisite = {
+			focus = BAR_hunting_party
+		}
 		completion_reward = {
 			country_event = {
 				days = 1
@@ -860,7 +863,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			#if all taken will unlock focus about extracting meteor in later milestones
 			add_resource = {
 				type = crystals
 				amount = 8
@@ -868,6 +870,11 @@ focus_tree = {
 			}
 			add_resource = {
 				type = tungsten
+				amount = 3
+				state = 624
+			}
+			add_resource = {
+				type = aluminium
 				amount = 2
 				state = 624
 			}
@@ -1045,7 +1052,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				days = 1
-				id = barrad_second.2
+				id = barrad_second.22
 			}
 		}
 	}
@@ -1217,8 +1224,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		prerequisite = {
+			focus = BAR_meeting_of_four_two
+		}
 		completion_reward = {
 			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = BAR_pentarchy_2
+				add_idea = BAR_pentarchy_3
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -1470,7 +1484,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#harmelss and not that usefull - yet
 		id = BAR_leopold_clockwerks
 		icon = GFX_goal_economic_control
 		cost = 3.5
@@ -1950,7 +1963,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		#who would want to summon demons in his house when they can build a temple for it
 		id = BAR_architectural_thought
 		icon = GFX_goal_new_temple
 		cost = 3.5
@@ -2363,6 +2375,9 @@ focus_tree = {
 		x = 12
 		y = 20
 		available = {
+		}
+		prerequisite = {
+			focus = BAR_begin_building
 		}
 		ai_will_do = {
 			factor = 10

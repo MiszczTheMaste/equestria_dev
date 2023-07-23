@@ -30,6 +30,16 @@ BAR_leopold_decisions = {
 		base = 100
 	}
 }
+BAR_asinti_pentarchs = {
+	icon = knife_blood
+	
+	allowed = {
+		original_tag = BAR
+	}
+	priority = {
+		base = 101
+	}
+}
 BAR_asinti_blood_sacrifices = {
 	icon = knife_blood
 	
@@ -103,16 +113,6 @@ BAR_ambrosius_boredoom = {
 		base = 99
 	}
 }
-BAR_society_upgrade_lame = {
-	icon = GFX_decision_category_generic_industry
-	
-	allowed = {
-		original_tag = BAR
-	}
-	priority = {
-		base = 99
-	}
-}
 BAR_viira_spells = {
 	icon = GFX_decision_generic_magic
 	
@@ -141,16 +141,6 @@ BAR_reactor_research = {
 	}
 	priority = {
 		base = 98
-	}
-}
-BAR_leopold_smash = {
-	icon = GFX_decision_griffon_bandits
-	
-	allowed = {
-		original_tag = BAR
-	}
-	priority = {
-		base = 97
 	}
 }
 BAR_strike_the_earth_cat = {

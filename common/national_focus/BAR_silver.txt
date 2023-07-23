@@ -2247,7 +2247,6 @@ focus_tree = {
 		completion_reward = {
 			increase_society_development_gradual = yes
 			custom_effect_tooltip = BAR_can_upgrade_society
-			set_country_flag = BAR_upgrade_society_pp
 		}
 	}
 }

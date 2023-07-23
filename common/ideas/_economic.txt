@@ -959,6 +959,27 @@ ideas = {
    				factor = 0
    			}
 		}
+		barrad_demon_economy = {
+			picture = partial_economic_mobilisation_red
+			visible = {
+				tag = BAR
+				has_completed_focus = BAR_grand_ritual_preparation
+			}
+			allowed = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+
+			cancel_if_invalid = no
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -1
+				production_speed_arms_factory_factor = 0.3
+			}
+		}
 	}
 
 	trade_laws = {

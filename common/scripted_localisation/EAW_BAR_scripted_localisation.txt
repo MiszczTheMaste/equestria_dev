@@ -797,3 +797,22 @@ defined_text = {
 		localization_key = BAR_esb_desc_text_1
 	}
 }
+defined_text = {
+	name = BAR_viira_needed_resources
+	text = {
+		trigger = {
+			check_variable = {
+				BAR_resources_viira > 1999
+			}
+		}
+		localization_key = BAR_viira_needed_resources_enough
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				BAR_resources_viira < 2000
+			}
+		}
+		localization_key = BAR_viira_needed_resources_not_enough
+	}
+}

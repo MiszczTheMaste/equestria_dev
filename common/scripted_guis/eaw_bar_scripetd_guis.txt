@@ -245,33 +245,36 @@ scripted_gui = {
 			}
 		}
 	}
-	bar_viira_nukes = {
-		window_name = "bar_viira_nukes"
-		context_type = selected_state_context
-		parent_window_token = selected_state_view
+	bar_viira_map_overlays = {
+		window_name = "bar_viira_map_overlays_container"
+		parent_window_name = "MapmodesInterface_Ingame"
+		context_type = player_context
+		dirty = BAR_viira_control
 		visible = {
 			ROOT = {
 				tag = BAR
 				has_variable = BAR_viira_control
 			}
-			controller = {
-				has_war_with = BAR
-			}
-			any_neighbor_state = {
-				is_controlled_by = BAR
-			}
 		}
 		effects = {
 			bar_viira_nukes_button_click = {
-				ROOT = {
-					launch_nuke = {
-						state = PREV
-						use_nuke = no
+				if = {
+					limit = {
+						has_country_flag = bar_viira_nuke_mode
 					}
-					add_to_variable = {
-						viira_mana_overload = 5
+					clr_country_flag = bar_viira_nuke_mode
+				} else = {
+					set_country_flag = bar_viira_nuke_mode
+				}
+			}
+			bar_viira_zone_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_zone_mode
 					}
-					bar_viira_spells_max_overload = yes
+					clr_country_flag = bar_viira_zone_mode
+				} else = {
+					set_country_flag = bar_viira_zone_mode
 				}
 			}
 		}

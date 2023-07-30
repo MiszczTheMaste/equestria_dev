@@ -166,6 +166,11 @@ characters={
 			planning_skill=3
 			logistics_skill=3
 			legacy_id=9996
+			visible = {
+				NOT = {
+					has_country_flag = BAR_asinti_general_hidden
+				}
+			}
 		}
 	}
 	BAR_leopold_schmeller={

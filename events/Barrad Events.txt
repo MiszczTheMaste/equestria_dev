@@ -1,5 +1,4 @@
-﻿add_namespace = barrad_raid
-add_namespace = barrad_realtions_ideas
+﻿add_namespace = barrad_realtions_ideas
 add_namespace = barrad_death
 add_namespace = barrad_end
 add_namespace = barrad_friends
@@ -58,7 +57,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_cheat.2.a
-		load_focus_tree = barrad_focus_tree_blood_count
+		load_focus_tree = barrad_focus_tree_mad_ambrosius
 	}
 	option = {
 		name = bar_cheat.2.a
@@ -630,13 +629,9 @@ country_event = {
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		#whoops
 		name = barrad_end.1.a
-		modify_country_flag = {
-			flag = barrad_endgame
-			value = 1
-		}
-		load_focus_tree = barrad_focus_tree_blood_count
+		clr_country_flag = barrad_early_game
+		load_focus_tree = barrad_focus_tree_mad_ambrosius
 	}
 }
 
@@ -651,7 +646,6 @@ country_event = {
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		#whoops
 		name = barrad_end.2.a
 		load_focus_tree = generic_griffon_focus
 		add_popularity = {
@@ -660,10 +654,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = BAR_end_of_pentarchy
-			set_country_flag = {
-				flag = barrad_endgame
-				value = 1
-			}
+			clr_country_flag = barrad_early_game
 			barrad_kill_leopold = yes
 			barrad_kill_asinti = yes
 			barrad_kill_viira = yes
@@ -2703,9 +2694,6 @@ country_event = {
 	option = {
 		name = barrad_first.51.a
 		set_country_flag = barrad_killing_active
-		hidden_effect = {
-			load_focus_tree = barrad_focus_tree_next
-		}
 	}
 }
 
@@ -2919,7 +2907,6 @@ country_event = {
 					BAR_nuclear_research = 5
 				}
 			}
-			load_focus_tree = barrad_focus_tree_third
 		}
 	}
 }
@@ -3402,6 +3389,8 @@ country_event = {
 	option = {
 		name = barrad_third.9.f
 		hidden_effect = {
+			set_country_flag = BAR_nuclear_construction
+			set_country_flag = bar_unlock_unicorn_ms_3
 			if = {
 				limit = {
 					has_country_flag = barrad_viira_alive
@@ -3427,25 +3416,6 @@ country_event = {
 					BAR_nuclear_progress = 5
 				}
 			}
-			load_focus_tree = barrad_focus_tree_fourth
-		}
-	}
-}
-
-country_event = {
-	id = barrad_fourth.1
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_fourth.1"
-	}
-	title = barrad_fourth.1.t
-	desc = barrad_fourth.1.d
-	picture = GFX_event_old_mine
-	is_triggered_only = yes
-	option = {
-		name = barrad_fourth.1.a
-		hidden_effect = {
-			set_country_flag = BAR_nuclear_construction
-			set_country_flag = bar_unlock_unicorn_ms_3
 		}
 	}
 }
@@ -3516,10 +3486,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			modify_country_flag = {
-				flag = barrad_endgame
-				value = 1
-			}
+			clr_country_flag = barrad_early_game
 			BAR_remove_cooperation = yes
 			set_country_flag = bar_unlock_unicorn_ms_4
 			set_country_flag = bar_unlock_unicorn_ms_5
@@ -3739,10 +3706,7 @@ country_event = {
 				remove_ideas = BAR_relations_silver_viira_positive
 				remove_ideas = BAR_relations_asinti_viira_negative
 				remove_ideas = BAR_relations_asinti_viira_positive
-				modify_country_flag = {
-					flag = barrad_endgame
-					value = 1
-				}
+				clr_country_flag = barrad_early_game
 				load_focus_tree = barrad_focus_tree_sane_ambrosius
 				swap_ideas = {
 					remove_idea = BAR_pentarchy
@@ -3776,7 +3740,7 @@ country_event = {
 		}
 		else = {
 			barrad_kill_viira = yes
-			load_focus_tree = barrad_focus_tree_blood_count
+			load_focus_tree = barrad_focus_tree_mad_ambrosius
 		}
 	}
 }
@@ -6943,13 +6907,26 @@ country_event = {
 	option = {
 		name = barrad_silver.2.a
 		hidden_effect = {
-			if = {
-				limit = {
-					BAR_silver_star = {
-						is_unit_leader = yes
+			BAR_silver_star = {
+				set_portraits = {
+					civilian = {
+						large = "gfx/leaders/BAR/lich.tga"
+					}
+					army = {
+						large = "gfx/leaders/BAR/lich.tga"
+						small = "gfx/interface/ideas/Advisors/BAR/idea_lich.tga"
 					}
 				}
-				remove_unit_leader_role = BAR_silver_star
+				remove_trait = {
+					trait = pony_race_trait
+				}
+				add_trait = {
+					trait = undead_race_trait
+				}
+				add_trait = {
+					trait = BAR_archlich
+				}
+				promote_leader = yes
 			}
 		}
 	}
@@ -6967,33 +6944,6 @@ country_event = {
 	option = {
 		name = barrad_silver.3.a
 		hidden_effect = {
-			BAR_silver_star = {
-				set_portraits = {
-					civilian = {
-						large = "gfx/leaders/BAR/lich.tga"
-					}
-					army = {
-						large = "gfx/leaders/BAR/lich.tga"
-						small = "gfx/interface/ideas/Advisors/BAR/idea_lich.tga"
-					}
-				}
-				remove_trait = {
-					trait = pony_race_trait
-				}
-				add_trait = {
-					trait = undead_race_trait
-				}
-				add_field_marshal_role = {
-					traits = {
-						BAR_archlich
-					}
-					skill = 3
-					attack_skill = 4
-					defense_skill = 2
-					planning_skill = 4
-					logistics_skill = 3
-				}
-			}
 			change_all_province_names = yes
 		}
 		bar_kill_advisors = yes
@@ -7023,62 +6973,8 @@ country_event = {
 					add_trait = {
 						trait = undead_race_trait
 					}
-				}
-				if = {
-					limit = {
-						has_idea = BAR_undead_army_1
-					}
-					BAR_oleander = {
-						add_trait = {
-							trait = BAR_mindless_undead
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAR_undead_army_2
-					}
-					BAR_oleander = {
-						add_trait = {
-							trait = BAR_mindless_undead
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAR_undead_army_3
-					}
-					BAR_oleander = {
-						add_trait = {
-							trait = BAR_lesser_lich
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAR_undead_army_4
-					}
-					BAR_oleander = {
-						add_trait = {
-							trait = BAR_lesser_lich
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BAR_undead_army_5
-					}
-					BAR_oleander = {
-						add_trait = {
-							trait = BAR_lesser_lich
-						}
-					}
-				}
-				else = {
-					BAR_oleander = {
-						add_trait = {
-							trait = BAR_mindless_undead
-						}
+					add_trait = {
+						trait = BAR_lesser_lich
 					}
 				}
 			}
@@ -7090,14 +6986,7 @@ country_event = {
 					popup = no
 					barrad_asinti_alive = 0
 				}
-				if = {
-					limit = {
-						BAR_asinti = {
-							is_unit_leader = yes
-						}
-					}
-					remove_unit_leader_role = BAR_asinti
-				}
+				set_country_flag = BAR_asinti_general_hidden
 			}
 			if = {
 				limit = {
@@ -7107,31 +6996,7 @@ country_event = {
 					popup = no
 					barrad_leopold_alive = 0
 				}
-				if = {
-					limit = {
-						BAR_leopold_schmeller = {
-							is_unit_leader = yes
-						}
-					}
-					remove_unit_leader_role = BAR_leopold_schmeller
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = barrad_viira_alive
-				}
-				set_technology = {
-					popup = no
-					barrad_viira_alive = 0
-				}
-				if = {
-					limit = {
-						BAR_viira_lehtola = {
-							is_unit_leader = yes
-						}
-					}
-					remove_unit_leader_role = BAR_viira_lehtola
-				}
+				set_country_flag = BAR_leopold_general_hidden
 			}
 		}
 	}
@@ -7148,6 +7013,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_silver.41.a
+		clr_country_flag = BAR_asinti_general_hidden
 		BAR_asinti = {
 			set_portraits = {
 				army = {
@@ -7155,115 +7021,26 @@ country_event = {
 					small = "gfx/interface/ideas/Advisors/BAR/idea_asinti_ded.tga"
 				}
 			}
+			remove_unit_leader_trait = zebra_race_trait
+			add_unit_leader_trait = undead_race_trait
 		}
 		if = {
 			limit = {
-				has_idea = BAR_undead_army_1
-			}
-			add_corps_commander_role = {
-				character = BAR_asinti
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
+				check_variable = {
+					BAR_relations_asinti_silver > 69
 				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
 			}
-			custom_effect_tooltip = asinti_stats_tp
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_2
+			BAR_asinti = {
+				add_unit_leader_trait = BAR_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_asinti
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
+			set_technology = {
+				popup = no
+				barrad_asinti_alive = 1
 			}
-			custom_effect_tooltip = asinti_stats_tp_1
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_3
+		} else = {
+			BAR_asinti = {
+				add_unit_leader_trait = BAR_lesser_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_asinti
-				traits = {
-					undead_race_trait
-					trickster
-					BAR_lesser_lich
-				}
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			custom_effect_tooltip = asinti_stats_tp_2
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_4
-			}
-			add_corps_commander_role = {
-				character = BAR_asinti
-				traits = {
-					undead_race_trait
-					trickster
-					BAR_lesser_lich
-				}
-				skill = 4
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			custom_effect_tooltip = asinti_stats_tp_3
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_5
-			}
-			add_corps_commander_role = {
-				character = BAR_asinti
-				traits = {
-					undead_race_trait
-					trickster
-					BAR_lich
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			custom_effect_tooltip = asinti_stats_tp_4
-			BAR_lich_up = yes
-		}
-		else = {
-			add_corps_commander_role = {
-				character = BAR_asinti
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = asinti_stats_tp
 		}
 	}
 }
@@ -7288,114 +7065,18 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				has_idea = BAR_undead_army_1
+		add_corps_commander_role = {
+			character = BAR_count_ambrosius
+			traits = {
+				undead_race_trait
+				trait_lunatic
+				BAR_lesser_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_count_ambrosius
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = ambrosius_stats_tp
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_2
-			}
-			add_corps_commander_role = {
-				character = BAR_count_ambrosius
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = ambrosius_stats_tp_1
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_3
-			}
-			add_corps_commander_role = {
-				character = BAR_count_ambrosius
-				traits = {
-					undead_race_trait
-					trait_lunatic
-					BAR_lesser_lich
-				}
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			custom_effect_tooltip = ambrosius_stats_tp_2
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_4
-			}
-			add_corps_commander_role = {
-				character = BAR_count_ambrosius
-				traits = {
-					undead_race_trait
-					trait_lunatic
-					BAR_lesser_lich
-				}
-				skill = 4
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			custom_effect_tooltip = ambrosius_stats_tp_3
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_5
-			}
-			add_corps_commander_role = {
-				character = BAR_count_ambrosius
-				traits = {
-					undead_race_trait
-					trait_lunatic
-					BAR_lich
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			custom_effect_tooltip = ambrosius_stats_tp_4
-			BAR_lich_up = yes
-		}
-		else = {
-			add_corps_commander_role = {
-				character = BAR_count_ambrosius
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = ambrosius_stats_tp
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
 		}
 	}
 }
@@ -7411,6 +7092,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_silver.43.a
+		clr_country_flag = BAR_leopold_general_hidden
 		BAR_leopold_schmeller = {
 			set_portraits = {
 				army = {
@@ -7418,115 +7100,26 @@ country_event = {
 					small = "gfx/interface/ideas/Advisors/BAR/idea_leopold_ded.tga"
 				}
 			}
+			remove_unit_leader_trait = griffon_race_trait
+			add_unit_leader_trait = undead_race_trait
 		}
 		if = {
 			limit = {
-				has_idea = BAR_undead_army_1
-			}
-			add_corps_commander_role = {
-				character = BAR_leopold_schmeller
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
+				check_variable = {
+					BAR_relations_silver_leopold > 69
 				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
 			}
-			custom_effect_tooltip = leopold_schmeller_stats_tp
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_2
+			BAR_leopold_schmeller = {
+				add_unit_leader_trait = BAR_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_leopold_schmeller
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
+			set_technology = {
+				popup = no
+				barrad_leopold_alive = 1
 			}
-			custom_effect_tooltip = leopold_schmeller_stats_tp_1
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_3
+		} else = {
+			BAR_leopold_schmeller = {
+				add_unit_leader_trait = BAR_lesser_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_leopold_schmeller
-				traits = {
-					undead_race_trait
-					trait_engineer
-					BAR_lesser_lich
-				}
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			custom_effect_tooltip = leopold_schmeller_stats_tp_2
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_4
-			}
-			add_corps_commander_role = {
-				character = BAR_leopold_schmeller
-				traits = {
-					undead_race_trait
-					trait_engineer
-					BAR_lesser_lich
-				}
-				skill = 4
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			custom_effect_tooltip = leopold_schmeller_stats_tp_3
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_5
-			}
-			add_corps_commander_role = {
-				character = BAR_leopold_schmeller
-				traits = {
-					undead_race_trait
-					trait_engineer
-					BAR_lich
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			custom_effect_tooltip = leopold_schmeller_stats_tp_4
-			BAR_lich_up = yes
-		}
-		else = {
-			add_corps_commander_role = {
-				character = BAR_leopold_schmeller
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = leopold_schmeller_stats_tp
 		}
 	}
 }
@@ -7550,114 +7143,35 @@ country_event = {
 				}
 			}
 		}
+		add_corps_commander_role = {
+			character = BAR_viira_lehtola
+			traits = {
+				undead_race_trait
+				promising_general
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
 		if = {
 			limit = {
-				has_idea = BAR_undead_army_1
-			}
-			add_corps_commander_role = {
-				character = BAR_viira_lehtola
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
+				check_variable = {
+					BAR_relations_silver_viira > 69
 				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
 			}
-			custom_effect_tooltip = viira_lehtola_stats_tp
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_2
+			BAR_viira_lehtola = {
+				add_unit_leader_trait = BAR_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_viira_lehtola
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 1
+			set_technology = {
+				popup = no
+				barrad_viira_alive = 1
 			}
-			custom_effect_tooltip = viira_lehtola_stats_tp_1
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_3
+		} else = {
+			BAR_viira_lehtola = {
+				add_unit_leader_trait = BAR_lesser_lich
 			}
-			add_corps_commander_role = {
-				character = BAR_viira_lehtola
-				traits = {
-					undead_race_trait
-					promising_general
-					BAR_lesser_lich
-				}
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-			custom_effect_tooltip = viira_lehtola_stats_tp_2
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_4
-			}
-			add_corps_commander_role = {
-				character = BAR_viira_lehtola
-				traits = {
-					undead_race_trait
-					promising_general
-					BAR_lesser_lich
-				}
-				skill = 4
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			custom_effect_tooltip = viira_lehtola_stats_tp_3
-		}
-		else_if = {
-			limit = {
-				has_idea = BAR_undead_army_5
-			}
-			add_corps_commander_role = {
-				character = BAR_viira_lehtola
-				traits = {
-					undead_race_trait
-					promising_general
-					BAR_lich
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			custom_effect_tooltip = viira_lehtola_stats_tp_4
-			BAR_lich_up = yes
-		}
-		else = {
-			add_corps_commander_role = {
-				character = BAR_viira_lehtola
-				traits = {
-					undead_race_trait
-					BAR_mindless_undead
-				}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = viira_lehtola_stats_tp
 		}
 	}
 }
@@ -8059,9 +7573,7 @@ country_event = {
 				}
 			}
 		}
-		swap_ideas = {
-			remove_idea = BAR_pentarchy_2
-		}
+		remove_ideas = BAR_pentarchy_2
 		
 		add_stability = 0.1
 		if = {
@@ -8572,10 +8084,7 @@ country_event = {
 			set_variable = {
 				BAR_viira_pup = 1
 			}
-			modify_country_flag = {
-				flag = barrad_endgame
-				value = 1
-			}
+			clr_country_flag = barrad_early_game
 			set_variable = {
 				viira_mana_overload = 0
 			}
@@ -8673,7 +8182,6 @@ country_event = {
 			}
 			goto_state = 624
 			launch_nuke = {
-				state = 624
 				province = 9946
 				controller = BAR
 				use_nuke = no
@@ -8681,10 +8189,7 @@ country_event = {
 			set_variable = {
 				BAR_viira_control = 1
 			}
-			modify_country_flag = {
-				flag = barrad_endgame
-				value = 1
-			}
+			clr_country_flag = barrad_early_game
 			set_variable = {
 				viira_mana_overload = 0
 			}
@@ -9055,7 +8560,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_fallen_pentarchy.11.a
-		load_focus_tree = barrad_focus_tree_blood_count2
+		load_focus_tree = barrad_focus_tree_mad_ambrosius
 	}
 }
 
@@ -9607,614 +9112,5 @@ country_event = {
 			type = annex_everything
 			target = BAR
 		}
-	}
-}
-
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-######################################## Raids ###############################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-country_event = {
-	#We are being raided!
-	id = barrad_raid.100
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.100"
-	}
-	title = barrad_raid.100.t
-	desc = barrad_raid.100.d
-	picture = GFX_event_griffon_with_gun
-	is_triggered_only = yes
-	option = {
-		#fight!
-		name = barrad_raid.100.a
-		ai_chance = {
-			factor = 10
-			modifier = {
-				has_war = yes
-				divisions_in_state = {
-					state = var:defender_state_vs_@FROM
-					size < 1
-				}
-				any_owned_state = {
-					state = var:defender_state_vs_@FROM
-					any_neighbor_state = {
-						ROOT = {
-							divisions_in_state = {
-								state = PREV
-								size < 1
-							}
-						}
-						NOT = {
-							any_neighbor_state = {
-								controller = {
-									has_war_with = ROOT
-								}
-							}
-						}
-					}
-				}
-				factor = 0.3
-			}
-			modifier = {
-				has_war = yes
-				enemies_strength_ratio > 0.8
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-				factor = 0.3
-			}
-			modifier = {
-				has_war = yes
-				enemies_strength_ratio > 0.9
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-				factor = 0.3
-			}
-			modifier = {
-				has_war = yes
-				enemies_strength_ratio > 1
-				any_neighbor_country = {
-					has_war_with = ROOT
-				}
-				factor = 0
-			}
-		}
-		FROM = {
-			start_border_war = {
-				change_state_after_war = no
-				attacker = {
-					state = var:ROOT.attacker_state_vs_@THIS
-					num_provinces = 4
-					on_win = barrad_raid.1
-					on_lose = barrad_raid.3
-					on_cancel = barrad_raid.2
-				}
-				defender = {
-					state = var:ROOT.defender_state_vs_@THIS
-					num_provinces = 4
-					on_win = barrad_raid.6
-					on_lose = barrad_raid.4
-					on_cancel = barrad_raid.5
-				}
-			}
-		}
-	}
-	option = {
-		#give up
-		name = barrad_raid.100.b
-		ai_chance = {
-			factor = 1
-		}
-		hidden_effect = {
-			random_owned_state = {
-				limit = {
-					state = var:ROOT.defender_state_vs_@FROM
-				}
-				save_event_target_as = raided_state
-			}
-		}
-		FROM = {
-			country_event = {
-				id = barrad_raid.1
-				hours = 1
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = barrad_raid.4
-				hours = 1
-			}
-		}
-		effect_tooltip = {
-			random_list = {
-				20 = {
-					country_event = {
-						id = barrad_raid.7
-						days = 2
-					}
-				}
-				20 = {
-					country_event = {
-						id = barrad_raid.8
-						days = 2
-					}
-				}
-				20 = {
-					country_event = {
-						id = barrad_raid.9
-						days = 2
-					}
-				}
-				20 = {
-					country_event = {
-						id = barrad_raid.10
-						days = 2
-					}
-				}
-				20 = {
-					country_event = {
-						id = barrad_raid.11
-						days = 2
-					}
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	#Raid Successful/Attacker
-	id = barrad_raid.1
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.1"
-	}
-	title = barrad_raid.1.t
-	desc = barrad_raid.1.d
-	picture = GFX_event_griffon_with_gun
-	is_triggered_only = yes
-	immediate = {
-		if = {
-			limit = {
-				has_country_flag = raid_leopold
-			}
-			BAR_resources_add_leopold_750 = yes
-		}
-		if = {
-			limit = {
-				has_country_flag = raid_silver
-			}
-			BAR_resources_add_silver_750 = yes
-			BAR_relations_decrease_silver_leopold_5 = yes
-		}
-		if = {
-			limit = {
-				has_country_flag = raid_asinti
-			}
-			BAR_resources_add_asinti_750 = yes
-			BAR_relations_decrease_asinti_leopold_5 = yes
-		}
-	}
-	option = {
-		name = barrad_raid.1.a
-		hidden_effect = {
-			clr_country_flag = raid_leopold
-			clr_country_flag = raid_silver
-			clr_country_flag = raid_asinti
-			clr_country_flag = raid_in_progress
-		}
-	}
-}
-
-country_event = {
-	#Raid Canceled/Attacker
-	id = barrad_raid.2
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.2"
-	}
-	title = barrad_raid.2.t
-	desc = barrad_raid.2.d
-	picture = GFX_event_griffon_royal_guard
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.2.a
-		add_political_power = -50
-		hidden_effect = {
-			clr_country_flag = raid_in_progress
-		}
-	}
-}
-
-country_event = {
-	#Raid Failed/Attacker
-	id = barrad_raid.3
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.3"
-	}
-	title = barrad_raid.3.t
-	desc = barrad_raid.3.d
-	picture = GFX_event_griffons_machine_gun
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.3.a
-		add_political_power = -50
-		add_manpower = -1500
-		hidden_effect = {
-			clr_country_flag = raid_in_progress
-		}
-	}
-}
-
-country_event = {
-	#Raid Successful/Defender
-	id = barrad_raid.4
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.4"
-	}
-	is_triggered_only = yes
-	hidden = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = {
-						has_event_target = raided_state
-					}
-				}
-				FROM.FROM.FROM = {
-					save_event_target_as = raided_state
-				}
-			}
-		}
-	}
-	option = {
-		name = barrad_raid.4.a
-		set_temp_variable = {
-			rand = random
-		}
-		if = {
-			limit = {
-				check_variable = {
-					rand < 0.2
-				}
-			}
-			country_event = {
-				id = barrad_raid.7
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					rand < 0.4
-				}
-			}
-			country_event = {
-				id = barrad_raid.8
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					rand < 0.6
-				}
-			}
-			country_event = {
-				id = barrad_raid.9
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					rand < 0.8
-				}
-			}
-			country_event = {
-				id = barrad_raid.10
-			}
-		}
-		else = {
-			country_event = {
-				id = barrad_raid.11
-			}
-		}
-	}
-}
-
-country_event = {
-	#Raid Canceled/Defender
-	id = barrad_raid.5
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.5"
-	}
-	title = barrad_raid.5.t
-	desc = barrad_raid.5.d
-	picture = GFX_event_griffon_soldier
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.5.a
-		add_political_power = 30
-		add_stability = 0.02
-	}
-}
-
-country_event = {
-	#Raid Failed/Defender
-	id = barrad_raid.6
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.6"
-	}
-	title = barrad_raid.6.t
-	desc = barrad_raid.6.d
-	picture = GFX_event_griffon_para
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.6.a
-		add_political_power = 25
-		add_stability = 0.01
-	}
-}
-
-country_event = {
-	#Raid Defeat/Cash Lost
-	id = barrad_raid.7
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.7"
-	}
-	title = barrad_raid.7.t
-	desc = barrad_raid.7.d
-	picture = GFX_event_bank_vault
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.7.a
-		add_political_power = -50
-		add_stability = -0.02
-		add_manpower = -1000
-	}
-}
-
-country_event = {
-	#Raid Defeat/Garrison Slaugthered
-	id = barrad_raid.8
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.8"
-	}
-	title = barrad_raid.8.t
-	desc = barrad_raid.8.d
-	picture = GFX_event_griffon_with_gun
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.8.a
-		add_political_power = -25
-		add_manpower = -2500
-		add_stability = -0.02
-		add_war_support = -0.02
-	}
-}
-
-country_event = {
-	#Raid Defeat/Factory Burnt
-	id = barrad_raid.9
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.9"
-	}
-	title = barrad_raid.9.t
-	desc = barrad_raid.9.d
-	picture = GFX_event_griffon_with_gun
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.9.a
-		add_political_power = -25
-		add_manpower = -500
-		add_stability = -0.03
-		if = {
-			limit = {
-				event_target:raided_state = {
-					industrial_complex > 0
-				}
-			}
-			event_target:raided_state = {
-				damage_building = {
-					type = industrial_complex
-					damage = 0.4
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				event_target:raided_state = {
-					any_neighbor_state = {
-						industrial_complex > 0
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					any_neighbor_state = {
-						state = event_target:raided_state
-					}
-				}
-				damage_building = {
-					type = industrial_complex
-					damage = 0.4
-				}
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-				}
-				damage_building = {
-					type = industrial_complex
-					damage = 0.4
-				}
-			}
-		}
-		if = {
-			limit = {
-				event_target:raided_state = {
-					infrastructure > 0
-				}
-			}
-			event_target:raided_state = {
-				damage_building = {
-					type = infrastructure
-					damage = 0.25
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				event_target:raided_state = {
-					any_neighbor_state = {
-						infrastructure > 0
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure > 0
-					any_neighbor_state = {
-						state = event_target:raided_state
-					}
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 0.25
-				}
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					infrastructure > 0
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 0.25
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	#Raid Defeat/Armoury Looted
-	id = barrad_raid.10
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.10"
-	}
-	title = barrad_raid.10.t
-	desc = barrad_raid.10.d
-	picture = GFX_event_griffon_soldier
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.10.a
-		add_political_power = -25
-		add_manpower = -1500
-		add_stability = -0.01
-		add_war_support = -0.02
-		if = {
-			limit = {
-				event_target:raided_state = {
-					arms_factory > 0
-				}
-			}
-			event_target:raided_state = {
-				damage_building = {
-					type = arms_factory
-					damage = 0.4
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				event_target:raided_state = {
-					any_neighbor_state = {
-						arms_factory > 0
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					arms_factory > 0
-					any_neighbor_state = {
-						state = event_target:raided_state
-					}
-				}
-				damage_building = {
-					type = infrastructure
-					damage = 0.4
-				}
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					arms_factory > 0
-				}
-				damage_building = {
-					type = arms_factory
-					damage = 0.4
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	#Raid Defeat/Villages Slaugthered
-	id = barrad_raid.11
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_raid.11"
-	}
-	title = barrad_raid.11.t
-	desc = barrad_raid.11.d
-	picture = GFX_event_medieval_village
-	is_triggered_only = yes
-	option = {
-		name = barrad_raid.11.a
-		add_political_power = -50
-		add_stability = -0.03
-		save_current_manpower = yes
-		if = {
-			limit = {
-				event_target:raided_state = {
-					state_population > 5000
-				}
-			}
-			event_target:raided_state = {
-				add_manpower = -5000
-			}
-		}
-		else_if = {
-			limit = {
-				event_target:raided_state = {
-					any_neighbor_state = {
-						state_population > 5000
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					state_population > 5000
-					any_neighbor_state = {
-						state = event_target:raided_state
-					}
-				}
-				add_manpower = -5000
-			}
-		}
-		else = {
-			random_owned_controlled_state = {
-				limit = {
-					state_population > 5000
-				}
-				add_manpower = -5000
-			}
-		}
-		restore_previous_manpower = yes
 	}
 }

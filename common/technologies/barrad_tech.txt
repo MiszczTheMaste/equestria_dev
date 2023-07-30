@@ -1140,136 +1140,618 @@ technologies = {
 			factor = 10
 		}
 	}
-	bar_leopold_new_body = {
+	tech_bar_unicorn = {
 
-		allow = {
-			always = no
+		dependencies = {
+			pony_race = 1
+			tech_support = 1
 		}
-		enable_equipments = {
-			bar_leopold_equipment_1
+
+		enable_subunits = {
+			unicorn_company
 		}
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_ms
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_bar_unicorn_th
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
 		research_cost = 1
-	}
-	barrad_silver_horde = {
-		research_cost = 1
-		allow = {
-			always = no
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = -1  y = 0 }
 		}
-		infantry = {
-			soft_attack = -0.05
-			defense = -0.05
-			need = {
-				infantry_equipment = -70
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 6
+
+			modifier = {
+				factor = 4
+				interested_in_magic = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1008.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1009.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1010.1.1"
 			}
 		}
 	}
-	BAR_un_buff_piercing_tech = {
-		research_cost = 1
-		allow = {
-			always = no
+
+	tech_bar_unicorn_th = {
+
+		xor = {
+			tech_bar_unicorn_ms
 		}
-		category_front_line = {
-			ap_attack = 0.15
-			hard_attack = 0.1
-	   	}
-	}
-	BAR_un_buff_org_tech = {
-		research_cost = 1
-		allow = {
-			always = no
+
+		unicorn_company = {
+			breakthrough = 1
 		}
-		category_front_line = {
-			max_organisation = 10
-	   	}
-	}
-	BAR_un_buff_break_tech = {
-		research_cost = 1
-		allow = {
-			always = no
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_th2
+			research_cost_coeff = 1
 		}
-		category_front_line = {
-			breakthrough = 0.2
-	   	}
-	}
-	BAR_un_buff_def_tech = {
-		research_cost = 1
-		allow = {
-			always = no
-		}
-		category_front_line = {
-			defense = 0.3
-	   	}
-	}
-	BAR_un_buff_attack_tech = {
-		research_cost = 1
-		allow = {
-			always = no
-		}
-		category_front_line = {
-			soft_attack = 0.2
-	  	}
-	}
-	BAR_viira_nukes = {
-		research_cost = 1
-		allow = {
-			always = no
-		}
-		nuclear_production = 1
-	}
-	BAR_viira_spells_sub_zero = {
-		research_cost = 1
-		allow = {
-			always = no
-		}
-		category_all_infantry = {
-			marsh = {
-				attack = 0.3
-				movement = 0.05
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
 			}
-			river = {
-				attack = 0.3
-				movement = 0.05
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = -2  y = 4 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+
+			modifier = {
+				factor = 0.2
+				has_government = fascism
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1011.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1012.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
 			}
 		}
 	}
-	BAR_viira_spells_gravity = {
-		research_cost = 1
-		allow = {
-			always = no
+
+	tech_bar_unicorn_th2 = {
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_th3
+			research_cost_coeff = 1
 		}
-		category_army = {
-			mountain = {
-				movement = 0.4
+
+		unicorn_company = {
+			casualty_trickleback = 0.05
+			experience_loss_factor = -0.05
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
 			}
-			hills = {
-				movement = 0.3
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = -2  y = 6 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+
+			modifier = {
+				factor = 1.2
+				date > "1012.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1014.1.1"
 			}
 		}
 	}
-	BAR_viira_spells_teleport = {
-		research_cost = 1
-		allow = {
-			always = no
+
+	tech_bar_unicorn_th3 = {
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_th4
+			research_cost_coeff = 1
 		}
-		category_army = {
-			maximum_speed = 1
+
+		unicorn_company = {
+			recon = 0.6
 		}
-	}
-	BAR_viira_mountai_tanks = {
-		research_cost = 1
-		allow = {
-			always = no
-		}
-		light_armor = {
-			mountain = {
-				movement = 0.3
-				attack = 0.3
-				defence = 0.3
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
 			}
-			breakthrough = 0.2
-			reliability = 0.1
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = -2  y = 8 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+
+			modifier = {
+				factor = 1.2
+				date > "1014.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1016.1.1"
+			}
 		}
 	}
+
+	tech_bar_unicorn_th4 = {
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_th5
+			research_cost_coeff = 1
+		}
+
+		unicorn_company = {
+			initiative = 0.2
+			max_organisation = 3
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = -2 y = 10 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+
+			modifier = {
+				factor = 1.2
+				date > "1017.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1018.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1019.1.1"
+			}
+		}
+	}
+
+	tech_bar_unicorn_th5 = {
+
+		unicorn_company = {
+			soft_attack = 0.5
+			defense = 0.5
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = -2 y = 12 }
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+
+			modifier = {
+				factor = 1.2
+				date > "1020.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1022.1.1"
+			}
+		}
+	}
+
+	tech_bar_unicorn_ms = {
+
+		xor = {
+			tech_bar_unicorn_th
+		}
+
+		unicorn_company = {
+			armor_value = 15000 #I KNOW WHAT I AM DOING
+		}
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_ms2
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = percentage_increase_notice
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0.2
+				has_government = democratic
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1011.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1012.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+		}
+	}
+
+	tech_bar_unicorn_ms2 = {
+
+		unicorn_company = {
+			ap_attack = 2
+			soft_attack = 0.5
+			hard_attack = 0.5
+		}
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_ms3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+			modifier = {
+				factor = 1.2
+				date > "1012.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1014.1.1"
+			}
+		}
+	}
+
+	tech_bar_unicorn_ms3 = {
+
+		unicorn_company = {
+			breakthrough = 4
+		}
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_ms4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+			modifier = {
+				factor = 1.2
+				date > "1014.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1015.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1016.1.1"
+			}
+		}
+	}
+
+	tech_bar_unicorn_ms4 = {
+
+		unicorn_company = {
+			armor_value = 5000
+			air_attack = 10000 #ye, it's a lot, but it's 0.001*10000, which amounts to +10 air attack total (less than support AA)
+		}
+
+		path = {
+			leads_to_tech = tech_bar_unicorn_ms5
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = percentage_increase_notice
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+			modifier = {
+				factor = 1.2
+				date > "1017.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1018.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1019.1.1"
+			}
+		}
+	}
+
+	tech_bar_unicorn_ms5 = {
+		unicorn_company = {
+			soft_attack = 0.75
+			hard_attack = 0.75
+			breakthrough = 0.5
+		}
+
+		research_cost = 2
+		start_year = 1007
+		folder = {
+			name = barrad_folder
+			position = { x = 0 y = 12 }
+		}
+
+		on_research_complete = {
+			hidden_effect = {
+				fix_weapon_techs = yes
+			}
+		}
+
+		categories = {
+			magical_tech
+			unicorn_tech
+			race_tech
+		}
+
+		ai_will_do = {
+			factor = 2.2
+			modifier = {
+				factor = 1.2
+				date > "1020.1.1"
+			}
+
+
+			modifier = {
+				factor = 2
+				date > "1021.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1022.1.1"
+			}
+		}
+	}
+
+
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+	#############################################################################################
+
 	BAR_amb_mountai_tanks = {
 		research_cost = 1
 		allow = {
@@ -1285,6 +1767,15 @@ technologies = {
 			reliability = 0.1
 		}
 	}
+
+ #                                                 
+ #       ######  ####  #####   ####  #      #####  
+ #       #      #    # #    # #    # #      #    # 
+ #       #####  #    # #    # #    # #      #    # 
+ #       #      #    # #####  #    # #      #    # 
+ #       #      #    # #      #    # #      #    # 
+ ####### ######  ####  #       ####  ###### #####  
+
 	BAR_clockwerks = {
 		research_cost = 1
 		allow = {
@@ -1479,7 +1970,7 @@ technologies = {
 			always = no
 		}
 
-		bar_leopold_equipment = {
+		bar_leopold_clockwerk = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
@@ -1490,7 +1981,7 @@ technologies = {
 			always = no
 		}
 		
-		bar_leopold_equipment = {
+		bar_leopold_clockwerk = {
 			build_cost_ic = -0.1
 		}
 	}
@@ -1500,7 +1991,7 @@ technologies = {
 			always = no
 		}
 		
-		bar_leopold_equipment = {
+		bar_leopold_clockwerk = {
 			build_cost_ic = -0.05
 			armor_value = 0.5
 			hard_attack = 0.05
@@ -1513,7 +2004,7 @@ technologies = {
 			always = no
 		}
 		
-		bar_leopold_equipment = {
+		bar_leopold_clockwerk = {
 			armor_value = 0.1
 			defense = 0.15
 			breakthrough = 0.15
@@ -1525,7 +2016,7 @@ technologies = {
 			always = no
 		}
 		
-		bar_leopold_equipment = {
+		bar_leopold_clockwerk = {
 			maximum_speed = 0.15
 		}
 	}
@@ -1540,6 +2031,24 @@ technologies = {
 			tank_crystal_armor
 		}
 	}
+	bar_leopold_new_body = {
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			bar_leopold_equipment_1
+		}
+		research_cost = 1
+	}
+
+    #                            
+   # #    ####  # #    # ##### # 
+  #   #  #      # ##   #   #   # 
+ #     #  ####  # # #  #   #   # 
+ #######      # # #  # #   #   # 
+ #     # #    # # #   ##   #   # 
+ #     #  ####  # #    #   #   # 
+                                 
 	BAR_asinti_hospitals_tech_1 = {
 		research_cost = 1
 		allow = {
@@ -1584,6 +2093,154 @@ technologies = {
 				motorized_equipment = -5
 				artillery_equipment = 6
 			}
+		}
+	}
+
+
+  #####                                    #####                      
+ #     # # #      #    # ###### #####     #     # #####   ##   #####  
+ #       # #      #    # #      #    #    #         #    #  #  #    # 
+  #####  # #      #    # #####  #    #     #####    #   #    # #    # 
+       # # #      #    # #      #####           #   #   ###### #####  
+ #     # # #       #  #  #      #   #     #     #   #   #    # #   #  
+  #####  # ######   ##   ###### #    #     #####    #   #    # #    #                                              
+
+	
+	BAR_undead_combat_width = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_front_line = {
+			combat_width = -0.4
+		}
+	}
+	BAR_un_buff_piercing_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_front_line = {
+			ap_attack = 0.15
+			hard_attack = 0.1
+	   	}
+	}
+	BAR_un_buff_org_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_front_line = {
+			max_organisation = 10
+	   	}
+	}
+	BAR_un_buff_break_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_front_line = {
+			breakthrough = 0.2
+	   	}
+	}
+	BAR_un_buff_def_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_front_line = {
+			defense = 0.3
+	   	}
+	}
+	BAR_un_buff_attack_tech = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_front_line = {
+			soft_attack = 0.2
+	  	}
+	}
+
+	BAR_unicorn_necromancers = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		unicorn_company = {
+			casualty_trickleback = 0.025
+			experience_loss_factor = -0.05
+		}
+	}
+		
+ #     #                   
+ #     # # # #####    ##   
+ #     # # # #    #  #  #  
+ #     # # # #    # #    # 
+  #   #  # # #####  ###### 
+   # #   # # #   #  #    # 
+    #    # # #    # #    # 
+
+
+	BAR_viira_nukes = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		nuclear_production = 1
+	}
+	BAR_viira_spells_sub_zero = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_all_infantry = {
+			marsh = {
+				attack = 0.3
+				movement = 0.05
+			}
+			river = {
+				attack = 0.3
+				movement = 0.05
+			}
+		}
+	}
+	BAR_viira_spells_gravity = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_army = {
+			mountain = {
+				movement = 0.4
+			}
+			hills = {
+				movement = 0.3
+			}
+		}
+	}
+	BAR_viira_spells_teleport = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_army = {
+			maximum_speed = 1
+		}
+	}
+	BAR_viira_mountai_tanks = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		light_armor = {
+			mountain = {
+				movement = 0.3
+				attack = 0.3
+				defence = 0.3
+			}
+			breakthrough = 0.2
+			reliability = 0.1
 		}
 	}
 }

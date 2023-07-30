@@ -17,7 +17,7 @@ set_technology = {
 	barrad_viira_alive = 1
 	atomic_research = 1
 	tech_bar_ancient_knowledge = 1
-	tech_unicorn = 1
+	tech_bar_unicorn = 1
 }
 actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
 
@@ -42,7 +42,7 @@ set_country_flag = { flag = barrad_asinti_alive value = 1 }
 set_country_flag = { flag = barrad_silver_star_alive value = 1 }
 set_country_flag = { flag = barrad_leopold_alive value = 1 }
 set_country_flag = { flag = barrad_viira_alive value = 1 }
-set_country_flag = { flag = barrad_endgame value = 0 }
+set_country_flag = barrad_early_game
 
 set_variable = {
 	var = BAR_relations_asinti_silver

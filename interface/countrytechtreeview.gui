@@ -5390,19 +5390,24 @@ guiTypes = {
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
-
 				iconType = {
 					name ="barrad_techtree_bg"
 					spriteType = "GFX_barrad_techtree_bg"
 					position = { x=0 y=0 }
 					alwaystransparent = yes
 				}
+			}
 
+			containerWindowType = {
+				name = "tiled_research_bg"
+				position = { x = 50 y = 1150 }
+				size = { width = 1050 height = 400 }
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_research_bg"
+				}
 			}
 
 			gridboxtype = {
@@ -5412,8 +5417,21 @@ guiTypes = {
 				format = "UP"
 			}
 
+			gridboxtype = {
+				name = "tech_bar_unicorn_tree"
+				position = { x = 100 y = 1400 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 
+			gridboxtype = {
+				name = "tech_support_tree"
+				position = { x = 50 y = 1100 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
+
 		containerWindowType = {
 			name = "zebra_folder"
 			position = { x=0 y=47 }
@@ -6383,7 +6401,7 @@ guiTypes = {
 			format = center
 		}
 	}
-
+	
 	containerWindowType = {
 		name = "techtree_mtgnavalsupportfolder_item"
 		position = { x=-131 y=1 }
@@ -8357,8 +8375,9 @@ guiTypes = {
 			format = center
 		}
 	}
+
 	containerWindowType = {
-		name = "techtree_barrad_folder_item"
+		name = "techtree_barrad_folder_small_item"
 		position = { x=0 y=5 }
 		size = { width = 72 height = 72 }
 		clipping = no
@@ -8384,6 +8403,58 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "bonus"
 			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+	}
+
+	containerWindowType = {
+		name = "techtree_barrad_folder_item"
+		position = { x=-56 y=-7 }
+		size = { width = 183 height = 84 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -3 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "bonus_icon"
+			position = { x=111 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 111 y = -22 }
 			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = {x = 4 y = 4}

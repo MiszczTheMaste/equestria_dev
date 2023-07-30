@@ -11,13 +11,19 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "bar_viira_nukes"
-		position = { x = 0 y = 0 }
+		name = "bar_viira_map_overlays_container"
+		position = { x = 570 y = -100 }
 		
 		buttonType = {
 			name = "bar_viira_nukes_button"
+			position = { x = 8 y = 0 }
 			spriteType = "GFX_BAR_viira_nuke_button"
-			position = {x = 436 y = 108 }
+			pdx_tooltip = "bar_viira_nukes_tooltip"
+		}
+		buttonType = {
+			name = "bar_viira_zone_button"
+			position = { x = 8 y = -50 }
+			spriteType = "GFX_BAR_viira_spread_zone_button"
 			pdx_tooltip = "bar_viira_nukes_tooltip"
 		}
 	}

@@ -534,7 +534,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
-				category = marines_tech
+				category = marine_tech
 				uses = 2
 				bonus = 2
 			}
@@ -2040,7 +2040,7 @@ focus_tree = {
 					load_oob = BAR_flying_dutchman
 				}
 			}
-			custom_effect_trigger = BAR_flying_dutchman_tooltip
+			custom_effect_tooltip = BAR_flying_dutchman_tooltip
 		}
 	}
 	focus = {

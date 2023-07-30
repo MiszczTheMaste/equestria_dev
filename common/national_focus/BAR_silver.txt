@@ -12,7 +12,7 @@ focus_tree = {
 		id = BAR_path_to_immortality
 		icon = GFX_goal_silver_path_to_immortality
 		cost = 5
-		x = 13
+		x = 18
 		y = 0
 		ai_will_do = {
 			factor = 10
@@ -28,8 +28,9 @@ focus_tree = {
 		id = BAR_undying_call
 		icon = GFX_goal_silver_something_begins
 		cost = 5
-		x = 14
+		x = 1
 		y = 1
+		relative_position_id = BAR_path_to_immortality
 		ai_will_do = {
 			factor = 10
 		}
@@ -37,465 +38,91 @@ focus_tree = {
 			focus = BAR_path_to_immortality
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = BAR_undead_army_1
-				}
-				division_template = {
-					name = "Undead Mob"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
+			division_template = {
+				name = "Undead Division"
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
 					}
-					support = {
+					infantry = {
+						x = 0
+						y = 1
 					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
+					infantry = {
+						x = 0
+						y = 2
 					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
+					infantry = {
+						x = 0
+						y = 3
+					}
+					infantry = {
+						x = 0
+						y = 4
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					infantry = {
+						x = 1
+						y = 3
+					}
+					infantry = {
+						x = 1
+						y = 4
 					}
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
+				support = {
+					military_police = {
+						x = 0
+						y = 0
 					}
 				}
 			}
-			else_if = {
-				limit = {
-					has_idea = BAR_undead_army_2
-				}
-				division_template = {
-					name = "Undead Mob"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-					}
-					support = {
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.2 start_equipment_factor = 0.75"
-						owner = BAR
-					}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
+					owner = BAR
 				}
 			}
-			else_if = {
-				limit = {
-					has_idea = BAR_undead_army_3
-				}
-				division_template = {
-					name = "Undead Horde"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 0
-							y = 3
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 3
-						}
-					}
-					support = {
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.4 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.4 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.4 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.4 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.4 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.4 start_equipment_factor = 0.75"
-						owner = BAR
-					}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
+					owner = BAR
 				}
 			}
-			else_if = {
-				limit = {
-					has_idea = BAR_undead_army_4
-				}
-				division_template = {
-					name = "Undead Horde"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 0
-							y = 3
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 3
-						}
-					}
-					support = {
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.45 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.45 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.45 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.45 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.45 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Horde\" division_template = \"Undead Horde\" start_experience_factor = 0.45 start_equipment_factor = 0.75"
-						owner = BAR
-					}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
+					owner = BAR
 				}
 			}
-			else_if = {
-				limit = {
-					has_idea = BAR_undead_army_5
-				}
-				division_template = {
-					name = "Undead Division"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 0
-							y = 3
-						}
-						infantry = {
-							x = 0
-							y = 4
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 3
-						}
-						infantry = {
-							x = 1
-							y = 4
-						}
-					}
-					support = {
-						military_police = {
-							x = 0
-							y = 0
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
-						owner = BAR
-					}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
+					owner = BAR
 				}
 			}
-			else = {
-				division_template = {
-					name = "Undead Mob"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-					}
-					support = {
-					}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
+					owner = BAR
 				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.01 start_equipment_factor = 0.7"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.01 start_equipment_factor = 0.7"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.01 start_equipment_factor = 0.7"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.01 start_equipment_factor = 0.7"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.01 start_equipment_factor = 0.7"
-						owner = BAR
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Undead Mob\" division_template = \"Undead Mob\" start_experience_factor = 0.01 start_equipment_factor = 0.7"
-						owner = BAR
-					}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Undead Division\" division_template = \"Undead Division\" start_experience_factor = 0.5 start_equipment_factor = 0.75"
+					owner = BAR
 				}
 			}
 		}
@@ -507,8 +134,9 @@ focus_tree = {
 		id = BAR_beggining_of_end
 		icon = GFX_goal_silver_something_ends
 		cost = 5
-		x = 12
+		x = -1
 		y = 1
+		relative_position_id = BAR_path_to_immortality
 		ai_will_do = {
 			factor = 10
 		}
@@ -536,8 +164,9 @@ focus_tree = {
 		id = BAR_new_barrad
 		icon = GFX_goal_silver_new_barrad
 		cost = 5
-		x = 13
+		x = 0
 		y = 2
+		relative_position_id = BAR_path_to_immortality
 		ai_will_do = {
 			factor = 10
 		}
@@ -558,8 +187,9 @@ focus_tree = {
 		id = BAR_fate_of_asinti
 		icon = GFX_goal_voodoo
 		cost = 1
-		x = 10
-		y = 3
+		x = -3
+		y = 1
+		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
 		}
@@ -580,8 +210,9 @@ focus_tree = {
 		id = BAR_fate_of_ambrosius
 		icon = GFX_goal_generic_dangerous_deal_pony_pony
 		cost = 1
-		x = 12
-		y = 3
+		x = -1
+		y = 1
+		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
 		}
@@ -599,8 +230,9 @@ focus_tree = {
 		id = BAR_fate_of_leopold
 		icon = GFX_goal_generic_dangerous_deal_pony_griffon
 		cost = 1
-		x = 14
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
 		}
@@ -621,8 +253,9 @@ focus_tree = {
 		id = BAR_fate_of_viira
 		icon = GFX_goal_enslave_the_deer
 		cost = 1
-		x = 16
-		y = 3
+		x = 3
+		y = 1
+		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
 		}
@@ -637,11 +270,44 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BAR_cult_knowledge
+		icon = GFX_goal_enslave_the_deer
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_undying_call
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_undying_call
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_cult_knowledge_2
+		icon = GFX_goal_enslave_the_deer
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = BAR_beggining_of_end
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_beggining_of_end
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = BAR_biggest_gift
 		icon = GFX_goal_skull_treaty2
 		cost = 8
-		x = 13
-		y = 4
+		x = 0
+		y = 2
+		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
 		}
@@ -652,10 +318,7 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = BAR_everyone_ded
 			}
-			swap_ideas = {
-				remove_idea = BAR_pentarchy
-				add_idea = BAR_undying_country
-			}
+			remove_ideas = BAR_pentarchy
 			every_owned_state = {
 				limit = {
 					is_core_of = BAR
@@ -685,977 +348,1257 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_undead_horde_focus
-		icon = GFX_focus_indy_skelly_pony
+		id = BAR_ss_army
+		icon = GFX_goal_skull_treaty2
 		cost = 8
-		x = 9
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = BAR_undead_horde_tooltip
-				NOT = {
-					OR = {
-						has_idea = BAR_undead_army_3
-						has_idea = BAR_undead_army_4
-						has_idea = BAR_undead_army_5
-					}
-				}
-			}
-		}
-		mutually_exclusive = {
-			focus = BAR_undead_nation
-		}
-		prerequisite = {
-			focus = BAR_biggest_gift
-		}
-		completion_reward = {
-			add_manpower = 100000
-		}
-	}
-	focus = {
-		id = BAR_who_needs_guns
-		icon = GFX_goal_revolution_pony
-		cost = 8
-		x = 10
-		y = 6
+		x = 0
+		y = 2
+		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_undead_horde_focus
+			focus = BAR_new_barrad
 		}
 		completion_reward = {
-			custom_effect_tooltip = BAR_no_guns_no_problem
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_silver_horde = 1
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_workshops
-		icon = GFX_goal_generic_construct_civilian
-		cost = 8
-		x = 8
-		y = 6
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_horde_focus
-		}
-		completion_reward = {
-			two_random_arms_factory = yes
-			two_random_arms_factory = yes
-		}
-	}
-	focus = {
-		id = BAR_every_dead_protect_their_lich
-		icon = GFX_goal_generic_military_sphere
-		cost = 8
-		x = 9
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_workshops
-		}
-		prerequisite = {
-			focus = BAR_who_needs_guns
-		}
-		completion_reward = {
-			add_war_support = 100
-			swap_ideas = {
-				remove_idea = BAR_undying_country
-				add_idea = BAR_undying_country_hor1
-			}
-			hidden_effect = {
-				set_country_flag = BAR_undead_convert_2
-			}
-			custom_effect_tooltip = BAR_undead_convert_enable
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_RESEARCH
-			FOCUS_FILTER_ARMY_BONUS
-			FOCUS_FILTER_WAR_SUPPORT
-			FOCUS_FILTER_MANPOWER
-		}
-	}
-	focus = {
-		id = BAR_march_into_wittenlands
-		icon = GFX_goal_river_fed_suppression
-		cost = 8
-		x = 9
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_every_dead_protect_their_lich
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = WIT
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = FRE
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = NIM
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = RCT
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = DEP
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = LCT
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = BAK
-				type = annex_everything
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
-	}
-	focus = {
-		id = BAR_unstopapable_force
-		icon = GFX_goal_skull_cannon
-		cost = 8
-		x = 9
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_march_into_wittenlands
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = BAR_op_ded
-				days = 180
-			}
-		}
-	}
-	focus = {
-		id = BAR_undead_mass_assult
-		icon = GFX_focus_indy_skelly_pony
-		cost = 8
-		x = 8
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_unstopapable_force
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_mass_assault
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mass_assault
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_mass_guns
-		icon = GFX_goal_van_rifles
-		cost = 8
-		x = 10
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_unstopapable_force
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_mass_assult_next
-		icon = GFX_goal_planning_bonus
-		cost = 8
-		x = 7
-		y = 11
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_mass_assult
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_mass_assault
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mass_assault
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_mass_guns_next
-		icon = GFX_goal_national_arsenal
-		cost = 8
-		x = 11
-		y = 11
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_mass_assult
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_bonuses_for_pp
-		icon = GFX_goal_silver_archlich
-		cost = 8
-		x = 9
-		y = 11
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_mass_assult
-		}
-		prerequisite = {
-			focus = BAR_undead_mass_guns
-		}
-		completion_reward = {
-			custom_effect_tooltip = BAR_unlock_army_bonuses_for_pp
-			set_country_flag = BAR_unlock_army_bonuses_for_pp
-		}
-	}
-	focus = {
-		id = BAR_strike_zeebs_and_deets
-		icon = GFX_focus_indy_skelly_pony
-		cost = 8
-		x = 11
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_every_dead_protect_their_lich
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = ZES
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = OLV
-				type = annex_everything
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
-	}
-	focus = {
-		id = BAR_undead_nation
-		icon = GFX_goal_generic_national_unity_horseshoe
-		cost = 7
-		x = 17
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = BAR_undead_nation_tooltip
-				OR = {
-					has_idea = BAR_undead_army_3
-					has_idea = BAR_undead_army_4
-					has_idea = BAR_undead_army_5
-				}
-			}
-		}
-		mutually_exclusive = {
-			focus = BAR_undead_horde_focus
-		}
-		prerequisite = {
-			focus = BAR_biggest_gift
-		}
-		completion_reward = {
-			add_political_power = 150
-			hidden_effect = {
-				set_country_flag = BAR_undead_nation_flag
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-	focus = {
-		id = BAR_hierarchical_society
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 7
-		x = 16
-		y = 6
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_nation
-		}
-		completion_reward = {
-			add_stability = 0.2
-		}
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-	}
-	focus = {
-		id = BAR_critical_allocation
-		icon = GFX_goal_generic_production
-		cost = 7
-		x = 18
-		y = 6
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_nation
-		}
-		completion_reward = {
-			one_random_industrial_complex = yes
-			one_random_arms_factory = yes
-		}
-	}
-	focus = {
-		id = BAR_divide_country
-		icon = GFX_goal_generic_position_armies
-		cost = 7
-		x = 17
-		y = 7
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_critical_allocation
-		}
-		prerequisite = {
-			focus = BAR_hierarchical_society
-		}
-		completion_reward = {
-			remove_ideas = BAR_undying_country
+			country_event = { id = barrad_silver.5 }
 			add_ideas = BAR_undead_soldiers
-			add_ideas = BAR_undead_economy
-			add_ideas = BAR_undead_science
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_RESEARCH
-			FOCUS_FILTER_ARMY_BONUS
-			FOCUS_FILTER_MANPOWER
 		}
 	}
 	focus = {
-		id = BAR_workers_caste
-		icon = GFX_goal_industrial_pony
-		cost = 7
-		x = 14
-		y = 8
+		id = BAR_ss_infantry
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -7
+		y = 1
+		relative_position_id = BAR_ss_army
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_divide_country
+			focus = BAR_ss_army
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_undead_economy
-				add_idea = BAR_undead_economy_1
+			set_technology = {
+				BAR_undead_combat_width = 1
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_MANPOWER
-		}
 	}
 	focus = {
-		id = BAR_constant_shift
-		icon = GFX_goal_continuous_repairments
-		cost = 7
-		x = 14
-		y = 9
+		id = BAR_ss_infantry_1
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -2
+		y = 1
+		relative_position_id = BAR_ss_infantry
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_workers_caste
+			focus = BAR_ss_infantry
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_undead_economy_1
-				add_idea = BAR_undead_economy_2
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_MANPOWER
-		}
 	}
 	focus = {
-		id = BAR_land_terraformation
-		icon = GFX_goal_generic_construction
-		cost = 7
-		x = 13
-		y = 10
+		id = BAR_ss_infantry_2
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_infantry
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_constant_shift
-		}
-		completion_reward = {
-			every_owned_state = {
-				limit = {
-					is_core_of = BAR
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-			every_owned_state = {
-				limit = {
-					NOT = {
-						is_core_of = BAR
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-	}
-	focus = {
-		id = BAR_new_bulding_standard
-		icon = GFX_goal_factory_complex
-		cost = 7
-		x = 15
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_constant_shift
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_undead_economy_2
-				add_idea = BAR_undead_economy_3
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_MANPOWER
-		}
-	}
-	focus = {
-		id = BAR_economy_to_protect
-		icon = GFX_goal_industry_air
-		cost = 7
-		x = 14
-		y = 11
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_land_terraformation
-		}
-		prerequisite = {
-			focus = BAR_new_bulding_standard
-		}
-		completion_reward = {
-			one_random_industrial_complex = yes
-			one_random_industrial_complex = yes
-			one_random_arms_factory = yes
-			one_random_arms_factory = yes
-			one_random_arms_factory = yes
-			one_random_arms_factory = yes
-		}
-	}
-	focus = {
-		id = BAR_science_caste
-		icon = GFX_focus_research2
-		cost = 7
-		x = 17
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_divide_country
-		}
-		completion_reward = {
-			set_country_flag = BAR_undead_science_2
-			custom_effect_tooltip = BAR_undead_science_unlock_advisors
-		}
-	}
-	focus = {
-		id = BAR_freedom_of_thought
-		icon = GFX_goal_continuous_boost_freedom
-		cost = 7
-		x = 17
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_science_caste
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = BAR_under_tight_supervision
-		icon = GFX_focus_indy_unequal_treaties
-		cost = 7
-		x = 17
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_freedom_of_thought
-		}
-		completion_reward = {
-			set_country_flag = BAR_undead_science
-			custom_effect_tooltip = BAR_undead_science_unlock_advisors
-		}
-	}
-	focus = {
-		id = BAR_scientific_consciousness
-		icon = GFX_goal_generic_scientific_exchange_pony
-		cost = 7
-		x = 17
-		y = 11
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_under_tight_supervision
-		}
-		completion_reward = {
-			remove_ideas = BAR_undead_science
-		}
-	}
-	focus = {
-		id = BAR_war_caste
-		icon = GFX_goal_national_arsenal
-		cost = 7
-		x = 20
-		y = 8
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_divide_country
-		}
-		completion_reward = {
-			army_experience = 50
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_organise_high_command
-		icon = GFX_goal_skull_treaty
-		cost = 7
-		x = 19
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_war_caste
-		}
-		completion_reward = {
-			set_country_flag = BAR_undead_mil_advisors
-			custom_effect_tooltip = BAR_undead_miliary_unlock_advisors
-		}
-	}
-	focus = {
-		id = BAR_undead_officers
-		icon = GFX_goal_officers
-		cost = 7
-		x = 19
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_organise_high_command
-		}
-		completion_reward = {
-			set_country_flag = BAR_undead_mil_advisors_1
-			custom_effect_tooltip = BAR_undead_miliary_unlock_advisors
-		}
-	}
-	focus = {
-		id = BAR_army_structures
-		icon = GFX_goal_rhineland
-		cost = 7
-		x = 21
-		y = 9
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_war_caste
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_undead_soldiers
-				add_idea = BAR_undead_soldiers_1
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_play_on_advantages
-		icon = GFX_goal_planning_bonus
-		cost = 7
-		x = 21
-		y = 10
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_army_structures
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_undead_soldiers_1
-				add_idea = BAR_undead_soldiers_2
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-		}
-	}
-	focus = {
-		id = BAR_undead_spec_ops
-		icon = GFX_goal_generic_special_forces
-		cost = 7
-		x = 20
-		y = 11
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_play_on_advantages
-		}
-		prerequisite = {
-			focus = BAR_undead_officers
+			focus = BAR_ss_infantry
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 1
 				uses = 2
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_3
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 2
+		y = 1
+		relative_position_id = BAR_ss_infantry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_4
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_infantry_1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_1
+		}
+		completion_reward = {
+			add_ideas = BAR_undead_slow_and_steady
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_5
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_infantry_1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = cat_anti_air
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_6
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_infantry_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_3
+		}
+		completion_reward = {
+			add_ideas = BAR_undead_guns
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_7
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_infantry_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1
+				uses = 1
+				technology = magical_weapons
+				technology = magical_weapons1
+				technology = magical_weapons2
+				technology = magical_weapons3
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_8
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_infantry_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_4
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 2
+				category = engineers_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_9
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 2
+		relative_position_id = BAR_ss_infantry_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_2
+		}
+		completion_reward = {
+			
+			swap_ideas = {
+				remove_idea = BAR_undead_soldiers
+				add_idea = BAR_undead_soldiers_1
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_10
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_infantry_6
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_6
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_7
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_infantry_11
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_infantry_9
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_8
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_9
+		}
+		prerequisite = {
+			focus = BAR_ss_infantry_10
+		}
+		completion_reward = {
+			remove_ideas = BAR_undead_guns
+			remove_ideas = BAR_undead_slow_and_steady
+			remove_ideas = BAR_undead_soldiers_1
+			add_ideas = bar_undead_army
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 6
+		y = 1
+		relative_position_id = BAR_ss_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 2
+				category = mountaineers_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_1
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_better_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_2
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_better_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_3
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_better_army_1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_5
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_better_army_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army_2
+		}
+		completion_reward = {
+			country_event = { id = barrad_silver.6 }
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_6
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_better_army_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army_2
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_unicorn_necromancers = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_7
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_better_army_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army_3
+			focus = BAR_ss_better_army_5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_better_army_9
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_better_army_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_better_army_5
+			focus = BAR_ss_better_army_6
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 1
 				category = special_forces_tech
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
 	}
 	focus = {
-		id = BAR_one_archlich
-		icon = GFX_goal_silver_archlich
-		cost = 7
-		x = 17
-		y = 12
+		id = BAR_ss_better_army_10
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_better_army_7
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_undead_spec_ops
-		}
-		prerequisite = {
-			focus = BAR_scientific_consciousness
-		}
-		prerequisite = {
-			focus = BAR_economy_to_protect
+			focus = BAR_ss_better_army_7
 		}
 		completion_reward = {
-			country_event = {
-				id = barrad_silver.5
-				days = 1
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1
+				uses = 2
+				category = cat_anti_tank
 			}
 		}
 	}
 	focus = {
-		id = BAR_potential_new_enemies
-		icon = GFX_goal_riv_strike_south
-		cost = 7
-		x = 18
-		y = 13
+		id = BAR_ss_better_army_11
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_better_army_9
 		ai_will_do = {
 			factor = 10
 		}
-		will_lead_to_war_with = ZES
-		will_lead_to_war_with = OLV
 		prerequisite = {
-			focus = BAR_one_archlich
-		}
-		bypass = {
-			NOT = {
-				country_exists = ZES
-			}
-			NOT = {
-				country_exists = OLV
-			}
+			focus = BAR_ss_better_army_9
 		}
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = ZES
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = OLV
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = BAR_old_enemies
-		icon = GFX_goal_crown_and_swords
-		cost = 7
-		x = 16
-		y = 13
+		id = BAR_ss_better_army_12
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_better_army_10
 		ai_will_do = {
 			factor = 10
 		}
-		will_lead_to_war_with = WIT
-		bypass = {
-			NOT = {
-				country_exists = WIT
-			}
+		prerequisite = {
+			focus = BAR_ss_better_army_10
 		}
 		prerequisite = {
-			focus = BAR_one_archlich
+			focus = BAR_ss_better_army_11
+		}
+		completion_reward = {
+			set_country_flag = bar_silver_star_army_bonuses
+			custom_effect_tooltip = bar_silver_star_army_bonuses_tooltip
+		}
+	}
+	focus = {
+		id = BAR_ss_planes
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 12
+		y = 1
+		relative_position_id = BAR_ss_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_army
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			air_experience = 20
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_1
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_2
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1
+				uses = 1
+				category = medium_air
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_3
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -2
+		y = 2
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_1
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_4
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 2
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_1
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_2
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 3
+					category = plane_modules_tech
+				}
+			} else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_5
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 2
+		y = 2
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_2
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_6
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 3
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_3
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_4
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_planes_7
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 3
+		relative_position_id = BAR_ss_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_4
+		}
+		prerequisite = {
+			focus = BAR_ss_planes_5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -15
+		y = 1
+		relative_position_id = BAR_ss_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_army
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				uses = 1
+				bonus = 1
+			}
+			add_ideas = BAR_undead_economy
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_1
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -3
+		y = 1
+		relative_position_id = BAR_ss_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_arms_factory = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_2
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_3
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = excavation_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_4
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 3
+		y = 1
+		relative_position_id = BAR_ss_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_arms_factory = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_5
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_industry_1
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_1
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_6
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_industry_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_2
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_7
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_industry_3
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_3
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_8
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_industry_4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_4
+		}
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_9
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_industry_5
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_5
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_6
+		}
+		completion_reward = {
+			625 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_10
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_industry_7
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_7
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_8
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_11
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 2
+		y = 1
+		relative_position_id = BAR_ss_industry_9
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_9
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_10
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			625 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			626 = {
+				add_extra_state_shared_building_slots = 5
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_12
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_industry_11
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_11
+		}
+		completion_reward = {
+			625 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_13
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_industry_11
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_11
+		}
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_14
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 1
+		relative_position_id = BAR_ss_industry_12
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_12
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_15
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_industry_12
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_12
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_13
+		}
+		completion_reward = {
+			add_ideas = undead_country
+		}
+	}
+	focus = {
+		id = BAR_ss_industry_16
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_ss_industry_13
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_industry_13
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_war
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_army
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = BAR_ss_attack_wittenland
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -2
+		y = 1
+		relative_position_id = BAR_ss_war
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_war
 		}
 		completion_reward = {
 			create_wargoal = {
-				type = annex_everything
 				target = WIT
+				type = annex_everything
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = BAR_deepest_fear
-		icon = GFX_goal_GRU_shield
-		cost = 7
-		x = 17
-		y = 14
+		id = BAR_ss_attack_coast
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 2
+		y = 1
+		relative_position_id = BAR_ss_war
 		ai_will_do = {
 			factor = 10
 		}
-		will_lead_to_war_with = GRY
 		prerequisite = {
-			focus = BAR_old_enemies
-		}
-		prerequisite = {
-			focus = BAR_potential_new_enemies
-		}
-		completion_reward = {
-			hidden_effect = {
-				random_country = {
-					limit = {
-						owns_state = 611
-						NOT = {
-							tag = BAR
-						}
-					}
-					BAR = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-				random_country = {
-					limit = {
-						owns_state = 612
-						NOT = {
-							tag = BAR
-						}
-					}
-					BAR = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-				random_country = {
-					limit = {
-						owns_state = 613
-						NOT = {
-							tag = BAR
-						}
-					}
-					BAR = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = BAR_silver_going_after_cossacs
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
-		}
-	}
-	focus = {
-		id = BAR_take_down_the_coalition
-		icon = GFX_goal_river_fed_suppression
-		cost = 7
-		x = 16
-		y = 15
-		ai_will_do = {
-			factor = 10
-		}
-		will_lead_to_war_with = FRE
-		will_lead_to_war_with = NIM
-		will_lead_to_war_with = RCT
-		will_lead_to_war_with = DEP
-		will_lead_to_war_with = LCT
-		will_lead_to_war_with = BAK
-		bypass = {
-			NOT = {
-				country_exists = FRE
-			}
-			NOT = {
-				country_exists = NIM
-			}
-			NOT = {
-				country_exists = RCT
-			}
-			NOT = {
-				country_exists = DEP
-			}
-			NOT = {
-				country_exists = LCT
-			}
-			NOT = {
-				country_exists = BAK
-			}
-		}
-		prerequisite = {
-			focus = BAR_deepest_fear
+			focus = BAR_ss_war
 		}
 		completion_reward = {
 			create_wargoal = {
+				target = ZES
 				type = annex_everything
-				target = FRE
 			}
 			create_wargoal = {
+				target = OLV
 				type = annex_everything
-				target = NIM
 			}
-			create_wargoal = {
-				type = annex_everything
-				target = RCT
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = DEP
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = LCT
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = BAK
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_ANNEXATION
 		}
 	}
 	focus = {
-		id = BAR_barrad_great_wall
-		icon = GFX_goal_skull_fortification
-		cost = 7
-		x = 15
-		y = 16
+		id = BAR_ss_defence_of_archlich
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_war
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_take_down_the_coalition
+			focus = BAR_ss_war
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_ss_wall_barrad
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = -1
+		y = 2
+		relative_position_id = BAR_ss_war
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_defence_of_archlich
 		}
 		completion_reward = {
 			every_owned_state = {
 				limit = {
-					any_neighbor_state = {
-						NOT = {
-							is_owned_and_controlled_by = BAR
-						}
-					}
+					is_core_of = BAR
 				}
 				add_building_construction = {
 					type = bunker
@@ -1668,585 +1611,173 @@ focus_tree = {
 				}
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
 	}
 	focus = {
-		id = BAR_skelt_rifles
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 7
-		x = 21
-		y = 13
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_one_archlich
-		}
-		completion_reward = {
-			add_ideas = BAR_undead_pew_pew
-		}
-	}
-	focus = {
-		id = BAR_army_that_never_stops
-		icon = GFX_focus_indy_tanks_across_the_border
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		mutually_exclusive = {
-			focus = BAR_prepared_for_everything
-		}
-		prerequisite = {
-			focus = BAR_skelt_rifles
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_mobile_warfare
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_mobile_warfare
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_industrial_potential
-		icon = GFX_goal_artillery_factories
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 0
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_army_that_never_stops
-			focus = BAR_prepared_for_everything
-		}
-		completion_reward = {
-			two_random_arms_factory = yes
-		}
-	}
-	focus = {
-		id = BAR_undead_airports
-		icon = GFX_goal_generic_air_production
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 0
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_industrial_potential
-		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					air_base < 9
-				}
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-	}
-	focus = {
-		id = BAR_undead_fighters
-		icon = GFX_goal_generic_air_fighter
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 1
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_airports
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1
-					uses = 1
-					category = light_air
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1
-					uses = 1
-					category = light_fighter
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_bombers
-		icon = GFX_goal_generic_air_bomber
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
+		id = BAR_ss_extend_wall
+		icon = GFX_goal_skull_treaty2
+		cost = 8
 		x = -1
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_airports
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = medium_air
-					bonus = 1
-					uses = 1
-					category = medium_air
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = tactical_bomber
-					bonus = 1
-					uses = 1
-					category = tactical_bomber
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_armoured_experiments
-		icon = GFX_goal_generic_army_tanks
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 3
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_army_that_never_stops
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1
-				uses = 1
-				category = armor
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_heavy_armour
-		icon = GFX_goal_blacksun_heavytank
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 4
 		y = 3
+		relative_position_id = BAR_ss_war
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_armoured_experiments
+			focus = BAR_ss_wall_barrad
 		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1
-				uses = 1
-				category = cat_heavy_armor
+		available = {
+			579 = {
+				is_controlled_by = ROOT
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_tanks_made_for_undead
-		icon = GFX_goal_doctrine_tank_warfare
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 2
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_industrial_potential
-		}
-		prerequisite = {
-			focus = BAR_armoured_experiments
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1
-				uses = 1
-				category = armor
+			558 = {
+				is_controlled_by = ROOT
 			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_doctrine_of_terror
-		icon = GFX_goal_fire
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 3
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_tanks_made_for_undead
-		}
-		prerequisite = {
-			focus = BAR_heavy_armour
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1
-				uses = 1
-				category = cat_mobile_warfare
-			}
-			add_tech_bonus = {
-				name = support_bonus
-				bonus = 1
-				uses = 1
-				category = signal_company_tech
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_prepared_for_everything
-		icon = GFX_goal_planning_bonus
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = -2
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		mutually_exclusive = {
-			focus = BAR_army_that_never_stops
-		}
-		prerequisite = {
-			focus = BAR_skelt_rifles
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_grand_battle_plan
-				cost_reduction = 0.5
-				uses = 2
-				category = cat_grand_battle_plan
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_support_comp
-		icon = GFX_goal_generic_support_equipment
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = -3
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_prepared_for_everything
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = support_bonus
-				bonus = 1
-				uses = 1
-				category = engineers_tech
-			}
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1
-				uses = 1
-				category = recon_tech
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_arty
-		icon = GFX_goal_artillery
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = -2
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_support_comp
-		}
-		prerequisite = {
-			focus = BAR_industrial_potential
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = artillery_bonus
-				bonus = 1
-				uses = 1
-				category = artillery
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_high_staff_education
-		icon = GFX_goal_officers
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = -4
-		y = 3
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undead_support_comp
-		}
-		completion_reward = {
-			every_army_leader = {
-				add_logistics = 1
-				add_planning = 1
-				add_defense = 1
-				add_attack = 1
-			}
-		}
-	}
-	focus = {
-		id = BAR_slow_and_steady
-		icon = GFX_goal_purge_opposition
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = -3
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_high_staff_education
-		}
-		prerequisite = {
-			focus = BAR_undead_arty
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = cat_grand_battle_plan
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_grand_battle_plan
-			}
-			add_ideas = BAR_undead_slow_and_steady
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_new_arsenal
-		icon = GFX_goal_Chemical_Death_4
-		cost = 7
-		relative_position_id = BAR_skelt_rifles
-		x = 0
-		y = 5
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_slow_and_steady
-			focus = BAR_doctrine_of_terror
-		}
-		prerequisite = {
-			focus = BAR_undead_bombers
-			focus = BAR_undead_fighters
-		}
-		completion_reward = {
-			country_event = {
-				id = barrad_silver.6
-				days = 1
-			}
-		}
-	}
-	focus = {
-		id = BAR_harsh_mining
-		icon = GFX_goal_generic_coal_mining
-		cost = 7
-		x = 13
-		y = 13
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_one_archlich
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				category = excavation_tech
-				bonus = 1
-				uses = 2
-			}
-			random_owned_controlled_state = {
-				add_resource = {
-					type = tungsten
-					amount = 6
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_undead_infrastructure
-		icon = GFX_goal_generic_railroad
-		cost = 7
-		relative_position_id = BAR_harsh_mining
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_harsh_mining
 		}
 		completion_reward = {
 			every_owned_state = {
 				limit = {
 					is_core_of = BAR
-					infrastructure < 10
 				}
 				add_building_construction = {
-					type = infrastructure
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			579 = {
+				add_building_construction = {
+					type = bunker
 					level = 2
 					instant_build = yes
+					province = { 
+						id = 5041 
+						id = 1914 
+						id = 7537 
+						id = 7989 
+					}
+				}
+			}
+			558 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = { 
+						id = 11978 
+						id = 13137 
+						id = 2040 
+						id = 6008
+						id = 11012
+					}
 				}
 			}
 		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
 	}
 	focus = {
-		id = BAR_reconstruct_country
-		icon = GFX_goal_generic_construction
-		cost = 7
-		relative_position_id = BAR_harsh_mining
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_harsh_mining
-		}
-		completion_reward = {
-			add_ideas = BAR_undead_reconstruction
-		}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-	}
-	focus = {
-		id = BAR_undead_mil_fact
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 7
-		relative_position_id = BAR_harsh_mining
+		id = BAR_ss_forward_defence
+		icon = GFX_goal_skull_treaty2
+		cost = 8
 		x = 1
 		y = 2
+		relative_position_id = BAR_ss_war
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_undead_infrastructure
+			focus = BAR_ss_defence_of_archlich
 		}
 		completion_reward = {
-			two_random_arms_factory = yes
+			add_ideas = bar_forward_defence
 		}
 	}
 	focus = {
-		id = BAR_undead_civ_fact
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 7
-		relative_position_id = BAR_harsh_mining
-		x = -1
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_reconstruct_country
-		}
-		completion_reward = {
-			one_random_industrial_complex = yes
-			one_random_industrial_complex = yes
-		}
-	}
-	focus = {
-		id = BAR_undead_society
-		icon = GFX_focus_indy_skelly_pony
-		cost = 7
-		relative_position_id = BAR_harsh_mining
-		x = 0
+		id = BAR_ss_forward_defence_2
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 1
 		y = 3
+		relative_position_id = BAR_ss_war
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_undead_civ_fact
-			focus = BAR_undead_mil_fact
+			focus = BAR_ss_forward_defence
 		}
 		completion_reward = {
-			increase_society_development_gradual = yes
-			custom_effect_tooltip = BAR_can_upgrade_society
+			swap_ideas = {
+				remove_idea = bar_forward_defence
+				add_idea = bar_forward_defence_1
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_attack_cossacks
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 4
+		relative_position_id = BAR_ss_war
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_defence_of_archlich
+		}
+		prerequisite = {
+			focus = BAR_ss_attack_wittenland
+		}
+		prerequisite = {
+			focus = BAR_ss_attack_coast
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = GRY
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_ss_attack_rivfed
+		icon = GFX_goal_skull_treaty2
+		cost = 8
+		x = 0
+		y = 5
+		relative_position_id = BAR_ss_war
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_ss_attack_cossacks
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = FRE
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = LCT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = RCT
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NIM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BAK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DMT
+				type = annex_everything
+			}
 		}
 	}
 }

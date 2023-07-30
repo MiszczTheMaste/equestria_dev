@@ -7,7 +7,7 @@ BAR_pentarchy_is_dead = {
 				has_country_flag = barrad_leopold_alive
 				has_country_flag = barrad_viira_alive
 			}
-			has_country_flag = { flag = barrad_endgame value = 0 }
+			has_country_flag = barrad_early_game
 		}
 		add_corps_commander_role = {
 			character = BAR_captain_gasienica
@@ -20,81 +20,8 @@ BAR_pentarchy_is_dead = {
 			legacy_id = 997003
 		} 
 		custom_effect_tooltip = cpt_gasienica_stats_tp
-		set_country_flag = { flag = barrad_endgame value = 1 }
+		clr_country_flag = barrad_early_game
 		country_event = { days = 1 id = barrad_end.1 }
-	}
-}
-BAR_lich_up = {
-	if = {
-		limit = {
-			has_idea = BAR_lich_1
-		}
-		swap_ideas = {
-			remove_idea = BAR_lich_1
-			add_idea = BAR_lich_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = BAR_lich_2
-		}
-		swap_ideas = {
-			remove_idea = BAR_lich_2
-			add_idea = BAR_lich_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = BAR_lich_3
-		}
-		swap_ideas = {
-			remove_idea = BAR_lich_3
-			add_idea = BAR_lich_4
-		}
-	}
-	else = {
-		add_ideas = BAR_lich_1
-	}
-}
-BAR_unded_army_up = {
-	if = {
-		limit = {
-			has_idea = BAR_undead_army_1
-		}
-		swap_ideas = {
-			remove_idea = BAR_undead_army_1
-			add_idea = BAR_undead_army_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = BAR_undead_army_2
-		}
-		swap_ideas = {
-			remove_idea = BAR_undead_army_2
-			add_idea = BAR_undead_army_3
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = BAR_undead_army_3
-		}
-		swap_ideas = {
-			remove_idea = BAR_undead_army_3
-			add_idea = BAR_undead_army_4
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = BAR_undead_army_4
-		}
-		swap_ideas = {
-			remove_idea = BAR_undead_army_4
-			add_idea = BAR_undead_army_5
-		}
-	}
-	else = {
-		add_ideas = BAR_undead_army_1
 	}
 }
 BAR_happy_ending = {
@@ -105,7 +32,7 @@ BAR_happy_ending = {
 				has_country_flag = barrad_silver_star_alive
 				has_country_flag = barrad_leopold_alive
 				has_country_flag = barrad_viira_alive
-				has_country_flag = { flag = barrad_endgame value = 0 }
+				has_country_flag = barrad_early_game
 				check_variable = {
 					var = BAR_relations_asinti_silver
 					value = 70
@@ -524,6 +451,13 @@ BAR_relations_idea_swap = {
 	BAR_happy_ending = yes
 	}
 }
+BAR_resources_add_asinti_100 = {
+	custom_effect_tooltip = BAR_resources_gain_asinti_100
+	add_to_variable = {
+		var = BAR_resources_asinti
+		value = 100
+	}
+}
 BAR_resources_add_asinti_250 = {
 	custom_effect_tooltip = BAR_resources_gain_asinti_250
 	add_to_variable = {
@@ -550,6 +484,13 @@ BAR_resources_add_asinti_1000 = {
 	add_to_variable = {
 		var = BAR_resources_asinti
 		value = 1000
+	}
+}
+BAR_resources_add_silver_100 = {
+	custom_effect_tooltip = BAR_resources_gain_silver_100
+	add_to_variable = {
+		var = BAR_resources_silver
+		value = 100
 	}
 }
 BAR_resources_add_silver_250 = {
@@ -927,7 +868,7 @@ BAR_relations_decrease_asinti_silver_5 = {
 	custom_effect_tooltip = BAR_relations_decrease_asinti_silver
 	if = {
 		limit = {
-			has_country_flag = { flag = barrad_endgame value = 0 }
+			has_country_flag = barrad_early_game
 			has_country_flag = BAR_silver_sad
 			check_variable = { BAR_relations_asinti_silver > 69 }
 		}
@@ -1001,7 +942,7 @@ BAR_relations_decrease_asinti_viira_5 = {
 BAR_relations_decrease_silver_leopold_5 = {
 	if = {
 		limit = {
-			has_country_flag = { flag = barrad_endgame value = 0 }
+			has_country_flag = barrad_early_game
 			has_country_flag = BAR_silver_sad
 			check_variable = { BAR_relations_silver_leopold > 69 }
 		}
@@ -1036,7 +977,7 @@ BAR_relations_decrease_silver_leopold_5 = {
 BAR_relations_decrease_silver_viira_5 = {
 	if = {
 		limit = {
-			has_country_flag = { flag = barrad_endgame value = 0 }
+			has_country_flag = barrad_early_game
 			has_country_flag = BAR_silver_sad
 			check_variable = { BAR_relations_silver_viira > 69 }
 		}
@@ -1092,165 +1033,80 @@ BAR_relations_decrease_leopold_viira_5 = {
 BAR_population_convert = {
 	THIS = {
 		set_state_category = rural
+		#half od the factories are added to barrad capital
+		set_temp_variable = { armsFactories = arms_factory_level }
+		set_temp_variable = { civFactories = industrial_complex_level }
+		divide_temp_variable = { armsFactories = 2 }
+		divide_temp_variable = { civFactories = 2 }
+		round_variable = armsFactories
+		round_variable = civFactories
+		
+		626 = {
+			if = {
+				limit = {
+					check_variable = { armsFactories > 0 }
+				}
+				add_extra_state_shared_building_slots = armsFactories
+				add_building_construction = {
+					type = arms_factory
+					level = armsFactories
+					instant_build = yes
+				}
+			}	
+			if = {
+				limit = {
+					check_variable = { civFactories > 0 }
+				}
+				add_extra_state_shared_building_slots = industrial_complex_level
+				add_building_construction = {
+					type = industrial_complex
+					level = civFactories
+					instant_build = yes
+				}
+			}
+		}
+
+		set_building_level = {
+			type = arms_factory
+			level = 0
+			instant_build = yes
+		}
 		set_building_level = {
 			type = industrial_complex
 			level = 0
 			instant_build = yes
 		}
-		set_temp_variable = { afac = arms_factory_level }
-		subtract_from_temp_variable = { afac = 2 }
-		if = {
+	}
+
+	add_compliance = 100
+
+	hidden_effect = {
+		set_temp_variable = { popToAdd = state_population }
+		multiply_temp_variable = { popToAdd = 0.4 }
+
+		save_current_manpower = yes
+		while_loop_effect = {
 			limit = {
-				check_variable = { afac > 0 }
-			}
-			set_building_level = {
-				type = arms_factory
-				level = afac
-				instant_build = yes
-			}
-		}
-		else = {
-			set_building_level = {
-				type = arms_factory
-				level = 0
-				instant_build = yes
-			}
-		}
-		add_core_of = BAR	
-	}
-	if = {
-		limit = {
-			BAR = {
-				has_country_flag = BAR_undead_convert_2
-			}
-		}
-		set_temp_variable = { multip = 0.8 }
-	}
-	else = {
-		set_temp_variable = { multip = 0.4 }
-	}
-	if = {
-		limit = {
-			THIS = {
-				state_population > 900000
-			}
-		}
-		THIS = {
-			set_temp_variable = { totalPop = 900000 }
-			save_current_manpower = yes
-			add_manpower = -900000
-			if = {
-				limit = {
-					THIS = {
-						state_population > 900000
-					}
+				THIS = {
+					state_population > 900000
 				}
+			}
+			THiS = {
 				add_manpower = -900000
-				if = {
-					limit = {
-						THIS = {
-							state_population > 900000
-						}
-					}
-					add_manpower = -900000
-					if = {
-						limit = {
-							THIS = {
-								state_population > 900000
-							}
-						}
-						add_manpower = -900000
-						if = {
-							limit = {
-								THIS = {
-									state_population > 900000
-								}
-							}
-							add_manpower = -900000
-							if = {
-								limit = {
-									THIS = {
-										state_population > 900000
-									}
-								}
-								add_manpower = -900000
-								if = {
-									limit = {
-										THIS = {
-											state_population > 900000
-										}
-									}
-									add_manpower = -900000
-									if = {
-										limit = {
-											THIS = {
-												state_population > 900000
-											}
-										}
-										add_manpower = -900000
-									}
-									else = {
-										set_temp_variable = { popToKill = state_population }
-										multiply_temp_variable = { popToKill = -1 }
-										add_manpower = popToKill
-									}
-								}
-								else = {
-									set_temp_variable = { popToKill = state_population }
-									multiply_temp_variable = { popToKill = -1 }
-									add_manpower = popToKill
-								}
-							}
-							else = {
-								set_temp_variable = { popToKill = state_population }
-								multiply_temp_variable = { popToKill = -1 }
-								add_manpower = popToKill
-							}
-						}
-						else = {
-							set_temp_variable = { popToKill = state_population }
-							multiply_temp_variable = { popToKill = -1 }
-							add_manpower = popToKill
-						}
-					}
-					else = {
-						set_temp_variable = { popToKill = state_population }
-						multiply_temp_variable = { popToKill = -1 }
-						add_manpower = popToKill
-					}
-				}
-				else = {
-					set_temp_variable = { popToKill = state_population }
-					multiply_temp_variable = { popToKill = -1 }
-					add_manpower = popToKill
-				}
-			}
-			else = {
-				set_temp_variable = { popToKill = state_population }
-				multiply_temp_variable = { popToKill = -1 }
-				add_manpower = popToKill
-			}
-			restore_previous_manpower = yes
-			multiply_temp_variable = { totalPop = multip }
-			ROOT = {
-				add_manpower = totalPop
 			}
 		}
-	}
-	else = {
-		THIS = {
-			set_temp_variable = { totalPop = state_population }
-			save_current_manpower = yes
-			multiply_temp_variable = { totalPop = -1 }
-			add_manpower = totalPop
-			restore_previous_manpower = yes
-			set_temp_variable = { multip = -1 }
-			multiply_temp_variable = { totalPop = multip }
-			ROOT = {
-				add_manpower = totalPop
-			}
+		THiS = {
+			set_temp_variable = { popToKill = state_population }
+			multiply_temp_variable = { popToKill = -1 }
+			add_manpower = -popToKill
+		}
+
+		restore_previous_manpower = yes
+		ROOT = {
+			add_manpower = popToAdd
 		}
 	}
+	custom_effect_tooltip = bar_convert_population_manpower_tooltip
 }
 BAR_un_idea_buffs_remove = {
 	hidden_effect = {
@@ -1505,11 +1361,8 @@ one_state_inf = {
 BAR_clear_mess_puppet = {
 	hidden_effect = {
 		set_country_flag = BAR_end_of_pentarchy
-		clr_country_flag = BAR_undead_nation_flag
 		clr_country_flag = BAR_undead_convert
-		clr_country_flag = BAR_undead_convert_2
-		clr_country_flag = barrad_endgame
-		clr_country_flag = BAR_leololo_smash
+		clr_country_flag = barrad_early_game
 		clr_country_flag = BAR_asinti_kill_count
 		clear_variable = BAR_viira_pup
 		clear_variable = BAR_viira_control
@@ -1836,63 +1689,4 @@ BAR_remove_cooperation = {
 	remove_ideas = BAR_relations_silver_leopold_negative
 	remove_ideas = BAR_relations_silver_viira_negative
 	remove_ideas = BAR_relations_leopold_viira_negative
-}
-BAR_replace_skeletons_to_stuff = {
-	if = {
-		limit = {
-			has_idea = BAR_undead_minimal_aut
-		}
-		one_random_industrial_complex = yes
-		remove_ideas = BAR_undead_minimal_aut
-	}
-	if = {
-		limit = {
-			has_idea = BAR_undead_army_1
-		}
-		one_random_industrial_complex = yes
-		one_random_infrastructure = yes
-		remove_ideas = BAR_undead_army_1
-	}
-	if = {
-		limit = {
-			has_idea = BAR_undead_army_2
-		}
-		one_random_industrial_complex = yes
-		one_random_infrastructure = yes
-		one_random_infrastructure = yes
-		remove_ideas = BAR_undead_army_2
-	}
-	if = {
-		limit = {
-			has_idea = BAR_undead_army_3
-		}
-		one_random_industrial_complex = yes
-		one_random_infrastructure = yes
-		one_random_infrastructure = yes
-		one_random_arms_factory = yes
-		remove_ideas = BAR_undead_army_3
-	}
-	if = {
-		limit = {
-			has_idea = BAR_undead_army_4
-		}
-		one_random_industrial_complex = yes
-		one_random_infrastructure = yes
-		one_random_infrastructure = yes
-		one_random_arms_factory = yes
-		one_random_arms_factory = yes
-		remove_ideas = BAR_undead_army_4
-	}
-	if = {
-		limit = {
-			has_idea = BAR_undead_army_5
-		}
-		one_random_industrial_complex = yes
-		one_random_industrial_complex = yes
-		one_random_infrastructure = yes
-		one_random_infrastructure = yes
-		one_random_arms_factory = yes
-		one_random_arms_factory = yes
-		remove_ideas = BAR_undead_army_5
-	}
 }

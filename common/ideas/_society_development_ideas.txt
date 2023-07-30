@@ -29,6 +29,28 @@ ideas = {
 				local_resources_factor = 0.1
 				industry_air_damage_factor = 0.1
 			}
+		}		
+		undead_country = {
+			cost = -1
+			traits = { society_idea }
+			picture = clockwerk_economy
+			allowed = {
+				always = yes
+			}
+			visible = { 
+				has_tech = bar_leopold_new_body
+			}
+			available = {
+				has_idea = clockwerk_industry
+			}			
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.1
+				consumer_goods_factor = -0.2
+			}
 		}
 		modern_society = {
 			

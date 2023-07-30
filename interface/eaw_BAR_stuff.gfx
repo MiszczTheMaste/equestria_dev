@@ -585,6 +585,109 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/ideas/skull_and_fire.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_pentarchy"
+		texturefile = "gfx/interface/bar/ideas/pentarchy.dds"
+	}
+
+
+	#########################################
+	#########################################
+	#########################################
+	
+	#those tech backgrounds MUST be declared separate, otherwise game uses wrong background
+	spriteType = {
+		name = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	spriteType = {
+		name = "GFX_technology_barrad_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_technology_barrad_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+	spriteType = {
+		name = "GFX_technology_barrad_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}	
+
+	#and here to show support equipment properly
+	spriteType = {
+		name = "GFX_technology_barrad_folder_foreign_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//technology_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_barrad_folder_foreign_available_item_bg"
+		textureFile = "gfx//interface//techtree//technology_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_barrad_folder_foreign_researched_item_bg"
+		textureFile = "gfx//interface//techtree//technology_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_barrad_folder_foreign_currently_researching_item_bg"
+		texturefile = "gfx//interface//researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_th_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_illusion.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_th2_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_helping_horn.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_th3_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_scrying.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_th4_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_teleportation.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_th5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_matrices.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_ms_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_shield.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_ms2_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_fire.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_ms3_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_forbidden_magic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_ms4_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_dark_magic.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_bar_unicorn_ms5_medium"
+		texturefile = "gfx/interface/technologies/support/tech_unicorn_company_magic_saturation.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_goal_viira_crack_unbelivers_shine"
 		texturefile = "gfx/interface/bar/goals/viira_crack.dds"
 		effectFile = "gfx/FX/buttonstate.lua"

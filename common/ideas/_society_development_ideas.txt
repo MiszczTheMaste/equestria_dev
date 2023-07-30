@@ -33,15 +33,15 @@ ideas = {
 		undead_country = {
 			cost = -1
 			traits = { society_idea }
-			picture = clockwerk_economy
+			picture = clockwerk_economy # TO FIX
 			allowed = {
 				always = yes
 			}
 			visible = { 
-				has_tech = bar_leopold_new_body
+				has_idea = undead_country
 			}
 			available = {
-				has_idea = clockwerk_industry
+				has_idea = undead_country
 			}			
 			removal_cost = -1
 			allowed_civil_war = {

@@ -3,7 +3,6 @@ ideas = {
 		law = yes
 		use_list_view = yes
 		clockwerk_industry = {
-
 			cost = -1
 			traits = { society_idea }
 			picture = clockwerk_economy
@@ -38,10 +37,10 @@ ideas = {
 				always = yes
 			}
 			visible = { 
-				has_tech = bar_leopold_new_body
+				has_completed_focus = BAR_ss_army
 			}
 			available = {
-				has_idea = clockwerk_industry
+				has_idea = undead_country
 			}			
 			removal_cost = -1
 			allowed_civil_war = {

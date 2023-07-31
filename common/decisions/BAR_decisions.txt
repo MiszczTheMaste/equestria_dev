@@ -2930,7 +2930,9 @@ BAR_silver_star_cat = {
 			has_country_flag = barrad_silver_star_alive
 		}
 		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 499 }
+			has_equipment = {
+				infantry_equipment > 499
+			}
 		}
 		custom_cost_text = decision_cost_500_guns
 		fixed_random_seed = no
@@ -2963,7 +2965,7 @@ BAR_silver_star_convert_cat = {
 		target_root_trigger = {
 			has_country_flag = BAR_undead_convert
 		}
-		visible  = {
+		visible = {
 			FROM = {
 				is_controlled_by = ROOT
 				NOT = {
@@ -2983,9 +2985,8 @@ BAR_silver_star_convert_cat = {
 					is_core_of = WAT
 					is_core_of = FBK
 				}
-				
 			}
-		}		
+		}
 		remove_effect = {
 			FROM = {
 				BAR_population_convert = yes
@@ -3308,7 +3309,7 @@ BAR_leopold_cat = {
 			random_list = {
 				50 = {
 					BAR_resources_add_leopold_500 = yes
-				} 
+				}
 				50 = {
 					BAR_resources_add_leopold_250 = yes
 				}
@@ -3333,7 +3334,9 @@ BAR_leopold_cat = {
 			has_country_flag = barrad_leopold_alive
 		}
 		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 499 }
+			has_equipment = {
+				infantry_equipment > 499
+			}
 		}
 		custom_cost_text = decision_cost_500_guns
 		complete_effect = {
@@ -3692,7 +3695,9 @@ BAR_asinti_cat = {
 			has_country_flag = barrad_asinti_alive
 		}
 		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 499 }
+			has_equipment = {
+				infantry_equipment > 499
+			}
 		}
 		custom_cost_text = decision_cost_500_guns
 		complete_effect = {
@@ -3992,10 +3997,8 @@ BAR_viira_cat = {
 					BAR_resources_add_viira_250 = yes
 				}
 				20 = {
-
 				}
 			}
-			
 		}
 		ai_will_do = {
 			factor = 0
@@ -4012,7 +4015,9 @@ BAR_viira_cat = {
 			has_country_flag = barrad_viira_alive
 		}
 		custom_cost_trigger = {
-			has_equipment = { infantry_equipment > 499 }
+			has_equipment = {
+				infantry_equipment > 499
+			}
 		}
 		custom_cost_text = decision_cost_500_guns
 		complete_effect = {
@@ -4288,11 +4293,11 @@ BAR_viira_spells = {
 	BAR_viira_nuke = {
 		state_target = yes
 		on_map_mode = map_only
-		icon = daggers
+		icon = GFX_decision_scroll
 		allowed = {
 			original_tag = BAR
 		}
-		visible  = {
+		visible = {
 			ROOT = {
 				has_country_flag = bar_viira_nuke_mode
 			}
@@ -4303,9 +4308,11 @@ BAR_viira_spells = {
 				any_neighbor_state = {
 					is_controlled_by = ROOT
 				}
-				CONTROLLER = { has_war_with = ROOT } 
+				CONTROLLER = {
+					has_war_with = ROOT
+				}
 			}
-		}		
+		}
 		complete_effect = {
 			launch_nuke = {
 				state = FROM
@@ -4313,80 +4320,42 @@ BAR_viira_spells = {
 			}
 		}
 	}
-	BAR_viira_spell_sub_zero = {
-		icon = GFX_decision_scroll
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				OR = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
-				}
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_sub_zero"
-				set_technology = {
-					popup = no
-					BAR_viira_spells_sub_zero = 1
-				}
-				country_event = {
-					id = barrad_viira.91
-					days = 30
-				}
-			}
-			add_to_variable = {
-				viira_mana_overload = 5
-			}
-			bar_viira_spells_max_overload = yes
-			custom_effect_tooltip = BAR_viira_spell_sub_zero_tooltip
-		}
-		days_remove = 30
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	BAR_viira_spell_x_decay = {
 		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
-			hidden_trigger = {
-				OR = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
+			ROOT = {
+				has_country_flag = bar_viira_x_decay_mode
+			}
+			FROM = {
+				is_capital = yes
+				CONTROLLER = {
+					has_war_with = ROOT
 				}
 			}
 		}
 		available = {
-			has_war = yes
+			FROM = {
+				CONTROLLER = {
+					NOT = {
+						has_idea = BAR_viira_spell_x_decay_idea
+					}
+				}
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_x_decay"
-				every_enemy_country = {
-					limit = {
-						NOT = {
-							has_idea = BAR_viira_spell_x_decay_idea
+				FROM = {
+					CONTROLLER = {
+						add_timed_idea = {
+							idea = BAR_viira_spell_x_decay_idea
+							days = 14
 						}
-					}
-					add_timed_idea = {
-						idea = BAR_viira_spell_x_decay_idea
-						days = 14
 					}
 				}
 				add_to_variable = {
@@ -4401,80 +4370,42 @@ BAR_viira_spells = {
 			factor = 0
 		}
 	}
-	BAR_viira_spell_gravity = {
-		icon = GFX_decision_scroll
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				OR = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
-				}
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gravity"
-				set_technology = {
-					popup = no
-					BAR_viira_spells_gravity = 1
-				}
-				country_event = {
-					id = barrad_viira.92
-					days = 30
-				}
-				add_to_variable = {
-					viira_mana_overload = 5
-				}
-				bar_viira_spells_max_overload = yes
-			}
-			custom_effect_tooltip = BAR_viira_spell_gravity_tooltip
-		}
-		days_remove = 30
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	BAR_viira_spell_gas = {
 		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
-			hidden_trigger = {
-				OR = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
+			ROOT = {
+				has_country_flag = bar_viira_spell_gas_mode
+			}
+			FROM = {
+				is_capital = yes
+				CONTROLLER = {
+					has_war_with = ROOT
 				}
 			}
 		}
 		available = {
-			has_war = yes
+			FROM = {
+				CONTROLLER = {
+					NOT = {
+						has_idea = BAR_viira_spell_gas_idea
+					}
+				}
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gas"
-				every_enemy_country = {
-					limit = {
-						NOT = {
-							has_idea = BAR_viira_spell_gas_idea
+				FROM = {
+					CONTROLLER = {
+						add_timed_idea = {
+							idea = BAR_viira_spell_gas_idea
+							days = 14
 						}
-					}
-					add_timed_idea = {
-						idea = BAR_viira_spell_gas_idea
-						days = 14
 					}
 				}
 				add_to_variable = {
@@ -4491,32 +4422,25 @@ BAR_viira_spells = {
 	}
 	BAR_viira_spell_electromagnetism = {
 		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
-			OR = {
-				AND = {
-					has_variable = BAR_viira_pup
-					check_variable = {
-						viira_mana_overload < 100
-					}
-				}
-				has_variable = BAR_viira_control
+			ROOT = {
+				has_country_flag = bar_viira_electromagnetism_mode
 			}
-		}
-		available = {
-			has_war = yes
+			FROM = {
+				CONTROLLER = {
+					has_war_with = ROOT
+				}
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_electromagnetism"
-				random_state = {
-					limit = {
-						owner = {
-							has_war_with = BAR
-						}
-					}
+				FROM = {
 					damage_building = {
 						type = infrastructure
 						damage = 4
@@ -4543,68 +4467,73 @@ BAR_viira_spells = {
 	}
 	BAR_viira_spell_psi_emission = {
 		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
-			OR = {
-				AND = {
-					has_variable = BAR_viira_pup
-					check_variable = {
-						viira_mana_overload < 100
-					}
+			ROOT = {
+				has_country_flag = bar_viira_psi_emission_mode
+			}
+			FROM = {
+				is_capital = yes
+				CONTROLLER = {
+					has_war_with = ROOT
 				}
-				has_variable = BAR_viira_control
 			}
 		}
 		available = {
-			has_war = yes
+			FROM = {
+				CONTROLLER = {
+					has_manpower > 0
+				}
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_electromagnetism"
-				every_enemy_country = {
-					limit = {
-						has_manpower > 0
-					}
-					if = {
-						limit = {
-							has_manpower > 1000000
-						}
-						save_current_manpower = yes
-						set_temp_variable = {
-							cur_manpower = 1000000
-						}
-						multiply_temp_variable = {
-							cur_manpower = 0.03
-						}
-						round_temp_variable = cur_manpower
-						BAR = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_psi_emission"
+				FROM = {
+					CONTROLLER = {					
+						if = {
+							limit = {
+								has_manpower > 1000000
+							}
+							save_current_manpower = yes
+							set_temp_variable = {
+								cur_manpower = 1000000
+							}
+							multiply_temp_variable = {
+								cur_manpower = 0.03
+							}
+							round_temp_variable = cur_manpower
+							BAR = {
+								add_manpower = cur_manpower
+							}
+							multiply_temp_variable = {
+								cur_manpower = -1
+							}
 							add_manpower = cur_manpower
+							restore_previous_manpower = yes
 						}
-						multiply_temp_variable = {
-							cur_manpower = -1
-						}
-						add_manpower = cur_manpower
-						restore_previous_manpower = yes
-					}
-					else = {
-						save_current_manpower = yes
-						set_temp_variable = {
-							cur_manpower = manpower
-						}
-						multiply_temp_variable = {
-							cur_manpower = 0.03
-						}
-						round_temp_variable = cur_manpower
-						BAR = {
+						else = {
+							save_current_manpower = yes
+							set_temp_variable = {
+								cur_manpower = manpower
+							}
+							multiply_temp_variable = {
+								cur_manpower = 0.03
+							}
+							round_temp_variable = cur_manpower
+							BAR = {
+								add_manpower = cur_manpower
+							}
+							multiply_temp_variable = {
+								cur_manpower = -1
+							}
 							add_manpower = cur_manpower
+							restore_previous_manpower = yes
 						}
-						multiply_temp_variable = {
-							cur_manpower = -1
-						}
-						add_manpower = cur_manpower
-						restore_previous_manpower = yes
 					}
 				}
 				add_to_variable = {
@@ -4620,37 +4549,40 @@ BAR_viira_spells = {
 	}
 	BAR_viira_spell_incineration = {
 		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
-			OR = {
-				hidden_trigger = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
+			ROOT = {
+				has_country_flag = bar_viira_incineration_mode
+			}
+			FROM = {
+				is_capital = yes
+				CONTROLLER = {
+					has_war_with = ROOT
 				}
 			}
 		}
 		available = {
-			has_war = yes
+			FROM = {
+				CONTROLLER = {
+					NOT = {
+						has_idea = BAR_viira_spell_incineration_idea
+					}
+				}
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gas"
-				every_enemy_country = {
-					limit = {
-						NOT = {
-							has_idea = BAR_viira_spell_incineration_idea
+				FROM = {
+					CONTROLLER = {
+						add_timed_idea = {
+							idea = BAR_viira_spell_incineration_idea
+							days = 14
 						}
-					}
-					add_timed_idea = {
-						idea = BAR_viira_spell_incineration_idea
-						days = 14
 					}
 				}
 				add_to_variable = {
@@ -4667,26 +4599,25 @@ BAR_viira_spells = {
 	}
 	BAR_viira_spell_earthshocks = {
 		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
-			hidden_trigger = {
-				has_variable = BAR_viira_control
+			ROOT = {
+				has_country_flag = bar_viira_earthshocks_mode
 			}
-		}
-		available = {
-			has_war = yes
+			FROM = {
+				CONTROLLER = {
+					has_war_with = ROOT
+				}
+			}
 		}
 		complete_effect = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_earthshocks"
-				random_state = {
-					limit = {
-						owner = {
-							has_war_with = BAR
-						}
-					}
+				FROM = {
 					damage_building = {
 						type = infrastructure
 						damage = 3
@@ -4699,7 +4630,7 @@ BAR_viira_spells = {
 						type = industrial_complex
 						damage = 3
 					}
-					owner = {
+					CONTROLLER = {
 						if = {
 							limit = {
 								has_manpower > 1000000
@@ -4743,6 +4674,141 @@ BAR_viira_spells = {
 			factor = 0
 		}
 	}
+	BAR_viira_spell_global_psi_emission = {
+		icon = GFX_decision_scroll
+		state_target = yes
+		on_map_mode = map_only
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			ROOT = {
+				has_country_flag = bar_viira_psi_emission_mode
+			}
+			FROM = {
+				is_capital = yes
+				CONTROLLER = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		available = {
+			FROM = {
+				CONTROLLER = {
+					has_stability > 0.4
+					has_war_support > 0.4
+				}
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_global_psi_emission"
+				FROM = {
+					CONTROLLER = {
+						add_timed_idea = {
+							idea = BAR_viira_spell_global_psi_idea
+							days = 14
+						}
+					}
+				}
+				add_to_variable = {
+					viira_mana_overload = 15
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			custom_effect_tooltip = BAR_viira_spell_global_psi_emission_tooltip
+		}
+		days_remove = 14
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_sub_zero = {
+		icon = GFX_decision_scroll
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				OR = {
+					AND = {
+						has_variable = BAR_viira_pup
+						check_variable = {
+							viira_mana_overload < 100
+						}
+					}
+					has_variable = BAR_viira_control
+				}
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_sub_zero"
+				set_technology = {
+					popup = no
+					BAR_viira_spells_sub_zero = 1
+				}
+			}
+			add_to_variable = {
+				viira_mana_overload = 5
+			}
+			bar_viira_spells_max_overload = yes
+			custom_effect_tooltip = BAR_viira_spell_sub_zero_tooltip
+		}
+		remove_effect = {
+			set_technology = {
+				popup = no
+				BAR_viira_spells_sub_zero = 0
+			}
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_gravity = {
+		icon = GFX_decision_scroll
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				OR = {
+					AND = {
+						has_variable = BAR_viira_pup
+						check_variable = {
+							viira_mana_overload < 100
+						}
+					}
+					has_variable = BAR_viira_control
+				}
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gravity"
+				set_technology = {
+					popup = no
+					BAR_viira_spells_gravity = 1
+				}
+				add_to_variable = {
+					viira_mana_overload = 5
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			custom_effect_tooltip = BAR_viira_spell_gravity_tooltip
+		}
+		remove_effect = {
+			set_technology = {
+				popup = no
+				BAR_viira_spells_gravity = 0
+			}
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	BAR_viira_spell_teleport = {
 		icon = GFX_decision_scroll
 		allowed = {
@@ -4760,10 +4826,6 @@ BAR_viira_spells = {
 					popup = no
 					BAR_viira_spells_teleport = 1
 				}
-				country_event = {
-					id = barrad_viira.94
-					days = 7
-				}
 				add_to_variable = {
 					viira_mana_overload = 10
 				}
@@ -4771,49 +4833,13 @@ BAR_viira_spells = {
 			}
 			custom_effect_tooltip = BAR_viira_spells_teleport_tooltip
 		}
+		remove_effect = {
+			set_technology = {
+				popup = no
+				BAR_viira_spells_teleport = 0
+			}
+		}
 		days_remove = 7
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_viira_spell_global_psi_emission = {
-		icon = GFX_decision_scroll
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				has_variable = BAR_viira_control
-			}
-		}
-		available = {
-			has_war = yes
-			any_enemy_country = {
-				has_stability > 0.45
-				has_war_support > 0.45
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_earthshocks"
-				every_enemy_country = {
-					limit = {
-						has_stability > 0.45
-						has_war_support > 0.45
-					}
-					add_timed_idea = {
-						idea = BAR_viira_spell_global_psi_idea
-						days = 14
-					}
-				}
-				add_to_variable = {
-					viira_mana_overload = 15
-				}
-				bar_viira_spells_max_overload = yes
-			}
-			custom_effect_tooltip = BAR_viira_spell_global_psi_emission_tooltip
-		}
-		days_remove = 14
 		ai_will_do = {
 			factor = 0
 		}
@@ -6971,7 +6997,7 @@ BAR_viira_coring = {
 		allowed = {
 			original_tag = BAR
 		}
-		visible  = {
+		visible = {
 			ROOT = {
 				has_country_flag = bar_viira_zone_mode
 			}
@@ -6981,7 +7007,7 @@ BAR_viira_coring = {
 					has_state_flag = BAR_climate
 				}
 			}
-		}		
+		}
 		target_trigger = {
 			FROM = {
 				is_controlled_by = ROOT
@@ -7027,7 +7053,6 @@ BAR_viira_coring = {
 			}
 		}
 	}
-
 	BAR_viira_core_deer = {
 		icon = austurland
 		fire_only_once = yes

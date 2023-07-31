@@ -1,21 +1,29 @@
 scripted_gui = {
-	tetownia = {
-		window_name = "tetownia_container"
+	pentarchy_info_button = {
+		window_name = "pentarchy_info_button_container"
+		parent_window_name = "MapmodesInterface_Ingame"
 		context_type = player_context
 		visible = {
 			tag = BAR
 		}
 		dirty = bar_pen_screen
 		effects = {
-			tetownia_bg_click = {
-				set_variable = {
-					bar_pen_screen_show = 1
+			pentarchy_info_button_click = {
+				if = {
+					limit = {
+						has_variable = bar_pen_screen_show
+					}
+					clear_variable = bar_pen_screen_show
+				} else = {
+					set_variable = {
+						bar_pen_screen_show = 1
+					}
+					BAR_gui_reset = yes
 				}
-				BAR_gui_reset = yes
 			}
 		}
 	}
-	tetownia2 = {
+	pentarchy_info_window = {
 		window_name = "pentarchy_info_window"
 		dirty = bar_pen_screen_show
 		context_type = player_context
@@ -275,6 +283,76 @@ scripted_gui = {
 					clr_country_flag = bar_viira_zone_mode
 				} else = {
 					set_country_flag = bar_viira_zone_mode
+				}
+			}
+			bar_viira_x_decay_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_x_decay_mode
+					}
+					clr_country_flag = bar_viira_x_decay_mode
+				} else = {
+					set_country_flag = bar_viira_x_decay_mode
+				}
+			}
+			bar_viira_spell_gas_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_spell_gas_mode
+					}
+					clr_country_flag = bar_viira_spell_gas_mode
+				} else = {
+					set_country_flag = bar_viira_spell_gas_mode
+				}
+			}
+			bar_viira_electromagnetism_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_electromagnetism_mode
+					}
+					clr_country_flag = bar_viira_electromagnetism_mode
+				} else = {
+					set_country_flag = bar_viira_electromagnetism_mode
+				}
+			}
+			bar_viira_psi_emission_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_psi_emission_mode
+					}
+					clr_country_flag = bar_viira_psi_emission_mode
+				} else = {
+					set_country_flag = bar_viira_psi_emission_mode
+				}
+			}
+			bar_viira_incineration_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_incineration_mode
+					}
+					clr_country_flag = bar_viira_incineration_mode
+				} else = {
+					set_country_flag = bar_viira_incineration_mode
+				}
+			}
+			bar_viira_earthshocks_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_earthshocks_mode
+					}
+					clr_country_flag = bar_viira_earthshocks_mode
+				} else = {
+					set_country_flag = bar_viira_earthshocks_mode
+				}
+			}
+			bar_viira_psi_emission_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_psi_emission_mode
+					}
+					clr_country_flag = bar_viira_psi_emission_mode
+				} else = {
+					set_country_flag = bar_viira_psi_emission_mode
 				}
 			}
 		}

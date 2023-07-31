@@ -1114,7 +1114,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 100
+			BAR_relations_increase_silver_viira_5 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1135,6 +1135,12 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_viira_friends
+				check_variable = {
+					BAR_relations_asinti_silver > 69
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_another_party_silver_star_viira
@@ -1147,7 +1153,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_500 = yes
+			country_event = { id = barrad_second.8 }
 		}
 	}
 	focus = {
@@ -1177,7 +1183,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 100
+			BAR_relations_increase_silver_leopold_5 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1198,6 +1204,12 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_leopold_friends
+				check_variable = {
+					BAR_relations_silver_leopold > 69
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_another_party_silver_star_leopold
@@ -1210,7 +1222,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_500 = yes
+			country_event = { id = barrad_second.9 }
 		}
 	}
 	focus = {
@@ -1240,7 +1252,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_political_power = 100
+			BAR_relations_increase_asinti_silver_5 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1261,6 +1273,12 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_asinti_friends
+				check_variable = {
+					BAR_relations_asinti_silver > 69
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_another_party_silver_star_asinti
@@ -1273,7 +1291,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_500 = yes
+			country_event = { id = barrad_second.10 }
 		}
 	}
 	focus = {
@@ -2194,7 +2212,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-
+			add_political_power = 50
+			BAR_resources_add_silver_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY

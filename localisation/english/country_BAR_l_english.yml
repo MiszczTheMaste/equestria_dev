@@ -2422,6 +2422,8 @@ viira_resources_over_750_text:0 "§Y750§! £viira_resources_text"
 viira_resources_over_750_text_blocked:0 "§R750§! £viira_resources_text"
 
 BAR_silver_and_leopold_friends:0 "Silver Star considers Leopold a friend"
+BAR_silver_and_asinti_friends:0 "Silver Star considers Asinti a friend"
+BAR_silver_and_viira_friends:0 "Silver Star considers Viira a friend"
 
 BAR_archlich:0 "Archlich"
 BAR_mindless_undead:0 "Mindless Undead"

@@ -2225,7 +2225,7 @@ equipment_modules = {
 	}
 
 	tank_crystal_armor = {
-		abbreviation = "ca"
+		abbreviation = "car"
 		category = tank_armor_type
 		sfx = sfx_ui_sd_module_sonar
 		xp_cost = 8
@@ -2246,7 +2246,7 @@ equipment_modules = {
 	}
 
 	tank_crystal_support = {
-		abbreviation = "ca"
+		abbreviation = "csp"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 		xp_cost = 1

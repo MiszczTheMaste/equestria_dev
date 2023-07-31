@@ -665,6 +665,10 @@ BAR_leopold_occupation = {
 		original_tag = BAR
 		has_completed_focus = BAR_leopold_clockworks
 	}
+	available = {
+		original_tag = BAR
+		has_completed_focus = BAR_leopold_clockworks
+	}
 	
 	icon = 6
 	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
@@ -672,7 +676,7 @@ BAR_leopold_occupation = {
 
 	state_modifier = {
 		resistance_target = -0.75
-		compliance_gain = -1
+		no_compliance_gain = 1
 		required_garrison_factor = 0.5
 		resistance_damage_to_garrison = 1
 		local_factories = 1

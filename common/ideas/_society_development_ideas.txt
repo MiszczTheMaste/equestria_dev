@@ -32,7 +32,7 @@ ideas = {
 		undead_country = {
 			cost = -1
 			traits = { society_idea }
-			picture = clockwerk_economy
+			picture = clockwerk_economy # TO FIX
 			allowed = {
 				always = yes
 			}

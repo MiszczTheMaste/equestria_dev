@@ -9,16 +9,7 @@ BAR_pentarchy_is_dead = {
 			}
 			has_country_flag = barrad_early_game
 		}
-		add_corps_commander_role = {
-			character = BAR_captain_gasienica
-			traits = { griffon_race_trait bar_cpt_gasienica trait_mountaineer infantry_officer trickster }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 997003
-		} 
+		BAR_add_gasienica_as_commander = yes
 		custom_effect_tooltip = cpt_gasienica_stats_tp
 		clr_country_flag = barrad_early_game
 		country_event = { days = 1 id = barrad_end.1 }
@@ -1334,14 +1325,53 @@ bar_viira_spells_max_overload = {
 	hidden_effect = {
 		if = {
 			limit = {
-				has_variable = BAR_viira_control
-				check_variable = {
-					viira_mana_overload > 150
-				}
+				has_variable = BAR_viira_godhood
 			}
-			country_event = { id = barrad_viira.997 }
+
+			set_temp_variable = { viira_max_overload = 0 }
+			every_owned_state = {
+				add_to_temp_variable = { viira_max_overload = building_level@nuclear_reactor }
+			}
+			multiply_variable = { viira_max_overload = 100 } 
+
+			if = {
+				limit = {
+					check_variable = {
+						viira_mana_overload > viira_max_overload
+					}
+				}
+				
+				country_event = { id = barrad_viira.997 }
+			}
+
+			if = {
+				limit = {
+					check_variable = { viira_mana_overload = 0 } 
+				}
+				set_variable = viira_mana_overload_percentage
+			} else = {
+				set_variable = { viira_mana_overload_percentage = viira_mana_overload }
+				divide_variable = { viira_mana_overload_percentage = viira_max_overload }
+				multiply_variable = { viira_mana_overload_percentage = 100 }
+				round_variable = viira_mana_overload_percentage
+			}
 		}
 	}	
+}
+bar_viira_spells_overload_monthly_tickdown = {
+	set_temp_variable = { viira_mana_tickdown = 0 }
+	every_owned_state = {
+		add_to_temp_variable = { viira_mana_tickdown = building_level@nuclear_reactor }
+	}
+	multiply_variable = { viira_mana_tickdown = 9 } 
+	subtract_from_variable = { viira_mana_overload = viira_mana_tickdown }
+
+	if = {
+		limit = {
+			check_variable = { viira_mana_overload < 0 }
+		}
+		set_variable = { viira_mana_overload = 0 }
+	}
 }
 one_state_inf = {
 	if = {
@@ -1365,7 +1395,7 @@ BAR_clear_mess_puppet = {
 		clr_country_flag = barrad_early_game
 		clr_country_flag = BAR_asinti_kill_count
 		clear_variable = BAR_viira_pup
-		clear_variable = BAR_viira_control
+		clear_variable = BAR_viira_godhood
 		remove_ideas = BAR_blood_curse_idea
 		remove_ideas = BAR_pentarchy
 		remove_ideas = BAR_pentarchy_enemy
@@ -1414,7 +1444,7 @@ BAR_clear_mess_puppet = {
 	}
 }
 
-BAR_new_journal_entry_eff = {
+BAR_new_viira_note = {
 	hidden_effect = {
 		ROOT = {
 			set_variable = { BAR_new_journal_entry_trigger = 1 }
@@ -1689,4 +1719,92 @@ BAR_remove_cooperation = {
 	remove_ideas = BAR_relations_silver_leopold_negative
 	remove_ideas = BAR_relations_silver_viira_negative
 	remove_ideas = BAR_relations_leopold_viira_negative
+}
+
+BAR_spell_upgrades_prepare = {
+	resize_array = {
+		array = bar_viira_mana_crystal_array
+		value = 1
+		size = 16
+	}
+
+	for_loop_effect = {
+		start = 0
+		end = 15
+		value = reactor_index
+		meta_effect = {
+			text = {
+				if = {
+					limit = {
+						nuclear_reactor > reactor_index
+					}
+					set_variable = {
+						bar_viira_mana_crystal_array^reactor_index = 2
+					}
+				}
+				else = {
+					set_variable = {
+						bar_viira_mana_crystal_array^reactor_index = 1
+					}
+				}
+			}
+			REACTOR_REQUIRED_COUNT = "[?reactor_index]"
+		}
+	}
+}
+
+BAR_unlock_spells_1 = {
+	#mass migration
+	country_event = { id = barrad_viira.23 }
+	set_country_flag = BAR_spells_unlocked_1
+}
+BAR_unlock_spells_2 = {
+	#research bonuses
+	country_event = { id = barrad_viira.22 }
+	set_country_flag = BAR_spells_unlocked_2
+}
+BAR_unlock_spells_3 = {
+	#stronger spells
+	country_event = { id = barrad_viira.21 }
+	set_country_flag = BAR_spells_unlocked_3
+}
+BAR_unlock_spells_4 = {
+	#psi powers upgrade
+	country_event = { id = barrad_viira.20 }
+	set_country_flag = BAR_spells_unlocked_4
+}
+BAR_unlock_spells_5 = {
+	#conjure buildings
+	country_event = { id = barrad_viira.19 }
+	set_country_flag = BAR_spells_unlocked_5
+}
+BAR_unlock_spells_6 = {
+	#mind control perfection
+	country_event = { id = barrad_viira.18 }
+	set_country_flag = BAR_spells_unlocked_6
+}
+BAR_unlock_spells_7 = {
+	#conjure resources
+	country_event = { id = barrad_viira.17 }
+}
+BAR_unlock_spells_8 = {
+	country_event = { id = barrad_viira.16 }
+}
+BAR_add_gasienica_as_commander  = {
+	add_corps_commander_role = {
+		character = BAR_captain_gasienica
+		traits = {
+			griffon_race_trait
+			bar_cpt_gasienica
+			trait_mountaineer
+			infantry_officer
+			trickster
+		}
+		skill = 5
+		attack_skill = 5
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 5
+		legacy_id = 997003
+	}
 }

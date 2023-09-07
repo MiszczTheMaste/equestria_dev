@@ -6,7 +6,6 @@ scripted_gui = {
 		visible = {
 			tag = BAR
 		}
-		dirty = bar_pen_screen
 		effects = {
 			pentarchy_info_button_click = {
 				if = {
@@ -14,6 +13,12 @@ scripted_gui = {
 						has_variable = bar_pen_screen_show
 					}
 					clear_variable = bar_pen_screen_show
+					clear_variable = bar_pen_screen
+				} else_if = {
+					limit = {
+						has_variable = bar_pen_screen
+					}
+					clear_variable = bar_pen_screen
 				} else = {
 					set_variable = {
 						bar_pen_screen_show = 1
@@ -22,246 +27,342 @@ scripted_gui = {
 				}
 			}
 		}
-	}
-	pentarchy_info_window = {
-		window_name = "pentarchy_info_window"
-		dirty = bar_pen_screen_show
+	}	
+	viira_journal_button = {
+		window_name = "viira_journal_button_container"
+		parent_window_name = "MapmodesInterface_Ingame"
 		context_type = player_context
-		properties = {
-			bar_pen_screen_leopold_button = {
-				frame = bar_leopold_state
-			}
-			bar_pen_screen_asinti_button = {
-				frame = bar_asinti_state
-			}
-			bar_pen_screen_ambrosius_button = {
-				frame = bar_ambrosius_state
-			}
-			bar_pen_screen_silver_button = {
-				frame = bar_silver_state
-			}
-			bar_pen_screen_viira_button = {
-				frame = bar_viira_state
+		visible = {
+			tag = BAR
+		}
+		effects = {
+			viira_journal_button_click = {
+				if = {
+					limit = {
+						has_variable = bar_viira_show_notes
+					}
+					clear_variable = bar_viira_show_notes
+				} else = {
+					set_variable = {
+						bar_viira_show_notes = 1
+					}
+				}
 			}
 		}
+	}	
+	bar_viira_note_flavor1 = {
+		window_name = "bar_viira_note_flavor1"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+		}
+		effects = {
+			bar_viira_note_flavor1_exit_click = {
+				clear_variable = bar_viira_show_notes
+			}
+		}
+	}
+	bar_viira_note_1 = {
+		window_name = "bar_viira_note_1"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_2
+		}
+	}
+	bar_viira_note_2= {
+		window_name = "bar_viira_note_2"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_3
+		}
+	}
+	bar_viira_note_3 = {
+		window_name = "bar_viira_note_3"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_4
+		}
+	}
+	bar_viira_note_4 = {
+		window_name = "bar_viira_note_4"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_5
+		}
+	}
+	bar_viira_note_5 = {
+		window_name = "bar_viira_note_5"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_6
+		}
+	}
+	bar_viira_note_6 = {
+		window_name = "bar_viira_note_6"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_7
+		}
+	}
+	bar_viira_note_7 = {
+		window_name = "bar_viira_note_7"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_8
+		}
+	}
+	bar_viira_note_8 = {
+		window_name = "bar_viira_note_8"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_7
+			has_country_flag = bar_viira_investigation_step_8
+		}
+	}
+	bar_viira_note_9 = {
+		window_name = "bar_viira_note_9"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_9
+		}
+	}
+	bar_viira_note_10 = {
+		window_name = "bar_viira_note_10"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_10
+		}
+	}
+	bar_viira_note_11 = {
+		window_name = "bar_viira_note_11"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_11
+		}
+	}
+	bar_pen_screen_ambrosius_button_container = {
+		window_name = "bar_pen_screen_ambrosius_button_container"
+		dirty = bar_pen_screen_show
+		context_type = player_context
 		visible = {
 			has_variable = bar_pen_screen_show
 		}
 		effects = {
-			bar_pen_close_button_click = {
+			bar_pen_screen_ambrosius_button_exit_click = {
 				clear_variable = bar_pen_screen_show
 			}
 			bar_pen_screen_ambrosius_button_click = {
+				clear_variable = bar_pen_screen_show
 				set_variable = {
 					bar_pen_screen = 1
-				}
-				BAR_gui_reset = yes
-				if = {
-					limit = {
-						OR = {
-							has_country_flag = BAR_advisors_killed
-							has_country_flag = BAR_ambrosius_killed
-						}
-					}
-					set_variable = {
-						bar_ambrosius_state = 3
-					}
-				}
-				else = {
-					set_variable = {
-						bar_ambrosius_state = 1
-					}
-				}
-				add_to_variable = {
-					bar_pen_screen_show = 1
-				}
-			}
-			bar_pen_screen_asinti_button_click = {
-				set_variable = {
-					bar_pen_screen = 2
-				}
-				BAR_gui_reset = yes
-				if = {
-					limit = {
-						has_country_flag = barrad_asinti_alive
-					}
-					set_variable = {
-						bar_asinti_state = 1
-					}
-				}
-				else = {
-					set_variable = {
-						bar_asinti_state = 3
-					}
-				}
-				add_to_variable = {
-					bar_pen_screen_show = 1
-				}
-			}
-			bar_pen_screen_leopold_button_click = {
-				set_variable = {
-					bar_pen_screen = 3
-				}
-				BAR_gui_reset = yes
-				if = {
-					limit = {
-						has_country_flag = barrad_leopold_alive
-					}
-					set_variable = {
-						bar_leopold_state = 1
-					}
-				}
-				else = {
-					set_variable = {
-						bar_leopold_state = 3
-					}
-				}
-				add_to_variable = {
-					bar_pen_screen_show = 1
-				}
-			}
-			bar_pen_screen_silver_button_click = {
-				set_variable = {
-					bar_pen_screen = 4
-				}
-				BAR_gui_reset = yes
-				if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-					}
-					set_variable = {
-						bar_silver_state = 1
-					}
-				}
-				else = {
-					set_variable = {
-						bar_silver_state = 3
-					}
-				}
-				add_to_variable = {
-					bar_pen_screen_show = 1
-				}
-			}
-			bar_pen_screen_viira_button_click = {
-				set_variable = {
-					bar_pen_screen = 5
-				}
-				BAR_gui_reset = yes
-				if = {
-					limit = {
-						has_country_flag = barrad_viira_alive
-					}
-					set_variable = {
-						bar_viira_state = 1
-					}
-				}
-				else = {
-					set_variable = {
-						bar_viira_state = 3
-					}
-				}
-				add_to_variable = {
-					bar_pen_screen_show = 1
 				}
 			}
 		}
 	}
-	bar_pen_screen_ambrosius = {
+	bar_pen_screen_asinti_button_container = {
+		window_name = "bar_pen_screen_asinti_button_container"
+		dirty = bar_pen_screen_show
+		context_type = player_context
+		visible = {
+			has_variable = bar_pen_screen_show
+		}
+		effects = {
+			bar_pen_screen_asinti_button_click = {
+				clear_variable = bar_pen_screen_show
+				set_variable = {
+					bar_pen_screen = 2
+				}
+			}
+		}
+	}
+	bar_pen_screen_leopold_button_container = {
+		window_name = "bar_pen_screen_leopold_button_container"
+		dirty = bar_pen_screen_show
+		context_type = player_context
+		visible = {
+			has_variable = bar_pen_screen_show
+		}
+		effects = {
+			bar_pen_screen_leopold_button_click = {
+				clear_variable = bar_pen_screen_show
+				set_variable = {
+					bar_pen_screen = 3
+				}
+			}
+		}
+	}
+	bar_pen_screen_silver_button_container = {
+		window_name = "bar_pen_screen_silver_button_container"
+		dirty = bar_pen_screen_show
+		context_type = player_context
+		visible = {
+			has_variable = bar_pen_screen_show
+		}
+		effects = {
+			bar_pen_screen_silver_button_click = {
+				clear_variable = bar_pen_screen_show
+				set_variable = {
+					bar_pen_screen = 4
+				}
+			}
+		}
+	}
+	bar_pen_screen_viira_button_container = {
+		window_name = "bar_pen_screen_viira_button_container"
+		dirty = bar_pen_screen_show
+		context_type = player_context
+		visible = {
+			has_variable = bar_pen_screen_show
+		}
+		effects = {
+			bar_pen_screen_viira_button_click = {
+				clear_variable = bar_pen_screen_show
+				set_variable = {
+					bar_pen_screen = 5
+				}
+			}
+		}
+	}
+	bar_pen_screen_ambrosius_info = {
 		context_type = player_context
 		dirty = bar_pen_screen
-		window_name = "bar_pen_ambrosius_info"
-		parent_window_name = "pentarchy_info_window"
+		window_name = "bar_pen_screen_ambrosius_info"
 		visible = {
 			check_variable = {
 				bar_pen_screen = 1
 			}
 		}
+		effects = {
+			bar_pen_screen_ambrosius_info_portrait_clip_click = {
+				clear_variable = bar_pen_screen
+				set_variable = {
+					bar_pen_screen_show = 1
+				}
+			}
+		}
 	}
-	bar_pen_screen_asinti = {
+	bar_pen_screen_asinti_info = {
 		context_type = player_context
 		dirty = bar_pen_screen
-		window_name = "bar_pen_asinti_info"
-		parent_window_name = "pentarchy_info_window"
+		window_name = "bar_pen_screen_asinti_info"
 		visible = {
 			check_variable = {
 				bar_pen_screen = 2
 			}
 		}
+		effects = {
+			bar_pen_screen_asinti_info_portrait_clip_click = {
+				clear_variable = bar_pen_screen
+				set_variable = {
+					bar_pen_screen_show = 1
+				}
+			}
+		}
 	}
-	bar_pen_screen_leopold = {
+	bar_pen_screen_leopold_info = {
 		context_type = player_context
 		dirty = bar_pen_screen
-		window_name = "bar_pen_leopold_info"
-		parent_window_name = "pentarchy_info_window"
+		window_name = "bar_pen_screen_leopold_info"
 		visible = {
 			check_variable = {
 				bar_pen_screen = 3
 			}
 		}
+		effects = {
+			bar_pen_screen_leopold_info_portrait_clip_click = {
+				clear_variable = bar_pen_screen
+				set_variable = {
+					bar_pen_screen_show = 1
+				}
+			}
+		}
 	}
-	bar_pen_screen_silver = {
+	bar_pen_screen_silver_info = {
 		context_type = player_context
 		dirty = bar_pen_screen
 		window_name = "bar_pen_screen_silver_info"
-		parent_window_name = "pentarchy_info_window"
 		visible = {
 			check_variable = {
 				bar_pen_screen = 4
 			}
 		}
+		effects = {
+			bar_pen_screen_silver_info_portrait_clip_click = {
+				clear_variable = bar_pen_screen
+				set_variable = {
+					bar_pen_screen_show = 1
+				}
+			}
+		}
 	}
-	bar_pen_screen_viira = {
+	bar_pen_screen_viira_info = {
 		context_type = player_context
 		dirty = bar_pen_screen
-		window_name = "bar_pen_viira_info"
-		parent_window_name = "pentarchy_info_window"
+		window_name = "bar_pen_screen_viira_info"
 		visible = {
 			check_variable = {
 				bar_pen_screen = 5
 			}
 		}
-		triggers = {
-			bar_pen_screen_viira_clues_button = {
-				check_variable = {
-					bar_pen_screen = 5
-				}
-			}
-		}
 		effects = {
-			bar_pen_screen_viira_clues_button_click = {
+			bar_pen_screen_viira_info_portrait_clip_click = {
+				clear_variable = bar_pen_screen
 				set_variable = {
-					bar_pen_screen = 6
+					bar_pen_screen_show = 1
 				}
 			}
 		}
 	}
-	bar_pen_screen_viira_clues = {
-		context_type = player_context
-		dirty = bar_pen_screen
-		window_name = "bar_pen_screen_viira_clues"
-		parent_window_name = "pentarchy_info_window"
-		visible = {
-			check_variable = {
-				bar_pen_screen = 6
-			}
-		}
-		effects = {
-			bar_pen_screen_viira_clues_button_click = {
-				set_variable = {
-					bar_pen_screen = 5
-				}
-			}
-		}
-	}
+	
 	bar_viira_map_overlays = {
 		window_name = "bar_viira_map_overlays_container"
 		parent_window_name = "MapmodesInterface_Ingame"
 		context_type = player_context
-		dirty = BAR_viira_control
+		dirty = BAR_viira_godhood
 		visible = {
 			ROOT = {
 				tag = BAR
-				has_variable = BAR_viira_control
+				has_variable = BAR_viira_godhood
+			}
+		}
+		triggers = {
+			bar_viira_psi_migration_mode_button_visible = {
+				has_country_flag = BAR_spells_unlocked_1
 			}
 		}
 		effects = {
@@ -271,8 +372,10 @@ scripted_gui = {
 						has_country_flag = bar_viira_nuke_mode
 					}
 					clr_country_flag = bar_viira_nuke_mode
+					play_song = "maintheme"
 				} else = {
 					set_country_flag = bar_viira_nuke_mode
+					play_song = "loss"
 				}
 			}
 			bar_viira_zone_button_click = {
@@ -345,66 +448,162 @@ scripted_gui = {
 					set_country_flag = bar_viira_earthshocks_mode
 				}
 			}
-			bar_viira_psi_emission_mode_button_click = {
+			bar_viira_global_psi_emission_mode_button_click = {
 				if = {
 					limit = {
-						has_country_flag = bar_viira_psi_emission_mode
+						has_country_flag = bar_viira_global_psi_emission_mode
 					}
-					clr_country_flag = bar_viira_psi_emission_mode
+					clr_country_flag = bar_viira_global_psi_emission_mode
 				} else = {
-					set_country_flag = bar_viira_psi_emission_mode
+					set_country_flag = bar_viira_global_psi_emission_mode
+				}
+			}
+			bar_viira_psi_migration_mode_button_click = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_psi_migration_mode
+					}
+					clr_country_flag = bar_viira_psi_migration_mode
+				} else = {
+					set_country_flag = bar_viira_psi_migration_mode
 				}
 			}
 		}
 	}
-	bar_cpt_quest = {
-		window_name = "bar_cpt_quest"
-		context_type = selected_state_context
-		parent_window_token = selected_state_view
-		dirty = barrad_plants
+
+	BAR_viira_spells_ui = {
+		window_name = "BAR_viira_spells_ui_container"
+		context_type = decision_category
+		dirty = BAR_viira_godhood
 		visible = {
-			ROOT = {
-				tag = BAR
-				has_variable = barrad_plants
+			has_variable = BAR_viira_godhood
+		}	
+		triggers = {
+			bar_viira_spells_upgrade_open_button_available = {
+				has_variable = bar_viira_spells_upgrade_unlock
 			}
-			is_controlled_by = BAR
-			state = 624
 		}
 		effects = {
-			bar_cpt_quest_button_click = {
-				ROOT = {
-					clear_variable = barrad_plants
-					country_event = {
-						id = barrad_third.8
+			bar_viira_spells_upgrade_open_button_click = {
+				BAR_spell_upgrades_prepare = yes
+				if = {
+					limit = {
+						has_variable = bar_viira_spells_upgrade
+					}
+					clear_variable = bar_viira_spells_upgrade
+				} else = {
+					set_variable = {
+						bar_viira_spells_upgrade = 1
 					}
 				}
 			}
 		}
 	}
-	bar_vir_quest = {
-		window_name = "bar_vir_quest"
-		context_type = selected_state_context
-		parent_window_token = selected_state_view
+	bar_viira_spells_unlock = {
+		window_name = "bar_viira_spells_unlock_container"
+		context_type = player_context
+		dirty = bar_viira_spells_upgrade
 		visible = {
-			ROOT = {
-				tag = BAR
-				has_country_flag = bar_elemele2
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-			is_controlled_by = BAR
-			state = 624
+			has_variable = bar_viira_spells_upgrade
 		}
 		effects = {
-			bar_vir_quest_button_click = {
-				ROOT = {
-					clr_country_flag = bar_elemele2
-					country_event = {
-						id = barrad_third.10
+			bar_viira_button_unlock_1_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 1
+						NOT = { has_country_flag = BAR_spells_unlocked_1 }
 					}
+					BAR_unlock_spells_1 = yes
 				}
 			}
+			bar_viira_button_unlock_2_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 3
+						NOT = { has_country_flag = BAR_spells_unlocked_2 }
+					}
+					BAR_unlock_spells_2 = yes
+				}
+			}
+			bar_viira_button_unlock_3_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 5
+						NOT = { has_country_flag = BAR_spells_unlocked_3 }
+					}
+					BAR_unlock_spells_3 = yes
+				}
+			}
+			bar_viira_button_unlock_4_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 7
+						NOT = { has_country_flag = BAR_spells_unlocked_4 }
+					}
+					BAR_unlock_spells_4 = yes
+				}
+			}
+			bar_viira_button_unlock_5_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 9
+						NOT = { has_country_flag = BAR_spells_unlocked_5 }
+					}
+					BAR_unlock_spells_5 = yes
+				}
+			}
+			bar_viira_button_unlock_6_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 11
+						NOT = { has_country_flag = BAR_spells_unlocked_6 }
+					}
+					BAR_unlock_spells_6 = yes
+				}
+			}
+			bar_viira_button_unlock_7_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 13
+						NOT = { has_country_flag = BAR_spells_unlocked_7 }
+					}
+					BAR_unlock_spells_7 = yes
+				}
+			}
+			bar_viira_button_unlock_8_click = {
+				if = {
+					limit = {
+						nuclear_reactor > 15
+						has_country_flag = BAR_spells_unlocked_1
+						has_country_flag = BAR_spells_unlocked_2
+						has_country_flag = BAR_spells_unlocked_3
+						has_country_flag = BAR_spells_unlocked_4
+						has_country_flag = BAR_spells_unlocked_5
+						has_country_flag = BAR_spells_unlocked_6
+						has_country_flag = BAR_spells_unlocked_7
+						NOT = { has_country_flag = BAR_spells_unlocked_8 }
+					}
+					BAR_unlock_spells_8 = yes
+				}
+			}
+		}
+		properties = {
+			bar_viira_mana_crystal_1 = { frame = bar_viira_mana_crystal_array^0 }
+			bar_viira_mana_crystal_2 = { frame = bar_viira_mana_crystal_array^1 }
+			bar_viira_mana_crystal_3 = { frame = bar_viira_mana_crystal_array^2 }
+			bar_viira_mana_crystal_4 = { frame = bar_viira_mana_crystal_array^3 }
+			bar_viira_mana_crystal_5 = { frame = bar_viira_mana_crystal_array^4 }
+			bar_viira_mana_crystal_6 = { frame = bar_viira_mana_crystal_array^5 }
+			bar_viira_mana_crystal_7 = { frame = bar_viira_mana_crystal_array^6 }
+			bar_viira_mana_crystal_8 = { frame = bar_viira_mana_crystal_array^7 }
+			bar_viira_mana_crystal_9 = { frame = bar_viira_mana_crystal_array^8 }
+			bar_viira_mana_crystal_10 = { frame = bar_viira_mana_crystal_array^9 }
+			bar_viira_mana_crystal_11 = { frame = bar_viira_mana_crystal_array^10 }
+			bar_viira_mana_crystal_12 = { frame = bar_viira_mana_crystal_array^11 }
+			bar_viira_mana_crystal_13 = { frame = bar_viira_mana_crystal_array^12 }
+			bar_viira_mana_crystal_14 = { frame = bar_viira_mana_crystal_array^13 }
+			bar_viira_mana_crystal_15 = { frame = bar_viira_mana_crystal_array^14 }
+			bar_viira_mana_crystal_16 = { frame = bar_viira_mana_crystal_array^15 }
 		}
 	}
 	bar_new_journal_entry = {

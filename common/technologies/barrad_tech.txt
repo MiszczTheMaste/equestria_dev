@@ -2212,10 +2212,10 @@ technologies = {
 		}
 		category_army = {
 			mountain = {
-				movement = 0.4
+				movement = 2
 			}
 			hills = {
-				movement = 0.3
+				movement = 1
 			}
 		}
 	}

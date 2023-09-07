@@ -34,6 +34,14 @@ country_event = {
 	option = {
 		name = bar_cheat.1.a
 		load_focus_tree = barrad_focus_tree_goddess_viira
+		add_country_leader_role = {
+			character = BAR_viira_lehtola
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = magocracy
+			}
+		}
 	}
 	option = {
 		name = bar_cheat.1.a
@@ -70,6 +78,27 @@ country_event = {
 	option = {
 		name = bar_cheat.2.a
 		load_focus_tree = barrad_focus_tree_viira
+	}
+}
+country_event = {
+	id = bar_cheat.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_cheat.2"
+	}
+	is_triggered_only = yes
+	option = {
+		name = bar_cheat.2.a
+		set_country_flag = bar_viira_investigation_step_1
+		set_country_flag = bar_viira_investigation_step_2
+		set_country_flag = bar_viira_investigation_step_3
+		set_country_flag = bar_viira_investigation_step_4
+		set_country_flag = bar_viira_investigation_step_5
+		set_country_flag = bar_viira_investigation_step_6
+		set_country_flag = bar_viira_investigation_step_7
+		set_country_flag = bar_viira_investigation_step_8
+		set_country_flag = bar_viira_investigation_step_9
+		set_country_flag = bar_viira_investigation_step_10
+		set_country_flag = bar_viira_investigation_step_11
 	}
 }
 
@@ -746,7 +775,7 @@ country_event = {
 		if = {
 			limit = {
 				has_country_flag = barrad_viira_alive
-				has_country_flag = bar_elemele4
+				has_country_flag = bar_viira_investigation_step_9
 			}
 			set_country_flag = BAR_viira_fights_leo
 			set_country_flag = BAR_viira_immunity
@@ -1376,9 +1405,8 @@ country_event = {
 	picture = GFX_event_griffon_with_gun
 	immediate = {
 		hidden_effect = {
-			clr_country_flag = bar_elemele4
-			set_country_flag = bar_elemele5
-			BAR_new_journal_entry_eff = yes
+			set_country_flag = bar_viira_investigation_step_10
+			BAR_new_viira_note = yes
 		}
 	}
 	is_triggered_only = yes
@@ -2727,9 +2755,9 @@ country_event = {
 	option = {
 		name = barrad_second.1.a
 		hidden_effect = {
-			set_country_flag = bar_elemele0
+			set_country_flag = bar_viira_investigation_step_2
 			set_country_flag = bar_unlock_unicorn_ms
-			BAR_new_journal_entry_eff = yes
+			BAR_new_viira_note = yes
 		}
 	}
 }
@@ -2776,7 +2804,7 @@ country_event = {
 	}
 	title = barrad_second.3.t
 	desc = barrad_second.3.d
-	picture = GFX_event_feast
+	picture = GFX_event_bar_viira_closeup
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.3.a
@@ -3158,10 +3186,10 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_country_flag = bar_elemele02
+					has_country_flag = bar_viira_investigation_step_4
 				}
-				set_country_flag = bar_elemele1
-				BAR_new_journal_entry_eff = yes
+				set_country_flag = bar_viira_investigation_step_5
+				BAR_new_viira_note = yes
 			}
 		}
 		add_tech_bonus = {
@@ -3243,11 +3271,11 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_country_flag = bar_elemele02
+					has_country_flag = bar_viira_investigation_step_4
 					has_country_flag = barrad_viira_alive
 				}
-				set_country_flag = bar_elemele2
-				BAR_new_journal_entry_eff = yes
+				set_country_flag = bar_viira_investigation_step_6
+				BAR_new_viira_note = yes
 			}
 		}
 	}
@@ -3362,9 +3390,8 @@ country_event = {
 	option = {
 		name = barrad_third.10.a
 		hidden_effect = {
-			clr_country_flag = bar_elemele2
-			set_country_flag = bar_elemele22
-			BAR_new_journal_entry_eff = yes
+			set_country_flag = bar_viira_investigation_step_7
+			BAR_new_viira_note = yes
 		}
 	}
 }
@@ -3719,7 +3746,7 @@ country_event = {
 		name = barrad_viira_fight.4.b
 		if = {
 			limit = {
-				has_country_flag = bar_elemele6
+				has_country_flag = bar_viira_investigation_step_11
 			}
 			hidden_effect = {
 				clr_country_flag = barrad_viira_alive
@@ -5529,22 +5556,7 @@ country_event = {
 		hidden_effect = {
 			bar_pen_fight_close_window = yes
 			barrad_kill_viira = yes
-			add_corps_commander_role = {
-				character = BAR_captain_gasienica
-				traits = {
-					griffon_race_trait
-					bar_cpt_gasienica
-					trait_mountaineer
-					infantry_officer
-					trickster
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				legacy_id = 997003
-			}
+			BAR_add_gasienica_as_commander = yes
 			country_event = {
 				days = 1
 				id = barrad_end.1
@@ -5672,22 +5684,7 @@ country_event = {
 	option = {
 		name = barrad_viira_fight.73.a
 		hidden_effect = {
-			add_corps_commander_role = {
-				character = BAR_captain_gasienica
-				traits = {
-					griffon_race_trait
-					bar_cpt_gasienica
-					trait_mountaineer
-					infantry_officer
-					trickster
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				legacy_id = 997003
-			}
+			BAR_add_gasienica_as_commander = yes
 			country_event = {
 				days = 1
 				id = barrad_end.1
@@ -6872,22 +6869,7 @@ country_event = {
 			barrad_kill_asinti = yes
 			barrad_kill_leopold = yes
 			barrad_kill_silver = yes
-			add_corps_commander_role = {
-				character = BAR_captain_gasienica
-				traits = {
-					griffon_race_trait
-					bar_cpt_gasienica
-					trait_mountaineer
-					infantry_officer
-					trickster
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				legacy_id = 997003
-			}
+			BAR_add_gasienica_as_commander = yes
 			country_event = {
 				days = 1
 				id = barrad_end.1
@@ -8123,7 +8105,7 @@ country_event = {
 		name = barrad_viira.1.a
 		trigger = {
 			NOT = {
-				has_country_flag = bar_elemele6
+				has_country_flag = bar_viira_investigation_step_11
 			}
 		}
 		custom_effect_tooltip = bar_virra_becomes_leader
@@ -8144,7 +8126,7 @@ country_event = {
 		#whoops
 		name = barrad_viira.1.b
 		trigger = {
-			has_country_flag = bar_elemele6
+			has_country_flag = bar_viira_investigation_step_11
 		}
 		country_event = {
 			id = barrad_viira.12
@@ -8194,32 +8176,14 @@ country_event = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				add_country_leader_role = {
-					character = BAR_viira_lehtola
-					promote_leader = yes
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = magocracy
-						traits = {
-							bar_viira_end_lar
-						}
-					}
-				}
-			}
-			else = {
-				add_country_leader_role = {
-					character = BAR_viira_lehtola
-					promote_leader = yes
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = magocracy
-						traits = {
-							bar_viira_end
-						}
+			add_country_leader_role = {
+				character = BAR_viira_lehtola
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = magocracy
+					traits = {
+						bar_viira_title_1
 					}
 				}
 			}
@@ -8234,11 +8198,14 @@ country_event = {
 				use_nuke = no
 			}
 			set_variable = {
-				BAR_viira_control = 1
+				BAR_viira_godhood = 1
 			}
 			clr_country_flag = barrad_early_game
 			set_variable = {
 				viira_mana_overload = 0
+			}
+			set_variable = {
+				viira_mana_overload_percentage = 0
 			}
 		}
 		load_focus_tree = barrad_focus_tree_goddess_viira
@@ -8310,7 +8277,7 @@ country_event = {
 					}
 				}
 			}
-			clear_variable = BAR_viira_control
+			clear_variable = BAR_viira_godhood
 			clr_country_flag = barrad_viira_alive
 			load_focus_tree = barrad_unhappy_ending
 		}
@@ -8380,6 +8347,186 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = barrad_viira.16	#ending event
+	title = barrad_viira.16.t
+	desc = barrad_viira.16.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.16"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.16.a
+	}
+}
+
+country_event = {
+	id = barrad_viira.17
+	title = barrad_viira.17.t
+	desc = barrad_viira.17.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.17"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2.a
+	option = {
+		name = barrad_viira.17
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = steel
+			amount = 2
+		}
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = aluminium 
+			amount = 2
+		}
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = chromium
+			amount = 2
+		}
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = tungsten
+			amount = 2
+		}
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = rubber
+			amount = 2
+		}
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = oil
+			amount = 2
+		}
+		modify_building_resources = {
+			building = nuclear_reactor
+			resource = crystals
+			amount = 2
+		}
+	}
+}
+
+country_event = {
+	id = barrad_viira.18
+	title = barrad_viira.18.t
+	desc = barrad_viira.18.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.18"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.18.a
+	}
+}
+country_event = {
+	id = barrad_viira.19
+	title = barrad_viira.19.t
+	desc = barrad_viira.19.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.19"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.19.a
+	}
+}
+country_event = {
+	id = barrad_viira.20
+	title = barrad_viira.20.t
+	desc = barrad_viira.20.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.20"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.20.a
+		hidden_effect = {
+			every_owned_state = {
+				if = {
+					limit = {
+						has_state_flag = BAR_climate
+					}
+					remove_province_modifier = {
+						static_modifiers = {
+							barrad_climate3
+						}
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = {
+							barrad_climate4
+						}
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = barrad_viira.21
+	title = barrad_viira.21.t
+	desc = barrad_viira.21.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.21"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.21.a
+	}
+}
+country_event = {
+	id = barrad_viira.22
+	title = barrad_viira.22.t
+	desc = barrad_viira.22.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.22"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.22.a
+	}
+}
+country_event = {
+	id = barrad_viira.23
+	title = barrad_viira.23.t
+	desc = barrad_viira.23.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.23"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.23.a
+	}
+}
+country_event = {
+	id = barrad_viira.24
+	title = barrad_viira.24.t
+	desc = barrad_viira.24.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.24"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.24.a
+		BAR_add_gasienica_as_commander = yes
+	}
+}
 
 country_event = {
 	id = bar_viira_murders.1
@@ -8393,17 +8540,15 @@ country_event = {
 	option = {
 		name = bar_viira_murders.1.a
 		hidden_effect = {
-			clr_country_flag = bar_elemele5
-			set_country_flag = bar_elemele6
-			BAR_new_journal_entry_eff = yes
+			set_country_flag = bar_viira_investigation_step_11
+			BAR_new_viira_note = yes
 		}
 	}
 	option = {
 		name = bar_viira_murders.1.b
 		hidden_effect = {
-			clr_country_flag = bar_elemele5
-			set_country_flag = bar_elemele6
-			BAR_new_journal_entry_eff = yes
+			set_country_flag = bar_viira_investigation_step_11
+			BAR_new_viira_note = yes
 		}
 		trigger = {
 			BAR_resources_above_viira_1000 = yes
@@ -8957,7 +9102,6 @@ country_event = {
 		else = {
 			add_country_leader_trait = BAR_true_avatar_of_chaos
 		}
-		add_ideas = BAR_viira
 	}
 }
 

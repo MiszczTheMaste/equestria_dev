@@ -1,4 +1,22 @@
 BAR_ambrosius_boredoom = {
+	bar_cpt_quest = {
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_variable = barrad_plants
+		}
+		icon = daggers
+		fire_only_once = yes
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			clear_variable = barrad_plants
+			country_event = {
+				id = barrad_third.8
+			}
+		}
+	}
 	BAR_end_this_farce_leopold = {
 		#entity with help of cult murders last member of pentarchy
 		allowed = {
@@ -3714,7 +3732,32 @@ BAR_asinti_cat = {
 	}
 }
 
-BAR_viira_cat = {
+BAR_viira_cat = {		
+	bar_vir_quest = {
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = bar_viira_investigation_step_6
+			NOT = {
+				has_completed_focus = BAR_begin_building
+			}
+		}
+		available = {
+			NOT = {
+				has_completed_focus = BAR_begin_building
+			}
+		}
+		icon = daggers
+		fire_only_once = yes
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			country_event = {
+				id = barrad_third.10
+			}
+		}
+	}	
 	BAR_search_in_silver_library = {
 		icon = GFX_decision_sombra_book
 		allowed = {
@@ -3722,14 +3765,14 @@ BAR_viira_cat = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = bar_elemele5
+				has_country_flag = bar_viira_investigation_step_10
 				has_country_flag = barrad_viira_alive
 				has_country_flag = barrad_silver_star_alive
 			}
 		}
 		available = {
 			hidden_trigger = {
-				has_country_flag = bar_elemele5
+				has_country_flag = bar_viira_investigation_step_10
 				has_country_flag = barrad_viira_alive
 				has_country_flag = barrad_silver_star_alive
 			}
@@ -3748,7 +3791,7 @@ BAR_viira_cat = {
 		}
 		visible = {
 			hidden_trigger = {
-				has_country_flag = bar_elemele6
+				has_country_flag = bar_viira_investigation_step_11
 				has_country_flag = barrad_viira_alive
 				has_country_flag = barrad_asinti_alive
 				NOT = {
@@ -3770,7 +3813,7 @@ BAR_viira_cat = {
 		}
 		available = {
 			hidden_trigger = {
-				has_country_flag = bar_elemele6
+				has_country_flag = bar_viira_investigation_step_11
 				has_country_flag = barrad_viira_alive
 				has_country_flag = barrad_asinti_alive
 				NOT = {
@@ -4230,10 +4273,7 @@ BAR_reactor_construction = {
 			}
 		}
 		complete_effect = {
-			random_owned_controlled_state = {
-				prioritize = {
-					624
-				}
+			624 = {
 				add_building_construction = {
 					type = nuclear_reactor
 					level = 1
@@ -4290,10 +4330,95 @@ BAR_reactor_research = {
 }
 
 BAR_viira_spells = {
+	BAR_spread_zone = {
+		fire_only_once = yes
+		state_target = yes
+		target_array = owned_states
+		on_map_mode = map_only
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			ROOT = {
+				has_country_flag = bar_viira_zone_mode
+			}
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = {
+					has_state_flag = BAR_climate
+				}
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = {
+					has_state_flag = BAR_climate
+				}
+			}
+		}
+		icon = GFX_BAR_viira_spread_zone_button
+		days_remove = 15
+		remove_effect = {
+			FROM = {
+				set_state_flag = BAR_climate
+				if = {
+					limit = {
+						ROOT = {
+							has_country_flag = BAR_spells_unlocked_4
+						}		
+					}
+					add_province_modifier = {
+						static_modifiers = {
+							barrad_climate4
+						}
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_resistance_target = {
+						amount = -20
+						occupier = BAR
+					}
+					add_compliance = 40
+				} else = {
+					add_province_modifier = {
+						static_modifiers = {
+							barrad_climate3
+						}
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_resistance_target = {
+						amount = -10
+						occupier = BAR
+					}
+					add_compliance = 20
+				}
+			}
+			ROOT = {
+				if = {
+					limit = {
+						has_country_leader_with_trait = bar_viira_title_10
+					}
+					add_to_variable = {
+						viira_mana_overload = 1
+					}
+				}
+				else = {
+					add_to_variable = {
+						viira_mana_overload = 5
+					}
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+	}
 	BAR_viira_nuke = {
 		state_target = yes
 		on_map_mode = map_only
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_nuke_button
 		allowed = {
 			original_tag = BAR
 		}
@@ -4314,6 +4439,15 @@ BAR_viira_spells = {
 			}
 		}
 		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = BAR_spells_unlocked_4
+				}
+				launch_nuke = {
+					state = FROM
+					use_nuke = no
+				}
+			}
 			launch_nuke = {
 				state = FROM
 				use_nuke = no
@@ -4321,7 +4455,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_x_decay = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_decay_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4352,9 +4486,21 @@ BAR_viira_spells = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_x_decay"
 				FROM = {
 					CONTROLLER = {
-						add_timed_idea = {
-							idea = BAR_viira_spell_x_decay_idea
-							days = 14
+						if = {
+							limit = {
+								ROOT = {
+									has_country_flag = BAR_spells_unlocked_3
+								}
+							}
+							add_timed_idea = {
+								idea = BAR_viira_spell_x_decay_idea_2
+								days = 21
+							}
+						} else = {
+							add_timed_idea = {
+								idea = BAR_viira_spell_x_decay_idea
+								days = 14
+							}
 						}
 					}
 				}
@@ -4371,7 +4517,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_gas = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_gas_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4402,9 +4548,21 @@ BAR_viira_spells = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gas"
 				FROM = {
 					CONTROLLER = {
-						add_timed_idea = {
-							idea = BAR_viira_spell_gas_idea
-							days = 14
+						if = {
+							limit = {
+								ROOT = {
+									has_country_flag = BAR_spells_unlocked_3
+								}
+							}
+							add_timed_idea = {
+								idea = BAR_viira_spell_gas_idea_2
+								days = 21
+							}
+						} else = {
+							add_timed_idea = {
+								idea = BAR_viira_spell_gas_idea
+								days = 14
+							}
 						}
 					}
 				}
@@ -4421,7 +4579,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_electromagnetism = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_electromagnetism_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4441,17 +4599,37 @@ BAR_viira_spells = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_electromagnetism"
 				FROM = {
-					damage_building = {
-						type = infrastructure
-						damage = 4
-					}
-					damage_building = {
-						type = arms_factory
-						damage = 4
-					}
-					damage_building = {
-						type = industrial_complex
-						damage = 4
+					if = {
+						limit = {
+							ROOT = {
+								has_country_flag = BAR_spells_unlocked_3
+							}
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 10
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 10
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 10
+						}
+					} else = {
+						damage_building = {
+							type = infrastructure
+							damage = 4
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 4
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 4
+						}
 					}
 				}
 				add_to_variable = {
@@ -4466,7 +4644,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_psi_emission = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_psi_emission_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4494,50 +4672,49 @@ BAR_viira_spells = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_psi_emission"
 				FROM = {
-					CONTROLLER = {					
+					CONTROLLER = {	
 						if = {
 							limit = {
 								has_manpower > 1000000
 							}
-							save_current_manpower = yes
 							set_temp_variable = {
 								cur_manpower = 1000000
 							}
-							multiply_temp_variable = {
-								cur_manpower = 0.03
-							}
-							round_temp_variable = cur_manpower
-							BAR = {
-								add_manpower = cur_manpower
-							}
-							multiply_temp_variable = {
-								cur_manpower = -1
-							}
-							add_manpower = cur_manpower
-							restore_previous_manpower = yes
-						}
-						else = {
-							save_current_manpower = yes
+						} else = {
 							set_temp_variable = {
 								cur_manpower = manpower
 							}
-							multiply_temp_variable = {
-								cur_manpower = 0.03
-							}
-							round_temp_variable = cur_manpower
-							BAR = {
-								add_manpower = cur_manpower
-							}
-							multiply_temp_variable = {
-								cur_manpower = -1
-							}
-							add_manpower = cur_manpower
-							restore_previous_manpower = yes
 						}
+
+						if = {
+							limit = {
+								ROOT = {
+									has_country_flag = BAR_spells_unlocked_4
+								}
+							}
+							multiply_temp_variable = {
+								cur_manpower = 0.1
+							}
+						} else = {
+							multiply_temp_variable = {
+								cur_manpower = 0.05
+							}
+						}
+
+						round_temp_variable = cur_manpower
+						BAR = {
+							add_manpower = cur_manpower
+						}
+						multiply_temp_variable = {
+							cur_manpower = -1
+						}
+						save_current_manpower = yes
+						add_manpower = cur_manpower
+						restore_previous_manpower = yes
 					}
 				}
 				add_to_variable = {
-					viira_mana_overload = 5
+					viira_mana_overload = 20
 				}
 				bar_viira_spells_max_overload = yes
 			}
@@ -4548,7 +4725,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_incineration = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_incineration_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4579,9 +4756,21 @@ BAR_viira_spells = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gas"
 				FROM = {
 					CONTROLLER = {
-						add_timed_idea = {
-							idea = BAR_viira_spell_incineration_idea
-							days = 14
+						if = {
+							limit = {
+								ROOT = {
+									has_country_flag = BAR_spells_unlocked_3
+								}
+							}
+							add_timed_idea = {
+								idea = BAR_viira_spell_incineration_idea_2
+								days = 21
+							}
+						} else = {
+							add_timed_idea = {
+								idea = BAR_viira_spell_incineration_idea
+								days = 14
+							}
 						}
 					}
 				}
@@ -4598,7 +4787,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_earthshocks = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_aftershocks_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4635,32 +4824,34 @@ BAR_viira_spells = {
 							limit = {
 								has_manpower > 1000000
 							}
-							save_current_manpower = yes
 							set_temp_variable = {
 								cur_manpower = 1000000
 							}
-							multiply_temp_variable = {
-								cur_manpower = -0.02
-							}
-							round_temp_variable = cur_manpower
-							multiply_temp_variable = {
-								cur_manpower = -1
-							}
-							add_manpower = cur_manpower
-							restore_previous_manpower = yes
-						}
-						else = {
-							save_current_manpower = yes
+						} else = {
 							set_temp_variable = {
 								cur_manpower = manpower
 							}
-							multiply_temp_variable = {
-								cur_manpower = -0.02
-							}
-							round_temp_variable = cur_manpower
-							add_manpower = cur_manpower
-							restore_previous_manpower = yes
 						}
+
+						if = {
+							limit = {
+								ROOT = {
+									has_country_flag = BAR_spells_unlocked_3
+								}
+							}
+							multiply_temp_variable = {
+								cur_manpower = -0.07
+							}
+						} else = {
+							multiply_temp_variable = {
+								cur_manpower = -0.03
+							}
+						}
+
+						save_current_manpower = yes
+						round_temp_variable = cur_manpower
+						add_manpower = cur_manpower
+						restore_previous_manpower = yes
 					}
 				}
 				add_to_variable = {
@@ -4675,7 +4866,7 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_global_psi_emission = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_global_psi_emission_button
 		state_target = yes
 		on_map_mode = map_only
 		allowed = {
@@ -4683,7 +4874,7 @@ BAR_viira_spells = {
 		}
 		visible = {
 			ROOT = {
-				has_country_flag = bar_viira_psi_emission_mode
+				has_country_flag = bar_viira_global_psi_emission_mode
 			}
 			FROM = {
 				is_capital = yes
@@ -4694,10 +4885,24 @@ BAR_viira_spells = {
 		}
 		available = {
 			FROM = {
-				CONTROLLER = {
-					has_stability > 0.4
-					has_war_support > 0.4
+				OR = {
+					AND = {
+						ROOT = {
+							has_country_flag = BAR_spells_unlocked_4
+						}
+						CONTROLLER = {
+							has_stability > 0.25
+							has_war_support > 0.25
+						}
+					}
+					AND = {
+						CONTROLLER = {
+							has_stability > 0.4
+							has_war_support > 0.4
+						}
+					}
 				}
+				
 			}
 		}
 		complete_effect = {
@@ -4705,9 +4910,21 @@ BAR_viira_spells = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_global_psi_emission"
 				FROM = {
 					CONTROLLER = {
-						add_timed_idea = {
-							idea = BAR_viira_spell_global_psi_idea
-							days = 14
+						if = {
+							limit = {
+								ROOT = {
+									has_country_flag = BAR_spells_unlocked_4
+								}
+							}
+							add_timed_idea = {
+								idea = BAR_viira_spell_global_psi_idea_2
+								days = 21
+							}
+						} else = {
+							add_timed_idea = {
+								idea = BAR_viira_spell_global_psi_idea
+								days = 14
+							}
 						}
 					}
 				}
@@ -4723,22 +4940,66 @@ BAR_viira_spells = {
 			factor = 0
 		}
 	}
+	BAR_viira_spell_psi_migration = {
+		icon = GFX_BAR_viira_psi_migration_button
+		state_target = yes
+		on_map_mode = map_only
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			ROOT = {
+				has_country_flag = bar_viira_psi_migration_mode
+				has_country_flag = BAR_spells_unlocked_1
+			}
+			FROM = {
+				CONTROLLER = {
+					tag = BAR
+				}
+				state_population > 0
+			}
+		}
+		available = {
+			FROM = {
+				state_population > 0
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_psi_migration"
+				FROM = {
+					set_temp_variable = { popToAdd = state_population }
+					multiply_temp_variable = { popToAdd = 0.2 }		
+					save_current_manpower = yes
+					
+					626 = {
+						add_manpower = popToAdd
+					}
+
+					multiply_temp_variable = { popToAdd = -1 }
+					add_manpower = popToAdd
+					restore_previous_manpower = yes	
+				}
+				add_to_variable = {
+					viira_mana_overload = 20
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			custom_effect_tooltip = BAR_viira_spell_global_psi_emission_tooltip
+		}
+		days_remove = 14
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	BAR_viira_spell_sub_zero = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_ice_button
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
 			hidden_trigger = {
-				OR = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
-				}
+				has_variable = BAR_viira_godhood
 			}
 		}
 		complete_effect = {
@@ -4756,10 +5017,12 @@ BAR_viira_spells = {
 			custom_effect_tooltip = BAR_viira_spell_sub_zero_tooltip
 		}
 		remove_effect = {
-			set_technology = {
-				popup = no
-				BAR_viira_spells_sub_zero = 0
-			}
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					BAR_viira_spells_sub_zero = 0
+				}
+			}		
 		}
 		days_remove = 30
 		ai_will_do = {
@@ -4767,21 +5030,13 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_gravity = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_gravity_button
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
 			hidden_trigger = {
-				OR = {
-					AND = {
-						has_variable = BAR_viira_pup
-						check_variable = {
-							viira_mana_overload < 100
-						}
-					}
-					has_variable = BAR_viira_control
-				}
+				has_variable = BAR_viira_godhood
 			}
 		}
 		complete_effect = {
@@ -4799,9 +5054,11 @@ BAR_viira_spells = {
 			custom_effect_tooltip = BAR_viira_spell_gravity_tooltip
 		}
 		remove_effect = {
-			set_technology = {
-				popup = no
-				BAR_viira_spells_gravity = 0
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					BAR_viira_spells_gravity = 0
+				}
 			}
 		}
 		days_remove = 30
@@ -4810,13 +5067,13 @@ BAR_viira_spells = {
 		}
 	}
 	BAR_viira_spell_teleport = {
-		icon = GFX_decision_scroll
+		icon = GFX_BAR_viira_teleport_button
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
 			hidden_trigger = {
-				has_variable = BAR_viira_control
+				has_variable = BAR_viira_godhood
 			}
 		}
 		complete_effect = {
@@ -4834,12 +5091,520 @@ BAR_viira_spells = {
 			custom_effect_tooltip = BAR_viira_spells_teleport_tooltip
 		}
 		remove_effect = {
-			set_technology = {
-				popup = no
-				BAR_viira_spells_teleport = 0
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					BAR_viira_spells_teleport = 0
+				}
 			}
 		}
 		days_remove = 7
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_tech_inisght = {
+		icon = GFX_BAR_viira_tech_inisght_button
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+				has_country_flag = BAR_unlock_spells_2
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_tech_inisght"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			random_list = {
+				10 = {
+					add_tech_bonus = {
+						name = infantry_bonus
+						bonus = 1
+						uses = 1
+						category = infantry_weapons
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = infantry_bonus
+						bonus = 1
+						uses = 1
+						category = support_tech
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1
+						uses = 1
+						category = armor
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = artillery_bonus
+						bonus = 1
+						uses = 1
+						category = artillery
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = heavy_air
+						bonus = 1.5
+						uses = 1
+						ahead_reduction = 2
+						category = heavy_air
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = fighter_bonus
+						bonus = 1.5
+						uses = 1
+						ahead_reduction = 2
+						category = light_air
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = industry_bonus
+						bonus = 1
+						uses = 1
+						category = industry
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = electronics_bonus
+						bonus = 1
+						uses = 1
+						category = electronics
+					}
+				}
+				10 = {
+					add_tech_bonus = {
+						name = naval_research
+						bonus = 1
+						uses = 2
+						category = naval_equipment
+					}
+				}
+				10 = {
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = land_doctrine
+					}
+					add_doctrine_cost_reduction = {
+						name = navdoctrine_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = naval_doctrine
+					}
+					add_doctrine_cost_reduction = {
+						name = air_doc_bonus
+						cost_reduction = 0.5
+						uses = 1
+						category = air_doctrine
+					}
+				}
+			}
+		}
+		days_remove = 60
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_conjure_civ_factory = {
+		icon = GFX_decision_scroll
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+				has_country_flag = BAR_spells_unlocked_5
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_conjure_civ_factory"
+				add_to_variable = {
+					viira_mana_overload = 150
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 15
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_conjure_mil_factory = {
+		icon = GFX_decision_scroll
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+				has_country_flag = BAR_spells_unlocked_5
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_conjure_mil_factory"
+				add_to_variable = {
+					viira_mana_overload = 150
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 15
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_conjure_building_slots = {
+		icon = GFX_decision_scroll
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+				has_country_flag = BAR_spells_unlocked_5
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_conjure_building_slots"
+				add_to_variable = {
+					viira_mana_overload = 75
+				}
+				bar_viira_spells_max_overload = yes
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		days_remove = 10
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#########
+	#########  #decisions for viira's titles
+	#########
+	BAR_viira_spell_mirror_of_knowledge = {
+		icon = GFX_BAR_viira_mirror_of_knowledge_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_mirror_of_knowledge"
+				add_to_variable = {
+					viira_mana_overload = 200
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_2
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_saviour_of_faithful = {
+		icon = GFX_BAR_viira_savior_of_faithful_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_saviour_of_faithful"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_5
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_vessel_of_honour = {
+		icon = GFX_BAR_viira_vessel_of_honor_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_vessel_of_honour"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				add_country_leader_trait = bar_viira_title_6_bba
+			} else = {
+				add_country_leader_trait = bar_viira_title_6
+			}	
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_voice_in_darkness = {
+		icon = GFX_BAR_viira_voice_in_darkness_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_voice_in_darkness"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_7
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_mystical_rose = {
+		icon = GFX_BAR_viira_mystical_rose_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_mystical_rose"
+				add_to_variable = {
+					viira_mana_overload = 200
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_8
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_houseof_gold = {
+		icon = GFX_BAR_viira_house_of_gold_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_houseof_gold"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_9
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_gate_of_heavens = { #unlocks spell upgrades
+		icon = GFX_BAR_viira_gate_of_heaven_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_gate_of_heavens"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_10
+			set_variable = {
+				bar_viira_spells_upgrade_unlock = 1
+			}
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_morning_star = {
+		icon = GFX_BAR_viira_morning_star_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_morning_star"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_11
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_health_of_sick = {
+		icon = GFX_BAR_viira_health_of_sick_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_health_of_sick"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_12
+		}
+		days_remove = 30
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_comfort_of_afflicted = {
+		icon = GFX_BAR_viira_comfort_of_afflicted_title
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_variable = BAR_viira_godhood
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_comfort_of_afflicted"
+				add_to_variable = {
+					viira_mana_overload = 100
+				}
+				bar_viira_spells_max_overload = yes
+			}
+		}
+		remove_effect = {
+			add_country_leader_trait = bar_viira_title_14
+		}
+		days_remove = 30
 		ai_will_do = {
 			factor = 0
 		}
@@ -6989,70 +7754,6 @@ BAR_asinti_blood_sacrifices = {
 }
 
 BAR_viira_coring = {
-	BAR_spread_zone = {
-		fire_only_once = yes
-		state_target = yes
-		target_array = owned_states
-		on_map_mode = map_only
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			ROOT = {
-				has_country_flag = bar_viira_zone_mode
-			}
-			FROM = {
-				is_controlled_by = ROOT
-				NOT = {
-					has_state_flag = BAR_climate
-				}
-			}
-		}
-		target_trigger = {
-			FROM = {
-				is_controlled_by = ROOT
-				NOT = {
-					has_state_flag = BAR_climate
-				}
-			}
-		}
-		icon = daggers
-		days_remove = 15
-		remove_effect = {
-			FROM = {
-				set_state_flag = BAR_climate
-				add_province_modifier = {
-					static_modifiers = {
-						barrad_climate3
-					}
-					province = {
-						all_provinces = yes
-					}
-				}
-				add_resistance_target = {
-					amount = -10
-					occupier = BAR
-				}
-				add_compliance = 30
-			}
-			ROOT = {
-				if = {
-					limit = {
-						has_country_flag = unlock_viirapuppet
-					}
-					add_to_variable = {
-						viira_mana_overload = 1
-					}
-				}
-				else = {
-					add_to_variable = {
-						viira_mana_overload = 5
-					}
-				}
-				bar_viira_spells_max_overload = yes
-			}
-		}
-	}
 	BAR_viira_core_deer = {
 		icon = austurland
 		fire_only_once = yes
@@ -10816,22 +11517,7 @@ BAR_asinti_pentarchs = {
 		}
 		remove_effect = {
 			custom_effect_tooltip = BAR_gasienica_general
-			add_corps_commander_role = {
-				character = BAR_captain_gasienica
-				traits = {
-					griffon_race_trait
-					bar_cpt_gasienica
-					trait_mountaineer
-					infantry_officer
-					trickster
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-				legacy_id = 997003
-			}
+			BAR_add_gasienica_as_commander = yes
 		}
 	}
 	BAR_asinti_pentarchs_kill_leopold = {

@@ -44,17 +44,12 @@ on_actions = {
 					limit = {
 						country_exists = BAR
 						BAR = {
-							OR = {
-								has_variable = BAR_viira_pup
-								has_variable = BAR_viira_control
-							}	
-							check_variable = { viira_mana_overload > 9 }
+							has_variable = viira_mana_overload
 						}
 					}
 					BAR = {
-						subtract_from_variable = { viira_mana_overload = 10 }
-					}
-					
+						bar_viira_spells_overload_monthly_tickdown = yes
+					}	
 				}
 				if = {
 					limit = {

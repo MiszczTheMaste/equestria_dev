@@ -915,13 +915,6 @@ ideas = {
 				defence = 0.15
 			}
 		}
-		BAR_viira = {
-			picture = BAR_viira
-			modifier = {
-				stability_factor = 0.2
-				war_support_factor = 0.2
-			}
-		}
 		BAR_singularity_idea = {
 			picture = generic_research_bonus
 			modifier = {
@@ -1435,16 +1428,34 @@ BAR_temple_builded_d_l_g = {
 			attrition = 0.5
 		}
 	}
+	BAR_viira_spell_x_decay_idea_2 = {
+		picture = magical_corruption
+		modifier = {
+			attrition = 1
+		}
+	}
 	BAR_viira_spell_gas_idea = {
 		picture = magical_corruption
 		modifier = {
 			weekly_manpower = -1500
 		}
 	}
+	BAR_viira_spell_gas_idea_2 = {
+		picture = magical_corruption
+		modifier = {
+			weekly_manpower = -2500
+		}
+	}
 	BAR_viira_spell_incineration_idea = {
 		picture = BAL_hell
 		modifier = {
-			supply_consumption_factor = 0.3
+			supply_consumption_factor = 0.4
+		}
+	}
+	BAR_viira_spell_incineration_idea_2 = {
+		picture = BAL_hell
+		modifier = {
+			supply_consumption_factor = 0.8
 		}
 	}
 	BAR_viira_spell_global_psi_idea = {
@@ -1454,97 +1465,152 @@ BAR_temple_builded_d_l_g = {
 			stability_weekly = -0.01
 		}
 	}
+	BAR_viira_spell_global_psi_idea_2 = {
+		picture = pony_enslaved
+		modifier = {
+			war_support_weekly = -0.015
+			stability_weekly = -0.015
+		}
+	}
 	BAR_viira_psi_controll = {
 		picture = pony_enslaved
 		modifier = {
 			non_core_manpower = 0.2
 		}
 	}
-	BAR_viira_manpower01_idea = {
-		picture = pony_soldier
-		modifier = {
-			conscription = 0.05
-		}
-	}
-	BAR_viira_manpower10_idea = {
-		picture = pony_soldier
-		modifier = {
-			training_time_army_factor = -0.2
-			minimum_training_level = -0.2
-			mobilization_speed = 0.5
-		}
-	}
-	BAR_viira_manpower11_idea = {
+	BAR_viira_manpower1 = {
 		picture = viirasoldat
 		modifier = {
+			conscription_factor = 0.2
 			mobilization_speed = 0.6
-			training_time_army_factor = -0.3
+			training_time_army_factor = -0.1
 			minimum_training_level = -0.05
-			conscription = 0.1
 		}
 	}
-	BAR_viira_manpower2_idea = {
+	BAR_viira_manpower2 = {
 		picture = viirasoldat2
 		modifier = {
+			conscription_factor = 0.4
 			mobilization_speed = 0.7
 			training_time_army_factor = -0.2
 			minimum_training_level = -0.1
-			conscription = 0.15
 			industrial_capacity_factory = -0.3
 			industrial_capacity_dockyard = -0.3
 			production_speed_buildings_factor = -0.3
 			research_speed_factor = -0.1
 		}
 	}
-	BAR_viira_manpower3_idea = {
+	BAR_viira_manpower3 = {
 		picture = viirasoldat3
 		modifier = {
-			mobilization_speed = 0.8
-			training_time_army_factor = -0.1
-			minimum_training_level = -0.15
 			conscription = 0.2
+			mobilization_speed = 0.8
+			training_time_army_factor = -0.3
+			minimum_training_level = -0.15
 			industrial_capacity_factory = -0.35
 			industrial_capacity_dockyard = -0.35
 			production_speed_buildings_factor = -0.35
 			research_speed_factor = -0.15
 		}
 	}
-	BAR_viira_manpower4_idea = {
+	BAR_viira_manpower4 = {
 		picture = viirasoldat4
 		modifier = {
+			conscription_factor = 0.6
 			mobilization_speed = 0.9
-			minimum_training_level = -0.2
-			conscription = 0.25
+			training_time_army_factor = -0.4
+			minimum_training_level = -0.2	
 			industrial_capacity_factory = -0.4
 			industrial_capacity_dockyard = -0.4
 			production_speed_buildings_factor = -0.4
 			research_speed_factor = -0.2
 		}
 	}
-	BAR_viira_manpower5_idea = {
+	BAR_viira_manpower5 = {
 		picture = viirasoldat5
 		modifier = {
+			conscription_factor = 0.8
 			mobilization_speed = 1
-			training_time_army_factor = 0.1
+			training_time_army_factor = -0.5
 			minimum_training_level = -0.25
-			conscription = 0.3
 			production_speed_buildings_factor = -0.45
 			industrial_capacity_factory = -0.45
 			industrial_capacity_dockyard = -0.45
 			research_speed_factor = -0.25
 		}
 	}
-	BAR_viira_manpower6_idea = {
+	BAR_viira_manpower6 = {
 		picture = viirasoldat6
 		modifier = {
+			conscription_factor = 1.2
 			mobilization_speed = 1.12
-			training_time_army_factor = 0.2
+			training_time_army_factor = -0.6
 			minimum_training_level = -0.3
-			conscription = 0.4
 			production_speed_buildings_factor = -0.5
 			industrial_capacity_factory = -0.5
 			industrial_capacity_dockyard = -0.5
 			research_speed_factor = -0.3
+		}
+	}
+	BAR_viira_manpower2_up = {
+		picture = viirasoldat2
+		modifier = {
+			conscription_factor = 0.4
+			mobilization_speed = 0.7
+			training_time_army_factor = -0.2
+			minimum_training_level = -0.1
+		}
+	}
+	BAR_viira_manpower3_up = {
+		picture = viirasoldat3
+		modifier = {
+			conscription = 0.2
+			mobilization_speed = 0.8
+			training_time_army_factor = -0.3
+			minimum_training_level = -0.15
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+			production_speed_buildings_factor = -0.05
+			research_speed_factor = -0.05
+		}
+	}
+	BAR_viira_manpower4_up = {
+		picture = viirasoldat4
+		modifier = {
+			conscription_factor = 0.6
+			mobilization_speed = 0.9
+			training_time_army_factor = -0.4
+			minimum_training_level = -0.2	
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+			production_speed_buildings_factor = -0.1
+			research_speed_factor = -0.1
+		}
+	}
+	BAR_viira_manpower5_up = {
+		picture = viirasoldat5
+		modifier = {
+			conscription_factor = 0.8
+			mobilization_speed = 1
+			training_time_army_factor = -0.5
+			minimum_training_level = -0.25
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.15
+			research_speed_factor = -0.15
+		}
+	}
+	BAR_viira_manpower6_up = {
+		picture = viirasoldat6
+		modifier = {
+			conscription_factor = 1.2
+			mobilization_speed = 1.12
+			training_time_army_factor = -0.6
+			minimum_training_level = -0.3
+			production_speed_buildings_factor = -0.2
+			industrial_capacity_factory = -0.2
+			industrial_capacity_dockyard = -0.2
+			research_speed_factor = -0.2
 		}
 	}
 	BAR_viira_decadency = {

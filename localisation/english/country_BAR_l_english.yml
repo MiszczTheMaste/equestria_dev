@@ -1880,25 +1880,19 @@ bar_pen_ambrosius_info_text:0 "Once a prominent merchant and artisan, Ambrosius 
 bar_pen_leopold_info_text:0 "The desire to help others is a noble one, especially when one wants to help an entire continent, if not the world. It was this desire that would define the life of a griffon known as Leopold.\n\nLeopold was born in and would spend his early life in the Herzland, the heart of the Empire, and of course, one of the most technologically and scientifically advanced regions of the world. Perhaps this is why the griffon managed to survive his adolescence, though most agree it would be better if he perished as a chick. For since his very first years, Leopold was a very sickly griffon, with only the best medicine available preserving his life.\n\nIt was this sickness and weakness that accompanied him his whole life, combined with his genius, that would define Leopold's life goal. Unlike any of the other great minds of Griffonia, even those from universities such as Gamia, he began to devise a less conventional solution for biological issues. He believed that instead of relying on medicine or even biological modifications, it would be technological enhancement that would allow sickly and weak to survive and reach their potential. This belief was only reinforced when Leopold managed to somewhat alleviate his own maladies with the usage of magical crystal injections and by implanting enchanted machines which assisted his organs. These additions also had the effect of greatly increasing Leopold's physical abilities far beyond what he had previously been capable of.\n\nThis side effect led to even more unorthodox and, to many, unacceptable ideas that the griffon had to alleviate the endless and every increasing number of issues that effected Griffonia. Instead of just using his research to heal the weak and broken, Leopold could use it to protect them from becoming as such in the first place. By creating a force of griffons that through the usage of magical technology were pushed beyond the limits of their flesh, the weak could be protected for generations, and the strong could resist the ravages of age and disability. After all, considering the most prosperous and stable realm in the world - Equestria, has survived for a thousand years through the efforts of the great few, how long might Griffonia last under the care of such heroes, even if they were manufactured?\n\nHowever, to most, even the most wicked of Gamia, the prospect seemed like insanity and perhaps even the worst of heresies, and thus Leopold was forced to flee beyond where the rapidly shrinking power of the Griffonian Empire could hunt him down. In his exile he would be approached by Ambrosius, who to Leopold's surprise, applauded such an idea and more importantly, the potential of the mastermind behind it, inviting him to come to a domain where such ideas could be entertained.\n\nMany years have passed since then, and now Leopold is something far beyond the wide eyed idealist genius he once was. While initially reluctant to apply the usual Barrad methodology, the nightmarish brutality of the Republican Uprising, has convinced the Griffon that the sacrifices are worth the potential result. Furthermore, now Leopold doesn't limit himself to the idea of creating modified heroes, now believing that Griffonia needed its own "alicorns", demigods who could rule and protect the populace, and believes that through magical and technological modifications, he could become this savior."
 bar_pen_viira_info_text:0 "When we are little, most of us are told that we are special, unique, and not quite like the other inhabitants of this world. In many cases this belief is shattered as we grow up, and learn the world is just too large for uniqueness, and that we are nothing special in the grand scheme of things. For very specific cases however, it's different. One of these special cases is Viira the Seer.\n\nViira was born as a deer with substantial magical powers. An especial rarity for a species who rarely possessed active magical abilities. Thus, she was spoiled in her youth, being treated like an offspring of the highest of lords, despite of her somewhat unremarkable bloodline, and taught the intricacies of the strange magic of the deer. It became quickly apparent that her innate power was rivaled only by her innate prowess, learning and mastering the few controlled magical abilities deer could have at an extremely young age. This was her greatest triumph yet, but one which wouldn't last. Viira would soon discover that many species were far more powerful than the deer, with regards to both their countries and their magical abilities.\n\nThis was a shattering revelation to the young doe, who thought herself on top of the world. But it also gave her inspiration. After all, if other creatures could use their magic to dominate the physical world to such an extent, why not the deer? The issue must have been that no seer had thought to or attempted to reach such heights, or of course was too weak or lazy to try achieving something. She would not be like that. This unfortunately meant that there was no future for Viira at her home, and so she left to wander the world, searching for any magical secrets which could lead to a deer becoming as powerful as the magic users of other races.\n\nViira would become somewhat of an oddity in many places, a single doe wandering the land in pristine exotic clothes which most don't recognize, much to the annoyance of the seer, usually carrying around several tomes for recording any new information. Her priorities and acting towards others would also be surprising to onlookers, as she would choose to speak with a simple peasant rather than the lord or flip from polite to furious all based on what sort of knowledge about magic the creature in question would possess. An exception to this pattern would be countries openly dominated by magicians, as these were the only places where Viira would show respect and even admiration, and try mingling with the elite in an attempt to learn how such paradises were created and governed. It would be during one of such meetings, that Viira would meet Ambrosius and hear about his proposal. She of course accepted, after all, who could refuse?\n\nNow Viira spends her time as one of the more distant members of the Barrad Pentarchy, studying magical arts within her quarters, trying to achieve the ability of dominating the material world through her magic so that one day she could bring this knowledge and the enlightened ideal of rule of the magical to the rest of deerkind."
 ### viiras clues ###
-bar_pen_viira_clues_text:0 "[Root.bar_pen_viira_clues_text_scr]"
-bar_pen_viira_clues_text_nothig:0 "Start of the journal." 
+bar_pen_viira_clues_text_flavor1:0 "Some starting flavor mambojambo so the button does something at the game start"
 bar_pen_viira_clues_text1:0 "The Count called us all together for another one of his ridiculous feasts, and afterwards forced us to go on a hunting expedition in the forest. Things were quite dull until we stumbled upon the schematics for a mysterious device. Asinti wanted custody of the ponies that led us to them, the fool, but I ensured that did not happen.\n\nClearly, further investigation into the origin of these schematics will be necessary. Contacting the cult that provided them would be a good place to start."
-bar_pen_viira_clues_text2:0 "The Count called us all together for another one of his ridiculous feasts, and afterwards forced us to go on a hunting expedition in the forest. Things were quite dull until we stumbled upon the schematics for a mysterious device. Asinti wanted custody of the ponies that led us to them, the fool, but I ensured that did not happen.\n\nAfter questioning members of this cult, I discovered that they believe the schematics originate from the deity they worship. This calls for further questioning into the nature of this deity."
-bar_pen_viira_clues_text3:0 "The Count called us all together for another one of his ridiculous feasts, and afterwards forced us to go on a hunting expedition in the forest. Things were quite dull until we stumbled upon the schematics for a mysterious device. Asinti wanted custody of the ponies that led us to them, the fool, but I ensured that did not happen.\n\nAfter questioning members of this cult, I discovered that they believe the schematics originate from the deity they worship: the "Great Machine". Quite curious. Contacting Inner Circle cultists will be necessary to discover more about the nature of this deity."
-bar_pen_viira_clues_text40:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?"
-bar_pen_viira_clues_text41:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?\n\nI have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence."
-bar_pen_viira_clues_text42:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?\n\nI visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions."
-bar_pen_viira_clues_text43:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?\n\nAsinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre..."
-bar_pen_viira_clues_text44:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?\n\nAsinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre...\n\nI have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence. Perhaps these plants are somehow connected to the living rock?"
-bar_pen_viira_clues_text45:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?\n\nAsinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre...\n\nI visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions from them. I feel more confident in making a link between the living rock and the hostile plants. The two are connected, but what power could be behind the corruption of the very earth? I am at a loss."
-bar_pen_viira_clues_text46:0 "I have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence."
-bar_pen_viira_clues_text47:0 "Asinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre...\n\nI have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence. Perhaps these plants are somehow connected to the living rock?"
-bar_pen_viira_clues_text48:0 "I visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions."
-bar_pen_viira_clues_text49:0 "Asinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre...\n\nI visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions from them. I feel more confident in making a link between the living rock and the hostile plants. The two are connected, but what power could be behind the corruption of the very earth? I am at a loss."
-bar_pen_viira_clues_text410:0 "Asinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre..."
-bar_pen_viira_clues_text10:0 "Perhaps the answers I seek lie beneath the ground? I hear Leopold is conducting quite the excavation..."
-bar_pen_viira_clues_text11:0 "The Titan of living rock uncovered by Leopold's excavation was obviously a magical construct, but creating it would be well beyond the ability of any living mage. It must have been the same power behind Asinti's living rock and the plants that attacked the mountain villages. It's all connected, I know it, but how? I just need to find one more missing piece... Silver Star's library is the only place in Barrad that might contain answers, but I doubt he would ever let me peruse it voluntarily."
-bar_pen_viira_clues_text12:0 "Everything now seems much more clear, the time draws near..."
+bar_pen_viira_clues_text2:0 " After questioning members of this cult, I discovered that they believe the schematics originate from the deity they worship. This calls for further questioning into the nature of this deity."
+bar_pen_viira_clues_text3:0 "The deity cultists worship: the "Great Machine". Quite curious. Contacting Inner Circle cultists will be necessary to discover more about the nature of this deity."
+bar_pen_viira_clues_text4:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?"
+bar_pen_viira_clues_text5:0 "I have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence."
+bar_pen_viira_clues_text6:0 " I visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions."
+bar_pen_viira_clues_text7:0 " Asinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre..."
+bar_pen_viira_clues_text8:0 "I feel more confident in making a link between the living rock and the hostile plants. The two are connected, but what power could be behind the corruption of the very earth? I am at a loss."
+bar_pen_viira_clues_text9:0 "Perhaps the answers I seek lie beneath the ground? I hear Leopold is conducting quite the excavation..."
+bar_pen_viira_clues_text10:0 "The Titan of living rock uncovered by Leopold's excavation was obviously a magical construct, but creating it would be well beyond the ability of any living mage. It must have been the same power behind Asinti's living rock and the plants that attacked the mountain villages. It's all connected, I know it, but how? I just need to find one more missing piece... Silver Star's library is the only place in Barrad that might contain answers, but I doubt he would ever let me peruse it voluntarily."
+bar_pen_viira_clues_text11:0 "Everything now seems much more clear, the time draws near..."
+
 
 ### leaders ###
 BAR_count_ambrosius:0 "Count Ambrosius"
@@ -1980,18 +1974,6 @@ BAR_elysium:0 "Elysium"
 BAR_dunburh:0 "Dunburh"
 BAR_viirium:0 "Viirium"
 
-##### deet magic ######
-BAR_viira_spell_sub_zero_tooltip:0 "All infantry:\n   Marsh\n     Movement: §G+5%§!\n     Attack: §G+30%§!\n   River\n     Movement: §G+5§!     \nAttack: §G+30%§!\n\nLasts 30 days\n\nChill out!"
-BAR_viira_spell_x_decay_tooltip:0 "One of our enemies will face severe attrition\n\nWither and rot!\n\nLasts 14 days"
-BAR_viira_spell_gravity_tooltip:0 "Army:\n   Mountains\n     Movement: §G+40%§!\nLasts 30 days\n\nGravity cannot be defied, but it can be helped along!"
-BAR_viira_spell_gas_tooltip:0 "Some of enemy soldiers will die as well as their will to fight\n\nThere's something in the air...\n\nLasts 14 days"
-BAR_viira_spell_electromagnetism_tooltip:0 "Will damage enemy buildings\n\nNever underestimate the power of magnetism!"
-BAR_viira_spell_psi_emission_tooltip:0 "Some of your enemies will change side.\n\nMy wish is your command!"
-BAR_viira_spell_incineration_tooltip:0 "Increases supply usage for enemies.\nLasts 14 days\n\nToasty!"
-BAR_viira_spell_earthshocks_tooltip:0 "Will damage enemy buildings and kill population\n\nQuake in fear!"
-BAR_viira_spells_teleport_tooltip:0 "Army:\n   Mountains\n     Movement: §G+40%§!\n   Hills\n     Movement: §G+30%§!\nLasts 7 days\n\nWhy walk when you can teleport?"
-BAR_viira_spell_global_psi_emission_tooltip:0 "Will decrease enemy will to fight.\nLasts 14 days\n\nTotal psychic domination is within reach..."
-
 ###### tooltips #####
 bar_virra_becomes_leader:0 "Viira will become ruler."
 BAR_leopold_ascesion_desc:0 "Leopold has ascended."
@@ -2010,9 +1992,7 @@ BAR_cult_creeps_on_the_ground:0 "Cultists will come to your aid."
 
 bar_had_industrialised:0 "Barrad has become an industrial nation."
 bar_had_industrialised2:0 "The creatures of Barrad modernised the country as much as they could."
-bar_viira_nukes_tooltip:0 "Let them feel my wrath of thousand thunders!"
-bar_cpt_quest_button_tooltip:0 "Time to help my brothers."
-bar_vir_quest_button_tooltip:0 "Let's see what happened there..."
+
 
 #TODO
 BAR_ambrosius_goods:0 "Ambrosius' Decadence"
@@ -2118,9 +2098,7 @@ BAR_viira_spell_gas_idea:0 "Gas"
 BAR_viira_spell_incineration_idea:0 "Incineration"
 BAR_viira_spell_global_psi_idea:0 "Global Psi Emission"
 BAR_viira_psi_controll:0 "Psi Control"
-BAR_viira_manpower01_idea:0 "Unconditional Servitude"
-BAR_viira_manpower10_idea:0 "Unconditional Servitude"
-BAR_viira_manpower11_idea:0 "Unconditional Servitude"
+BAR_viira_manpower1_idea:0 "Unconditional Servitude"
 BAR_viira_manpower2_idea:0 "Unconditional Servitude"
 BAR_viira_manpower3_idea:0 "Unconditional Servitude"
 BAR_viira_manpower4_idea:0 "Unconditional Servitude"
@@ -2204,20 +2182,20 @@ bar_pen_ambrosius_info_name:0 "Ambrosius"
 bar_pen_asinti_info_name:0 "Asinti"
 bar_pen_screen_silver_info_name:0 "Silver Star"
 
-bar_new_journal_entry_window_text:0 "New journal entry!"
-
+bar_new_journal_entry_window_text:0 "New Viira's note!"
 
 BAR_viira_spells:0 "Viira's New Powers"
-BAR_viira_spells_desc:0 "[Root.BAR_viira_magic_tired]"
-BAR_viira_magic_tired_0:0 "§2Viira is rested and ready to put her powers to use.§!"
-BAR_viira_magic_tired_1:0 "§3Viira has not even broken a sweat yet.§!"
-BAR_viira_magic_tired_2:0 "§4Viira had her fun, maybe a little break won't hurt...§!"
-BAR_viira_magic_tired_3:0 "§5Viira starts to feel the burden of her power...§!"
-BAR_viira_magic_tired_4:0 "§6It starts to be harder for Viira to keep her powers on the leash...§!"
-BAR_viira_magic_tired_5:0 "§7Each new show of power starts to inflict physical pain for Viira...§!"
-BAR_viira_magic_tired_6:0 "§8The blood running through Viira's veins starts to run hot...§!"
+####TODO rewrite desc below
+BAR_viira_spells_desc:0 "After getting hold of the reactor power and binding the ancient Entity to her will Viira had aquired a set of new powers, but with such great power goes great power gets great responsibility. One wrong decision can have §Rdire consequences§!\n\nBut for now...\n[Root.BAR_viira_magic_tired]"
+BAR_viira_magic_tired_0:0 "§2...Viira is rested and ready to put her powers to use.§!"
+BAR_viira_magic_tired_1:0 "§3...Viira has not even broken a sweat yet.§!"
+BAR_viira_magic_tired_2:0 "§4...Viira had her fun, maybe a little break won't hurt...§!"
+BAR_viira_magic_tired_3:0 "§5...Viira starts to feel the burden of her power...§!"
+BAR_viira_magic_tired_4:0 "§6...it starts to be harder for Viira to keep her powers on the leash...§!"
+BAR_viira_magic_tired_5:0 "§7...each new show of power starts to inflict physical pain for Viira...§!"
+BAR_viira_magic_tired_6:0 "§8...the blood running through Viira's veins starts to run hot...§!"
 BAR_viira_magic_tired_7:0 "§9...I can push it a bit further...§!"
-BAR_viira_magic_tired_8:0 "§tViira is past the point of no return...§!"
+BAR_viira_magic_tired_8:0 "§t...Viira is past the point of no return...§!"
 
 
 BAR_viira_spell_sub_zero:0 "Freezing Ground"
@@ -2445,12 +2423,25 @@ BAR_asinti_puppet:0 "Flesh Puppet"
 bar_leopold_trait:0 "Mechanical Demigod"
 bar_leopold_clock:0 "Mechanical Demigod"
 
-#for those i wanted them to look like titles as they will stack not replace others, titles i mean like how God or saints are reffered to in litanies
-bar_viira_end:0 "The First Under the Sky"
-bar_viira_end_lar:0 "The First Under the Sky"
-bar_viira_end_1:0 "Mirror of Knowledge"
-bar_viira_end_2:0 "Voice in the Darkness"
-bar_viira_end_3:0 "Saviour of the Faithful"
+BAR_viira_lehtola_desc:0 "\n\n"
+bar_viira_title_1:0 "§CThe First Under the Sky§!"
+bar_viira_title_2:0 "§CMirror of Knowledge§!"
+bar_viira_title_3:0 "§CSeat of Wisdom§!"
+bar_viira_title_4:0 "§CCause of our Joy§!"
+bar_viira_title_5:0 "§CSaviour of the Faithful§!"
+bar_viira_title_6:0 "§CVessel of Honour§!"
+bar_viira_title_6_bba:0 "§CVessel of Honour§!"
+bar_viira_title_7:0 "§CVoice in the Darkness§!"
+bar_viira_title_8:0 "§CMystical Rose§!"
+bar_viira_title_9:0 "§CHouse of Gold§!"
+bar_viira_title_10:0 "§CGate of Heaven§!"
+bar_viira_title_11:0 "§CMorning Star§!"
+bar_viira_title_12:0 "§CHealth of the Sick§!"
+bar_viira_title_13:0 "§CRefuge of Sinners§!"
+bar_viira_title_14:0 "§CComfort of the Afflicted§!"
+
+bar_viira_title_8_tooltip:0 "Soul of the Goddess is perfect like a rose, let the world be Her garden"
+bar_viira_title_10_tooltip:0 "All of us can hear Her beautiful melody in our heads, now it is the time for our old gods to hear it too!"
 
 bar_viira_what_now:0 "...???"
 BAR_true_avatar_of_chaos:0 "True Avatar of Chaos"
@@ -2999,7 +2990,7 @@ BAR_north1_sci:0 "Shadow Council £locked!"
 BAR_north1_sci_lar:0 "Shadow Council £locked!"
 BAR_north3_waste:0 "Anarchic Wasteland £decrease_texticon!"
 
-BAR_viira_puppets:0 "§gOur Rise§!"
+BAR_viira_puppets:0 "§gMy Rise§!"
 BAR_viira_uncorrupted_land:0 "§gUncorrupted Lands§!"
 BAR_viira_puppet_herz:0 "§gEstablish Order in the Herzland§!"
 BAR_viira_puppet_north1:0 "§gEstablish Order in North Griffonia§!"
@@ -3195,7 +3186,21 @@ BAR_viira_factiontt3:0 "\nUnlocks §APuppet Formables§! £autonomy_texticon! fo
  BAR_leopold_conquest_12:0 "Dream to Come"
  BAR_leopold_conquest_13:0 "Evil Incarnate"
  
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+############################################################################
+
  #Placeholders below, to be rewritten
+
  BAR_leopold_children_of_wrath_desc:0 "In awe of the destruction Leopold carries and their god getting silent (it died after the reactor events) some cultists imagine Leopold as the new incarnation of their god (bot of them are machines too)"
  BAR_leopold_cult_convert_1_desc:0 "Cultists spread their new faith to Elisay region via violence"
  BAR_leopold_cult_convert_2_desc:0 "Cultists sort out stuff inside of their inner rings"
@@ -3459,7 +3464,6 @@ BAR_asinti_upgrade_chargers_tooltip:0 "Charges can upgraded using §Rblood§! £
 BAR_asinti_upgrade_knights_tooltip:0 "Knights can upgraded using §Rblood§! £blood_icon"
 BAR_asinti_upgrade_pegasi_tooltip:0 "Pegasi can upgraded using §Rblood§! £blood_icon"
 BAR_asinti_upgrade_ironpaws_tooltip:0 "Ironpaws can be upgraded using §Rblood§! £blood_icon"
-
 BAR_spread_zone:0 "Spread Anomalies"
 BAR_spread_zone_desc:0 "Let my home be your home too.\n\n§YWill spread magical anomalies to the region.§!"
 
@@ -3467,3 +3471,126 @@ decision_cost_500_guns:0 "£infequip_text §Y500§!"
 decision_cost_500_guns_blocked:0 "£infequip_text §R500§!"
 BAR_silver_raise_skeletons:0 "Will add §G1-40k§! ponypower £manpower_icon"
 bar_convert_population_manpower_tooltip:0 "Will give §G40%§! of the state population as ponypower £manpower_icon\n\n"
+
+ ambrosius_text:0 "Ambrosius"
+ of_barrad_text:0 "of Barrad"
+ asinti_text:0 "Asinti"
+ Leopold_text:0 "Leopold"
+ schmeller_text:0 "Shmeller"
+ silver_star_text:0 "Silver Star"
+ of_wittenland_text:0 "of Wittenland"
+ viira_Text:0 "Viira"
+ lehtola_text:0 "Lehtola"
+
+bar_pen_screen_silver_info_first_name:0 "First name:  Silver Star"
+bar_pen_screen_silver_info_last_name:0 "Last name:  of Wittenland"
+bar_pen_screen_silver_info_birthplace:0 "Birthplace:  Wittenland, High Mane"
+bar_pen_screen_silver_info_birthyear:0 "Birthyear:  979"
+bar_pen_screen_silver_info_threat:0 "Threat:  none"
+bar_pen_screen_silver_info_status:0 "Status:  alive"
+ bar_pen_screen_asinti_info_first_name:0 "First name:  Asinti"
+ bar_pen_screen_asinti_info_last_name:0 "Last name:  ??"
+ bar_pen_screen_asinti_info_birthplace:0 "Birthplace:  North Zebrica, ?"
+ bar_pen_screen_asinti_info_birthyear:0 "Birthyear:  ??"
+ bar_pen_screen_asinti_info_threat:0 "Threat: very high"
+ bar_pen_screen_asinti_info_status:0 "Status:  alive"
+ bar_pen_screen_ambrosius_info_first_name:0 "First name:  Ambrosius"
+ bar_pen_screen_ambrosius_info_last_name:0 "Last name:  of Barrad"
+ bar_pen_screen_ambrosius_info_birthplace:0 "Birthplace:  Wittenland, Dunburgh"
+ bar_pen_screen_ambrosius_info_birthyear:0 "Birthyear:  927"
+ bar_pen_screen_ambrosius_info_threat:0 "Threat:  unpredictable"
+ bar_pen_screen_ambrosius_info_status:0 "Status:  alive"
+ bar_pen_screen_leopold_info_first_name:0 "First name:  Leopold"
+ bar_pen_screen_leopold_info_last_name:0 "Last name:  Schmeller"
+ bar_pen_screen_leopold_info_birthplace:0 "Birthplace:  Griffon Empire, Gamia"
+ bar_pen_screen_leopold_info_birthyear:0 "Birthyear:  962"
+ bar_pen_screen_leopold_info_threat:0 "Threat:  high"
+ bar_pen_screen_leopold_info_status:0 "Status:  alive"
+ bar_pen_screen_viira_info_first_name:0 "First name:  Viira"
+ bar_pen_screen_viira_info_last_name:0 "Last name:  Lehtola"
+ bar_pen_screen_viira_info_birthplace:0 "Birthplace:  Austurland, ??"
+ bar_pen_screen_viira_info_birthyear:0 "Birthyear:  978"
+ bar_pen_screen_viira_info_threat:0 "Threat:  ??"
+ bar_pen_screen_viira_info_status:0 "Status:  alive"
+
+
+##### deet magic ######
+BAR_viira_spell_sub_zero_tooltip:0 "All infantry:\n   Marsh\n     Movement: §G+5%§!\n     Attack: §G+30%§!\n   River\n     Movement: §G+5§!\n     Attack: §G+30%§!\n\nLasts 30 days\n\nChill out!"
+BAR_viira_spell_x_decay_tooltip:0 "One of our enemies will face severe attrition\n\nWither and rot!\n\nLasts 14 days"
+BAR_viira_spell_gravity_tooltip:0 "Army:\n   Mountains\n     Movement: §G+200%§!\n   Hills\n     Movement: §G+100%§!\nLasts 30 days\n\nGravity cannot be defied, but it can be helped along!"
+BAR_viira_spell_gas_tooltip:0 "Some of enemy soldiers will die as well as their will to fight\n\nThere's something in the air...\n\nLasts 14 days"
+BAR_viira_spell_electromagnetism_tooltip:0 "Will damage enemy buildings\n\nNever underestimate the power of magnetism!"
+BAR_viira_spell_psi_emission_tooltip:0 "Some of your enemies will change side.\n\nMy wish is your command!"
+BAR_viira_spell_incineration_tooltip:0 "Increases supply usage for enemies.\nLasts 14 days\n\nToasty!"
+BAR_viira_spell_earthshocks_tooltip:0 "Will damage enemy buildings and kill population\n\nQuake in fear!"
+BAR_viira_spells_teleport_tooltip:0 "Army:\n   Movement: §G+100%§!\nLasts 7 days\n\nWhy walk when you can teleport?"
+BAR_viira_spell_global_psi_emission_tooltip:0 "Will decrease enemy will to fight.\nLasts 14 days\n\nTotal psychic domination is within reach..."
+
+#TODO rewite text below
+bar_viira_spells_upgrade_text:0 "Yet Viira still feels like there is more power to grab, by using more reactors She could try to break into the consciousness of the ancient being that once was a god and now was reduced to Her slave."
+bar_viira_spells_mana_help:0 "Write in cool way that 1 reactor == 100 mana."
+
+#spell tooltips
+bar_viira_nukes_button_tooltip:0 "Let them feel my wrath of thousand thunders!"
+bar_viira_zone_button_tooltip:0 "Spread your home"
+bar_viira_x_decay_button_tooltip:0 "Wither and rot!"
+bar_viira_spell_gas_mode_button_tooltip:0 "There's something in the air..."
+bar_viira_electromagnetism_mode_button_tooltip:0 "Never underestimate the power of magnetism!"
+bar_viira_psi_emission_mode_button_tooltip:0 "My wish is your command!"
+bar_viira_incineration_mode_button_tooltip:0 "Toasty!"
+bar_viira_earthshocks_mode_button_tooltip:0 "Quake in fear!"
+bar_viira_global_psi_emission_mode_button_tooltip:0 "Total psychic domination is within reach..."
+bar_viira_psi_migration_mode_button_tooltip:0 "Come to me and obey!"
+
+#viira titles unlock
+BAR_viira_spell_mirror_of_knowledge:0 "§CMirror of Knowledge§! pray for us!"
+BAR_viira_spell_saviour_of_faithful:0 "§CSaviour of the Faithful§! pray for us!"
+BAR_viira_spell_vessel_of_honour:0 "§CVessel of Honour§! pray for us!"
+BAR_viira_spell_voice_in_darkness:0 "§CVoice in the Darkness§! pray for us!"
+BAR_viira_spell_mystical_rose:0 "§CMystical Rose§! pray for us!"
+BAR_viira_spell_houseof_gold:0 "§CHouse of Gold§! pray for us!"
+BAR_viira_spell_morning_star:0 "§CMorning Star§! pray for us!"
+BAR_viira_spell_health_of_sick:0 "§CHealth of the Sick§! pray for us!"
+BAR_viira_spell_gate_of_heavens:0 "§CGate of Heaven§! pray for us!"
+BAR_viira_spell_comfort_of_afflicted:0 "§CComfort of the Afflicted§! pray for us!"
+
+#spell upgrades unlock
+bar_viira_button_unlock_1_tooltip:0 "Dreams of golden towns, rivers of milk and honey. Many followed the dream, but one ramained in §renvy§! not willing to join."
+bar_viira_button_unlock_2_tooltip:0 "Immense knowledge is locked up in this mind, hidden in §rgreed§! from eyes of others."
+bar_viira_button_unlock_3_tooltip:0 "Great power resonates from within this one... it seems like it wants to unleash it's §rwrath§!."
+bar_viira_button_unlock_4_tooltip:0 "The very essence here is filled with joy... joy that overhelms you and crawls into every corner of the brain just so you §rlust§! for more."
+bar_viira_button_unlock_5_tooltip:0 "A glimpse into this mind shows great diligence and hard work when raising new buildings from the ground, but also great §rpride§! in their work."
+bar_viira_button_unlock_6_tooltip:0 "This does not seem like consciousnesses it is organized like postal office... or is commanded to work by very §rslothful§! one."
+bar_viira_button_unlock_7_tooltip:0 "Feeling of overambundance is overhelming with this one, yet despite it it still §ryearns for more§!."
+bar_viira_button_unlock_8_tooltip:0 "The ultimate answer to life, the universe, and everything is withing reach of my hoof. I just need to penetrate each of the consciousnesses forming up the ancient entity."
+
+barrad_viira.24.t:0 "Unexpected visit"
+barrad_viira.24.d:0 "Turns out Gąsienica survived the blast and goes after Viira. They confront in fron of the reactor and Viira tries to mindcontroll him using the cultist god (who is now her puppet). Gąsienica resists but ultimetly crumbles just before he could land a blow on her. Then he becomes her servant as archpriess or something."
+barrad_viira.24.a:0 ""
+barrad_viira.16.t:0 "The end?"
+barrad_viira.16.d:0 "Viira is so high on magic and ancient knowledge that she leaves the material world in front of the seer she found in one of the events and Gąsienica. Both of them can head her disembodied voice, she still looks over her servants but now more like a real god."
+barrad_viira.16.a:0 ""
+
+
+#spell upgrades events, they take place in minds making up the ancient cultist god, can be cryptic mambojambo or anything just align to the thing each represent
+barrad_viira.17.t:0 ""
+barrad_viira.17.d:0 "Dreams of golden towns, rivers of milk and honey. Many followed the dream, but one ramained in §renvy§! not willing to join."
+barrad_viira.17.a:0 ""
+barrad_viira.18.t:0 ""
+barrad_viira.18.d:0 "Immense knowledge is locked up in this mind, hidden in §rgreed§! from eyes of others."
+barrad_viira.18.a:0 ""
+barrad_viira.19.t:0 ""
+barrad_viira.19.d:0 "Great power resonates from within this one... it seems like it wants to unleash it's §rwrath§!."
+barrad_viira.19.a:0 ""
+barrad_viira.20.t:0 ""
+barrad_viira.20.d:0 "The very essence here is filled with joy... joy that overhelms you and crawls into every corner of the brain just so you §rlust§! for more."
+barrad_viira.20.a:0 ""
+barrad_viira.21.t:0 ""
+barrad_viira.21.d:0 "A glimpse into this mind shows great diligence and hard work when raising new buildings from the ground, but also great §rpride§! in their work."
+barrad_viira.21.a:0 ""
+barrad_viira.22.t:0 ""
+barrad_viira.22.d:0 "This does not seem like consciousnesses it is organized like postal office... or is commanded to work by very §rslothful§! one."
+barrad_viira.22.a:0 ""
+barrad_viira.23.t:0 ""
+barrad_viira.23.d:0 "Feeling of overambundance is overhelming with this one, yet despite it it still §ryearns for more§!"
+barrad_viira.23.a:0 ""

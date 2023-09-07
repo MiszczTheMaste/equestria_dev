@@ -138,6 +138,11 @@ music = {
 	volume = 0.9
 }
 music = {
+	name = "loss"
+	file = "loss.ogg"
+	volume = 0.9
+}
+music = {
 	name = "WH40K-Chaos-Gate_Ultramarines-Chant"
 	file = "WH40K-Chaos-Gate_Ultramarines-Chant.ogg"
 	volume = 0.9

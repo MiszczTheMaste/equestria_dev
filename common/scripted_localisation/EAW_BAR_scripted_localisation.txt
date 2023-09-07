@@ -1,4 +1,4 @@
-defined_text = { # Country
+defined_text = {
 	name = GetDecisionCostPP100Man1000
 	text = {
 		trigger = {
@@ -11,7 +11,7 @@ defined_text = { # Country
 		localization_key = decision_cost_pp_100_manpower_1000_blocked
 	}
 }
-defined_text = { # Country
+defined_text = {
 	name = GetDecisionCostPP25Man250
 	text = {
 		trigger = {
@@ -282,214 +282,65 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = bar_pen_viira_clues_text_scr
-	text = { #after finding reactor scheme
-		trigger = { 
-			has_country_flag = bar_elemele0
-		}
-		localization_key = bar_pen_viira_clues_text1
-	}
-	text = { #after contacting cultists/ seeing first hints of the machine
-		trigger = { 
-			has_country_flag = bar_elemele01
-		}
-		localization_key = bar_pen_viira_clues_text2
-	}
-	text = { #realising that it needs more investigation
-		trigger = { 
-			has_country_flag = bar_elemele02
-			NOT = {
-				OR = {
-					has_country_flag = bar_elemele1
-					has_country_flag = bar_elemele2
-					has_country_flag = bar_elemele22
-					has_country_flag = bar_elemele3
-				}
-			}
-		}
-		localization_key = bar_pen_viira_clues_text3
-	}
-	text = { #Virra vision
-		trigger = { 
-			has_country_flag = bar_elemele1
-			NOT = {	has_country_flag = bar_elemele2 }
-			NOT = {	has_country_flag = bar_elemele22 }
-			NOT = {	has_country_flag = bar_elemele3 }
-		}
-		localization_key = bar_pen_viira_clues_text40
-	}
-	text = { #Viira vision + info about plant attack
-		trigger = { 
-			has_country_flag = bar_elemele1
-			has_country_flag = bar_elemele2
-			NOT = {	has_country_flag = bar_elemele22 }
-			NOT = {	has_country_flag = bar_elemele3 }
-		}
-		localization_key = bar_pen_viira_clues_text41
-	}
-	text = { #Viira vision + info discovery from attack site
-		trigger = { 
-			has_country_flag = bar_elemele1
-			NOT = { has_country_flag = bar_elemele2 }
-			has_country_flag = bar_elemele22
-			NOT = {	has_country_flag = bar_elemele3 }
-		}
-		localization_key = bar_pen_viira_clues_text42
-	}
-	text = { #Viira vision + living earth sample from Asinti
-		trigger = { 
-			has_country_flag = bar_elemele1
-			NOT = { has_country_flag = bar_elemele2 }
-			NOT = { has_country_flag = bar_elemele22 }
-			has_country_flag = bar_elemele3
-		}
-		localization_key = bar_pen_viira_clues_text43
-	}
-	text = { #Viira vision + info discovery from attack site + living earth sample from Asinti
-		trigger = { 
-			has_country_flag = bar_elemele1
-			has_country_flag = bar_elemele2
-			NOT = { has_country_flag = bar_elemele22 }
-			has_country_flag = bar_elemele3
-		}
-		localization_key = bar_pen_viira_clues_text44
-	}
-	text = { #her mind is filled with visions
-		trigger = { 
-			has_country_flag = bar_elemele1
-			NOT = { has_country_flag = bar_elemele2 }
-			has_country_flag = bar_elemele22
-			has_country_flag = bar_elemele3
-		}
-		localization_key = bar_pen_viira_clues_text45
-	}
-	text = { #her mind is filled with visions
-		trigger = { 
-			NOT = { has_country_flag = bar_elemele1 }
-			has_country_flag = bar_elemele2
-			NOT = { has_country_flag = bar_elemele22 }
-			NOT = { has_country_flag = bar_elemele3 }
-		}
-		localization_key = bar_pen_viira_clues_text46
-	}
-	text = { #her mind is filled with visions
-		trigger = { 
-			NOT = { has_country_flag = bar_elemele1 }
-			has_country_flag = bar_elemele2
-			NOT = { has_country_flag = bar_elemele22 }
-			has_country_flag = bar_elemele3
-		}
-		localization_key = bar_pen_viira_clues_text47
-	}
-	text = { #her mind is filled with visions
-		trigger = { 
-			NOT = { has_country_flag = bar_elemele1 }
-			NOT = { has_country_flag = bar_elemele2 }
-			has_country_flag = bar_elemele22
-			NOT = { has_country_flag = bar_elemele3 }
-		}
-		localization_key = bar_pen_viira_clues_text48
-	}
-	text = { #her mind is filled with visions
-		trigger = { 
-			NOT = { has_country_flag = bar_elemele1 }
-			NOT = { has_country_flag = bar_elemele2 }
-			has_country_flag = bar_elemele22
-			has_country_flag = bar_elemele3
-		}
-		localization_key = bar_pen_viira_clues_text49
-	}
-	text = { #her mind is filled with visions
-		trigger = { 
-			NOT = { has_country_flag = bar_elemele1 }
-			NOT = { has_country_flag = bar_elemele2 }
-			NOT = { has_country_flag = bar_elemele22 }
-			has_country_flag = bar_elemele3
-		}
-		localization_key = bar_pen_viira_clues_text410
-	}
-	text = { #maybe the earth itself might hold some answers
-		trigger = { 
-			has_country_flag = bar_elemele4
-		}
-		localization_key = bar_pen_viira_clues_text10
-	}
-	text = { #what was that, a titan?! Wait a second
-		trigger = { 
-			has_country_flag = bar_elemele5
-		}
-		localization_key = bar_pen_viira_clues_text11
-	}
-	text = { #the end
-		trigger = { 
-			has_country_flag = bar_elemele6
-		}
-		localization_key = bar_pen_viira_clues_text12
-	}
-	text = {
-		localization_key = bar_pen_viira_clues_text_nothig
-	}
-}
-defined_text = {
 	name = BAR_viira_magic_tired
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload < 26 } 
+			check_variable = { viira_mana_overload_percentage < 21 } 
 		}
 		localization_key = BAR_viira_magic_tired_0
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 25 } 
-			check_variable = { viira_mana_overload < 49 } 
+			check_variable = { viira_mana_overload_percentage > 20 } 
+			check_variable = { viira_mana_overload_percentage < 36 } 
 		}
 		localization_key = BAR_viira_magic_tired_1
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 49 } 
-			check_variable = { viira_mana_overload < 74 } 
+			check_variable = { viira_mana_overload_percentage > 35 } 
+			check_variable = { viira_mana_overload_percentage < 41 } 
 		}
 		localization_key = BAR_viira_magic_tired_2
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 74 } 
-			check_variable = { viira_mana_overload < 99 } 
+			check_variable = { viira_mana_overload_percentage > 50 } 
+			check_variable = { viira_mana_overload_percentage < 61 } 
 		}
 		localization_key = BAR_viira_magic_tired_3
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 99 } 
-			check_variable = { viira_mana_overload < 124 } 
+			check_variable = { viira_mana_overload_percentage > 60 } 
+			check_variable = { viira_mana_overload_percentage < 71 } 
 		}
 		localization_key = BAR_viira_magic_tired_4
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 124 } 
-			check_variable = { viira_mana_overload < 129 } 
+			check_variable = { viira_mana_overload_percentage > 70 } 
+			check_variable = { viira_mana_overload_percentage < 81 } 
 		}
 		localization_key = BAR_viira_magic_tired_5
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 129 } 
-			check_variable = { viira_mana_overload < 139 } 
+			check_variable = { viira_mana_overload_percentage > 80 } 
+			check_variable = { viira_mana_overload_percentage < 91 } 
 		}
 		localization_key = BAR_viira_magic_tired_6
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 139 } 
-			check_variable = { viira_mana_overload < 150 } 
+			check_variable = { viira_mana_overload_percentage > 90 } 
+			check_variable = { viira_mana_overload_percentage < 99 } 
 		}
 		localization_key = BAR_viira_magic_tired_7
 	}
 	text = {
 		trigger = { 
-			check_variable = { viira_mana_overload > 149 } 
+			check_variable = { viira_mana_overload_percentage > 100 } 
 		}
 		localization_key = BAR_viira_magic_tired_8
 	}

@@ -114,8 +114,8 @@ BAR_ambrosius_boredoom = {
 	}
 }
 BAR_viira_spells = {
-	icon = GFX_decision_generic_magic
-	
+	icon = GFX_BAR_viira_spells_category_icon
+	scripted_gui = BAR_viira_spells_ui
 	allowed = {
 		original_tag = BAR
 	}

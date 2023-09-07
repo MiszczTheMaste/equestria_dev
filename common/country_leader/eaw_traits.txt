@@ -3244,32 +3244,66 @@ apn_time_queen= {
 			send_volunteer_size = -1
 		}
 	}
-	bar_viira_end = {
+	bar_viira_title_1 = {
 		random = no
-		military_leader_cost_factor = 100
-		encryption_factor = 1
-		decryption_factor = 1
+		war_support_factor = 0.1
 	}
-	bar_viira_end_lar = {
-		random = no
-		military_leader_cost_factor = 100
-		crypto_strength = 5
-		decryption_power_factor = 1
-	}
-	bar_viira_end_1 = {
+	bar_viira_title_2 = {
 		random = no
 		research_speed_factor = 0.1
 	}
-	bar_viira_end_2 = {
+	bar_viira_title_3 = {
 		random = no
-		non_core_manpower = 0.02
-		war_support_factor = 0.2
-		stability_factor = 0.1
-		fascism_drift = 0.01
+		political_power_factor = 0.25
 	}
-	bar_viira_end_3 = {
+	bar_viira_title_4 = {
 		random = no
-		weekly_manpower = 100
+		stability_factor = 0.1
+	}
+	bar_viira_title_5 = {
+		random = no
+		army_attack_factor = 0.1
+	}
+	bar_viira_title_6 = {
+		random = no
+		experience_gain_infantry_combat_factor = 0.1
+		pocket_penalty = -0.2
+	}
+	bar_viira_title_6_bba = {
+		random = no
+		grant_medal_cost_factor = -0.5
+	}
+	bar_viira_title_7 = {
+		random = no
+		air_accidents_factor = -1
+	}
+	bar_viira_title_8 = {
+		random = no
+		custom_modifier_tooltip = bar_viira_title_8_tooltip
+	}
+	bar_viira_title_9 = {
+		random = no
+		consumer_goods_factor = -0.05
+	}
+	bar_viira_title_10 = {
+		random = no
+		custom_modifier_tooltip = bar_viira_title_10_tooltip
+	}
+	bar_viira_title_11 = {
+		random = no
+		stability_factor = 0.1
+	}
+	bar_viira_title_12 = {
+		random = no
+		army_morale_factor = 0.1
+	}
+	bar_viira_title_13 = {
+		random = no
+		weekly_manpower = 500
+	}
+	bar_viira_title_14 = {
+		random = no
+		non_core_manpower = 0.1
 	}
 	bar_viira_what_now = {
 		random = no

@@ -364,7 +364,7 @@ focus_tree = {
 			focus = BAR_dual_consciousness
 		}
 		completion_reward = {
-			add_country_leader_trait = bar_viira_end_2
+			add_country_leader_trait = bar_viira_title_4
 		}
 	}
 	focus = {
@@ -631,7 +631,7 @@ focus_tree = {
 				set_capital = {
 					state = 626
 				}
-				add_country_leader_trait = bar_viira_end_3
+				add_country_leader_trait = bar_viira_title_13
 			}
 		}
 	}
@@ -786,7 +786,7 @@ focus_tree = {
 			focus = BAR_viira_manpower10
 		}
 		completion_reward = {
-			add_ideas = BAR_viira_manpower11_idea
+			add_ideas = BAR_viira_manpower1
 		}
 		search_filters = {
 			FOCUS_FILTER_ARMY_BONUS
@@ -807,9 +807,19 @@ focus_tree = {
 			focus = BAR_viira_manpower11
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_viira_manpower11_idea
-				add_idea = BAR_viira_manpower2_idea
+			if = {
+				limit = {
+					has_country_flag = BAR_spells_unlocked_6
+				}
+				swap_ideas = {
+					remove_idea = BAR_viira_manpower1
+					add_idea = BAR_viira_manpower2_up
+				}
+			} else = {
+				swap_ideas = {
+					remove_idea = BAR_viira_manpower1
+					add_idea = BAR_viira_manpower2
+				}
 			}
 		}
 		search_filters = {
@@ -839,9 +849,29 @@ focus_tree = {
 			focus = BAR_viira_manpower2
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_viira_manpower2_idea
-				add_idea = BAR_viira_manpower3_idea
+			if = {
+				limit = {
+					has_country_flag = BAR_spells_unlocked_6
+				}
+				if = {
+					limit = { 
+						has_idea = BAR_viira_manpower2
+					}
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower2
+						add_idea = BAR_viira_manpower3_up
+					}
+				} else = {
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower2_up
+						add_idea = BAR_viira_manpower3_up
+					}
+				}	
+			} else = {
+				swap_ideas = {
+					remove_idea = BAR_viira_manpower2
+					add_idea = BAR_viira_manpower3
+				}
 			}
 		}
 		search_filters = {
@@ -872,9 +902,29 @@ focus_tree = {
 			focus = BAR_viira_manpower3
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_viira_manpower3_idea
-				add_idea = BAR_viira_manpower4_idea
+			if = {
+				limit = {
+					has_country_flag = BAR_spells_unlocked_6
+				}
+				if = {
+					limit = { 
+						has_idea = BAR_viira_manpower3
+					}
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower3
+						add_idea = BAR_viira_manpower4_up
+					}
+				} else = {
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower3_up
+						add_idea = BAR_viira_manpower4_up
+					}
+				}	
+			} else = {
+				swap_ideas = {
+					remove_idea = BAR_viira_manpower3
+					add_idea = BAR_viira_manpower4
+				}
 			}
 		}
 		search_filters = {
@@ -904,9 +954,29 @@ focus_tree = {
 			focus = BAR_viira_manpower4
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_viira_manpower4_idea
-				add_idea = BAR_viira_manpower5_idea
+			if = {
+				limit = {
+					has_country_flag = BAR_spells_unlocked_6
+				}
+				if = {
+					limit = { 
+						has_idea = BAR_viira_manpower4
+					}
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower4
+						add_idea = BAR_viira_manpower5_up
+					}
+				} else = {
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower4_up
+						add_idea = BAR_viira_manpower5_up
+					}
+				}	
+			} else = {
+				swap_ideas = {
+					remove_idea = BAR_viira_manpower4
+					add_idea = BAR_viira_manpower5
+				}
 			}
 		}
 		search_filters = {
@@ -932,9 +1002,29 @@ focus_tree = {
 			focus = BAR_viira_manpower5
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = BAR_viira_manpower5_idea
-				add_idea = BAR_viira_manpower6_idea
+			if = {
+				limit = {
+					has_country_flag = BAR_spells_unlocked_6
+				}
+				if = {
+					limit = { 
+						has_idea = BAR_viira_manpower5
+					}
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower5
+						add_idea = BAR_viira_manpower6_up
+					}
+				} else = {
+					swap_ideas = {
+						remove_idea = BAR_viira_manpower5_up
+						add_idea = BAR_viira_manpower6_up
+					}
+				}	
+			} else = {
+				swap_ideas = {
+					remove_idea = BAR_viira_manpower5
+					add_idea = BAR_viira_manpower6
+				}
 			}
 		}
 		search_filters = {

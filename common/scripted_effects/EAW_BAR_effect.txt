@@ -1348,7 +1348,7 @@ bar_viira_spells_max_overload = {
 				limit = {
 					check_variable = { viira_mana_overload = 0 } 
 				}
-				set_variable = viira_mana_overload_percentage
+				set_variable = { viira_mana_overload_percentage = 0 }
 			} else = {
 				set_variable = { viira_mana_overload_percentage = viira_mana_overload }
 				divide_variable = { viira_mana_overload_percentage = viira_max_overload }

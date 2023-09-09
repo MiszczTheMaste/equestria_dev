@@ -1118,7 +1118,6 @@ BAR_ambrosius_boredoom = {
 		}
 	}
 }
-
 BAR_strike_the_earth_cat = {
 	BAR_longterm_excavation = {
 		icon = generic_construction

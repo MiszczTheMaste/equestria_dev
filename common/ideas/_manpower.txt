@@ -2381,7 +2381,7 @@ ideas = {
             }
 			visible = {
 			    tag = BAR
-				has_completed_focus = BAR_grand_ritual_preparation
+				has_completed_focus = barrad_focus_tree_asinti
 			}
 			allowed_to_remove = {
                 always = no

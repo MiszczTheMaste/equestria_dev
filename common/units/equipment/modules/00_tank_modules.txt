@@ -2225,23 +2225,24 @@ equipment_modules = {
 	}
 
 	tank_crystal_armor = {
-		abbreviation = "car"
+		abbreviation = "ca"
 		category = tank_armor_type
 		sfx = sfx_ui_sd_module_sonar
-		xp_cost = 8
+		xp_cost = 10
 		dismantle_cost_ic = 1
 		add_stats = {
 			defense = 4
 			breakthrough = 4
 		}
 		multiply_stats = {
-			build_cost_ic = 0.5
+			build_cost_ic = 0.75
 			armor_value = 0.75
 			breakthrough = 0.25
 			defense = 0.25
 		}
 		build_cost_resources = {
-			crystals = 1
+			crystals = 2
+			steel = -10
 		}
 	}
 

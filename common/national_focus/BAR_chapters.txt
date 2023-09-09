@@ -2895,6 +2895,12 @@ focus_tree = {
 					set_country_flag = bar_viira_investigation_step_9
 					BAR_new_viira_note = yes
 				}
+				624 = {
+					set_state_flag = BAR_strike_the_earth_followup_1
+					set_state_flag = BAR_strike_the_earth_followup_2
+					set_state_flag = BAR_strike_the_earth_followup_3
+					set_state_flag = BAR_strike_the_earth_followup_4
+				}
 			}
 		}
 	}

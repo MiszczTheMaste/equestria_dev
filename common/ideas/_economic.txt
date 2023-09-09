@@ -963,7 +963,7 @@ ideas = {
 			picture = partial_economic_mobilisation_red
 			visible = {
 				tag = BAR
-				has_completed_focus = BAR_grand_ritual_preparation
+				has_completed_focus = barrad_focus_tree_asinti
 			}
 			allowed = {
 				always = no

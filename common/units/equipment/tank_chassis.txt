@@ -144,10 +144,6 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = tank_crystal_support
-			count < 2
-		}
-		module_count_limit = {
 			module = anti_tank_guided_missiles
 			count < 2
 		}
@@ -424,10 +420,6 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = tank_crystal_support
-			count < 2
-		}
-		module_count_limit = {
 			module = anti_tank_guided_missiles
 			count < 2
 		}
@@ -661,10 +653,6 @@ equipments = {
 		}
 		module_count_limit = {
 			module = gun_computer
-			count < 2
-		}
-		module_count_limit = {
-			module = tank_crystal_support
 			count < 2
 		}
 		module_count_limit = {
@@ -902,10 +890,6 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = tank_crystal_support
-			count < 2
-		}
-		module_count_limit = {
 			module = anti_tank_guided_missiles
 			count < 2
 		}
@@ -1132,10 +1116,6 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = tank_crystal_support
-			count < 2
-		}
-		module_count_limit = {
 			module = anti_tank_guided_missiles
 			count < 2
 		}
@@ -1349,10 +1329,6 @@ equipments = {
 		}
 		module_count_limit = {
 			module = gun_computer
-			count < 2
-		}
-		module_count_limit = {
-			module = tank_crystal_support
 			count < 2
 		}
 		module_count_limit = {

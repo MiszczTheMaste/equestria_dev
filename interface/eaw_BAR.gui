@@ -3566,4 +3566,15 @@ guiTypes = {
 			quadtexturesprite = "GFX_BAR_viira_spread_zone_button"
 		}
 	}
+	containerwindowtype = {
+		name = "bar_expedition_container"
+		position = { x = 0 y = 0 }
+		size = { width = 800 height = 600 }
+
+		buttonType = {
+			name = "bar_viira_bar_climate_button"
+			position = { x = 0 y = 0 }
+			quadtexturesprite = "GFX_BAR_viira_spread_zone_button"
+		}
+	}
 }

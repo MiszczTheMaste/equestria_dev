@@ -270,6 +270,18 @@ on_actions = {
 						}
 					}	
 				}
+				if = {
+					limit = {
+						BAR = {
+							has_war = no
+							has_country_leader_with_trait = BAR_amb_title_lifetime_warrior
+							NOT = {
+								has_active_mission = BAR_viira_declares_war
+							}
+						}
+					}
+					activate_mission = BAR_viira_declares_war
+				}
 			}	
 		}
 	}

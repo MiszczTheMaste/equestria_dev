@@ -85,38 +85,8 @@ focus_tree = {
 					trait = forest_deer
 				}
 			}
-			add_corps_commander_role = {
-				character = BAR_wigberht
-				traits = {
-					pony_race_trait
-					infantry_officer
-					skilled_staffer
-				}
-				skill = 3
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 4
-				legacy_id = 997002
-			}
-			custom_effect_tooltip = bar_wigberht_general
-			add_corps_commander_role = {
-				character = BAR_gebleod
-				traits = {
-					pony_race_trait
-					infantry_officer
-					commando
-					trait_mountaineer
-					hill_fighter
-				}
-				skill = 3
-				attack_skill = 4
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				legacy_id = 997001
-			}
-			custom_effect_tooltip = bar_gebleod_general
+			BAR_add_wigberht_as_commander = yes
+			BAR_add_gebleod_as_commander = yes
 		}
 	}
 	focus = {
@@ -150,68 +120,6 @@ focus_tree = {
 			focus = BAR_will_to_power
 		}
 		completion_reward = {
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = {
-							has_template = "Armed Brothers"
-						}
-					}
-					division_template = {
-						name = "Armed Brothers"
-						regiments = {
-							infantry = {
-								x = 0
-								y = 0
-							}
-							infantry = {
-								x = 0
-								y = 1
-							}
-							infantry = {
-								x = 0
-								y = 2
-							}
-							infantry = {
-								x = 1
-								y = 0
-							}
-							infantry = {
-								x = 1
-								y = 1
-							}
-							infantry = {
-								x = 1
-								y = 2
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Will\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-						owner = ROOT
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Wisdom\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-						owner = ROOT
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Power\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-						owner = ROOT
-					}
-				}
-				random_owned_controlled_state = {
-					create_unit = {
-						division = "name = \"Sacrifice\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
-						owner = ROOT
-					}
-				}
-			}
 			custom_effect_tooltip = BAR_spawn_cultists_viira
 		}
 		search_filters = {

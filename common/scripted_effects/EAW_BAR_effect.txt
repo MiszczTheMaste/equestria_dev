@@ -10,7 +10,6 @@ BAR_pentarchy_is_dead = {
 			has_country_flag = barrad_early_game
 		}
 		BAR_add_gasienica_as_commander = yes
-		custom_effect_tooltip = cpt_gasienica_stats_tp
 		clr_country_flag = barrad_early_game
 		country_event = { days = 1 id = barrad_end.1 }
 	}
@@ -1798,7 +1797,7 @@ BAR_add_gasienica_as_commander  = {
 			bar_cpt_gasienica
 			trait_mountaineer
 			infantry_officer
-			trickster
+			organizer
 		}
 		skill = 5
 		attack_skill = 5
@@ -1806,5 +1805,253 @@ BAR_add_gasienica_as_commander  = {
 		planning_skill = 3
 		logistics_skill = 5
 		legacy_id = 997003
+	}
+	custom_effect_tooltip = BAR_gasienica_general
+}
+BAR_add_janosik_as_commander  = {
+	BAR_jerzy_janosik = {
+		add_corps_commander_role = {
+			traits = {
+				griffon_race_trait
+				trait_mountaineer
+				hill_fighter
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	custom_effect_tooltip = jerzy_janosik_stats_tp
+}
+BAR_add_wigberht_as_commander  = {
+	add_corps_commander_role = {
+		character = BAR_wigberht
+		traits = {
+			pony_race_trait
+			infantry_officer
+			skilled_staffer
+		}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 4
+		legacy_id = 997002
+	}
+	custom_effect_tooltip = bar_wigberht_general
+
+	if = {
+		limit = {
+			NOT = {
+				has_template = "Armed Brothers"
+			}
+		}
+		division_template = {
+			name = "Armed Brothers"
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 0
+					y = 2
+				}
+				infantry = {
+					x = 1
+					y = 0
+				}
+				infantry = {
+					x = 1
+					y = 1
+				}
+				infantry = {
+					x = 1
+					y = 2
+				}
+			}
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Will\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Wisdom\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Power\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = ROOT
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Sacrifice\" division_template = \"Armed Brothers\" start_experience_factor = 0.5 start_equipment_factor = 1"
+			owner = ROOT
+		}
+	}
+}
+BAR_add_gebleod_as_commander  = {
+	add_corps_commander_role = {
+		character = BAR_gebleod
+		traits = {
+			pony_race_trait
+			infantry_officer
+			commando
+			trait_mountaineer
+			hill_fighter
+		}
+		skill = 3
+		attack_skill = 4
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+		legacy_id = 997001
+	}
+	custom_effect_tooltip = bar_gebleod_general
+	if = {
+		limit = {
+			NOT = {
+				has_template = "The Guard"
+			}
+		}
+		if = {
+			limit = {
+				has_tech = tech_mountaineers
+			}
+			division_template = {
+				name = "The Guard"
+				regiments = {
+					mountaineers = {
+						x = 0
+						y = 0
+					}
+					mountaineers = {
+						x = 0
+						y = 1
+					}
+					mountaineers = {
+						x = 0
+						y = 2
+					}
+					mountaineers = {
+						x = 0
+						y = 3
+					}
+					mountaineers = {
+						x = 1
+						y = 0
+					}
+					mountaineers = {
+						x = 1
+						y = 1
+					}
+					mountaineers = {
+						x = 1
+						y = 2
+					}
+					artillery_brigade = {
+						x = 2
+						y = 0
+					}
+					artillery_brigade = {
+						x = 2
+						y = 1
+					}
+				}
+			}
+		}
+		else_if = {
+			division_template = {
+				name = "The Guard"
+				regiments = {
+					infantry = {
+						x = 0
+						y = 0
+					}
+					infantry = {
+						x = 0
+						y = 1
+					}
+					infantry = {
+						x = 0
+						y = 2
+					}
+					infantry = {
+						x = 0
+						y = 3
+					}
+					infantry = {
+						x = 1
+						y = 0
+					}
+					infantry = {
+						x = 1
+						y = 1
+					}
+					infantry = {
+						x = 1
+						y = 2
+					}
+					artillery_brigade = {
+						x = 2
+						y = 0
+					}
+					artillery_brigade = {
+						x = 2
+						y = 1
+					}
+				}
+			}
+		}
+	}
+
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Last Guard\" division_template = \"The Guard\" start_experience_factor = 1 start_equipment_factor = 1"
+			owner = ROOT
+		}
+	}
+}
+BAR_merge_commandments = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = BAR_commandments_sacrifice_for_the_cause_idea
+				has_idea = BAR_commandments_faith_primacy_idea
+				has_idea = BAR_commandments_ritual_enlightment_idea
+				has_idea = BAR_commandments_asceticism_idea
+				has_idea = BAR_commandments_piety_of_work_idea
+				has_idea = BAR_commandments_redempt_sins_idea
+				has_idea = BAR_commandments_servitude_or_death_idea
+				has_idea = BAR_commandments_sacred_insanity_idea
+				has_idea = BAR_commandments_cult_of_progress_idea
+				has_idea = BAR_commandments_holy_commune_idea
+			}
+			remove_ideas = BAR_commandments_sacrifice_for_the_cause_idea
+			remove_ideas = BAR_commandments_faith_primacy_idea
+			remove_ideas = BAR_commandments_ritual_enlightment_idea
+			remove_ideas = BAR_commandments_asceticism_idea
+			remove_ideas = BAR_commandments_piety_of_work_idea
+			remove_ideas = BAR_commandments_redempt_sins_idea
+			remove_ideas = BAR_commandments_servitude_or_death_idea
+			remove_ideas = BAR_commandments_sacred_insanity_idea
+			remove_ideas = BAR_commandments_cult_of_progress_idea
+			remove_ideas = BAR_commandments_holy_commune_idea
+	
+			add_ideas = BAR_commandments_combined
+		}
 	}
 }

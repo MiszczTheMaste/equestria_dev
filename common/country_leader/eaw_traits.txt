@@ -4073,25 +4073,23 @@ apn_time_queen= {
 		}
 	}
 	
-	BAR_avatar_of_chaos = {
+	BAR_amb_title_victorious = {
 		random = no
-		conscription = 0.025
-		mobilization_speed = 0.5
-		military_leader_cost_factor = 100
+		conscription_factor = 0.16
+		mobilization_speed = 0.44
 	}
-	BAR_true_avatar_of_chaos = {
+	BAR_amb_title_lifetime_warrior = {
 		random = no
-		conscription = 0.1
-		encryption_factor = 0.5
-		mobilization_speed = 0.5
-		military_leader_cost_factor = 100
+		justify_war_goal_time = -0.66
+		war_support_factor = 0.07
 	}
-	BAR_true_avatar_of_chaos_lar = {
+	BAR_amb_title_generous_lord = {
 		random = no
-		conscription = 0.1
-		crypto_strength = 2
-		mobilization_speed = 0.5
-		military_leader_cost_factor = 100
+		consumer_goods_factor = -0.06
+	}
+	BAR_amb_title_benelovent_judge = {
+		random = no
+		army_attack_factor = 0.08
 	}
 	BAR_despot = {
 		random = no

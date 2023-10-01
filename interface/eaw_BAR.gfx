@@ -3142,6 +3142,14 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	SpriteType = {
+		name = "GFX_idea_bar_commandment"
+		texturefile = "gfx/interface/bar/ideas/bar_commandment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_bar_commandment_final"
+		texturefile = "gfx/interface/bar/ideas/bar_commandment_final.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_viira_manpower6_shine"
 		texturefile = "gfx/interface/bar/goals/viira_manpower6.dds"
 		effectFile = "gfx/FX/buttonstate.lua"

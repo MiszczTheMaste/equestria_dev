@@ -11839,10 +11839,12 @@ BAR_herald_cat = {
 					}
 				}
 				random_neighbor_country = {
-					strength_ratio = {
-						tag = BAR
-						ratio < 1.2
-					}
+					limit = {
+						strength_ratio = {
+							tag = BAR
+							ratio < 1.2
+						}
+					}		
 					BAR = {
 						declare_war_on = {
 							target = PREV

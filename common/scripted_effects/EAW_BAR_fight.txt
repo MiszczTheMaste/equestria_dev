@@ -1,119 +1,111 @@
+@PEN_FIGHT_VIIRA_MAX_HP = 280
+@PEN_FIGHT_VIIRA_MAX_HP_INDEX = 28
+@PEN_FIGHT_VIIRA_MAX_INITIATIVE = 20
+@PEN_FIGHT_PENTARCHY_MAX_INITIATIVE = 10
+@PEN_FIGHT_LEOPOLD_MAX_HP = 220
+@PEN_FIGHT_LEOPOLD_MAX_HP_INDEX = 22
+@PEN_FIGHT_ASINTI_MAX_HP = 190
+@PEN_FIGHT_ASINTI_MAX_HP_INDEX = 19
+@PEN_FIGHT_SILVER_STAR_MAX_HP = 170
+@PEN_FIGHT_SILVER_STAR_MAX_HP_INDEX = 17
+
+# pentarchy fight variables
 bar_fight_initialisation_pentarchy_side = {
+	set_country_flag = bar_fight_pentarchy_side
 	bar_fight_initialisation = yes
-	set_variable = {
-		bar_pentarchy_fight_show = 1
-	}
 	bar_pen_fight_gui_reload = yes
 }
 
 bar_fight_initialisation_viira_side = {
+	set_country_flag = bar_fight_viira_side
 	bar_fight_initialisation = yes
-	set_variable = {
-		bar_viira_fight_show = 1
-	}
-	bar_viira_fight_gui_reload = yes
+	bar_pen_fight_gui_reload = yes
 }
 
 bar_fight_initialisation = {
 	set_variable = {
-		BAR_fight_pentarchy_action = 0
+		bar_pentarchy_fight_show = 1
+	}
+	set_variable = {
+		BAR_fight_pentarchy_action_log = 0
 	}
 	if = {
 		limit = {
 			has_country_flag = barrad_asinti_alive
 		}
-		#base Asinti stats
 		set_variable = {
-			a_live = 1
-		}
-		set_variable = {
-			a_hp = 190
+			a_hp = @PEN_FIGHT_ASINTI_MAX_HP
 		}
 		set_variable = {
-			a_hp_max = 190
+			a_in = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 		}
 		set_variable = {
-			a_in = 10
+			bar_pen_fight_asinti_alive_at_start = 1
 		}
-		#max hp index is used to determine loop limit
-		set_variable = {
-			a_max_hp_index = a_hp_max
+		resize_array = {
+			array = bar_fight_asinti_hp_bar
+			value = 1
+			size = @PEN_FIGHT_ASINTI_MAX_HP_INDEX
 		}
-		divide_variable = {
-			a_max_hp_index = 10
-		}
-		round_variable = a_max_hp_index
-		add_to_variable = {
-			a_max_hp_index = 1			#index must be bigger by 1 than max hp value
+		resize_array = {
+			array = bar_fight_asinti_initiative_bar
+			value = 1
+			size = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 		}
 	}
 	if = {
 		limit = {
 			has_country_flag = barrad_silver_star_alive
 		}
-		#base Silver Star stats
 		set_variable = {
-			s_live = 1
-		}
-		set_variable = {
-			s_hp = 170
+			s_hp = @PEN_FIGHT_SILVER_STAR_MAX_HP
 		}
 		set_variable = {
-			s_hp_max = 170
+			s_in = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 		}
 		set_variable = {
-			s_in = 10
+			bar_pen_fight_silver_alive_at_start = 1
 		}
-		#max hp index is used to determine loop limit
-		set_variable = {
-			s_max_hp_index = s_hp_max
+		resize_array = {
+			array = bar_fight_silver_star_hp_bar
+			value = 1
+			size = @PEN_FIGHT_SILVER_STAR_MAX_HP_INDEX
 		}
-		divide_variable = {
-			s_max_hp_index = 10
-		}
-		round_variable = s_max_hp_index
-		add_to_variable = {
-			s_max_hp_index = 1			#index must be bigger by 1 than max hp value
+		resize_array = {
+			array = bar_fight_silver_star_initiative_bar
+			value = 1
+			size = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 		}
 	}
 	if = {
 		limit = {
 			has_country_flag = barrad_leopold_alive
 		}
-		#base Leopold stats
 		set_variable = {
-			l_live = 1
-		}
-		set_variable = {
-			l_hp = 220
+			l_hp = @PEN_FIGHT_LEOPOLD_MAX_HP
 		}
 		set_variable = {
-			l_hp_max = 220
+			l_in = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 		}
 		set_variable = {
-			l_in = 10
+			bar_pen_fight_leopold_alive_at_start = 1
 		}
-		#max hp index is used to determine loop limit
-		set_variable = {
-			l_max_hp_index = l_hp_max
+		resize_array = {
+			array = bar_fight_leopold_hp_bar
+			value = 1
+			size = @PEN_FIGHT_LEOPOLD_MAX_HP_INDEX
 		}
-		divide_variable = {
-			l_max_hp_index = 10
-		}
-		round_variable = l_max_hp_index
-		add_to_variable = {
-			l_max_hp_index = 1			#index must be bigger by 1 than max hp value
+		resize_array = {
+			array = bar_fight_leopold_initiative_bar
+			value = 1
+			size = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 		}
 	}
-	#base Viira stats
 	set_variable = {
-		v_hp = 280
+		v_hp = @PEN_FIGHT_VIIRA_MAX_HP
 	}
 	set_variable = {
-		v_hp_max = 280
-	}
-	set_variable = {
-		v_in = 20
+		v_in = @PEN_FIGHT_VIIRA_MAX_INITIATIVE
 	}
 	set_variable = {
 		v_stun = 0
@@ -121,46 +113,35 @@ bar_fight_initialisation = {
 	set_variable = {
 		viira_dmg_debuff = 1
 	}
-	#max hp index is used to determine loop limit
-	set_variable = {
-		v_max_hp_index = v_hp_max
+	resize_array = {
+		array = bar_fight_viira_hp_bar
+		value = 1
+		size = @PEN_FIGHT_VIIRA_MAX_HP_INDEX
 	}
-	divide_variable = {
-		v_max_hp_index = 10
-	}
-	round_variable = v_max_hp_index
-	add_to_variable = {
-		v_max_hp_index = 1		#index must be bigger by 1 than max hp value
-	}
-	set_variable = {
-		bar_pen_fight_silver_state = 1
+	resize_array = {
+		array = bar_fight_viira_initiative_bar
+		value = 1
+		size = @PEN_FIGHT_VIIRA_MAX_INITIATIVE
 	}
 	set_variable = {
-		bar_pen_fight_lepold_state = 1
-	}
-	set_variable = {
-		bar_pen_fight_asinti_state = 1
-	}
-	set_variable = {
-		bar_pen_fight_viira_state = 1
+		bar_pen_fight_ai_already_attacked = 0
 	}
 }
+
+
+
+  #####  #     # ###       #     # ######  ######     #    ####### ### #     #  #####  
+ #     # #     #  #        #     # #     # #     #   # #      #     #  ##    # #     # 
+ #       #     #  #        #     # #     # #     #  #   #     #     #  # #   # #       
+ #  #### #     #  #        #     # ######  #     # #     #    #     #  #  #  # #  #### 
+ #     # #     #  #        #     # #       #     # #######    #     #  #   # # #     # 
+ #     # #     #  #        #     # #       #     # #     #    #     #  #    ## #     # 
+  #####   #####  ###        #####  #       ######  #     #    #    ### #     #  #####  
+        
+  
 
 bar_pen_fight_gui_reload = {
-	bar_fight_gui_reload = yes
-	add_to_variable = {
-		bar_pentarchy_fight_show = 1
-	}
-}
-
-bar_viira_fight_gui_reload = {
-	bar_fight_gui_reload = yes
-	add_to_variable = {
-		bar_viira_fight_show = 1
-	}
-}
-
-bar_fight_gui_reload = {
+	log = "[GetDateText]: [Root.GetName]: pen fight gui reload"
 	BAR_fight_pentarchy_viira_initiative = yes
 	BAR_fight_pentarchy_silver_initiative = yes
 	BAR_fight_pentarchy_leopold_initiative = yes
@@ -169,66 +150,64 @@ bar_fight_gui_reload = {
 	bar_fight_silver_hp = yes
 	bar_fight_leopold_hp = yes
 	bar_fight_asinti_hp = yes
+	add_to_variable = {
+		bar_pentarchy_fight_show = 1
+	}
 }
 
 bar_fight_silver_hp = {
 	#hp is shown as 1 hearth == 10hp, current_hp_index shows that representation from current hp
 	set_variable = {
-		s_current_hp_index = s_hp
+		char_current_hp_index = s_hp
 	}
 	divide_variable = {
-		s_current_hp_index = 10
+		char_current_hp_index = 10
 	}
-	round_variable = s_current_hp_index
+	round_variable = char_current_hp_index
 	#looping thought hp and updating gui vars
-	for_loop_effect = {
-		start = 1
-		end = s_max_hp_index
-		value = hp_index
+	for_each_loop = {
+		array = bar_fight_silver_star_hp_bar
+		index = hp_index
+		value = hp_frame
 		set_temp_variable = {
 			hp_mult_value = hp_index
 		}
 		multiply_temp_variable = {
 			hp_mult_value = 10
 		}
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = s_current_hp_index
-							compare = equals
-						}
-						check_variable = {
-							var = s_hp
-							value = hp_mult_value
-							compare = not_equals
-						}
-					}
-					set_variable = {
-						s_hp_d_[HP_VALUE] = 2
-					}
+		if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = char_current_hp_index
+					compare = equals
 				}
-				else_if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = s_current_hp_index
-							compare = less_than_or_equals
-						}
-					}
-					set_variable = {
-						s_hp_d_[HP_VALUE] = 1
-					}
-				}
-				else = {
-					set_variable = {
-						s_hp_d_[HP_VALUE] = 3
-					}
+				check_variable = {
+					var = s_hp
+					value = hp_mult_value
+					compare = not_equals
 				}
 			}
-			HP_VALUE = "[?hp_mult_value]"
+			set_variable = {
+				bar_fight_silver_star_hp_bar^hp_index = 2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = char_current_hp_index
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = {
+				bar_fight_silver_star_hp_bar^hp_index = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_silver_star_hp_bar^hp_index = 3
+			}
 		}
 	}
 }
@@ -236,61 +215,56 @@ bar_fight_silver_hp = {
 bar_fight_leopold_hp = {
 	#hp is shown as 1 hearth == 10hp, current_hp_index shows that representation from current hp
 	set_variable = {
-		l_current_hp_index = l_hp
+		char_current_hp_index = l_hp
 	}
 	divide_variable = {
-		l_current_hp_index = 10
+		char_current_hp_index = 10
 	}
-	round_variable = l_current_hp_index
+	round_variable = char_current_hp_index
 	#looping thought hp and updating gui vars
-	for_loop_effect = {
-		start = 1
-		end = l_max_hp_index
-		value = hp_index
+	for_each_loop = {
+		array = bar_fight_leopold_hp_bar
+		index = hp_index
+		value = hp_frame
 		set_temp_variable = {
 			hp_mult_value = hp_index
 		}
 		multiply_temp_variable = {
 			hp_mult_value = 10
 		}
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = l_current_hp_index
-							compare = equals
-						}
-						check_variable = {
-							var = l_hp
-							value = hp_mult_value
-							compare = not_equals
-						}
-					}
-					set_variable = {
-						l_hp_d_[HP_VALUE] = 2
-					}
+		if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = char_current_hp_index
+					compare = equals
 				}
-				else_if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = l_current_hp_index
-							compare = less_than_or_equals
-						}
-					}
-					set_variable = {
-						l_hp_d_[HP_VALUE] = 1
-					}
-				}
-				else = {
-					set_variable = {
-						l_hp_d_[HP_VALUE] = 3
-					}
+				check_variable = {
+					var = l_hp
+					value = hp_mult_value
+					compare = not_equals
 				}
 			}
-			HP_VALUE = "[?hp_mult_value]"
+			set_variable = {
+				bar_fight_leopold_hp_bar^hp_index = 2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = char_current_hp_index
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = {
+				bar_fight_leopold_hp_bar^hp_index = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_leopold_hp_bar^hp_index = 3
+			}
 		}
 	}
 }
@@ -305,54 +279,49 @@ bar_fight_viira_hp = {
 	}
 	round_variable = v_current_hp_index
 	#looping thought hp and updating gui vars
-	for_loop_effect = {
-		start = 1
-		end = v_max_hp_index
-		value = hp_index
+	for_each_loop = {
+		array = bar_fight_viira_hp_bar
+		index = hp_index
+		value = hp_frame
 		set_temp_variable = {
 			hp_mult_value = hp_index
 		}
 		multiply_temp_variable = {
 			hp_mult_value = 10
 		}
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = v_current_hp_index
-							compare = equals
-						}
-						check_variable = {
-							var = v_hp
-							value = hp_mult_value
-							compare = not_equals
-						}
-					}
-					set_variable = {
-						v_hp_d_[HP_VALUE] = 2
-					}
+		if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = v_current_hp_index
+					compare = equals
 				}
-				else_if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = v_current_hp_index
-							compare = less_than_or_equals
-						}
-					}
-					set_variable = {
-						v_hp_d_[HP_VALUE] = 1
-					}
-				}
-				else = {
-					set_variable = {
-						v_hp_d_[HP_VALUE] = 3
-					}
+				check_variable = {
+					var = v_hp
+					value = hp_mult_value
+					compare = not_equals
 				}
 			}
-			HP_VALUE = "[?hp_mult_value]"
+			set_variable = {
+				bar_fight_viira_hp_bar^hp_index = 2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = v_current_hp_index
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = {
+				bar_fight_viira_hp_bar^hp_index = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_viira_hp_bar^hp_index = 3
+			}
 		}
 	}
 }
@@ -360,176 +329,153 @@ bar_fight_viira_hp = {
 bar_fight_asinti_hp = {
 	#hp is shown as 1 hearth == 10hp, current_hp_index shows that representation from current hp
 	set_variable = {
-		a_current_hp_index = a_hp
+		char_current_hp_index = a_hp
 	}
 	divide_variable = {
-		a_current_hp_index = 10
+		char_current_hp_index = 10
 	}
-	round_variable = a_current_hp_index
+	round_variable = char_current_hp_index
 	#looping thought hp and updating gui vars
-	for_loop_effect = {
-		start = 1
-		end = a_max_hp_index
-		value = hp_index
+	for_each_loop = {
+		array = bar_fight_asinti_hp_bar
+		index = hp_index
+		value = hp_frame
 		set_temp_variable = {
 			hp_mult_value = hp_index
 		}
 		multiply_temp_variable = {
 			hp_mult_value = 10
 		}
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = a_current_hp_index
-							compare = equals
-						}
-						check_variable = {
-							var = a_hp
-							value = hp_mult_value
-							compare = not_equals
-						}
-					}
-					set_variable = {
-						a_hp_d_[HP_VALUE] = 2
-					}
+		if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = char_current_hp_index
+					compare = equals
 				}
-				else_if = {
-					limit = {
-						check_variable = {
-							var = hp_index
-							value = a_current_hp_index
-							compare = less_than_or_equals
-						}
-					}
-					set_variable = {
-						a_hp_d_[HP_VALUE] = 1
-					}
-				}
-				else = {
-					set_variable = {
-						a_hp_d_[HP_VALUE] = 3
-					}
+				check_variable = {
+					var = a_hp
+					value = hp_mult_value
+					compare = not_equals
 				}
 			}
-			HP_VALUE = "[?hp_mult_value]"
+			set_variable = {
+				bar_fight_asinti_hp_bar^hp_index = 2
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					var = hp_index
+					value = char_current_hp_index
+					compare = less_than_or_equals
+				}
+			}
+			set_variable = {
+				bar_fight_asinti_hp_bar^hp_index = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_asinti_hp_bar^hp_index = 3
+			}
 		}
 	}
 }
 
 BAR_fight_pentarchy_leopold_initiative = {
-	for_loop_effect = {
-		start = 1
-		end = 11
-		value = initiative_index
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							l_in < initiative_index
-						}
-					}
-					set_variable = {
-						l_in_d_[INITIATIVE_INDEX] = 2
-					}
-				}
-				else = {
-					set_variable = {
-						l_in_d_[INITIATIVE_INDEX] = 1
-					}
+	for_each_loop = {
+		array = bar_fight_leopold_initiative_bar
+		if = {
+			limit = {
+				check_variable = {
+					l_in > i
 				}
 			}
-			INITIATIVE_INDEX = "[?INITIATIVE_INDEX]"
+			set_variable = {
+				bar_fight_leopold_initiative_bar^i = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_leopold_initiative_bar^i = 2
+			}
 		}
 	}
 }
 
 BAR_fight_pentarchy_silver_initiative = {
-	for_loop_effect = {
-		start = 1
-		end = 11
-		value = initiative_index
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							s_in < initiative_index
-						}
-					}
-					set_variable = {
-						s_in_d_[INITIATIVE_INDEX] = 2
-					}
-				}
-				else = {
-					set_variable = {
-						s_in_d_[INITIATIVE_INDEX] = 1
-					}
+	for_each_loop = {
+		array = bar_fight_silver_star_initiative_bar
+		if = {
+			limit = {
+				check_variable = {
+					s_in > i
 				}
 			}
-			INITIATIVE_INDEX = "[?INITIATIVE_INDEX]"
+			set_variable = {
+				bar_fight_silver_star_initiative_bar^i = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_silver_star_initiative_bar^i = 2
+			}
 		}
 	}
 }
 
 BAR_fight_pentarchy_asinti_initiative = {
-	for_loop_effect = {
-		start = 1
-		end = 11
-		value = initiative_index
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							a_in < initiative_index
-						}
-					}
-					set_variable = {
-						a_in_d_[INITIATIVE_INDEX] = 2
-					}
-				}
-				else = {
-					set_variable = {
-						a_in_d_[INITIATIVE_INDEX] = 1
-					}
+	for_each_loop = {
+		array = bar_fight_asinti_initiative_bar
+		if = {
+			limit = {
+				check_variable = {
+					a_in > i
 				}
 			}
-			INITIATIVE_INDEX = "[?INITIATIVE_INDEX]"
+			set_variable = {
+				bar_fight_asinti_initiative_bar^i = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_asinti_initiative_bar^i = 2
+			}
+		}
+	}
+}
+BAR_fight_pentarchy_viira_initiative = {
+	for_each_loop = {
+		array = bar_fight_viira_initiative_bar
+		if = {
+			limit = {
+				check_variable = {
+					v_in > i
+				}
+			}
+			set_variable = {
+				bar_fight_viira_initiative_bar^i = 1
+			}
+		}
+		else = {
+			set_variable = {
+				bar_fight_viira_initiative_bar^i = 2
+			}
 		}
 	}
 }
 
-BAR_fight_pentarchy_viira_initiative = {
-	for_loop_effect = {
-		start = 1
-		end = 21
-		value = initiative_index
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						check_variable = {
-							v_in < initiative_index
-						}
-					}
-					set_variable = {
-						v_in_d_[INITIATIVE_INDEX] = 2
-					}
-				}
-				else = {
-					set_variable = {
-						v_in_d_[INITIATIVE_INDEX] = 1
-					}
-				}
-			}
-			INITIATIVE_INDEX = "[?INITIATIVE_INDEX]"
-		}
-	}
-}
+
+    #     #####  ####### ### ####### #     #  #####  
+   # #   #     #    #     #  #     # ##    # #     # 
+  #   #  #          #     #  #     # # #   # #       
+ #     # #          #     #  #     # #  #  #  #####  
+ ####### #          #     #  #     # #   # #       # 
+ #     # #     #    #     #  #     # #    ## #     # 
+ #     #  #####     #    ### ####### #     #  #####  
+                                                                                                             
+
 
 BAR_pen_fight_silver_normal_attack = {
 	set_variable = {
@@ -541,111 +487,15 @@ BAR_pen_fight_silver_normal_attack = {
 				s_in > 0
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 2
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 3
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 4
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 5
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 6
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 7
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 8
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 9
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 10
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 12
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 14
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 17
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 19
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 21
-					}
-				}
-			}
+		hidden_effect = {		
 			random_list = {
 				90 = {
+					set_variable_to_random = {
+						var = dmgToDeal
+						min = 2
+						max = 21
+						integer = yes
+					}
 					subtract_from_variable = {
 						v_hp = dmgToDeal
 					}
@@ -660,7 +510,7 @@ BAR_pen_fight_silver_normal_attack = {
 			subtract_from_variable = {
 				s_in = 1
 			}
-			BAR_viira_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
@@ -677,133 +527,29 @@ BAR_pen_fight_silver_lifesteal_attack = {
 			check_variable = {
 				BAR_resources_silver > 49
 			}
-		}
-		random_list = {
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 5
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 6
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 7
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 8
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 9
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 10
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 11
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 12
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 13
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 14
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 15
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 16
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 17
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 18
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 19
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 20
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 21
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 22
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 23
-				}
-			}
-			5 = {
-				set_temp_variable = {
-					dmgToDeal = 24
-				}
-			}
-		}
+		}	
 		random_list = {
 			90 = {
+				set_variable_to_random = {
+					var = dmgToDeal
+					min = 5
+					max = 24
+					integer = yes
+				}
 				subtract_from_variable = {
 					v_hp = dmgToDeal
 				}
-				set_temp_variable = {
-					s_hp_temp = s_hp
-				}
-				add_to_temp_variable = {
-					s_hp_temp = dmgToDeal
+				add_to_variable = {
+					s_hp = dmgToDeal
 				}
 				if = {
 					limit = {
 						check_variable = {
-							s_hp_max < s_hp_temp
+							s_hp > @PEN_FIGHT_SILVER_STAR_MAX_HP
 						}
 					}
-					add_to_variable = {
-						s_hp = dmgToDeal
-					}
-				}
-				else = {
 					set_variable = {
-						s_hp = s_hp_max
+						s_hp = @PEN_FIGHT_SILVER_STAR_MAX_HP
 					}
 				}
 			}
@@ -820,7 +566,7 @@ BAR_pen_fight_silver_lifesteal_attack = {
 		subtract_from_variable = {
 			BAR_resources_silver = 50
 		}
-		BAR_viira_turn_new = yes
+		BAR_pen_fight_ai_turn = yes
 	}
 }
 
@@ -837,6 +583,12 @@ BAR_silver_heal = {
 				BAR_resources_silver > 99
 			}
 		}
+		set_variable_to_random = {
+			var = hp_to_heal
+			min = 24
+			max = 42
+			integer = yes
+		}
 		set_variable = {
 			BAR_heal_prepare = 1
 		}
@@ -846,91 +598,27 @@ BAR_silver_heal = {
 BAR_silver_heal_silver = {
 	if = {
 		limit = {
-			check_variable = {
-				BAR_heal_prepare = 1
-			}
+			has_variable = BAR_heal_prepare
 		}
 		hidden_effect = {
-			random_list = {
-				10 = {
-					set_temp_variable = {
-						healAmount = 24
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 26
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 28
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 30
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 32
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 34
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 36
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 38
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 40
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 42
-					}
-				}
-			}
-			set_temp_variable = {
-				s_hp_temp = s_hp
-			}
-			add_to_temp_variable = {
-				s_hp_temp = healAmount
+			add_to_variable = {
+				s_hp = healAmount
 			}
 			if = {
 				limit = {
 					check_variable = {
-						s_hp_max > s_hp_temp
+						s_hp > @PEN_FIGHT_SILVER_STAR_MAX_HP
 					}
 				}
-				add_to_variable = {
-					s_hp = healAmount
-				}
-			}
-			else = {
 				set_variable = {
-					s_hp = s_hp_max
+					s_hp = @PEN_FIGHT_SILVER_STAR_MAX_HP
 				}
 			}
 			subtract_from_variable = {
 				BAR_resources_silver = 100
 			}
-			BAR_viira_turn_new = yes
-			set_variable = {
-				BAR_heal_prepare = 0
-			}
+			BAR_pen_fight_ai_turn = yes
+			clear_variable = BAR_heal_prepare
 		}
 	}
 }
@@ -938,91 +626,27 @@ BAR_silver_heal_silver = {
 BAR_silver_heal_asinti = {
 	if = {
 		limit = {
-			check_variable = {
-				BAR_heal_prepare = 1
-			}
+			has_variable = BAR_heal_prepare
 		}
 		hidden_effect = {
-			random_list = {
-				10 = {
-					set_temp_variable = {
-						healAmount = 24
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 26
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 28
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 30
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 32
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 34
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 36
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 38
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 40
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 42
-					}
-				}
-			}
-			set_temp_variable = {
-				a_hp_temp = a_hp
-			}
-			add_to_temp_variable = {
-				a_hp_temp = healAmount
+			add_to_variable = {
+				a_hp = healAmount
 			}
 			if = {
 				limit = {
 					check_variable = {
-						a_hp_max > a_hp_temp
+						a_hp > @PEN_FIGHT_ASINTI_MAX_HP
 					}
 				}
-				add_to_variable = {
-					a_hp = healAmount
-				}
-			}
-			else = {
 				set_variable = {
-					a_hp = a_hp_max
+					a_hp = @PEN_FIGHT_ASINTI_MAX_HP
 				}
 			}
 			subtract_from_variable = {
 				BAR_resources_silver = 100
 			}
-			BAR_viira_turn_new = yes
-			set_variable = {
-				BAR_heal_prepare = 0
-			}
+			BAR_pen_fight_ai_turn = yes
+			clear_variable = BAR_heal_prepare
 		}
 	}
 }
@@ -1030,91 +654,27 @@ BAR_silver_heal_asinti = {
 BAR_silver_heal_leopold = {
 	if = {
 		limit = {
-			check_variable = {
-				BAR_heal_prepare = 1
-			}
+			has_variable = BAR_heal_prepare
 		}
 		hidden_effect = {
-			random_list = {
-				10 = {
-					set_temp_variable = {
-						healAmount = 24
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 26
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 28
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 30
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 32
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 34
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 36
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 38
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 40
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 42
-					}
-				}
-			}
-			set_temp_variable = {
-				l_hp_temp = l_hp
-			}
-			add_to_temp_variable = {
-				l_hp_temp = healAmount
+			add_to_variable = {
+				l_hp = healAmount
 			}
 			if = {
 				limit = {
 					check_variable = {
-						l_hp_max > l_hp_temp
+						l_hp > @PEN_FIGHT_LEOPOLD_MAX_HP
 					}
 				}
-				add_to_variable = {
-					l_hp = healAmount
-				}
-			}
-			else = {
 				set_variable = {
-					l_hp = l_hp_max
+					l_hp = @PEN_FIGHT_LEOPOLD_MAX_HP
 				}
 			}
 			subtract_from_variable = {
 				BAR_resources_silver = 100
 			}
-			BAR_viira_turn_new = yes
-			set_variable = {
-				BAR_heal_prepare = 0
-			}
+			BAR_pen_fight_ai_turn = yes
+			clear_variable = BAR_heal_prepare
 		}
 	}
 }
@@ -1131,109 +691,13 @@ BAR_pen_fight_leopold_normal_attack = {
 		}
 		hidden_effect = {
 			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 3
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 4
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 5
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 6
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 7
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 8
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 9
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 10
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 12
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 14
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 17
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 19
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 21
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 22
-					}
-				}
-			}
-			random_list = {
 				90 = {
+					set_variable_to_random = {
+						var = dmgToDeal
+						min = 3
+						max = 22
+						integer = yes
+					}
 					subtract_from_variable = {
 						v_hp = dmgToDeal
 					}
@@ -1248,7 +712,7 @@ BAR_pen_fight_leopold_normal_attack = {
 			subtract_from_variable = {
 				l_in = 1
 			}
-			BAR_viira_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
@@ -1268,109 +732,13 @@ BAR_pen_fight_leopold_strong_attack = {
 		}
 		hidden_effect = {
 			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 22
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 26
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 28
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 30
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 32
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 34
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 36
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 38
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 40
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 42
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 44
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 46
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 48
-					}
-				}
-			}
-			random_list = {
 				90 = {
+					set_variable_to_random = {
+						var = dmgToDeal
+						min = 11
+						max = 48
+						integer = yes
+					}
 					subtract_from_variable = {
 						v_hp = dmgToDeal
 					}
@@ -1388,7 +756,7 @@ BAR_pen_fight_leopold_strong_attack = {
 			subtract_from_variable = {
 				BAR_resources_leopold = 50
 			}
-			BAR_viira_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
@@ -1430,7 +798,7 @@ BAR_pen_fight_leopold_stun = {
 			subtract_from_variable = {
 				BAR_resources_leopold = 100
 			}
-			BAR_viira_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
@@ -1445,111 +813,15 @@ BAR_pen_fight_asinti_normal_attack = {
 				a_in > 0
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 3
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 4
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 5
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 6
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 7
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 8
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 9
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 10
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 12
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 14
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 17
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 19
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 21
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 22
-					}
-				}
-			}
+		hidden_effect = {	
 			random_list = {
 				90 = {
+					set_variable_to_random = {
+						var = dmgToDeal
+						min = 5
+						max = 22
+						integer = yes
+					}
 					subtract_from_variable = {
 						v_hp = dmgToDeal
 					}
@@ -1564,7 +836,7 @@ BAR_pen_fight_asinti_normal_attack = {
 			subtract_from_variable = {
 				a_in = 1
 			}
-			BAR_viira_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
@@ -1579,393 +851,73 @@ BAR_pen_fight_asinti_heal = {
 				a_in > 1
 			}
 			check_variable = {
-				BAR_resources_asinti > 49
+				BAR_resources_asinti > 99
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				10 = {
-					set_temp_variable = {
-						healAmount = 7
-					}
+		hidden_effect = {	
+			set_variable_to_random = {
+				var = healAmount
+				min = 7
+				max = 17
+				integer = yes
+			}
+			if = {
+				limit = {
+					has_country_flag = barrad_silver_star_alive
 				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 8
-					}
+				add_to_variable = {
+					s_hp = healAmount
 				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 9
+				if = {
+					limit = {
+						check_variable = {
+							s_hp > @PEN_FIGHT_SILVER_STAR_MAX_HP
+						}
 					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 10
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 11
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 12
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 13
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 14
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 16
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healAmount = 17
+					set_variable = {
+						s_hp = @PEN_FIGHT_SILVER_STAR_MAX_HP
 					}
 				}
 			}
 			if = {
 				limit = {
-					has_country_flag = barrad_silver_star_alive
-					has_country_flag = barrad_asinti_alive
 					has_country_flag = barrad_leopold_alive
 				}
-				set_temp_variable = {
-					a_hp_t = a_hp
-				}
-				set_temp_variable = {
-					l_hp_t = l_hp
-				}
-				set_temp_variable = {
-					s_hp_t = s_hp
-				}
-				add_to_temp_variable = {
-					a_hp_t = healAmount
-				}
-				add_to_temp_variable = {
-					l_hp_t = healAmount
-				}
-				add_to_temp_variable = {
-					s_hp_t = healAmount
+				add_to_variable = {
+					l_hp = healAmount
 				}
 				if = {
 					limit = {
 						check_variable = {
-							a_hp_t > a_hp_max
+							l_hp > @PEN_FIGHT_LEOPOLD_MAX_HP
 						}
 					}
 					set_variable = {
-						a_hp = a_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						a_hp = healAmount
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							l_hp_t > l_hp_max
-						}
-					}
-					set_variable = {
-						l_hp = l_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						l_hp = healAmount
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							s_hp_t > s_hp_max
-						}
-					}
-					set_variable = {
-						s_hp = s_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						s_hp = healAmount
+						l_hp = @PEN_FIGHT_LEOPOLD_MAX_HP
 					}
 				}
 			}
-			else_if = {
+			add_to_variable = {
+				a_hp = healAmount
+			}
+			if = {
 				limit = {
-					has_country_flag = barrad_silver_star_alive
-					has_country_flag = barrad_asinti_alive
-					NOT = {
-						has_country_flag = barrad_leopold_alive
+					check_variable = {
+						a_hp > @PEN_FIGHT_ASINTI_MAX_HP
 					}
 				}
-				set_temp_variable = {
-					a_hp_t = a_hp
-				}
-				set_temp_variable = {
-					s_hp_t = s_hp
-				}
-				add_to_temp_variable = {
-					a_hp_t = healAmount
-				}
-				add_to_temp_variable = {
-					s_hp_t = healAmount
-				}
-				if = {
-					limit = {
-						check_variable = {
-							a_hp_t > a_hp_max
-						}
-					}
-					set_variable = {
-						a_hp = a_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						a_hp = healAmount
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							s_hp_t > s_hp_max
-						}
-					}
-					set_variable = {
-						s_hp = s_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						s_hp = healAmount
-					}
+				set_variable = {
+					a_hp = @PEN_FIGHT_ASINTI_MAX_HP
 				}
 			}
-			else_if = {
-				limit = {
-					has_country_flag = barrad_silver_star_alive
-					NOT = {
-						has_country_flag = barrad_asinti_alive
-					}
-					has_country_flag = barrad_leopold_alive
-				}
-				set_temp_variable = {
-					l_hp_t = l_hp
-				}
-				set_temp_variable = {
-					s_hp_t = s_hp
-				}
-				add_to_temp_variable = {
-					l_hp_t = healAmount
-				}
-				add_to_temp_variable = {
-					s_hp_t = healAmount
-				}
-				else = {
-					add_to_variable = {
-						a_hp = healAmount
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							l_hp_t > l_hp_max
-						}
-					}
-					set_variable = {
-						l_hp = l_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						l_hp = healAmount
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							s_hp_t > s_hp_max
-						}
-					}
-					set_variable = {
-						s_hp = s_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						s_hp = healAmount
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = barrad_silver_star_alive
-					NOT = {
-						has_country_flag = barrad_asinti_alive
-					}
-					NOT = {
-						has_country_flag = barrad_leopold_alive
-					}
-				}
-				set_temp_variable = {
-					s_hp_t = s_hp
-				}
-				add_to_temp_variable = {
-					s_hp_t = healAmount
-				}
-				if = {
-					limit = {
-						check_variable = {
-							s_hp_t > s_hp_max
-						}
-					}
-					set_variable = {
-						s_hp = s_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						s_hp = healAmount
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_country_flag = barrad_silver_star_alive
-					}
-					has_country_flag = barrad_asinti_alive
-					has_country_flag = barrad_leopold_alive
-				}
-				set_temp_variable = {
-					a_hp_t = a_hp
-				}
-				set_temp_variable = {
-					l_hp_t = l_hp
-				}
-				add_to_temp_variable = {
-					a_hp_t = healAmount
-				}
-				add_to_temp_variable = {
-					l_hp_t = healAmount
-				}
-				if = {
-					limit = {
-						check_variable = {
-							a_hp_t > a_hp_max
-						}
-					}
-					set_variable = {
-						a_hp = a_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						a_hp = healAmount
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							l_hp_t > l_hp_max
-						}
-					}
-					set_variable = {
-						l_hp = l_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						l_hp = healAmount
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_country_flag = barrad_silver_star_alive
-					}
-					has_country_flag = barrad_asinti_alive
-					NOT = {
-						has_country_flag = barrad_leopold_alive
-					}
-				}
-				set_temp_variable = {
-					a_hp_t = a_hp
-				}
-				add_to_temp_variable = {
-					a_hp_t = healAmount
-				}
-				if = {
-					limit = {
-						check_variable = {
-							a_hp_t > a_hp_max
-						}
-					}
-					set_variable = {
-						a_hp = a_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						a_hp = healAmount
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_country_flag = barrad_silver_star_alive
-					}
-					NOT = {
-						has_country_flag = barrad_asinti_alive
-					}
-					has_country_flag = barrad_leopold_alive
-				}
-				set_temp_variable = {
-					l_hp_t = l_hp
-				}
-				add_to_temp_variable = {
-					l_hp_t = healAmount
-				}
-				if = {
-					limit = {
-						check_variable = {
-							l_hp_t > l_hp_max
-						}
-					}
-					set_variable = {
-						l_hp = l_hp_max
-					}
-				}
-				else = {
-					add_to_variable = {
-						l_hp = healAmount
-					}
-				}
-			}
+
 			subtract_from_variable = {
 				a_in = 2
 			}
 			subtract_from_variable = {
 				BAR_resources_asinti = 100
 			}
-			BAR_viira_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
@@ -1993,412 +945,13 @@ BAR_pen_fight_asinti_debuf = {
 			set_variable = {
 				viira_dmg_debuff = 2
 			}
-			BAR_viira_turn_new = yes
-		}
-	}
-}
-
-BAR_pen_fight_rest = {
-	set_variable = {
-		bar_pen_fight_missed = 0
-	}
-	hidden_effect = {
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-			}
-			if = {
-				limit = {
-					check_variable = {
-						a_in > 8
-					}
-				}
-				set_variable = {
-					a_in = 10
-				}
-			}
-			else = {
-				add_to_variable = {
-					a_in = 2
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_leopold_alive
-			}
-			if = {
-				limit = {
-					check_variable = {
-						l_in > 8
-					}
-				}
-				set_variable = {
-					l_in = 10
-				}
-			}
-			else = {
-				add_to_variable = {
-					l_in = 2
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			if = {
-				limit = {
-					check_variable = {
-						s_in > 8
-					}
-				}
-				set_variable = {
-					s_in = 10
-				}
-			}
-			else = {
-				add_to_variable = {
-					s_in = 2
-				}
-			}
-		}
-		BAR_viira_turn_new = yes
-	}
-}
-
-BAR_viira_turn_new = {
-	if = {
-		limit = {
-			check_variable = {
-				v_hp > 0
-			}
-		}
-		random_list = {
-			35 = {
-				#target weakest one
-				set_temp_variable = {
-					min = 1000
-				}
-				set_variable = {
-					viira_target = 0
-				}
-				if = {
-					limit = {
-						check_variable = {
-							a_hp > 0
-						}
-						check_variable = {
-							a_hp < min
-						}
-					}
-					set_variable = {
-						min = a_hp
-					}
-					set_variable = {
-						viira_target = 1
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							l_hp > 0
-						}
-						check_variable = {
-							l_hp < min
-						}
-					}
-					set_variable = {
-						min = l_hp
-					}
-					set_variable = {
-						viira_target = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							s_hp > 0
-						}
-						check_variable = {
-							s_hp < min
-						}
-					}
-					set_variable = {
-						min = s_hp
-					}
-					set_variable = {
-						viira_target = 3
-					}
-				}
-			}
-			65 = {
-				#target random one
-				if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						has_country_flag = barrad_asinti_alive
-						has_country_flag = barrad_leopold_alive
-					}
-					random_list = {
-						34 = {
-							set_variable = {
-								viira_target = 1
-							}
-						}
-						33 = {
-							set_variable = {
-								viira_target = 2
-							}
-						}
-						33 = {
-							set_variable = {
-								viira_target = 3
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						has_country_flag = barrad_asinti_alive
-						NOT = {
-							has_country_flag = barrad_leopold_alive
-						}
-					}
-					random_list = {
-						50 = {
-							set_variable = {
-								viira_target = 1
-							}
-						}
-						50 = {
-							set_variable = {
-								viira_target = 3
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						NOT = {
-							has_country_flag = barrad_asinti_alive
-						}
-						has_country_flag = barrad_leopold_alive
-					}
-					random_list = {
-						50 = {
-							set_variable = {
-								viira_target = 2
-							}
-						}
-						50 = {
-							set_variable = {
-								viira_target = 3
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						NOT = {
-							has_country_flag = barrad_asinti_alive
-						}
-						NOT = {
-							has_country_flag = barrad_leopold_alive
-						}
-					}
-					set_variable = {
-						viira_target = 3
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							has_country_flag = barrad_silver_star_alive
-						}
-						has_country_flag = barrad_asinti_alive
-						has_country_flag = barrad_leopold_alive
-					}
-					random_list = {
-						50 = {
-							set_variable = {
-								viira_target = 1
-							}
-						}
-						50 = {
-							set_variable = {
-								viira_target = 2
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							has_country_flag = barrad_silver_star_alive
-						}
-						has_country_flag = barrad_asinti_alive
-						NOT = {
-							has_country_flag = barrad_leopold_alive
-						}
-					}
-					set_variable = {
-						viira_target = 1
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							has_country_flag = barrad_silver_star_alive
-						}
-						NOT = {
-							has_country_flag = barrad_asinti_alive
-						}
-						has_country_flag = barrad_leopold_alive
-					}
-					set_variable = {
-						viira_target = 2
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					v_stun < 1
-				}
-			}
-			BAR_viira_attack = yes
-		}
-		else = {
-			set_variable = {
-				viira_turn_action = 5
-			}
-			subtract_from_variable = {
-				v_stun = 1
-			}
-		}
-		set_variable = {
-			viira_dmg_debuff = 1
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp < 1
-				}
-			}
-			set_variable = {
-				bar_pen_fight_asinti_state = 2
-			}
-			barrad_kill_asinti = yes
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp < 1
-				}
-			}
-			set_variable = {
-				bar_pen_fight_leopold_state = 2
-			}
-			barrad_kill_leopold = yes
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp < 1
-				}
-			}
-			set_variable = {
-				bar_pen_fight_silver_state = 2
-			}
-			barrad_kill_silver = yes
-		}
-		bar_pen_fight_gui_reload = yes
-		BAR_viira_round_end_new = yes
-	}
-	else = {
-		barrad_kill_viira = yes
-		set_variable = {
-			bar_pen_fight_viira_state = 2
-		}
-		country_event = {
-			id = barrad_viira_fight.7
-		}
-		#we won!
-	}
-}
-
-BAR_viira_round_end_new = {
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = barrad_asinti_alive
-				has_country_flag = barrad_leopold_alive
-				has_country_flag = barrad_silver_star_alive
-			}
-		}
-		log = "[GetDateText]: [Root.GetName]: viir fight next round"
-	}
-	else = {
-		country_event = {
-			id = barrad_viira_fight.6
-		}
-		#we lost...
-	}
-}
-
-bar_pen_fight_close_window = {
-	#clears variables used in fight
-	clear_variable = BAR_fight_pentarchy_action
-	clear_variable = a_hp
-	clear_variable = a_hp_max
-	clear_variable = a_in
-	clear_variable = l_hp
-	clear_variable = l_hp_max
-	clear_variable = l_in
-	clear_variable = s_hp
-	clear_variable = s_hp_max
-	clear_variable = s_in
-	clear_variable = v_hp
-	clear_variable = v_hp_max
-	clear_variable = v_in
-	clear_variable = bar_pen_fight_silver_state
-	clear_variable = bar_pen_fight_leopold_state
-	clear_variable = bar_pen_fight_asinti_state
-	clear_variable = heal_target
-	clear_variable = character_attacking
-	clear_variable = viira_dmg_debuff
-	clear_variable = v_stun
-	clear_variable = bar_pentarchy_fight_show
-	clear_variable = bar_viira_fight_show
-	#looping thought hp and clearing vars
-	for_loop_effect = {
-		start = 1
-		end = v_max_hp_index
-		value = hp_index
-		set_temp_variable = {
-			hp_mult_value = hp_index
-		}
-		multiply_temp_variable = {
-			hp_mult_value = 10
-		}
-		meta_effect = {
-			text = {
-				clear_variable = a_hp_d_[HP_VALUE]
-				clear_variable = s_hp_d_[HP_VALUE]
-				clear_variable = l_hp_d_[HP_VALUE]
-				clear_variable = v_hp_d_[HP_VALUE]
-			}
-			HP_VALUE = "[?hp_mult_value]"
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
 
 bar_viira_fight_normal_attack = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira normal attack"
 	if = {
 		limit = {
 			check_variable = {
@@ -2408,413 +961,27 @@ bar_viira_fight_normal_attack = {
 				v_in > 0
 			}
 		}
-		clear_variable = bar_viira_fight_strong_attack_prepare
+		set_variable_to_random = {
+			var = dmgToDeal
+			min = 5
+			max = 24
+			integer = yes
+		}
 		set_variable = {
-			bar_viira_fight_normal_attack_prepare = 1
+			initiative_cost = 1
 		}
-	}
-}
-
-bar_viira_fight_normal_attack_asinti = {
-	if = {
-		limit = {
-			check_variable = {
-				bar_viira_fight_normal_attack_prepare = 1
-			}
+		divide_variable = {
+			dmgToDeal = viira_dmg_debuff
 		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 5
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 6
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 7
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 8
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 9
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 10
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 12
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 14
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 17
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 19
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 21
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 22
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 23
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-			}
-			divide_temp_variable = {
-				dmgToDeal = viira_dmg_debuff
-			}
-			subtract_from_variable = {
-				v_in = 1
-			}
-			subtract_from_variable = {
-				a_hp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						a_hp < 0
-					}
-				}
-				barrad_kill_asinti = yes
-			}
-			BAR_pentarchy_turn_new = yes
+		round_variable = dmgToDeal
+		set_variable = {
+			bar_viira_attack_prepared = 1
 		}
-		clear_variable = bar_viira_fight_normal_attack_prepare
-	}
-}
-
-bar_viira_fight_normal_attack_leopold = {
-	if = {
-		limit = {
-			check_variable = {
-				bar_viira_fight_normal_attack_prepare = 1
-			}
-		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 5
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 6
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 7
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 8
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 9
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 10
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 12
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 14
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 17
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 19
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 21
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 22
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 23
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-			}
-			divide_temp_variable = {
-				dmgToDeal = viira_dmg_debuff
-			}
-			subtract_from_variable = {
-				v_in = 1
-			}
-			subtract_from_variable = {
-				l_hp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						l_hp < 0
-					}
-				}
-				barrad_kill_leopold = yes
-			}
-			BAR_pentarchy_turn_new = yes
-		}
-		clear_variable = bar_viira_fight_normal_attack_prepare
-	}
-}
-
-bar_viira_fight_normal_attack_silver = {
-	if = {
-		limit = {
-			check_variable = {
-				bar_viira_fight_normal_attack_prepare = 1
-			}
-		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 5
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 6
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 7
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 8
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 9
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 10
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 11
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 12
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 13
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 14
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 15
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 16
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 17
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 18
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 19
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 20
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 21
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 22
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 23
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-			}
-			divide_temp_variable = {
-				dmgToDeal = viira_dmg_debuff
-			}
-			subtract_from_variable = {
-				v_in = 1
-			}
-			subtract_from_variable = {
-				s_hp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						s_hp < 0
-					}
-				}
-				barrad_kill_silver = yes
-			}
-			BAR_pentarchy_turn_new = yes
-		}
-		clear_variable = bar_viira_fight_normal_attack_prepare
 	}
 }
 
 bar_viira_fight_strong_attack = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira strong attack"
 	if = {
 		limit = {
 			check_variable = {
@@ -2827,422 +994,120 @@ bar_viira_fight_strong_attack = {
 				BAR_resources_viira > 99
 			}
 		}
-		clear_variable = bar_viira_fight_normal_attack_prepare
+		set_variable_to_random = {
+			var = dmgToDeal
+			min = 5
+			max = 72
+			integer = yes
+		}
 		set_variable = {
-			bar_viira_fight_strong_attack_prepare = 1
+			initiative_cost = 3
+		}
+		divide_variable = {
+			dmgToDeal = viira_dmg_debuff
+		}
+		round_variable = dmgToDeal
+		set_variable = {
+			bar_viira_attack_prepared = 1
 		}
 	}
 }
 
-bar_viira_fight_strong_attack_asinti = {
+bar_viira_fight_deal_dmg_asinti = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira attacks asinti"
 	if = {
 		limit = {
 			check_variable = {
-				bar_viira_fight_strong_attack_prepare = 1
+				bar_viira_attack_prepared = 1
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 26
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 28
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 30
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 32
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 34
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 36
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 38
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 40
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 42
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 54
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 56
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 58
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 69
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 62
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 64
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 66
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 68
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 70
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 72
-					}
-				}
-			}
-			divide_temp_variable = {
-				dmgToDeal = viira_dmg_debuff
-			}
-			subtract_from_variable = {
-				v_in = 3
-			}
-			subtract_from_variable = {
-				a_hp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						a_hp < 0
-					}
-				}
-				barrad_kill_asinti = yes
-			}
-			subtract_from_variable = {
-				BAR_resources_viira = 100
-			}
-			BAR_pentarchy_turn_new = yes
+		subtract_from_variable = {
+			v_in = initiative_cost
 		}
-		clear_variable = bar_viira_fight_strong_attack_prepare
+		subtract_from_variable = {
+			a_hp = dmgToDeal
+		}
+		if = {
+			limit = {
+				check_variable = {
+					a_hp < 1
+				}
+			}
+			set_variable = {
+				a_hp = 0
+			}
+			barrad_kill_asinti = yes
+		}
+		BAR_pen_fight_ai_turn = yes
+		clear_variable = bar_viira_attack_prepared
 	}
 }
 
-bar_viira_fight_strong_attack_silver = {
+bar_viira_fight_deal_dmg_leopold = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira attacks leopold"
 	if = {
 		limit = {
 			check_variable = {
-				bar_viira_fight_strong_attack_prepare = 1
+				bar_viira_attack_prepared = 1
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 26
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 28
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 30
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 32
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 34
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 36
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 38
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 40
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 42
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 54
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 56
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 58
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 69
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 62
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 64
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 66
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 68
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 70
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 72
-					}
-				}
-			}
-			divide_temp_variable = {
-				dmgToDeal = viira_dmg_debuff
-			}
-			subtract_from_variable = {
-				v_in = 3
-			}
-			subtract_from_variable = {
-				s_hp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						s_hp < 0
-					}
-				}
-				barrad_kill_silver = yes
-			}
-			subtract_from_variable = {
-				BAR_resources_viira = 100
-			}
-			BAR_pentarchy_turn_new = yes
+		subtract_from_variable = {
+			v_in = initiative_cost
 		}
-		clear_variable = bar_viira_fight_strong_attack_prepare
+		subtract_from_variable = {
+			l_hp = dmgToDeal
+		}
+		if = {
+			limit = {
+				check_variable = {
+					l_hp < 1
+				}
+			}
+			set_variable = {
+				l_hp = 0
+			}
+			barrad_kill_leopold = yes
+		}
+		BAR_pen_fight_ai_turn = yes
+		clear_variable = bar_viira_attack_prepared
 	}
 }
 
-bar_viira_fight_strong_attack_leopold = {
+bar_viira_fight_deal_dmg_silver = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira attacks silver star"
 	if = {
 		limit = {
 			check_variable = {
-				bar_viira_fight_strong_attack_prepare = 1
+				bar_viira_attack_prepared = 1
 			}
 		}
-		hidden_effect = {
-			random_list = {
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 24
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 26
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 28
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 30
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 32
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 34
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 36
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 38
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 40
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 42
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 54
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 56
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 58
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 69
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 62
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 64
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 66
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 68
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 70
-					}
-				}
-				5 = {
-					set_temp_variable = {
-						dmgToDeal = 72
-					}
-				}
-			}
-			divide_temp_variable = {
-				dmgToDeal = viira_dmg_debuff
-			}
-			subtract_from_variable = {
-				v_in = 3
-			}
-			subtract_from_variable = {
-				l_hp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						l_hp < 0
-					}
-				}
-				barrad_kill_leopold = yes
-			}
-			subtract_from_variable = {
-				BAR_resources_viira = 100
-			}
-			BAR_pentarchy_turn_new = yes
+		subtract_from_variable = {
+			v_in = initiative_cost
 		}
-		clear_variable = bar_viira_fight_strong_attack_prepare
+		subtract_from_variable = {
+			s_hp = dmgToDeal
+		}
+		if = {
+			limit = {
+				check_variable = {
+					s_hp < 1
+				}
+			}
+			set_variable = {
+				s_hp = 0
+			}
+			barrad_kill_silver = yes
+		}
+		subtract_from_variable = {
+			BAR_resources_viira = 100
+		}
+		BAR_pen_fight_ai_turn = yes
+		clear_variable = bar_viira_attack_prepared
 	}
 }
 
 bar_viira_fight_heal = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira heals"
 	if = {
 		limit = {
 			check_variable = {
@@ -3256,77 +1121,23 @@ bar_viira_fight_heal = {
 			}
 		}
 		hidden_effect = {
-			random_list = {
-				10 = {
-					set_temp_variable = {
-						healVal = 12
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 14
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 16
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 18
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 20
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 22
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 24
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 26
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 28
-					}
-				}
-				10 = {
-					set_temp_variable = {
-						healVal = 30
-					}
-				}
+			set_variable_to_random = {
+				var = healVal
+				min = 12
+				max = 30
+				integer = yes
 			}
-			set_temp_variable = {
-				curHp = v_hp
-			}
-			add_to_temp_variable = {
-				curHp = healVal
+			add_to_variable = {
+				v_hp = healVal
 			}
 			if = {
 				limit = {
 					check_variable = {
-						curHp > v_hp_max
+						v_hp > @PEN_FIGHT_VIIRA_MAX_HP
 					}
 				}
 				set_variable = {
-					v_hp = v_hp_max
-				}
-			}
-			else = {
-				add_to_variable = {
-					v_hp = healVal
+					v_hp = @PEN_FIGHT_VIIRA_MAX_HP
 				}
 			}
 			subtract_from_variable = {
@@ -3335,1026 +1146,388 @@ bar_viira_fight_heal = {
 			subtract_from_variable = {
 				BAR_resources_viira = 200
 			}
-			BAR_pentarchy_turn_new = yes
+			BAR_pen_fight_ai_turn = yes
 		}
 	}
 }
 
-bar_viira_fight_rest = {
+BAR_pen_fight_rest = {
 	hidden_effect = {
 		if = {
 			limit = {
-				check_variable = {
-					v_in < 16
-				}
+				has_country_flag = bar_fight_pentarchy_side
 			}
-			add_to_variable = {
-				v_in = 5
-			}
+			BAR_pen_fight_rest_pentarchs = yes
 		}
 		else = {
-			set_variable = {
-				v_in = 20
-			}
+			BAR_pen_fight_rest_viira = yes
 		}
-		BAR_pentarchy_turn_new = yes
 	}
 }
 
-BAR_pentarchy_turn_new = {
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = barrad_silver_star_alive
-				has_country_flag = barrad_asinti_alive
-				has_country_flag = barrad_leopold_alive
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				has_country_flag = barrad_asinti_alive
-				has_country_flag = barrad_leopold_alive
-			}
-			random_list = {
-				34 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
-					set_variable = {
-						character_attacking = 1
-					}
-				}
-				33 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
-					set_variable = {
-						character_attacking = 2
-					}
-				}
-				33 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
-					set_variable = {
-						character_attacking = 3
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				has_country_flag = barrad_asinti_alive
-				NOT = {
-					has_country_flag = barrad_leopold_alive
-				}
-			}
-			random_list = {
-				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
-					set_variable = {
-						character_attacking = 1
-					}
-				}
-				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
-					set_variable = {
-						character_attacking = 3
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				NOT = {
-					has_country_flag = barrad_asinti_alive
-				}
-				has_country_flag = barrad_leopold_alive
-			}
-			random_list = {
-				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
-					set_variable = {
-						character_attacking = 2
-					}
-				}
-				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
-					set_variable = {
-						character_attacking = 3
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				NOT = {
-					has_country_flag = barrad_asinti_alive
-				}
-				NOT = {
-					has_country_flag = barrad_leopold_alive
-				}
-			}
-			log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
-			set_variable = {
-				character_attacking = 3
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_country_flag = barrad_silver_star_alive
-				}
-				has_country_flag = barrad_asinti_alive
-				has_country_flag = barrad_leopold_alive
-			}
-			random_list = {
-				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
-					set_variable = {
-						character_attacking = 1
-					}
-				}
-				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
-					set_variable = {
-						character_attacking = 2
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_country_flag = barrad_silver_star_alive
-				}
-				has_country_flag = barrad_asinti_alive
-				NOT = {
-					has_country_flag = barrad_leopold_alive
-				}
-			}
-			log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
-			set_variable = {
-				character_attacking = 1
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_country_flag = barrad_silver_star_alive
-				}
-				NOT = {
-					has_country_flag = barrad_asinti_alive
-				}
-				has_country_flag = barrad_leopold_alive
-			}
-			log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
-			set_variable = {
-				character_attacking = 2
-			}
-		}
-		BAR_pentarchy_attack = yes
-		if = {
-			limit = {
-				check_variable = {
-					v_hp > 0
-				}
-			}
-			add_to_variable = {
-				bar_viira_fight_show = 1
-			}
-		}
-		else = {
-			#gameover
-			set_variable = {
-				bar_pen_fight_viira_state = 2
-			}
-			country_event = {
-				id = barrad_viira_fight.9
-			}
-		}
-	}
-	else = {
-		#viira won
-		country_event = {
-			id = barrad_viira_fight.10
-		}
-	}
+BAR_pen_fight_rest_viira = {
+	log = "[GetDateText]: [Root.GetName]: pen fight viira rests"
 	if = {
 		limit = {
 			check_variable = {
-				v_stun > 0
+				v_in < 16
 			}
 		}
-		subtract_from_variable = {
-			v_stun = 1
+		add_to_variable = {
+			v_in = 5
 		}
-		BAR_pentarchy_turn_new = yes
 	}
-	bar_viira_fight_gui_reload = yes
+	else = {
+		set_variable = {
+			v_in = 20
+		}
+	}
+	BAR_pen_fight_ai_turn = yes
 }
 
-BAR_titan_turn = {
-	set_temp_variable = {
-		dmgMult = 1
-	}
-	if = {
-		limit = {
-			check_variable = {
-				titanHP < 70
-			}
-		}
-		random_list = {
-			50 = {
-				multiply_temp_variable = {
-					dmgMult = 2
-				}
-			}
-			50 = {
-			}
-		}
-	}
-	divide_temp_variable = {
-		dmgMult = onDef
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 3
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 4
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-	}
-	multiply_temp_variable = {
-		dmgToDeal = dmgMult
-	}
-	if = {
-		#if viira is around
-		limit = {
-			has_country_flag = BAR_viira_fights_leo
-		}
-		random_list = {
-			75 = {
-				set_variable = {
-					lastDmgTaken = dmgToDeal
-				}
-				subtract_from_variable = {
-					leoHP = dmgToDeal
-				}
-			}
-			25 = {
-				set_variable = {
-					lastDmgDealth = 0
-				}
-			}
-		}
-	}
-	else = {
-		random_list = {
-			90 = {
-				set_variable = {
-					lastDmgTaken = dmgToDeal
-				}
-				subtract_from_variable = {
-					leoHP = dmgToDeal
-				}
-			}
-			10 = {
-				set_variable = {
-					lastDmgDealth = 0
-				}
-			}
-		}
-	}
+BAR_pen_fight_rest_pentarchs = {
+	log = "[GetDateText]: [Root.GetName]: pen fight pentarchy rests"
 	set_variable = {
-		onDef = 1
+		bar_pen_fight_missed = 0
 	}
 	if = {
 		limit = {
-			has_country_flag = BAR_viira_fights_leo
+			has_country_flag = barrad_asinti_alive
+		}
+		add_to_variable = {
+			a_in = 2
 		}
 		if = {
 			limit = {
 				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP > 0
+					a_in > @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 				}
 			}
-			country_event = {
-				id = bar_titan_fight.21
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.51
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					leoHP > 0
-				}
-				check_variable = {
-					titanHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.53
-			}
-		}
-		else = {
-			country_event = {
-				id = bar_titan_fight.52
+			set_variable = {
+				a_in = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 			}
 		}
 	}
-	else = {
+	if = {
+		limit = {
+			has_country_flag = barrad_leopold_alive
+		}
+		add_to_variable = {
+			l_in = 2
+		}
 		if = {
 			limit = {
 				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP > 0
+					l_in > @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 				}
 			}
-			country_event = {
-				id = bar_titan_fight.21
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.41
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					leoHP > 0
-				}
-				check_variable = {
-					titanHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.43
-			}
-		}
-		else = {
-			country_event = {
-				id = bar_titan_fight.42
+			set_variable = {
+				l_in = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_country_flag = barrad_silver_star_alive
+		}
+		add_to_variable = {
+			s_in = 2
+		}
+		if = {
+			limit = {
+				check_variable = {
+					s_in > @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
+				}
+			}
+			set_variable = {
+				s_in = @PEN_FIGHT_PENTARCHY_MAX_INITIATIVE
+			}
+		}
+	}
+	BAR_pen_fight_ai_turn = yes
 }
 
-BAR_titan_turn2 = {
-	set_temp_variable = {
-		dmgMult = 1
-	}
+
+
+    #    ###    ####### #     # ######  #     #  #####  
+   # #    #        #    #     # #     # ##    # #     # 
+  #   #   #        #    #     # #     # # #   # #       
+ #     #  #        #    #     # ######  #  #  #  #####  
+ #######  #        #    #     # #   #   #   # #       # 
+ #     #  #        #    #     # #    #  #    ## #     # 
+ #     # ###       #     #####  #     # #     #  #####  
+
+
+
+BAR_pen_fight_ai_turn = {
 	if = {
 		limit = {
 			check_variable = {
-				titanHP < 70
+				bar_pen_fight_ai_already_attacked = 0
 			}
 		}
-		random_list = {
-			50 = {
-				multiply_temp_variable = {
-					dmgMult = 2
-				}
-			}
-			50 = {
-			}
-		}
-	}
-	divide_temp_variable = {
-		dmgMult = onDef
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 3
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 4
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-	}
-	multiply_temp_variable = {
-		dmgToDeal = dmgMult
-	}
-	if = {
-		#if viira is around
-		limit = {
-			has_country_flag = BAR_viira_fights_leo
-		}
-		random_list = {
-			75 = {
-				set_variable = {
-					lastDmgTaken = dmgToDeal
-				}
-				subtract_from_variable = {
-					leoHP = dmgToDeal
-				}
-			}
-			25 = {
-				set_variable = {
-					lastDmgDealth = 0
-				}
-			}
-		}
-	}
-	else = {
-		random_list = {
-			90 = {
-				set_variable = {
-					lastDmgTaken = dmgToDeal
-				}
-				subtract_from_variable = {
-					leoHP = dmgToDeal
-				}
-			}
-			10 = {
-				set_variable = {
-					lastDmgDealth = 0
-				}
-			}
-		}
-	}
-	set_variable = {
-		onDef = 1
-	}
-	if = {
-		limit = {
-			has_country_flag = BAR_viira_fights_leo
+		set_variable = {
+			bar_pen_fight_ai_already_attacked = 1
 		}
 		if = {
 			limit = {
-				check_variable = {
-					titanHP > 0
+				has_country_flag = bar_fight_pentarchy_side
+			}
+			log = "[GetDateText]: [Root.GetName]: pen fight viira next round"
+			if = {
+				limit = {
+					check_variable = {
+						v_hp > 0
+					}
 				}
-				check_variable = {
-					leoHP > 0
+				BAR_viira_turn = yes
+				if = {
+					limit = {	
+						NOT = {
+							has_country_flag = barrad_asinti_alive
+							has_country_flag = barrad_leopold_alive
+							has_country_flag = barrad_silver_star_alive
+						}
+					}
+					#we lost...
+					country_event = {
+						id = barrad_viira_fight.6
+					}
 				}
 			}
-			country_event = {
-				id = bar_titan_fight.2
+			else = {
+				barrad_kill_viira = yes
+				country_event = {
+					id = barrad_viira_fight.7
+				}
+				#we won!
 			}
 		}
-		else_if = {
-			limit = {
-				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.51
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					leoHP > 0
-				}
-				check_variable = {
-					titanHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.53
-			}
-		}
-		else = {
-			country_event = {
-				id = bar_titan_fight.52
-			}
-		}
-	}
-	else = {
 		if = {
 			limit = {
-				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP > 0
-				}
+				has_country_flag = bar_fight_viira_side
 			}
-			country_event = {
-				id = bar_titan_fight.2
-			}
+			log = "[GetDateText]: [Root.GetName]: pen fight pentarchy next round"
+			BAR_pentarchy_turn = yes
 		}
-		else_if = {
-			limit = {
-				check_variable = {
-					titanHP > 0
-				}
-				check_variable = {
-					leoHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.41
-			}
-		}
-		else_if = {
-			limit = {
-				check_variable = {
-					leoHP > 0
-				}
-				check_variable = {
-					titanHP < 1
-				}
-			}
-			country_event = {
-				id = bar_titan_fight.43
-			}
-		}
-		else = {
-			country_event = {
-				id = bar_titan_fight.42
-			}
-		}
+		bar_pen_fight_gui_reload = yes
 	}
-}
 
-BAR_viira_round_end = {
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = barrad_asinti_alive
-				has_country_flag = barrad_leopold_alive
-				has_country_flag = barrad_silver_star_alive
-			}
-		}
-		country_event = {
-			id = barrad_viira_fight.5
-		}
-	}
-	else = {
-		country_event = {
-			id = barrad_viira_fight.6
-		}
-		#we lost...
+	set_variable = {
+		bar_pen_fight_ai_already_attacked = 0
 	}
 }
 
 BAR_viira_turn = {
+	random_list = {
+		50 = {
+			#target weakest one
+			set_temp_variable = {
+				min = 1000
+			}
+			set_variable = {
+				viira_target = 0
+			}
+			if = {
+				limit = {
+					check_variable = {
+						a_hp > 0
+					}
+					check_variable = {
+						a_hp < min
+					}
+				}
+				set_variable = {
+					min = a_hp
+				}
+				set_variable = {
+					viira_target = 1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						l_hp > 0
+					}
+					check_variable = {
+						l_hp < min
+					}
+				}
+				set_variable = {
+					min = l_hp
+				}
+				set_variable = {
+					viira_target = 2
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						s_hp > 0
+					}
+					check_variable = {
+						s_hp < min
+					}
+				}
+				set_variable = {
+					min = s_hp
+				}
+				set_variable = {
+					viira_target = 3
+				}
+			}
+		}
+		50 = {
+			#target random one
+			if = {
+				limit = {
+					has_country_flag = barrad_silver_star_alive
+					has_country_flag = barrad_asinti_alive
+					has_country_flag = barrad_leopold_alive
+				}
+				random_list = {
+					34 = {
+						set_variable = {
+							viira_target = 1
+						}
+					}
+					33 = {
+						set_variable = {
+							viira_target = 2
+						}
+					}
+					33 = {
+						set_variable = {
+							viira_target = 3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = barrad_silver_star_alive
+					has_country_flag = barrad_asinti_alive
+					NOT = {
+						has_country_flag = barrad_leopold_alive
+					}
+				}
+				random_list = {
+					50 = {
+						set_variable = {
+							viira_target = 1
+						}
+					}
+					50 = {
+						set_variable = {
+							viira_target = 3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = barrad_silver_star_alive
+					NOT = {
+						has_country_flag = barrad_asinti_alive
+					}
+					has_country_flag = barrad_leopold_alive
+				}
+				random_list = {
+					50 = {
+						set_variable = {
+							viira_target = 2
+						}
+					}
+					50 = {
+						set_variable = {
+							viira_target = 3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = barrad_silver_star_alive
+					NOT = {
+						has_country_flag = barrad_asinti_alive
+					}
+					NOT = {
+						has_country_flag = barrad_leopold_alive
+					}
+				}
+				set_variable = {
+					viira_target = 3
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = barrad_silver_star_alive
+					}
+					has_country_flag = barrad_asinti_alive
+					has_country_flag = barrad_leopold_alive
+				}
+				random_list = {
+					50 = {
+						set_variable = {
+							viira_target = 1
+						}
+					}
+					50 = {
+						set_variable = {
+							viira_target = 2
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = barrad_silver_star_alive
+					}
+					has_country_flag = barrad_asinti_alive
+					NOT = {
+						has_country_flag = barrad_leopold_alive
+					}
+				}
+				set_variable = {
+					viira_target = 1
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_country_flag = barrad_silver_star_alive
+					}
+					NOT = {
+						has_country_flag = barrad_asinti_alive
+					}
+					has_country_flag = barrad_leopold_alive
+				}
+				set_variable = {
+					viira_target = 2
+				}
+			}
+		}
+	}
 	if = {
 		limit = {
 			check_variable = {
-				v_hp > 0
+				v_stun < 1
 			}
 		}
-		random_list = {
-			50 = {
-				#target weakest one
-				set_temp_variable = {
-					min = 1000
-				}
-				set_variable = {
-					viira_target = 0
-				}
-				if = {
-					limit = {
-						check_variable = {
-							a_hp > 0
-						}
-						check_variable = {
-							a_hp < min
-						}
-					}
-					set_variable = {
-						min = a_hp
-					}
-					set_variable = {
-						viira_target = 1
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							l_hp > 0
-						}
-						check_variable = {
-							l_hp < min
-						}
-					}
-					set_variable = {
-						min = l_hp
-					}
-					set_variable = {
-						viira_target = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							s_hp > 0
-						}
-						check_variable = {
-							s_hp < min
-						}
-					}
-					set_variable = {
-						min = s_hp
-					}
-					set_variable = {
-						viira_target = 3
-					}
-				}
-			}
-			50 = {
-				#target random one
-				if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						has_country_flag = barrad_asinti_alive
-						has_country_flag = barrad_leopold_alive
-					}
-					random_list = {
-						34 = {
-							set_variable = {
-								viira_target = 1
-							}
-						}
-						33 = {
-							set_variable = {
-								viira_target = 2
-							}
-						}
-						33 = {
-							set_variable = {
-								viira_target = 3
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						has_country_flag = barrad_asinti_alive
-						NOT = {
-							has_country_flag = barrad_leopold_alive
-						}
-					}
-					random_list = {
-						50 = {
-							set_variable = {
-								viira_target = 1
-							}
-						}
-						50 = {
-							set_variable = {
-								viira_target = 3
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						NOT = {
-							has_country_flag = barrad_asinti_alive
-						}
-						has_country_flag = barrad_leopold_alive
-					}
-					random_list = {
-						50 = {
-							set_variable = {
-								viira_target = 2
-							}
-						}
-						50 = {
-							set_variable = {
-								viira_target = 3
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = barrad_silver_star_alive
-						NOT = {
-							has_country_flag = barrad_asinti_alive
-						}
-						NOT = {
-							has_country_flag = barrad_leopold_alive
-						}
-					}
-					set_variable = {
-						viira_target = 3
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							has_country_flag = barrad_silver_star_alive
-						}
-						has_country_flag = barrad_asinti_alive
-						has_country_flag = barrad_leopold_alive
-					}
-					random_list = {
-						50 = {
-							set_variable = {
-								viira_target = 1
-							}
-						}
-						50 = {
-							set_variable = {
-								viira_target = 2
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							has_country_flag = barrad_silver_star_alive
-						}
-						has_country_flag = barrad_asinti_alive
-						NOT = {
-							has_country_flag = barrad_leopold_alive
-						}
-					}
-					set_variable = {
-						viira_target = 1
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							has_country_flag = barrad_silver_star_alive
-						}
-						NOT = {
-							has_country_flag = barrad_asinti_alive
-						}
-						has_country_flag = barrad_leopold_alive
-					}
-					set_variable = {
-						viira_target = 2
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					v_stun < 1
-				}
-			}
-			BAR_viira_attack = yes
-		}
-		else = {
-			set_variable = {
-				viira_turn_action = 5
-			}
-			subtract_from_variable = {
-				v_stun = 1
-			}
-		}
-		set_variable = {
-			viira_dmg_debuff = 1
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp < 1
-				}
-			}
-			barrad_kill_asinti = yes
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp < 1
-				}
-			}
-			barrad_kill_leopold = yes
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp < 1
-				}
-			}
-			barrad_kill_silver = yes
-		}
-		bar_pen_fight_gui_reload = yes
-		BAR_viira_round_end = yes
+		BAR_viira_attack = yes
 	}
 	else = {
-		clr_country_flag = barrad_viira_alive
-		country_event = {
-			id = barrad_viira_fight.7
+		set_variable = {
+			BAR_fight_pentarchy_action_log = 5
 		}
-		#we won!
+		subtract_from_variable = {
+			v_stun = 1
+		}
+	}
+	set_variable = {
+		viira_dmg_debuff = 1
 	}
 }
 
@@ -4387,15 +1560,15 @@ BAR_viira_attack = {
 			}
 			random_list = {
 				70 = {
-					BAR_viira_strong_attack = yes
+					bar_viira_fight_strong_attack = yes
 					set_variable = {
-						viira_turn_action = 2
+						BAR_fight_pentarchy_action_log = 2
 					}
 				}
 				30 = {
-					BAR_viira_normal_attack = yes
+					bar_viira_fight_normal_attack = yes
 					set_variable = {
-						viira_turn_action = 1
+						BAR_fight_pentarchy_action_log = 1
 					}
 				}
 			}
@@ -4408,15 +1581,15 @@ BAR_viira_attack = {
 			}
 			random_list = {
 				50 = {
-					BAR_viira_heal = yes
+					bar_viira_fight_heal = yes
 					set_variable = {
-						viira_turn_action = 3
+						BAR_fight_pentarchy_action_log = 3
 					}
 				}
 				50 = {
-					BAR_viira_strong_attack = yes
+					bar_viira_fight_strong_attack = yes
 					set_variable = {
-						viira_turn_action = 2
+						BAR_fight_pentarchy_action_log = 2
 					}
 				}
 			}
@@ -4429,15 +1602,15 @@ BAR_viira_attack = {
 			}
 			random_list = {
 				30 = {
-					BAR_viira_heal = yes
+					bar_viira_fight_heal = yes
 					set_variable = {
-						viira_turn_action = 3
+						BAR_fight_pentarchy_action_log = 3
 					}
 				}
 				70 = {
-					BAR_viira_strong_attack = yes
+					bar_viira_fight_strong_attack = yes
 					set_variable = {
-						viira_turn_action = 2
+						BAR_fight_pentarchy_action_log = 2
 					}
 				}
 			}
@@ -4451,7 +1624,7 @@ BAR_viira_attack = {
 					v_in = 0
 				}
 			}
-			BAR_viira_rest = yes
+			BAR_pen_fight_rest_viira = yes
 		}
 		else = {
 			if = {
@@ -4470,21 +1643,21 @@ BAR_viira_attack = {
 					}
 					random_list = {
 						60 = {
-							BAR_viira_rest = yes
+							BAR_pen_fight_rest_viira = yes
 							set_variable = {
-								viira_turn_action = 4
+								BAR_fight_pentarchy_action_log = 4
 							}
 						}
 						20 = {
-							BAR_viira_normal_attack = yes
+							bar_viira_fight_normal_attack = yes
 							set_variable = {
-								viira_turn_action = 1
+								BAR_fight_pentarchy_action_log = 1
 							}
 						}
 						20 = {
-							BAR_viira_strong_attack = yes
+							bar_viira_fight_strong_attack = yes
 							set_variable = {
-								viira_turn_action = 2
+								BAR_fight_pentarchy_action_log = 2
 							}
 						}
 					}
@@ -4492,15 +1665,15 @@ BAR_viira_attack = {
 				else = {
 					random_list = {
 						60 = {
-							BAR_viira_rest = yes
+							BAR_pen_fight_rest_viira = yes
 							set_variable = {
-								viira_turn_action = 4
+								BAR_fight_pentarchy_action_log = 4
 							}
 						}
 						40 = {
-							BAR_viira_normal_attack = yes
+							bar_viira_fight_normal_attack = yes
 							set_variable = {
-								viira_turn_action = 1
+								BAR_fight_pentarchy_action_log = 1
 							}
 						}
 					}
@@ -4520,15 +1693,15 @@ BAR_viira_attack = {
 					}
 					random_list = {
 						50 = {
-							BAR_viira_heal = yes
+							bar_viira_fight_heal = yes
 							set_variable = {
-								viira_turn_action = 3
+								BAR_fight_pentarchy_action_log = 3
 							}
 						}
 						50 = {
-							BAR_viira_strong_attack = yes
+							bar_viira_fight_strong_attack = yes
 							set_variable = {
-								viira_turn_action = 2
+								BAR_fight_pentarchy_action_log = 2
 							}
 						}
 					}
@@ -4536,15 +1709,15 @@ BAR_viira_attack = {
 				else = {
 					random_list = {
 						50 = {
-							BAR_viira_heal = yes
+							bar_viira_fight_heal = yes
 							set_variable = {
-								viira_turn_action = 3
+								BAR_fight_pentarchy_action_log = 3
 							}
 						}
 						50 = {
-							BAR_viira_normal_attack = yes
+							bar_viira_fight_normal_attack = yes
 							set_variable = {
-								viira_turn_action = 1
+								BAR_fight_pentarchy_action_log = 1
 							}
 						}
 					}
@@ -4564,27 +1737,27 @@ BAR_viira_attack = {
 					}
 					random_list = {
 						30 = {
-							BAR_viira_heal = yes
+							bar_viira_fight_heal = yes
 							set_variable = {
-								viira_turn_action = 3
+								BAR_fight_pentarchy_action_log = 3
 							}
 						}
 						20 = {
-							BAR_viira_normal_attack = yes
+							bar_viira_fight_normal_attack = yes
 							set_variable = {
-								viira_turn_action = 1
+								BAR_fight_pentarchy_action_log = 1
 							}
 						}
 						20 = {
-							BAR_viira_strong_attack = yes
+							bar_viira_fight_strong_attack = yes
 							set_variable = {
-								viira_turn_action = 2
+								BAR_fight_pentarchy_action_log = 2
 							}
 						}
 						30 = {
-							BAR_viira_rest = yes
+							BAR_pen_fight_rest_viira = yes
 							set_variable = {
-								viira_turn_action = 4
+								BAR_fight_pentarchy_action_log = 4
 							}
 						}
 					}
@@ -4592,21 +1765,21 @@ BAR_viira_attack = {
 				else = {
 					random_list = {
 						30 = {
-							BAR_viira_heal = yes
+							bar_viira_fight_heal = yes
 							set_variable = {
-								viira_turn_action = 3
+								BAR_fight_pentarchy_action_log = 3
 							}
 						}
 						40 = {
-							BAR_viira_strong_attack = yes
+							bar_viira_fight_strong_attack = yes
 							set_variable = {
-								viira_turn_action = 2
+								BAR_fight_pentarchy_action_log = 2
 							}
 						}
 						30 = {
-							BAR_viira_rest = yes
+							BAR_pen_fight_rest_viira = yes
 							set_variable = {
-								viira_turn_action = 4
+								BAR_fight_pentarchy_action_log = 4
 							}
 						}
 					}
@@ -4614,123 +1787,14 @@ BAR_viira_attack = {
 			}
 		}
 	}
-}
 
-BAR_viira_normal_attack = {
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 23
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 24
-			}
-		}
-	}
-	divide_temp_variable = {
-		dmgToDeal = viira_dmg_debuff
-	}
 	if = {
 		limit = {
 			check_variable = {
 				viira_target = 1
 			}
 		}
-		subtract_from_variable = {
-			a_hp = dmgToDeal
-		}
+		bar_viira_fight_deal_dmg_asinti = yes
 	}
 	if = {
 		limit = {
@@ -4738,9 +1802,7 @@ BAR_viira_normal_attack = {
 				viira_target = 2
 			}
 		}
-		subtract_from_variable = {
-			l_hp = dmgToDeal
-		}
+		bar_viira_fight_deal_dmg_leopold = yes
 	}
 	if = {
 		limit = {
@@ -4748,299 +1810,9 @@ BAR_viira_normal_attack = {
 				viira_target = 3
 			}
 		}
-		subtract_from_variable = {
-			s_hp = dmgToDeal
-		}
+		bar_viira_fight_deal_dmg_silver = yes
 	}
-	if = {
-		limit = {
-			check_variable = {
-				a_hp < 0
-			}
-		}
-		barrad_kill_asinti = yes
-	}
-	if = {
-		limit = {
-			check_variable = {
-				l_hp < 0
-			}
-		}
-		barrad_kill_leopold = yes
-	}
-	if = {
-		limit = {
-			check_variable = {
-				s_hp < 0
-			}
-		}
-		barrad_kill_silver = yes
-	}
-	subtract_from_variable = {
-		v_in = 1
-	}
-}
-
-BAR_viira_strong_attack = {
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 24
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 26
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 28
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 30
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 32
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 34
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 36
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 38
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 40
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 42
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 54
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 56
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 58
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 69
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 62
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 64
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 66
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 68
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 70
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 72
-			}
-		}
-	}
-	divide_temp_variable = {
-		dmgToDeal = viira_dmg_debuff
-	}
-	if = {
-		limit = {
-			check_variable = {
-				viira_target = 1
-			}
-		}
-		subtract_from_variable = {
-			a_hp = dmgToDeal
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				viira_target = 2
-			}
-		}
-		subtract_from_variable = {
-			l_hp = dmgToDeal
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				viira_target = 3
-			}
-		}
-		subtract_from_variable = {
-			s_hp = dmgToDeal
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				a_hp < 0
-			}
-		}
-		barrad_kill_asinti = yes
-	}
-	if = {
-		limit = {
-			check_variable = {
-				l_hp < 0
-			}
-		}
-		barrad_kill_leopold = yes
-	}
-	if = {
-		limit = {
-			check_variable = {
-				s_hp < 0
-			}
-		}
-		barrad_kill_silver = yes
-	}
-	subtract_from_variable = {
-		v_in = 3
-	}
-}
-
-BAR_viira_rest = {
-	if = {
-		limit = {
-			check_variable = {
-				v_in < 16
-			}
-		}
-		add_to_variable = {
-			v_in = 5
-		}
-	}
-	else = {
-		set_variable = {
-			v_in = 20
-		}
-	}
-}
-
-BAR_viira_heal = {
-	random_list = {
-		10 = {
-			set_temp_variable = {
-				healVal = 32
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 34
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 36
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 38
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 40
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 42
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 44
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 46
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 48
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healVal = 50
-			}
-		}
-	}
-	set_temp_variable = {
-		curHp = v_hp
-	}
-	add_to_temp_variable = {
-		curHp = healVal
-	}
-	if = {
-		limit = {
-			check_variable = {
-				curHp > v_hp_max
-			}
-		}
-		set_variable = {
-			v_hp = v_hp_max
-		}
-	}
-	else = {
-		add_to_variable = {
-			v_hp = healVal
-		}
-	}
-	subtract_from_variable = {
-		v_in = 1
-	}
+	clear_variable = viira_target
 }
 
 BAR_pentarchy_turn = {
@@ -5060,19 +1832,16 @@ BAR_pentarchy_turn = {
 			}
 			random_list = {
 				34 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
 					set_variable = {
 						character_attacking = 1
 					}
 				}
 				33 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
 					set_variable = {
 						character_attacking = 2
 					}
 				}
 				33 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
 					set_variable = {
 						character_attacking = 3
 					}
@@ -5089,13 +1858,11 @@ BAR_pentarchy_turn = {
 			}
 			random_list = {
 				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
 					set_variable = {
 						character_attacking = 1
 					}
 				}
 				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
 					set_variable = {
 						character_attacking = 3
 					}
@@ -5112,13 +1879,11 @@ BAR_pentarchy_turn = {
 			}
 			random_list = {
 				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
 					set_variable = {
 						character_attacking = 2
 					}
 				}
 				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
 					set_variable = {
 						character_attacking = 3
 					}
@@ -5135,7 +1900,6 @@ BAR_pentarchy_turn = {
 					has_country_flag = barrad_leopold_alive
 				}
 			}
-			log = "[GetDateText]: [Root.GetName]: pentarchy turn silver attack"
 			set_variable = {
 				character_attacking = 3
 			}
@@ -5150,13 +1914,11 @@ BAR_pentarchy_turn = {
 			}
 			random_list = {
 				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
 					set_variable = {
 						character_attacking = 1
 					}
 				}
 				50 = {
-					log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
 					set_variable = {
 						character_attacking = 2
 					}
@@ -5173,7 +1935,6 @@ BAR_pentarchy_turn = {
 					has_country_flag = barrad_leopold_alive
 				}
 			}
-			log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
 			set_variable = {
 				character_attacking = 1
 			}
@@ -5188,27 +1949,37 @@ BAR_pentarchy_turn = {
 				}
 				has_country_flag = barrad_leopold_alive
 			}
-			log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
 			set_variable = {
 				character_attacking = 2
 			}
 		}
-		BAR_pentarchy_attack = yes
+
 		if = {
+			#asinti
 			limit = {
 				check_variable = {
-					v_hp > 0
+					character_attacking = 1
 				}
 			}
-			country_event = {
-				id = barrad_viira_fight.8
-			}
+			BAR_asinti_turn = yes
 		}
-		else = {
-			#gameover
-			country_event = {
-				id = barrad_viira_fight.9
+		if = {
+			#leopold
+			limit = {
+				check_variable = {
+					character_attacking = 2
+				}
 			}
+			BAR_leopold_turn = yes
+		}
+		if = {
+			#silver
+			limit = {
+				check_variable = {
+					character_attacking = 3
+				}
+			}
+			BAR_silver_turn = yes
 		}
 	}
 	else = {
@@ -5217,39 +1988,22 @@ BAR_pentarchy_turn = {
 			id = barrad_viira_fight.10
 		}
 	}
-}
 
-BAR_pentarchy_attack = {
 	if = {
-		#asinti
 		limit = {
 			check_variable = {
-				character_attacking = 1
+				v_stun > 0
 			}
 		}
-		BAR_asinti_attack = yes
-	}
-	if = {
-		#leopold
-		limit = {
-			check_variable = {
-				character_attacking = 2
-			}
+		subtract_from_variable = {
+			v_stun = 1
 		}
-		BAR_leopold_attack = yes
-	}
-	if = {
-		#silver
-		limit = {
-			check_variable = {
-				character_attacking = 3
-			}
-		}
-		BAR_silver_attack = yes
+		BAR_pen_fight_ai_turn = yes
 	}
 }
 
-BAR_asinti_attack = {
+BAR_asinti_turn = {
+	log = "[GetDateText]: [Root.GetName]: pentarchy turn asinti attack"
 	set_temp_variable = {
 		a_hp_half = a_hp
 	}
@@ -5278,10 +2032,10 @@ BAR_asinti_attack = {
 			}
 			random_list = {
 				70 = {
-					BAR_asinti_normal_attack = yes
+					BAR_pen_fight_asinti_normal_attack = yes
 				}
 				30 = {
-					BAR_asinti_debuff = yes
+					BAR_pen_fight_asinti_debuf = yes
 				}
 			}
 		}
@@ -5293,13 +2047,13 @@ BAR_asinti_attack = {
 			}
 			random_list = {
 				40 = {
-					BAR_asinti_normal_attack = yes
+					BAR_pen_fight_asinti_normal_attack = yes
 				}
 				20 = {
-					BAR_asinti_debuff = yes
+					BAR_pen_fight_asinti_debuf = yes
 				}
 				40 = {
-					BAR_asinti_heal = yes
+					BAR_pen_fight_asinti_heal = yes
 				}
 			}
 		}
@@ -5311,13 +2065,13 @@ BAR_asinti_attack = {
 			}
 			random_list = {
 				50 = {
-					BAR_asinti_normal_attack = yes
+					BAR_pen_fight_asinti_normal_attack = yes
 				}
 				30 = {
-					BAR_asinti_debuff = yes
+					BAR_pen_fight_asinti_debuf = yes
 				}
 				20 = {
-					BAR_asinti_heal = yes
+					BAR_pen_fight_asinti_heal = yes
 				}
 			}
 		}
@@ -5330,9 +2084,9 @@ BAR_asinti_attack = {
 					a_in = 0
 				}
 			}
-			BAR_pentarchy_rest = yes
+			BAR_pen_fight_rest = yes
 			set_variable = {
-				BAR_fight_pentarchy_action = 4
+				BAR_fight_pentarchy_action_log = 4
 			}
 		}
 		else = {
@@ -5346,10 +2100,10 @@ BAR_asinti_attack = {
 				}
 				random_list = {
 					60 = {
-						BAR_asinti_normal_attack = yes
+						BAR_pen_fight_asinti_normal_attack = yes
 					}
 					40 = {
-						BAR_pentarchy_rest = yes
+						BAR_pen_fight_rest = yes
 					}
 				}
 			}
@@ -5367,23 +2121,23 @@ BAR_asinti_attack = {
 					}
 					random_list = {
 						20 = {
-							BAR_asinti_normal_attack = yes
+							BAR_pen_fight_asinti_normal_attack = yes
 						}
 						40 = {
-							BAR_asinti_heal = yes
+							BAR_pen_fight_asinti_heal = yes
 						}
 						40 = {
-							BAR_pentarchy_rest = yes
+							BAR_pen_fight_rest = yes
 						}
 					}
 				}
 				else = {
 					random_list = {
 						70 = {
-							BAR_asinti_normal_attack = yes
+							BAR_pen_fight_asinti_normal_attack = yes
 						}
 						30 = {
-							BAR_pentarchy_rest = yes
+							BAR_pen_fight_rest = yes
 						}
 					}
 				}
@@ -5402,22 +2156,22 @@ BAR_asinti_attack = {
 					}
 					random_list = {
 						40 = {
-							BAR_asinti_normal_attack = yes
+							BAR_pen_fight_asinti_normal_attack = yes
 						}
 						20 = {
-							BAR_asinti_heal = yes
+							BAR_pen_fight_asinti_heal = yes
 						}
 						40 = {
-							BAR_pentarchy_rest = yes
+							BAR_pen_fight_rest = yes
 						}
 					}
 				}
 				else = {
 					60 = {
-						BAR_asinti_normal_attack = yes
+						BAR_pen_fight_asinti_normal_attack = yes
 					}
 					40 = {
-						BAR_pentarchy_rest = yes
+						BAR_pen_fight_rest = yes
 					}
 				}
 			}
@@ -5425,525 +2179,8 @@ BAR_asinti_attack = {
 	}
 }
 
-BAR_asinti_normal_attack = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 1
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 3
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 4
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-	}
-	random_list = {
-		90 = {
-			subtract_from_variable = {
-				v_hp = dmgToDeal
-			}
-		}
-		10 = {
-			#you missed
-		}
-	}
-	subtract_from_variable = {
-		a_in = 1
-	}
-}
-
-BAR_asinti_debuff = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 2
-	}
-	subtract_from_variable = {
-		a_in = 1
-	}
-	set_variable = {
-		viira_dmg_debuff = 2
-	}
-}
-
-BAR_asinti_heal = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 3
-	}
-	random_list = {
-		10 = {
-			set_temp_variable = {
-				healAmount = 7
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 8
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 9
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 10
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 11
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 12
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 13
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 14
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 16
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 17
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_asinti_alive
-			has_country_flag = barrad_leopold_alive
-		}
-		set_temp_variable = {
-			a_hp_t = a_hp_max
-		}
-		set_temp_variable = {
-			l_hp_t = l_hp_max
-		}
-		set_temp_variable = {
-			s_hp_t = s_hp_max
-		}
-		add_to_temp_variable = {
-			a_hp_t = healAmount
-		}
-		add_to_temp_variable = {
-			l_hp_t = healAmount
-		}
-		add_to_temp_variable = {
-			s_hp_t = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp_t > a_hp_max
-				}
-			}
-			set_variable = {
-				a_hp = a_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				a_hp = healAmount
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp_t > l_hp_max
-				}
-			}
-			set_variable = {
-				l_hp = l_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				l_hp = healAmount
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp_t > s_hp_max
-				}
-			}
-			set_variable = {
-				s_hp = s_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				s_hp = healAmount
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_asinti_alive
-			NOT = {
-				has_country_flag = barrad_leopold_alive
-			}
-		}
-		set_temp_variable = {
-			a_hp_t = a_hp_max
-		}
-		set_temp_variable = {
-			s_hp_t = s_hp_max
-		}
-		add_to_temp_variable = {
-			a_hp_t = healAmount
-		}
-		add_to_temp_variable = {
-			s_hp_t = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp_t > a_hp_max
-				}
-			}
-			set_variable = {
-				a_hp = a_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				a_hp = healAmount
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp_t > s_hp_max
-				}
-			}
-			set_variable = {
-				s_hp = s_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				s_hp = healAmount
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_country_flag = barrad_silver_star_alive
-			NOT = {
-				has_country_flag = barrad_asinti_alive
-			}
-			has_country_flag = barrad_leopold_alive
-		}
-		set_temp_variable = {
-			l_hp_t = l_hp_max
-		}
-		set_temp_variable = {
-			s_hp_t = s_hp_max
-		}
-		add_to_temp_variable = {
-			l_hp_t = healAmount
-		}
-		add_to_temp_variable = {
-			s_hp_t = healAmount
-		}
-		else = {
-			add_to_variable = {
-				a_hp = healAmount
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp_t > l_hp_max
-				}
-			}
-			set_variable = {
-				l_hp = l_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				l_hp = healAmount
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp_t > s_hp_max
-				}
-			}
-			set_variable = {
-				s_hp = s_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				s_hp = healAmount
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			has_country_flag = barrad_silver_star_alive
-			NOT = {
-				has_country_flag = barrad_asinti_alive
-			}
-			NOT = {
-				has_country_flag = barrad_leopold_alive
-			}
-		}
-		set_temp_variable = {
-			s_hp_t = s_hp_max
-		}
-		add_to_temp_variable = {
-			s_hp_t = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp_t > s_hp_max
-				}
-			}
-			set_variable = {
-				s_hp = s_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				s_hp = healAmount
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			has_country_flag = barrad_asinti_alive
-			has_country_flag = barrad_leopold_alive
-		}
-		set_temp_variable = {
-			a_hp_t = a_hp_max
-		}
-		set_temp_variable = {
-			l_hp_t = l_hp_max
-		}
-		add_to_temp_variable = {
-			a_hp_t = healAmount
-		}
-		add_to_temp_variable = {
-			l_hp_t = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp_t > a_hp_max
-				}
-			}
-			set_variable = {
-				a_hp = a_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				a_hp = healAmount
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp_t > l_hp_max
-				}
-			}
-			set_variable = {
-				l_hp = l_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				l_hp = healAmount
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			has_country_flag = barrad_asinti_alive
-			NOT = {
-				has_country_flag = barrad_leopold_alive
-			}
-		}
-		set_temp_variable = {
-			a_hp_t = a_hp_max
-		}
-		add_to_temp_variable = {
-			a_hp_t = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp_t > a_hp_max
-				}
-			}
-			set_variable = {
-				a_hp = a_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				a_hp = healAmount
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			NOT = {
-				has_country_flag = barrad_asinti_alive
-			}
-			has_country_flag = barrad_leopold_alive
-		}
-		set_temp_variable = {
-			l_hp_t = l_hp_max
-		}
-		add_to_temp_variable = {
-			l_hp_t = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp_t > l_hp_max
-				}
-			}
-			set_variable = {
-				l_hp = l_hp_max
-			}
-		}
-		else = {
-			add_to_variable = {
-				l_hp = healAmount
-			}
-		}
-	}
-	subtract_from_variable = {
-		a_in = 2
-	}
-}
-
-BAR_leopold_attack = {
+BAR_leopold_turn = {
+	log = "[GetDateText]: [Root.GetName]: pentarchy turn leopold attack"
 	set_temp_variable = {
 		l_hp_half = l_hp
 	}
@@ -5972,13 +2209,13 @@ BAR_leopold_attack = {
 			}
 			random_list = {
 				30 = {
-					BAR_leopold_normal_attack = yes
+					BAR_pen_fight_leopold_normal_attack = yes
 				}
 				60 = {
-					BAR_leopold_strong_attack = yes
+					BAR_pen_fight_leopold_strong_attack = yes
 				}
 				10 = {
-					BAR_leopold_stun = yes
+					BAR_pen_fight_leopold_stun = yes
 				}
 			}
 		}
@@ -5990,10 +2227,10 @@ BAR_leopold_attack = {
 			}
 			random_list = {
 				80 = {
-					BAR_leopold_strong_attack = yes
+					BAR_pen_fight_leopold_strong_attack = yes
 				}
 				20 = {
-					BAR_leopold_stun = yes
+					BAR_pen_fight_leopold_stun = yes
 				}
 			}
 		}
@@ -6005,13 +2242,13 @@ BAR_leopold_attack = {
 			}
 			random_list = {
 				20 = {
-					BAR_leopold_normal_attack = yes
+					BAR_pen_fight_leopold_normal_attack = yes
 				}
 				70 = {
-					BAR_leopold_strong_attack = yes
+					BAR_pen_fight_leopold_strong_attack = yes
 				}
 				10 = {
-					BAR_leopold_stun = yes
+					BAR_pen_fight_leopold_stun = yes
 				}
 			}
 		}
@@ -6024,7 +2261,7 @@ BAR_leopold_attack = {
 					l_in = 0
 				}
 			}
-			BAR_pentarchy_rest = yes
+			BAR_pen_fight_rest = yes
 		}
 		else = {
 			if = {
@@ -6043,23 +2280,23 @@ BAR_leopold_attack = {
 					}
 					random_list = {
 						70 = {
-							BAR_leopold_normal_attack = yes
+							BAR_pen_fight_leopold_normal_attack = yes
 						}
 						20 = {
-							BAR_leopold_strong_attack = yes
+							BAR_pen_fight_leopold_strong_attack = yes
 						}
 						10 = {
-							BAR_leopold_stun = yes
+							BAR_pen_fight_leopold_stun = yes
 						}
 					}
 				}
 				else = {
 					random_list = {
 						80 = {
-							BAR_leopold_normal_attack = yes
+							BAR_pen_fight_leopold_normal_attack = yes
 						}
 						20 = {
-							BAR_leopold_stun = yes
+							BAR_pen_fight_leopold_stun = yes
 						}
 					}
 				}
@@ -6078,20 +2315,20 @@ BAR_leopold_attack = {
 					}
 					random_list = {
 						90 = {
-							BAR_leopold_normal_attack = yes
+							BAR_pen_fight_leopold_normal_attack = yes
 						}
 						10 = {
-							BAR_leopold_stun = yes
+							BAR_pen_fight_leopold_stun = yes
 						}
 					}
 				}
 				else = {
 					random_list = {
 						80 = {
-							BAR_leopold_normal_attack = yes
+							BAR_pen_fight_leopold_normal_attack = yes
 						}
 						20 = {
-							BAR_leopold_stun = yes
+							BAR_pen_fight_leopold_stun = yes
 						}
 					}
 				}
@@ -6110,23 +2347,23 @@ BAR_leopold_attack = {
 					}
 					random_list = {
 						70 = {
-							BAR_leopold_normal_attack = yes
+							BAR_pen_fight_leopold_normal_attack = yes
 						}
 						20 = {
-							BAR_leopold_strong_attack = yes
+							BAR_pen_fight_leopold_strong_attack = yes
 						}
 						10 = {
-							BAR_leopold_stun = yes
+							BAR_pen_fight_leopold_stun = yes
 						}
 					}
 				}
 				else = {
 					random_list = {
 						90 = {
-							BAR_leopold_normal_attack = yes
+							BAR_pen_fight_leopold_normal_attack = yes
 						}
 						10 = {
-							BAR_leopold_stun = yes
+							BAR_pen_fight_leopold_stun = yes
 						}
 					}
 				}
@@ -6135,282 +2372,8 @@ BAR_leopold_attack = {
 	}
 }
 
-BAR_leopold_normal_attack = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 5
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 3
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 4
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-	}
-	random_list = {
-		90 = {
-			subtract_from_variable = {
-				v_hp = dmgToDeal
-			}
-		}
-		10 = {
-			#you missed
-		}
-	}
-	subtract_from_variable = {
-		l_in = 1
-	}
-}
-
-BAR_leopold_strong_attack = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 6
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 23
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 24
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 25
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 26
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 27
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 28
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 29
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 30
-			}
-		}
-	}
-	random_list = {
-		90 = {
-			subtract_from_variable = {
-				v_hp = dmgToDeal
-			}
-		}
-		10 = {
-			#you missed
-		}
-	}
-	subtract_from_variable = {
-		l_in = 3
-	}
-}
-
-BAR_leopold_stun = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 7
-	}
-	random_list = {
-		90 = {
-			random_list = {
-				40 = {
-					set_variable = {
-						v_stun = 1
-					}
-				}
-				50 = {
-					set_variable = {
-						v_stun = 2
-					}
-				}
-				10 = {
-					set_variable = {
-						v_stun = 3
-					}
-				}
-			}
-		}
-		10 = {
-			#you missed
-		}
-	}
-	subtract_from_variable = {
-		l_in = 1
-	}
-}
-
-BAR_silver_attack = {
+BAR_silver_turn = {
+	log = "[GetDateText]: [Root.GetName]: pentarchy turn silver star attack"
 	set_temp_variable = {
 		s_hp_half = s_hp
 	}
@@ -6439,10 +2402,10 @@ BAR_silver_attack = {
 			}
 			random_list = {
 				80 = {
-					BAR_silver_normal_attack = yes
+					BAR_pen_fight_silver_normal_attack = yes
 				}
 				20 = {
-					BAR_silver_heal = yes
+					BAR_silver_turn_heal = yes
 				}
 			}
 		}
@@ -6454,13 +2417,13 @@ BAR_silver_attack = {
 			}
 			random_list = {
 				40 = {
-					BAR_silver_normal_attack = yes
+					BAR_pen_fight_silver_normal_attack = yes
 				}
 				30 = {
-					BAR_silver_lifesteal_attack = yes
+					BAR_pen_fight_silver_lifesteal_attack = yes
 				}
 				30 = {
-					BAR_silver_heal = yes
+					BAR_silver_turn_heal = yes
 				}
 			}
 		}
@@ -6472,26 +2435,24 @@ BAR_silver_attack = {
 			}
 			random_list = {
 				60 = {
-					BAR_silver_normal_attack = yes
+					BAR_pen_fight_silver_normal_attack = yes
 				}
 				20 = {
-					BAR_silver_lifesteal_attack = yes
+					BAR_pen_fight_silver_lifesteal_attack = yes
 				}
 				20 = {
-					BAR_silver_heal = yes
+					BAR_silver_turn_heal = yes
 				}
 			}
 		}
-	}
-	else = {
-		if = {
+		else_if = {
 			#rest
 			limit = {
 				check_variable = {
 					s_in = 0
 				}
 			}
-			BAR_pentarchy_rest = yes
+			BAR_pen_fight_rest = yes
 		}
 		else = {
 			if = {
@@ -6510,15 +2471,15 @@ BAR_silver_attack = {
 					}
 					random_list = {
 						90 = {
-							BAR_silver_normal_attack = yes
+							BAR_pen_fight_silver_normal_attack = yes
 						}
 						10 = {
-							BAR_silver_heal = yes
+							BAR_silver_turn_heal = yes
 						}
 					}
 				}
 				else = {
-					BAR_silver_normal_attack = yes
+					BAR_pen_fight_silver_normal_attack = yes
 				}
 			}
 			if = {
@@ -6535,18 +2496,18 @@ BAR_silver_attack = {
 					}
 					random_list = {
 						60 = {
-							BAR_silver_normal_attack = yes
+							BAR_pen_fight_silver_normal_attack = yes
 						}
 						30 = {
-							BAR_silver_lifesteal_attack = yes
+							BAR_pen_fight_silver_lifesteal_attack = yes
 						}
 						10 = {
-							BAR_silver_heal = yes
+							BAR_silver_turn_heal = yes
 						}
 					}
 				}
 				else = {
-					BAR_silver_normal_attack = yes
+					BAR_pen_fight_silver_normal_attack = yes
 				}
 			}
 			if = {
@@ -6563,343 +2524,29 @@ BAR_silver_attack = {
 					}
 					random_list = {
 						80 = {
-							BAR_silver_normal_attack = yes
+							BAR_pen_fight_silver_normal_attack = yes
 						}
 						10 = {
-							BAR_silver_lifesteal_attack = yes
+							BAR_pen_fight_silver_lifesteal_attack = yes
 						}
 						10 = {
-							BAR_silver_heal = yes
+							BAR_silver_turn_heal = yes
 						}
 					}
 				}
 				else = {
-					BAR_silver_normal_attack = yes
+					BAR_pen_fight_silver_normal_attack = yes
 				}
 			}
 		}
 	}
 }
 
-BAR_silver_normal_attack = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 8
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 2
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 3
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 4
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-	}
-	random_list = {
-		90 = {
-			subtract_from_variable = {
-				v_hp = dmgToDeal
-			}
-		}
-		10 = {
-			#you missed
-		}
-	}
-	subtract_from_variable = {
-		s_in = 1
-	}
-}
-
-BAR_silver_lifesteal_attack = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 9
-	}
-	random_list = {
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 5
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 6
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 7
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 8
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 9
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 10
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 11
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 12
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 13
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 14
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 15
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 16
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 17
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 18
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 19
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 20
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 21
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 22
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 23
-			}
-		}
-		5 = {
-			set_temp_variable = {
-				dmgToDeal = 24
-			}
-		}
-	}
-	random_list = {
-		90 = {
-			subtract_from_variable = {
-				v_hp = dmgToDeal
-			}
-			set_temp_variable = {
-				s_hp_temp = s_hp
-			}
-			add_to_temp_variable = {
-				s_hp_temp = dmgToDeal
-			}
-			if = {
-				limit = {
-					check_variable = {
-						s_hp_max > s_hp_temp
-					}
-				}
-				add_to_variable = {
-					s_hp = dmgToDeal
-				}
-			}
-			else = {
-				set_variable = {
-					s_hp = s_hp_max
-				}
-			}
-		}
-		10 = {
-			#you missed
-		}
-	}
-	subtract_from_variable = {
-		s_in = 2
-	}
-}
-
-BAR_silver_heal = {
+BAR_silver_turn_heal = {
+	BAR_silver_heal = yes
 	set_temp_variable = {
 		min = 1000
-	}
-	random_list = {
-		10 = {
-			set_temp_variable = {
-				healAmount = 24
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 26
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 28
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 30
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 32
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 34
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 36
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 38
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 40
-			}
-		}
-		10 = {
-			set_temp_variable = {
-				healAmount = 42
-			}
-		}
-	}
+	}	
 	if = {
 		limit = {
 			check_variable = {
@@ -6912,11 +2559,9 @@ BAR_silver_heal = {
 		set_variable = {
 			min = l_hp
 		}
+		BAR_silver_heal_leopold = yes
 		set_variable = {
-			heal_target = 2
-		}
-		set_variable = {
-			BAR_fight_pentarchy_action = 10
+			BAR_fight_pentarchy_action_log = 10
 		}
 	}
 	if = {
@@ -6931,11 +2576,9 @@ BAR_silver_heal = {
 		set_variable = {
 			min = a_hp
 		}
+		BAR_silver_heal_asinti = yes
 		set_variable = {
-			heal_target = 1
-		}
-		set_variable = {
-			BAR_fight_pentarchy_action = 11
+			BAR_fight_pentarchy_action_log = 11
 		}
 	}
 	if = {
@@ -6948,185 +2591,26 @@ BAR_silver_heal = {
 			}
 		}
 		set_variable = {
-			min = s_hp
+			BAR_fight_pentarchy_action_log = 12
 		}
-		set_variable = {
-			heal_target = 3
-		}
-		set_variable = {
-			BAR_fight_pentarchy_action = 12
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				heal_target = 1
-			}
-		}
-		set_temp_variable = {
-			a_hp_temp = a_hp
-		}
-		add_to_temp_variable = {
-			a_hp_temp = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_hp_max > a_hp_temp
-				}
-			}
-			add_to_variable = {
-				a_hp = healAmount
-			}
-		}
-		else = {
-			set_variable = {
-				a_hp = a_hp_max
-			}
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				heal_target = 2
-			}
-		}
-		set_temp_variable = {
-			l_hp_temp = l_hp
-		}
-		add_to_temp_variable = {
-			l_hp_temp = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_hp_max > l_hp_temp
-				}
-			}
-			add_to_variable = {
-				l_hp = healAmount
-			}
-		}
-		else = {
-			set_variable = {
-				l_hp = l_hp_max
-			}
-		}
-	}
-	if = {
-		limit = {
-			check_variable = {
-				heal_target = 3
-			}
-		}
-		set_temp_variable = {
-			s_hp_temp = a_hp
-		}
-		add_to_temp_variable = {
-			s_hp_temp = healAmount
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_hp_max > s_hp_temp
-				}
-			}
-			add_to_variable = {
-				s_hp = healAmount
-			}
-		}
-		else = {
-			set_variable = {
-				s_hp = s_hp_max
-			}
-		}
-	}
-	subtract_from_variable = {
-		s_in = 2
+		BAR_silver_heal_silver = yes
 	}
 }
 
-BAR_pentarchy_rest = {
-	set_variable = {
-		BAR_fight_pentarchy_action = 4
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_asinti_alive
-		}
-		if = {
-			limit = {
-				check_variable = {
-					a_in < 10
-				}
-			}
-			add_to_variable = {
-				a_in = 2
-			}
-		}
-		else = {
-			set_variable = {
-				a_in = 10
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_silver_star_alive
-		}
-		if = {
-			limit = {
-				check_variable = {
-					s_in < 10
-				}
-			}
-			add_to_variable = {
-				s_in = 2
-			}
-		}
-		else = {
-			set_variable = {
-				s_in = 10
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_leopold_alive
-		}
-		if = {
-			limit = {
-				check_variable = {
-					l_in < 10
-				}
-			}
-			add_to_variable = {
-				l_in = 2
-			}
-		}
-		else = {
-			set_variable = {
-				l_in = 10
-			}
-		}
-	}
-}
-
-BAR_clear_vars_fight = {
+#clears variables used in fight
+bar_pen_fight_close_window = {
+	clear_variable = BAR_fight_pentarchy_action_log
 	clear_variable = a_hp
-	clear_variable = a_hp_max
 	clear_variable = a_in
 	clear_variable = l_hp
-	clear_variable = l_hp_max
 	clear_variable = l_in
 	clear_variable = s_hp
-	clear_variable = s_hp_max
 	clear_variable = s_in
 	clear_variable = v_hp
-	clear_variable = v_hp_max
 	clear_variable = v_in
-	clear_variable = heal_target
 	clear_variable = character_attacking
 	clear_variable = viira_dmg_debuff
 	clear_variable = v_stun
+	clear_variable = bar_pentarchy_fight_show
+	clear_variable = bar_pen_fight_ai_already_attacked
 }

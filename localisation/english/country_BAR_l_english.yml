@@ -96,50 +96,6 @@ BAR_reactor_construction_desc:0 "Current progress\n§Y[?BAR_nuclear_progress]%§
 BAR_reactor_research_desc:0 "Current progress\n§Y[?BAR_nuclear_research]%§!"
 ### endgame ###
 
-barrad_viira_fight.5.t:0 "Viira blocks the way"
-barrad_viira_fight.5.d:0 "[Root.BAR_fight_viira_turn_summary] \n\nViira hp: [?v_hp]/[?v_hp_max]\nLeopold hp: [?l_hp]/[?l_hp_max]\nAsinti hp: [?a_hp]/[?a_hp_max]\nSilver hp: [?s_hp]/[?s_hp_max]\nViira in: [?v_in]/20\nLeopold in: [?l_in]/10\nAsinti in: [?a_in]/10\nSilver in: [?s_in]/10"
-barrad_viira_fight.5.a:0 "Rest."
-barrad_viira_fight.5.b:0 "Asinti's turn."
-barrad_viira_fight.5.c:0 "Leopold's turn."
-barrad_viira_fight.5.e:0 "Silver Star's turn."
-
-barrad_viira_fight.51.a:0 "Normal attack."
-barrad_viira_fight.51.b:0 "Party heal."
-barrad_viira_fight.51.c:0 "Dmg debuff (Viira)."
-barrad_viira_fight.51.e:0 "Back."
-
-barrad_viira_fight.52.a:0 "Normal attack."
-barrad_viira_fight.52.b:0 "Critical attack."
-barrad_viira_fight.52.c:0 "Stun."
-barrad_viira_fight.52.e:0 "Back."
-
-barrad_viira_fight.53.a:0 "Normal attack."
-barrad_viira_fight.53.b:0 "Lifesteal attack."
-barrad_viira_fight.53.c:0 "Heal party member."
-barrad_viira_fight.53.e:0 "Back."
-
-barrad_viira_fight.531.a:0 "Heal myself."
-barrad_viira_fight.531.b:0 "Heal Asinti."
-barrad_viira_fight.531.c:0 "Heal Leopold."
-
-barrad_viira_fight.8.t:0 "The Pentarchy Stands In Your Way"
-barrad_viira_fight.8.d:0 "[Root.BAR_fight_pentarchy_turn_summary] \n\nViira hp: [?v_hp]/[?v_hp_max]\nLeopold hp: [?l_hp]/[?l_hp_max]\nAsinti hp: [?a_hp]/[?a_hp_max]\nSilver hp: [?s_hp]/[?s_hp_max]\nViira in: [?v_in]/20\nLeopold in: [?l_in]/10\nAsinti in: [?a_in]/10\nSilver in: [?s_in]/10"
-barrad_viira_fight.8.a:0 "You are stunned."
-barrad_viira_fight.8.b:0 "Normal attack."
-barrad_viira_fight.8.c:0 "Strong attack."
-barrad_viira_fight.8.e:0 "Heal."
-barrad_viira_fight.8.f:0 "Rest."
-
-barrad_viira_fight.81.t:0 "Normal attack."
-barrad_viira_fight.81.a:0 "Asinti."
-barrad_viira_fight.81.b:0 "Leopold."
-barrad_viira_fight.81.c:0 "Silver Star."
-
-barrad_viira_fight.82.t:0 "Strong attack."
-barrad_viira_fight.82.a:0 "Asinti."
-barrad_viira_fight.82.b:0 "Leopold."
-barrad_viira_fight.82.c:0 "Silver Star."
-
 barrad_viira_fight.6.t:0 "The Pentarchy Is Dead"
 barrad_viira_fight.7.t:0 "The Pentarchy Wins!"
 
@@ -2479,15 +2435,17 @@ BAR_true_avatar_of_chaos:0 "True Avatar of Chaos"
 BAR_true_avatar_of_chaos_lar:0 "True Avatar of Chaos"
 BAR_despot:0 "Barradian Despot"
 
-bar_pen_fight_asinti_hp:0 "[?a_hp]/[?a_hp_max] HP"
-bar_pen_fight_leopold_hp:0 "[?l_hp]/[?l_hp_max] HP"
-bar_pen_fight_silver_hp:0 "[?s_hp]/[?s_hp_max] HP"
-bar_pen_fight_viira_hp:0 "[?v_hp]/[?v_hp_max] HP"
+bar_pen_fight_asinti_hp:0 "[?a_hp]/190 HP"
+bar_pen_fight_leopold_hp:0 "[?l_hp]/220 HP"
+bar_pen_fight_silver_star_hp:0 "[?s_hp]/170 HP"
+bar_pen_fight_viira_hp:0 "[?v_hp]/280 HP"
 bar_pen_fight_asinti_in:0 "[?a_in]/10 Initiative"
+bar_pen_fight_leopold_in:0 "[?l_in]/10 Initiative"
+bar_pen_fight_silver_star_in:0 "[?s_in]/10 Initiative"
+bar_pen_fight_viira_in:0 "[?v_in]/20 Initiative"
+
 bar_silver_heal:0 "Heal for 24-42hp\nCost: 2in 100£silver_resources_text"
 bar_silver_heal_new:0 "Heal for 24-42hp\nCost: 2in 100£silver_resources_text\n\nClick this and then portrait of character you want to heal"
-bar_pen_fight_leopold_in:0 "[?l_in]/10 Initiative"
-bar_pen_fight_silver_in:0 "[?s_in]/10 Initiative"
 
 bar_pen_fight_log_text:0 "[This.BAR_fight_viira_turn_summary]"
 

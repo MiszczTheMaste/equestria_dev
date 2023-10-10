@@ -1,3 +1,5 @@
+@BAR_EXPEDITION_MAX_EQUIPMENT_LEVEL = 5;
+
 BAR_pentarchy_is_dead = {
 	if = {
 		limit = {
@@ -1726,28 +1728,22 @@ BAR_spell_upgrades_prepare = {
 		value = 1
 		size = 16
 	}
-
-	for_loop_effect = {
-		start = 0
-		end = 15
-		value = reactor_index
-		meta_effect = {
-			text = {
-				if = {
-					limit = {
-						nuclear_reactor > reactor_index
-					}
-					set_variable = {
-						bar_viira_mana_crystal_array^reactor_index = 2
-					}
-				}
-				else = {
-					set_variable = {
-						bar_viira_mana_crystal_array^reactor_index = 1
-					}
-				}
+	for_each_loop = {
+		array = bar_viira_mana_crystal_array
+		index = reactor_index
+		value = reactor_frame
+		if = {
+			limit = {
+				nuclear_reactor > reactor_index
 			}
-			REACTOR_REQUIRED_COUNT = "[?reactor_index]"
+			set_variable = {
+				reactor_frame = 2
+			}
+		}
+		else = {
+			set_variable = {
+				reactor_frame= 1
+			}
 		}
 	}
 }
@@ -2054,4 +2050,8 @@ BAR_merge_commandments = {
 			add_ideas = BAR_commandments_combined
 		}
 	}
+}
+
+bar_get_expedition_targets = {
+
 }

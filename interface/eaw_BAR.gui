@@ -1226,37 +1226,6 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "bar_pen_screen_viira_clues"
-		size = { width=1268 height=700 }
-		position = { x=20 y=280 }
-		verticalScrollbar = "right_vertical_slider"
-		instantTextBoxType = {
-			name = "bar_pen_viira_info_name"
-			font = "hoi_30header"
-			format = left
-			maxWidth = 1218
-			text = "bar_pen_viira_info_name"
-
-		}
-		buttonType = {
-			name ="bar_pen_screen_viira_clues_button"
-			quadTextureSprite = "GFX_state_lore_button"
-			clicksound = click_close
-			shortcut = "ESCAPE"
-			position = { x=200 y=-10 }
-		}
-		instantTextBoxType = {
-			name = "bar_pen_viira_clues_text"
-			position = {x=0 y=45}
-			font = "hoi_18mbs"
-			format = left
-			maxWidth = 1218
-			maxHeight = 350
-			scrollbartype = "standardtext_slider"
-			text = bar_pen_viira_clues_text
-		}
-	}
-	containerWindowType = {
 		name = "bar_new_journal_entry_window"
 		Orientation = center
 		instantTextBoxType = {
@@ -1269,22 +1238,21 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "bar_pentarchy_fight_window"
-		size = { width=1268 height=700 }
+		size = { width=1366 height=720 }
 		verticalScrollbar = "right_vertical_slider"
 		moveable = yes
 		clipping = no
-		show_sound = menu_open_window
-		hide_sound = menu_close_window
 		Background = {
 			name = "bar_pentarchy_fight_window_bg"
 			spriteType = "GFX_bar_fight_background"
 		}
 		buttonType = {
-			name = "bar_pentarchy_rest"
+			name = "fight_rest_button"
 			spriteType = "GFX_bar_fight_rest"
-			position = { x = 20 y = 160 }
+			position = { x = 1310 y = 664 }
 			pdx_tooltip = "bar_pentarchy_rest"
 		}
+		
 		instantTextBoxType = {
 			name = "bar_pen_fight_stun_log"
 			position = {x=900 y=510}
@@ -1315,362 +1283,379 @@ guiTypes = {
 			scrollbartype = "standardtext_slider"
 			text = bar_pen_fight_log_text
 		}	
+	}
+	containerWindowType = {
+		name = "bar_pentarchy_fight_viira"
+		position = { x = 0 y = 6 }
 
-		containerWindowType = {
-			name = "bar_pentarchy_fight_viira"
-			position = { x = 0 y = 20 }
-
-			iconType = {
-				name = "leader_frame"
-				spriteType = "GFX_bar_fight_frame"
-				position = { x = 1141 y = -2 }		
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_portrait"
-				spriteType = "GFX_bar_fight_viira"
-				frame = 1
-				position = { x=1143 y=0 }
-			}
-			iconType = {
-				name = "bar_viira_heal"
-				spriteType = "GFX_bar_fight_self_heal"
-				position = { x = 1077 y = 80 }
-				pdx_tooltip = "bar_viira_heal2"
-			}
-			iconType = {
-				name = "bar_viira_strong_attack"
-				spriteType = "GFX_bar_fight_viira_stronk"
-				position = { x = 1017 y = 80 }
-				pdx_tooltip = "bar_viira_strong_attack2"
-			}
-			iconType = {
-				name = "bar_viira_normal_attack"
-				spriteType = "GFX_bar_fight_normal_attack"
-				position = { x = 957 y = 80 }
-				pdx_tooltip = "bar_viira_normal_attack2"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_10"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=1097 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_20"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=1067 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_30"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=1037 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_40"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=1007 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_50"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=977 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_60"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=947 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_70"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=917 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_80"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=887 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_90"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=857 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_100"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=827 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_110"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=797 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_120"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=767 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_130"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=737 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_140"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=707 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_150"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=677 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_160"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=647 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_170"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=617 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_180"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=587 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_190"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=557 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_200"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=527 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_210"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=497 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_220"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=467 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_230"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=437 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_240"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=407 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_250"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=377 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_260"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=347 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_270"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=317 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_280"
-				spriteType = "GFX_bar_hp_r"
-				frame = 1
-				position = { x=287 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_1"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=1097 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_2"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=1067 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_3"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=1037 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_4"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=1007 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_5"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=977 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_6"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=947 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_7"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=917 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_8"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=887 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_9"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=857 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_10"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=827 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_11"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=797 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_12"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=767 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_13"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=737 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_14"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=707 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_15"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=677 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_16"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=647 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_17"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=617 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_18"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=587 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_19"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=557 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_20"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=527 y=40 }
-			}
+		iconType = {
+			name = "leader_frame"
+			spriteType = "GFX_bar_fight_frame"
+			position = { x = 1202 y = -2 }		
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_portrait"
+			spriteType = "GFX_bar_viira_portrait"
+			position = { x = 1204 y = 0 }
+		}
+		iconType = {
+			name = "bar_viira_heal"
+			spriteType = "GFX_bar_fight_self_heal"
+			position = { x = 1144 y = 80 }
+			pdx_tooltip = "bar_viira_heal"
+		}
+		iconType = {
+			name = "bar_viira_strong_attack"
+			spriteType = "GFX_bar_fight_viira_stronk"
+			position = { x = 1084 y = 80 }
+			pdx_tooltip = "bar_viira_strong_attack"
+		}
+		iconType = {
+			name = "bar_viira_normal_attack"
+			spriteType = "GFX_bar_fight_normal_attack"
+			position = { x = 1024 y = 80 }
+			pdx_tooltip = "bar_viira_normal_attack"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_10"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=1164 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_20"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=1134 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_30"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=1104 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_40"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=1074 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_50"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=1044 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_60"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=1014 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_70"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=984 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_80"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=954 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_90"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=924 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_100"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=894 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_110"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=864 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_120"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=834 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_130"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=804 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_140"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=774 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_150"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=744 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_160"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=714 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_170"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=684 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_180"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=654 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_190"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=624 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_200"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=594 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_210"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=564 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_220"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=534 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_230"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=504 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_240"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=474 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_250"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=444 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_260"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=414 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_270"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=384 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_hp_280"
+			spriteType = "GFX_bar_hp_r"
+			frame = 1
+			position = { x=354 y=10 }
+			pdx_tooltip = "bar_pen_fight_viira_hp"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_1"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=1164 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_2"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=1134 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_3"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=1104 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_4"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=1074 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_5"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=1044 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_6"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=1014 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_7"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=984 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_8"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=954 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_9"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=924 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_10"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=894 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_11"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=864 y=40 }
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_12"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=834 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_13"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=804 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_14"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=774 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_15"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=744 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_16"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=714 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_17"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=684 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_18"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=654 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_19"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=624 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
+		}
+		iconType = {
+			name ="bar_pen_fight_viira_in_20"
+			spriteType = "GFX_bar_initiative"
+			frame = 1
+			position = { x=594 y=40 }
+			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 	}
 	containerWindowType = {
 		name = "bar_pentarchy_fight_asinti_window"
 		size = { width=1268 height=700 }
-		position = { x = 20 y = 530 }
+		position = { x = 6 y = 502 }
 		
 		iconType = {
 			name = "leader_frame"
@@ -1679,159 +1664,158 @@ guiTypes = {
 		}
 		buttonType = {
 			name ="bar_pen_fight_asinti_portrait"
-			spriteType = "GFX_bar_fight_asinti"
-			frame = 1
+			spriteType = "GFX_bar_asinti_portrait"
 			position = { x=0 y=0 }
 		}
 		buttonType = {
 			name = "bar_asinti_normal_attack"
 			spriteType = "GFX_bar_fight_normal_attack"
-			position = { x = 120 y = 80 }
+			position = { x = 166 y = 80 }
 			pdx_tooltip = "bar_asinti_normal_attack"
 		}
 		buttonType = {
 			name = "bar_asinti_curse"
 			spriteType = "GFX_bar_fight_curse"
-			position = { x = 180 y = 80 }
+			position = { x = 226 y = 80 }
 			pdx_tooltip = "bar_asinti_curse"
 		}
 		buttonType = {
 			name = "bar_asinti_party_heal"
 			spriteType = "GFX_bar_fight_mass_heal"
-			position = { x = 240 y = 80 }
+			position = { x = 286 y = 80 }
 			pdx_tooltip = "bar_asinti_party_heal"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_10"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=120 y=10 }
+			position = { x=166 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_20"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=150 y=10 }
+			position = { x=196 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_30"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=180 y=10 }
+			position = { x=226 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_40"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=210 y=10 }
+			position = { x=256 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_50"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=240 y=10 }
+			position = { x=286 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_60"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=270 y=10 }
+			position = { x=316 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_70"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=300 y=10 }
+			position = { x=346 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_80"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=330 y=10 }
+			position = { x=376 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_90"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=360 y=10 }
+			position = { x=406 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_100"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=390 y=10 }
+			position = { x=436 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_110"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=420 y=10 }
+			position = { x=466 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_120"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=450 y=10 }
+			position = { x=496 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_130"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=480 y=10 }
+			position = { x=526 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_140"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=510 y=10 }
+			position = { x=556 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_150"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=540 y=10 }
+			position = { x=586 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_160"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=570 y=10 }
+			position = { x=616 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_170"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=600 y=10 }
+			position = { x=646 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_180"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=630 y=10 }
+			position = { x=676 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_hp_190"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=660 y=10 }
+			position = { x=706 y=10 }
 			pdx_tooltip = "bar_pen_fight_asinti_hp"
 		}
 
@@ -1840,75 +1824,75 @@ guiTypes = {
 			name ="bar_pen_fight_asinti_in_1"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=120 y=40 }
+			position = { x=166 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_2"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=150 y=40 }
+			position = { x=196 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_3"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=180 y=40 }
+			position = { x=226 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_4"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=210 y=40 }
+			position = { x=256 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_5"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=240 y=40 }
+			position = { x=286 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_6"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=270 y=40 }
+			position = { x=316 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_7"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=300 y=40 }
+			position = { x=346 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_8"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=330 y=40 }
+			position = { x=376 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_9"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=360 y=40 }
+			position = { x=406 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_asinti_in_10"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=390 y=40 }
+			position = { x=436 y=40 }
 			pdx_tooltip = "bar_pen_fight_asinti_in"
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_asinti"
-			position = { x=425 y=45 }
+			position = { x=470 y=45 }
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 350
@@ -1919,7 +1903,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "bar_pentarchy_fight_leopold_window"
 		size = { width=1268 height=700 }
-		position = { x = 20 y = 380 }
+		position = { x = 6 y = 290 }
 		iconType = {
 			name = "leader_frame"
 			spriteType = "GFX_bar_fight_frame"
@@ -1927,179 +1911,179 @@ guiTypes = {
 		}
 		buttonType = {
 			name ="bar_pen_fight_leopold_portrait"
-			spriteType = "GFX_bar_fight_leopold"
-			frame = 1
+			spriteType = "GFX_bar_leopold_portrait"
 			position = { x=0 y=0 }
 		}
 		buttonType = {
 			name = "bar_leopold_normal_attack"
 			spriteType = "GFX_bar_fight_normal_attack"
-			position = { x = 120 y = 80 }
+			position = { x = 166 y = 80 }
 			pdx_tooltip = "bar_leopold_normal_attack"
 		}
 		buttonType = {
 			name = "bar_leopold_strong_attack"
 			spriteType = "GFX_bar_fight_strong_attack"
-			position = { x = 180 y = 80 }
+			position = { x = 226 y = 80 }
 			pdx_tooltip = "bar_leopold_strong_attack"
 		}
 		buttonType = {
 			name = "bar_leopold_stun_attack"
 			spriteType = "GFX_bar_fight_stun"
-			position = { x = 240 y = 80 }
+			position = { x = 286 y = 80 }
 			pdx_tooltip = "bar_leopold_stun"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_10"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=120 y=10 }
+			position = { x=166 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_20"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=150 y=10 }
+			position = { x=196 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_30"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=180 y=10 }
+			position = { x=226 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_40"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=210 y=10 }
+			position = { x=256 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_50"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=240 y=10 }
+			position = { x=286 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_60"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=270 y=10 }
+			position = { x=316 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_70"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=300 y=10 }
+			position = { x=346 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_80"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=330 y=10 }
+			position = { x=376 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_90"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=360 y=10 }
+			position = { x=406 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_100"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=390 y=10 }
+			position = { x=436 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_110"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=420 y=10 }
+			position = { x=466 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_120"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=450 y=10 }
+			position = { x=496 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_130"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=480 y=10 }
+			position = { x=526 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_140"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=510 y=10 }
+			position = { x=556 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_150"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=540 y=10 }
+			position = { x=586 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_160"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=570 y=10 }
+			position = { x=616 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_170"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=600 y=10 }
+			position = { x=646 y=10 }
+			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_180"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=630 y=10 }
+			position = { x=676 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_190"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=660 y=10 }
+			position = { x=706 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_200"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=690 y=10 }
+			position = { x=736 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_210"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=720 y=10 }
+			position = { x=766 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_hp_220"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=750 y=10 }
+			position = { x=796 y=10 }
 			pdx_tooltip = "bar_pen_fight_leopold_hp"
 		}
 
@@ -2108,75 +2092,75 @@ guiTypes = {
 			name ="bar_pen_fight_leopold_in_1"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=120 y=40 }
+			position = { x=166 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_2"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=150 y=40 }
+			position = { x=196 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_3"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=180 y=40 }
+			position = { x=226 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_4"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=210 y=40 }
+			position = { x=256 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_5"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=240 y=40 }
+			position = { x=286 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_6"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=270 y=40 }
+			position = { x=316 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_7"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=300 y=40 }
+			position = { x=346 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_8"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=330 y=40 }
+			position = { x=376 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_9"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=360 y=40 }
+			position = { x=406 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_10"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=390 y=40 }
+			position = { x=436 y=40 }
 			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_leopold"
-			position = { x=425 y=45 }
+			position = { x=470 y=45 }
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 350
@@ -2187,7 +2171,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "bar_pentarchy_fight_silver_window"
 		size = { width=1268 height=700 }
-		position = { x = 20 y = 230 }
+		position = { x = 6 y = 90 }
 		iconType = {
 			name = "leader_frame"
 			spriteType = "GFX_bar_fight_frame"
@@ -2195,222 +2179,221 @@ guiTypes = {
 		}
 		buttonType = {
 			name ="bar_pen_fight_silver_portrait"
-			spriteType = "GFX_bar_fight_silver"
-			frame = 1
+			spriteType = "GFX_bar_silver_star_portrait"
 			position = { x=0 y=0 }
 		}
 		buttonType = {
 			name = "bar_silver_normal_attack"
 			spriteType = "GFX_bar_fight_normal_attack"
-			position = { x = 120 y = 80 }
+			position = { x = 166 y = 80 }
 			pdx_tooltip = "bar_silver_normal_attack"
 		}
 		buttonType = {
 			name = "bar_silver_lifesteal_attack"
 			spriteType = "GFX_bar_fight_lifesteal_attack"
-			position = { x = 180 y = 80 }
+			position = { x = 226 y = 80 }
 			pdx_tooltip = "bar_silver_lifesteal_attack"
 		}
 		buttonType = {
 			name = "bar_silver_heal"
 			spriteType = "GFX_bar_fight_heal"
-			position = { x = 240 y = 80 }
+			position = { x = 286 y = 80 }
 			pdx_tooltip = "bar_silver_heal_new"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_10"
+			name ="bar_pen_fight_silver_star_hp_10"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=120 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=166 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_20"
+			name ="bar_pen_fight_silver_star_hp_20"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=150 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=196 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_30"
+			name ="bar_pen_fight_silver_star_hp_30"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=180 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=226 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_40"
+			name ="bar_pen_fight_silver_star_hp_40"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=210 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=256 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_50"
+			name ="bar_pen_fight_silver_star_hp_50"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=240 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=286 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_60"
+			name ="bar_pen_fight_silver_star_hp_60"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=270 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=316 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_70"
+			name ="bar_pen_fight_silver_star_hp_70"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=300 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=346 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_80"
+			name ="bar_pen_fight_silver_star_hp_80"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=330 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=376 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_90"
+			name ="bar_pen_fight_silver_star_hp_90"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=360 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=406 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_100"
+			name ="bar_pen_fight_silver_star_hp_100"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=390 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=436 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_110"
+			name ="bar_pen_fight_silver_star_hp_110"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=420 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=466 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_120"
+			name ="bar_pen_fight_silver_star_hp_120"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=450 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=496 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_130"
+			name ="bar_pen_fight_silver_star_hp_130"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=480 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=526 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_140"
+			name ="bar_pen_fight_silver_star_hp_140"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=510 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=556 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_150"
+			name ="bar_pen_fight_silver_star_hp_150"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=540 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=586 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_160"
+			name ="bar_pen_fight_silver_star_hp_160"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=570 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=616 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_hp_170"
+			name ="bar_pen_fight_silver_star_hp_170"
 			spriteType = "GFX_bar_hp"
 			frame = 1
-			position = { x=600 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
+			position = { x=646 y=10 }
+			pdx_tooltip = "bar_pen_fight_silver_star_hp"
 		}
 
 
 		iconType = {
-			name ="bar_pen_fight_silver_in_1"
+			name ="bar_pen_fight_silver_star_in_1"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=120 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=166 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_2"
+			name ="bar_pen_fight_silver_star_in_2"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=150 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=196 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_3"
+			name ="bar_pen_fight_silver_star_in_3"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=180 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=226 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_4"
+			name ="bar_pen_fight_silver_star_in_4"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=210 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=256 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_5"
+			name ="bar_pen_fight_silver_star_in_5"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=240 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=286 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_6"
+			name ="bar_pen_fight_silver_star_in_6"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=270 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=316 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_7"
+			name ="bar_pen_fight_silver_star_in_7"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=300 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=346 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_8"
+			name ="bar_pen_fight_silver_star_in_8"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=330 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=376 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_9"
+			name ="bar_pen_fight_silver_star_in_9"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=360 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=406 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		iconType = {
-			name ="bar_pen_fight_silver_in_10"
+			name ="bar_pen_fight_silver_star_in_10"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=390 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
+			position = { x=436 y=40 }
+			pdx_tooltip = "bar_pen_fight_silver_star_in"
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_silver"
-			position = { x=425 y=45 }
+			position = { x=470 y=45 }
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 350
@@ -2419,1162 +2402,249 @@ guiTypes = {
 		}
 	}
 
-	### viira side
-	containerWindowType = {
-		name = "bar_viira_fight_window"
-		size = { width=1268 height=700 }
-		verticalScrollbar = "right_vertical_slider"
+	containerwindowtype = {
+		name = "bar_expedition_container"
+		size = { width=1366 height=720 }
 		moveable = yes
 		clipping = no
-		show_sound = menu_open_window
-		hide_sound = menu_close_window
 		Background = {
 			name = "bar_pentarchy_fight_window_bg"
 			spriteType = "GFX_bar_fight_background"
 		}
-		instantTextBoxType = {
-			name = "bar_pen_fight_miss_log"
-			position = {x=20 y=100}
-			font = "hoi_18mbs"
-			format = left
-			maxWidth = 350
-			maxHeight = 350
-			scrollbartype = "standardtext_slider"
-			text = BAR_pen_fight_missed_text_f
-		}
-		instantTextBoxType = {
-			name = "bar_pen_fight_stun_log"
-			position = {x=20 y=120}
-			font = "hoi_18mbs"
-			format = left
-			maxWidth = 350
-			maxHeight = 350
-			scrollbartype = "standardtext_slider"
-			text = BAR_pen_fight_stunned
-		}
-		instantTextBoxType = {
-			name = "bar_pen_fight_log"
-			position = {x=20 y=20}
-			font = "hoi_18mbs"
-			format = left
-			maxWidth = 350
-			maxHeight = 350
-			scrollbartype = "standardtext_slider"
-			text = BAR_fight_vpentarchy_turn_summary_0
-		}	
 
 		containerWindowType = {
-			name = "bar_pentarchy_fight_viira"
-			position = { x = 20 y = 530 }
+			name = "bar_expedition_members_select"
+			position = { x = 20 y = 50 }
+			instantTextBoxType = {
+				name = "bar_expedition_members_text"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_members
+			}	
 			
-
 			iconType = {
-				name = "leader_frame"
+				name = "bar_expedition_members_captain_gasienica_frame"
 				spriteType = "GFX_bar_fight_frame"
-				position = { x = -2 y = -2 }		
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_portrait"
-				spriteType = "GFX_bar_fight_viira"
-				frame = 1
-				position = { x=0 y=0 }
+				position = { x = 0 y = 50 }		
 			}
 			buttonType = {
-				name = "bar_viira_heal"
-				spriteType = "GFX_bar_fight_self_heal"
-				position = { x = 240 y = 80 }
-				pdx_tooltip = "bar_viira_heal"
+				name = "bar_expedition_members_captain_gasienica"
+				spriteType = "GFX_bar_silver_star_portrait"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=2 y=52 }
+			}
+			iconType = {
+				name = "bar_expedition_members_silver_star_frame"
+				spriteType = "GFX_bar_fight_frame"
+				position = { x = 168 y = 50 }		
 			}
 			buttonType = {
-				name = "bar_viira_rest"
-				spriteType = "GFX_bar_fight_rest"
-				position ={ x = 300 y = 80 }
-				pdx_tooltip = "bar_viira_rest"
+				name = "bar_expedition_members_silver_star"
+				spriteType = "GFX_bar_silver_star_portrait"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=170 y=52 }
+			}
+			iconType = {
+				name = "bar_expedition_members_leopold_frame"
+				spriteType = "GFX_bar_fight_frame"
+				position = { x = 338 y = 50 }		
 			}
 			buttonType = {
-				name = "bar_viira_strong_attack"
-				spriteType = "GFX_bar_fight_viira_stronk"
-				position = { x = 180 y = 80 }
-				pdx_tooltip = "bar_viira_strong_attack"
+				name = "bar_expedition_members_leopold"
+				spriteType = "GFX_bar_leopold_portrait"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=340 y=52 }
+			}
+			iconType = {
+				name = "bar_expedition_members_asinti_frame"
+				spriteType = "GFX_bar_fight_frame"
+				position = { x = 508 y = 50 }		
 			}
 			buttonType = {
-				name = "bar_viira_normal_attack"
-				spriteType = "GFX_bar_fight_normal_attack"
-				position = { x = 120 y = 80 }
-				pdx_tooltip = "bar_viira_normal_attack"
+				name = "bar_expedition_members_asinti"
+				spriteType = "GFX_bar_asinti_portrait"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=510 y=52 }
 			}
 			iconType = {
-				name ="bar_pen_fight_viira_hp_10"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=120 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
+				name = "bar_expedition_members_viira_frame"
+				spriteType = "GFX_bar_fight_frame"
+				position = { x = 678 y = 50 }		
 			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_20"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=150 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
+			buttonType = {
+				name = "bar_expedition_members_viira"
+				spriteType = "GFX_bar_viira_portrait"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=680 y=52 }
 			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_30"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=180 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_40"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=210 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_50"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=240 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_60"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=270 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_70"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=300 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_80"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=330 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_90"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=360 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_100"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=390 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_110"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=420 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_120"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=450 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_130"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=480 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_140"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=510 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_150"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=540 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_160"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=570 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_170"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=600 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_180"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=630 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_190"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=660 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_200"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=690 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_210"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=720 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_220"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=750 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_230"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=780 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_240"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=810 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_250"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=840 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_260"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=870 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_270"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=900 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_hp_280"
-				spriteType = "GFX_bar_hp"
-				frame = 1
-				position = { x=930 y=10 }
-				pdx_tooltip = "bar_pen_fight_viira_hp"
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_1"
+		}
+		containerWindowType = {
+			name = "bar_expedition_additional_equipment_container"
+			position = { x = 20 y = 50 }
+			buttonType = {
+				name ="bar_expedition_additional_equipment_increase"
 				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=120 y=40 }
+				position = { x=857 y=40 }
+			}
+			buttonType = {
+				name ="bar_expedition_additional_equipment_decrease"
+				spriteType = "GFX_bar_initiative"
+				position = { x=857 y=40 }
 			}
 			iconType = {
-				name ="bar_pen_fight_viira_in_2"
+				name = "bar_expedition_additional_equipment_icon"
+				spriteType = "GFX_bar_fight_frame"
+				position = { x = 678 y = 50 }		
+			}	
+			instantTextBoxType = {
+				name = "bar_expedition_additional_equipment_text"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_additional_equipment_text
+			}	
+			instantTextBoxType = {
+				name = "bar_expedition_additional_equipment_current_level"
+				position = {x=0 y=0}
+				font = "hoi_16mbs"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_additional_equipment_current_level
+			}	
+		}
+		containerWindowType = {
+			name = "bar_expedition_length_container"
+			position = { x = 20 y = 50 }
+			buttonType = {
+				name ="bar_expedition_length_increase"
 				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=150 y=40 }
+				position = { x=857 y=40 }
+			}
+			buttonType = {
+				name ="bar_expedition_length_decrease"
+				spriteType = "GFX_bar_initiative"
+				position = { x=857 y=40 }
 			}
 			iconType = {
-				name ="bar_pen_fight_viira_in_3"
+				name ="bar_expedition_length_icon"
 				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=180 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_4"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=210 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_5"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=240 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_6"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=270 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_7"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=300 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_8"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=330 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_9"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=360 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_10"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=390 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_11"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=420 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_12"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=450 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_13"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=480 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_14"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=510 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_15"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=540 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_16"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=570 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_17"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=600 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_18"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=630 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_19"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=660 y=40 }
-			}
-			iconType = {
-				name ="bar_pen_fight_viira_in_20"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=690 y=40 }
+				position = { x=857 y=40 }
 			}
 			instantTextBoxType = {
-				name = "bar_pen_fight_res_viira"
-				position = { x=725 y=45 }
-				font = "hoi_18mbs"
+				name = "bar_expedition_length_text"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
 				format = left
-				maxWidth = 350
-				maxHeight = 350
-				text = bar_pen_fight_res_viira_f
+				text = bar_expedition_length_text
+			}	
+			instantTextBoxType = {
+				name = "bar_expedition_length_current_level"
+				position = {x=0 y=0}
+				font = "hoi_16mbs"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_length_current_level
+			}	
+		}
+		containerWindowType = {
+			name = "bar_expedition_controls_targets_container"
+			Orientation = upper_left
+			size = {width=400 height=200}
+			position = {x=600 y=300}
+			verticalScrollbar = "right_vertical_slider_intel"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+					
+			
+			gridBoxType = {
+				name = "bar_expedition_controls_targets_list"
+				position = { x = 0 y = 0}
+				size = { width = 100%% height = 100%% }
+				Orientation = upper_left
+				slotsize = {width=400 height=50 }
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
+		containerWindowType = {
+			name = "bar_expedition_controls_container"
+			position = { x = 20 y = 50 }
+			instantTextBoxType = {
+				name = "bar_expedition_success_chance_title"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_success_chance_title
+			}	
+			iconType = {
+				name ="bar_expedition_success_chance_icon"
+				spriteType = "GFX_bar_initiative"
+				frame = 1
+				position = { x=857 y=40 }
+			}		
+			instantTextBoxType = {
+				name = "bar_expedition_coherence_title"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_coherence_title
+			}	
+			iconType = {
+				name ="bar_expedition_coherence_icon"
+				spriteType = "GFX_bar_initiative"
+				frame = 1
+				position = { x=857 y=40 }
+			}
+			instantTextBoxType = {
+				name = "bar_expedition_peril_title"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_peril_title
+			}	
+			iconType = {
+				name ="bar_expedition_peril_icon"
+				spriteType = "GFX_bar_initiative"
+				frame = 1
+				position = { x=857 y=40 }
+			}
+			
+			buttonType = {
+				name = "bar_expedition_ready"
+				spriteType = "GFX_viira_button_unlock_2"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=127 y=363 }
+			}
+			buttonType = {
+				name = "bar_expedition_cancel"
+				spriteType = "GFX_viira_button_unlock_2"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=127 y=363 }
+			}	
+			buttonType = {
+				name = "bar_expedition_launch"
+				spriteType = "GFX_viira_button_unlock_2"
+				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				position = { x=127 y=363 }
 			}
 		}
 	}
 	containerWindowType = {
-		name = "bar_viira_fight_asinti_window"
-		size = { width=1268 height=700 }
-		position = { x = 0 y = 320 }
-		
-		iconType = {
-			name = "leader_frame"
-			spriteType = "GFX_bar_fight_frame"
-			position = { x = 1141 y = -2 }			
-		}
+		name = "bar_expedition_targets"
 		buttonType = {
-			name ="bar_pen_fight_asinti_portrait"
-			spriteType = "GFX_bar_fight_asinti"
-			frame = 1
-			position = { x=1143 y=0 }
-		}
-		iconType = {
-			name = "bar_asinti_normal_attack"
-			spriteType = "GFX_bar_fight_normal_attack"
-			position = { x = 957 y = 80 }
-			pdx_tooltip = "bar_asinti_normal_attack"
-		}
-		iconType = {
-			name = "bar_asinti_curse"
-			spriteType = "GFX_bar_fight_curse"
-			position = { x = 1017 y = 80 }
-			pdx_tooltip = "bar_asinti_curse"
-		}
-		iconType = {
-			name = "bar_asinti_party_heal"
-			spriteType = "GFX_bar_fight_mass_heal"
-			position = { x = 1077 y = 80 }
-			pdx_tooltip = "bar_asinti_party_heal"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_10"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1097 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_20"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1067 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_30"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1037 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_40"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1007 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_50"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=977 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_60"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=947 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_70"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=917 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_80"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=887 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_90"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=857 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_100"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=827 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_110"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=797 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_120"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=767 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_130"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=737 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_140"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=707 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_150"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=677 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_160"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=647 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_170"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=617 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_180"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=587 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_hp_190"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=557 y=10 }
-			pdx_tooltip = "bar_pen_fight_asinti_hp"
-		}
-
-
-		iconType = {
-			name ="bar_pen_fight_asinti_in_1"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1097 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_2"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1067 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_3"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1037 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_4"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1007 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_5"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=977 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_6"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=947 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_7"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=917 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_8"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=887 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_9"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=857 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_asinti_in_10"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=827 y=40 }
-			pdx_tooltip = "bar_pen_fight_asinti_in"
-		}
-	}
-	containerWindowType = {
-		name = "bar_viira_fight_leopold_window"
-		size = { width=1268 height=700 }
-		position = { x = 0 y = 170 }
-		iconType = {
-			name = "leader_frame"
-			spriteType = "GFX_bar_fight_frame"
-			position = { x = 1141 y = -2 }			
-		}
-		buttonType = {
-			name ="bar_pen_fight_leopold_portrait"
-			spriteType = "GFX_bar_fight_leopold"
-			frame = 1
-			position = { x=1143 y=0 }
-		}
-		iconType = {
-			name = "bar_leopold_normal_attack"
-			spriteType = "GFX_bar_fight_normal_attack"
-			position = { x = 957 y = 80 }
-			pdx_tooltip = "bar_leopold_normal_attack"
-		}
-		iconType = {
-			name = "bar_leopold_strong_attack"
-			spriteType = "GFX_bar_fight_strong_attack"
-			position = { x = 1017 y = 80 }
-			pdx_tooltip = "bar_leopold_strong_attack"
-		}
-		iconType = {
-			name = "bar_leopold_stun_attack"
-			spriteType = "GFX_bar_fight_stun"
-			position = { x = 1077 y = 80 }
-			pdx_tooltip = "bar_leopold_stun"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_10"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1097 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_20"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1067 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_30"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1037 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_40"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1007 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_50"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=977 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_60"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=947 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_70"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=917 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_80"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=887 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_90"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=857 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_100"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=827 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_110"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=797 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_120"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=767 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_130"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=737 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_140"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=707 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_150"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=677 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_160"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=647 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_170"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=617 y=10 }
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_180"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=587 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_190"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=557 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_200"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=527 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_210"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=497 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_hp_220"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=467 y=10 }
-			pdx_tooltip = "bar_pen_fight_leopold_hp"
-		}
-
-
-		iconType = {
-			name ="bar_pen_fight_leopold_in_1"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1097 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_2"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1067 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_3"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1037 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_4"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1007 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_5"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=977 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_6"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=947 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_7"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=917 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_8"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=887 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_9"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=857 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_leopold_in_10"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=827 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
-		}
-	}
-	containerWindowType = {
-		name = "bar_viira_fight_silver_window"
-		size = { width=1268 height=700 }
-		position = { x = 0 y = 20 }
-		iconType = {
-			name = "leader_frame"
-			spriteType = "GFX_bar_fight_frame"
-			position = { x = 1141 y = -2 }				
-		}
-		buttonType = {
-			name ="bar_pen_fight_silver_portrait"
-			spriteType = "GFX_bar_fight_silver"
-			frame = 1
-			position = { x=1143 y=0 }
-		}
-		iconType = {
-			name = "bar_silver_normal_attack"
-			spriteType = "GFX_bar_fight_normal_attack"
-			position = { x = 957 y = 80 }
-			pdx_tooltip = "bar_silver_normal_attack"
-		}
-		iconType = {
-			name = "bar_silver_lifesteal_attack"
-			spriteType = "GFX_bar_fight_lifesteal_attack"
-			position = { x = 1017 y = 80 }
-			pdx_tooltip = "bar_silver_lifesteal_attack"
-		}
-		iconType = {
-			name = "bar_silver_heal"
-			spriteType = "GFX_bar_fight_heal"
-			position = { x = 1077 y = 80 }
-			pdx_tooltip = "bar_silver_heal_new"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_10"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1097 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_20"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1067 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_30"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1037 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_40"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=1007 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_50"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=977 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_60"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=947 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_70"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=917 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_80"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=887 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_90"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=857 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_100"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=827 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_110"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=797 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_120"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=767 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_130"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=737 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_140"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=707 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_150"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=677 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_160"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=647 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_hp_170"
-			spriteType = "GFX_bar_hp_r"
-			frame = 1
-			position = { x=617 y=10 }
-			pdx_tooltip = "bar_pen_fight_silver_hp"
-		}
-
-
-		iconType = {
-			name ="bar_pen_fight_silver_in_1"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1097 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_2"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1067 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_3"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1037 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_4"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=1007 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_5"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=977 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_6"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=947 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_7"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=917 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_8"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=887 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_9"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=857 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-		iconType = {
-			name ="bar_pen_fight_silver_in_10"
-			spriteType = "GFX_bar_initiative"
-			frame = 1
-			position = { x=827 y=40 }
-			pdx_tooltip = "bar_pen_fight_silver_in"
-		}
-	}
-
-	containerwindowtype = {
-		name = "bar_viira_bar_climate_container"
-		position = { x = -10 y = 5 }
-		size = { width = 86 height = 60 }
-
-		buttonType = {
-			name = "bar_viira_bar_climate_button"
+			name = "bar_expedition_select_target"
+			spriteType = "GFX_viira_button_unlock_2"
 			position = { x = 0 y = 0 }
-			quadtexturesprite = "GFX_BAR_viira_spread_zone_button"
-		}
-	}
-	containerwindowtype = {
-		name = "bar_expedition_container"
-		position = { x = 0 y = 0 }
-		size = { width = 800 height = 600 }
-
-		buttonType = {
-			name = "bar_viira_bar_climate_button"
-			position = { x = 0 y = 0 }
-			quadtexturesprite = "GFX_BAR_viira_spread_zone_button"
+			buttonText = "[?bar_expedition_selected_tag.GetName]"
+			quadTextureSprite ="GFX_button_123x34"
+			buttonFont = "hoi_16mbs"
 		}
 	}
 }

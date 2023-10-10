@@ -149,7 +149,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_weapons = 0.15
+				magical_tech = 0.15
 			}
 			equipment_bonus = {
 				magical_equipment = {
@@ -240,7 +240,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_weapons = 0.15
+				magical_tech = 0.15
 			}
 			equipment_bonus = {
 				magical_equipment = {
@@ -497,6 +497,47 @@ ideas = {
 			allowed = {
 				original_tag = BAR
 			}
+			visible = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = BAR_advisors_killed
+					}
+				}
+			}
+			available = { 
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = BAR_advisors_killed
+					}
+				}
+			}
+			traits = { naval_manufacturer }
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					armor_value = 0.05
+					anti_air_attack = 0.07
+					surface_visibility = -0.05
+					naval_speed = 0.05
+					instant = yes
+				}
+			}
+		}
+		BAR_ded_shipyard = {
+			picture = BAR_undead_advisor
+
+			allowed = {
+				original_tag = BAR
+			}
+			visible = {
+				hidden_trigger = {
+					has_country_flag = BAR_undead_science
+				}
+			}
+			available = { 
+				hidden_trigger = {
+					has_country_flag = BAR_undead_science
+				}
+			}
 			traits = { naval_manufacturer }
 			equipment_bonus = {
 				ship_hull_cruiser = {
@@ -553,7 +594,7 @@ ideas = {
 			picture = BAR_money_party
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.2
 			}
 		}
 		BAR_ambrosius_research_negative = {
@@ -678,7 +719,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05	
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.04
 			}
 		}
 		BAR_temple_construct_z_l_g = {
@@ -686,7 +727,7 @@ ideas = {
 			modifier = {
 				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.10
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.04
 			}
 		}
 		BAR_temple_construct_d_f_p = {
@@ -715,7 +756,7 @@ ideas = {
 				global_building_slots_factor = 0.10 
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05	
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.04
 			}
 		}
 		BAR_temple_construct_d_l_g = {
@@ -724,7 +765,7 @@ ideas = {
 				production_speed_buildings_factor = 0.075
 				global_building_slots_factor = 0.10 
 				local_resources_factor = 0.10
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.04
 			}
 		}
 		BAR_clockwerk_soldiers = {
@@ -738,7 +779,7 @@ ideas = {
 			modifier = {	
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05	
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.06
 			}
 		}
 		
@@ -839,7 +880,7 @@ ideas = {
 		BAR_ambrosius_muns = {
 			picture = LEC_staggering_reserves
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		BAR_school_applied_science = {
@@ -898,7 +939,7 @@ ideas = {
 		BAR_asceticism = {
 			picture = severe_famine
 			modifier = {
-				consumer_goods_factor = -0.15
+				consumer_goods_factor = -0.3
 			}
 		}
 		BAR_desperate_defence_idea = {

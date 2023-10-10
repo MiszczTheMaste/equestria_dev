@@ -2426,6 +2426,29 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}    
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = bar_tank_organization
+			mio:bar_tank_organization = {
+				add_mio_size = 1
+				add_mio_funds = 200
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = bar_tank2_organization
+			mio:bar_tank2_organization = {
+				add_mio_size = 1
+				add_mio_funds = 200
+			}
+		}
+		else = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = bar_tank
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = bar_tank2
+		}
 	}
 }
 

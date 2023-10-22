@@ -24,6 +24,7 @@ add_namespace = bar_viira_murders
 add_namespace = bar_fallen_pentarchy
 add_namespace = bar_clear_journal
 add_namespace = bar_cheat
+add_namespace = bar_expedition
 
 country_event = {
 	id = bar_cheat.1
@@ -5843,5 +5844,52 @@ country_event = {
 			type = annex_everything
 			target = BAR
 		}
+	}
+}
+
+country_event = { #expedition fails due to peril
+	id = bar_expedition.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_expedition.2"
+	}
+	title = bar_expedition.2.t
+	desc = bar_expedition.2.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		clr_country_flag = bar_expedition_launched
+		name = bar_expedition.2.b
+	}
+}
+
+country_event = { #expedition comes back early
+	id = bar_expedition.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_expedition.3"
+	}
+	title = bar_expedition.3.t
+	desc = bar_expedition.3.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		bar_expedition_retrive_loot = yes
+		clr_country_flag = bar_expedition_launched
+		name = bar_expedition.3.b
+	}
+}
+
+country_event = { #expedition comes back as planned
+	id = bar_expedition.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_expedition.4"
+	}
+	title = bar_expedition.4.t
+	desc = bar_expedition.4.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		clr_country_flag = bar_expedition_launched
+		bar_expedition_retrive_loot = yes
+		name = bar_expedition.4.b
 	}
 }

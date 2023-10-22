@@ -285,3 +285,6 @@ BAR_resources_above_viira_100 = {
 		compare = greater_than_or_equals
 	}
 }
+BAR_expedition_can_be_launched = {
+
+}

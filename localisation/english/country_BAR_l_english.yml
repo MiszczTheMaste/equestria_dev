@@ -3654,3 +3654,21 @@ barrad_viira_amb.5.a:0 ""
 barrad_viira_amb.6.t:0 ""
 barrad_viira_amb.6.d:0 "Entity summons Ambrosius, Gąsienica and Viira and explain that to see the future it needs more reactors."
 barrad_viira_amb.6.a:0 ""
+
+
+
+
+ bar_expedition_title_text:0 "Prepare Expedition"
+ bar_expedition_members:0 "Members"
+ bar_expedition_additional_equipment_text:0 "Equipment Cost:"
+ bar_expedition_additional_equipment_current_level:0 "[?Root.bar_expedition_additional_equipment] guns"
+ bar_expedition_length_text:0 "Expedition length:"
+ bar_expedition_length_current_level:0 "[?Root.bar_expedition_length] week(s)"
+ bar_expedition_success_chance_title:0 "Success Chance:"
+ bar_expedition_success_chance_text:0 "[?Root.bar_expedition_success_chance]% + ([?Root.bar_expedition_success_chance_bonus]%)"
+ bar_expedition_cohesion_title:0 "Cohesion:"
+ bar_expedition_cohesion_text:0 "[?Root.bar_expedition_cohesion]%"
+ bar_expedition_peril_title:0 "Peril:"
+ bar_expedition_peril_text:0 "[?Root.bar_expedition_peril]%"
+ expedition_launch:0 "Launch Expedition"
+ bar_expedition_external_targets:0 "External Targets"

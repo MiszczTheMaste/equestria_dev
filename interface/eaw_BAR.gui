@@ -2408,13 +2408,20 @@ guiTypes = {
 		moveable = yes
 		clipping = no
 		Background = {
-			name = "bar_pentarchy_fight_window_bg"
-			spriteType = "GFX_bar_fight_background"
+			name = "bar_expedition_container_bg"
+			spriteType = "GFX_bar_expedition_background"
 		}
-
+		instantTextBoxType = {
+			name = "bar_expedition_title_text"
+			position = {x=10 y=10}
+			font = "hoi_36header"
+			maxWidth = 500
+			format = left
+			text = bar_expedition_title_text
+		}	
 		containerWindowType = {
 			name = "bar_expedition_members_select"
-			position = { x = 20 y = 50 }
+			position = { x = 20 y = 75 }
 			instantTextBoxType = {
 				name = "bar_expedition_members_text"
 				position = {x=0 y=0}
@@ -2426,225 +2433,238 @@ guiTypes = {
 			
 			iconType = {
 				name = "bar_expedition_members_captain_gasienica_frame"
-				spriteType = "GFX_bar_fight_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
 				position = { x = 0 y = 50 }		
 			}
 			buttonType = {
 				name = "bar_expedition_members_captain_gasienica"
-				spriteType = "GFX_bar_silver_star_portrait"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
+				spriteType = "GFX_bar_gasienica_portrait"
 				position = { x=2 y=52 }
 			}
 			iconType = {
 				name = "bar_expedition_members_silver_star_frame"
-				spriteType = "GFX_bar_fight_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
 				position = { x = 168 y = 50 }		
 			}
 			buttonType = {
 				name = "bar_expedition_members_silver_star"
 				spriteType = "GFX_bar_silver_star_portrait"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
 				position = { x=170 y=52 }
 			}
 			iconType = {
 				name = "bar_expedition_members_leopold_frame"
-				spriteType = "GFX_bar_fight_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
 				position = { x = 338 y = 50 }		
 			}
 			buttonType = {
 				name = "bar_expedition_members_leopold"
 				spriteType = "GFX_bar_leopold_portrait"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
 				position = { x=340 y=52 }
 			}
 			iconType = {
 				name = "bar_expedition_members_asinti_frame"
-				spriteType = "GFX_bar_fight_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
 				position = { x = 508 y = 50 }		
 			}
 			buttonType = {
 				name = "bar_expedition_members_asinti"
 				spriteType = "GFX_bar_asinti_portrait"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
 				position = { x=510 y=52 }
 			}
 			iconType = {
 				name = "bar_expedition_members_viira_frame"
-				spriteType = "GFX_bar_fight_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
 				position = { x = 678 y = 50 }		
 			}
 			buttonType = {
 				name = "bar_expedition_members_viira"
 				spriteType = "GFX_bar_viira_portrait"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
 				position = { x=680 y=52 }
 			}
 		}
 		containerWindowType = {
 			name = "bar_expedition_additional_equipment_container"
-			position = { x = 20 y = 50 }
-			buttonType = {
-				name ="bar_expedition_additional_equipment_increase"
-				spriteType = "GFX_bar_initiative"
-				position = { x=857 y=40 }
-			}
-			buttonType = {
-				name ="bar_expedition_additional_equipment_decrease"
-				spriteType = "GFX_bar_initiative"
-				position = { x=857 y=40 }
-			}
-			iconType = {
-				name = "bar_expedition_additional_equipment_icon"
-				spriteType = "GFX_bar_fight_frame"
-				position = { x = 678 y = 50 }		
-			}	
+			position = {x=600 y=400}
+
 			instantTextBoxType = {
 				name = "bar_expedition_additional_equipment_text"
 				position = {x=0 y=0}
-				font = "hoi_36header"
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
 				text = bar_expedition_additional_equipment_text
-			}	
+			}			
 			instantTextBoxType = {
 				name = "bar_expedition_additional_equipment_current_level"
-				position = {x=0 y=0}
-				font = "hoi_16mbs"
+				position = {x=0 y=30}
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
 				text = bar_expedition_additional_equipment_current_level
-			}	
+			}
+			buttonType = {
+				name = "bar_expedition_additional_equipment_increase"
+				position = { x = 0 y = 70 }
+				buttonText = increase
+				quadTextureSprite ="GFX_button_94x31"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_expedition_additional_equipment_decrease"
+				position = { x = 100 y = 70 }
+				buttonText = decrease
+				quadTextureSprite ="GFX_button_94x31"
+				buttonFont = "hoi_16mbs"
+			}
 		}
 		containerWindowType = {
 			name = "bar_expedition_length_container"
-			position = { x = 20 y = 50 }
-			buttonType = {
-				name ="bar_expedition_length_increase"
-				spriteType = "GFX_bar_initiative"
-				position = { x=857 y=40 }
-			}
-			buttonType = {
-				name ="bar_expedition_length_decrease"
-				spriteType = "GFX_bar_initiative"
-				position = { x=857 y=40 }
-			}
-			iconType = {
-				name ="bar_expedition_length_icon"
-				spriteType = "GFX_bar_initiative"
-				position = { x=857 y=40 }
-			}
+			position = { x = 600 y = 550 }
+			
 			instantTextBoxType = {
 				name = "bar_expedition_length_text"
 				position = {x=0 y=0}
-				font = "hoi_36header"
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
 				text = bar_expedition_length_text
 			}	
 			instantTextBoxType = {
 				name = "bar_expedition_length_current_level"
-				position = {x=0 y=0}
-				font = "hoi_16mbs"
+				position = {x=0 y=30}
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
 				text = bar_expedition_length_current_level
 			}	
+			buttonType = {
+				name = "bar_expedition_length_increase"
+				position = { x = 0 y = 70 }
+				buttonText = increase
+				quadTextureSprite ="GFX_button_94x31"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_expedition_length_decrease"
+				position = { x = 100 y = 70 }
+				buttonText = decrease
+				quadTextureSprite ="GFX_button_94x31"
+				buttonFont = "hoi_16mbs"
+			}
 		}
 		containerWindowType = {
 			name = "bar_expedition_controls_targets_container"
 			Orientation = upper_left
-			size = {width=400 height=200}
-			position = {x=600 y=300}
+			size = {width=270 height=300}
+			position = {x=20 y=400}
 			verticalScrollbar = "right_vertical_slider_intel"
 			scroll_wheel_factor = 40
 			smooth_scrolling = yes
-					
 			
+			instantTextBoxType = {
+				name = "bar_expedition_controls_targets_list_title"
+				position = {x=0 y=0}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_external_targets
+			}	
 			gridBoxType = {
 				name = "bar_expedition_controls_targets_list"
-				position = { x = 0 y = 0}
-				size = { width = 100%% height = 100%% }
+				position = { x = 0 y = 30}
+				size = { width = 221 height = 300 }
 				Orientation = upper_left
-				slotsize = {width=400 height=50 }
+				slotsize = {width=221 height=36 }
 				format = "UPPER_LEFT"
 				max_slots_horizontal = 1
 			}
 		}
 		containerWindowType = {
-			name = "bar_expedition_controls_container"
-			position = { x = 20 y = 50 }
+			name = "bar_expedition_chances_container"
+			position = { x = 950 y = 125 }
 			instantTextBoxType = {
 				name = "bar_expedition_success_chance_title"
 				position = {x=0 y=0}
-				font = "hoi_36header"
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
 				text = bar_expedition_success_chance_title
 			}	
-			iconType = {
-				name ="bar_expedition_success_chance_icon"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=857 y=40 }
-			}		
 			instantTextBoxType = {
-				name = "bar_expedition_coherence_title"
-				position = {x=0 y=0}
-				font = "hoi_36header"
+				name = "bar_expedition_success_chance_text"
+				position = {x=0 y=30}
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
-				text = bar_expedition_coherence_title
+				text = bar_expedition_success_chance_text
+			}			
+			instantTextBoxType = {
+				name = "bar_expedition_cohesion_title"
+				position = {x=0 y=100}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_cohesion_title
+			}			
+			instantTextBoxType = {
+				name = "bar_expedition_cohesion_text"
+				position = {x=0 y=130}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_cohesion_text
 			}	
-			iconType = {
-				name ="bar_expedition_coherence_icon"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=857 y=40 }
-			}
 			instantTextBoxType = {
 				name = "bar_expedition_peril_title"
-				position = {x=0 y=0}
-				font = "hoi_36header"
+				position = {x=0 y=200}
+				font = "hoi_24header"
 				maxWidth = 500
 				format = left
 				text = bar_expedition_peril_title
-			}	
-			iconType = {
-				name ="bar_expedition_peril_icon"
-				spriteType = "GFX_bar_initiative"
-				frame = 1
-				position = { x=857 y=40 }
+			}		
+			instantTextBoxType = {
+				name = "bar_expedition_peril_text"
+				position = {x=0 y=230}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_peril_text
 			}
-			
-			buttonType = {
-				name = "bar_expedition_ready"
-				spriteType = "GFX_viira_button_unlock_2"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
-				position = { x=127 y=363 }
-			}
-			buttonType = {
-				name = "bar_expedition_cancel"
-				spriteType = "GFX_viira_button_unlock_2"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
-				position = { x=127 y=363 }
-			}	
+		}
+		containerWindowType = {
+			name = "bar_expedition_controls_container"
+			position = { x = 1050 y = 600 }
 			buttonType = {
 				name = "bar_expedition_launch"
-				spriteType = "GFX_viira_button_unlock_2"
-				pdx_tooltip = "bar_viira_button_unlock_2_tooltip"
-				position = { x=127 y=363 }
+				position = { x = 0 y = 50 }
+				buttonText = expedition_launch
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
 			}
+		}
+		buttonType = {
+			name = "bar_expedition_exit"
+			position = { x = 1334 y = 0 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
 		}
 	}
 	containerWindowType = {
 		name = "bar_expedition_targets"
 		buttonType = {
 			name = "bar_expedition_select_target"
-			spriteType = "GFX_viira_button_unlock_2"
 			position = { x = 0 y = 0 }
 			buttonText = "[?bar_expedition_selected_tag.GetName]"
-			quadTextureSprite ="GFX_button_123x34"
+			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "hoi_16mbs"
 		}
-	}
+	}	
 }

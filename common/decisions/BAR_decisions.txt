@@ -11873,3 +11873,25 @@ BAR_herald_cat = {
 		}
 	}
 }
+BAR_expeditions = {
+	BAR_expedition_progresses = {
+		visible = {
+			has_country_flag = bar_expeditions_enabled
+		}
+		allowed = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		icon = pawn
+		selectable_mission = yes
+		days_mission_timeout = 7
+		is_good = yes
+		days_remove = 0
+		fixed_random_seed = no
+		timeout_effect = {
+			bar_expedition_week_end = yes
+		}
+	}
+}

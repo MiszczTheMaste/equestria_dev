@@ -1,4 +1,11 @@
 on_actions = {
+	on_startup = {
+		effect = {
+			BAR = {
+				bar_expedition_init = yes
+			}
+		}
+	}
 	on_monthly_BAR = {
 		effect = {
 			log = "[GetDateText]: ROOT: [Root.GetName] on_monthly_BAR"

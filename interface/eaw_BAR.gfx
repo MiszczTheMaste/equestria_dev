@@ -2703,6 +2703,12 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
+		name = "GFX_bar_gasienica_portrait"
+		texturefile = "gfx/leaders/BAR/gasienica.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
 		name = "GFX_bar_fight_silver"
 		texturefile = "gfx/interface/bar/fight/silver_fight.dds"
 		noOfFrames = 2
@@ -2721,6 +2727,12 @@ spriteTypes = {
 		name = "GFX_bar_fight_viira"
 		texturefile = "gfx/interface/bar/fight/viira_fight.dds"
 		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_bar_expedition_background"
+		texturefile = "gfx/interface/bar/expedition/expedition_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_bar_fight_background"
@@ -2771,6 +2783,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_bar_fight_frame"
 		texturefile = "gfx/interface/bar/fight/frame.dds"
+	}
+	spriteType = {
+		name = "GFX_bar_expedition_member_frame"
+		texturefile = "gfx/interface/bar/expedition/expedition_member_frame.dds"
+		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_unit_bar_leopold_clockwerk_icon_medium"

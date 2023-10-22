@@ -1056,144 +1056,143 @@ scripted_gui = {
 	###############################################
 	###############################################
 
-	# @var bar_expedition_members array<> possible values:
-	# 1 => gąsienica
-	# 2 => silver star
-	# 3 => leopold
-	# 4 => asinti
-	# 5 => viira
+	# @var bar_expedition_members array{
+	# 	0 => gąsienica
+	# 	1 => silver star
+	# 	2 => leopold
+	# 	3 => asinti
+	# 	4 => viira
+	# } 
+	# each field contains either 1 (character not selected) or 2 (character selected) 
 	#
-	# @var bar_expedition_equipment_level int in range 1-5
+	# @var bar_expedition_equipment_level int in range 100-1000
+	# represents infrantry equipment needed
 	#
 	# @var bar_expedition_length int in range 1-10
-	# each number represents number of weeks the expedition takes
+	# represents number of weeks the expedition takes
+	#
+	# @var bar_expedition_success_chance
+	# @var bar_expedition_success_chance_bonus
+	# @var bar_expedition_peril
+	# @var bar_expedition_cohesion
 	bar_expedition_container = {
 		window_name = "bar_expedition_container"
 		context_type = player_context
+		dirty = bar_expedition_show
 		visible = {
 			tag = BAR
+			has_variable = bar_expedition_show
+		}
+		properties = {
+			bar_expedition_members_captain_gasienica_frame = { frame = bar_expedition_members^0 }
+			bar_expedition_members_silver_star_frame = { frame = bar_expedition_members^1 }
+			bar_expedition_members_leopold_frame = { frame = bar_expedition_members^2 }
+			bar_expedition_members_asinti_frame = { frame = bar_expedition_members^3 }
+			bar_expedition_members_viira_frame = { frame = bar_expedition_members^4 }
+		}
+		triggers = {
+			bar_expedition_launch_enabled = {
+				NOT = {
+					has_country_flag = bar_expedition_launched
+				}
+			}
 		}
 		effects = {
 			bar_expedition_members_captain_gasienica_click = {
 				if = {
 					limit = {
-						is_in_array = { 
-							array = bar_expedition_members
-							value = 1 
+						check_variable = {
+							bar_expedition_members^0 = 1
 						}
 					}
-					remove_from_array = {
-						array = bar_expedition_members
-						value = 1 
+					set_variable = {
+						bar_expedition_members^0 = 2
 					}
+					bar_expedition_adding_members_effects = yes
 				} else = {
-					add_to_array = {
-						array = bar_expedition_members
-						value = 1 
+					set_variable = {
+						bar_expedition_members^0 = 1
 					}
+					bar_expedition_removing_members_effects = yes
 				}
+				bar_recalculate_expedition = yes
 			}			
 			bar_expedition_members_silver_star_click = {
 				if = {
 					limit = {
-						is_in_array = { 
-							array = bar_expedition_members
-							value = 2 
+						check_variable = {
+							bar_expedition_members^1 = 1
 						}
 					}
-					remove_from_array = {
-						array = bar_expedition_members
-						value = 2 
+					set_variable = {
+						bar_expedition_members^1 = 2
 					}
+					bar_expedition_adding_members_effects = yes
 				} else = {
-					add_to_array = {
-						array = bar_expedition_members
-						value = 2
+					set_variable = {
+						bar_expedition_members^1 = 1
 					}
+					bar_expedition_removing_members_effects = yes
 				}
+				bar_recalculate_expedition = yes
 			}		
 			bar_expedition_members_leopold_click = {
 				if = {
 					limit = {
-						is_in_array = { 
-							array = bar_expedition_members
-							value = 3 
+						check_variable = {
+							bar_expedition_members^2 = 1
 						}
 					}
-					remove_from_array = {
-						array = bar_expedition_members
-						value = 3
+					set_variable = {
+						bar_expedition_members^2 = 2
 					}
+					bar_expedition_adding_members_effects = yes
 				} else = {
-					add_to_array = {
-						array = bar_expedition_members
-						value = 3 
+					set_variable = {
+						bar_expedition_members^2 = 1
 					}
+					bar_expedition_removing_members_effects = yes
 				}
+				bar_recalculate_expedition = yes
 			}		
 			bar_expedition_members_asinti_click = {
 				if = {
 					limit = {
-						is_in_array = { 
-							array = bar_expedition_members
-							value = 4
+						check_variable = {
+							bar_expedition_members^3 = 1
 						}
 					}
-					remove_from_array = {
-						array = bar_expedition_members
-						value = 4
+					set_variable = {
+						bar_expedition_members^3 = 2
 					}
+					bar_expedition_adding_members_effects = yes
 				} else = {
-					add_to_array = {
-						array = bar_expedition_members
-						value = 4 
+					set_variable = {
+						bar_expedition_members^3 = 1
 					}
+					bar_expedition_removing_members_effects = yes
 				}
+				bar_recalculate_expedition = yes
 			}		
 			bar_expedition_members_viira_click = {
 				if = {
 					limit = {
-						is_in_array = { 
-							array = bar_expedition_members
-							value = 5 
+						check_variable = {
+							bar_expedition_members^4 = 1
 						}
 					}
-					remove_from_array = {
-						array = bar_expedition_members
-						value = 5
+					set_variable = {
+						bar_expedition_members^4 = 2
 					}
+					bar_expedition_adding_members_effects = yes
 				} else = {
-					add_to_array = {
-						array = bar_expedition_members
-						value = 5 
+					set_variable = {
+						bar_expedition_members^4 = 1
 					}
+					bar_expedition_removing_members_effects = yes
 				}
+				bar_recalculate_expedition = yes
 			}	
-			bar_expedition_additional_equipment_lvl_1_click = {
-				set_variable = {
-					bar_expedition_equipment_level = 1
-				} 
-			}
-			bar_expedition_additional_equipment_lvl_2_click = {
-				set_variable = {
-					bar_expedition_equipment_level = 2
-				} 
-			}
-			bar_expedition_additional_equipment_lvl_3_click = {
-				set_variable = {
-					bar_expedition_equipment_level = 3
-				} 
-			}
-			bar_expedition_additional_equipment_lvl_4_click = {
-				set_variable = {
-					bar_expedition_equipment_level = 4
-				} 
-			}
-			bar_expedition_additional_equipment_lvl_5_click = {
-				set_variable = {
-					bar_expedition_equipment_level = 5
-				} 
-			}
 			bar_expedition_length_increase_click = {
 				if = {
 					limit = {
@@ -1205,6 +1204,7 @@ scripted_gui = {
 						bar_expedition_length = 1
 					}
 				}
+				bar_recalculate_expedition = yes
 			}
 			bar_expedition_length_decrease_click = {
 				if = {
@@ -1217,18 +1217,42 @@ scripted_gui = {
 						bar_expedition_length = 1
 					}
 				}
+				bar_recalculate_expedition = yes
+			}	
+			bar_expedition_additional_equipment_increase_click = {
+				bar_expedition_additional_equipment_increase = yes
 			}
-			bar_expedition_ready_click = {
-				bar_expedition_calculate = yes
+			bar_expedition_additional_equipment_decrease_click = {
+				bar_expedition_additional_equipment_decrease = yes
 			}
-			bar_expedition_cancel_click = {
-				bar_expedition_canecel = yes
+			bar_expedition_exit_click = {
+				clear_variable = bar_expedition_show
 			}
 			bar_expedition_launch_click = {
-				bar_expedition_launch = yes
+				activate_mission = BAR_expedition_progresses
+				set_variable = { bar_expedition_week = 0 }
+				set_country_flag = bar_expedition_launched
+				add_to_variable = {
+					bar_expedition_success_chance = bar_expedition_success_chance_bonus
+				}
 			}
 			bar_expedition_select_target_click = {
-				set_variable = { bar_expedition_target_tag = bar_expedition_selected_tag }
+				set_variable = { bar_expedition_target = bar_expedition_selected_tag }
+				if = {
+					limit = {
+						bar_expedition_target = {
+							has_stability < 0.66
+						}
+					}
+					set_variable = {
+						bar_expedition_success_chance_bonus = 10
+					}
+				} else = {
+					set_variable = {
+						bar_expedition_success_chance_bonus = 0
+					}
+				}
+				bar_recalculate_expedition = yes
 			}
 		}
 		dynamic_lists = {

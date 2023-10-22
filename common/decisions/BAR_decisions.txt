@@ -11874,6 +11874,16 @@ BAR_herald_cat = {
 	}
 }
 BAR_expeditions = {
+	BAR_expedition_dummy = {
+		visible = {
+			has_country_flag = bar_expeditions_enabled
+		}
+
+		available = {
+			always = no
+		}
+		icon = pawn
+	}
 	BAR_expedition_progresses = {
 		visible = {
 			has_country_flag = bar_expeditions_enabled

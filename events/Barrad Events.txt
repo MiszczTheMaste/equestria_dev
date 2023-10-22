@@ -2417,7 +2417,6 @@ country_event = {
 	option = {
 		name = barrad_third.1.a
 		hidden_effect = {
-			set_country_flag = BAR_ambrosius_wants_a_car_id
 			if = {
 				limit = {
 					is_ai = yes
@@ -2431,24 +2430,21 @@ country_event = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"
 			}    
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = bar_tank_organization
 			mio:bar_tank_organization = {
 				add_mio_size = 1
-				add_mio_funds = 200
+				add_mio_funds = 1000
 			}
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = bar_tank2_organization
 			mio:bar_tank2_organization = {
 				add_mio_size = 1
-				add_mio_funds = 200
+				add_mio_funds = 1000
+			}	
+			mio:BAR_truck_manufacturer = {
+				add_mio_size = 1
+				add_mio_funds = 1000
 			}
 		}
 		else = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = bar_tank
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = bar_tank2
+			add_ideas = BAR_vechicle_reliability
 		}
 	}
 }
@@ -5858,6 +5854,9 @@ country_event = { #expedition fails due to peril
 	is_triggered_only = yes
 	option = {
 		clr_country_flag = bar_expedition_launched
+		subtract_from_variable = {
+			bar_expedition_success_chance = bar_expedition_success_chance_bonus
+		} 
 		name = bar_expedition.2.b
 	}
 }
@@ -5874,6 +5873,9 @@ country_event = { #expedition comes back early
 	option = {
 		bar_expedition_retrive_loot = yes
 		clr_country_flag = bar_expedition_launched
+		subtract_from_variable = {
+			bar_expedition_success_chance = bar_expedition_success_chance_bonus
+		} 
 		name = bar_expedition.3.b
 	}
 }
@@ -5890,6 +5892,9 @@ country_event = { #expedition comes back as planned
 	option = {
 		clr_country_flag = bar_expedition_launched
 		bar_expedition_retrive_loot = yes
+		subtract_from_variable = {
+			bar_expedition_success_chance = bar_expedition_success_chance_bonus
+		} 
 		name = bar_expedition.4.b
 	}
 }

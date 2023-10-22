@@ -1302,6 +1302,9 @@ barrad_kill_leopold = {
 			ideology = fascism
 			popularity = -0.1
 		}
+		set_variable = {
+			bar_expedition_members^2 = 1
+		}
 		BAR_pentarchy_is_dead = yes
 	}
 }
@@ -1349,6 +1352,9 @@ barrad_kill_asinti = {
 			ideology = fascism
 			popularity = -0.1
 		}
+		set_variable = {
+			bar_expedition_members^3 = 1
+		}
 		BAR_pentarchy_is_dead = yes
 	}
 }
@@ -1384,6 +1390,9 @@ barrad_kill_silver = {
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.1
+		}
+		set_variable = {
+			bar_expedition_members^1 = 1
 		}
 		BAR_pentarchy_is_dead = yes
 	}
@@ -1431,6 +1440,9 @@ barrad_kill_viira = {
 		add_popularity = {
 			ideology = fascism
 			popularity = -0.1
+		}
+		set_variable = {
+			bar_expedition_members^4 = 1
 		}
 		BAR_pentarchy_is_dead = yes
 	}

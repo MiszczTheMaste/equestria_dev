@@ -286,5 +286,30 @@ BAR_resources_above_viira_100 = {
 	}
 }
 BAR_expedition_can_be_launched = {
-
+	AND = {
+		OR = {
+			check_variable = {
+				bar_expedition_members^0 = 2
+			}
+			check_variable = {
+				bar_expedition_members^1 = 2
+			}
+			check_variable = {
+				bar_expedition_members^2 = 2
+			}
+			check_variable = {
+				bar_expedition_members^3 = 2
+			}
+			check_variable = {
+				bar_expedition_members^4 = 2
+			}
+		}
+		has_variable = bar_expedition_target
+		has_equipment = {
+			infantry_equipment > bar_expedition_equipment_level
+		}
+		NOT = {
+			has_country_flag = bar_expedition_launched
+		}
+	}
 }

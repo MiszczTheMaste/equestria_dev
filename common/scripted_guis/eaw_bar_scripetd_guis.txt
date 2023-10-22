@@ -1056,6 +1056,30 @@ scripted_gui = {
 	###############################################
 	###############################################
 
+	bar_expedition_decisions_gui = {
+		window_name = "bar_expedition_decisions_gui_container"
+		context_type = decision_category
+		dirty = BAR_viira_godhood
+		visible = {
+			has_variable = BAR_viira_godhood
+		}	
+		effects = {
+			bar_expedition_open_window_button_click = {
+				if = {
+					limit = {
+						has_variable = bar_expedition_show
+					}
+					clear_variable = bar_expedition_show
+				} else = {
+					set_variable = {
+						bar_expedition_show = 1
+					}
+				}
+			}
+		}
+	}
+
+
 	# @var bar_expedition_members array{
 	# 	0 => gąsienica
 	# 	1 => silver star
@@ -1070,6 +1094,9 @@ scripted_gui = {
 	#
 	# @var bar_expedition_length int in range 1-10
 	# represents number of weeks the expedition takes
+	#
+	# @var bar_expedition_target 
+	# specifies which country has been selected as a expedition target
 	#
 	# @var bar_expedition_success_chance
 	# @var bar_expedition_success_chance_bonus
@@ -1091,10 +1118,20 @@ scripted_gui = {
 			bar_expedition_members_viira_frame = { frame = bar_expedition_members^4 }
 		}
 		triggers = {
-			bar_expedition_launch_enabled = {
-				NOT = {
-					has_country_flag = bar_expedition_launched
-				}
+			bar_expedition_launch_click_enabled = {
+				BAR_expedition_can_be_launched = yes
+			}
+			bar_expedition_members_silver_star_click_enabled = {
+				has_country_flag = barrad_silver_star_alive
+			}
+			bar_expedition_members_leopold_click_enabled = {
+				has_country_flag = barrad_leopold_alive
+			}
+			bar_expedition_members_asinti_click_enabled = {
+				has_country_flag = barrad_asinti_alive
+			}
+			bar_expedition_members_viira_click_enabled = {
+				has_country_flag = barrad_viira_alive
 			}
 		}
 		effects = {
@@ -1229,18 +1266,23 @@ scripted_gui = {
 				clear_variable = bar_expedition_show
 			}
 			bar_expedition_launch_click = {
-				activate_mission = BAR_expedition_progresses
-				set_variable = { bar_expedition_week = 0 }
-				set_country_flag = bar_expedition_launched
-				add_to_variable = {
-					bar_expedition_success_chance = bar_expedition_success_chance_bonus
+				if = {
+					limit = {
+						BAR_expedition_can_be_launched = yes
+					}
+					activate_mission = BAR_expedition_progresses
+					set_variable = { bar_expedition_week = 0 }
+					set_country_flag = bar_expedition_launched
+					add_to_variable = {
+						bar_expedition_success_chance = bar_expedition_success_chance_bonus
+					}
 				}
 			}
 			bar_expedition_select_target_click = {
 				set_variable = { bar_expedition_target = bar_expedition_selected_tag }
 				if = {
 					limit = {
-						bar_expedition_target = {
+						var:bar_expedition_target = {
 							has_stability < 0.66
 						}
 					}
@@ -1258,6 +1300,7 @@ scripted_gui = {
 		dynamic_lists = {
 			bar_expedition_controls_targets_list = {
 				array = neighbors
+				change_scope = no
 				entry_container = "bar_expedition_targets"
 				value = bar_expedition_selected_tag
 			}

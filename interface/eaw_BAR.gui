@@ -2662,9 +2662,31 @@ guiTypes = {
 		buttonType = {
 			name = "bar_expedition_select_target"
 			position = { x = 0 y = 0 }
-			buttonText = "[?bar_expedition_selected_tag.GetName]"
+			buttonText = "[?bar_expedition_selected_tag.GetName] [?bar_expedition_selected_tag.GetFlag]"
 			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "hoi_16mbs"
 		}
 	}	
+	containerWindowType = {
+		name = "bar_expedition_decisions_gui_container"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 80 }
+		
+		instantTextBoxType = {
+			name = "bar_expedition_decision_text"
+			position = {x=10 y=2}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 450
+			maxHeight = 50
+			text = bar_expedition_decision_text
+		}
+		buttonType = {
+			name = "bar_expedition_open_window_button"
+			position = { x = 10 y = 50 }
+			buttonText = "Prepare Expedition"
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "hoi_16mbs"
+		}
+	}
 }

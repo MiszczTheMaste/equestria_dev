@@ -19,6 +19,7 @@ BAR_expeditions = {
 	priority = {
 		base = 100
 	}
+	visible_when_empty = yes
 }
 BAR_leopold_empire_decisions = {
 	icon = knife_blood
@@ -262,4 +263,16 @@ BAR_herald_cat = {
 	priority = {
 		base = 110
 	}
+}
+bar_sane_ambrosius_balance_category = {
+	priority = 50
+	icon = GFX_decision_scroll
+
+	allowed = { 
+		original_tag = BAR 
+	}
+	visible = {
+		has_country_flag = bar_sane_ambrosius_balance_enabled
+	}
+	visible_when_empty = yes
 }

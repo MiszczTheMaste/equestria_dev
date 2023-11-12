@@ -5761,300 +5761,6 @@ BAR_ambrosius_diplomacy = {
 			factor = 0
 		}
 	}
-	BAR_ambrosius_proclaim_grand_county = {
-		icon = GFX_decision_statue
-		fire_only_once = yes
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				NOT = {
-					has_cosmetic_tag = BAR_WIT
-				}
-				has_country_flag = BAR_ambrosius_diplomacy_unlocked
-			}
-		}
-		available = {
-			any_controlled_state = {
-				OR = {
-					is_core_of = ZES
-					is_core_of = GRU
-				}
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_bring_order_to_south"
-			}
-			set_cosmetic_tag = BAR_grand_county
-			add_ideas = BAR_grand_county
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_ambrosius_keep_promise_for_griffons = {
-		icon = griffon
-		fire_only_once = yes
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = BAR_ambrosius_diplomacy_unlocked
-				has_country_flag = BAR_homeland_promise_made
-			}
-		}
-		available = {
-			OR = {
-				NOT = {
-					GRU = {
-						has_government = communism
-					}
-				}
-				AND = {
-					NOT = {
-						country_exists = GRU
-						630 = {
-							is_owned_and_controlled_by = BAR
-						}
-						623 = {
-							is_owned_and_controlled_by = BAR
-						}
-					}
-				}
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_keep_promise_for_griffons"
-			}
-			if = {
-				limit = {
-					country_exists = GRU
-				}
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = GRU
-				}
-			}
-			else = {
-				random_country = {
-					limit = {
-						owns_state = 630
-					}
-					BAR = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-				random_country = {
-					limit = {
-						owns_state = 623
-						BAR = {
-							NOT = {
-								has_wargoal_against = PREV
-							}
-						}
-					}
-					BAR = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_ambrosius_keep_promise_for_griffons_integration = {
-		icon = griffon
-		fire_only_once = yes
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_cosmetic_tag = BAR_grand_county
-			hidden_trigger = {
-				has_country_flag = BAR_ambrosius_diplomacy_unlocked
-				has_country_flag = BAR_homeland_promise_made
-			}
-		}
-		cost = 50
-		available = {
-			OR = {
-				559 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				599 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				600 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				512 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				514 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				630 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				594 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				595 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				623 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_keep_promise_for_griffons_integration"
-			}
-			GRU = {
-				add_to_ROOT_potential_original_cores = yes
-			}
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						is_core_of = GRU
-					}
-					add_compliance = 20
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_ambrosius_steppe_integration = {
-		icon = griffon
-		fire_only_once = yes
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_cosmetic_tag = BAR_grand_county
-			hidden_trigger = {
-				has_country_flag = BAR_ambrosius_diplomacy_unlocked
-				has_country_flag = BAR_homeland_promise_made
-			}
-		}
-		cost = 100
-		available = {
-			OR = {
-				611 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				609 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				596 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				597 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				598 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				631 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				612 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				613 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				592 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-			any_owned_state = {
-				is_core_of = GRU
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_keep_promise_for_griffons_integration"
-			}
-			GRY = {
-				add_to_ROOT_potential_original_cores = yes
-			}
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						is_core_of = GRY
-					}
-					add_compliance = 5
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_ambrosius_bring_order_to_south = {
-		icon = GFX_decision_megaphone
-		fire_only_once = yes
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_cosmetic_tag = BAR_grand_county
-			hidden_trigger = {
-				has_country_flag = BAR_ambrosius_diplomacy_unlocked
-			}
-		}
-		cost = 100
-		available = {
-			OR = {
-				558 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				578 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				413 = {
-					is_owned_and_controlled_by = ROOT
-				}
-				680 = {
-					is_owned_and_controlled_by = ROOT
-				}
-			}
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_bring_order_to_south"
-			}
-			ZES = {
-				add_to_ROOT_potential_original_cores = yes
-			}
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						is_core_of = ZES
-					}
-					add_compliance = 10
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	BAR_ambrosius_high_kingdom_claims = {
 		icon = GFX_decision_megaphone
 		fire_only_once = yes
@@ -6126,34 +5832,6 @@ BAR_ambrosius_diplomacy = {
 			create_wargoal = {
 				type = annex_everything
 				target = WIT
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_ambrosius_secure_steppe = {
-		icon = GFX_decision_rifles
-		fire_only_once = yes
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = BAR_ambrosius_diplomacy_unlocked
-			}
-		}
-		available = {
-			country_exists = GRY
-			owns_state = 617
-		}
-		complete_effect = {
-			hidden_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision BAR_ambrosius_strike_wittenland"
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = GRY
 			}
 		}
 		ai_will_do = {
@@ -11874,16 +11552,6 @@ BAR_herald_cat = {
 	}
 }
 BAR_expeditions = {
-	BAR_expedition_dummy = {
-		visible = {
-			has_country_flag = bar_expeditions_enabled
-		}
-
-		available = {
-			always = no
-		}
-		icon = pawn
-	}
 	BAR_expedition_progresses = {
 		visible = {
 			has_country_flag = bar_expeditions_enabled
@@ -11902,6 +11570,26 @@ BAR_expeditions = {
 		fixed_random_seed = no
 		timeout_effect = {
 			bar_expedition_week_end = yes
+		}
+	}
+}
+bar_sane_ambrosius_balance_category = {
+	bar_sane_ambrosius_balance_cult_advisors = {
+		icon = pawn
+		allowed = { 
+			original_tag = BAR 
+		} 
+		cost = 50
+		days_remove = 60
+		modifier = {
+			political_power_factor = 0.25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_cult_advisors"
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.05
+			}
 		}
 	}
 }

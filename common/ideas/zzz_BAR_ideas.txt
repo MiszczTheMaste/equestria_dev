@@ -880,7 +880,7 @@ ideas = {
 		BAR_school_applied_science = {
 			picture = GRW_opened_up_schools2
 			modifier = {
-				research_speed_factor = -0.03
+				research_speed_factor = -0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 			}
@@ -960,6 +960,12 @@ ideas = {
 			picture = chi_wargaming_division
 			modifier = {
 				compliance_gain = 0.25
+			}
+		}
+		BAR_new_military_administrative_division = {
+			picture = chi_wargaming_division
+			modifier = {
+				conscription_factor = 0.1
 			}
 		}
 

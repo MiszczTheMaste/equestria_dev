@@ -2468,7 +2468,6 @@ country_event = {
 }
 
 country_event = {
-	#Cpt. Nowak dissmiss pentarchy
 	id = barrad_third.22
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_third.22"
@@ -5444,6 +5443,19 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.1.a
+		set_power_balance = {
+			id = bar_sane_ambrosius_balance
+		}
+		set_country_flag = bar_sane_ambrosius_balance_enabled
+		BAR_add_gasienica_as_commander = yes
+		BAR_captain_gasienica = {
+			set_character_name = "BAR_marshal_gasienica"
+			promote_leader = yes
+			add_attack = 1
+			add_defense = 1
+			add_logistics = 1
+			add_planning = 1
+		}
 	}
 }
 
@@ -5515,8 +5527,6 @@ country_event = {
 	option = {
 		name = bar_sane_ambrosius.6.a
 		remove_ideas = BAR_pentarchy_enemy
-		add_ideas = poverty1
-		add_ideas = lack_of_scientists1
 		hidden_effect = {
 			set_country_flag = BAR_ambrosius_diplomacy_unlocked
 			remove_ideas = BAR_no_volunteers
@@ -5589,6 +5599,118 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = bar_sane_ambrosius.1001
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1001"
+	}
+	title = bar_sane_ambrosius.1001.t
+	desc = bar_sane_ambrosius.1001.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1001.a
+		
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = -0.1
+		}
+	}
+	option = {
+		name = bar_sane_ambrosius.1001.b
+		
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = 0.1
+		}
+	}
+}
+
+country_event = {
+	id = bar_sane_ambrosius.1002
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1002"
+	}
+	title = bar_sane_ambrosius.1002.t
+	desc = bar_sane_ambrosius.1002.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1002.a
+		
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = -0.1
+		}
+	}
+	option = {
+		name = bar_sane_ambrosius.1002.b
+		
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = 0.1
+		}
+	}
+}
+country_event = {
+	id = bar_sane_ambrosius.1003
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1003"
+	}
+	title = bar_sane_ambrosius.1003.t
+	desc = bar_sane_ambrosius.1003.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1003.a
+
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = -0.05
+		}
+
+		hidden_effect = {
+			country_event = { days = 16 id = bar_sane_ambrosius.1004 }
+		}
+	}
+}
+country_event = { #rachunek sumienia
+	id = bar_sane_ambrosius.1004
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1004"
+	}
+	title = bar_sane_ambrosius.1004.t
+	desc = bar_sane_ambrosius.1004.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1004.a
+
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = -0.1
+		}
+	}
+}
+country_event = { #ambrosius się zastanawia czy wolność jest uniwersalnie dobra i czy warto za nią ginać i podbijać lądy
+	id = bar_sane_ambrosius.1005
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1005"
+	}
+	title = bar_sane_ambrosius.1005.t
+	desc = bar_sane_ambrosius.1005.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1005.a
+		add_power_balance_value = {
+			id = bar_sane_ambrosius_balance
+			value = -0.05
+		}
+	}
+}
+
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################

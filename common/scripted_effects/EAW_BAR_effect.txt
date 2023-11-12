@@ -2134,6 +2134,7 @@ BAR_add_wigberht_as_commander = {
 			owner = ROOT
 		}
 	}
+	custom_effect_tooltip = BAR_outer_circle_tooltip
 }
 
 BAR_add_gebleod_as_commander = {
@@ -2146,11 +2147,11 @@ BAR_add_gebleod_as_commander = {
 			trait_mountaineer
 			hill_fighter
 		}
-		skill = 3
-		attack_skill = 4
+		skill = 4
+		attack_skill = 5
 		defense_skill = 2
 		planning_skill = 2
-		logistics_skill = 2
+		logistics_skill = 3
 		legacy_id = 997001
 	}
 	custom_effect_tooltip = bar_gebleod_general
@@ -2256,6 +2257,7 @@ BAR_add_gebleod_as_commander = {
 			owner = ROOT
 		}
 	}
+	custom_effect_tooltip = BAR_inner_circle_tooltip
 }
 
 BAR_merge_commandments = {

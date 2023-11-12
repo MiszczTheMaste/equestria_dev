@@ -1,7 +1,7 @@
 scripted_gui = {
 	pentarchy_info_button = {
 		window_name = "pentarchy_info_button_container"
-		parent_window_name = "MapmodesInterface_Ingame"
+		parent_window_token = politics_tab
 		context_type = player_context
 		visible = {
 			tag = BAR
@@ -30,7 +30,7 @@ scripted_gui = {
 	}	
 	viira_journal_button = {
 		window_name = "viira_journal_button_container"
-		parent_window_name = "MapmodesInterface_Ingame"
+		parent_window_token = politics_tab
 		context_type = player_context
 		visible = {
 			tag = BAR

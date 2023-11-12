@@ -1,23 +1,23 @@
 guiTypes = {
 	containerWindowType = {
 		name = "pentarchy_info_button_container"
-		position = { x = 500 y = -50 }
+		position = { x = 338 y = 9 }
 		
 		buttonType = {
 			name = "pentarchy_info_button"
 			spriteType = "GFX_BAR_pen_icon"
-			position = { x=32 y=8 }
+			position = { x=0 y=0 }
 			shortcut = "ctrl+p"
 		}
 	}	
 	containerWindowType = {
 		name = "viira_journal_button_container"
-		position = { x = 500 y = -100 }
+		position = { x = 381 y = 9 }
 		
 		buttonType = {
 			name = "viira_journal_button"
 			spriteType = "GFX_BAR_pen_icon"
-			position = { x=32 y=8 }
+			position = { x=0 y=0 }
 		}
 	}	
 	containerWindowType = {

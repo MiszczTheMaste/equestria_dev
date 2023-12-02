@@ -1884,6 +1884,8 @@ bar_pen_viira_clues_text11:0 "Everything now seems much more clear, the time dra
 ### leaders ###
 BAR_count_ambrosius:0 "Count Ambrosius"
 BAR_ambrosius:0 "Ambrosius"
+BAR_ambrosius_king:0 "King Ambrosius"
+BAR_ambrosius_high_king:0 "High King Ambrosius"
 BAR_angry_mob:0 "Angry Mob"
 BAR_angrier_mob:0 "Angrier Mob"
 BAR_viira_lehtola:0 "Viira Lehtola"

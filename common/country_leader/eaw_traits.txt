@@ -4131,7 +4131,6 @@ apn_time_queen= {
 		random = no
 		conscription = 0.025
 		conscription_factor = 0.3
-		military_leader_cost_factor = 100
 	}
 	BAR_despot_herzland = {
 		random = no

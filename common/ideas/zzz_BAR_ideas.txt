@@ -968,6 +968,66 @@ ideas = {
 				conscription_factor = 0.1
 			}
 		}
+		BAR_divine_guidance = {
+			picture = chi_wargaming_division
+			modifier = {
+				army_leader_cost_factor = -0.5 
+				army_leader_start_attack_level = 1 
+				army_leader_start_defense_level = 1 
+				army_leader_start_logistics_level = 1 
+				army_leader_start_planning_level = 1 
+			}
+		}
+		BAR_royal_university = {
+			picture = chi_wargaming_division
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		BAR_defend_high_kingdom = {
+			picture = chi_wargaming_division
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = NIM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = RCT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = LCT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = DEP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = BAK
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GRY
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = GRU
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = HLQ
+				defense_bonus_against = 0.25
+			}
+		}
 
     #                                                                                                    
    # #   #    # #####  #####   ####   ####  # #    #  ####     #    # ###### #####    ##   #      #####  

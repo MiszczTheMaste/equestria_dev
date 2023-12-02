@@ -4,24 +4,537 @@ focus_tree = {
 		factor = 0
 	}
 	default = no
-	shared_focus = BAR_gather_anyone
-	continuous_focus_position = {
-		x = 290
-		y = 3000
-	}
-}
 
-focus_tree = {
-	id = barrad_focus_tree_sane_ambrosius_full
-	country = {
-		factor = 0
-	}
-	default = no
-	shared_focus = BAR_gather_anyone
 	continuous_focus_position = {
 		x = 290
 		y = 3000
 	}
+
+	focus = {
+		id = BAR_gather_anyone
+		icon = GFX_focus_generic_support_the_left_right_claw
+		cost = 2
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 200
+		}
+		completion_reward = {
+			country_event = {
+				id = bar_sane_ambrosius.1
+			}
+		}
+	}
+	
+	focus = {
+		id = BAR_birb_allies
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 2
+		x = -3
+		y = 1
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_gather_anyone
+		}
+		completion_reward = {
+			country_event = {
+				id = bar_sane_ambrosius.2
+			}
+		}
+	}
+	
+	focus = {
+		id = BAR_contact_him
+		icon = GFX_goal_bag_of_money_pony_griffon
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_gather_anyone
+		}
+		completion_reward = {
+			country_event = {
+				id = bar_sane_ambrosius.3
+			}
+		}
+	}
+	
+	focus = {
+		id = BAR_pentarchy_friends
+		icon = GFX_goal_generic_dangerous_deal_pony_griffon
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_gather_anyone
+		}
+		completion_reward = {
+			country_event = {
+				id = bar_sane_ambrosius.4
+			}
+		}
+	}
+	
+	focus = {
+		id = BAR_cult_shisma
+		icon = GFX_goal_new_temple
+		cost = 2
+		x = 3
+		y = 1
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_gather_anyone
+		}
+		completion_reward = {
+			country_event = {
+				id = bar_sane_ambrosius.5
+			}
+		}
+	}
+	
+	focus = {
+		id = BAR_autonomus_land_promise
+		icon = GFX_goal_griffon_harmony_char
+		cost = 2
+		x = -4
+		y = 2
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_homeland_promise
+		}
+		prerequisite = {
+			focus = BAR_birb_allies
+		}
+		completion_reward = {
+			add_political_power = 80
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_WAR_SUPPORT
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	
+	focus = {
+		id = BAR_homeland_promise
+		icon = GFX_goal_generic_military_deal_pony_griffon
+		cost = 2
+		x = -2
+		y = 2
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				NOT = {
+					country_exists = GRU
+				}
+				NOT = {
+					GRU = {
+						has_government = communism
+					}
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = BAR_autonomus_land_promise
+		}
+		prerequisite = {
+			focus = BAR_birb_allies
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = BAR_homeland_promise_made
+			}
+			custom_effect_tooltip = BAR_homeland_promise_tooltip
+		}
+	}
+	
+	focus = {
+		id = BAR_create_griffon_legion
+		icon = GFX_goal_griffon_special_force
+		cost = 2
+		x = -3
+		y = 3
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_autonomus_land_promise
+			focus = BAR_homeland_promise
+		}
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_template = "Mountain Band"
+						}
+						has_tech = tech_mountaineers
+					}
+					division_template = {
+						name = "Mountain Band"
+						regiments = {
+							mountaineers = {
+								x = 0
+								y = 0
+							}
+							mountaineers = {
+								x = 0
+								y = 1
+							}
+							mountaineers = {
+								x = 0
+								y = 2
+							}
+							mountaineers = {
+								x = 0
+								y = 3
+							}
+							mountaineers = {
+								x = 0
+								y = 4
+							}
+							mountaineers = {
+								x = 1
+								y = 0
+							}
+							mountaineers = {
+								x = 1
+								y = 1
+							}
+							mountaineers = {
+								x = 1
+								y = 2
+							}
+							mountaineers = {
+								x = 1
+								y = 3
+							}
+							mountaineers = {
+								x = 1
+								y = 4
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_template = "Mountain Band"
+						}
+					}
+					division_template = {
+						name = "Mountain Band"
+						regiments = {
+							infantry = {
+								x = 0
+								y = 0
+							}
+							infantry = {
+								x = 0
+								y = 1
+							}
+							infantry = {
+								x = 0
+								y = 2
+							}
+							infantry = {
+								x = 0
+								y = 3
+							}
+							infantry = {
+								x = 0
+								y = 4
+							}
+							infantry = {
+								x = 1
+								y = 0
+							}
+							infantry = {
+								x = 1
+								y = 1
+							}
+							infantry = {
+								x = 1
+								y = 2
+							}
+							infantry = {
+								x = 1
+								y = 3
+							}
+							infantry = {
+								x = 1
+								y = 4
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Gryphusian Legion\" division_template = \"Mountain Band\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = ROOT
+					}
+				}
+			}
+			add_corps_commander_role = {
+				character = BAR_jerzy_janosik
+				traits = {
+					griffon_race_trait
+					trait_mountaineer
+					hill_fighter
+				}
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			custom_effect_tooltip = BAR_janosik_general
+			custom_effect_tooltip = BAR_griffon_legion
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	
+	focus = {
+		id = BAR_make_your_pledge
+		icon = GFX_goal_skull_treaty
+		cost = 2
+		x = 1
+		y = 3
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_pentarchy_friends
+		}
+		completion_reward = {
+			add_ideas = BAR_pledges
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	
+	focus = {
+		id = BAR_feed_the_masses
+		icon = GFX_focus_AUS_agriculture
+		cost = 2
+		x = -1
+		y = 3
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_contact_him
+		}
+		completion_reward = {
+			add_ideas = BAR_agricultural_miracle
+		}
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	
+	focus = {
+		id = BAR_inner_circle
+		icon = GFX_goal_ideology_monarchist
+		cost = 2
+		x = 2
+		y = 2
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_outer_circle
+		}
+		prerequisite = {
+			focus = BAR_cult_shisma
+		}
+		completion_reward = {
+			BAR_add_gebleod_as_commander = yes
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.1
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	
+	focus = {
+		id = BAR_outer_circle
+		icon = GFX_goal_revolution_pony
+		cost = 2
+		x = 4
+		y = 2
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_inner_circle
+		}
+		prerequisite = {
+			focus = BAR_cult_shisma
+		}
+		completion_reward = {
+			BAR_add_wigberht_as_commander = yes
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = 0.05
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+	}
+	
+	focus = {
+		id = BAR_cult_peacekeepers
+		icon = GFX_goal_COS_Peace
+		cost = 2
+		x = 3
+		y = 3
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_outer_circle
+			focus = BAR_inner_circle
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+	}
+	
+	focus = {
+		id = BAR_matter_of_court
+		icon = GFX_goal_Theatre_of_Death
+		cost = 2
+		x = 0
+		y = 4
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_feed_the_masses
+		}
+		prerequisite = {
+			focus = BAR_make_your_pledge
+		}
+		completion_reward = {
+			remove_country_leader_trait = BAR_benevolent_ruler
+			add_country_leader_trait = BAR_despot
+		}
+	}
+	
+	focus = {
+		id = BAR_trickery_experience
+		icon = GFX_focus_indy_card_tricks
+		cost = 2
+		x = -2
+		y = 4
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_create_griffon_legion
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	
+	focus = {
+		id = BAR_cult_knowledge_sharing
+		icon = GFX_goal_the_black_book
+		cost = 2
+		x = 2
+		y = 4
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_cult_peacekeepers
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+	
+	focus = {
+		id = BAR_heal_entity
+		icon = GFX_goal_cry_com_sync
+		cost = 2
+		x = 0
+		y = 5
+		relative_position_id = BAR_gather_anyone
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_trickery_experience
+		}
+		prerequisite = {
+			focus = BAR_matter_of_court
+		}
+		prerequisite = {
+			focus = BAR_cult_knowledge_sharing
+		}
+		completion_reward = {
+			country_event = {
+				id = bar_sane_ambrosius.6
+			}
+		}
+	}	
+
 	focus = {
 		id = BAR_true_army
 		icon = GFX_goal_unicorn_soldier
@@ -30,6 +543,9 @@ focus_tree = {
 		y = 0
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			has_completed_focus = BAR_heal_entity
 		}
 		completion_reward = {
 			army_experience = 25
@@ -524,6 +1040,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			has_completed_focus = BAR_heal_entity
+		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -819,6 +1338,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			has_completed_focus = BAR_heal_entity
+		}
 		completion_reward = {
 			add_political_power = 25
 		}
@@ -1063,7 +1585,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_ambrosius_buy_industrial_plans
+		id = BAR_ambrosius_buy_experts
 		icon = GFX_goal_gold_reserve_2
 		cost = 6
 		x = 0
@@ -1076,18 +1598,7 @@ focus_tree = {
 			focus = BAR_ambrosius_foreign_experts
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = industry_bonus
-				category = industry
-				uses = 1
-				bonus = 1
-			}
-			add_tech_bonus = {
-				name = electronics_bonus
-				category = electronics
-				uses = 1
-				bonus = 1
-			}
+			increase_science_base = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1392,7 +1903,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		relative_position_id = BAR_ambrosius_buy_industrial_plans
+		relative_position_id = BAR_ambrosius_buy_experts
 		available = {
 			624 = {
 				is_owned_and_controlled_by = BAR
@@ -1405,7 +1916,7 @@ focus_tree = {
 			focus = BAR_strangers_no_more
 		}
 		prerequisite = {
-			focus = BAR_ambrosius_buy_industrial_plans
+			focus = BAR_ambrosius_buy_experts
 		}
 		completion_reward = {
 			624 = {
@@ -1475,18 +1986,200 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_pilgrimage
 		}
-		available = {
-			num_of_controlled_states > 3
+		prerequisite = {
+			focus = BAR_amb_grand_county
 		}
 		completion_reward = {
 			country_event = { id = bar_sane_ambrosius.1005 }
 		}
 	}
 	focus = {
+		id = BAR_amb_matters_of_sucession
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_ideals_of_freedom
+		prerequisite = {
+			focus = BAR_amb_ideals_of_freedom
+		}
+		completion_reward = {
+			country_event = { id = bar_sane_ambrosius.1006 }
+		}
+	}
+	focus = {
+		id = BAR_amb_realm_of_mortals
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_in_search_of_answer
+		}
+		relative_position_id = BAR_amb_matters_of_sucession
+		prerequisite = {
+			focus = BAR_amb_matters_of_sucession
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_shield_from_god
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_realm_of_mortals
+		prerequisite = {
+			focus = BAR_amb_realm_of_mortals
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = 0.15
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_in_search_of_answer
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_realm_of_mortals
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_spirits_of_mountains
+		}
+		relative_position_id = BAR_amb_matters_of_sucession
+		prerequisite = {
+			focus = BAR_amb_matters_of_sucession
+			focus = BAR_amb_also_the_previous_ruler
+		}
+		completion_reward = {
+			two_random_industrial_complex = yes
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.05
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_awaiting_peneance
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			nuclear_reactor > 1
+		}
+		relative_position_id = BAR_amb_in_search_of_answer
+		prerequisite = {
+			focus = BAR_amb_in_search_of_answer
+		}
+		completion_reward = {
+			add_ideas = BAR_singularity_idea
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.1
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_spirits_of_mountains
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_in_search_of_answer
+		}
+		relative_position_id = BAR_amb_also_the_previous_ruler
+		prerequisite = {
+			focus = BAR_amb_also_the_previous_ruler
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_amb_enlighted_magocracy
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_spirits_of_mountains
+		prerequisite = {
+			focus = BAR_amb_spirits_of_mountains
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_amb_guided_by_magic
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_enlighted_magocracy
+		prerequisite = {
+			focus = BAR_amb_enlighted_magocracy
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_amb_giving_free_hoof
+		icon = GFX_goal_ITA_urban
+		cost = 1
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_shield_from_god
+		prerequisite = {
+			focus = BAR_amb_shield_from_god
+		}
+		completion_reward = {
+			increase_science_base = yes
+		}
+	}
+	focus = {
 		id = BAR_amb_western_focus
 		icon = GFX_goal_industrial_pony
 		cost = 6
-		x = -10
+		x = -8
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -2604,9 +3297,12 @@ focus_tree = {
 		relative_position_id = BAR_amb_pilgrimage
 		prerequisite = {
 			focus = BAR_amb_commonwealth
+			focus = BAR_amb_what_we_once_took
 		}
 		prerequisite = {
-			focus = BAR_amb_pilgrimage
+			focus = BAR_amb_giving_free_hoof
+			focus = BAR_amb_awaiting_peneance
+			focus = BAR_amb_guided_by_magic
 		}
 		completion_reward = {
 
@@ -2616,7 +3312,7 @@ focus_tree = {
 		id = BAR_amb_old_homeland
 		icon = GFX_goal_industrial_pony
 		cost = 6
-		x = 10
+		x = 11
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -2632,531 +3328,753 @@ focus_tree = {
 			add_political_power = 75
 		}
 	}
-}
-
-shared_focus = {
-	id = BAR_gather_anyone
-	icon = GFX_focus_generic_support_the_left_right_claw
-	cost = 2
-	x = 4
-	y = 0
-	ai_will_do = {
-		factor = 200
-	}
-	completion_reward = {
-		country_event = {
-			id = bar_sane_ambrosius.1
+	focus = {
+		id = BAR_amb_fortify_border
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_old_homeland
+		prerequisite = {
+			focus = BAR_amb_old_homeland
+		}
+		completion_reward = {
+			
 		}
 	}
-}
-
-shared_focus = {
-	id = BAR_birb_allies
-	icon = GFX_focus_generic_diplomatic_treaty
-	cost = 2
-	x = -3
-	y = 1
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_gather_anyone
-	}
-	completion_reward = {
-		country_event = {
-			id = bar_sane_ambrosius.2
+	focus = {
+		id = BAR_amb_military_build_up
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
 		}
-	}
-}
-
-shared_focus = {
-	id = BAR_contact_him
-	icon = GFX_goal_bag_of_money_pony_griffon
-	cost = 2
-	x = -1
-	y = 1
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_gather_anyone
-	}
-	completion_reward = {
-		country_event = {
-			id = bar_sane_ambrosius.3
+		relative_position_id = BAR_amb_old_homeland
+		prerequisite = {
+			focus = BAR_amb_old_homeland
 		}
-	}
-}
-
-shared_focus = {
-	id = BAR_pentarchy_friends
-	icon = GFX_goal_generic_dangerous_deal_pony_griffon
-	cost = 2
-	x = 1
-	y = 1
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_gather_anyone
-	}
-	completion_reward = {
-		country_event = {
-			id = bar_sane_ambrosius.4
-		}
-	}
-}
-
-shared_focus = {
-	id = BAR_cult_shisma
-	icon = GFX_goal_new_temple
-	cost = 2
-	x = 3
-	y = 1
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_gather_anyone
-	}
-	completion_reward = {
-		country_event = {
-			id = bar_sane_ambrosius.5
-		}
-	}
-}
-
-shared_focus = {
-	id = BAR_autonomus_land_promise
-	icon = GFX_goal_griffon_harmony_char
-	cost = 2
-	x = -4
-	y = 2
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	mutually_exclusive = {
-		focus = BAR_homeland_promise
-	}
-	prerequisite = {
-		focus = BAR_birb_allies
-	}
-	completion_reward = {
-		add_political_power = 80
-		add_war_support = 0.05
-		add_stability = 0.05
-	}
-	search_filters = {
-		FOCUS_FILTER_STABILITY
-		FOCUS_FILTER_WAR_SUPPORT
-		FOCUS_FILTER_POLITICAL
-	}
-}
-
-shared_focus = {
-	id = BAR_homeland_promise
-	icon = GFX_goal_generic_military_deal_pony_griffon
-	cost = 2
-	x = -2
-	y = 2
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	available = {
-		OR = {
-			NOT = {
-				country_exists = GRU
-			}
-			NOT = {
-				GRU = {
-					has_government = communism
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
 	}
-	mutually_exclusive = {
-		focus = BAR_autonomus_land_promise
-	}
-	prerequisite = {
-		focus = BAR_birb_allies
-	}
-	completion_reward = {
-		hidden_effect = {
-			set_country_flag = BAR_homeland_promise_made
+	focus = {
+		id = BAR_amb_unite_south
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
 		}
-		custom_effect_tooltip = BAR_homeland_promise_tooltip
+		relative_position_id = BAR_amb_fortify_border
+		prerequisite = {
+			focus = BAR_amb_fortify_border
+		}
+		prerequisite = {
+			focus = BAR_amb_military_build_up
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ZES
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = OLV
+			}
+		}
 	}
-}
+	focus = {
+		id = BAR_amb_kasa_build_1
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_unite_south
+		prerequisite = {
+			focus = BAR_amb_unite_south
+		}
+		completion_reward = {
 
-shared_focus = {
-	id = BAR_create_griffon_legion
-	icon = GFX_goal_griffon_special_force
-	cost = 2
-	x = -3
-	y = 3
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
+		}
 	}
-	prerequisite = {
-		focus = BAR_autonomus_land_promise
-		focus = BAR_homeland_promise
+	focus = {
+		id = BAR_amb_kasa_build_2
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_kasa_build_1
+		prerequisite = {
+			focus = BAR_amb_kasa_build_1
+		}
+		completion_reward = {
+
+		}
 	}
-	completion_reward = {
-		hidden_effect = {
+	focus = {
+		id = BAR_amb_kasa_build_3
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_unite_south
+		prerequisite = {
+			focus = BAR_amb_unite_south
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_kasa_build_4
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_kasa_build_3
+		prerequisite = {
+			focus = BAR_amb_kasa_build_3
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_core_kasa
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_kasa_build_4
+		prerequisite = {
+			focus = BAR_amb_kasa_build_4
+		}
+		prerequisite = {
+			focus = BAR_amb_kasa_build_2
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_olv_build_1
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_unite_south
+		prerequisite = {
+			focus = BAR_amb_unite_south
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_olv_build_2
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_olv_build_1
+		prerequisite = {
+			focus = BAR_amb_olv_build_1
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_olv_build_3
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_unite_south
+		prerequisite = {
+			focus = BAR_amb_unite_south
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_olv_build_4
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_olv_build_3
+		prerequisite = {
+			focus = BAR_amb_olv_build_3
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_amb_core_olv
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_olv_build_4
+		prerequisite = {
+			focus = BAR_amb_olv_build_4
+		}
+		prerequisite = {
+			focus = BAR_amb_olv_build_2
+		}
+		completion_reward = {
+			OLV = {
+				add_to_ROOT_potential_original_cores = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_core_kasa
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_kasa_build_4
+		prerequisite = {
+			focus = BAR_amb_kasa_build_4
+		}
+		prerequisite = {
+			focus = BAR_amb_kasa_build_2
+		}
+		completion_reward = {
+			ZES = {
+				add_to_ROOT_potential_original_cores = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_attack_wit
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_kasa_build_4
+		prerequisite = {
+			focus = BAR_amb_olv_build_4
+		}
+		prerequisite = {
+			focus = BAR_amb_kasa_build_4
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = WIT
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_claim_wit_crown
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_attack_wit
+		prerequisite = {
+			focus = BAR_amb_attack_wit
+		}
+		available = {
+			617 = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = WIT
+				}
+				add_core_of = BAR
+			}
+			set_cosmetic_tag = BAR_WIT
+			hidden_effect = {
+				BAR_count_ambrosius = {
+					set_character_name = BAR_ambrosius_king
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_realm_reunion
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_claim_wit_crown
+		prerequisite = {
+			focus = BAR_amb_claim_wit_crown
+		}
+		available = {
+			NOT = {
+				country_exists = WIT
+			}
+		}
+		completion_reward = {
+			build_railway = {
+				start_state = 624
+				target_state = 617
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_nationwide_electrification
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_realm_reunion
+		prerequisite = {
+			focus = BAR_amb_realm_reunion
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = BAR_amb_restore_guilds
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_nationwide_electrification
+		prerequisite = {
+			focus = BAR_amb_nationwide_electrification
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BAR_amb_patronage
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_nationwide_electrification
+		prerequisite = {
+			focus = BAR_amb_nationwide_electrification
+		}
+		completion_reward = {
+			increase_science_base = yes
+		}
+	}
+	focus = {
+		id = BAR_amb_state_controlled_trade
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_nationwide_electrification
+		prerequisite = {
+			focus = BAR_amb_nationwide_electrification
+		}
+		completion_reward = {
 			if = {
 				limit = {
-					NOT = {
-						has_template = "Mountain Band"
-					}
-					has_tech = tech_mountaineers
+					has_idea = limited_exports
 				}
-				division_template = {
-					name = "Mountain Band"
-					regiments = {
-						mountaineers = {
-							x = 0
-							y = 0
-						}
-						mountaineers = {
-							x = 0
-							y = 1
-						}
-						mountaineers = {
-							x = 0
-							y = 2
-						}
-						mountaineers = {
-							x = 0
-							y = 3
-						}
-						mountaineers = {
-							x = 0
-							y = 4
-						}
-						mountaineers = {
-							x = 1
-							y = 0
-						}
-						mountaineers = {
-							x = 1
-							y = 1
-						}
-						mountaineers = {
-							x = 1
-							y = 2
-						}
-						mountaineers = {
-							x = 1
-							y = 3
-						}
-						mountaineers = {
-							x = 1
-							y = 4
-						}
-					}
-				}
+				add_political_power = 150
 			}
-			else_if = {
+			else = {
+				add_ideas = limited_exports
+			}
+			set_country_flag = FLO_forced_limited
+			one_random_industrial_complex = yes
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_amb_public_works
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_restore_guilds
+		prerequisite = {
+			focus = BAR_amb_restore_guilds
+			focus = BAR_amb_patronage
+		}
+		completion_reward = {
+			every_owned_state = {
 				limit = {
-					NOT = {
-						has_template = "Mountain Band"
-					}
+					is_core_of = ROOT
+					infrastructure < 4
 				}
-				division_template = {
-					name = "Mountain Band"
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 0
-							y = 3
-						}
-						infantry = {
-							x = 0
-							y = 4
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-						infantry = {
-							x = 1
-							y = 3
-						}
-						infantry = {
-							x = 1
-							y = 4
-						}
-					}
-				}
-			}
-			random_owned_controlled_state = {
-				create_unit = {
-					division = "name = \"Gryphusian Legion\" division_template = \"Mountain Band\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = ROOT
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
-		add_corps_commander_role = {
-			character = BAR_jerzy_janosik
-			traits = {
-				griffon_race_trait
-				trait_mountaineer
-				hill_fighter
+	}
+	focus = {
+		id = BAR_amb_expand_silver_mine
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_patronage
+		prerequisite = {
+			focus = BAR_amb_patronage
+			focus = BAR_amb_state_controlled_trade
+		}
+		bypass = {
+			has_global_flag = WIT_mine_built
+		}
+		completion_reward = {
+			add_ideas = WIT_silver_mine
+			set_global_flag = WIT_mine_built
+			add_tech_bonus = {
+				name = ANG_mining_bonus
+				bonus = 1.0
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
 			}
-			skill = 5
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-		}
-		custom_effect_tooltip = BAR_janosik_general
-		custom_effect_tooltip = BAR_griffon_legion
-	}
-	search_filters = {
-		FOCUS_FILTER_MANPOWER
-	}
-}
-
-shared_focus = {
-	id = BAR_make_your_pledge
-	icon = GFX_goal_skull_treaty
-	cost = 2
-	x = 1
-	y = 3
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_pentarchy_friends
-	}
-	completion_reward = {
-		add_ideas = BAR_pledges
-	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
-	}
-}
-
-shared_focus = {
-	id = BAR_feed_the_masses
-	icon = GFX_focus_AUS_agriculture
-	cost = 2
-	x = -1
-	y = 3
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_contact_him
-	}
-	completion_reward = {
-		add_ideas = BAR_agricultural_miracle
-	}
-	search_filters = {
-		FOCUS_FILTER_STABILITY
-		FOCUS_FILTER_MANPOWER
-	}
-}
-
-shared_focus = {
-	id = BAR_inner_circle
-	icon = GFX_goal_ideology_monarchist
-	cost = 2
-	x = 2
-	y = 2
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	mutually_exclusive = {
-		focus = BAR_outer_circle
-	}
-	prerequisite = {
-		focus = BAR_cult_shisma
-	}
-	completion_reward = {
-		BAR_add_gebleod_as_commander = yes
-		add_power_balance_value = {
-			id = bar_sane_ambrosius_balance
-			value = -0.1
 		}
 	}
-	search_filters = {
-		FOCUS_FILTER_MANPOWER
-	}
-}
-
-shared_focus = {
-	id = BAR_outer_circle
-	icon = GFX_goal_revolution_pony
-	cost = 2
-	x = 4
-	y = 2
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	mutually_exclusive = {
-		focus = BAR_inner_circle
-	}
-	prerequisite = {
-		focus = BAR_cult_shisma
-	}
-	completion_reward = {
-		BAR_add_wigberht_as_commander = yes
-		add_power_balance_value = {
-			id = bar_sane_ambrosius_balance
-			value = 0.05
+	focus = {
+		id = BAR_amb_royal_university
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_public_works
+		prerequisite = {
+			focus = BAR_amb_expand_silver_mine
+		}
+		prerequisite = {
+			focus = BAR_amb_public_works
+		}
+		available = {
+			amount_research_slots > 4
+		}
+		completion_reward = {
+			add_ideas = BAR_royal_university
+			increase_science_base = yes
 		}
 	}
-	search_filters = {
-		FOCUS_FILTER_MANPOWER
-	}
-}
-
-shared_focus = {
-	id = BAR_cult_peacekeepers
-	icon = GFX_goal_COS_Peace
-	cost = 2
-	x = 3
-	y = 3
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_outer_circle
-		focus = BAR_inner_circle
-	}
-	completion_reward = {
-		add_stability = 0.05
-	}
-	search_filters = {
-		FOCUS_FILTER_STABILITY
-	}
-}
-
-shared_focus = {
-	id = BAR_matter_of_court
-	icon = GFX_goal_Theatre_of_Death
-	cost = 2
-	x = 0
-	y = 4
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_feed_the_masses
-	}
-	prerequisite = {
-		focus = BAR_make_your_pledge
-	}
-	completion_reward = {
-		add_country_leader_trait = BAR_despot
-		hidden_effect = {
-			remove_country_leader_trait = BAR_benevolent_ruler
+	focus = {
+		id = BAR_amb_ancient_regime
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_claim_wit_crown
+		prerequisite = {
+			focus = BAR_amb_claim_wit_crown
+		}
+		available = {
+			NOT = {
+				country_exists = WIT
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
 		}
 	}
-}
-
-shared_focus = {
-	id = BAR_trickery_experience
-	icon = GFX_focus_indy_card_tricks
-	cost = 2
-	x = -2
-	y = 4
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
-	}
-	prerequisite = {
-		focus = BAR_create_griffon_legion
-	}
-	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
+	focus = {
+		id = BAR_amb_royal_pardon
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_ancient_regime
+		prerequisite = {
+			focus = BAR_amb_ancient_regime
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_divine_guidance
+		}
+		available = {
+			NOT = {
+				country_exists = WIT
+			}
+		}
+		completion_reward = {
+			add_political_power = -200
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = 0.1
+			}
+			country_event = { id = bar_sane_ambrosius.1007 }
 		}
 	}
-	search_filters = {
-		FOCUS_FILTER_RESEARCH
+	focus = {
+		id = BAR_amb_divine_guidance
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_ancient_regime
+		prerequisite = {
+			focus = BAR_amb_ancient_regime
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_royal_pardon
+		}
+		available = {
+			NOT = {
+				country_exists = WIT
+			}
+		}
+		completion_reward = {
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.1
+			}
+			add_ideas = BAR_divine_guidance
+		}
 	}
-}
+	focus = {
+		id = BAR_amb_cult_in_high_places
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_divine_guidance
+		prerequisite = {
+			focus = BAR_amb_divine_guidance
+			focus = BAR_amb_royal_pardon
+		}
+		completion_reward = {
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.1
+			}
 
-shared_focus = {
-	id = BAR_cult_knowledge_sharing
-	icon = GFX_goal_the_black_book
-	cost = 2
-	x = 2
-	y = 4
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
+		}
 	}
-	prerequisite = {
-		focus = BAR_cult_peacekeepers
+	focus = {
+		id = BAR_amb_high_kingdom_claims
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_claim_wit_crown
+		prerequisite = {
+			focus = BAR_amb_claim_wit_crown
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = FRE
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRE
+				}
+				add_claim_by = BAR
+			}
+			FRE = {
+				add_to_ROOT_potential_original_cores = yes
+			}
+		}
 	}
-	completion_reward = {
-		add_political_power = 75
+	focus = {
+		id = BAR_amb_high_kingdom
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_high_kingdom_claims
+		prerequisite = {
+			focus = BAR_amb_high_kingdom_claims
+		}
+		available = {
+			WIT = { all_cores_owned_by_ROOT = yes }
+			FRE = { all_cores_owned_by_ROOT = yes }
+		}
+		completion_reward = {
+			set_cosmetic_tag = BAR_WIT_high_kingdom
+		}
 	}
-	search_filters = {
-		FOCUS_FILTER_POLITICAL
+	focus = {
+		id = BAR_amb_king_of_mountains
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_high_kingdom
+		prerequisite = {
+			focus = BAR_amb_high_kingdom
+		}
+		completion_reward = {
+			#bonus do górali
+		}
 	}
-}
+	focus = {
+		id = BAR_amb_what_we_once_took #...we shall never give up
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_king_of_mountains
+		prerequisite = {
+			focus = BAR_amb_cult_in_high_places
+		}
+		prerequisite = {
+			focus = BAR_amb_king_of_mountains
+		}
+		prerequisite = {
+			focus = BAR_amb_royal_university
+		}
+		completion_reward = {
+			add_ideas = BAR_defend_high_kingdom
+		}
+	}
+	focus = {
+		id = BAR_amb_king_and_country
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_pilgrimage
+		prerequisite = {
+			focus = BAR_amb_pilgrimage
+		}
+		prerequisite = {
+			focus = BAR_amb_claim_wit_crown
+		}
+		completion_reward = {
 
-shared_focus = {
-	id = BAR_heal_entity
-	icon = GFX_goal_cry_com_sync
-	cost = 2
-	x = 0
-	y = 5
-	relative_position_id = BAR_gather_anyone
-	ai_will_do = {
-		factor = 10
+		}
 	}
-	prerequisite = {
-		focus = BAR_trickery_experience
-	}
-	prerequisite = {
-		focus = BAR_matter_of_court
-	}
-	prerequisite = {
-		focus = BAR_cult_knowledge_sharing
-	}
-	completion_reward = {
-		country_event = {
-			id = bar_sane_ambrosius.6
+	focus = {
+		id = BAR_amb_also_the_previous_ruler
+		icon = GFX_goal_industrial_pony
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 10
+		}
+		relative_position_id = BAR_amb_king_and_country
+		prerequisite = {
+			focus = BAR_amb_king_and_country
+		}
+		completion_reward = {
+
 		}
 	}
 }

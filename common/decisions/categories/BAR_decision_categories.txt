@@ -17,7 +17,7 @@ BAR_expeditions = {
 		original_tag = BAR
 	}
 	priority = {
-		base = 100
+		base = 91
 	}
 	visible_when_empty = yes
 }

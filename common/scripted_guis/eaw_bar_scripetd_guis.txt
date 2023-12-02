@@ -1059,10 +1059,6 @@ scripted_gui = {
 	bar_expedition_decisions_gui = {
 		window_name = "bar_expedition_decisions_gui_container"
 		context_type = decision_category
-		dirty = BAR_viira_godhood
-		visible = {
-			has_variable = BAR_viira_godhood
-		}	
 		effects = {
 			bar_expedition_open_window_button_click = {
 				if = {
@@ -1107,7 +1103,6 @@ scripted_gui = {
 		context_type = player_context
 		dirty = bar_expedition_show
 		visible = {
-			tag = BAR
 			has_variable = bar_expedition_show
 		}
 		properties = {

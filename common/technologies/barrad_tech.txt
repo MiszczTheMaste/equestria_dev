@@ -1726,6 +1726,32 @@ technologies = {
 		}
 	}
 
+	BAR_amb_unicorn_buff = {
+		allow = {
+			always = no
+		}		
+		research_cost = 1
+	
+		unicorn_company = {
+			soft_attack = 1
+			hard_attack = 1
+			breakthrough = 1
+			max_organisation = 10
+		}
+	}
+	BAR_amb_mountaineers_buff = {
+		allow = {
+			always = no
+		}		
+		research_cost = 1
+	
+		mountaineers = {
+			soft_attack = 0.1
+			breakthrough = 0.25
+			max_organisation = 5
+		}
+	}
+	
 	#############################################################################################
 	#############################################################################################
 	#############################################################################################

@@ -1028,6 +1028,13 @@ ideas = {
 				defense_bonus_against = 0.25
 			}
 		}
+		BAR_state_religion = {
+			picture = generic_research_bonus
+			modifier = {
+				army_attack_factor = 0.07
+				army_defence_factor = 0.1
+			}
+		}
 
     #                                                                                                    
    # #   #    # #####  #####   ####   ####  # #    #  ####     #    # ###### #####    ##   #      #####  

@@ -1956,7 +1956,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_pilgrimage
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1976,7 +1976,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_ideals_of_freedom
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -1996,7 +1996,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_matters_of_sucession
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -2013,7 +2013,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_realm_of_mortals
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -2037,7 +2037,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_shield_from_god
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -2058,7 +2058,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_in_search_of_answer
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -2073,7 +2073,7 @@ focus_tree = {
 		relative_position_id = BAR_amb_matters_of_sucession
 		prerequisite = {
 			focus = BAR_amb_matters_of_sucession
-			focus = BAR_amb_also_the_previous_ruler
+			focus = BAR_amb_victory_at_heavy_price
 		}
 		completion_reward = {
 			two_random_industrial_complex = yes
@@ -2086,7 +2086,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_awaiting_peneance
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -2110,7 +2110,7 @@ focus_tree = {
 	focus = {
 		id = BAR_amb_spirits_of_mountains
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -2119,17 +2119,22 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BAR_amb_in_search_of_answer
 		}
-		relative_position_id = BAR_amb_also_the_previous_ruler
+		relative_position_id = BAR_amb_victory_at_heavy_price
 		prerequisite = {
-			focus = BAR_amb_also_the_previous_ruler
+			focus = BAR_amb_victory_at_heavy_price
 		}
 		completion_reward = {
+			add_ideas = BAR_state_religion
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.2
+			}
 		}
 	}
 	focus = {
 		id = BAR_amb_enlighted_magocracy
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -2140,12 +2145,18 @@ focus_tree = {
 			focus = BAR_amb_spirits_of_mountains
 		}
 		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.1
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.05
+			}
 		}
 	}
 	focus = {
 		id = BAR_amb_guided_by_magic
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -2156,12 +2167,15 @@ focus_tree = {
 			focus = BAR_amb_enlighted_magocracy
 		}
 		completion_reward = {
+			set_technology = {
+				BAR_amb_unicorn_buff = 1
+			}
 		}
 	}
 	focus = {
 		id = BAR_amb_giving_free_hoof
 		icon = GFX_goal_ITA_urban
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -3305,7 +3319,7 @@ focus_tree = {
 			focus = BAR_amb_guided_by_magic
 		}
 		completion_reward = {
-
+			country_event = { id = bar_sane_ambrosius.7 }
 		}
 	}
 	focus = {
@@ -4014,7 +4028,9 @@ focus_tree = {
 			focus = BAR_amb_high_kingdom
 		}
 		completion_reward = {
-			#bonus do górali
+			set_technology = {
+				BAR_amb_mountaineers_buff = 1
+			}
 		}
 	}
 	focus = {
@@ -4057,11 +4073,11 @@ focus_tree = {
 			focus = BAR_amb_claim_wit_crown
 		}
 		completion_reward = {
-
+			country_event = { id = bar_sane_ambrosius.1008 }
 		}
 	}
 	focus = {
-		id = BAR_amb_also_the_previous_ruler
+		id = BAR_amb_victory_at_heavy_price #ambrosius zaczyna po swoich rozmyśleniach zaczyna chlać 
 		icon = GFX_goal_industrial_pony
 		cost = 6
 		x = 0
@@ -4074,7 +4090,13 @@ focus_tree = {
 			focus = BAR_amb_king_and_country
 		}
 		completion_reward = {
-
+			624 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 }

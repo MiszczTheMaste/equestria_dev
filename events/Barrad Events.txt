@@ -5547,6 +5547,59 @@ country_event = {
 		name = bar_sane_ambrosius.7.a
 		custom_effect_tooltip = BAR_ruin_has_come
 		add_ideas = modern_society
+		kill_country_leader = yes
+		add_country_leader_role = {
+			character = BAR_captain_gasienica
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = despotism
+			}
+		}
+		if = { #democratic ending 
+			limit = {
+				has_completed_focus =  BAR_amb_commonwealth
+			}
+			if = { #technocrato-oligarchic ending
+				limit = {
+					power_balance_value = {
+						id = bar_sane_ambrosius_balance
+						value > 0.89
+					}
+				}
+				country_event = { id = bar_sane_ambrosius.1009 days = 7}
+			} else_if = { #cultists democracy
+				limit = {
+					power_balance_value = {
+						id = bar_sane_ambrosius_balance
+						value < 0.89
+					}
+				}
+				country_event = { id = bar_sane_ambrosius.1010 days = 7}
+			} else = { #regular party system
+				country_event = { id = bar_sane_ambrosius.1011 days = 7}
+			}
+		} else = { #kingdom ending
+			if = { #duels for crown continue
+				limit = {
+					power_balance_value = {
+						id = bar_sane_ambrosius_balance
+						value > 0.89
+					}
+				}
+				country_event = { id = bar_sane_ambrosius.1012 days = 7}
+			} else_if = { #cultist monarch
+				limit = {
+					power_balance_value = {
+						id = bar_sane_ambrosius_balance
+						value < 0.89
+					}
+				}
+				country_event = { id = bar_sane_ambrosius.1013 days = 7}
+			} else = { #gąsienica continues despotic rule
+				country_event = { id = bar_sane_ambrosius.1014 days = 7}
+			}
+		}
 	}
 }
 
@@ -5706,38 +5759,38 @@ country_event = { #ambrosius się zastanawia czy wolność jest uniwersalnie dob
 country_event = { #ambrosius rozkimnia kto powinien głosować
 	id = bar_sane_ambrosius.1006
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1005"
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1006"
 	}
-	title = bar_sane_ambrosius.1005.t
-	desc = bar_sane_ambrosius.1005.d
+	title = bar_sane_ambrosius.1006.t
+	desc = bar_sane_ambrosius.1006.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		name = bar_sane_ambrosius.1005.a
+		name = bar_sane_ambrosius.1006.a
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
 			value = -0.05
 		}
 	}	
 	option = {
-		name = bar_sane_ambrosius.1005.a
+		name = bar_sane_ambrosius.1006.a
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
 			value = 0.05
 		}
 	}
 }
-country_event = { #ambrosius rozkimnia kto powinien głosować
+country_event = { #ambrosius ułakawia generałów
 	id = bar_sane_ambrosius.1007
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1005"
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1007"
 	}
-	title = bar_sane_ambrosius.1005.t
-	desc = bar_sane_ambrosius.1005.d
+	title = bar_sane_ambrosius.1007.t
+	desc = bar_sane_ambrosius.1007.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
-		name = bar_sane_ambrosius.1005.a
+		name = bar_sane_ambrosius.1007.a
 		every_possible_country = {
 			limit = {
 				has_character = WIT_sigeweard_spellshield
@@ -5762,6 +5815,131 @@ country_event = { #ambrosius rozkimnia kto powinien głosować
 			}
 			WIT_marigold = { set_nationality = BAR }
 		}
+	}	
+}
+country_event = { #ambrosius ma rozkminę nad życiem że wszystko co ma sobie wywalczył
+	id = bar_sane_ambrosius.1008
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1008"
+	}
+	title = bar_sane_ambrosius.1008.t
+	desc = bar_sane_ambrosius.1008.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1008.a
+		add_manpower = 10000
+		add_country_leader_trait = BAR_amb_title_lifetime_warrior
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1009
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1009"
+	}
+	title = bar_sane_ambrosius.1009.t
+	desc = bar_sane_ambrosius.1009.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1009.a
+		add_country_leader_trait = BAR_first_president
+		set_country_leader_ideology = technocracy	
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1010
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1010"
+	}
+	title = bar_sane_ambrosius.1010.t
+	desc = bar_sane_ambrosius.1010.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1010.a
+
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = BAR_gebleod
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = theocracy_subideology
+			}
+		}	
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1011
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1011"
+	}
+	title = bar_sane_ambrosius.1011.t
+	desc = bar_sane_ambrosius.1011.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1011.a
+		# add parliment as country leader
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1012
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1012"
+	}
+	title = bar_sane_ambrosius.1012.t
+	desc = bar_sane_ambrosius.1012.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1012.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = BAR_oleander
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = centrism
+			}
+		}
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1013
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1013"
+	}
+	title = bar_sane_ambrosius.1013.t
+	desc = bar_sane_ambrosius.1013.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1013.a
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character = BAR_gebleod
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = theocracy_subideology
+			}
+		}	
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1014
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1014"
+	}
+	title = bar_sane_ambrosius.1014.t
+	desc = bar_sane_ambrosius.1014.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1014.a
+		add_country_leader_trait = BAR_despot
 	}	
 }
 

@@ -399,8 +399,8 @@ BAR_leopold_empire_fascism_DEF:0 "the Griffonian Empire"
 BAR_leopold_empire_fascism_ADJ:0 "Griffonian"
 
 BAR_free_state_communism:0 "Mountain Free State"
-BAR_free_state_communism_DEF:0 "the Free State"
-BAR_free_state_communism_ADJF:0 "Free State"
+BAR_free_state_communism_DEF:0 "the Mountain Free State"
+BAR_free_state_communism_ADJ:0 "Free State"
 
 ### focuses ###
 

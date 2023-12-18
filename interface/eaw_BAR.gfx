@@ -646,6 +646,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/goals/bar_leopold_deus_irae.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_bar_leopold_hooves_and_fire"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_hooves_and_fire.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_leopold_ascesion"
 		texturefile = "gfx/interface/bar/goals/bar_leopold_ascesion.dds"
 	}
@@ -668,6 +672,74 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_bar_leopold_crystal_tanks"
 		texturefile = "gfx/interface/bar/goals/bar_leopold_crystal_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_hammer_anvil"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_hammer_anvil.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_precise_tools"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_precise_tools.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_crystal"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_crystal.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_sun"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_sun.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_forbidden_knowledge"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_forbidden_knowledge.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_machine_equation"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_machine_equation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwork_soldier"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwork_soldier.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_military_clockwerks"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_military_clockwerks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_precision"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_precision.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwork_swarm"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwork_swarm.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_assembly_parts"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_assembly_parts.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_skull_clockwork"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_skull_clockwork.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_cult_clockwerks"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_cult_clockwerks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_bulldozer"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_bulldozer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwerk_specialization"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwerk_specialization.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_tunnels"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_tunnels.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwerk_industry"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwerk_industry.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"

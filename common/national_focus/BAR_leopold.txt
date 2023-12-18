@@ -50,7 +50,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_children_of_wrath
-		icon = GFX_goal_leopold_deus_irae
+		icon = GFX_goal_bar_leopold_hooves_and_fire
 		cost = 5
 		x = 0
 		y = 1
@@ -579,7 +579,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_industry
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_precise_tools
 		cost = 3.5
 		x = -7
 		y = 1
@@ -662,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_industry_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_sun
 		cost = 3.5
 		x = 1
 		y = 1
@@ -691,7 +691,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_industry_5
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_hammer_anvil
 		cost = 3.5
 		x = 0
 		y = 1
@@ -712,7 +712,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_industry_6
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_crystal
 		cost = 3.5
 		x = 3
 		y = 1
@@ -978,7 +978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_clockwork_soldier
 		cost = 10
 		x = 0
 		y = 1
@@ -1003,7 +1003,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_1
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_clockwerk_specialization
 		cost = 3.5
 		x = -2
 		y = 1
@@ -1024,7 +1024,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_tunnels
 		cost = 3.5
 		x = 0
 		y = 1
@@ -1056,7 +1056,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_cult_clockwerks
 		cost = 3.5
 		x = 2
 		y = 1
@@ -1077,7 +1077,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_precision
 		cost = 3.5
 		x = -2
 		y = 1
@@ -1100,7 +1100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_5
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_machine_equation
 		cost = 3.5
 		x = 0
 		y = 1
@@ -1120,7 +1120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_6
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_clockwork_swarm
 		cost = 3.5
 		x = 2
 		y = 1
@@ -1147,7 +1147,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_7
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_assembly_parts
 		cost = 3.5
 		x = -1
 		y = 1
@@ -1168,7 +1168,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_8
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_bulldozer
 		cost = 3.5
 		x = -1
 		y = 1
@@ -1242,7 +1242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_11
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_clockwerk_industry
 		cost = 10
 		x = 1
 		y = 1
@@ -1290,7 +1290,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_clockworks_13
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_skull_clockwork
 		cost = 10
 		x = 1
 		y = 1
@@ -1306,11 +1306,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = BAR_leopold_new_clockwerks_tooltip
-			hidden_effect = {
-				country_event = {
-					id = barrad_leopold.7
-				}
-			}
+			country_event = { id = barrad_leopold.7 }
 		}
 		search_filters = {
 			FOCUS_FILTER_ARMY_BONUS
@@ -1340,7 +1336,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_military_clockwerks
 		cost = 3.5
 		x = 16
 		y = 0
@@ -1822,12 +1818,12 @@ focus_tree = {
 			665 = { is_controlled_by = BAR }
 		}
 		completion_reward = {
-			country_event = { id = barrad_leopold.10 }
+			country_event = { id = barrad_leopold.9 }
 		}
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_6
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_forbidden_knowledge
 		cost = 3.5
 		x = -2
 		y = 1
@@ -1916,7 +1912,7 @@ focus_tree = {
 			focus = BAR_leopold_surreal_mathematic_8
 		}
 		completion_reward = {
-			country_event = { id = barrad_leopold.9}
+			country_event = { id = barrad_leopold.10}
 		}
 	}
 	focus = {

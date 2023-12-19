@@ -741,6 +741,30 @@ spriteTypes = {
 		name = "GFX_goal_bar_leopold_clockwerk_industry"
 		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwerk_industry.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwork_automation"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwork_automation.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwerk_preservarion"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwerk_preservarion.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_soldering_iron"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_soldering_iron.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_fire_and_sword"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_fire_and_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_cultist_and_fire"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_cultist_and_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_firem_megaphone"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_firem_megaphone.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"
 		texturefile = "gfx/interface/bar/ideas/leopold_partial_ascesion.dds"

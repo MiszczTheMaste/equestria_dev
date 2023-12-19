@@ -662,7 +662,7 @@ country_event = {
 }
 
 country_event = {
-	#pentarchy embraces harmony
+	#pentarchy embraces harmony (nightmare)
 	id = barrad_end.2
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_end.2"
@@ -673,32 +673,22 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_end.2.a
-		load_focus_tree = generic_griffon_focus
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.5
-		}
-		hidden_effect = {
-			set_country_flag = BAR_end_of_pentarchy
-			clr_country_flag = barrad_early_game
-			barrad_kill_leopold = yes
-			barrad_kill_asinti = yes
-			barrad_kill_viira = yes
-			barrad_kill_silver = yes
-			add_country_leader_role = {
-				character = BAR_angrier_mob
-				promote_leader = yes
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = kratokracy
-				}
+		effect_tooltip = {
+			load_focus_tree = generic_griffon_focus
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
 			}
-			bar_kill_ambrosius = yes
+			set_politics = {
+				ruling_party = democratic
+			}
+			remove_ideas = BAR_pentarchy
 		}
-		set_politics = {
-			ruling_party = democratic
+		set_country_flag = BAR_begun_friendship_path
+		country_event = {
+			id = barrad_friends.4
+			hours = 1
 		}
-		remove_ideas = BAR_pentarchy
 	}
 }
 
@@ -753,6 +743,101 @@ country_event = {
 		name = barrad_friends.3.a
 		BAR_relations_increase_asinti_silver_5 = yes
 		set_country_flag = BAR_silver_friendship_asinti
+	}
+}
+
+country_event = {
+	# pentarchy friendship begins - it was just a nightmare
+	id = barrad_friends.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.4"
+	}
+	title = barrad_friends.4.t
+	desc = barrad_friends.4.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		#:)
+		name = barrad_friends.4.a
+		set_variable = {
+			BAR_relations_asinti_silver = 100
+		}
+		set_variable = {
+			BAR_relations_asinti_leopold = 100
+		}
+		set_variable = {
+			BAR_relations_asinti_viira = 100
+		}
+		set_variable = {
+			BAR_relations_silver_leopold = 100
+		}
+		set_variable = {
+			BAR_relations_silver_viira = 100
+		}
+		set_variable = {
+			BAR_relations_leopold_viira = 100
+		}
+		BAR_relations_idea_swap = yes
+	}
+}
+
+country_event = {
+	# Gąsienica and Ambrosius plot to break up the new alliance
+	id = barrad_friends.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.5"
+	}
+	title = barrad_friends.5.t
+	desc = barrad_friends.5.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		#:)
+		name = barrad_friends.5.a
+		hidden_effect = {
+			country_event = {
+				id = barrad_friends.6
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	# the attack on silver
+	id = barrad_friends.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.6"
+	}
+	title = barrad_friends.6.t
+	desc = barrad_friends.6.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		#:)
+		name = barrad_friends.6.a
+		hidden_effect = {
+			country_event = {
+				id = barrad_friends.7
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	# meeting after the attack
+	id = barrad_friends.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.7"
+	}
+	title = barrad_friends.7.t
+	desc = barrad_friends.7.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		#:)
+		name = barrad_friends.7.a
 	}
 }
 

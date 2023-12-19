@@ -1606,6 +1606,14 @@ focus_tree = {
 				remove_idea = BAR_pentarchy_2
 				add_idea = BAR_pentarchy_3
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = BAR_begun_friendship_path
+					}
+					country_event = barrad_friends.5
+				}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_RESEARCH

@@ -51,6 +51,10 @@ spriteTypes = {
 		name = "GFX_event_bar_viira_closeup"
 		texturefile = "gfx/interface/bar/events/bar_viira_closeup.dds"
 	}
+	SpriteType = {
+		name = "GFX_event_bar_sex_event"
+		texturefile = "gfx/interface/bar/events/bar_sex_event.dds"
+	}
 	spriteType = {
 		name = "GFX_technology_barrad_folder_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_researched_item_bg.dds"

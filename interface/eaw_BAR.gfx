@@ -765,6 +765,130 @@ spriteTypes = {
 		name = "GFX_goal_bar_leopold_firem_megaphone"
 		texturefile = "gfx/interface/bar/goals/bar_leopold_firem_megaphone.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_clockwerk_tank"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_clockwerk_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_cryslat_infused_mech"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_cryslat_infused_mech.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_truck"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_truck.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_tank"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_crude_clockwerks"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_crude_clockwerks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_good_clockwerks"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_good_clockwerks.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_dark_forrest"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_dark_forrest.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_tank2"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_tank2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_whip"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_whip.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_whip2"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_whip2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_math"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_math.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_math2"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_math2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_math3"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_math3.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_math4"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_math4.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_flask"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_flask.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_computer"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_computer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_radar"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_radar.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_reactor"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_reactor.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_math5"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_math5.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_shovel_rifle"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_shovel_rifle.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_rifle_crate"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_rifle_crate.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_rifles"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_rifles.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_artillery"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_crate"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_crate.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_shovel_wrench"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_shovel_wrench.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_synth_resources"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_synth_resources.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_crystals"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_crystals.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_mine"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_mine.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_oil_lens"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_oil_lens.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_rifle_fire"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_rifle_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_leopold_arty2"
+		texturefile = "gfx/interface/bar/goals/bar_leopold_arty2.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"
 		texturefile = "gfx/interface/bar/ideas/leopold_partial_ascesion.dds"

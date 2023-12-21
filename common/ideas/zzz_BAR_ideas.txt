@@ -1258,7 +1258,7 @@ ideas = {
 			}
 		}
 
-		BAR_tenks = {
+		BAR_magic_mech = {
 			picture = generic_tank_manufacturer_1
 			modifier = {
 				mechanized_attack_factor = 0.1 

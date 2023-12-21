@@ -82,7 +82,7 @@ focus_tree = {
 			focus = BAR_leopold_children_of_wrath
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_war_support = 0.05
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.10
@@ -108,10 +108,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.10
-			}
+			add_war_support = 0.05
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
@@ -168,6 +165,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
 			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -208,10 +206,13 @@ focus_tree = {
 				bonus = 1.5
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cultist_warriors_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_rifle_crate
 		cost = 3.5
 		x = -1
 		y = 2
@@ -238,12 +239,14 @@ focus_tree = {
 				uses = 2
 				category = hospital_tech
 			}
-			
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
 		id = BAR_leopold_cultist_warriors_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_shovel_rifle
 		cost = 3.5
 		x = 1
 		y = 2
@@ -271,6 +274,9 @@ focus_tree = {
 				category = recon_tech
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cultist_warriors_5
@@ -294,10 +300,13 @@ focus_tree = {
 			add_ideas = BAR_leopold_cult_fanatism
 			custom_effect_tooltip = super_combat_abilities_tt
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_tanks
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_dark_forrest
 		cost = 3.5
 		x = -3
 		y = 1
@@ -316,10 +325,13 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_tanks_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_tank
 		cost = 3.5
 		x = -1
 		y = 1
@@ -338,10 +350,13 @@ focus_tree = {
 				category = armor
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_tanks_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_tank2
 		cost = 3.5
 		x = 0
 		y = 1
@@ -360,10 +375,13 @@ focus_tree = {
 				category = armor
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_tanks_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_truck
 		cost = 3.5
 		x = 1
 		y = 1
@@ -382,10 +400,13 @@ focus_tree = {
 				category = motorized_equipment
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_tanks_5
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_cryslat_infused_mech
 		cost = 3.5
 		x = 0
 		y = 1
@@ -397,7 +418,7 @@ focus_tree = {
 			focus = BAR_leopold_cult_tanks_4
 		}
 		completion_reward = {
-			add_ideas = BAR_tenks
+			add_ideas = BAR_magic_mech
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1
@@ -405,6 +426,9 @@ focus_tree = {
 				ahead_reduction = 2
 				category = cat_mechanized_equipment
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -434,10 +458,13 @@ focus_tree = {
 				add_ideas = BAR_magic_tenks
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_infantry
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_rifles
 		cost = 3.5
 		x = 3
 		y = 1
@@ -456,10 +483,13 @@ focus_tree = {
 				category = infantry_weapons
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_infantry_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_shovel_wrench
 		cost = 3.5
 		x = -1
 		y = 1
@@ -478,10 +508,13 @@ focus_tree = {
 				category = engineers_tech
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_infantry_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_crate
 		cost = 3.5
 		x = 0
 		y = 1
@@ -500,10 +533,13 @@ focus_tree = {
 				bonus = 1
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_infantry_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_artillery
 		cost = 3.5
 		x = 1
 		y = 1
@@ -522,10 +558,13 @@ focus_tree = {
 				category = artillery
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_cult_infantry_5
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_arty2
 		cost = 3.5
 		x = 0
 		y = 1
@@ -537,17 +576,20 @@ focus_tree = {
 			focus = BAR_leopold_cult_infantry_4
 		}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
 				uses = 2
-				category = land_doctrine
+				category = artillery
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
 		id = BAR_leopold_cult_infantry_6
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_rifle_fire
 		cost = 3.5
 		x = 1
 		y = 1
@@ -575,6 +617,9 @@ focus_tree = {
 				technology = magical_weapons2
 				technology = magical_weapons3
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -605,7 +650,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_industry_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_whip
 		cost = 3.5
 		x = -1
 		y = 1
@@ -629,7 +674,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_industry_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_whip2
 		cost = 3.5
 		x = 1
 		y = 1
@@ -740,7 +785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_mine
 		cost = 3.5
 		x = 7
 		y = 1
@@ -907,7 +952,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_crystals
 		cost = 3.5
 		x = 1
 		y = 1
@@ -929,7 +974,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_5
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_oil_lens
 		cost = 3.5
 		x = 0
 		y = 1
@@ -956,7 +1001,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_6
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_synth_resources
 		cost = 3.5
 		x = -3
 		y = 1
@@ -1332,6 +1377,7 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -1351,11 +1397,12 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_1
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_good_clockwerks
 		cost = 3.5
 		x = -2
 		y = 1
@@ -1383,7 +1430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_crude_clockwerks
 		cost = 3.5
 		x = 2
 		y = 1
@@ -1436,6 +1483,9 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_4
@@ -1465,6 +1515,9 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_5
@@ -1489,6 +1542,9 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 75
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_6
@@ -1509,6 +1565,9 @@ focus_tree = {
 		completion_reward = {
 			one_random_arms_factory = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_7
@@ -1528,6 +1587,10 @@ focus_tree = {
 				BAR_clockwerks_upgrade_org = 1
 				popup = no
 			}
+			custom_effect_tooltip = BAR_clockwerks_upgrade_org_tooltip
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1549,6 +1612,10 @@ focus_tree = {
 				BAR_clockwerks_arty = 1
 				popup = no
 			}
+			custom_effect_tooltip = BAR_clockwerks_arty_tooltip
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1567,6 +1634,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = BAR_leopold_bonus_planning
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1588,6 +1658,10 @@ focus_tree = {
 				BAR_clockwerks_combat_width = 1
 				popup = no
 			}
+			custom_effect_tooltip = BAR_clockwerks_combat_width_tooltip
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1605,6 +1679,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = BAR_leopold_cheaper_guns
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1626,11 +1703,15 @@ focus_tree = {
 				BAR_clockwerks_combat_attack = 1
 				popup = no
 			}
+			custom_effect_tooltip = BAR_clockwerks_combat_attack_tooltip
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_13
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_clockwerk_tank
 		cost = 3.5
 		x = 1
 		y = 1
@@ -1647,6 +1728,10 @@ focus_tree = {
 				BAR_clockwerks_tanks = 1
 				popup = no
 			}
+			custom_effect_tooltip = BAR_clockwerks_tanks_tooltip
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1668,6 +1753,10 @@ focus_tree = {
 				BAR_clockwerks_terrain_upgrade = 1
 				popup = no
 			}
+			custom_effect_tooltip = BAR_clockwerks_terrain_upgrade_tooltip
+		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
 		}
 	}
 	focus = {
@@ -1687,10 +1776,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = BAR_leopold_mass_clockwerks
 		}
+		search_filters = {
+			FOCUS_FILTER_ARMY_BONUS
+		}
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_math
 		cost = 3.5
 		x = 2
 		y = 0
@@ -1709,7 +1801,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_1
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_computer
 		cost = 3.5
 		x = -3
 		y = 1
@@ -1731,7 +1823,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_math2
 		cost = 3.5
 		x = -1
 		y = 1
@@ -1754,7 +1846,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_flask
 		cost = 3.5
 		x = 1
 		y = 1
@@ -1774,7 +1866,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_4
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_math3
 		cost = 3.5
 		x = 3
 		y = 1
@@ -1794,7 +1886,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_5
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_math5
 		cost = 3.5
 		x = 1
 		y = 1
@@ -1843,7 +1935,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_7
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_reactor
 		cost = 3.5
 		x = 0
 		y = 1
@@ -1872,7 +1964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_8
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_radar
 		cost = 3.5
 		x = 2
 		y = 1
@@ -1894,7 +1986,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_surreal_mathematic_9
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_math4
 		cost = 3.5
 		x = 0
 		y = 1
@@ -1930,6 +2022,9 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
+		}
 	}
 	focus = {
 		id = BAR_leopold_conquest_1
@@ -1949,6 +2044,9 @@ focus_tree = {
 				target = ZES
 				type = annex_everything
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -1970,6 +2068,9 @@ focus_tree = {
 				type = annex_everything
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
+		}
 	}
 	focus = {
 		id = BAR_leopold_conquest_3
@@ -1989,6 +2090,9 @@ focus_tree = {
 				target = GRU
 				type = annex_everything
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -2012,6 +2116,9 @@ focus_tree = {
 				target = WIT
 				type = annex_everything
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -2075,6 +2182,9 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -2159,6 +2269,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
+		}
 	}
 	focus = {
 		id = BAR_leopold_conquest_7
@@ -2199,6 +2312,9 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -2248,6 +2364,9 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -2365,6 +2484,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
+		}
 	}
 	focus = {
 		id = BAR_leopold_conquest_10
@@ -2435,6 +2557,9 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 	focus = {
@@ -2606,6 +2731,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
+		}
 	}
 	focus = {
 		id = BAR_leopold_conquest_12
@@ -2677,6 +2805,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
+		}
 	}
 	focus = {
 		id = BAR_leopold_conquest_13
@@ -2736,6 +2867,9 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_PATCH_OF_WRATCH
 		}
 	}
 }

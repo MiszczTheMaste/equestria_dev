@@ -3057,31 +3057,9 @@ country_event = {
 		#viira
 		trigger = {
 			OR = {
-				#pentarchy alive
-				AND = {
-					has_country_flag = barrad_asinti_alive
-					check_variable = {
-						var = BAR_relations_asinti_viira
-						value = 70
-						compare = less_than
-					}
-				}
-				AND = {
-					has_country_flag = barrad_silver_star_alive
-					check_variable = {
-						var = BAR_relations_silver_viira
-						value = 70
-						compare = less_than
-					}
-				}
-				AND = {
-					has_country_flag = barrad_leopold_alive
-					check_variable = {
-						var = BAR_relations_leopold_viira
-						value = 70
-						compare = less_than
-					}
-				}
+				has_country_flag = barrad_asinti_alive
+				has_country_flag = barrad_silver_star_alive
+				has_country_flag = barrad_leopold_alive
 			}
 			has_country_flag = barrad_viira_alive
 			is_ai = no
@@ -3095,7 +3073,6 @@ country_event = {
 		#no viira
 		trigger = {
 			OR = {
-				#pentarchy alive
 				has_country_flag = barrad_asinti_alive
 				has_country_flag = barrad_silver_star_alive
 				has_country_flag = barrad_leopold_alive
@@ -3125,52 +3102,6 @@ country_event = {
 			id = barrad_viira_fight.4
 		}
 		name = barrad_viira_fight.1.c
-	}
-	option = {
-		#viira befriended the others, demands they swear fealty
-		trigger = {
-			has_country_flag = barrad_viira_alive
-			OR = {
-				has_country_flag = barrad_asinti_alive
-				has_country_flag = barrad_silver_star_alive
-				has_country_flag = barrad_leopold_alive
-			}
-			if = {
-				limit = {
-					has_country_flag = barrad_asinti_alive
-				}
-				check_variable = {
-					var = BAR_relations_asinti_viira
-					value = 70
-					compare = greater_than_or_equals
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = barrad_silver_star_alive
-				}
-				check_variable = {
-					var = BAR_relations_silver_viira
-					value = 70
-					compare = greater_than_or_equals
-				}
-			}
-			if = {
-				limit = {
-					has_country_flag = barrad_leopold_alive
-				}
-				check_variable = {
-					var = BAR_relations_leopold_viira
-					value = 70
-					compare = greater_than_or_equals
-				}
-			}
-			is_ai = no
-		}
-		country_event = {
-			id = barrad_viira_fight.21
-		}
-		name = barrad_viira_fight.1.e
 	}
 	option = {
 		trigger = {

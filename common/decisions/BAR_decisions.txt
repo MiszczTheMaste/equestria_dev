@@ -11400,6 +11400,7 @@ bar_sane_ambrosius_balance_category = {
 		} 
 		cost = 50
 		days_remove = 60
+		fire_only_once = yes
 		modifier = {
 			political_power_factor = 0.25
 		}
@@ -11410,5 +11411,107 @@ bar_sane_ambrosius_balance_category = {
 				value = -0.05
 			}
 		}
+	}	
+	bar_sane_ambrosius_balance_charity = {
+		icon = pawn
+		allowed = { 
+			original_tag = BAR 
+		} 
+		cost = 30
+		days_remove = 29
+		fire_only_once = yes
+		modifier = {
+			stability_weekly = 0.01
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_charity"
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = 0.05
+			}
+		}
 	}
+	bar_sane_ambrosius_balance_cult_death_squads = {
+		icon = pawn
+		allowed = { 
+			original_tag = BAR 
+		} 
+		cost = 100
+		days_remove = 60
+		fire_only_once = yes
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_cult_death_squads"
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = -0.15
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_template = "The Guard"
+					}
+				}
+				division_template = {
+					name = "The Guard"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						artillery_brigade = {
+							x = 2
+							y = 0
+						}
+						artillery_brigade = {
+							x = 2
+							y = 1
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Division of Devouted\" division_template = \"The Guard\" start_experience_factor = 0.75 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+	}
+	bar_sane_ambrosius_balance_mercenaries = {
+		icon = pawn
+		allowed = { 
+			original_tag = BAR 
+		} 
+		cost = 80
+		days_remove = 29
+		fire_only_once = yes
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_mercenaries"
+			add_manpower = 10000
+		}
+	}	
 }

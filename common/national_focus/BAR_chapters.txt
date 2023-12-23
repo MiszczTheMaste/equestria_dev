@@ -2781,6 +2781,14 @@ focus_tree = {
 				id = barrad_third.9
 				days = 1
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = BAR_begun_friendship_path
+					}
+					country_event = barrad_friends.5
+				}
+			}
 		}
 	}
 	focus = {

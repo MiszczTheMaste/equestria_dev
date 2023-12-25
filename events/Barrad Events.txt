@@ -540,46 +540,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_silver_star_nightmares.1.a
-		if = {
-			limit = {
-				check_variable = {
-					var = BAR_relations_asinti_silver
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			subtract_from_variable = {
-				var = BAR_relations_asinti_silver
-				value = 1
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = BAR_relations_silver_leopold
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			subtract_from_variable = {
-				var = BAR_relations_silver_leopold
-				value = 1
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = BAR_relations_silver_viira
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			subtract_from_variable = {
-				var = BAR_relations_silver_viira
-				value = 1
-			}
-		}
-		BAR_relations_idea_swap = yes
+		BAR_relations_decrease_all_1 = yes
 		hidden_effect = {
 			set_country_flag = BAR_silver_sad
 		}
@@ -600,45 +561,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_silver_star_nightmares.1.a
-		if = {
-			limit = {
-				check_variable = {
-					var = BAR_relations_asinti_silver
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			subtract_from_variable = {
-				var = BAR_relations_asinti_silver
-				value = 1
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = BAR_relations_silver_leopold
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			subtract_from_variable = {
-				var = BAR_relations_silver_leopold
-				value = 1
-			}
-		}
-		if = {
-			limit = {
-				check_variable = {
-					var = BAR_relations_silver_viira
-					value = 1
-					compare = greater_than_or_equals
-				}
-			}
-			subtract_from_variable = {
-				var = BAR_relations_silver_viira
-				value = 1
-			}
-		}
+		BAR_relations_decrease_all_1 = yes
 		BAR_relations_idea_swap = yes
 		custom_effect_tooltip = bar_silver_star_nightmares.1.a_tooltip
 	}

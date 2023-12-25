@@ -487,6 +487,17 @@ BAR_relations_idea_swap = {
 	}
 }
 
+
+ ######                                                          
+ #     # ######  ####   ####  #    # #####   ####  ######  ####  
+ #     # #      #      #    # #    # #    # #    # #      #      
+ ######  #####   ####  #    # #    # #    # #      #####   ####  
+ #   #   #           # #    # #    # #####  #      #           # 
+ #    #  #      #    # #    # #    # #   #  #    # #      #    # 
+ #     # ######  ####   ####   ####  #    #  ####  ######  ####  
+                                                                 
+
+
 BAR_resources_add_asinti_100 = {
 	custom_effect_tooltip = BAR_resources_gain_asinti_100
 	add_to_variable = {
@@ -631,7 +642,6 @@ BAR_resources_add_viira_1000 = {
 	}
 }
 
-### subtract resources ###
 BAR_resources_subtract_asinti_1500 = {
 	if = {
 		limit = {
@@ -808,462 +818,454 @@ BAR_resources_subtract_viira_1000 = {
 	}
 }
 
-### relations ###
+
+
+ ######                                                    
+ #     # ###### #        ##   ##### #  ####  #    #  ####  
+ #     # #      #       #  #    #   # #    # ##   # #      
+ ######  #####  #      #    #   #   # #    # # #  #  ####  
+ #   #   #      #      ######   #   # #    # #  # #      # 
+ #    #  #      #      #    #   #   # #    # #   ## #    # 
+ #     # ###### ###### #    #   #   #  ####  #    #  ####  
+                                                           
+ #
+ # all relation changes MUST be made using those in order to prevent bugs in friendship path
+ # @BAR_begun_friendship_path flag disables raising/lowering relations
+ #
+
 BAR_relations_increase_asinti_silver_5 = {
-	custom_effect_tooltip = BAR_relations_increase_asinti_silver
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_asinti_silver
-				value = 95
-				compare = less_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		add_to_variable = {
-			var = BAR_relations_asinti_silver
-			value = 5
+		custom_effect_tooltip = BAR_relations_increase_asinti_silver
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_asinti_silver
+					value = 95
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = BAR_relations_asinti_silver
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_asinti_silver = 100
+		else = {
+			set_variable = {
+				BAR_relations_asinti_silver = 100
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_increase_asinti_leopold_5 = {
-	custom_effect_tooltip = BAR_relations_increase_asinti_leopold
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_asinti_leopold
-				value = 95
-				compare = less_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		add_to_variable = {
-			var = BAR_relations_asinti_leopold
-			value = 5
+		custom_effect_tooltip = BAR_relations_increase_asinti_leopold
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_asinti_leopold
+					value = 95
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = BAR_relations_asinti_leopold
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_asinti_leopold = 100
+		else = {
+			set_variable = {
+				BAR_relations_asinti_leopold = 100
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_increase_asinti_viira_5 = {
-	custom_effect_tooltip = BAR_relations_increase_asinti_viira
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_asinti_viira
-				value = 95
-				compare = less_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		add_to_variable = {
-			var = BAR_relations_asinti_viira
-			value = 5
+		custom_effect_tooltip = BAR_relations_increase_asinti_viira
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_asinti_viira
+					value = 95
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = BAR_relations_asinti_viira
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_asinti_viira = 100
+		else = {
+			set_variable = {
+				BAR_relations_asinti_viira = 100
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_increase_silver_leopold_5 = {
-	custom_effect_tooltip = BAR_relations_increase_silver_leopold
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_silver_leopold
-				value = 95
-				compare = less_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		add_to_variable = {
-			var = BAR_relations_silver_leopold
-			value = 5
+		custom_effect_tooltip = BAR_relations_increase_silver_leopold
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_silver_leopold
+					value = 95
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = BAR_relations_silver_leopold
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_silver_leopold = 100
+		else = {
+			set_variable = {
+				BAR_relations_silver_leopold = 100
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_increase_silver_viira_5 = {
-	custom_effect_tooltip = BAR_relations_increase_silver_viira
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_silver_viira
-				value = 95
-				compare = less_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		add_to_variable = {
-			var = BAR_relations_silver_viira
-			value = 5
+		custom_effect_tooltip = BAR_relations_increase_silver_viira
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_silver_viira
+					value = 95
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = BAR_relations_silver_viira
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_silver_viira = 100
+		else = {
+			set_variable = {
+				BAR_relations_silver_viira = 100
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_increase_leopold_viira_5 = {
-	custom_effect_tooltip = BAR_relations_increase_leopold_viira
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_leopold_viira
-				value = 95
-				compare = less_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		add_to_variable = {
-			var = BAR_relations_leopold_viira
-			value = 5
+		custom_effect_tooltip = BAR_relations_increase_leopold_viira
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_leopold_viira
+					value = 95
+					compare = less_than_or_equals
+				}
+			}
+			add_to_variable = {
+				var = BAR_relations_leopold_viira
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_leopold_viira = 100
+		else = {
+			set_variable = {
+				BAR_relations_leopold_viira = 100
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_decrease_asinti_silver_5 = {
-	custom_effect_tooltip = BAR_relations_decrease_asinti_silver
 	if = {
 		limit = {
-			has_country_flag = barrad_early_game
-			has_country_flag = BAR_silver_sad
-			check_variable = {
-				BAR_relations_asinti_silver > 69
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		set_country_flag = BAR_silver_trig_event
-	}
-	if = {
-		limit = {
-			check_variable = {
+		custom_effect_tooltip = BAR_relations_decrease_asinti_silver
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_asinti_silver
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
 				var = BAR_relations_asinti_silver
 				value = 5
-				compare = greater_than_or_equals
 			}
 		}
-		subtract_from_variable = {
-			var = BAR_relations_asinti_silver
-			value = 5
-		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_asinti_silver = 0
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = BAR_silver_trig_event
-			check_variable = {
-				BAR_relations_asinti_silver < 70
+		else = {
+			set_variable = {
+				BAR_relations_asinti_silver = 0
 			}
 		}
-		clr_country_flag = BAR_silver_sad
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_decrease_asinti_leopold_5 = {
-	custom_effect_tooltip = BAR_relations_decrease_asinti_leopold
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_asinti_leopold
-				value = 5
-				compare = greater_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		subtract_from_variable = {
-			var = BAR_relations_asinti_leopold
-			value = 5
+		custom_effect_tooltip = BAR_relations_decrease_asinti_leopold
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_asinti_leopold
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
+				var = BAR_relations_asinti_leopold
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_asinti_leopold = 0
+		else = {
+			set_variable = {
+				BAR_relations_asinti_leopold = 0
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_decrease_asinti_viira_5 = {
-	custom_effect_tooltip = BAR_relations_decrease_asinti_viira
 	if = {
 		limit = {
-			check_variable = {
-				var = BAR_relations_asinti_viira
-				value = 5
-				compare = greater_than_or_equals
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		subtract_from_variable = {
-			var = BAR_relations_asinti_viira
-			value = 5
+		custom_effect_tooltip = BAR_relations_decrease_asinti_viira
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_asinti_viira
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
+				var = BAR_relations_asinti_viira
+				value = 5
+			}
 		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_asinti_viira = 0
+		else = {
+			set_variable = {
+				BAR_relations_asinti_viira = 0
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_decrease_silver_leopold_5 = {
 	if = {
 		limit = {
-			has_country_flag = barrad_early_game
-			has_country_flag = BAR_silver_sad
-			check_variable = {
-				BAR_relations_silver_leopold > 69
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		set_country_flag = BAR_silver_trig_event
-	}
-	custom_effect_tooltip = BAR_relations_decrease_silver_leopold
-	if = {
-		limit = {
-			check_variable = {
+		custom_effect_tooltip = BAR_relations_decrease_silver_leopold
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_silver_leopold
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
 				var = BAR_relations_silver_leopold
 				value = 5
-				compare = greater_than_or_equals
 			}
 		}
-		subtract_from_variable = {
-			var = BAR_relations_silver_leopold
-			value = 5
-		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_silver_leopold = 0
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = BAR_silver_trig_event
-			check_variable = {
-				BAR_relations_silver_leopold < 70
+		else = {
+			set_variable = {
+				BAR_relations_silver_leopold = 0
 			}
 		}
-		clr_country_flag = BAR_silver_sad
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_decrease_silver_viira_5 = {
 	if = {
 		limit = {
-			has_country_flag = barrad_early_game
-			has_country_flag = BAR_silver_sad
-			check_variable = {
-				BAR_relations_silver_viira > 69
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		set_country_flag = BAR_silver_trig_event
-	}
-	custom_effect_tooltip = BAR_relations_decrease_silver_viira
-	if = {
-		limit = {
-			check_variable = {
+		custom_effect_tooltip = BAR_relations_decrease_silver_viira
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_silver_viira
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
 				var = BAR_relations_silver_viira
 				value = 5
-				compare = greater_than_or_equals
 			}
 		}
-		subtract_from_variable = {
-			var = BAR_relations_silver_viira
-			value = 5
-		}
-	}
-	else = {
-		set_variable = {
-			BAR_relations_silver_viira = 0
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = BAR_silver_trig_event
-			check_variable = {
-				BAR_relations_silver_viira < 70
+		else = {
+			set_variable = {
+				BAR_relations_silver_viira = 0
 			}
 		}
-		clr_country_flag = BAR_silver_sad
+		BAR_relations_idea_swap = yes
 	}
-	BAR_relations_idea_swap = yes
 }
 
 BAR_relations_decrease_leopold_viira_5 = {
-	custom_effect_tooltip = BAR_relations_decrease_leopold_viira
 	if = {
 		limit = {
-			check_variable = {
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
+			}
+		}
+		custom_effect_tooltip = BAR_relations_decrease_leopold_viira
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_leopold_viira
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
 				var = BAR_relations_leopold_viira
 				value = 5
-				compare = greater_than_or_equals
 			}
 		}
-		subtract_from_variable = {
-			var = BAR_relations_leopold_viira
-			value = 5
+		else = {
+			set_variable = {
+				BAR_relations_leopold_viira = 0
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	else = {
-		set_variable = {
-			BAR_relations_leopold_viira = 0
-		}
-	}
-	BAR_relations_idea_swap = yes
 }
 
-BAR_population_convert = {
-	THIS = {
-		set_state_category = rural
-		#half od the factories are added to barrad capital
-		set_temp_variable = {
-			armsFactories = arms_factory_level
-		}
-		set_temp_variable = {
-			civFactories = industrial_complex_level
-		}
-		divide_temp_variable = {
-			armsFactories = 2
-		}
-		divide_temp_variable = {
-			civFactories = 2
-		}
-		round_variable = armsFactories
-		round_variable = civFactories
-		626 = {
-			if = {
-				limit = {
-					check_variable = {
-						armsFactories > 0
-					}
-				}
-				add_extra_state_shared_building_slots = armsFactories
-				add_building_construction = {
-					type = arms_factory
-					level = armsFactories
-					instant_build = yes
-				}
-			}
-			if = {
-				limit = {
-					check_variable = {
-						civFactories > 0
-					}
-				}
-				add_extra_state_shared_building_slots = industrial_complex_level
-				add_building_construction = {
-					type = industrial_complex
-					level = civFactories
-					instant_build = yes
-				}
+BAR_relations_decrease_all_1 = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-		set_building_level = {
-			type = arms_factory
-			level = 0
-			instant_build = yes
-		}
-		set_building_level = {
-			type = industrial_complex
-			level = 0
-			instant_build = yes
-		}
-	}
-	add_compliance = 100
-	hidden_effect = {
-		set_temp_variable = {
-			popToAdd = state_population
-		}
-		multiply_temp_variable = {
-			popToAdd = 0.4
-		}
-		save_current_manpower = yes
-		while_loop_effect = {
+		if = {
 			limit = {
-				THIS = {
-					state_population > 900000
+				check_variable = {
+					var = BAR_relations_asinti_silver
+					value = 1
+					compare = greater_than_or_equals
 				}
 			}
-			THiS = {
-				add_manpower = -900000
+			subtract_from_variable = {
+				var = BAR_relations_asinti_silver
+				value = 1
 			}
 		}
-		THiS = {
-			set_temp_variable = {
-				popToKill = state_population
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_silver_leopold
+					value = 1
+					compare = greater_than_or_equals
+				}
 			}
-			multiply_temp_variable = {
-				popToKill = -1
+			subtract_from_variable = {
+				var = BAR_relations_silver_leopold
+				value = 1
 			}
-			add_manpower = -popToKill
 		}
-		restore_previous_manpower = yes
-		ROOT = {
-			add_manpower = popToAdd
+		if = {
+			limit = {
+				check_variable = {
+					var = BAR_relations_silver_viira
+					value = 1
+					compare = greater_than_or_equals
+				}
+			}
+			subtract_from_variable = {
+				var = BAR_relations_silver_viira
+				value = 1
+			}
 		}
+		BAR_relations_idea_swap = yes
 	}
-	custom_effect_tooltip = bar_convert_population_manpower_tooltip
 }
 
-BAR_un_idea_buffs_remove = {
-	hidden_effect = {
-		clr_country_flag = BAR_un_buff_piercing_flag
-		clr_country_flag = BAR_un_buff_org_flag
-		clr_country_flag = BAR_un_buff_break_flag
-		clr_country_flag = BAR_un_buff_def_flag
-		clr_country_flag = BAR_un_buff_attack_flag
-		set_technology = {
-			popup = no
-			BAR_un_buff_piercing_tech = 0
-		}
-		set_technology = {
-			popup = no
-			BAR_un_buff_org_tech = 0
-		}
-		set_technology = {
-			popup = no
-			BAR_un_buff_break_tech = 0
-		}
-		set_technology = {
-			popup = no
-			BAR_un_buff_def_tech = 0
-		}
-		set_technology = {
-			popup = no
-			BAR_un_buff_attack_tech = 0
-		}
-	}
+BAR_remove_cooperation = {
+	remove_ideas = BAR_relations_asinti_silver_positive
+	remove_ideas = BAR_relations_asinti_leopold_positive
+	remove_ideas = BAR_relations_asinti_viira_positive
+	remove_ideas = BAR_relations_silver_leopold_positive
+	remove_ideas = BAR_relations_silver_viira_positive
+	remove_ideas = BAR_relations_leopold_viira_positive
+	remove_ideas = BAR_relations_asinti_silver_negative
+	remove_ideas = BAR_relations_asinti_leopold_negative
+	remove_ideas = BAR_relations_asinti_viira_negative
+	remove_ideas = BAR_relations_silver_leopold_negative
+	remove_ideas = BAR_relations_silver_viira_negative
+	remove_ideas = BAR_relations_leopold_viira_negative
 }
+                                                                                                                
+ #    # # #      #      # #    #  ####      ####  #    #   ##   #####    ##    ####  ##### ###### #####   ####  
+ #   #  # #      #      # ##   # #    #    #    # #    #  #  #  #    #  #  #  #    #   #   #      #    # #      
+ ####   # #      #      # # #  # #         #      ###### #    # #    # #    # #        #   #####  #    #  ####  
+ #  #   # #      #      # #  # # #  ###    #      #    # ###### #####  ###### #        #   #      #####       # 
+ #   #  # #      #      # #   ## #    #    #    # #    # #    # #   #  #    # #    #   #   #      #   #  #    # 
+ #    # # ###### ###### # #    #  ####      ####  #    # #    # #    # #    #  ####    #   ###### #    #  ####  
+                                                                                                                
+
 
 barrad_kill_leopold = {
 	hidden_effect = {
@@ -1454,6 +1456,24 @@ barrad_kill_viira = {
 	}
 }
 
+bar_kill_ambrosius = {
+	if = {
+		limit = {
+			has_variable = bar_pen_screen_show
+		}
+		bar_gui_update = yes
+	}
+	if = {
+		limit = {
+			has_character = BAR_count_ambrosius
+		}
+		BAR_count_ambrosius = {
+			retire = yes
+		}
+	}
+	set_country_flag = BAR_ambrosius_killed
+}
+
 change_all_province_names = {
 	hidden_effect = {
 		set_province_name = {
@@ -1474,6 +1494,275 @@ change_all_province_names = {
 		}
 	}
 }
+
+
+  #####                                    #####                      
+ #     # # #      #    # ###### #####     #     # #####   ##   #####  
+ #       # #      #    # #      #    #    #         #    #  #  #    # 
+  #####  # #      #    # #####  #    #     #####    #   #    # #    # 
+       # # #      #    # #      #####           #   #   ###### #####  
+ #     # # #       #  #  #      #   #     #     #   #   #    # #   #  
+  #####  # ######   ##   ###### #    #     #####    #   #    # #    # 
+                                                                      
+
+
+BAR_population_convert = {
+	THIS = {
+		set_state_category = rural
+		#half od the factories are added to barrad capital
+		set_temp_variable = {
+			armsFactories = arms_factory_level
+		}
+		set_temp_variable = {
+			civFactories = industrial_complex_level
+		}
+		divide_temp_variable = {
+			armsFactories = 2
+		}
+		divide_temp_variable = {
+			civFactories = 2
+		}
+		round_variable = armsFactories
+		round_variable = civFactories
+		626 = {
+			if = {
+				limit = {
+					check_variable = {
+						armsFactories > 0
+					}
+				}
+				add_extra_state_shared_building_slots = armsFactories
+				add_building_construction = {
+					type = arms_factory
+					level = armsFactories
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						civFactories > 0
+					}
+				}
+				add_extra_state_shared_building_slots = industrial_complex_level
+				add_building_construction = {
+					type = industrial_complex
+					level = civFactories
+					instant_build = yes
+				}
+			}
+		}
+		set_building_level = {
+			type = arms_factory
+			level = 0
+			instant_build = yes
+		}
+		set_building_level = {
+			type = industrial_complex
+			level = 0
+			instant_build = yes
+		}
+	}
+	add_compliance = 100
+	hidden_effect = {
+		set_temp_variable = {
+			popToAdd = state_population
+		}
+		multiply_temp_variable = {
+			popToAdd = 0.4
+		}
+		save_current_manpower = yes
+		while_loop_effect = {
+			limit = {
+				THIS = {
+					state_population > 900000
+				}
+			}
+			THiS = {
+				add_manpower = -900000
+			}
+		}
+		THiS = {
+			set_temp_variable = {
+				popToKill = state_population
+			}
+			multiply_temp_variable = {
+				popToKill = -1
+			}
+			add_manpower = -popToKill
+		}
+		restore_previous_manpower = yes
+		ROOT = {
+			add_manpower = popToAdd
+		}
+	}
+	custom_effect_tooltip = bar_convert_population_manpower_tooltip
+}
+
+BAR_un_idea_buffs_remove = {
+	hidden_effect = {
+		clr_country_flag = BAR_un_buff_piercing_flag
+		clr_country_flag = BAR_un_buff_org_flag
+		clr_country_flag = BAR_un_buff_break_flag
+		clr_country_flag = BAR_un_buff_def_flag
+		clr_country_flag = BAR_un_buff_attack_flag
+		set_technology = {
+			popup = no
+			BAR_un_buff_piercing_tech = 0
+		}
+		set_technology = {
+			popup = no
+			BAR_un_buff_org_tech = 0
+		}
+		set_technology = {
+			popup = no
+			BAR_un_buff_break_tech = 0
+		}
+		set_technology = {
+			popup = no
+			BAR_un_buff_def_tech = 0
+		}
+		set_technology = {
+			popup = no
+			BAR_un_buff_attack_tech = 0
+		}
+	}
+}
+
+bar_kill_advisors = {
+	if = {
+		limit = {
+			has_variable = bar_pen_screen_show
+		}
+		bar_gui_update = yes
+	}
+	set_country_flag = BAR_advisors_killed
+	BAR_leofric_and_godgifu_glaedwine = {
+		set_character_name = BAR_ded_scientist
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_aethelflaed_sigeweard = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_hereweald_ealdwine = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_eadmund_heahstan = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_sabedoria = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_oswine_sigespere = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_mister_lilly = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor2
+			}
+		}
+	}
+	BAR_leofric_stearcstan = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_beorhtsige_sigespere = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_ceadda_sigeweald = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_godric_hereweald = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_wigmund_sunnespere = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_stithulf_frostdun = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_hrothgar_fiscford = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_wilfrith_faegerwell = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+	BAR_cyneweard_stangaet = {
+		set_portraits = {
+			army = {
+				small = GFX_idea_BAR_undead_advisor
+			}
+		}
+	}
+}
+
+
+ #     #                   
+ #     # # # #####    ##   
+ #     # # # #    #  #  #  
+ #     # # # #    # #    # 
+  #   #  # # #####  ###### 
+   # #   # # #   #  #    # 
+    #    # # #    # #    # 
+                           
+
+
 
 bar_viira_spells_max_overload = {
 	hidden_effect = {
@@ -1555,21 +1844,144 @@ bar_viira_spells_overload_monthly_tickdown = {
 	}
 }
 
-one_state_inf = {
-	if = {
-		limit = {
-			infrastructure < 10
+BAR_new_viira_note = {
+	hidden_effect = {
+		ROOT = {
+			set_variable = {
+				BAR_new_journal_entry_trigger = 1
+			}
+			country_event = {
+				id = bar_clear_journal.1
+				hours = 6
+			}
 		}
-		add_building_construction = {
-			type = infrastructure
-			level = 1
-			instant_build = yes
-		}
-	}
-	else = {
-		add_extra_state_shared_building_slots = 1
 	}
 }
+BAR_merge_commandments = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = BAR_commandments_sacrifice_for_the_cause_idea
+				has_idea = BAR_commandments_faith_primacy_idea
+				has_idea = BAR_commandments_ritual_enlightment_idea
+				has_idea = BAR_commandments_asceticism_idea
+				has_idea = BAR_commandments_piety_of_work_idea
+				has_idea = BAR_commandments_redempt_sins_idea
+				has_idea = BAR_commandments_servitude_or_death_idea
+				has_idea = BAR_commandments_sacred_insanity_idea
+				has_idea = BAR_commandments_cult_of_progress_idea
+				has_idea = BAR_commandments_holy_commune_idea
+			}
+			remove_ideas = BAR_commandments_sacrifice_for_the_cause_idea
+			remove_ideas = BAR_commandments_faith_primacy_idea
+			remove_ideas = BAR_commandments_ritual_enlightment_idea
+			remove_ideas = BAR_commandments_asceticism_idea
+			remove_ideas = BAR_commandments_piety_of_work_idea
+			remove_ideas = BAR_commandments_redempt_sins_idea
+			remove_ideas = BAR_commandments_servitude_or_death_idea
+			remove_ideas = BAR_commandments_sacred_insanity_idea
+			remove_ideas = BAR_commandments_cult_of_progress_idea
+			remove_ideas = BAR_commandments_holy_commune_idea
+			add_ideas = BAR_commandments_combined
+		}
+	}
+}
+
+BAR_unlock_spells_1 = {
+	#mass migration
+	country_event = {
+		id = barrad_viira.23
+	}
+	set_country_flag = BAR_spells_unlocked_1
+}
+
+BAR_unlock_spells_2 = {
+	#research bonuses
+	country_event = {
+		id = barrad_viira.22
+	}
+	set_country_flag = BAR_spells_unlocked_2
+}
+
+BAR_unlock_spells_3 = {
+	#stronger spells
+	country_event = {
+		id = barrad_viira.21
+	}
+	set_country_flag = BAR_spells_unlocked_3
+}
+
+BAR_unlock_spells_4 = {
+	#psi powers upgrade
+	country_event = {
+		id = barrad_viira.20
+	}
+	set_country_flag = BAR_spells_unlocked_4
+}
+
+BAR_unlock_spells_5 = {
+	#conjure buildings
+	country_event = {
+		id = barrad_viira.19
+	}
+	set_country_flag = BAR_spells_unlocked_5
+}
+
+BAR_unlock_spells_6 = {
+	#mind control perfection
+	country_event = {
+		id = barrad_viira.18
+	}
+	set_country_flag = BAR_spells_unlocked_6
+}
+
+BAR_unlock_spells_7 = {
+	#conjure resources
+	country_event = {
+		id = barrad_viira.17
+	}
+}
+
+BAR_unlock_spells_8 = {
+	country_event = {
+		id = barrad_viira.16
+	}
+}
+BAR_spell_upgrades_prepare = {
+	resize_array = {
+		array = bar_viira_mana_crystal_array
+		value = 1
+		size = 16
+	}
+	for_each_loop = {
+		array = bar_viira_mana_crystal_array
+		index = reactor_index
+		value = reactor_frame
+		if = {
+			limit = {
+				nuclear_reactor > reactor_index
+			}
+			set_variable = {
+				reactor_frame = 2
+			}
+		}
+		else = {
+			set_variable = {
+				reactor_frame = 1
+			}
+		}
+	}
+}
+
+  #####                                            
+ #     # #      ######   ##   #    # #    # #####  
+ #       #      #       #  #  ##   # #    # #    # 
+ #       #      #####  #    # # #  # #    # #    # 
+ #       #      #      ###### #  # # #    # #####  
+ #     # #      #      #    # #   ## #    # #      
+  #####  ###### ###### #    # #    #  ####  #      
+                                                   
+
 
 BAR_clear_mess_puppet = {
 	hidden_effect = {
@@ -1626,19 +2038,16 @@ BAR_clear_mess_puppet = {
 	}
 }
 
-BAR_new_viira_note = {
-	hidden_effect = {
-		ROOT = {
-			set_variable = {
-				BAR_new_journal_entry_trigger = 1
-			}
-			country_event = {
-				id = bar_clear_journal.1
-				hours = 6
-			}
-		}
-	}
-}
+
+  #####           
+ #     # #    # # 
+ #       #    # # 
+ #  #### #    # # 
+ #     # #    # # 
+ #     # #    # # 
+  #####   ####  # 
+                  
+
 
 BAR_gui_reset = {
 	if = {
@@ -1783,248 +2192,14 @@ bar_gui_update = {
 	}
 }
 
-bar_kill_ambrosius = {
-	if = {
-		limit = {
-			has_variable = bar_pen_screen_show
-		}
-		bar_gui_update = yes
-	}
-	if = {
-		limit = {
-			has_character = BAR_count_ambrosius
-		}
-		BAR_count_ambrosius = {
-			retire = yes
-		}
-	}
-	set_country_flag = BAR_ambrosius_killed
-}
-
-bar_kill_advisors = {
-	if = {
-		limit = {
-			has_variable = bar_pen_screen_show
-		}
-		bar_gui_update = yes
-	}
-	set_country_flag = BAR_advisors_killed
-	BAR_leofric_and_godgifu_glaedwine = {
-		set_character_name = BAR_ded_scientist
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_aethelflaed_sigeweard = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_hereweald_ealdwine = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_eadmund_heahstan = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_sabedoria = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_oswine_sigespere = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_mister_lilly = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor2
-			}
-		}
-	}
-	BAR_leofric_stearcstan = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_beorhtsige_sigespere = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_ceadda_sigeweald = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_godric_hereweald = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_wigmund_sunnespere = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_stithulf_frostdun = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_hrothgar_fiscford = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_wilfrith_faegerwell = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-	BAR_cyneweard_stangaet = {
-		set_portraits = {
-			army = {
-				small = GFX_idea_BAR_undead_advisor
-			}
-		}
-	}
-}
-
-BAR_remove_cooperation = {
-	remove_ideas = BAR_relations_asinti_silver_positive
-	remove_ideas = BAR_relations_asinti_leopold_positive
-	remove_ideas = BAR_relations_asinti_viira_positive
-	remove_ideas = BAR_relations_silver_leopold_positive
-	remove_ideas = BAR_relations_silver_viira_positive
-	remove_ideas = BAR_relations_leopold_viira_positive
-	remove_ideas = BAR_relations_asinti_silver_negative
-	remove_ideas = BAR_relations_asinti_leopold_negative
-	remove_ideas = BAR_relations_asinti_viira_negative
-	remove_ideas = BAR_relations_silver_leopold_negative
-	remove_ideas = BAR_relations_silver_viira_negative
-	remove_ideas = BAR_relations_leopold_viira_negative
-}
-
-BAR_spell_upgrades_prepare = {
-	resize_array = {
-		array = bar_viira_mana_crystal_array
-		value = 1
-		size = 16
-	}
-	for_each_loop = {
-		array = bar_viira_mana_crystal_array
-		index = reactor_index
-		value = reactor_frame
-		if = {
-			limit = {
-				nuclear_reactor > reactor_index
-			}
-			set_variable = {
-				reactor_frame = 2
-			}
-		}
-		else = {
-			set_variable = {
-				reactor_frame = 1
-			}
-		}
-	}
-}
-
-BAR_unlock_spells_1 = {
-	#mass migration
-	country_event = {
-		id = barrad_viira.23
-	}
-	set_country_flag = BAR_spells_unlocked_1
-}
-
-BAR_unlock_spells_2 = {
-	#research bonuses
-	country_event = {
-		id = barrad_viira.22
-	}
-	set_country_flag = BAR_spells_unlocked_2
-}
-
-BAR_unlock_spells_3 = {
-	#stronger spells
-	country_event = {
-		id = barrad_viira.21
-	}
-	set_country_flag = BAR_spells_unlocked_3
-}
-
-BAR_unlock_spells_4 = {
-	#psi powers upgrade
-	country_event = {
-		id = barrad_viira.20
-	}
-	set_country_flag = BAR_spells_unlocked_4
-}
-
-BAR_unlock_spells_5 = {
-	#conjure buildings
-	country_event = {
-		id = barrad_viira.19
-	}
-	set_country_flag = BAR_spells_unlocked_5
-}
-
-BAR_unlock_spells_6 = {
-	#mind control perfection
-	country_event = {
-		id = barrad_viira.18
-	}
-	set_country_flag = BAR_spells_unlocked_6
-}
-
-BAR_unlock_spells_7 = {
-	#conjure resources
-	country_event = {
-		id = barrad_viira.17
-	}
-}
-
-BAR_unlock_spells_8 = {
-	country_event = {
-		id = barrad_viira.16
-	}
-}
+                                                                                                                                        
+  ####  #    #   ##   #####    ##    ####  ##### ###### #####     #####  ######  ####  #####  #    # # ##### #    # ###### #    # ##### 
+ #    # #    #  #  #  #    #  #  #  #    #   #   #      #    #    #    # #      #    # #    # #    # #   #   ##  ## #      ##   #   #   
+ #      ###### #    # #    # #    # #        #   #####  #    #    #    # #####  #      #    # #    # #   #   # ## # #####  # #  #   #   
+ #      #    # ###### #####  ###### #        #   #      #####     #####  #      #      #####  #    # #   #   #    # #      #  # #   #   
+ #    # #    # #    # #   #  #    # #    #   #   #      #   #     #   #  #      #    # #   #  #    # #   #   #    # #      #   ##   #   
+  ####  #    # #    # #    # #    #  ####    #   ###### #    #    #    # ######  ####  #    #  ####  #   #   #    # ###### #    #   #   
+                                                                                                                                        
 
 BAR_add_gasienica_as_commander = {
 	add_corps_commander_role = {
@@ -2266,35 +2441,16 @@ BAR_add_gebleod_as_commander = {
 	custom_effect_tooltip = BAR_inner_circle_tooltip
 }
 
-BAR_merge_commandments = {
-	hidden_effect = {
-		if = {
-			limit = {
-				has_idea = BAR_commandments_sacrifice_for_the_cause_idea
-				has_idea = BAR_commandments_faith_primacy_idea
-				has_idea = BAR_commandments_ritual_enlightment_idea
-				has_idea = BAR_commandments_asceticism_idea
-				has_idea = BAR_commandments_piety_of_work_idea
-				has_idea = BAR_commandments_redempt_sins_idea
-				has_idea = BAR_commandments_servitude_or_death_idea
-				has_idea = BAR_commandments_sacred_insanity_idea
-				has_idea = BAR_commandments_cult_of_progress_idea
-				has_idea = BAR_commandments_holy_commune_idea
-			}
-			remove_ideas = BAR_commandments_sacrifice_for_the_cause_idea
-			remove_ideas = BAR_commandments_faith_primacy_idea
-			remove_ideas = BAR_commandments_ritual_enlightment_idea
-			remove_ideas = BAR_commandments_asceticism_idea
-			remove_ideas = BAR_commandments_piety_of_work_idea
-			remove_ideas = BAR_commandments_redempt_sins_idea
-			remove_ideas = BAR_commandments_servitude_or_death_idea
-			remove_ideas = BAR_commandments_sacred_insanity_idea
-			remove_ideas = BAR_commandments_cult_of_progress_idea
-			remove_ideas = BAR_commandments_holy_commune_idea
-			add_ideas = BAR_commandments_combined
-		}
-	}
-}
+
+ #######                                                            
+ #       #    # #####  ###### #####  # ##### #  ####  #    #  ####  
+ #        #  #  #    # #      #    # #   #   # #    # ##   # #      
+ #####     ##   #    # #####  #    # #   #   # #    # # #  #  ####  
+ #         ##   #####  #      #    # #   #   # #    # #  # #      # 
+ #        #  #  #      #      #    # #   #   # #    # #   ## #    # 
+ ####### #    # #      ###### #####  #   #   #  ####  #    #  ####  
+                                                                    
+
 
 bar_expedition_init = {
 	resize_array = {
@@ -3121,5 +3277,32 @@ bar_expedition_retrive_loot = {
 			}
 		}
 		clear_array = bar_expedition_loot
+	}
+}
+
+
+                        
+ #    # #  ####   ####  
+ ##  ## # #      #    # 
+ # ## # #  ####  #      
+ #    # #      # #      
+ #    # # #    # #    # 
+ #    # #  ####   ####  
+                        
+
+
+one_state_inf = {
+	if = {
+		limit = {
+			infrastructure < 10
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = yes
+		}
+	}
+	else = {
+		add_extra_state_shared_building_slots = 1
 	}
 }

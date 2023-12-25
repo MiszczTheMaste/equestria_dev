@@ -19,6 +19,10 @@ on_actions = {
 						BAR = {
 							has_country_flag = barrad_early_game
 							has_country_flag = barrad_silver_star_alive
+						}
+					}
+					if = {
+						limit = {
 							OR = {
 								AND = {
 									has_country_flag = barrad_asinti_alive
@@ -34,8 +38,6 @@ on_actions = {
 								}
 							}
 						}
-					}
-					BAR = {
 						if = {
 							limit = {
 								has_country_flag = BAR_silver_sad
@@ -44,6 +46,10 @@ on_actions = {
 						}
 						else = {
 							country_event = { days = 1 random_days = 14 id = bar_silver_star_nightmares.1 }
+						}
+					} else = {
+						BAR = {
+							clr_country_flag = BAR_silver_sad
 						}
 					}
 				}

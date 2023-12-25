@@ -1,0 +1,52 @@
+focus_tree = {
+	id = barrad_focus_tree_friendship
+	country = {
+		factor = 0
+	}
+	default = no
+	continuous_focus_position = {
+		x = 290
+		y = 3000
+	}
+
+
+	#######                           #####                                           
+	#       # #####   ####  #####    #     # #    #   ##   #####  ##### ###### #####  
+	#       # #    # #        #      #       #    #  #  #  #    #   #   #      #    # 
+	#####   # #    #  ####    #      #       ###### #    # #    #   #   #####  #    # 
+	#       # #####       #   #      #       #    # ###### #####    #   #      #####  
+	#       # #   #  #    #   #      #     # #    # #    # #        #   #      #   #  
+	#       # #    #  ####    #       #####  #    # #    # #        #   ###### #    # 
+                                                                                   
+
+	focus = {
+		id = BAR_friend_state_of_our_home
+		icon = GFX_goal_ambrosius
+		cost = 0.4
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = BAR_friend_join_gasienica
+		icon = GFX_goal_griffon_chair
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_state_of_our_home
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_state_of_our_home
+		}
+		completion_reward = {
+
+		}
+	}
+}

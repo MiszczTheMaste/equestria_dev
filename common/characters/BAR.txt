@@ -474,7 +474,7 @@ characters={
 				}
 			}
 			traits = {
-				war_profiteer
+				war_industrialist
 			}
 		}
 	}

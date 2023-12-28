@@ -9,32 +9,22 @@ focus_tree = {
 		y = 3000
 	}
 
-
-	#######                           #####                                           
-	#       # #####   ####  #####    #     # #    #   ##   #####  ##### ###### #####  
-	#       # #    # #        #      #       #    #  #  #  #    #   #   #      #    # 
-	#####   # #    #  ####    #      #       ###### #    # #    #   #   #####  #    # 
-	#       # #####       #   #      #       #    # ###### #####    #   #      #####  
-	#       # #   #  #    #   #      #     # #    # #    # #        #   #      #   #  
-	#       # #    #  ####    #       #####  #    # #    # #        #   ###### #    # 
-                                                                                   
-
 	focus = {
 		id = BAR_friend_state_of_our_home
-		icon = GFX_goal_ambrosius
+		icon = GFX_goal_cry_com_sync
 		cost = 0.4
-		x = 12
+		x = 11
 		y = 0
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
+			country_event = { id = barrad_friendship_tree.1 }
 		}
 	}
 	focus = {
 		id = BAR_friend_join_gasienica
-		icon = GFX_goal_griffon_chair
+		icon = GFX_goal_cry_com_sync
 		cost = 3.5
 		x = 0
 		y = 1
@@ -46,7 +36,1381 @@ focus_tree = {
 			focus = BAR_friend_state_of_our_home
 		}
 		completion_reward = {
+			country_event = { id = barrad_friendship_tree.2 }
+		}
+	}
+	focus = {
+		id = BAR_friend_enemies_within
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -6
+		y = 1
+		relative_position_id = BAR_friend_join_gasienica
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_join_gasienica
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BAR_friend_ultimatum_to_influential
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -3
+		y = 1
+		relative_position_id = BAR_friend_enemies_within
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_enemies_within
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_train_local_militias
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_ultimatum_to_influential
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_ultimatum_to_influential
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_griffon_friends
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_ultimatum_to_influential
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_ultimatum_to_influential
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.3 }
+		}
+	}
+	focus = {
+		id = BAR_friend_welcome_defectors
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_ultimatum_to_influential
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_ultimatum_to_influential
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_operation_tempest #attacking remaining influential ponies in barrad
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_griffon_friends
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_griffon_friends
+		}
+		prerequisite = {
+			focus = BAR_friend_welcome_defectors
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_operation_lomnica #massive anti-bandit operation
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_griffon_friends
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_train_local_militias
+		}
+		prerequisite = {
+			focus = BAR_friend_griffon_friends
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_prepare_reactor_ignition
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_enemies_within
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_enemies_within
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.5 }
+		}
+	}
+	
+	focus = {
+		id = BAR_friend_ignite_reactor
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 3
+		relative_position_id = BAR_friend_prepare_reactor_ignition
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_prepare_reactor_ignition
+		}
+		prerequisite = {
+			focus = BAR_friend_occupy_grand_sanctuary
+		}
+		prerequisite = {
+			focus = BAR_friend_operation_tempest
+		}
+		prerequisite = {
+			focus = BAR_friend_operation_lomnica
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.6 }
+		}
+	}
+	focus = {
+		id = BAR_friend_meet_ambrosius
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_ignite_reactor
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_ignite_reactor
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.7 }
+		}
+	}
+	focus = {
+		id = BAR_friend_light_of_the_star
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 6
+		y = 1
+		relative_position_id = BAR_friend_meet_ambrosius
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_meet_ambrosius
+		}
+		prerequisite = {
+			focus = BAR_friend_fortify_border
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.8 }
+		}
+	}
+	focus = {
+		id = BAR_friend_cultist_strongholds
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 3
+		y = 1
+		relative_position_id = BAR_friend_enemies_within
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_enemies_within
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_cultist_strongholds_mountains
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_cultist_strongholds
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_cultist_strongholds
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_cultist_strongholds_elysium
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_cultist_strongholds
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_cultist_strongholds
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_cultist_strongholds_roughers
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_cultist_strongholds
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_cultist_strongholds
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_occupy_grand_sanctuary
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_cultist_strongholds_elysium
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_cultist_strongholds_mountains
+		}
+		prerequisite = {
+			focus = BAR_friend_cultist_strongholds_elysium
+		}
+		prerequisite = {
+			focus = BAR_friend_cultist_strongholds_roughers
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.4 }
+		}
+	}
+	focus = {
+		id = BAR_friend_enemies_without
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 4
+		y = 1
+		relative_position_id = BAR_friend_join_gasienica
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_join_gasienica
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = BAR_friend_attack_zes
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_enemies_without
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_enemies_without
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = ZES
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_attack_zes_bonus
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_attack_zes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_attack_zes
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = BAR_friend_attack_zes_bonus_idea
+				days = 90
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_convert_factories
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_enemies_without
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_enemies_without
+		}
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_timed_idea = {
+				idea = BAR_convert_factories
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_seize_factories
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_convert_factories
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_convert_factories
+		}
+		completion_reward = {
+			625 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			626 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_employ_mercenaries
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_convert_factories
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_convert_factories
+		}
+		completion_reward = {
+			add_manpower = 20000
+		}
+	}
+	focus = {
+		id = BAR_friend_attack_olv
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_enemies_without
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_enemies_without
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = OLV
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_attack_olv_bonus
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_attack_olv
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_attack_olv
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = BAR_friend_attack_olv_idea
+				days = 90
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_fortify_border
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 3
+		y = 1
+		relative_position_id = BAR_friend_attack_zes_bonus
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_attack_olv_bonus
+		}
+		prerequisite = {
+			focus = BAR_friend_attack_zes_bonus
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = BAR_friend_miliatry_reform
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 26
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_completed_focus = BAR_friend_enemies_without
+		}
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = BAR_friend_desperate_employment
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_miliatry_reform
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_miliatry_reform
+		}
+		completion_reward = {
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = BAR_friend_employ_adventurers
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_desperate_employment
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_desperate_employment
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = BAR_friend_scavenger_army
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_desperate_employment
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_desperate_employment
+		}
+		completion_reward = {
+			add_ideas = BAR_friend_scavenger_army
+		}
+	}
+	focus = {
+		id = BAR_friend_wake_up_sleeping_knights
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_desperate_employment
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_desperate_employment
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = BAR_friend_convince_dragons
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_scavenger_army
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_employ_adventurers
+			focus = BAR_friend_scavenger_army
+			focus = BAR_friend_wake_up_sleeping_knights
+		}
+		completion_reward = {
+			custom_effect_tooltip = WIT_dragon_tt
+			hidden_effect = {
+			    set_technology = {
+					popup = no
+				    dragons_light = 1
+			    }
+				add_equipment_to_stockpile = {
+					type = dragon_equipment_0
+					amount = 1000
+					producer = WIT
+				}
+				division_template = {
+					name = "Tamed Dragons"
+					is_locked = yes
+					regiments = {
+						light_dragons = { x = 0 y = 0 }
+						light_dragons = { x = 0 y = 1 }
+						light_dragons = { x = 0 y = 2 }
+						light_dragons = { x = 0 y = 3 }
+						light_dragons = { x = 1 y = 0 }
+					}
+					support = {
+						unicorn_company = { x = 0 y = 0 }
+					}
+				}
+				load_oob = "WIT_dragons"
+				set_technology = {
+					popup = no
+					dragons_light = 0 
+				}
+				fix_weapon_techs = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_infantry_weapons
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -3
+		y = 1
+		relative_position_id = BAR_friend_miliatry_reform
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_miliatry_reform
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_engineers_recon
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_infantry_weapons
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_infantry_weapons
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 1
+				category = engineers_tech
+			}
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_engineer_corps
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_engineers_recon
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_engineers_recon
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 2
+				category = engineers_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_logistic
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_engineers_recon
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_engineers_recon
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+				bonus = 1
+				uses = 1
+				category = logistics_tech
+			}
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_radio
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_engineers_recon
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_engineers_recon
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				category = radar_tech
+				uses = 1
+				bonus = 1
+			}
+			add_tech_bonus = {
+				name = support_bonus
+				category = signal_company_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_anti_air
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_logistic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_engineer_corps
+			focus = BAR_friend_logistic
+			focus = BAR_friend_radio
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = cat_anti_air
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_infantry_weapons_2
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_logistic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_engineer_corps
+			focus = BAR_friend_logistic
+			focus = BAR_friend_radio
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 1.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_anti_tank
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_logistic
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_engineer_corps
+			focus = BAR_friend_logistic
+			focus = BAR_friend_radio
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = cat_anti_tank
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_artillery
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 3
+		y = 1
+		relative_position_id = BAR_friend_miliatry_reform
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_miliatry_reform
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.5
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_mil_buildup
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_artillery
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_artillery
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_artillery_2
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_mil_buildup
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mil_buildup
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_mil_buildup_2
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_mil_buildup
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mil_buildup
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_light_tanks
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_mil_buildup
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mil_buildup
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_research
+				bonus = 1
+				uses = 2
+				category = cat_light_armor
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_rocket_experiments
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_mil_buildup_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_artillery_2
+			focus = BAR_friend_mil_buildup_2
+			focus = BAR_friend_light_tanks
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = rocketry
+				bonus = 1
+				uses = 2
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_mil_buildup_3
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_mil_buildup_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_artillery_2
+			focus = BAR_friend_mil_buildup_2
+			focus = BAR_friend_light_tanks
+		}
+		completion_reward = {
+			one_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_medium_tanks
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_mil_buildup_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_artillery_2
+			focus = BAR_friend_mil_buildup_2
+			focus = BAR_friend_light_tanks
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = tank_research
+				bonus = 1
+				uses = 2
+				category = cat_medium_armor
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_independent_military_units
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_anti_tank
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_infantry_weapons_2
+			focus = BAR_friend_anti_air
+			focus = BAR_friend_anti_tank
+			focus = BAR_friend_rocket_experiments
+			focus = BAR_friend_mil_buildup_3
+			focus = BAR_friend_medium_tanks
+		}
+		completion_reward = {
+			add_ideas = BAR_friend_independent_military_units_idea
+		}
+	}
+	focus = {
+		id = BAR_friend_mountaineers
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_independent_military_units
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_independent_military_units
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				category = mountaineers_tech
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_mountain_expertise
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_mountaineers
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mountaineers
+		}
+		completion_reward = {
+			set_technology = {
+				BAR_friend_mountain_buff = 1
+			}
+			custom_effect_tooltip = BAR_friend_mountain_buff_tooltip
+		}
+	}
+	focus = {
+		id = BAR_friend_conscription_system
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_independent_military_units
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_independent_military_units
+		}
+		completion_reward = {
+			add_ideas = BAR_friend_better_conscription
+		}
+	}
+	focus = {
+		id = BAR_friend_mil_factories
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_independent_military_units
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_independent_military_units
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_equipment_simplification
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_mil_factories
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mil_factories
+		}
+		completion_reward = {
+			add_ideas = BAR_friend_simplified_equpiment
+		}
+	}
 
+	
+	focus = {
+		id = BAR_friend_air_warfare
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = 35
+		y = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_completed_focus = BAR_friend_miliatry_reform
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					626 = {
+						is_owned_and_controlled_by = BAR
+					}
+				}
+				626 = {
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					624 = {
+						is_owned_and_controlled_by = BAR
+					}
+				}
+				624 = {
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					625 = {
+						is_owned_and_controlled_by = BAR
+					}
+				}
+				625 = {
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+	focus = {
+		id = BAR_friend_light_planes
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_air_warfare
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_air_warfare
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+				add_tech_bonus = {
+					name = cat_air_guns_bonus
+					bonus = 1
+					uses = 1
+					category = cat_air_guns
+				}
+				add_tech_bonus = {
+					name = cat_air_engine_bonus
+					bonus = 1
+					uses = 1
+					category = cat_air_engine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = fighter_bonus
+					bonus = 1
+					uses = 1
+					category = light_fighter
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_friend_tac_bomber
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_air_warfare
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_air_warfare
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = medium_air
+					bonus = 1
+					uses = 1
+					category = medium_air
+				}
+				add_tech_bonus = {
+					name = cat_air_engine_bonus
+					bonus = 1
+					uses = 2
+					category = cat_air_engine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = tactical_bomber
+					bonus = 1
+					uses = 1
+					category = tactical_bomber
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_friend_air_accidents_prevention
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_light_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_light_planes
+			focus = BAR_friend_tac_bomber
+		}
+		completion_reward = {
+			add_ideas = BAR_friend_sky_aces_idea
+		}
+	}
+	focus = {
+		id = BAR_friend_plane_factories
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_tac_bomber
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_tac_bomber
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_sky_aces
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_light_planes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_light_planes
+		}
+		completion_reward = {
+			add_ideas = BAR_air_acc
+		}
+	}
+	focus = {
+		id = BAR_friend_cas
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_air_accidents_prevention
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_air_accidents_prevention
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = cat_air_bombs
+					bonus = 1
+					uses = 1
+					category = cat_anti_tank
+				}
+				add_tech_bonus = {
+					name = cas_bonus
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = bomber_bonus
+					bonus = 1
+					uses = 1
+					category = cas_bomber
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+	focus = {
+		id = BAR_friend_cas_doctrine
+		icon = GFX_goal_cry_com_sync
+		cost = 6
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_air_accidents_prevention
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_air_accidents_prevention
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = battlefield_support_tree
+				cost_reduction = 0.5
+				uses = 2
+				category = battlefield_support_tree
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
 		}
 	}
 }

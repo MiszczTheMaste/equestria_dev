@@ -1367,14 +1367,14 @@ bar_ambrosius_madness.23.d:0 "While the other members of the Pentarchy fell, Vii
 bar_ambrosius_madness.23.a:0 "Good riddance."
 
 ### you lost ###
-barrad_end.1.t:0 "End of an Era"
-barrad_end.1.d:0 "So ends the Pentarchy. After much sorrow and hardship, all members now lie dead except for Count Ambrosius. Their mysterious plans will forever remain unenacted, leaving Barrad's lonely Count to stew in his madness. This unexpected turn of events is sure to signal the beginning of a new era for Barrad, although it is unlikely to be a happy one."
-barrad_end.1.a:0 "Weak fools..."
-barrad_end.2.t:0 "End of an Era"
-barrad_end.2.d:0 "As Silver Star, Viira, Leopold, and Asinti embraced the spirit of Harmony, they decided to overthrow Count Ambrosius and his cruel minions. The mad Count refused to abdicate, and battle was joined. Ambrosius and his minions were no match for the combined power of the four friends, however, and they were quickly defeated. As the four became close friends, they fully realized the depths of their wrongdoing. They appeared before the commoners of Barrad and apologized for their actions, admitting that their aims were misguided.\n\nThe peasants, however, did not care. When they realized the four had let their guard down and were within reach, they immediately descended upon them to enact their vengeance for decades of horror, abuse and slavery. An angry mob of hundreds of ponies armed with pitchforks and torches swarmed the magocrats and slew them one by one before they even realized what was happening. Thus, the Pentarchy came to a violent and sudden end.\n\nThis unexpected turn of events is sure to signal the beginning of a new era for Barrad, although only time will tell if it is to be a happy one."
-barrad_end.2.a:0 "So ends the Pentarchy."
+bar_fallen_pentarchy.977.t:0 "End of an Era"
+bar_fallen_pentarchy.977.d:0 "So ends the Pentarchy. After much sorrow and hardship, all members now lie dead except for Count Ambrosius. Their mysterious plans will forever remain unenacted, leaving Barrad's lonely Count to stew in his madness. This unexpected turn of events is sure to signal the beginning of a new era for Barrad, although it is unlikely to be a happy one."
+bar_fallen_pentarchy.977.a:0 "Weak fools..."
 
 ### friendship stuff###
+barrad_friends.997.t:0 "End of an Era"
+barrad_friends.997.d:0 "As Silver Star, Viira, Leopold, and Asinti embraced the spirit of Harmony, they decided to overthrow Count Ambrosius and his cruel minions. The mad Count refused to abdicate, and battle was joined. Ambrosius and his minions were no match for the combined power of the four friends, however, and they were quickly defeated. As the four became close friends, they fully realized the depths of their wrongdoing. They appeared before the commoners of Barrad and apologized for their actions, admitting that their aims were misguided.\n\nThe peasants, however, did not care. When they realized the four had let their guard down and were within reach, they immediately descended upon them to enact their vengeance for decades of horror, abuse and slavery. An angry mob of hundreds of ponies armed with pitchforks and torches swarmed the magocrats and slew them one by one before they even realized what was happening. Thus, the Pentarchy came to a violent and sudden end.\n\nThis unexpected turn of events is sure to signal the beginning of a new era for Barrad, although only time will tell if it is to be a happy one."
+barrad_friends.997a:0 "So ends the Pentarchy."
 barrad_friends.1.t:0 "Library Use"
 barrad_friends.1.d:0 "Viira always left Silver uneasy: that calm, collected deer held a smile that strained his calm; her eyes, seemingly docile, that kept a secret beneath. Profoundly unsettled, trying to converse with Viira was akin to chatting with a ravenous wolf behind its toothy grin.\n\nHowever, this sensation had recently changed. Before, Silver would've searched a way out of a situation involving Viira. He now found himself oddly at peace as the two of them shared the main table at the library, each diving deep into their tomes. The unicorn hadn't even noticed Viira, and when he did, there was no reflexive recoil nor a shudder. Instead, as Viira looked up to meet his eyes, she smiled and greeted him with a "you're looking well."\n\nPerhaps, had Silver been anypony else, Viira might have seen him as a threat that required eliminating. Together, however, she merely treated him as a partner, an ally... a friend?\n\nSilver, with a faint smile, greeted back."
 barrad_friends.1.a:0 "You too, Viira."
@@ -2601,12 +2601,12 @@ bar_leopold_equipment_1_desc:0 "Leopold's magical clockwork armour is nigh-indes
 
 BAR_leopold_smahs_tooltip:0 "Might lead to military retaliation of those whose lands were destroyed."
 
-BAR_silver_general:0 "§RAttack Skill§!: §Y1§!\n§YDefense Skill§!: §Y3§!\n§GPlanning Skill§!: §Y4§!\n§CLogistics Skill§!: §Y5§!\n\n"
-BAR_leopold_general:0 "§RAttack Skill§!: §Y5§!\n§YDefense Skill§!: §Y2§!\n§GPlanning Skill§!: §Y2§!\n§CLogistics Skill§!: §Y2§!\n\n"
-BAR_gasienica_general:0 "§RAttack Skill§!: §Y4§!\n§YDefense Skill§!: §Y4§!\n§GPlanning Skill§!: §Y4§!\n§CLogistics Skill§!: §Y4§!\n\n"
-bar_wigberht_general:0 "§RAttack Skill§!: §Y2§!\n§YDefense Skill§!: §Y2§!\n§GPlanning Skill§!: §Y2§!\n§CLogistics Skill§!: §Y3§!\n\n"
-bar_gebleod_general:0 "§RAttack Skill§!: §Y5§!\n§YDefense Skill§!: §Y2§!\n§GPlanning Skill§!: §Y2§!\n§CLogistics Skill§!: §Y3§!\n\n"
-BAR_janosik_general:0 "§RAttack Skill§!: §Y3§!\n§YDefense Skill§!: §Y4§!\n§GPlanning Skill§!: §Y4§!\n§CLogistics Skill§!: §Y4§!\n\n"
+BAR_silver_general:0 "Silver Star becomes general again."
+BAR_leopold_general:0 "Leopold becomes general again."
+BAR_gasienica_general:0 "§gLevel§!: §Y5§!, (£trait_attack §Y5§!, £trait_defense §Y3§!, £trait_planning §Y3§!, £trait_logistics §Y5§!)\n§gTraits§!: §C$trait_mountaineer$§!, §C$infantry_officer$§!, §C$organizer$§!\n\n"
+bar_wigberht_general:0 "§gLevel§!: §Y3§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y2§!, £trait_logistics §Y4§!)\n§gTraits§!: §C$infantry_officer$§!, §C$skilled_staffer$§!\n\n"
+bar_gebleod_general:0 "§gLevel§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y2§!, £trait_planning §Y2§!, £trait_logistics §Y3§!)\n§gTraits§!: §C$infantry_officer$§!, §C$commando$§!, §C$trait_mountaineer$§!, §C$hill_fighter$§!\n\n"
+BAR_janosik_general:0 "§gLevel§!: §Y5§!, (£trait_attack §Y4§!, £trait_defense §Y4§!, £trait_planning §Y4§!, £trait_logistics §Y4§!)\n§gTraits§!: §C$trait_mountaineer$§!, §C$hill_fighter$§!\n\n"
 
 BAR_reactor_construction:0 "The Construction"
 BAR_reactor_research:0 "Arcane Research"
@@ -3768,6 +3768,7 @@ BAR_clockwerks_combat_attack_tooltip:0 "All Infantry Clockworks \n     Soft Atta
 BAR_clockwerks_arty_tooltip:0 "Unlocks Clockwork Artillery Battalions"
 BAR_clockwerks_tanks_tooltip:0 "Unlocks Clockwork Tanks Battalions"
 BAR_clockwerks_terrain_upgrade_tooltip:0 "All Infantry Clockworks\n     Hills\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     Mountains\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     Marshes\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     River\n          Movement: §G+25%§!\n          Attack: §G+25%§!"
+BAR_friend_mountain_buff_tooltip:0 "All Infantry\n     Hills\n          Movement: §G+10%§!\n          Attack: §G+10%§!\n          Defense: §G+30%§!\n     Mountains\n          Movement: §G+20%§!\n          Attack: §G+15%§!\n          Defense: §G+30%§!"
 
 FOCUS_FILTER_LEOPOLD_ASCESION:0 "Leopold's Final Ascesion"
 FOCUS_FILTER_PATCH_OF_WRATCH:0 "Patch of Wratch"

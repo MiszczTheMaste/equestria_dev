@@ -2188,6 +2188,71 @@ ideas = {
 				research_speed_factor = -0.04 
 				production_speed_buildings_factor = 0.15
 			}
+		}  
+
+		BAR_convert_factories = {
+			picture = BAL_hell
+			modifier = {	
+				conversion_cost_civ_to_mil_factor = -1
+			}
+		}
+		BAR_friend_attack_zes_bonus_idea = {
+			picture = BAL_hell
+			targeted_modifier = {
+				tag = ZES
+				attack_bonus_against = 0.2
+				defense_bonus_against = -0.2
+			}
+		}   
+		BAR_friend_attack_olv_idea = {
+			picture = BAL_hell
+			targeted_modifier = {
+				tag = OLV
+				attack_bonus_against = 0.2
+				defense_bonus_against = -0.2
+			}
+		}    
+		BAR_friend_independent_military_units_idea = {
+			picture = BAL_hell
+			modifier = {
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_org_factor = 0.1
+			}
+		}        
+		BAR_friend_better_conscription = {
+			picture = BAL_hell
+			modifier = {
+				conscription = 0.025
+			}
+		}       
+		BAR_friend_scavenger_army = {
+			picture = BAL_hell
+			modifier = {
+				conscription = 0.025
+			}
+		}       
+		BAR_friend_simplified_equpiment = {
+			picture = BAL_hell
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+				}
+				support_equipment = {
+					build_cost_ic = -0.10
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}     
+		BAR_friend_sky_aces_idea = {
+			picture = BAL_hell
+			modifier = {
+				air_ace_generation_chance_factor = 0.30
+				air_mission_xp_gain_factor = 0.15
+				air_training_xp_gain_factor = 0.15
+			}
 		}                                                  
 	}
 	hidden_ideas = {

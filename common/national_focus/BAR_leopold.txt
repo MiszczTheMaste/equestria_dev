@@ -234,7 +234,7 @@ focus_tree = {
 				category = logistics_tech
 			}
 			add_tech_bonus = {
-				name = special_forces_bonus
+				name = support_bonus
 				bonus = 1
 				uses = 2
 				category = hospital_tech
@@ -268,7 +268,7 @@ focus_tree = {
 				category = engineers_tech
 			}
 			add_tech_bonus = {
-				name = special_forces_bonus
+				name = support_bonus
 				bonus = 1
 				uses = 2
 				category = recon_tech
@@ -394,7 +394,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = armor_bonus
+				name = motorized_bonus
 				bonus = 2
 				uses = 1
 				category = motorized_equipment

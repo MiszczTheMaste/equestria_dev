@@ -14,7 +14,7 @@ BAR_pentarchy_is_dead = {
 		clr_country_flag = barrad_early_game
 		country_event = {
 			days = 1
-			id = barrad_end.1
+			id = bar_fallen_pentarchy.997
 		}
 	}
 }
@@ -67,7 +67,7 @@ BAR_happy_ending = {
 			}
 			country_event = {
 				days = 1
-				id = barrad_end.2
+				id = barrad_friends.997
 			}
 		}
 	}

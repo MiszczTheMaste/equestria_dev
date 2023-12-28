@@ -2277,4 +2277,25 @@ technologies = {
 			irregular_infantry
 		}
 	}
+
+	# Friendship
+
+	BAR_friend_mountain_buff = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_all_infantry = {
+			mountain = {
+				movement = 0.2
+				attack = 0.15
+				defence = 0.3
+			}
+			hills = {
+				movement = 0.1
+				attack = 0.1
+				defence = 0.15
+			}
+		}
+	}
 }

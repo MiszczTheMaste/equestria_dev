@@ -318,7 +318,7 @@ focus_tree = {
 			hidden_effect = {
 				set_country_flag = BAR_everyone_ded
 			}
-			remove_ideas = BAR_pentarchy
+			remove_ideas = BAR_pentarchy_3
 			every_owned_state = {
 				limit = {
 					is_core_of = BAR

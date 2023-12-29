@@ -925,6 +925,9 @@ country_event = {
 		}
 		BAR_add_gasienica_as_commander = yes
 		load_focus_tree = barrad_focus_tree_friendship
+		add_stability = -0.3
+		add_war_support = -0.3
+		add_ideas = BAR_friend_feeling_of_unfinished_buissness
 		hidden_effect = {
 			change_all_province_names = yes
 			remove_advisor_role = {
@@ -4295,7 +4298,7 @@ country_event = {
 	option = {
 		name = barrad_asinti.1.a
 		swap_ideas = {
-			remove_idea = BAR_pentarchy
+			remove_idea = BAR_pentarchy_3
 			add_idea = BAR_asinti_petnarchy
 		}
 
@@ -4589,7 +4592,7 @@ country_event = {
 				}
 			}
 		}
-		remove_ideas = BAR_pentarchy_2
+		remove_ideas = BAR_pentarchy_3
 		
 		add_stability = 0.1
 		if = {
@@ -6408,6 +6411,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.1.a
+		add_political_power = 25
 	}
 }
 country_event = {
@@ -6436,6 +6440,125 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.3.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_template = "Mountain Band"
+					}
+					has_tech = tech_mountaineers
+				}
+				division_template = {
+					name = "Mountain Band"
+					regiments = {
+						mountaineers = {
+							x = 0
+							y = 0
+						}
+						mountaineers = {
+							x = 0
+							y = 1
+						}
+						mountaineers = {
+							x = 0
+							y = 2
+						}
+						mountaineers = {
+							x = 0
+							y = 3
+						}
+						mountaineers = {
+							x = 0
+							y = 4
+						}
+						mountaineers = {
+							x = 1
+							y = 0
+						}
+						mountaineers = {
+							x = 1
+							y = 1
+						}
+						mountaineers = {
+							x = 1
+							y = 2
+						}
+						mountaineers = {
+							x = 1
+							y = 3
+						}
+						mountaineers = {
+							x = 1
+							y = 4
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_template = "Mountain Band"
+					}
+				}
+				division_template = {
+					name = "Mountain Band"
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 0
+							y = 4
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 4
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Gryphusian Legion\" division_template = \"Mountain Band\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = ROOT
+				}
+			}
+		}
+		BAR_add_janosik_as_commander = yes
+		custom_effect_tooltip = BAR_griffon_legion
 	}
 }
 country_event = {
@@ -6449,6 +6572,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.4.a
+		add_war_support = 0.1
+		add_political_power = 100
 	}
 }
 country_event = {
@@ -6462,6 +6587,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.5.a
+		add_political_power = 75
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 country_event = {
@@ -6475,6 +6605,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.6.a
+		remove_ideas = BAR_friend_feeling_of_unfinished_buissness
 	}
 }
 country_event = {
@@ -6488,6 +6619,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.7.a
+		remove_ideas = BAR_pentarchy_3
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 country_event = {
@@ -6501,6 +6637,115 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.8.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		set_party_name = {
+			ideology = fascism
+			name = BAR_elysium_confederation
+			long_name = BAR_elysium_confederation
+		}
+		set_party_name = {
+			ideology = neutrality
+			name = BAR_fascism_party
+			long_name = BAR_fascism_party
+		}
+		add_country_leader_role = {
+			character = BAR_angrier_mob
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = kratokracy
+			}
+		}
+		set_politics = {
+			ruling_party = neutrality
+		}	
+		add_country_leader_role = {
+			character = BAR_silver_star
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = oligarchism
+			}
+		}
+	}
+}
+country_event = { #cultist make flood, common ponies work together to fix its effects (see flood of 97')
+	id = barrad_friendship_tree.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.9"
+	}
+	title = barrad_friendship_tree.9.t
+	desc = barrad_friendship_tree.9.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_friendship_tree.9.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+		}
+		add_stability = 0.05
+		626 = {
+			if = {
+				limit = {
+					infrastructure > 0
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+			if = {
+				limit = {
+					arms_factory > 0
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+			if = {
+				limit = {
+					industrial_complex > 0
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+		}
+		625 = {
+			if = {
+				limit = {
+					infrastructure > 0
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+			if = {
+				limit = {
+					arms_factory > 0
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+			if = {
+				limit = {
+					industrial_complex > 0
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+		}
 	}
 }
 

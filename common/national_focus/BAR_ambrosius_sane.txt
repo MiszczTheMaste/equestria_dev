@@ -298,20 +298,7 @@ focus_tree = {
 					}
 				}
 			}
-			add_corps_commander_role = {
-				character = BAR_jerzy_janosik
-				traits = {
-					griffon_race_trait
-					trait_mountaineer
-					hill_fighter
-				}
-				skill = 5
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 4
-				logistics_skill = 4
-			}
-			custom_effect_tooltip = BAR_janosik_general
+			BAR_add_janosik_as_commander = yes
 			custom_effect_tooltip = BAR_griffon_legion
 		}
 		search_filters = {

@@ -5,6 +5,7 @@ BAR_communism_party:0 "Sixth Column"
 BAR_democratic_party:0 "Unification Front"
 BAR_fascism_party:0 "The Pentarchy"
 BAR_asinti_rule:0 "Asinti's Followers"
+BAR_elysium_confederation:0 "Elysium Confederation"
 
 ### events ###
 
@@ -2604,10 +2605,10 @@ BAR_leopold_smahs_tooltip:0 "Might lead to military retaliation of those whose l
 
 BAR_silver_general:0 "Silver Star becomes general again."
 BAR_leopold_general:0 "Leopold becomes general again."
-BAR_gasienica_general:0 "§gLevel§!: §Y5§!, (£trait_attack §Y5§!, £trait_defense §Y3§!, £trait_planning §Y3§!, £trait_logistics §Y5§!)\n§gTraits§!: §C$trait_mountaineer$§!, §C$infantry_officer$§!, §C$organizer$§!\n\n"
-bar_wigberht_general:0 "§gLevel§!: §Y3§!, (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y2§!, £trait_logistics §Y4§!)\n§gTraits§!: §C$infantry_officer$§!, §C$skilled_staffer$§!\n\n"
-bar_gebleod_general:0 "§gLevel§!: §Y4§!, (£trait_attack §Y5§!, £trait_defense §Y2§!, £trait_planning §Y2§!, £trait_logistics §Y3§!)\n§gTraits§!: §C$infantry_officer$§!, §C$commando$§!, §C$trait_mountaineer$§!, §C$hill_fighter$§!\n\n"
-BAR_janosik_general:0 "§gLevel§!: §Y5§!, (£trait_attack §Y4§!, £trait_defense §Y4§!, £trait_planning §Y4§!, £trait_logistics §Y4§!)\n§gTraits§!: §C$trait_mountaineer$§!, §C$hill_fighter$§!\n\n"
+BAR_gasienica_general:0 "§gLevel§!: §Y5§! (£trait_attack §Y5§!, £trait_defense §Y3§!, £trait_planning §Y3§!, £trait_logistics §Y5§!)\n§gTraits§!: §C$trait_mountaineer$§!, §C$infantry_officer$§!, §C$organizer$§!\n\n"
+bar_wigberht_general:0 "§gLevel§!: §Y3§! (£trait_attack §Y2§!, £trait_defense §Y2§!, £trait_planning §Y2§!, £trait_logistics §Y4§!)\n§gTraits§!: §C$infantry_officer$§!, §C$skilled_staffer$§!\n\n"
+bar_gebleod_general:0 "§gLevel§!: §Y4§! (£trait_attack §Y5§!, £trait_defense §Y2§!, £trait_planning §Y2§!, £trait_logistics §Y3§!)\n§gTraits§!: §C$infantry_officer$§!, §C$commando$§!, §C$trait_mountaineer$§!, §C$hill_fighter$§!\n\n"
+BAR_janosik_general:0 "§gLevel§!: §Y5§! (£trait_attack §Y4§!, £trait_defense §Y4§!, £trait_planning §Y4§!, £trait_logistics §Y4§!)\n§gTraits§!: §C$trait_mountaineer$§!, §C$hill_fighter$§!\n\n"
 
 BAR_reactor_construction:0 "The Construction"
 BAR_reactor_research:0 "Arcane Research"

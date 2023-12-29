@@ -70,6 +70,7 @@ focus_tree = {
 			focus = BAR_friend_enemies_within
 		}
 		completion_reward = {
+			add_political_power = 75
 		}
 	}
 	focus = {
@@ -86,6 +87,8 @@ focus_tree = {
 			focus = BAR_friend_ultimatum_to_influential
 		}
 		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -119,6 +122,11 @@ focus_tree = {
 			focus = BAR_friend_ultimatum_to_influential
 		}
 		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 		}
 	}
 	focus = {
@@ -138,6 +146,11 @@ focus_tree = {
 			focus = BAR_friend_welcome_defectors
 		}
 		completion_reward = {
+			add_stability = 0.10
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
 		}
 	}
 	focus = {
@@ -157,6 +170,11 @@ focus_tree = {
 			focus = BAR_friend_griffon_friends
 		}
 		completion_reward = {
+			add_stability = 0.15
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+			}
 		}
 	}
 	focus = {
@@ -254,6 +272,10 @@ focus_tree = {
 			focus = BAR_friend_enemies_within
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
 		}
 	}
 	focus = {
@@ -270,6 +292,8 @@ focus_tree = {
 			focus = BAR_friend_cultist_strongholds
 		}
 		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -286,6 +310,11 @@ focus_tree = {
 			focus = BAR_friend_cultist_strongholds
 		}
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			hidden_effect = {
+				country_event = { id = barrad_friendship_tree.9 }
+			}
 		}
 	}
 	focus = {
@@ -302,6 +331,15 @@ focus_tree = {
 			focus = BAR_friend_cultist_strongholds
 		}
 		completion_reward = {
+			add_stability = 0.05
+			625 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -341,7 +379,7 @@ focus_tree = {
 			focus = BAR_friend_join_gasienica
 		}
 		completion_reward = {
-			add_war_support = 0.05
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -511,6 +549,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			owns_state = 624
+			owns_state = 558
+		}
 		prerequisite = {
 			focus = BAR_friend_attack_olv_bonus
 		}
@@ -518,7 +560,88 @@ focus_tree = {
 			focus = BAR_friend_attack_zes_bonus
 		}
 		completion_reward = {
-			
+			624 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 12490
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 7944
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 10469
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 7090
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1579
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 4557
+				}
+			}
+			558 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11978
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 13137
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 2040
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 5054
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 10910
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 1984
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 7925
+				}
+			}
 		}
 	}
 	focus = {

@@ -2253,6 +2253,12 @@ ideas = {
 				air_mission_xp_gain_factor = 0.15
 				air_training_xp_gain_factor = 0.15
 			}
+		}    
+		BAR_friend_feeling_of_unfinished_buissness = {
+			picture = BAL_hell
+			modifier = {
+				stability_factor = -0.2
+			}
 		}                                                  
 	}
 	hidden_ideas = {

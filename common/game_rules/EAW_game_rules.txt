@@ -1691,12 +1691,6 @@ BAR_ai_behavior = {
         allow_achievements = yes
     }
     option = {
-        name = BAR_SPOOKY #SILVER
-        text = "RULE_OPTION_BAR_SPOOKY"
-        desc = "RULE_OPTION_BAR_SPOOKY_AI_DESC"
-        allow_achievements = yes
-    }
-    option = {
         name = BAR_SPOOKIER #SILVER 2
         text = "RULE_OPTION_BAR_SPOOKIER"
         desc = "RULE_OPTION_BAR_SPOOKIER_AI_DESC"

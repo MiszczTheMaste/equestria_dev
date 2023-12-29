@@ -175,6 +175,16 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_11
 		}
 	}
+	bar_viira_note_friendship = {
+		window_name = "bar_viira_note_friendship"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = BAR_begun_friendship_path
+		}
+	}
 	bar_pen_screen_ambrosius_button_container = {
 		window_name = "bar_pen_screen_ambrosius_button_container"
 		dirty = bar_pen_screen_show

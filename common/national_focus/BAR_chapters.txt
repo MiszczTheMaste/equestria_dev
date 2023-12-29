@@ -602,10 +602,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			#will be used as requirment for few viira things in next milestones
-			country_event = {
-				days = 1
-				id = barrad_second.5
+			country_event = { id = barrad_second.5 }
+			if = {
+				limit = {
+					has_country_flag = BAR_begun_friendship_path
+				}
+				custom_effect_tooltip = bar_friendship_important_for_viira
 			}
 			hidden_effect = {
 				set_country_flag = bar_viira_investigation_step_4
@@ -1290,6 +1292,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = { id = barrad_second.10 }
+			if = {
+				limit = {
+					has_country_flag = BAR_begun_friendship_path
+				}
+				custom_effect_tooltip = bar_friendship_important_for_viira
+			}
 		}
 	}
 	focus = {
@@ -1597,10 +1605,7 @@ focus_tree = {
 			focus = BAR_another_party
 		}
 		completion_reward = {
-			country_event = {
-				days = 1
-				id = barrad_second.7
-			}
+			country_event = { id = barrad_second.7 }
 			add_research_slot = 1
 			swap_ideas = {
 				remove_idea = BAR_pentarchy_2
@@ -1611,7 +1616,10 @@ focus_tree = {
 					limit = {
 						has_country_flag = BAR_begun_friendship_path
 					}
-					country_event = barrad_friends.5
+					country_event = {
+						days = 5
+						id = barrad_friends.5
+					}
 				}
 			}
 		}
@@ -1659,9 +1667,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = {
-				id = barrad_third.2
-				days = 1
+			country_event = { id = barrad_third.2 }
+			if = {
+				limit = {
+					has_country_flag = BAR_begun_friendship_path
+				}
+				custom_effect_tooltip = bar_friendship_important
 			}
 		}
 	}                                                                                 
@@ -2176,9 +2187,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = {
-				id = barrad_third.7
-				days = 1
+			country_event = { id = barrad_third.7 }
+			if = {
+				limit = {
+					has_country_flag = BAR_begun_friendship_path
+				}
+				custom_effect_tooltip = bar_friendship_important_for_viira
 			}
 		}
 	}
@@ -2740,11 +2754,19 @@ focus_tree = {
 			set_country_flag = BAR_asinti_discount
 			if = {
 				limit = {
-					has_country_flag = bar_viira_investigation_step_4
-					has_country_flag = barrad_viira_alive
+					has_country_flag = BAR_begun_friendship_path
 				}
-				set_country_flag = bar_viira_investigation_step_8
-				BAR_new_viira_note = yes
+				custom_effect_tooltip = bar_friendship_important_for_asinti
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = bar_viira_investigation_step_4
+						has_country_flag = barrad_viira_alive
+					}
+					set_country_flag = bar_viira_investigation_step_8
+					BAR_new_viira_note = yes
+				}
 			}
 		}
 	}
@@ -2777,16 +2799,16 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = {
-				id = barrad_third.9
-				days = 1
-			}
+			country_event = { id = barrad_third.9 }
 			hidden_effect = {
 				if = {
 					limit = {
 						has_country_flag = BAR_begun_friendship_path
 					}
-					country_event = barrad_friends.5
+					country_event = {
+						id = barrad_friends.8
+						days = 12
+					}
 				}
 			}
 		}
@@ -2841,17 +2863,17 @@ focus_tree = {
 			if = {
 				limit = {
 					is_ai = yes
-					has_country_flag = BAR_ai_amb_default
 				}
-				country_event = {
-					id = barrad_ai.2
-				}
+				country_event = { id = barrad_ai.1	}
 			}
-			else = {
-				country_event = {
-					days = 1
-					id = barrad_viira_fight.1
+			else_if = {
+				limit = {
+					has_country_flag = bar_viira_investigation_step_11
+					has_country_flag = BAR_begun_friendship_path
 				}
+				country_event = { id = barrad_friends.9 }
+			} else = {
+				country_event = { id = barrad_viira_fight.1 }
 			}
 		}
 	}
@@ -2885,6 +2907,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BAR_strike_the_earth_focus_tooltip
 			custom_effect_tooltip = BAR_focus_warning
+			if = {
+				limit = {
+					has_country_flag = BAR_begun_friendship_path
+				}
+				custom_effect_tooltip = bar_friendship_important_for_leopold
+			}
 			hidden_effect = {
 				set_country_flag = BAR_strike_the_earth_unlocked
 				set_variable = {

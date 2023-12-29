@@ -27,7 +27,6 @@ BAR_happy_ending = {
 				has_country_flag = barrad_silver_star_alive
 				has_country_flag = barrad_leopold_alive
 				has_country_flag = barrad_viira_alive
-				#has_country_flag = barrad_early_game
 				NOT = {
 					has_completed_focus = BAR_search_for_knowledge
 				}

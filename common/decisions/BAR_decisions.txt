@@ -3777,10 +3777,7 @@ BAR_viira_cat = {
 			}
 		}
 		complete_effect = {
-			country_event = {
-				id = bar_viira_murders.1
-				days = 1
-			}
+			country_event = { id = bar_viira_murders.1 }
 		}
 	}
 	BAR_collapse_temple = {

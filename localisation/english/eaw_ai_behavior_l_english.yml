@@ -517,8 +517,7 @@
  RULE_OPTION_BAR_COLLECTORS_AI_DESC:0 "...fear instead those who wield it!"
  RULE_OPTION_BAR_CHIRP:0 "Flames of rage..."
  RULE_OPTION_BAR_CHIRP_AI_DESC:0 "...can consume even the brightest of minds."
- RULE_OPTION_BAR_SPOOKY:0 "Something ends..."
- RULE_OPTION_BAR_SPOOKY_AI_DESC:0 "...and never comes back to how it should be."
+
  RULE_OPTION_BAR_SPOOKIER:0 "Something Ends, Something Begins"
  RULE_OPTION_BAR_SPOOKIER_AI_DESC:0 "But did it bring any good?"
  RULE_OPTION_BAR_ROLL_THE_BARREL:0 "Fight Against Yourself"

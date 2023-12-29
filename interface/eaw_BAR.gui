@@ -613,6 +613,34 @@ guiTypes = {
 			maxHeight = 400
 			text = bar_pen_viira_clues_text11
 		}
+	}		
+	containerWindowType = {
+		name = "bar_viira_note_friendship"
+		size = { width=405 height=500 }
+		moveable = yes
+		clipping = no
+		position = { x=0 y=260 }
+		hide_position = { x = -600 y = 150 }
+		show_position = { x = 440 y = 80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		show_sound = menu_open_window
+		hide_sound = menu_close_window
+		
+		Background = {
+			name = "bar_viira_note_friendship_bg"
+			spriteType = "GFX_BAR_viira_parchment"
+		}
+		instantTextBoxType = {
+			name = "bar_viira_note_friendship_text"
+			position = {x=70 y=90}
+			font = "hoi4_typewriter16"
+			format = left
+			maxWidth = 265
+			maxHeight = 400
+			text = bar_pen_viira_clues_text_friendship
+		}
 	}	
 	containerWindowType = {
 		name = "bar_pen_screen_ambrosius_button_container"

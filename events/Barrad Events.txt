@@ -6748,6 +6748,189 @@ country_event = { #cultist make flood, common ponies work together to fix its ef
 		}
 	}
 }
+country_event = { #silver star challenges his siter to a duel
+	id = barrad_friendship_tree.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.10"
+	}
+	title = barrad_friendship_tree.10.t
+	desc = barrad_friendship_tree.10.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_friendship_tree.10.a
+		WIT = {
+			country_event = { id = barrad_friendship_tree.11 days = 2}
+		}	
+	}
+}
+country_event = { #white star response
+	id = barrad_friendship_tree.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.11"
+	}
+	title = barrad_friendship_tree.11.t
+	desc = barrad_friendship_tree.11.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { #nope lol
+		ai_chance = {
+			factor = 0
+		}
+		name = barrad_friendship_tree.11.a
+		BAR = {
+			country_event = { id = barrad_friendship_tree.12 days = 2 }
+		}	
+	}
+	option = { #okej
+		ai_chance = {
+			factor = 10
+		}
+		name = barrad_friendship_tree.11.a
+		BAR = {
+			country_event = { id = barrad_friendship_tree.13 days = 2 }
+		}
+	}
+}
+country_event = { #refused
+	id = barrad_friendship_tree.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.12"
+	}
+	title = barrad_friendship_tree.12.t
+	desc = barrad_friendship_tree.12.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.12.a
+	}
+}
+country_event = { #accepted
+	id = barrad_friendship_tree.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.13"
+	}
+	title = barrad_friendship_tree.13.t
+	desc = barrad_friendship_tree.13.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.13.a
+		country_event = { id = barrad_friendship_tree.14 days = 7 }
+	}
+}
+country_event = { #duel
+	id = barrad_friendship_tree.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.14"
+	}
+	title = barrad_friendship_tree.14.t
+	desc = barrad_friendship_tree.14.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.14.a
+		annex_country = {
+			target = WIT
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = WIT
+			}
+			add_core_of = BAR
+		}
+	}
+}
+country_event = { #brother sister no hard feeling moment
+	id = barrad_friendship_tree.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.15"
+	}
+	title = barrad_friendship_tree.15.t
+	desc = barrad_friendship_tree.15.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.15.a
+		add_ideas = BAR_friend_white_star
+	}
+}
+country_event = { #silver star sends letter to his siter 
+	id = barrad_friendship_tree.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.16"
+	}
+	title = barrad_friendship_tree.16.t
+	desc = barrad_friendship_tree.16.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.16.a
+		WIT = {
+			country_event = { id = barrad_friendship_tree.17 days = 2 }
+		}	
+	}
+}
+country_event = { #she responds saying he can come back, his friends... can only expect a gallow
+	id = barrad_friendship_tree.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.17"
+	}
+	title = barrad_friendship_tree.17.t
+	desc = barrad_friendship_tree.17.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.17.a
+		BAR = {
+			country_event = { id = barrad_friendship_tree.18 days = 2 }
+		}
+	}
+}
+country_event = { #silver star is sad af but he cant leave his friends
+	id = barrad_friendship_tree.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.18"
+	}
+	title = barrad_friendship_tree.18.t
+	desc = barrad_friendship_tree.18.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.18.a
+	}
+}
+country_event = { #lus gets ultimatium
+	id = barrad_friendship_tree.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.1819"
+	}
+	title = barrad_friendship_tree.19.t
+	desc = barrad_friendship_tree.19.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		ai_chance = {
+			factor = 1-
+		}
+		name = barrad_friendship_tree.19.a
+		BAR = {
+			puppet = LUS
+		}
+	}
+	option = { 
+		ai_chance = {
+			factor = 5
+		}
+		name = barrad_friendship_tree.19.b
+		BAR = {
+			create_wargoal = {
+				target = LUS
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################

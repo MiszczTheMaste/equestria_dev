@@ -893,6 +893,18 @@ spriteTypes = {
 		name = "GFX_goal_bar_leopold_arty2"
 		texturefile = "gfx/interface/bar/goals/bar_leopold_arty2.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_bar_screaming_viira"
+		texturefile = "gfx/interface/bar/goals/bar_screaming_viira.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_silver_and_viira"
+		texturefile = "gfx/interface/bar/goals/bar_silver_and_viira.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_silver_and_viira_2"
+		texturefile = "gfx/interface/bar/goals/bar_silver_and_viira_2.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"
 		texturefile = "gfx/interface/bar/ideas/leopold_partial_ascesion.dds"

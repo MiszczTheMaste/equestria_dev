@@ -1313,7 +1313,7 @@
 				}				
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 870 y = 580 }
+					position = { x = 870 y = 490 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1358,14 +1358,14 @@
 	
 				gridboxtype = {
 					name = "armor_tech_1_tree"
-					position = { x = 215 y = 173 }
+					position = { x = 225 y = 173 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
 				}
 	
 				gridboxtype = {
 					name = "engine_tech_1_tree"
-					position = { x = 315 y = 173 }
+					position = { x = 325 y = 173 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
 				}
@@ -1597,7 +1597,7 @@
 
 				instantTextBoxType = {
 					name = "artillery_subtitle"
-					position = { x = 420 y = 70 }
+					position = { x = 390 y = 70 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1609,7 +1609,7 @@
 				}
 				instantTextBoxType = {
 					name = "artillery_subtitle_rocket"
-					position = { x = 620 y = 630 }
+					position = { x = 590 y = 630 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1622,7 +1622,7 @@
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_tank"
-					position = { x = 820 y = 350 }
+					position = { x = 790 y = 350 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1635,7 +1635,7 @@
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_air"
-					position = { x = 220 y = 350  }
+					position = { x = 190 y = 350  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1648,7 +1648,7 @@
 
 				gridboxtype = {
 					name = "pre_gw_artillery_tree"
-					position = { x = 400 y = 313 }
+					position = { x = 370 y = 313 }
 					size = { width = 200 height = 1000 }
 					slotsize = { width = 50 height = 70 }
 					format = "UP"
@@ -3214,7 +3214,7 @@
 				}
 				gridboxtype = {
 					name = "experimental_rockets_tree"
-					position = { x = 900 y = 945 }
+					position = { x = 950 y = 945 }
 					slotsize = { width = 200 height = 70 }
 					format = "UP"
 				}
@@ -3433,7 +3433,7 @@
 	
 				instantTextBoxType = {
 					name = "industry_subtitle"
-					position = { x = 610 y = 210 }
+					position = { x = 540 y = 210 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3445,7 +3445,7 @@
 				}
 				instantTextBoxType = {
 					name = "industry_subtitle_production"
-					position = { x = 255 y = 70  }
+					position = { x = 190 y = 70  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3457,7 +3457,7 @@
 				}
 				instantTextBoxType = {
 					name = "industry_subtitle_synthetic_oil"
-					position = { x = 1180 y = 70  }
+					position = { x = 1105 y = 70  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3469,7 +3469,7 @@
 				}
 				instantTextBoxType = {
 					name = "industry_subtitle_construction"
-					position = { x = 894 y = 210  }
+					position = { x = 820 y = 210  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -3482,21 +3482,21 @@
 	
 				gridboxtype = {
 					name = "basic_machine_tools_tree"
-					position = { x = 100 y = 173 }
+					position = { x = 35 y = 173 }
 					size = { width = 520 height = 800 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
 				}
 				gridboxtype = {
 					name = "fuel_silos_tree"
-					position = { x = 1250 y = 173 }
+					position = { x = 1175 y = 173 }
 					size = { width = 72 height = 650 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
 				}
 				gridboxtype = {
 					name = "construction1_tree"
-					position = { x = 894 y = 313 }
+					position = { x = 820 y = 313 }
 					size = { width = 72 height = 650 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"
@@ -3868,7 +3868,7 @@
 				}
 				instantTextBoxType = {
 					name = "electronic_eng_subtitle"
-					position = { x = 215 y = 70 }
+					position = { x = 190 y = 70 }
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_ELECTRONIC_SUBTITLE_CAP"
@@ -3904,7 +3904,7 @@
 	
 				gridboxtype = {
 					name = "electronic_mechanical_engineering_tree"
-					position = { x=50 y=173 }
+					position = { x=25 y=173 }
 					size = { width = 680 height = 800 }
 					slotsize = { width = 70 height = 70 }
 					format = "UP"

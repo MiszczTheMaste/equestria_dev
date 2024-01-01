@@ -1271,7 +1271,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -1 y = 11 }
+			position = { x = 0 y = 0 }
 		}
 
 		desc = "JET_ENGINES_SPECIAL"

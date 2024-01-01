@@ -6670,9 +6670,14 @@ country_event = {
 				ideology = oligarchism
 			}
 		}
+		hidden_effect = {
+			set_variable = {
+				pentarchy_friendship_tab_visible = 1
+			}
+		}
 	}
 }
-country_event = { #cultist make flood, common ponies work together to fix its effects (see flood of 97')
+country_event = { #cultist make flood, common ponies work together to fix its effects (flood of 97')
 	id = barrad_friendship_tree.9
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.9"

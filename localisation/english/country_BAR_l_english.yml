@@ -3802,3 +3802,10 @@ BAR_friend_mountain_buff_tooltip:0 "All Infantry\n     Hills\n          Movement
 
 FOCUS_FILTER_LEOPOLD_ASCESION:0 "Leopold's Final Ascesion"
 FOCUS_FILTER_PATCH_OF_WRATCH:0 "Patch of Wratch"
+
+bar_friend_1_tooltip:0 "§HViira Lehtola§!\n\nResearch Speed: §G+1.5%§!\nDamage to Garrisons: §G-25%§!"
+bar_friend_2_tooltip:0 "§HLeopold Schmeller§!\n\nResearch Speed: §G+3.5%§!"
+bar_friend_3_tooltip:0 "§HAsinti§!\n\nDivision Recovery Rate: §G+8%§!"
+bar_friend_4_tooltip:0 "§HAmbrosius§!\n\nConsumer Goods Factories factor: §Y-10%§!"
+bar_friend_5_tooltip:0 "§HGąsienica§!\n\nPolitical Power Gain: §G+15%§!\nStability: §G+10%§!"
+bar_friend_6_tooltip:0 "§HWhite Star§!\n\nWar Support: §G+10%§!\nStability: §G+5%§!"

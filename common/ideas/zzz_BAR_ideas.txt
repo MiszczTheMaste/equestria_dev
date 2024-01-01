@@ -2268,7 +2268,7 @@ ideas = {
 				send_volunteer_size = 3
 			}
 		}   
-		BAR_friend_favorable_Export = {
+		BAR_friend_favorable_export = {
 			picture = BAL_hell
 			modifier = {
 				trade_opinion_factor = 1

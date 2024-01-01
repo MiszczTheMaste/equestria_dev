@@ -2945,24 +2945,34 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
-		name = "GFX_bar_fight_silver"
-		texturefile = "gfx/interface/bar/fight/silver_fight.dds"
-		noOfFrames = 2
+		name = "GFX_bar_viira_advisor"
+		texturefile = "gfx/interface/ideas/Advisors/BAR/idea_Viira.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
 	}
 	spriteType = {
-		name = "GFX_bar_fight_leopold"
-		texturefile = "gfx/interface/bar/fight/leopold_fight.dds"
-		noOfFrames = 2
+		name = "GFX_bar_leopold_advisor"
+		texturefile = "gfx/interface/ideas/Advisors/BAR/idea_Leopold_Schmeller.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
 	}
 	spriteType = {
-		name = "GFX_bar_fight_asinti"
-		texturefile = "gfx/interface/bar/fight/asinti_fight.dds"
-		noOfFrames = 2
+		name = "GFX_bar_asinti_advisor"
+		texturefile = "gfx/interface/ideas/Advisors/BAR/idea_Asinti.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
 	}
 	spriteType = {
-		name = "GFX_bar_fight_viira"
-		texturefile = "gfx/interface/bar/fight/viira_fight.dds"
-		noOfFrames = 2
+		name = "GFX_bar_ambrosius_advisor"
+		texturefile = "gfx/interface/ideas/Advisors/BAR/idea_ambrosius.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_white_star_advisor"
+		texturefile = "gfx/interface/ideas/Advisors/WIT/WIT_white_star.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_bar_expedition_background"

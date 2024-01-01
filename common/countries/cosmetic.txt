@@ -390,6 +390,11 @@ PLB_crusade = {
 	color_ui = rgb { 87 104 170 }
 }
 
+PLB_wild_hunt = {
+	color = rgb { 62 97 88 }
+	color_ui = rgb { 62 97 88 }
+}
+
 PLB_realm_of_beasts = {
 	color = rgb { 94 63 140 }
 	color_ui = rgb { 94 63 140 }
@@ -2594,8 +2599,8 @@ ZAR_WORM_ending = {
     color_ui = rgb { 0 0 0 }
 }
 CTL_HIN_V = {
-	color = rgb { 1 31 158 }
-    color_ui = rgb { 1 31 158 }
+	color = rgb { 15 40 125 }
+    color_ui = rgb { 15 40 125 }
 }
 PLB_exuvia_changelingia = {
 	color = rgb { 13 157 199 }

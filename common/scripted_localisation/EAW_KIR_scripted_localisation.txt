@@ -533,6 +533,23 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = KISGetRedeemCost ##45000 Coins
+	text = {
+		trigger = {
+			check_variable = {
+				var = KIS.TreasuryWealth
+				value = 45000
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = KIS_redeem_independence_cost_tt
+	}
+	text = {
+		localization_key = KIS_redeem_independence_cost_tt_blocked
+	}
+}
+
 #############################
 ## Plebiscite Scripted Loc ##
 #############################
@@ -8838,7 +8855,10 @@ defined_text = {
 	name = GetKIRDemandDisarmamentReq
 	text = {
 		trigger = {
-			has_added_tension_amount > 4
+			OR = {
+				has_added_tension_amount > 4
+				has_country_flag = I_have_been_very_bad_KIR
+			}
 		}
 		localization_key = KIR_demand_disarmament_req_Y
 	}
@@ -8921,7 +8941,10 @@ defined_text = {
 	name = GetKIRDemandDisarmamentReqE
 	text = {
 		trigger = {
-			is_in_array = { KIR.potential_and_current_enemies = THIS }
+			OR = {
+				is_in_array = { KIR.potential_and_current_enemies = THIS }
+				has_country_flag = I_have_been_very_bad_KIR
+			}
 		}
 		localization_key = KIR_demand_disarmament_req_E_Y
 	}
@@ -8934,7 +8957,10 @@ defined_text = {
 	name = GetKIRDemandDisarmamentReqF
 	text = {
 		trigger = {
-			is_in_array = { KIR.enemies_of_allies = THIS }
+			OR = {
+				is_in_array = { KIR.enemies_of_allies = THIS }
+				has_country_flag = I_have_been_very_bad_KIR
+			}
 		}
 		localization_key = KIR_demand_disarmament_req_F_Y
 	}
@@ -8973,6 +8999,19 @@ defined_text = {
 	}
 	text = {
 		localization_key = KIR_demand_disarmament_req_H_N
+	}
+}
+
+defined_text = {
+	name = GetKIRDemandDisarmamentReqI
+	text = {
+		trigger = {
+			has_offensive_war = yes
+		}
+		localization_key = KIR_demand_disarmament_req_I_Y
+	}
+	text = {
+		localization_key = KIR_demand_disarmament_req_I_N
 	}
 }
 
@@ -9153,5 +9192,96 @@ defined_text = {
 			has_country_flag = KIR_pol_7_available
 		}
 		localization_key = KIR_civil_war_focus_7c_desc_TT
+	}
+}
+
+defined_text = {
+	name = GetKirBoPStateParamountTT
+	text = {
+		trigger = {
+			NOT = {
+				has_global_flag = KIR_NSA_Revolt_Happened
+			}
+		}
+		localization_key = KIR_theocracy_state_paramountcy_tt_tt
+	}
+}
+
+defined_text = {
+	name = GetKirBoPNSAStrengthTT
+	text = {
+		trigger = {
+			NOT = { has_global_flag = KIR_NSA_Revolt_Happened }
+			power_balance_value = {
+				id = KIR_theocracy_bop
+				value > 0.65
+			}
+		}
+		localization_key = GetKirBoPNSAStrengthTT_5
+	}
+	text = {
+		trigger = {
+			NOT = { has_global_flag = KIR_NSA_Revolt_Happened }
+			power_balance_value = {
+				id = KIR_theocracy_bop
+				value > 0.6
+			}
+		}
+		localization_key = GetKirBoPNSAStrengthTT_4
+	}
+	text = {
+		trigger = {
+			NOT = { has_global_flag = KIR_NSA_Revolt_Happened }
+			power_balance_value = {
+				id = KIR_theocracy_bop
+				value > 0.55
+			}
+		}
+		localization_key = GetKirBoPNSAStrengthTT_3
+	}
+	text = {
+		trigger = {
+			NOT = { has_global_flag = KIR_NSA_Revolt_Happened }
+			power_balance_value = {
+				id = KIR_theocracy_bop
+				value > 0.5
+			}
+		}
+		localization_key = GetKirBoPNSAStrengthTT_2
+	}
+	text = {
+		trigger = {
+			NOT = { has_global_flag = KIR_NSA_Revolt_Happened }
+			power_balance_value = {
+				id = KIR_theocracy_bop
+				value > 0.45
+			}
+		}
+		localization_key = GetKirBoPNSAStrengthTT_1
+	}
+	text = {
+		trigger = {
+			NOT = { has_global_flag = KIR_NSA_Revolt_Happened }
+		}
+		localization_key = GetKirBoPNSAStrengthTT_0
+	}
+}
+
+defined_text = {
+	name = GetKirGGOSpacer
+	text = {
+		trigger = {
+			has_country_flag = KIR_national_focus_title_1_flag
+		}
+		localization_key = KIR_great_leap_forward_category_spacer
+	}
+}
+defined_text = {
+	name = GetKirGGOSpacer1
+	text = {
+		trigger = {
+			has_country_flag = KIR_national_focus_title_3_flag
+		}
+		localization_key = KIR_great_leap_forward_category_spacer1
 	}
 }

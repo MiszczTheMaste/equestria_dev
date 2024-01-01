@@ -2931,6 +2931,17 @@ country_event = { #Patriotic coup
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_war_with = WNG
+				WNG = {
+					has_government = fascism
+				}
+			}
+			set_country_flag = { flag = bypass_on_peaceconference_ended days = 1 value = 1 }
+			white_peace = WNG
+			set_truce = { target = WNG days = 365 }
+		}
 	}
 }
 country_event = { #FLNT overruns tarrin and declares independence
@@ -5162,7 +5173,7 @@ country_event = { #Meeting with nobles
 		show_ideas_tooltip = FRN_ippolita
 		custom_effect_tooltip = FRN_increase_order_thrift
 		add_to_variable = { FRN_industrial_capacity_variable = 0.05 }
-		subtract_from_variable = { FRN_consumer_goods_variable = 0.025 }
+		subtract_from_variable = { FRN_consumer_goods_variable = 0.05 }
 		add_to_variable = { FRN_production_speed_buildings_variable = 0.05 }
 		add_to_variable = { FRN_local_resources_variable = 0.05 }
 	}
@@ -5199,7 +5210,7 @@ country_event = { #Form of the army
 		add_ideas = FRN_peoples_army
 		custom_effect_tooltip = FRN_increase_order_thrift
 		add_to_variable = { FRN_industrial_capacity_variable = 0.05 }
-		subtract_from_variable = { FRN_consumer_goods_variable = 0.025 }
+		subtract_from_variable = { FRN_consumer_goods_variable = 0.05 }
 		add_to_variable = { FRN_production_speed_buildings_variable = 0.05 }
 		add_to_variable = { FRN_local_resources_variable = 0.05 }
 	}
@@ -5225,7 +5236,7 @@ country_event = { #Cultural identity
 		add_ideas = FRN_wingbardian_identity
 		custom_effect_tooltip = FRN_increase_order_thrift
 		add_to_variable = { FRN_industrial_capacity_variable = 0.05 }
-		subtract_from_variable = { FRN_consumer_goods_variable = 0.025 }
+		subtract_from_variable = { FRN_consumer_goods_variable = 0.05 }
 		add_to_variable = { FRN_production_speed_buildings_variable = 0.05 }
 		add_to_variable = { FRN_local_resources_variable = 0.05 }
 	}
@@ -5257,7 +5268,7 @@ country_event = { #Relationship of religion and government
 		}
 		custom_effect_tooltip = FRN_increase_order_thrift
 		add_to_variable = { FRN_industrial_capacity_variable = 0.05 }
-		subtract_from_variable = { FRN_consumer_goods_variable = 0.025 }
+		subtract_from_variable = { FRN_consumer_goods_variable = 0.05 }
 		add_to_variable = { FRN_production_speed_buildings_variable = 0.05 }
 		add_to_variable = { FRN_local_resources_variable = 0.05 }
 	}

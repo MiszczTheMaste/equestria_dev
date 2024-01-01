@@ -1313,7 +1313,7 @@
 				}				
 				instantTextBoxType = {
 					name = "armour_subtitle_medium"
-					position = { x = 870 y = 490 }
+					position = { x = 965 y = 490 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}

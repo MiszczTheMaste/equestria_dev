@@ -2225,6 +2225,15 @@ ideas = {
 			modifier = {
 				conscription = 0.025
 			}
+		}      
+		BAR_friend_better_conscription_2 = {
+			picture = BAL_hell
+			modifier = {
+				conscription = 0.025
+				army_defense_factor = 0.1
+				army_attack_factor = 0.1
+				army_org_factor = 0.2
+			}
 		}       
 		BAR_friend_scavenger_army = {
 			picture = BAL_hell
@@ -2274,7 +2283,37 @@ ideas = {
 				trade_opinion_factor = 1
 				local_resources_factor = 0.15
 			}
-		}                                                  
+		}    
+		BAR_self_governance = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				compliance_gain = 0.02
+				democratic_drift = 0.01
+				war_support_factor = -0.05
+			}
+		}  
+		BAR_academy = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		BAR_local_cultures = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}   
+		BAR_high_automation = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				conscription = 0.025
+			}
+		}                                           
 	}
 	hidden_ideas = {
 		BAR_no_volunteers = {

@@ -283,6 +283,7 @@ focus_tree = {
 			focus = BAR_undying_call
 		}
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {

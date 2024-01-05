@@ -8,9 +8,7 @@ focus_tree = {
 		x = 290
 		y = 3000
 	}
-	
 	shared_focus = RIV_dreams_of_a_federation
-
 	focus = {
 		id = BAR_friend_state_of_our_home
 		icon = GFX_goal_cry_com_sync
@@ -21,7 +19,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.1 }
+			country_event = {
+				id = barrad_friendship_tree.1
+			}
 		}
 	}
 	focus = {
@@ -38,7 +38,9 @@ focus_tree = {
 			focus = BAR_friend_state_of_our_home
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.2 }
+			country_event = {
+				id = barrad_friendship_tree.2
+			}
 		}
 	}
 	focus = {
@@ -107,7 +109,9 @@ focus_tree = {
 			focus = BAR_friend_ultimatum_to_influential
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.3 }
+			country_event = {
+				id = barrad_friendship_tree.3
+			}
 		}
 	}
 	focus = {
@@ -132,7 +136,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_operation_tempest #attacking remaining influential ponies in barrad
+		id = BAR_friend_operation_tempest		#attacking remaining influential ponies in barrad
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
 		x = 1
@@ -148,7 +152,7 @@ focus_tree = {
 			focus = BAR_friend_welcome_defectors
 		}
 		completion_reward = {
-			add_stability = 0.10
+			add_stability = 0.1
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.2
@@ -156,7 +160,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_operation_lomnica #massive anti-bandit operation
+		id = BAR_friend_operation_lomnica		#massive anti-bandit operation
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
 		x = -1
@@ -175,7 +179,7 @@ focus_tree = {
 			add_stability = 0.15
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.10
+				popularity = 0.1
 			}
 		}
 	}
@@ -193,10 +197,11 @@ focus_tree = {
 			focus = BAR_friend_enemies_within
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.5 }
+			country_event = {
+				id = barrad_friendship_tree.5
+			}
 		}
 	}
-	
 	focus = {
 		id = BAR_friend_ignite_reactor
 		icon = GFX_goal_cry_com_sync
@@ -220,7 +225,9 @@ focus_tree = {
 			focus = BAR_friend_operation_lomnica
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.6 }
+			country_event = {
+				id = barrad_friendship_tree.6
+			}
 		}
 	}
 	focus = {
@@ -237,7 +244,9 @@ focus_tree = {
 			focus = BAR_friend_ignite_reactor
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.7 }
+			country_event = {
+				id = barrad_friendship_tree.7
+			}
 		}
 	}
 	focus = {
@@ -295,7 +304,9 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 50
 			hidden_effect = {
-				country_event = { id = barrad_friendship_tree.9 }
+				country_event = {
+					id = barrad_friendship_tree.9
+				}
 			}
 		}
 	}
@@ -344,7 +355,9 @@ focus_tree = {
 			focus = BAR_friend_cultist_strongholds_roughers
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.4 }
+			country_event = {
+				id = barrad_friendship_tree.4
+			}
 		}
 	}
 	focus = {
@@ -643,7 +656,9 @@ focus_tree = {
 			focus = BAR_friend_fortify_border
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.8 }
+			country_event = {
+				id = barrad_friendship_tree.8
+			}
 		}
 	}
 	focus = {
@@ -680,7 +695,9 @@ focus_tree = {
 			focus = BAR_friend_prince_of_wittenland
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.16 }
+			country_event = {
+				id = barrad_friendship_tree.16
+			}
 		}
 	}
 	focus = {
@@ -697,7 +714,9 @@ focus_tree = {
 			focus = BAR_friend_letter_to_sister
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.10 }
+			country_event = {
+				id = barrad_friendship_tree.10
+			}
 		}
 	}
 	focus = {
@@ -715,38 +734,80 @@ focus_tree = {
 			focus = BAR_friend_homecoming
 		}
 		completion_reward = {
-			set_capital = { 
-				state = 617 
+			set_capital = {
+				state = 617
 			}
 			add_political_power = 100
 			RCT = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
 			LCT = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
 			DEP = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
 			BAK = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
 			DMT = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
 			NIM = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
 			FRE = {
-				remove_opinion_modifier = { target = BAR modifier = distrustful_relations }
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
 			}
-			remove_opinion_modifier = { target = RCT modifier = distrustful_relations }
-			remove_opinion_modifier = { target = LCT modifier = distrustful_relations }
-			remove_opinion_modifier = { target = DEP modifier = distrustful_relations }
-			remove_opinion_modifier = { target = BAK modifier = distrustful_relations }
-			remove_opinion_modifier = { target = DMT modifier = distrustful_relations }
-			remove_opinion_modifier = { target = NIM modifier = distrustful_relations }
-			remove_opinion_modifier = { target = FRE modifier = distrustful_relations }
+			remove_opinion_modifier = {
+				target = RCT
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = LCT
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = DEP
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = BAK
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = DMT
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = NIM
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = FRE
+				modifier = distrustful_relations
+			}
 		}
 	}
 	focus = {
@@ -784,7 +845,7 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				country_exists = WIT 
+				country_exists = WIT
 			}
 			any_owned_state = {
 				is_core_of = WIT
@@ -794,7 +855,9 @@ focus_tree = {
 			focus = BAR_friend_serving_justice
 		}
 		completion_reward = {
-			WIT = { add_to_ROOT_potential_cores = yes }
+			WIT = {
+				add_to_ROOT_potential_cores = yes
+			}
 			set_cosmetic_tag = BAR_WIT_magocracy
 		}
 	}
@@ -840,6 +903,9 @@ focus_tree = {
 			focus = BAR_friend_river_federation_membership
 		}
 		completion_reward = {
+			country_event = {
+				id = barrad_friendship_tree.20
+			}
 		}
 	}
 	focus = {
@@ -856,7 +922,6 @@ focus_tree = {
 			focus = BAR_friend_viira_and_silver_diplomacy
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -873,7 +938,6 @@ focus_tree = {
 			focus = BAR_friend_viira_and_silver_diplomacy
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -890,7 +954,6 @@ focus_tree = {
 			focus = BAR_friend_viira_and_silver_diplomacy
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -913,7 +976,6 @@ focus_tree = {
 			focus = BAR_friend_beg_for_stuff2
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -934,6 +996,23 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BAR_friend_noblility_by_deeds_not_birth
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_riverlands_diplomacy
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_riverlands_diplomacy
+		}
+		completion_reward = {
+			#add modifier tto ambrosius for him becoming one of most influential politicians and becoming friends with White Star
 		}
 	}
 	focus = {
@@ -1023,7 +1102,10 @@ focus_tree = {
 				limit = {
 					is_river_fed_member = yes
 				}
-				add_opinion_modifier = { target = BAR modifier = made_friends }
+				add_opinion_modifier = {
+					target = BAR
+					modifier = made_friends
+				}
 			}
 			RIV_add_to_fed_race = yes
 		}
@@ -1049,7 +1131,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = BAR_friend_regional_interventionism_idea
-			set_rule = { can_only_justify_war_on_threat_country = no }
+			set_rule = {
+				can_only_justify_war_on_threat_country = no
+			}
 		}
 	}
 	focus = {
@@ -1067,7 +1151,7 @@ focus_tree = {
 				GRY = {
 					has_government = democratic
 				}
-			}	
+			}
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_aproach_cossacs
@@ -1104,7 +1188,6 @@ focus_tree = {
 			focus = BAR_friend_regional_interventionism
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -1129,7 +1212,6 @@ focus_tree = {
 			focus = BAR_friend_regional_interventionism
 		}
 		completion_reward = {
-
 		}
 	}
 	focus = {
@@ -1147,7 +1229,7 @@ focus_tree = {
 				GRU = {
 					has_government = democratic
 				}
-			}	
+			}
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_free_towns_deal
@@ -1215,7 +1297,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			LUS = {
-				country_event = { id = barrad_friendship_tree.19 }
+				country_event = {
+					id = barrad_friendship_tree.19
+				}
 			}
 		}
 	}
@@ -1241,6 +1325,908 @@ focus_tree = {
 				target = HLQ
 				type = annex_everything
 			}
+		}
+	}
+	focus = {
+		id = BAR_friend_ruin_has_come
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_light_of_the_star
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_light_of_the_star
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BAR_friend_now_what
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 6
+		y = 1
+		relative_position_id = BAR_friend_ruin_has_come
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_ruin_has_come
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.21 }
+		}
+	}
+	focus = {
+		id = BAR_friend_first_census
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 5
+		y = 1
+		relative_position_id = BAR_friend_now_what
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_now_what
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.22 }
+		}
+	}
+	focus = {
+		id = BAR_friend_country_side_census
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_first_census
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_first_census
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.23 }
+		}
+	}
+	focus = {
+		id = BAR_friend_infrastructure
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_first_census
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_first_census
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = BAR
+				}
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_many_cultures_of_barrad
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_first_census
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_first_census
+		}
+		completion_reward = {
+			add_ideas = BAR_local_cultures
+		}
+	}
+	focus = {
+		id = BAR_friend_common_undestanding
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_many_cultures_of_barrad
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_many_cultures_of_barrad
+		}
+		completion_reward = {
+			#add modifiers to asinti for him being cool guy preacher
+		}
+	}
+	focus = {
+		id = BAR_friend_infrastructure
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_first_census
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_first_census
+		}
+		completion_reward = {
+			626 = {
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+			625 = {
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+			624 = {
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_land_reclamation
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_infrastructure
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_infrastructure
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			625 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_anti_anomaly_work
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_infrastructure
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_infrastructure
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			625 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			hidden_effect = {
+				every_owned_state = {
+					remove_province_modifier = {
+						static_modifiers = { barrad_climate }
+						province = {
+							all_provinces = yes
+						}
+					}
+					add_province_modifier = {
+						static_modifiers = { barrad_climate2 }
+						province = {
+							all_provinces = yes
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = BAR_fix_the_climate
+		}
+	}
+	focus = {
+		id = BAR_friend_civ_industry
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_land_reclamation
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_land_reclamation
+		}
+		prerequisite = {
+			focus = BAR_friend_anti_anomaly_work
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			625 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_mil_industry
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_anti_anomaly_work
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_land_reclamation
+		}
+		prerequisite = {
+			focus = BAR_friend_anti_anomaly_work
+		}
+		completion_reward = {
+			626 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			625 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_dev_up
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_civ_industry
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_civ_industry
+		}
+		prerequisite = {
+			focus = BAR_friend_mil_industry
+		}
+		completion_reward = {
+			increase_society_development_gradual = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_barradian_academy_of_applied_science
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_now_what
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_now_what
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = BAR_friend_electrical_engineering_faculty
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_barradian_academy_of_applied_science
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_barradian_academy_of_applied_science
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 2
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_mechanical_engineering_faculty
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_barradian_academy_of_applied_science
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_barradian_academy_of_applied_science
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_magical_engineering_faculty
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_electrical_engineering_faculty
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mechanical_engineering_faculty
+		}
+		prerequisite = {
+			focus = BAR_friend_electrical_engineering_faculty
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 2
+				uses = 2
+				category = magical_tech
+			}
+			increase_society_development_gradual = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_renowned_genius
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_magical_engineering_faculty
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_magical_engineering_faculty
+		}
+		completion_reward = {
+			#add modifer to leopold for him being super cool proffesor and eveyrone listening to him bc he smart and cool
+		}
+	}
+	focus = {
+		id = BAR_friend_high_automation
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_agriculture_mechanization
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_agriculture_mechanization
+		}
+		prerequisite = {
+			focus = BAR_friend_magical_engineering_faculty
+		}
+		completion_reward = {
+			add_ideas = BAR_high_automation
+		}
+	}
+	focus = {
+		id = BAR_friend_sharing_knowledge_of_arcane
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_magical_engineering_faculty
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_magical_engineering_faculty
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1
+				uses = 2
+				category = magical_tech
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_invite_other_to_study_magic
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_sharing_knowledge_of_arcane
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_sharing_knowledge_of_arcane
+		}
+		prerequisite = {
+			focus = BAR_friend_viira_and_silver_diplomacy
+		}
+		completion_reward = {
+			add_ideas = BAR_academy
+		}
+	}
+	focus = {
+		id = BAR_friend_everything_will_be_fine
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_dev_up
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_dev_up
+		}
+		prerequisite = {
+			focus = BAR_friend_invite_other_to_study_magic
+		}
+		completion_reward = {
+			country_event = { id = barrad_friendship_tree.25 }
+		}
+	}
+	focus = {
+		id = BAR_friend_agriculture_mechanization
+		icon = GFX_goal_cry_com_sync
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_mechanical_engineering_faculty
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_mechanical_engineering_faculty
+		}
+		prerequisite = {
+			focus = BAR_friend_country_side_census
+		}
+		completion_reward = {
+			increase_science_base = yes
+		}
+	}
+	focus = {
+		id = BAR_new_southern_friends
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_ruin_has_come
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_ruin_has_come
+		}
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				country_event = { id = barrad_friendship_tree.24 days = 63}
+			}
+		}
+	}
+	focus = {
+		id = BAR_kasa_1
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_new_southern_friends
+		prerequisite = {
+			focus = BAR_new_southern_friends
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BAR_kasa_2
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_kasa_1
+		}
+		relative_position_id = BAR_kasa_1
+		completion_reward = {
+			558 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			578 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	focus = {
+		id = BAR_kasa_3
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_kasa_2
+		}
+		relative_position_id = BAR_kasa_2
+		completion_reward = {
+			558 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			413 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	focus = {
+		id = BAR_kasa_4
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		relative_position_id = BAR_new_southern_friends
+		prerequisite = {
+			focus = BAR_new_southern_friends
+		}
+		completion_reward = {
+			578 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 11999
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				build_railway = {
+					path = {
+						4516
+						12796
+						2046
+						2003
+						4910
+						10844
+						11999
+					}
+				}
+				build_railway = {
+					start_state = 624
+					target_state = 578
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	focus = {
+		id = BAR_kasa_5
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_kasa_4
+		}
+		relative_position_id = BAR_kasa_4
+		completion_reward = {
+			add_ideas = BAR_self_governance
+			add_political_power = -30
+		}
+	}
+	focus = {
+		id = BAR_kasa_6
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_kasa_5
+		}
+		relative_position_id = BAR_kasa_5
+		completion_reward = {
+			ZES = {
+				add_to_ROOT_potential_cores = yes
+			}
+		}
+	}
+	focus = {
+		id = BAR_our_deer_friends
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = BAR_friend_ruin_has_come
+		}	
+		relative_position_id = BAR_friend_ruin_has_come
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BAR_olv_1
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = BAR_our_deer_friends
+		}	
+		relative_position_id = BAR_our_deer_friends
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = BAR_olv_2
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_olv_1
+		}	
+		relative_position_id = BAR_olv_1
+		completion_reward = {
+			412 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = BAR_olv_3
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_olv_2
+		}	
+		relative_position_id = BAR_olv_2
+		completion_reward = {
+			579 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = BAR_olv_4
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = BAR_our_deer_friends
+		}	
+		relative_position_id = BAR_our_deer_friends
+		completion_reward = {
+			579 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			412 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			build_railway = {
+				start_state = 625
+				target_state = 579
+			}
+			build_railway = {
+				start_state = 625
+				target_state = 412
+			}
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = BAR_olv_5
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_olv_4
+		}	
+		relative_position_id = BAR_olv_4
+		completion_reward = {
+			add_political_power = -150
+		}
+	}
+	focus = {
+		id = BAR_olv_6
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_olv_5
+		}	
+		relative_position_id = BAR_olv_5
+		completion_reward = {
+			OLV = { add_to_ROOT_potential_cores = yes }
+		}
+	}
+	focus = {
+		id = BAR_new_south
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 0
+		}
+		prerequisite = {
+			focus = BAR_olv_3
+		}	
+		prerequisite = {
+			focus = BAR_olv_6
+		}	
+		prerequisite = {
+			focus = BAR_kasa_3
+		}	
+		prerequisite = {
+			focus = BAR_kasa_6
+		}	
+		relative_position_id = BAR_olv_6
+		completion_reward = {
+			increase_society_development_gradual = yes
 		}
 	}
 	focus = {
@@ -1344,33 +2330,56 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = WIT_dragon_tt
 			hidden_effect = {
-			    set_technology = {
+				set_technology = {
 					popup = no
-				    dragons_light = 1
-			    }
+					dragons_light = 1
+				}
 				add_equipment_to_stockpile = {
 					type = dragon_equipment_0
 					amount = 1000
-					producer = WIT
+					producer = BAR
 				}
 				division_template = {
 					name = "Tamed Dragons"
 					is_locked = yes
 					regiments = {
-						light_dragons = { x = 0 y = 0 }
-						light_dragons = { x = 0 y = 1 }
-						light_dragons = { x = 0 y = 2 }
-						light_dragons = { x = 0 y = 3 }
-						light_dragons = { x = 1 y = 0 }
+						light_dragons = {
+							x = 0
+							y = 0
+						}
+						light_dragons = {
+							x = 0
+							y = 1
+						}
+						light_dragons = {
+							x = 0
+							y = 2
+						}
+						light_dragons = {
+							x = 0
+							y = 3
+						}
+						light_dragons = {
+							x = 1
+							y = 0
+						}
 					}
 					support = {
-						unicorn_company = { x = 0 y = 0 }
+						unicorn_company = {
+							x = 0
+							y = 0
+						}
 					}
 				}
-				load_oob = "WIT_dragons"
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"Dragons!\" division_template = \"Tamed Dragons\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = ROOT
+					}
+				}
 				set_technology = {
 					popup = no
-					dragons_light = 0 
+					dragons_light = 0
 				}
 				fix_weapon_techs = yes
 			}
@@ -1825,6 +2834,29 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BAR_friend_harmonic_conscription_system
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_conscription_system
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_government = democratic
+		}
+		prerequisite = {
+			focus = BAR_friend_conscription_system
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BAR_friend_better_conscription
+				add_idea = BAR_friend_better_conscription_2
+			}
+		}
+	}
+	focus = {
 		id = BAR_friend_mil_factories
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
@@ -1858,8 +2890,6 @@ focus_tree = {
 			add_ideas = BAR_friend_simplified_equpiment
 		}
 	}
-
-	
 	focus = {
 		id = BAR_friend_air_warfare
 		icon = GFX_goal_cry_com_sync

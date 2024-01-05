@@ -6,6 +6,7 @@ BAR_democratic_party:0 "Unification Front"
 BAR_fascism_party:0 "The Pentarchy"
 BAR_asinti_rule:0 "Asinti's Followers"
 BAR_elysium_confederation:0 "Elysium Confederation"
+BAR_barradian_army:0 "Barradian Army"
 
 ### events ###
 
@@ -3809,3 +3810,7 @@ bar_friend_3_tooltip:0 "§HAsinti§!\n\nDivision Recovery Rate: §G+8%§!"
 bar_friend_4_tooltip:0 "§HAmbrosius§!\n\nConsumer Goods Factories factor: §Y-10%§!"
 bar_friend_5_tooltip:0 "§HGąsienica§!\n\nPolitical Power Gain: §G+15%§!\nStability: §G+10%§!"
 bar_friend_6_tooltip:0 "§HWhite Star§!\n\nWar Support: §G+10%§!\nStability: §G+5%§!"
+
+barrad_friendship_tree.20.t:0 "Different Types of Relations"
+barrad_friendship_tree.20.d:0 "Silver Star sat alone in his study, amidst an ocean of books and scrolls that sprawled across his desk and shelves. The room, steeped in the musty scent of old paper and ink, was his refuge, yet those pages he struggled on now were making him uneasy.\n\nSuddenly, the tranquility of his sanctuary was shattered. Viira, like a gust of wind, breezed in from behind a towering stack of books, her sudden appearance sending a few volumes tumbling to the floor. She retrieved one of fallen books, reading the title aloud with a tinge of sarcasm „Modern Theory of Nation State Relations.” She arched an eyebrow, looking at Silver Star curiously „What are you doing here all alone?”\n\n„Just... nothing” Silver Star replied, his voice barely above a whisper, tinged with a hint of embarrassment.\n\nViira glanced around at the scattered books „That's a lot of nothing” she remarked, handing him the book she had picked up.\n\nSilver Star took it hesitantly and sat back down, a sigh escaping him as he opened the cover „During my education, I might not have paid enough attention to the intricacies of relations between states... or ponies” he admitted quietly.\n\nA soft chuckle escaped Viira, her eyes twinkling with unspoken jokes. Instead of teasing him, she asked „Would you rather be left alone with your books?”\n\nHe nodded in silence.\n\nIgnoring it, Viira moved closer, her presence a warm contrast to the cold stillness of the room. Silver Star felt a sudden tightness in his chest, his breath hitching slightly.\n\n„Perhaps we could study together?” she suggested, her voice gentle and inviting.\n\nSilver Star's heart raced, and his eyes widened at the thought „I would be more than happy to” he replied, his voice now steady and filled with anticipation."
+barrad_friendship_tree.20.a:0 "Make room for me on that chair then!"

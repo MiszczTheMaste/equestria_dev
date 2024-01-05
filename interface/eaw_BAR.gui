@@ -48,25 +48,25 @@ guiTypes = {
 				name = "friend_1"
 				position = { x = 20 y = 50 }
 				spriteType = "GFX_bar_viira_advisor"
-				pdx_tooltip = bar_friend_1_tooltip_wrap
+				pdx_tooltip = bar_friend_1_tooltip
 			}
 			iconType = {
 				name = "friend_2"
 				position = { x = 100 y = 50 }
 				spriteType = "GFX_bar_leopold_advisor"
-				pdx_tooltip = bar_friend_2_tooltip_wrap
+				pdx_tooltip = bar_friend_2_tooltip
 			}
 			iconType = {
 				name = "friend_3"
 				position = { x = 180 y = 50 }
 				spriteType = "GFX_bar_asinti_advisor"
-				pdx_tooltip = bar_friend_3_tooltip_wrap
+				pdx_tooltip = bar_friend_3_tooltip
 			}
 			iconType = {
 				name = "friend_4"
 				position = { x = 260 y = 50 }
 				spriteType = "GFX_bar_ambrosius_advisor"
-				pdx_tooltip = bar_friend_4_tooltip_wrap
+				pdx_tooltip = bar_friend_4_tooltip
 			}
 			iconType = {
 				name = "friend_5"

@@ -3821,7 +3821,7 @@ FOCUS_FILTER_LEOPOLD_ASCESION:0 "Leopold's Final Ascesion"
 FOCUS_FILTER_PATCH_OF_WRATCH:0 "Patch of Wratch"
 
 bar_friend_1_tooltip:0 "§HViira Lehtola§![bar_friend_1_tooltip_with_effect]"
-bar_friend_1_tooltip_effect:0 "\n\n§HSomepony Most Special Doe§!\n - Research Speed: §G+2.5%§!\n - Daily Harmony Support: §G-25%§!"
+bar_friend_1_tooltip_effect:0 "\n\n§HSomepony's Most Special Doe§!\n - Research Speed: §G+2.5%§!\n - Daily Harmony Support: §G-25%§!"
 bar_friend_2_tooltip:0 "§HLeopold Schmeller§![bar_friend_2_tooltip_with_effect]"
 bar_friend_2_tooltip_effect:0 "\n\n§HAcclaimed Genius§!\n - Research Speed: §G+5%§!"
 bar_friend_3_tooltip:0 "§HAsinti§![bar_friend_3_tooltip_with_effect]"

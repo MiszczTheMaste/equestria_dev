@@ -2230,7 +2230,7 @@ ideas = {
 			picture = BAL_hell
 			modifier = {
 				conscription = 0.025
-				army_defense_factor = 0.1
+				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 				army_org_factor = 0.2
 			}
@@ -2328,6 +2328,38 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.1
 				political_power_factor = 0.25
+			}
+		} 
+		BAR_friend_gasienica = {
+			picture = BAL_hell
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.15
+			}
+		} 
+		BAR_friend_viira = {
+			picture = BAL_hell
+			modifier = {
+				research_speed_factor = 0.025
+				democratic_drift = 0.02
+			}
+		} 
+		BAR_friend_leopold = {
+			picture = BAL_hell
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		} 
+		BAR_friend_asinti = {
+			picture = BAL_hell
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}  
+		BAR_friend_ambrosius = {
+			picture = BAL_hell
+			modifier = {
+				consumer_goods_factor = -0.1
 			}
 		}  
    }

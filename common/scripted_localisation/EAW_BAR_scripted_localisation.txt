@@ -743,9 +743,6 @@ defined_text = {
 		localization_key = BAR_status_alive
 	}
 	text = {
-		trigger = {
-			NOT = { has_country_flag = barrad_silver_star_alive }
-		}
 		localization_key = BAR_status_dead
 	}
 }
@@ -758,9 +755,6 @@ defined_text = {
 		localization_key = BAR_status_alive
 	}
 	text = {
-		trigger = {
-			NOT = { has_country_flag = barrad_asinti_alive }
-		}
 		localization_key = BAR_status_dead
 	}
 }
@@ -773,9 +767,6 @@ defined_text = {
 		localization_key = BAR_status_alive
 	}
 	text = {
-		trigger = {
-			has_country_flag = BAR_ambrosius_killed
-		}
 		localization_key = BAR_status_dead
 	}
 }
@@ -788,9 +779,6 @@ defined_text = {
 		localization_key = BAR_status_alive
 	}
 	text = {
-		trigger = {
-			NOT = { has_country_flag = barrad_leopold_alive }
-		}
 		localization_key = BAR_status_dead
 	}
 }
@@ -807,5 +795,54 @@ defined_text = {
 			NOT = { has_country_flag = barrad_viira_alive }
 		}
 		localization_key = BAR_status_dead
+	}
+}
+
+defined_text = {
+	name = bar_friend_1_tooltip
+	text = {
+		trigger = {
+			has_idea = BAR_friend_viira
+		}
+		localization_key = bar_friend_1_tooltip_full
+	}
+	text = {
+		localization_key = bar_friend_1_tooltip_empty
+	}
+}
+defined_text = {
+	name = bar_friend_2_tooltip
+	text = {
+		trigger = {
+			has_idea = BAR_friend_leopold
+		}
+		localization_key = bar_friend_2_tooltip_full
+	}
+	text = {
+		localization_key = bar_friend_2_tooltip_empty
+	}
+}
+defined_text = {
+	name = bar_friend_3_tooltip
+	text = {
+		trigger = {
+			has_idea = BAR_friend_asinti
+		}
+		localization_key = bar_friend_3_tooltip_full
+	}
+	text = {
+		localization_key = bar_friend_3_tooltip_empty
+	}
+}
+defined_text = {
+	name = bar_friend_4_tooltip
+	text = {
+		trigger = {
+			has_idea = BAR_friend_ambrosius
+		}
+		localization_key = bar_friend_4_tooltip_full
+	}
+	text = {
+		localization_key = bar_friend_4_tooltip_empty
 	}
 }

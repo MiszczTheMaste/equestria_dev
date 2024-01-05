@@ -54,10 +54,14 @@ scripted_gui = {
 		window_name = "pentarchy_friendship_tab_container"
 		parent_window_token = politics_tab
 		context_type = player_context
-		dirty = pentarchy_friendship_tab_visible
 		visible = {
 			tag = BAR
 			has_variable = pentarchy_friendship_tab_visible
+		}
+		triggers = {
+			friend_6_visible = {
+				has_idea = BAR_friend_white_star
+			}
 		}
 	}
 	bar_viira_note_flavor1 = {

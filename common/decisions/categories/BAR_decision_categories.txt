@@ -276,3 +276,11 @@ bar_sane_ambrosius_balance_category = {
 	}
 	visible_when_empty = yes
 }
+bar_friendship_category = {
+	priority = 50
+	icon = GFX_decision_scroll
+
+	allowed = { 
+		original_tag = BAR 
+	}
+}

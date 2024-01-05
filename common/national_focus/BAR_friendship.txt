@@ -1012,7 +1012,7 @@ focus_tree = {
 			focus = BAR_friend_riverlands_diplomacy
 		}
 		completion_reward = {
-			#add modifier tto ambrosius for him becoming one of most influential politicians and becoming friends with White Star
+			add_ideas = BAR_friend_ambrosius
 		}
 	}
 	focus = {
@@ -1452,7 +1452,7 @@ focus_tree = {
 			focus = BAR_friend_many_cultures_of_barrad
 		}
 		completion_reward = {
-			#add modifiers to asinti for him being cool guy preacher
+			add_ideas = BAR_friend_asinti
 		}
 	}
 	focus = {
@@ -1663,6 +1663,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			increase_society_development_gradual = yes
+			country_event = { id = barrad_friendship_tree.25 }
 		}
 	}
 	focus = {
@@ -1766,7 +1767,7 @@ focus_tree = {
 			focus = BAR_friend_magical_engineering_faculty
 		}
 		completion_reward = {
-			#add modifer to leopold for him being super cool proffesor and eveyrone listening to him bc he smart and cool
+			add_ideas = BAR_friend_leopold
 		}
 	}
 	focus = {

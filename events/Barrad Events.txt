@@ -6674,6 +6674,7 @@ country_event = {
 			set_variable = {
 				pentarchy_friendship_tab_visible = 1
 			}
+			add_ideas = BAR_friend_gasienica
 		}
 	}
 }
@@ -7053,7 +7054,20 @@ country_event = { #silver star siedzi sobie an wzgórzach elysium i patrzy na mi
 		}
 	}
 }
-
+country_event = { #barrad sex event bottom text
+	id = barrad_friendship_tree.26
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
+	}
+	title = barrad_friendship_tree.26.t
+	desc = barrad_friendship_tree.26.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.26.a
+		add_ideas = BAR_friend_viira
+	}
+}
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################

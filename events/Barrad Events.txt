@@ -96,6 +96,45 @@ country_event = {
 		set_country_flag = bar_viira_investigation_step_10
 		set_country_flag = bar_viira_investigation_step_11
 	}
+	option = {
+		name = "all ideas from 1st tree"
+		add_ideas = pre_industrial_society1
+		remove_ideas = BAR_wittenland_witchhunters
+		add_ideas = BAR_machines_powered
+		add_ideas = BAR_machines_studied
+		add_ideas = BAR_simplier_tasks
+		add_ideas = BAR_even_simplier_tasks
+		add_ideas = BAR_temple_construct
+		add_ideas = BAR_clockwerk_soldiers
+		add_ideas = BAR_clockwerk_factories
+		add_ideas = BAR_vechicle_reliability
+		remove_ideas = BAR_pentarchy
+		add_ideas = BAR_pentarchy_3
+	}
+	option = {
+		name = "ideas from 1st tree (set 1)"
+		add_ideas = pre_industrial_society1
+		remove_ideas = BAR_wittenland_witchhunters
+		add_ideas = BAR_machines_powered
+		add_ideas = BAR_simplier_tasks
+		add_ideas = BAR_temple_construct
+		add_ideas = BAR_clockwerk_factories
+		add_ideas = BAR_vechicle_reliability
+		remove_ideas = BAR_pentarchy
+		add_ideas = BAR_pentarchy_3
+	}
+	option = {
+		name = "ideas from 1st tree (set 2)"
+		add_ideas = pre_industrial_society1
+		remove_ideas = BAR_wittenland_witchhunters
+		add_ideas = BAR_machines_studied
+		add_ideas = BAR_even_simplier_tasks
+		add_ideas = BAR_temple_construct
+		add_ideas = BAR_clockwerk_soldiers
+		add_ideas = BAR_vechicle_reliability
+		remove_ideas = BAR_pentarchy
+		add_ideas = BAR_pentarchy_3
+	}
 }
 
 country_event = {
@@ -4437,7 +4476,7 @@ country_event = {
 	option = {
 		name = barrad_asinti.9.a
 		add_ideas = BAR_asinti_invasion
-		add_political_power = 100
+		increase_science_base = yes
 	}
 }
 
@@ -6858,7 +6897,14 @@ country_event = { #brother sister no hard feeling moment
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.15.a
-		add_ideas = BAR_friend_white_star
+		custom_effect_tooltip = BAR_friend_white_star_tooltip
+		hidden_effect = {
+			add_ideas = BAR_friend_white_star
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 country_event = { #silver star sends letter to his siter 
@@ -6996,9 +7042,13 @@ country_event = { #during census in one of villages filly tells asinti that thei
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.23.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
-country_event = { #silver star cant sleep at night and sits at the top of his tower sstargazing, unexpected he is joined by viira
+country_event = { #silver star cant sleep at night and sits at the top of his tower stargazing, unexpected he is joined by viira
 	id = barrad_friendship_tree.24
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.24"
@@ -7009,6 +7059,11 @@ country_event = { #silver star cant sleep at night and sits at the top of his to
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.24.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_political_power = 35
 	}
 }
 country_event = { #silver star siedzi sobie an wzgórzach elysium i patrzy na miasto, viira do niego podbija i se siedzą i pada tekst z gothica że wszystko będzie w porządku
@@ -7022,7 +7077,7 @@ country_event = { #silver star siedzi sobie an wzgórzach elysium i patrzy na mi
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.25.a
-		increase_society_development = yes
+		increase_society_development_gradual = yes
 		set_party_name = {
 			ideology = neutrality
 			name = BAR_barradian_army
@@ -7061,11 +7116,118 @@ country_event = { #barrad sex event bottom text
 	}
 	title = barrad_friendship_tree.26.t
 	desc = barrad_friendship_tree.26.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_bar_sex_event
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.26.a
+		custom_effect_tooltip = BAR_friend_viira_tooltip
 		add_ideas = BAR_friend_viira
+	}
+}
+country_event = { #viira and silver star visits asinti in temple he had built and discovers that its been converted to charity, and that asinti took care of the filly from previous event
+	id = barrad_friendship_tree.27
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
+	}
+	title = barrad_friendship_tree.27.t
+	desc = barrad_friendship_tree.27.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.27.a
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_z_f_p
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_z_f_p
+				add_idea = BAR_friend_temple_builded_z_f_p
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_z_l_p
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_z_l_p
+				add_idea = BAR_friend_temple_builded_z_l_p
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_z_f_g
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_z_f_g
+				add_idea = BAR_friend_temple_builded_z_f_g
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_z_l_g
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_z_l_g
+				add_idea = BAR_friend_temple_builded_z_l_g
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_d_f_p
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_d_f_p
+				add_idea = BAR_friend_temple_builded_d_f_p
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_d_l_p
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_d_l_p
+				add_idea = BAR_friend_temple_builded_d_l_p
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_d_f_g
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_d_f_g
+				add_idea = BAR_friend_temple_builded_d_f_g
+			}
+		}
+		if = {
+			limit = {
+				has_idea = BAR_temple_construct_d_l_g
+			}
+			swap_ideas = {
+				remove_idea = BAR_temple_construct_d_l_g
+				add_idea = BAR_friend_temple_builded_d_l_g
+			}
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+	}
+}
+country_event = { #silver star drinks with leopold and decides to throw away all his books about dark magic
+	id = barrad_friendship_tree.27
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
+	}
+	title = barrad_friendship_tree.27.t
+	desc = barrad_friendship_tree.27.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.27.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 ##############################################################################################################################################################################

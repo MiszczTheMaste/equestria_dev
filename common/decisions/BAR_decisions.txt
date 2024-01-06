@@ -1110,7 +1110,6 @@ BAR_ambrosius_boredoom = {
 					}
 				}
 				country_event = {
-					days = 1
 					id = bar_ambrosius_madness.1
 				}
 				activate_mission = BAR_ambrosius_boredom
@@ -1621,7 +1620,6 @@ BAR_strike_the_earth_cat = {
 							}
 						}
 						country_event = {
-							days = 1
 							id = bar_titan_fight.1
 						}
 						clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1643,7 +1641,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1682,7 +1679,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1721,7 +1717,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1760,7 +1755,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1799,7 +1793,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1838,7 +1831,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1877,7 +1869,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1916,7 +1907,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -1950,7 +1940,6 @@ BAR_strike_the_earth_cat = {
 									}
 								}
 								country_event = {
-									days = 1
 									id = bar_titan_fight.1
 								}
 								clr_country_flag = BAR_strike_the_earth_unlocked
@@ -3151,7 +3140,6 @@ BAR_leopold_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_carousing_silver"
 			country_event = {
-				days = 1
 				id = barrad_leopold_carousing.3
 			}
 		}
@@ -3180,7 +3168,6 @@ BAR_leopold_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_carousing_asinti"
 			country_event = {
-				days = 1
 				id = barrad_leopold_carousing.2
 			}
 		}
@@ -3209,7 +3196,6 @@ BAR_leopold_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_carousing_viira"
 			country_event = {
-				days = 1
 				id = barrad_leopold_carousing.1
 			}
 		}
@@ -3832,7 +3818,6 @@ BAR_viira_cat = {
 		complete_effect = {
 			country_event = {
 				id = bar_viira_murders.3
-				days = 1
 			}
 		}
 	}

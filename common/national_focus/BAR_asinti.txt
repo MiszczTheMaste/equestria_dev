@@ -1647,7 +1647,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			one_random_industrial_complex = yes
-			increase_society_development = yes
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+				one_random_arms_factory = yes
+			} else = {
+				increase_society_development = yes
+			}
 		}
 	}
 	focus = {
@@ -1699,7 +1707,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			one_random_industrial_complex = yes
-			increase_society_development = yes
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+				one_random_arms_factory = yes
+			} else = {
+				increase_society_development = yes
+			}
 		}
 	}
 	focus = {
@@ -1719,7 +1735,15 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			increase_society_development = yes
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+				one_random_arms_factory = yes
+			} else = {
+				increase_society_development = yes
+			}
 			add_tech_bonus = {
 				name = industrial_bonus
 				category = industry

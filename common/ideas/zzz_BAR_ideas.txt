@@ -2219,6 +2219,14 @@ ideas = {
 				army_attack_factor = 0.05
 				army_org_factor = 0.1
 			}
+		}    
+		BAR_friend_independent_military_units_idea_clockwerks = {
+			picture = BAL_hell
+			modifier = {
+				army_speed_factor = 0.1
+				army_attack_factor = 0.15
+				army_org_factor = 0.15
+			}
 		}        
 		BAR_friend_better_conscription = {
 			picture = BAL_hell
@@ -2238,7 +2246,7 @@ ideas = {
 		BAR_friend_scavenger_army = {
 			picture = BAL_hell
 			modifier = {
-				conscription = 0.025
+				equipment_capture = 0.25
 			}
 		}       
 		BAR_friend_simplified_equpiment = {
@@ -2300,6 +2308,31 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		BAR_academy_2 = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				research_speed_factor = 0.10
+				research_sharing_per_country_bonus = 0.5
+			}
+		}
+		BAR_academy_2_machine_powered = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				research_speed_factor = 0.10
+				research_sharing_per_country_bonus = 0.5
+			}
+		}
+		BAR_academy_2_machine_studied = {
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				research_speed_factor = 0.05
+				research_sharing_per_country_bonus = 0.5
+			}
+			research_bonus = { electronics = 0.15 } 
+		}
 		BAR_local_cultures = {
 			picture = man_five_year_plan_industry
 
@@ -2313,7 +2346,80 @@ ideas = {
 			modifier = {
 				conscription = 0.025
 			}
-		}                                           
+		}  
+		BAR_efficient_automation = {
+			picture = generic_goods_red_bonus
+			modifier = {	
+				conscription = 0.025
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}   
+		BAR_friend_temple_builded_z_f_p = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_org_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		BAR_friend_temple_builded_z_l_p = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.15
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		BAR_friend_temple_builded_z_f_g = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_org_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		BAR_friend_temple_builded_z_l_g = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.15
+				consumer_goods_factor = -0.02
+			}
+		}
+		BAR_friend_temple_builded_d_f_p = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				winter_attrition_factor = -0.4
+				army_org_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		BAR_friend_temple_builded_d_l_p = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				winter_attrition_factor = -0.4
+				land_reinforce_rate = 0.15
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+		BAR_friend_temple_builded_d_f_g = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				winter_attrition_factor = -0.4
+				army_org_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		BAR_friend_temple_builded_d_l_g = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				winter_attrition_factor = -0.4
+				land_reinforce_rate = 0.15
+				consumer_goods_factor = -0.02
+			}
+		}                                      
 	}
 	hidden_ideas = {
 		BAR_no_volunteers = {

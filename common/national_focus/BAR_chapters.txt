@@ -34,7 +34,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_first.1
 			}
 		}
@@ -61,7 +60,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_first.6
 			}
 		}
@@ -377,7 +375,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_first.3
 			}
 		}
@@ -399,7 +396,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_first.4
 			}
 		}
@@ -429,7 +425,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_second.1
 			}
 		}
@@ -461,7 +456,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_second.6
 			}
 		}
@@ -531,7 +525,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_second.4
 			}
 			hidden_effect = {
@@ -1049,7 +1042,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_second.22
 			}
 		}
@@ -1421,7 +1413,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_second.3
 			}
 		}
@@ -1646,7 +1637,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.1
-				days = 1
 			}
 		}
 	}
@@ -1951,7 +1941,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.3
-				days = 1
 			}
 		}
 	}
@@ -1983,7 +1972,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.4
-				days = 1
 			}
 		}
 	}
@@ -2015,7 +2003,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.5
-				days = 1
 			}
 		}
 	}
@@ -2083,7 +2070,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.6
-				days = 1
 			}
 		}
 	}
@@ -2118,7 +2104,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.61
-				days = 1
 			}
 		}
 	}
@@ -2153,7 +2138,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_third.62
-				days = 1
 			}
 		}
 	}
@@ -2818,7 +2802,7 @@ focus_tree = {
 		icon = GFX_goal_TEM_sabotage_factories
 		cost = 3.5
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = BAR_begin_building
 		available = {
 		}
@@ -2834,7 +2818,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				days = 1
 				id = barrad_fourth.2
 			}
 		}
@@ -2844,8 +2827,8 @@ focus_tree = {
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
 		x = 0
-		y = 5
-		relative_position_id = BAR_begin_building
+		y = 1
+		relative_position_id = BAR_party_never_stops
 		available = {
 			nuclear_reactor > 0
 		}

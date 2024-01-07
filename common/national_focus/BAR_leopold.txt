@@ -811,7 +811,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_2
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_repurpose_sanctuaries
 		cost = 3.5
 		x = -1
 		y = 1
@@ -899,7 +899,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_3
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_repurpose_sanctuaries_silver
 		cost = 3.5
 		x = 1
 		y = 1
@@ -1595,7 +1595,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_military_clockwerks_8
-		icon = GFX_goal_leopold_party_over
+		icon = GFX_goal_bar_leopold_clockwork_arty
 		cost = 3.5
 		x = 1
 		y = 1
@@ -2040,7 +2040,7 @@ focus_tree = {
 			focus = BAR_leopold_conquest
 		}
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				target = ZES
 				type = annex_everything
 			}
@@ -2063,7 +2063,7 @@ focus_tree = {
 			focus = BAR_leopold_conquest
 		}
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				target = OLV
 				type = annex_everything
 			}
@@ -2086,7 +2086,7 @@ focus_tree = {
 			focus = BAR_leopold_conquest_1
 		}
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				target = GRU
 				type = annex_everything
 			}
@@ -2112,7 +2112,7 @@ focus_tree = {
 			focus = BAR_leopold_conquest_2
 		}
 		completion_reward = {
-			create_wargoal = {
+			declare_war_on = {
 				target = WIT
 				type = annex_everything
 			}

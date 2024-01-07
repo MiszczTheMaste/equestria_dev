@@ -938,6 +938,24 @@ focus_tree = {
 			focus = BAR_capital_temple_2
 			focus = BAR_capital_temple_3
 		}
+		available = {
+			NOT = {
+				has_idea = BAR_temple_construct_z
+				has_idea = BAR_temple_construct_d
+				has_idea = BAR_temple_construct_z_f
+				has_idea = BAR_temple_construct_z_l
+				has_idea = BAR_temple_construct_d_f
+				has_idea = BAR_temple_construct_d_l
+				has_idea = BAR_temple_construct_z_f_p
+				has_idea = BAR_temple_construct_z_l_p
+				has_idea = BAR_temple_construct_z_f_g
+				has_idea = BAR_temple_construct_z_l_g
+				has_idea = BAR_temple_construct_d_f_p
+				has_idea = BAR_temple_construct_d_l_p
+				has_idea = BAR_temple_construct_d_f_g
+				has_idea = BAR_temple_construct_d_l_g`
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}

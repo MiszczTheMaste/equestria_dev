@@ -555,6 +555,9 @@ scripted_gui = {
 			has_variable = bar_viira_spells_upgrade
 		}
 		effects = {
+			exit_button_click = {
+				clear_variable = bar_viira_spells_upgrade
+			}
 			bar_viira_button_unlock_1_click = {
 				if = {
 					limit = {

@@ -1762,57 +1762,65 @@ bar_kill_advisors = {
                            
 
 
-
 bar_viira_spells_max_overload = {
 	hidden_effect = {
-		if = {
+		set_variable = {
+			viira_max_overload = 0
+		}
+		every_owned_state = {
 			limit = {
-				has_variable = BAR_viira_godhood
+				check_variable = { building_level@nuclear_reactor > 0 }		
 			}
-			set_temp_variable = {
-				viira_max_overload = 0
-			}
-			every_owned_state = {
-				add_to_temp_variable = {
-					viira_max_overload = building_level@nuclear_reactor
+			BAR = {
+				add_to_variable = {
+					viira_max_overload = 100
 				}
-			}
-			multiply_variable = {
-				viira_max_overload = 100
-			}
-			if = {
-				limit = {
-					check_variable = {
-						viira_mana_overload > viira_max_overload
-					}
-				}
-				country_event = {
-					id = barrad_viira.997
-				}
-			}
-			if = {
-				limit = {
-					check_variable = {
-						viira_mana_overload = 0
-					}
-				}
-				set_variable = {
-					viira_mana_overload_percentage = 0
-				}
-			}
-			else = {
-				set_variable = {
-					viira_mana_overload_percentage = viira_mana_overload
-				}
-				divide_variable = {
-					viira_mana_overload_percentage = viira_max_overload
-				}
-				multiply_variable = {
-					viira_mana_overload_percentage = 100
-				}
-				round_variable = viira_mana_overload_percentage
 			}
 		}
+		if = {
+			limit = {
+				check_variable = {
+					viira_mana_overload > viira_max_overload
+				}
+			}
+			country_event = {
+				id = barrad_viira.997
+			}
+		}
+		bar_viira_spells_overload_calculate_percentage = yes
+	}
+}
+
+bar_viira_spells_overload_calculate_percentage = {
+	if = {
+		limit = {
+			check_variable = {
+				viira_mana_overload = 0
+			}
+		}
+		set_variable = {
+			viira_mana_overload_percentage = 0
+		}
+	} else_if ={
+		limit = {
+			check_variable = {
+				viira_max_overload = 0
+			}
+		}
+		set_variable = {
+			viira_mana_overload_percentage = 100
+		}
+	} else = {
+		set_variable = {
+			viira_mana_overload_percentage = viira_mana_overload
+		}
+		divide_variable = {
+			viira_mana_overload_percentage = viira_max_overload
+		}
+		multiply_variable = {
+			viira_mana_overload_percentage = 100
+		}
+		round_variable = viira_mana_overload_percentage
 	}
 }
 
@@ -1821,12 +1829,14 @@ bar_viira_spells_overload_monthly_tickdown = {
 		viira_mana_tickdown = 0
 	}
 	every_owned_state = {
-		add_to_temp_variable = {
-			viira_mana_tickdown = building_level@nuclear_reactor
+		limit = {
+			check_variable = { building_level@nuclear_reactor > 0 }		
 		}
-	}
-	multiply_variable = {
-		viira_mana_tickdown = 9
+		BAR = {
+			add_to_temp_variable = {
+				viira_mana_tickdown = 9
+			}
+		}
 	}
 	subtract_from_variable = {
 		viira_mana_overload = viira_mana_tickdown
@@ -1841,6 +1851,7 @@ bar_viira_spells_overload_monthly_tickdown = {
 			viira_mana_overload = 0
 		}
 	}
+	bar_viira_spells_overload_calculate_percentage = yes
 }
 
 BAR_new_viira_note = {
@@ -1942,6 +1953,7 @@ BAR_unlock_spells_7 = {
 }
 
 BAR_unlock_spells_8 = {
+	#ascend
 	country_event = {
 		id = barrad_viira.16
 	}
@@ -1954,19 +1966,18 @@ BAR_spell_upgrades_prepare = {
 	}
 	for_each_loop = {
 		array = bar_viira_mana_crystal_array
-		index = reactor_index
-		value = reactor_frame
+		index = crystal_index
 		if = {
 			limit = {
-				nuclear_reactor > reactor_index
+				nuclear_reactor > crystal_index
 			}
 			set_variable = {
-				reactor_frame = 2
+				bar_viira_mana_crystal_array^crystal_index = 2
 			}
 		}
 		else = {
 			set_variable = {
-				reactor_frame = 1
+				bar_viira_mana_crystal_array^crystal_index = 1
 			}
 		}
 	}
@@ -1988,7 +1999,6 @@ BAR_clear_mess_puppet = {
 		clr_country_flag = BAR_undead_convert
 		clr_country_flag = barrad_early_game
 		clr_country_flag = BAR_asinti_kill_count
-		clear_variable = BAR_viira_pup
 		clear_variable = BAR_viira_godhood
 		remove_ideas = BAR_blood_curse_idea
 		remove_ideas = BAR_pentarchy

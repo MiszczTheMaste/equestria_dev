@@ -1061,6 +1061,7 @@ country_event = {
 		name = bar_titan_fight.2.b
 		set_country_flag = bar_titan_tech
 		set_country_flag = BAR_strike_the_earth_unlocked
+		custom_effect_tooltip = BAR_next_focus_prerequisite
 	}
 }
 
@@ -1095,6 +1096,7 @@ country_event = {
 		name = bar_titan_fight.3.b
 		set_country_flag = bar_titan_tech
 		set_country_flag = BAR_strike_the_earth_unlocked
+		custom_effect_tooltip = BAR_next_focus_prerequisite
 	}
 	option = {
 		#virra kills leopold
@@ -1108,6 +1110,9 @@ country_event = {
 			BAR_resources_leopold = 0
 		}
 		barrad_kill_leopold = yes
+		one_random_arms_factory = yes
+		one_random_arms_factory = yes
+		custom_effect_tooltip = bar_viira_kills_leopold_tooltip
 	}
 }
 
@@ -2432,6 +2437,7 @@ country_event = {
 	option = {
 		name = barrad_first.51.a
 		set_country_flag = barrad_killing_active
+		set_country_flag = bar_hunt_completed
 	}
 }
 
@@ -2800,11 +2806,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.22.a
-		custom_effect_tooltip = BAR_cpt_quest_tooltip
 		hidden_effect = {
-			set_variable = {
-				barrad_plants = 1
-			}
+			set_country_flag = barrad_plants
 		}
 	}
 }
@@ -5152,9 +5155,6 @@ country_event = {
 		}
 		custom_effect_tooltip = bar_virra_becomes_leader
 		hidden_effect = {
-			set_variable = {
-				BAR_viira_pup = 1
-			}
 			clr_country_flag = barrad_early_game
 			set_variable = {
 				viira_mana_overload = 0
@@ -5165,14 +5165,12 @@ country_event = {
 		}
 	}
 	option = {
-		#whoops
 		name = barrad_viira.1.b
 		trigger = {
 			has_country_flag = bar_viira_investigation_step_11
 		}
 		country_event = {
 			id = barrad_viira.12
-			days = 7
 		}
 	}
 }
@@ -5246,9 +5244,8 @@ country_event = {
 			set_variable = {
 				viira_mana_overload = 0
 			}
-			set_variable = {
-				viira_mana_overload_percentage = 0
-			}
+			bar_viira_spells_max_overload = yes
+			bar_viira_spells_overload_calculate_percentage = yes
 		}
 		load_focus_tree = barrad_focus_tree_goddess_viira
 	}

@@ -423,6 +423,12 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_hunting_party
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = bar_hunt_completed_tooltip
+				has_country_flag = bar_hunt_completed
+			}
+		}
 		completion_reward = {
 			country_event = {
 				id = barrad_second.1

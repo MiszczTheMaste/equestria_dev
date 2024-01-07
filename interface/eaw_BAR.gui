@@ -94,6 +94,12 @@ guiTypes = {
 			spriteType = "GFX_viira_spells_unlock_bg"
 		}
 		buttonType = {
+			name ="exit_button"
+			spriteType = "GFX_tiled_window_transparent_transparent"
+			position = { x=0 y=0 }	
+			shortcut = "ESCAPE"
+		}
+		buttonType = {
 			name = "bar_viira_button_unlock_1"
 			spriteType = "GFX_viira_button_unlock_1"
 			pdx_tooltip = "bar_viira_button_unlock_1_tooltip"
@@ -1323,6 +1329,7 @@ guiTypes = {
 			name = "bar_new_journal_entry_window_text"
 			position = { x = -80 y = 0 }
 			font = "hoi_36header"
+			maxHeight = 300
 			format = left
 			text = bar_new_journal_entry_window_text
 		}

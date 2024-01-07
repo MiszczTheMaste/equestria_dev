@@ -334,7 +334,7 @@ defined_text = {
 	text = {
 		trigger = { 
 			check_variable = { viira_mana_overload_percentage > 90 } 
-			check_variable = { viira_mana_overload_percentage < 99 } 
+			check_variable = { viira_mana_overload_percentage < 101 } 
 		}
 		localization_key = BAR_viira_magic_tired_7
 	}

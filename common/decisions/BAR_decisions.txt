@@ -5096,7 +5096,7 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_variable = BAR_viira_godhood
-				has_country_flag = BAR_unlock_spells_2
+				has_country_flag = BAR_spells_unlocked_2
 			}
 		}
 		complete_effect = {

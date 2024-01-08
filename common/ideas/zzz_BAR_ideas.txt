@@ -1128,14 +1128,14 @@ ideas = {
 				conscription = 0.08
 			}
 		}
-		BAR_grand_crusade = {
+		BAR_grand_crusade_idea = {
 			picture = bar_commandment_final
 			modifier = {
 				supply_consumption_factor = -0.1
 				supply_node_range = 0.15
 			}
 		}
-		BAR_grand_crusade_2 = {
+		BAR_grand_crusade_idea_2 = {
 			picture = bar_commandment_final
 			modifier = {
 				supply_consumption_factor = -0.1

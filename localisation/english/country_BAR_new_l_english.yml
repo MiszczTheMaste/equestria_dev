@@ -1,0 +1,1666 @@
+﻿l_english:
+
+  ######                                                
+  #     # ######  ####  #  ####  #  ####  #    #  ####  
+  #     # #      #    # # #      # #    # ##   # #      
+  #     # #####  #      #  ####  # #    # # #  #  ####  
+  #     # #      #      #      # # #    # #  # #      # 
+  #     # #      #    # # #    # # #    # #   ## #    # 
+  ######  ######  ####  #  ####  #  ####  #    #  ####  
+
+  BAR_leopold_armor_upgrade_1_tooltip:0 "Leopold:\n     Hard Attack: §G+10%§!\n     Soft Attack: §G+10%§!"
+  BAR_leopold_armor_upgrade_2_tooltip:0 "Leopold:\n     Production Cost: §G-10%§!"
+  BAR_leopold_armor_upgrade_3_tooltip:0 "Leopold:\n     Production Cost: §G-5%§!\n     Armor: §G+50%§!\n     Hard Attack: §G+5%§!\n     Piercing: §G+5%§!"
+  BAR_leopold_armor_upgrade_4_tooltip:0 "Leopold:\n     Defense: §G+15%§!\n     Armor: §G+10%§!\n     Breakthrough: §G+15%§!"
+  BAR_leopold_armor_upgrade_5_tooltip:0 "Leopold:\n    Max Speed: §G+15%§!"
+  BAR_leopold_occupation:0 "Industrial Occupation"
+  BAR_leopold_upgrades_tooltip:0 "Will allow upgrades of Leopold's new Form"
+
+  BAR_leopold_decisions:0 "Post Production"
+  BAR_leopold_decisions_desc:0 "One of those cultists named Geist appears to find common language with clockworks and most importantly he seems to have few ideas that could benefit Leopold in his new form."
+
+  BAR_leopold_empire_decisions:0 "A new Empire"
+  BAR_leopold_empire_form:0 "Raise new Flag"
+
+  BAR_spread_zone:0 "Spread Anomalies"
+  BAR_spread_zone_desc:0 "Let my home be your home too.\n\n§YWill spread magical anomalies to the region.§!"
+
+  BAR_silver_raise_skeletons:0 "Will add §G1-40k§! ponypower £manpower_icon"
+
+  bar_friend_1_tooltip:0 "§HViira Lehtola§![bar_friend_1_tooltip_with_effect]"
+  bar_friend_1_tooltip_effect:0 "\n\n§HSomepony's Most Special Doe§!\n - Research Speed: §G+2.5%§!\n - Daily Harmony Support: §G-25%§!"
+  bar_friend_2_tooltip:0 "§HLeopold Schmeller§![bar_friend_2_tooltip_with_effect]"
+  bar_friend_2_tooltip_effect:0 "\n\n§HAcclaimed Genius§!\n - Research Speed: §G+5%§!"
+  bar_friend_3_tooltip:0 "§HAsinti§![bar_friend_3_tooltip_with_effect]"
+  bar_friend_3_tooltip_effect:0 "\n\n§HPreacher of Good Hope§!\n - Division Recovery Rate: §G+10%§!"
+  bar_friend_4_tooltip:0 "§HAmbrosius§![bar_friend_4_tooltip_with_effect]"
+  bar_friend_4_tooltip_effect:0 "\n\n§HMisunderstood Visionary!\n - Consumer Goods Factories factor: §Y-10%§!"
+  bar_friend_5_tooltip:0 "§HGąsienica§!\n\n§HLawful Good§!\n - Political Power Gain: §G+15%§!\n - Stability: §G+10%§!"
+  bar_friend_6_tooltip:0 "§HWhite Star§!\n\n§HBeloved Sister§!\n - War Support: §G+10%§!\n - Stability: §G+5%§! - Political Power Gain: §G+25%§!"
+
+  BAR_friend_viira_tooltip:0 "§HViira Lehtola§!:"
+  BAR_friend_viira:0 "Somepony's Most Special Doe"
+  BAR_friend_leopold_tooltip:0 "\n§HLeopold Schmeller§!:"
+  BAR_friend_leopold:0 "Acclaimed Genius"
+  BAR_friend_asinti_tooltip:0 "\n§HAsinti§!:"
+  BAR_friend_asinti:0 "Preacher of Good Hope"
+  BAR_friend_ambrosius_tooltip:0 "\n§HAmbrosius§!:"
+  BAR_friend_ambrosius:0 "Misunderstood Visionary"
+  BAR_friend_white_star_tooltip:0 "White and Silver Stars become friends"
+
+  BAR_friend_temple_builded_z_f_p:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_z_l_p:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_z_f_g:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_z_l_g:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_d_f_p:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_d_l_p:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_d_f_g:0 "Sanctuary for the Poor"
+  BAR_friend_temple_builded_d_l_g:0 "Sanctuary for the Poor"
+
+  #tooltips
+  bar_convert_population_manpower_tooltip:0 "Will give §G40%§! of the state population as ponypower £manpower_icon\n\n"
+
+  #custom cost
+  decision_cost_500_guns:0 "£infequip_text §Y500§!"
+  decision_cost_500_guns_blocked:0 "£infequip_text §R500§!"
+
+  #     #                  #####                                 
+  ##    #   ##   #####    #     # #####  # #####  # #####  ####  
+  # #   #  #  #    #      #       #    # # #    # #   #   #      
+  #  #  # #    #   #       #####  #    # # #    # #   #    ####  
+  #   # # ######   #            # #####  # #####  #   #        # 
+  #    ## #    #   #      #     # #      # #   #  #   #   #    # 
+  #     # #    #   #       #####  #      # #    # #   #    ####  
+                                                                  
+
+
+  BAR_leopold_surreal_mathematic_idea:0 "Surreal Mathematic"
+  BAR_leopold_surreal_mathematic_idea_1:0 "Surreal Mathematic"
+  BAR_leopold_surreal_mathematic_idea_2:0 "Eldritch Mathematic"
+  BAR_leopold_surreal_mathematic_idea_3:0 "Eldritch Mathematic"
+  BAR_leopold_asinti_help:0 "Friendly Help"
+  BAR_leopold_cult_fanatism:0 "In his Image"
+  BAR_leopold_cult_fanatism_desc:0 "In the beginning was the deed, not the word."
+  BAR_leopold_cheaper_guns:0 "Crude Production"
+  BAR_leopold_mass_clockwerks:0 "Clockwork Horde"
+  BAR_leopold_bonus_planning:0 "Armchair Expertise"
+  BAR_commandments_sacrifice_for_the_cause_idea:0 "Holy Sacrifice"
+  BAR_commandments_faith_primacy_idea:0 "Faith Primacy"
+  BAR_commandments_ritual_enlightment_idea:0 "Ritual Enlightment"
+  BAR_commandments_asceticism_idea:0 "Ascetticism"
+  BAR_commandments_piety_of_work_idea:0 "Piety of Work"
+  BAR_commandments_redempt_sins_idea:0 "Redempt Sins"
+  BAR_commandments_servitude_or_death_idea:0 "Servitude or Death"
+  BAR_commandments_sacred_insanity_idea:0 "Sacred Insanity"
+  BAR_commandments_cult_of_progress_idea:0 "Cult of Progress"
+  BAR_commandments_holy_commune_idea:0 "Holy Commune"
+  BAR_commandments_combined:0 "The Commandments of Faith"
+  BAR_grand_crusade_idea:0 "Grand Crusade"
+  BAR_grand_crusade_idea_2:0 "Grand Crusade"
+
+
+  bar_sane_ambrosius_balance:0 "Ambrosius Beliefs"
+  bar_sane_ambrosius_mysticism:0 "Spiritual"
+  bar_sane_ambrosius_mysticism_low:0 "Moderate Skepticism"
+  bar_sane_ambrosius_mysticism_widespread:0 "Mystical Revelation"
+  bar_sane_ambrosius_mysticism_unrelenting_faith:0 "Connection with the Consciousness"
+  bar_sane_ambrosius_mysticism_faith_above_all:0 "The Word Became Flesh"
+  bar_sane_ambrosius_legalism:0 "Flesh"
+  bar_sane_ambrosius_legalism_low:0 "Focus on Earthly Matters"
+  bar_sane_ambrosius_legalism_moderate:0 "Skeptical Rationalism"
+  bar_sane_ambrosius_legalism_hardline:0 "A Non-Mere Nortal"
+  bar_sane_ambrosius_legalism_dura_lex_sed_lex:0 "The Flesh Spoke Words"
+  bar_sane_ambrosius_balance_balanced:0 "Undecided"
+
+
+
+  #######                      
+     #    ######  ####  #    # 
+     #    #      #    # #    # 
+     #    #####  #      ###### 
+     #    #      #      #    # 
+     #    #      #    # #    # 
+     #    ######  ####  #    # 
+                              
+
+
+  BAR_clockwerks2:0 "Soul-bind Clockworks"
+  BAR_clockwerks_arty:0 "Self-Operating Automata"
+  bar_clockwerk_arty:0 "Self-Operating Artillery"
+
+  bar_clockwerk_tank_light:0 "Light Autonomous Tanks"
+  bar_clockwerk_tank_medium:0 "Medium Autonomous Tanks"
+  bar_clockwerk_tank_heavy:0 "Heavy Autonomous Tanks"
+
+  BAR_leopold_crystal_tanks:0 "Crystalline Tanks"
+  tank_crystal_armor:0 "Crystalline Armor"
+  tank_crystal_support:0 "Crystal-Infused Support System"
+
+  BAR_clockwerks_upgrade_org:0 "Hierarchical Behavior"
+  BAR_clockwerks_combat_width:0 "Swarm Behavior"
+  BAR_clockwerks_combat_attack:0 "Indiscriminate Fire"
+  BAR_clockwerks_terrain_upgrade:0 "Terrain Adaptation"
+  BAR_leopold_armor_upgrade_1:0 "Metal Denser Than Platinium"
+  BAR_leopold_armor_upgrade_2:0 "Transparent Metal"
+  BAR_leopold_armor_upgrade_3:0 "Crystalic Metal"
+  BAR_leopold_armor_upgrade_4:0 "New Steel"
+  BAR_leopold_armor_upgrade_5:0 "Metal Lighter Than Air"
+  BAR_leopold_upgrade_1:0 "Metal Denser Than Platinium"
+  BAR_leopold_upgrade_2:0 "Transparent Metal"
+  BAR_leopold_upgrade_3:0 "Crystalic Metal"
+  BAR_leopold_upgrade_4:0 "New Steel"
+  BAR_leopold_upgrade_5:0 "Metal Lighter Than Air"
+
+  BAR_asinti_hospitals_tech_1:0 "Efficient Medical Staff"
+  BAR_asinti_hospitals_tech_2:0 "Medical Equipment Standarization"
+  BAR_asinti_hospitals_tech_3:0 "Armed Aid"
+
+
+  bar_good_clockwerk:0 "Soul-bind Clockworks"
+  bar_commander_clockwerk:0 "Commanding Clockworks"
+  bar_weak_clockwerk:0 "Crude Clockworks"
+  bar_ok_clockwerk:0 "Military Clockworks"
+  BAR_clockwerks_upgrade_org_tooltip:0 "All Infantry Clockworks \n     Organisation: §G+10§!\n     Reliability: §G+10%§!"
+  BAR_clockwerks_combat_width_tooltip:0 "All Infantry Clockworks \n     Combat Witdth: §G-0.5§!"
+  BAR_clockwerks_combat_attack_tooltip:0 "All Infantry Clockworks \n     Soft Attack: §G+15%§!\n     Hard Attack: §G+15%§!"
+  BAR_clockwerks_arty_tooltip:0 "Unlocks Clockwork Artillery Battalions"
+  BAR_clockwerks_tanks_tooltip:0 "Unlocks Clockwork Tanks Battalions"
+  BAR_clockwerks_terrain_upgrade_tooltip:0 "All Infantry Clockworks\n     Hills\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     Mountains\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     Marshes\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     River\n          Movement: §G+25%§!\n          Attack: §G+25%§!"
+  BAR_friend_mountain_buff_tooltip:0 "All Infantry\n     Hills\n          Movement: §G+10%§!\n          Attack: §G+10%§!\n          Defense: §G+30%§!\n     Mountains\n          Movement: §G+20%§!\n          Attack: §G+15%§!\n          Defense: §G+30%§!"
+
+  FOCUS_FILTER_LEOPOLD_ASCESION:0 "Leopold's Final Ascesion"
+  FOCUS_FILTER_PATCH_OF_WRATCH:0 "Patch of Wratch"
+
+
+
+  ########  #######   ######  ##     ##  ######  ########  ######  
+  ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
+  ##       ##     ## ##       ##     ## ##       ##       ##       
+  ######   ##     ## ##       ##     ##  ######  ######    ######  
+  ##       ##     ## ##       ##     ##       ## ##             ## 
+  ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
+  ##        #######   ######   #######   ######  ########  ######  
+
+
+
+           #####                                                          
+          #     # #####   ##   #####  #####    ##### #####  ###### ###### 
+          #         #    #  #  #    #   #        #   #    # #      #      
+           #####    #   #    # #    #   #        #   #    # #####  #####  
+                #   #   ###### #####    #        #   #####  #      #      
+          #     #   #   #    # #   #    #        #   #   #  #      #      
+           #####    #   #    # #    #   #        #   #    # ###### ###### 
+
+
+
+  BAR_cult_connections.t:0 "Cult Connections"
+  BAR_cult_connections.d:0 "Cultits have shitton of resources and they are villing to share some with viira"
+  BAR_another_party_silver_star.t:0 "On a Silver Plate"
+  BAR_another_party_silver_star.d:0 "Silver Star is not a fan of social events so him attending a party is a supriste to everyone."
+  BAR_another_party_silver_star_viira.t:0 ""
+  BAR_another_party_silver_star_viira.d:0 ""
+  BAR_another_party_silver_star_viira_2.t:0 ""
+  BAR_another_party_silver_star_viira_2.d:0 ""
+  BAR_another_party_silver_star_leopold.t:0 "Nightmare Incarnated"
+  BAR_another_party_silver_star_leopold.d:0 ""
+  BAR_another_party_silver_star_leopold_2.t:0 ""
+  BAR_another_party_silver_star_leopold_2.d:0 ""
+  BAR_another_party_silver_star_asinti.t:0 ""
+  BAR_another_party_silver_star_asinti.d:0 ""
+  BAR_another_party_silver_star_asinti_2.t:0 ""
+  BAR_another_party_silver_star_asinti_2.d:0 ""
+  BAR_another_party_silver_star_ambrosius.t:0 "Hedonistic Pleasures"
+  BAR_another_party_silver_star_ambrosius.d:0 ""
+  BAR_another_party_silver_star_ambrosius_2.t:0 "Unknew Part of Life"
+  BAR_another_party_silver_star_ambrosius_2.d:0 ""
+  BAR_party_best_guests.t:0 "Most Welcome Guests"
+  BAR_party_best_guests.d:0 "Ambrosius eagerly waited for his favorite creatures in Barrad to arrive and entertain him and his guests."
+  BAR_party_viira.t:0 "Party Trick"
+  BAR_party_viira.d:0 "Viira knows that the best way to get support from wealthy ponies is by impressing them. A little performance can go a long way, it makes them lower their guard and open their coin purses."
+  BAR_party_viira_2.t:0 "Prolonged Discussion"
+  BAR_party_viira_2.d:0 ""
+  BAR_party_leopold.t:0 "Griff from High Places"
+  BAR_party_leopold.d:0 ""
+  BAR_party_leopold_2.t:0 "Partygriff"
+  BAR_party_leopold_2.d:0 ""
+  BAR_party_asinti.t:0 "Stripped Cabal"
+  BAR_party_asinti.d:0 ""
+  BAR_party_asinti_2.t:0 "New Meaning of Fun"
+  BAR_party_asinti_2.d:0 ""
+
+
+
+                   #####                                    #####                      
+                  #     # # #      #    # ###### #####     #     # #####   ##   #####  
+                  #       # #      #    # #      #    #    #         #    #  #  #    # 
+                   #####  # #      #    # #####  #    #     #####    #   #    # #    # 
+                        # # #      #    # #      #####           #   #   ###### #####  
+                  #     # # #       #  #  #      #   #     #     #   #   #    # #   #  
+                   #####  # ######   ##   ###### #    #     #####    #   #    # #    # 
+                                                                      
+
+  BAR_cult_knowledge:0 "REPLACE_ME"
+  BAR_cult_knowledge_2:0 "REPLACE_ME"
+  BAR_ss_army:0 "REPLACE_ME"
+  BAR_ss_infantry:0 "REPLACE_ME"
+  BAR_ss_infantry_1:0 "REPLACE_ME"
+  BAR_ss_infantry_2:0 "REPLACE_ME"
+  BAR_ss_infantry_3:0 "REPLACE_ME"
+  BAR_ss_infantry_4:0 "REPLACE_ME"
+  BAR_ss_infantry_5:0 "REPLACE_ME"
+  BAR_ss_infantry_6:0 "REPLACE_ME"
+  BAR_ss_infantry_7:0 "REPLACE_ME"
+  BAR_ss_infantry_8:0 "REPLACE_ME"
+  BAR_ss_infantry_9:0 "REPLACE_ME"
+  BAR_ss_infantry_10:0 "REPLACE_ME"
+  BAR_ss_infantry_11:0 "REPLACE_ME"
+  BAR_ss_better_army:0 "REPLACE_ME"
+  BAR_ss_better_army_1:0 "REPLACE_ME"
+  BAR_ss_better_army_2:0 "REPLACE_ME"
+  BAR_ss_better_army_3:0 "REPLACE_ME"
+  BAR_ss_better_army_5:0 "REPLACE_ME"
+  BAR_ss_better_army_6:0 "REPLACE_ME"
+  BAR_ss_better_army_7:0 "REPLACE_ME"
+  BAR_ss_better_army_9:0 "REPLACE_ME"
+  BAR_ss_better_army_10:0 "REPLACE_ME"
+  BAR_ss_better_army_11:0 "REPLACE_ME"
+  BAR_ss_better_army_12:0 "REPLACE_ME"
+  bar_silver_star_army_bonuses_tooltip:0 "REPLACE_ME"
+  BAR_ss_planes:0 "REPLACE_ME"
+  BAR_ss_planes_1:0 "REPLACE_ME"
+  BAR_ss_planes_2:0 "REPLACE_ME"
+  BAR_ss_planes_3:0 "REPLACE_ME"
+  BAR_ss_planes_4:0 "REPLACE_ME"
+  BAR_ss_planes_5:0 "REPLACE_ME"
+  BAR_ss_planes_6:0 "REPLACE_ME"
+  BAR_ss_planes_7:0 "REPLACE_ME"
+  BAR_ss_industry:0 "REPLACE_ME"
+  BAR_ss_industry_1:0 "REPLACE_ME"
+  BAR_ss_industry_2:0 "REPLACE_ME"
+  BAR_ss_industry_3:0 "REPLACE_ME"
+  BAR_ss_industry_4:0 "REPLACE_ME"
+  BAR_ss_industry_5:0 "REPLACE_ME"
+  BAR_ss_industry_6:0 "REPLACE_ME"
+  BAR_ss_industry_7:0 "REPLACE_ME"
+  BAR_ss_industry_8:0 "REPLACE_ME"
+  BAR_ss_industry_9:0 "REPLACE_ME"
+  BAR_ss_industry_10:0 "REPLACE_ME"
+  BAR_ss_industry_11:0 "REPLACE_ME"
+  BAR_ss_industry_12:0 "REPLACE_ME"
+  BAR_ss_industry_13:0 "REPLACE_ME"
+  BAR_ss_industry_14:0 "REPLACE_ME"
+  BAR_ss_industry_15:0 "REPLACE_ME"
+  BAR_ss_industry_16:0 "REPLACE_ME"
+  BAR_ss_war:0 "REPLACE_ME"
+  BAR_ss_attack_wittenland:0 "REPLACE_ME"
+  BAR_ss_attack_coast:0 "REPLACE_ME"
+  BAR_ss_defence_of_archlich:0 "REPLACE_ME"
+  BAR_ss_wall_barrad:0 "REPLACE_ME"
+  BAR_ss_extend_wall:0 "REPLACE_ME"
+  BAR_ss_forward_defence:0 "REPLACE_ME"
+  BAR_ss_forward_defence_2:0 "REPLACE_ME"
+  BAR_ss_attack_cossacks:0 "REPLACE_ME"
+  BAR_ss_attack_rivfed:0 "REPLACE_ME"
+
+
+
+            #######                                                      
+            #       #####  # ###### #    # #####   ####  #    # # #####  
+            #       #    # # #      ##   # #    # #      #    # # #    # 
+            #####   #    # # #####  # #  # #    #  ####  ###### # #    # 
+            #       #####  # #      #  # # #    #      # #    # # #####  
+            #       #   #  # #      #   ## #    # #    # #    # # #      
+            #       #    # # ###### #    # #####   ####  #    # # #      
+                                                                          
+
+
+  barrad_focus_tree_friendship:0 "Long and Bumpy Path to Friendship"
+  BAR_friend_state_of_our_home:0 "State of Our Home"
+  BAR_friend_state_of_our_home_desc:0 "#TODO: barrad in chaos, cultist wage war against everyone, old lackeys of Ambrosius try to get something out of it and the 4 friends tries to figure out what to do."
+  BAR_friend_join_gasienica:0 "Join Gąsienica"
+  BAR_friend_join_gasienica_desc:0 "#TODO: despite them fighting to the death moment ago the 4 friends needs him amd Ambrosius to save only place where they are not pariahs."
+  BAR_friend_enemies_within:0 "Enemies Within"
+  BAR_friend_enemies_within_desc:0 "#TODO: if barrad is to exist its internal power stuggle needs to be dealth with"
+  BAR_friend_ultimatum_to_influential:0 "Ultimatum to influential."
+  BAR_friend_train_local_militias:0 "REPLACE_ME"
+  BAR_friend_griffon_friends:0 "REPLACE_ME"
+  BAR_friend_welcome_defectors:0 "REPLACE_ME"
+  BAR_friend_operation_tempest:0 "REPLACE_ME"
+  BAR_friend_operation_lomnica:0 "REPLACE_ME"
+  BAR_friend_prepare_reactor_ignition:0 "REPLACE_ME"
+  BAR_friend_ignite_reactor:0 "REPLACE_ME"
+  BAR_friend_meet_ambrosius:0 "REPLACE_ME"
+  BAR_friend_cultist_strongholds:0 "REPLACE_ME"
+  BAR_friend_cultist_strongholds_mountains:0 "REPLACE_ME"
+  BAR_friend_cultist_strongholds_elysium:0 "REPLACE_ME"
+  BAR_friend_cultist_strongholds_roughers:0 "REPLACE_ME"
+  BAR_friend_occupy_grand_sanctuary:0 "REPLACE_ME"
+  BAR_friend_enemies_without:0 "REPLACE_ME"
+  BAR_friend_attack_zes:0 "REPLACE_ME"
+  BAR_friend_attack_zes_bonus:0 "REPLACE_ME"
+  BAR_friend_convert_factories:0 "REPLACE_ME"
+  BAR_friend_seize_factories:0 "REPLACE_ME"
+  BAR_friend_employ_mercenaries:0 "REPLACE_ME"
+  BAR_friend_attack_olv:0 "REPLACE_ME"
+  BAR_friend_attack_olv_bonus:0 "REPLACE_ME"
+  BAR_friend_fortify_border:0 "REPLACE_ME"
+  BAR_friend_light_of_the_star:0 "REPLACE_ME"
+  BAR_friend_prince_of_wittenland:0 "REPLACE_ME"
+  BAR_friend_letter_to_sister:0 "REPLACE_ME"
+  BAR_friend_fight_for_friendship:0 "REPLACE_ME"
+  BAR_friend_move_to_wittenburgh:0 "REPLACE_ME"
+  BAR_friend_serving_justice:0 "REPLACE_ME"
+  BAR_friend_homecoming:0 "REPLACE_ME"
+  BAR_friend_river_federation_membership:0 "REPLACE_ME"
+  BAR_friend_viira_and_silver_diplomacy:0 "REPLACE_ME"
+  BAR_friend_beg_for_stuff:0 "REPLACE_ME"
+  BAR_friend_evi_griffons_diplomacy:0 "REPLACE_ME"
+  BAR_friend_beg_for_stuff2:0 "REPLACE_ME"
+  BAR_friend_diplomacy_getting_somebody_competent:0 "REPLACE_ME"
+  BAR_friend_riverlands_diplomacy:0 "REPLACE_ME"
+  BAR_friend_noblility_by_deeds_not_birth:0 "REPLACE_ME"
+  BAR_friend_merchant_dynasty:0 "REPLACE_ME"
+  BAR_friend_one_hoof_washes_the_other:0 "REPLACE_ME"
+  BAR_friend_buy_our_stuff:0 "REPLACE_ME"
+  BAR_friend_silver_tongue:0 "REPLACE_ME"
+  BAR_friend_regional_interventionism:0 "REPLACE_ME"
+  BAR_friend_white_star_is_helping:0 "REPLACE_ME"
+  BAR_friend_conquer_steppe:0 "REPLACE_ME"
+  BAR_friend_aproach_cossacs:0 "REPLACE_ME"
+  BAR_friend_free_towns_deal:0 "REPLACE_ME"
+  BAR_friend_free_towns_not_for_long:0 "REPLACE_ME"
+  BAR_friend_bandits_and_communists:0 "REPLACE_ME"
+  BAR_friend_lushi_ultimatum:0 "REPLACE_ME"
+  BAR_friend_bring_order_to_helquil:0 "REPLACE_ME"
+  BAR_friend_ruin_has_come:0 "REPLACE_ME"
+  BAR_friend_now_what:0 "REPLACE_ME"
+  BAR_friend_2:0 "REPLACE_ME"
+  BAR_friend_3:0 "REPLACE_ME"
+  BAR_friend_4:0 "REPLACE_ME"
+  BAR_friend_5:0 "REPLACE_ME"
+  BAR_friend_6:0 "REPLACE_ME"
+  BAR_friend_7:0 "REPLACE_ME"
+  BAR_friend_8:0 "REPLACE_ME"
+  BAR_friend_first_census:0 "REPLACE_ME"
+  BAR_friend_country_side_census:0 "REPLACE_ME"
+  BAR_friend_infrastructure:0 "REPLACE_ME"
+  BAR_friend_many_cultures_of_barrad:0 "REPLACE_ME"
+  BAR_friend_common_undestanding:0 "REPLACE_ME"
+  BAR_friend_visit_in_asinti_temple:0 "REPLACE_ME"
+  BAR_friend_clockwork_asisted_work:0 "REPLACE_ME"
+  BAR_friend_land_reclamation:0 "REPLACE_ME"
+  BAR_friend_anti_anomaly_work:0 "REPLACE_ME"
+  BAR_fix_the_climate:0 "REPLACE_ME"
+  BAR_friend_civ_industry:0 "REPLACE_ME"
+  BAR_friend_mil_industry:0 "REPLACE_ME"
+  BAR_friend_dev_up:0 "REPLACE_ME"
+  BAR_friend_barradian_academy_of_applied_science:0 "REPLACE_ME"
+  BAR_friend_electrical_engineering_faculty:0 "REPLACE_ME"
+  BAR_friend_mechanical_engineering_faculty:0 "REPLACE_ME"
+  BAR_friend_magical_engineering_faculty:0 "REPLACE_ME"
+  BAR_friend_renowned_genius:0 "REPLACE_ME"
+  BAR_friend_high_automation:0 "REPLACE_ME"
+  BAR_friend_sharing_knowledge_of_arcane:0 "REPLACE_ME"
+  BAR_friend_invite_other_to_study_magic:0 "REPLACE_ME"
+  BAR_friend_everything_will_be_fine:0 "REPLACE_ME"
+  BAR_friend_agriculture_mechanization:0 "REPLACE_ME"
+  BAR_new_southern_friends:0 "REPLACE_ME"
+  BAR_kasa_1:0 "REPLACE_ME"
+  BAR_kasa_2:0 "REPLACE_ME"
+  BAR_kasa_3:0 "REPLACE_ME"
+  BAR_kasa_4:0 "REPLACE_ME"
+  BAR_kasa_5:0 "REPLACE_ME"
+  BAR_kasa_6:0 "REPLACE_ME"
+  BAR_our_deer_friends:0 "REPLACE_ME"
+  BAR_olv_1:0 "REPLACE_ME"
+  BAR_olv_2:0 "REPLACE_ME"
+  BAR_olv_3:0 "REPLACE_ME"
+  BAR_olv_4:0 "REPLACE_ME"
+  BAR_olv_5:0 "REPLACE_ME"
+  BAR_olv_6:0 "REPLACE_ME"
+  BAR_new_south:0 "REPLACE_ME"
+  BAR_friend_miliatry_reform:0 "REPLACE_ME"
+  BAR_friend_desperate_employment:0 "REPLACE_ME"
+  BAR_friend_employ_adventurers:0 "REPLACE_ME"
+  BAR_friend_scavenger_army:0 "REPLACE_ME"
+  BAR_friend_wake_up_sleeping_knights:0 "REPLACE_ME"
+  BAR_friend_convince_dragons:0 "REPLACE_ME"
+  BAR_friend_infantry_weapons:0 "REPLACE_ME"
+  BAR_friend_engineers_recon:0 "REPLACE_ME"
+  BAR_friend_engineer_corps:0 "REPLACE_ME"
+  BAR_friend_logistic:0 "REPLACE_ME"
+  BAR_friend_radio:0 "REPLACE_ME"
+  BAR_friend_anti_air:0 "REPLACE_ME"
+  BAR_friend_infantry_weapons_2:0 "REPLACE_ME"
+  BAR_friend_anti_tank:0 "REPLACE_ME"
+  BAR_friend_artillery:0 "REPLACE_ME"
+  BAR_friend_mil_buildup:0 "REPLACE_ME"
+  BAR_friend_artillery_2:0 "REPLACE_ME"
+  BAR_friend_mil_buildup_2:0 "REPLACE_ME"
+  BAR_friend_light_tanks:0 "REPLACE_ME"
+  BAR_friend_rocket_experiments:0 "REPLACE_ME"
+  BAR_friend_mil_buildup_3:0 "REPLACE_ME"
+  BAR_friend_medium_tanks:0 "REPLACE_ME"
+  BAR_friend_independent_military_units:0 "REPLACE_ME"
+  BAR_friend_mountaineers:0 "REPLACE_ME"
+  BAR_friend_mountain_expertise:0 "REPLACE_ME"
+  BAR_friend_conscription_system:0 "REPLACE_ME"
+  BAR_friend_harmonic_conscription_system:0 "REPLACE_ME"
+  BAR_friend_mil_factories:0 "REPLACE_ME"
+  BAR_friend_equipment_simplification:0 "REPLACE_ME"
+  BAR_friend_air_warfare:0 "REPLACE_ME"
+  BAR_friend_light_planes:0 "REPLACE_ME"
+  cat_air_guns_bonus:0 "REPLACE_ME"
+  cat_air_engine_bonus:0 "REPLACE_ME"
+  BAR_friend_tac_bomber:0 "REPLACE_ME"
+  BAR_friend_air_accidents_prevention:0 "REPLACE_ME"
+  BAR_friend_plane_factories:0 "REPLACE_ME"
+  BAR_friend_sky_aces:0 "REPLACE_ME"
+  BAR_friend_cas:0 "REPLACE_ME"
+  cas_bonus:0 "REPLACE_ME"
+  BAR_friend_cas_doctrine:0 "REPLACE_ME"
+
+  
+
+             #                        # #     #                   
+            # #   #    # #####       #  #     # # # #####    ##   
+           #   #  ##  ## #    #     #   #     # # # #    #  #  #  
+          #     # # ## # #####     #    #     # # # #    # #    # 
+          ####### #    # #    #   #      #   #  # # #####  ###### 
+          #     # #    # #    #  #        # #   # # #   #  #    # 
+          #     # #    # #####  #          #    # # #    # #    # 
+                                                                  
+
+
+  BAR_herald_army_1:0 "REPLACE_ME"
+  BAR_herald_army_2:0 "REPLACE_ME"
+  BAR_herald_army_3:0 "REPLACE_ME"
+  BAR_herald_army_4:0 "REPLACE_ME"
+  BAR_herald_army_5:0 "REPLACE_ME"
+  BAR_herald_light_tank_1:0 "REPLACE_ME"
+  light_tank_bonus:0 "REPLACE_ME"
+  BAR_herald_light_tank_2:0 "REPLACE_ME"
+  BAR_herald_light_tank_3:0 "REPLACE_ME"
+  BAR_herald_light_tank_4:0 "REPLACE_ME"
+  BAR_herald_light_tank_5:0 "REPLACE_ME"
+  BAR_herald_medium_tank_1:0 "REPLACE_ME"
+  medium_tank_bonus:0 "REPLACE_ME"
+  BAR_herald_medium_tank_2:0 "REPLACE_ME"
+  BAR_herald_medium_tank_3:0 "REPLACE_ME"
+  BAR_herald_medium_tank_4:0 "REPLACE_ME"
+  BAR_herald_medium_tank_6:0 "REPLACE_ME"
+  BAR_herald_at_1:0 "REPLACE_ME"
+  BAR_herald_at_2:0 "REPLACE_ME"
+  anti_tank_bonus:0 "REPLACE_ME"
+  BAR_herald_at_3:0 "REPLACE_ME"
+  BAR_herald_at_4:0 "REPLACE_ME"
+  BAR_herald_at_5:0 "REPLACE_ME"
+  BAR_herald_at_6:0 "REPLACE_ME"
+  BAR_herald_arty_1:0 "REPLACE_ME"
+  BAR_herald_arty_2:0 "REPLACE_ME"
+  BAR_herald_arty_3:0 "REPLACE_ME"
+  BAR_herald_arty_4:0 "REPLACE_ME"
+  BAR_herald_arty_5:0 "REPLACE_ME"
+  BAR_herald_arty_6:0 "REPLACE_ME"
+  BAR_herald_arty_7:0 "REPLACE_ME"
+  BAR_herald_rockets_1:0 "REPLACE_ME"
+  BAR_herald_rockets_2:0 "REPLACE_ME"
+  BAR_herald_rockets_3:0 "REPLACE_ME"
+  BAR_herald_rockets_4:0 "REPLACE_ME"
+  BAR_herald_rockets_5:0 "REPLACE_ME"
+  BAR_herald_guns_1:0 "REPLACE_ME"
+  BAR_herald_guns_2:0 "REPLACE_ME"
+  BAR_herald_guns_2_motorized:0 "REPLACE_ME"
+  BAR_herald_guns_2_support:0 "REPLACE_ME"
+  BAR_herald_guns_3:0 "REPLACE_ME"
+  BAR_herald_guns_3_motorized:0 "REPLACE_ME"
+  BAR_herald_guns_3_support:0 "REPLACE_ME"
+  BAR_herald_guns_4:0 "REPLACE_ME"
+  BAR_herald_guns_4_motorized:0 "REPLACE_ME"
+  BAR_herald_guns_4_support:0 "REPLACE_ME"
+  BAR_herald_guns_5:0 "REPLACE_ME"
+  BAR_herald_guns_5_motorized:0 "REPLACE_ME"
+  BAR_herald_guns_5_support:0 "REPLACE_ME"
+  BAR_herald_guns_6:0 "REPLACE_ME"
+  BAR_herald_guns_6_motorized:0 "REPLACE_ME"
+  BAR_herald_guns_6_support:0 "REPLACE_ME"
+  BAR_herald_guns_7:0 "REPLACE_ME"
+  BAR_herald_guns_7_motorized:0 "REPLACE_ME"
+  BAR_herald_guns_7_support:0 "REPLACE_ME"
+  BAR_herald_planes_1:0 "REPLACE_ME"
+  light_air_bonus:0 "REPLACE_ME"
+  BAR_herald_planes_2:0 "REPLACE_ME"
+  BAR_herald_planes_3:0 "REPLACE_ME"
+  BAR_herald_planes_3_jet:0 "REPLACE_ME"
+  jet_technology_bonus:0 "REPLACE_ME"
+  BAR_herald_planes_4:0 "REPLACE_ME"
+  BAR_herald_planes_4_jet:0 "REPLACE_ME"
+  BAR_herald_planes_5:0 "REPLACE_ME"
+  BAR_herald_planes_5_jet:0 "REPLACE_ME"
+  BAR_herald_electronics_1:0 "REPLACE_ME"
+  electronics_bnonus:0 "REPLACE_ME"
+  BAR_herald_electronics_2:0 "REPLACE_ME"
+  BAR_herald_electronics_2_radar:0 "REPLACE_ME"
+  BAR_herald_electronics_3:0 "REPLACE_ME"
+  BAR_herald_electronics_3_radar:0 "REPLACE_ME"
+  BAR_herald_electronics_4:0 "REPLACE_ME"
+  BAR_herald_electronics_4_radar:0 "REPLACE_ME"
+  BAR_herald_electronics_5:0 "REPLACE_ME"
+  BAR_herald_electronics_5_radar:0 "REPLACE_ME"
+  BAR_herald_electronics_6:0 "REPLACE_ME"
+  BAR_herald_electronics_6_radar:0 "REPLACE_ME"
+  BAR_herald_electronics_7:0 "REPLACE_ME"
+  BAR_herald_electronics_7_radar:0 "REPLACE_ME"
+  BAR_herald_industry_1:0 "REPLACE_ME"
+  BAR_herald_industry_2:0 "REPLACE_ME"
+  BAR_herald_industry_3:0 "REPLACE_ME"
+  BAR_herald_industry_4:0 "REPLACE_ME"
+  BAR_herald_industry_5:0 "REPLACE_ME"
+  BAR_herald_industry_6:0 "REPLACE_ME"
+  BAR_herald_industry_7:0 "REPLACE_ME"
+  BAR_herald_excavation_1:0 "REPLACE_ME"
+  excavation_bonus:0 "REPLACE_ME"
+  BAR_herald_excavation_2:0 "REPLACE_ME"
+  BAR_herald_excavation_3:0 "REPLACE_ME"
+  BAR_herald_excavation_4:0 "REPLACE_ME"
+  BAR_herald_excavation_5:0 "REPLACE_ME"
+  BAR_herald_excavation_6:0 "REPLACE_ME"
+  BAR_herald_excavation_7:0 "REPLACE_ME"
+  BAR_herald_up_society_1:0 "REPLACE_ME"
+  BAR_herald_up_society_2:0 "REPLACE_ME"
+  BAR_herald_up_society_3:0 "REPLACE_ME"
+  BAR_herald_up_society_4:0 "REPLACE_ME"
+
+  BAR_high_priestess:0 "High Priestess"
+  BAR_the_general:0 "The general"
+  BAR_commandments_of_faith:0 "Commandments of Faith"
+  BAR_commandments_sacrifice_for_the_cause:0 "Holy Sacrifice"
+  BAR_commandments_faith_primacy:0 "Faith Primacy"
+  BAR_commandments_ritual_enlightment:0 "Ritual Enlightment"
+  BAR_commandments_asceticism:0 "Ascetticism"
+  BAR_commandments_piety_of_work:0 "Piety of Work"
+  BAR_commandments_redempt_sins:0 "Redempt Sins"
+  BAR_commandments_servitude_or_death:0 "Servitude or Death"
+  BAR_commandments_sacred_insanity:0 "Sacred Insanity"
+  BAR_commandments_cult_of_progress:0 "Cult of Progress"
+  BAR_commandments_holy_commune:0 "Holy Comune"
+  BAR_reactor_space:0 "Living Space"
+  BAR_grand_crusade:0 "Grand Crusade"
+  BAR_guiding_blade:0 "Guiding Blade"
+  BAR_cleanse_heretics:0 "Clense The Heretics"
+  BAR_price_of_salvation:0 "Price of Salvation"
+  BAR_duality_of_god:0 "Duality of God"
+  BAR_harmonic_whispers:0 "Harmonic Whispers"
+  BAR_roar_of_madness:0 "Roar of Madness"
+  BAR_beyond_godhood:0 "Byond Godhood"
+  BAR_glimpse_into_future:0 "Glimpse into the Future"
+  BAR_war_of_the_future:0 "War of Tomorrow"
+
+  BAR_high_priestess_desc:0 "High Priestess"
+  BAR_the_general_desc:0 "The general"
+  BAR_commandments_of_faith_desc:0 "I watched as the Deer opened the first of the seven seals. Then I heard one of the whispers of the god say in a voice like thunder, “Come!” I looked, and there before me was a new purpose!"
+
+
+            #                                                 
+            #       ######  ####  #####   ####  #      #####  
+            #       #      #    # #    # #    # #      #    # 
+            #       #####  #    # #    # #    # #      #    # 
+            #       #      #    # #####  #    # #      #    # 
+            #       #      #    # #      #    # #      #    # 
+            ####### ######  ####  #       ####  ###### #####  
+                                                   
+
+
+  BAR_leopold_children_of_wrath:0 "Children of Wrath"
+  BAR_leopold_cult_convert_1:0 "Elisay Preaching"
+  BAR_leopold_cult_convert_2:0 "Grand Sancturay Conversion"
+  BAR_leopold_cult_convert_3:0 "With Fire and Sword"
+  BAR_leopold_machine_cult:0 "Deus Irae"
+  BAR_leopold_cultist_warriors:0 "Into the Fire"
+  BAR_leopold_cultist_warriors_2:0 "Mountains of Blood"
+  BAR_leopold_cultist_warriors_3:0 "Methodical War"
+  BAR_leopold_cultist_warriors_4:0 "Adaptational War"
+  BAR_leopold_cultist_warriors_5:0 "Let the Anger Flow"
+  BAR_leopold_cult_tanks:0 "Hit and Run Expertise"
+  BAR_leopold_cult_tanks_2:0 "Armored Faith"
+  BAR_leopold_cult_tanks_3:0 "Divine Incarnation"
+  BAR_leopold_cult_tanks_4:0 "Motorization Effort"
+  BAR_leopold_cult_tanks_5:0 "Crystal Infusement"
+  BAR_leopold_cult_tanks_6:0 "Crystaline Armor"
+  BAR_leopold_cult_infantry:0 "Armory Upgrade"
+  BAR_leopold_cult_infantry_2:0 "Applied Engineering"
+  BAR_leopold_cult_infantry_3:0 "Cult Logistics"
+  BAR_leopold_cult_infantry_4:0 "Need for Artillery"
+  BAR_leopold_cult_infantry_5:0 "Adapt to New Reality"
+  BAR_leopold_cult_infantry_6:0 "The Right Hoof of the God"
+  BAR_leopold_industry:0 "Precise Tools"
+  BAR_leopold_industry_2:0 "New Work Model"
+  BAR_leopold_industry_3:0 "Asinti's Work Model"
+  BAR_leopold_industry_4:0 "Work From Dawn To Dusk"
+  BAR_leopold_industry_5:0 "Hammer and Anvil"
+  BAR_leopold_industry_6:0 "Crystaline Infestation"
+  BAR_leopold_resources:0 "Strike the Dirt"
+  BAR_leopold_resources_2:0 "Effective as a Death"
+  BAR_leopold_resources_3:0 "Repurpose Sanctuaries"
+  BAR_leopold_resources_4:0 "Crystalic Alloys"
+  BAR_leopold_resources_5:0 "“Philosopher's Stone“"
+  BAR_leopold_resources_6:0 "Synthetic Resources"
+  BAR_leopold_clockworks:0 "Automated Workforce"
+  BAR_leopold_clockworks_1:0 "Specialisation and Refinement"
+  BAR_leopold_clockworks_2:0 "Undergorund Tunnels"
+  BAR_leopold_clockworks_3:0 "Direct Cult Orders"
+  BAR_leopold_clockworks_4:0 "Precise Cooperation"
+  BAR_leopold_clockworks_5:0 "Machine God Equation"
+  BAR_leopold_clockworks_6:0 "Swarm Instinct"
+  BAR_leopold_clockworks_7:0 "Rapid Replication"
+  BAR_leopold_clockworks_8:0 "Land Clearance"
+  BAR_leopold_clockworks_9:0 "Absolute Automation"
+  BAR_leopold_clockworks_10:0 "Swarm Self Preservation "
+  BAR_leopold_clockworks_11:0 "Perpetual Motion"
+  BAR_leopold_clockworks_12:0 "Extreame Precision Works"
+  BAR_leopold_clockworks_13:0 "Clockwork Unit Militarization"
+  BAR_leopold_military_clockwerks:0 "Clockworks Utilized Militarly "
+  BAR_leopold_military_clockwerks_1:0 "In Image of God"
+  BAR_leopold_military_clockwerks_2:0 "Crude Constructs"
+  BAR_leopold_military_clockwerks_3:0 "Marvels of Creation"
+  BAR_leopold_military_clockwerks_4:0 "Outside Context"
+  BAR_leopold_military_clockwerks_5:0 "Best Tools Available"
+  BAR_leopold_military_clockwerks_6:0 "Built With Purpose"
+  BAR_leopold_military_clockwerks_7:0 "Autonomous Units"
+  BAR_leopold_military_clockwerks_8:0 "Clockwork Artillery"
+  BAR_leopold_military_clockwerks_9:0 "Careful Planning"
+  BAR_leopold_military_clockwerks_10:0 "Machanized Swarm"
+  BAR_leopold_military_clockwerks_11:0 "Crude Production"
+  BAR_leopold_military_clockwerks_12:0 "Overhelming Power"
+  BAR_leopold_military_clockwerks_13:0 "Clockwork Tanks"
+  BAR_leopold_military_clockwerks_14:0 "Adaptative Machines"
+  BAR_leopold_military_clockwerks_15:0 "Steel Wave"
+  BAR_leopold_surreal_mathematic:0 "Surreal Mathematics"
+  BAR_leopold_surreal_mathematic_1:0 "Rehoof Ancient Machinery"
+  BAR_leopold_surreal_mathematic_2:0 "Magics of Mathematics"
+  BAR_leopold_surreal_mathematic_3:0 "Gathering the Capable"
+  BAR_leopold_surreal_mathematic_4:0 "Ancient Cache of Knowledge"
+  BAR_leopold_surreal_mathematic_5:0 "Bernhard Riegriff"
+  BAR_leopold_surreal_mathematic_6:0 "Eldritch Knowledge"
+  BAR_leopold_surreal_mathematic_7:0 "Aquiring More Power"
+  BAR_leopold_surreal_mathematic_8:0 "Cosmic Inequality"
+  BAR_leopold_surreal_mathematic_9:0 "Ultimate Discovery"
+  BAR_leopold_conquest:0 "Lead our God"
+  BAR_leopold_conquest_1:0 "Burn Kasa"
+  BAR_leopold_conquest_2:0 "Crush Austurland"
+  BAR_leopold_conquest_3:0 "Unlikable Folks"
+  BAR_leopold_conquest_4:0 "Land of Heretics"
+  BAR_leopold_conquest_5:0 "Valley of Wrath"
+  BAR_leopold_conquest_6:0 "Coalition of Heathens"
+  BAR_leopold_conquest_7:0 "Final Frontier"
+  BAR_leopold_conquest_8:0 "Cache of Knowledge"
+  BAR_leopold_conquest_9:0 "Our God's Dream"
+  BAR_leopold_conquest_10:0 "Trust to the Shore"
+  BAR_leopold_conquest_11:0 "Demons in Disguise"
+  BAR_leopold_conquest_12:0 "Dream to Come"
+  BAR_leopold_conquest_13:0 "Evil Incarnate"
+
+  BAR_leopold_children_of_wrath_desc:0 "In awe of the destruction Leopold carries and their god getting silent (it died after the reactor events) some cultists imagine Leopold as the new incarnation of their god (bot of them are machines too)"
+  BAR_leopold_cult_convert_1_desc:0 "Cultists spread their new faith to Elisay region via violence"
+  BAR_leopold_cult_convert_2_desc:0 "Cultists sort out stuff inside of their inner rings"
+  BAR_leopold_cult_convert_3_desc:0 "Cultists spread their new faith to the common creatures around the barrad, with fire and sword"
+  BAR_leopold_machine_cult_desc:0 "Cult takes over the barrad and swear their loyalty to the Leopold new Machine God sharing with him their resources"
+  BAR_leopold_cultist_warriors_desc:0 "Cultists before would toss themself into the fire for their God, now with their newfound wrath they gonna start the fire."
+  BAR_leopold_cultist_warriors_2_desc:0 "Stuff about cultists living in the mountains and being good at fighting in them"
+  BAR_leopold_cultist_warriors_3_desc:0 "Stuff about cultists extended logistical system (they ran parrael state)"
+  BAR_leopold_cultist_warriors_4_desc:0 "Stuff about them needing to adapt to the battlefield circumstances."
+  BAR_leopold_cultist_warriors_5_desc:0 "With Leopold losing controll over himself the cultists try to follow his god even in this."
+  BAR_leopold_cult_tanks_desc:0 "Cultists were fighting guerrilla style war with multible notables thought the years so they got good at fighting"
+  BAR_leopold_cult_tanks_2_desc:0 "Cultists trying to build stuff in image of their new god."
+  BAR_leopold_cult_tanks_3_desc:0 "Cultists trying to build stuff in image of their new god even harder"
+  BAR_leopold_cult_tanks_4_desc:0 "Them trying to keep up with Leopold whenever he goes"
+  BAR_leopold_cult_tanks_5_desc:0 "Them going thought his previous work to do makeshift upgrades to their mechanized equipment"
+  BAR_leopold_cult_tanks_6_desc:0 "Them going thoug leopold experiments and creating makeshift tank upgrades (armor and support systems)"
+  BAR_leopold_cult_infantry_desc:0 "Cult getting more destructive guns to project their newfound wrath"
+  BAR_leopold_cult_infantry_2_desc:0 "They are pretty good engineers who built entire cities underground"
+  BAR_leopold_cult_infantry_3_desc:0 "They are also good at logistics having parrael state"
+  BAR_leopold_cult_infantry_4_desc:0 "Them needeng even bigger guns to match the destructive potential of their god"
+  BAR_leopold_cult_infantry_5_desc:0 "Instead of sitting in their underground fortresses they now run around following Leopold who breaks stuff"
+  BAR_leopold_cult_infantry_6_desc:0 "Them getting even more powerful weaponry to match their god"
+  BAR_leopold_industry_desc:0 "Leopold is not happy with how his new body function and tries to create more precise tools to make it better."
+  BAR_leopold_industry_2_desc:0 "To make said tools he needs to employ cultist 'volounteers'"
+  BAR_leopold_industry_3_desc:0 "Same as above but Asinti makes it even more fucked up"
+  BAR_leopold_industry_4_desc:0 "Oh ye workers hear the bell toll! It is time for your shifts, strike the anvil, work your production lines and work till your legs ache! If we are to survive then we must work day and night!"
+  BAR_leopold_industry_5_desc:0 "Now Leopold needs to use said tools to try producing better parts for himself."
+  BAR_leopold_industry_6_desc:0 "Leopold has found that when workers are near crystals, something changes within them. They work faster, better and longer. With this knowledge he has gotten his workers to build a new factory over a crystal deposit, though at the speed they work they might as well be working two factories in one! This will surely aid the war effort."
+  BAR_leopold_resources_desc:0 "Leopold needs more high quality resources for his armor"
+  BAR_leopold_resources_2_desc:0 "Silver Star helps the cultists in finding new resources"
+  BAR_leopold_resources_3_desc:0 "Cultists tear down their underground sanctuaries in search of resources"
+  BAR_leopold_resources_4_desc:0 "Leopold finds out a way to make alloys from crystals making them more cost effective"
+  BAR_leopold_resources_5_desc:0 "Leopold thinks of creating synthetic resouces"
+  BAR_leopold_resources_6_desc:0 "He does make syntheric resources"
+  BAR_leopold_clockworks_desc:0 "Mortals were not enought for his plans so Leopold creates clockwork workforce to aid him with precise engineering he needs to finish his armor"
+  BAR_leopold_clockworks_1_desc:0 "Clockwork specialization"
+  BAR_leopold_clockworks_2_desc:0 "The clockworks are learning, and they are adapting. The attrition caused by travelling through Barrad had made them rethink their methods, and they now dig beneath the surface, so that the trains and the transports can flow without distruption."
+  BAR_leopold_clockworks_3_desc:0 "A way for cultists to communicate with clockworks"
+  BAR_leopold_clockworks_4_desc:0 "Clockworks cooperating with high precision to accomplish their tasks"
+  BAR_leopold_clockworks_5_desc:0 "While searching thought ancient machines Leopold could reuse he finds traces of ancient mathematical equasion and ask cultists about it, they have no clue but they decide to check it for their god"
+  BAR_leopold_clockworks_6_desc:0 "Clockworks start to behave like swarm"
+  BAR_leopold_clockworks_7_desc:0 "Clockworks selfreplicate"
+  BAR_leopold_clockworks_8_desc:0 "Leopold with Clockwerks level vast amount of land to make room for more machinery"
+  BAR_leopold_clockworks_9_desc:0 "Clockwerks seem to be doing everything by their own now"
+  BAR_leopold_clockworks_10_desc:0 "Clockwerks learns how to fend of dangers to their work"
+  BAR_leopold_clockworks_11_desc:0  "The clockworks are reaching true independence, and from their very creation to their disassembly, they are working fully on their own, acquiring more and more resources and producing more and more goods." 
+  BAR_leopold_clockworks_12_desc:0 "Clockworks finally achieve level of precision needed for Leopold plans"
+  BAR_leopold_clockworks_13_desc:0 "Clockworks militarize forming units similar to those cultists have"
+  BAR_leopold_military_clockwerks_desc:0 "Cuyltists are amazed with warrior clockworks and try to help them as they can"
+  BAR_leopold_military_clockwerks_1_desc:0 "The better clockworks, more akin to Leopold"
+  BAR_leopold_military_clockwerks_2_desc:0 "Clockworks ending up as the crude version"
+  BAR_leopold_military_clockwerks_3_desc:0 "Clockworks self-impriove to be even more efficient"
+  BAR_leopold_military_clockwerks_4_desc:0 "Silver Star under pressure of the cultists help them improve the clockwerks"
+  BAR_leopold_military_clockwerks_5_desc:0 "Clockwerks are crudely made but they do their job and Silver Star can think of some ideas how to make them work better"
+  BAR_leopold_military_clockwerks_6_desc:0 "Clockworks are build with simple purpose and they will follow that purpose"
+  BAR_leopold_military_clockwerks_7_desc:0 "Clockworks learn how to operate autonomously"
+  BAR_leopold_military_clockwerks_8_desc:0 "Clockwerks make specialized units to fulfill artillery role"
+  BAR_leopold_military_clockwerks_9_desc:0 "Silver Star teaches clockwerks and cultists about planning and stuff"
+  BAR_leopold_military_clockwerks_10_desc:0 "Clockwerks takes up swarm behavior during combat too"
+  BAR_leopold_military_clockwerks_11_desc:0 "Clockwerks are made using simplier methods"
+  BAR_leopold_military_clockwerks_12_desc:0 "Clockwerks gets bigger and better ad combat"
+  BAR_leopold_military_clockwerks_13_desc:0 "Fully autonomous tanks"
+  BAR_leopold_military_clockwerks_14_desc:0 "Clockwerks learns how to adapt to different enviroments"
+  BAR_leopold_military_clockwerks_15_desc:0 "Clockwers just flood the enemies with sheer numbers"
+  BAR_leopold_surreal_mathematic_desc:0 "Following the question Leopold asked about that ancient equasion cultists try to find answer to what it is"
+  BAR_leopold_surreal_mathematic_1_desc:0 "They try to rearm ancient machines to see if they still works on that problem"
+  BAR_leopold_surreal_mathematic_2_desc:0 "The math question seems magical in its form so the cultists go thought their archives to get any clue"
+  BAR_leopold_surreal_mathematic_3_desc:0 "Cultists gather everycreature in barrad that is more bright minded to work on solving that math problem"
+  BAR_leopold_surreal_mathematic_4_desc:0 "Cultists break seals of their libraries and look for ancient knowledge"
+  BAR_leopold_surreal_mathematic_5_desc:0 "Cultists finds out in Leopold notes about griffon in Gamia that he personally knew and worked on 'Surreal Mathematic' he might be a great asset"
+  BAR_leopold_surreal_mathematic_6_desc:0 "Riegriff looks thought the cultists findings"
+  BAR_leopold_surreal_mathematic_7_desc:0 "Riegriff realizes that the machines cult have on their disposal needs more computing power"
+  BAR_leopold_surreal_mathematic_8_desc:0 "Riegriff together with cultists elite get to conclusion that the math problem is not about their own world so maybe they need to look into the starts"
+  BAR_leopold_surreal_mathematic_9_desc:0 "Riegriff locks himself up in the sanctuary where the equasion was found and gets driven half mad trying to understand it"
+  BAR_leopold_conquest_desc:0 "Leopold the new machine god is full of anger and his new followers wants his sacret wrath to be spread to other parts of the world"
+  BAR_leopold_conquest_1_desc:0 "Burn Kasa"
+  BAR_leopold_conquest_2_desc:0 "Crush Austurland"
+  BAR_leopold_conquest_3_desc:0 "Unlikable Folks"
+  BAR_leopold_conquest_4_desc:0 "Land of Heretics"
+  BAR_leopold_conquest_5_desc:0 "Valley of Wrath"
+  BAR_leopold_conquest_6_desc:0 "Coalition of Heathens"
+  BAR_leopold_conquest_7_desc:0 "Final Frontier"
+  BAR_leopold_conquest_8_desc:0 "Cultists were always interested in old knowledge hidden in the north"
+  BAR_leopold_conquest_9_desc:0 "Cultists finding out in leopold notes his dreams about new griffon empire"
+  BAR_leopold_conquest_10_desc:0 "Trust to the Shore"
+  BAR_leopold_conquest_11_desc:0 "Cultists find out in leoppold notes his destain towards aquileia"
+  BAR_leopold_conquest_12_desc:0 "Reuniting the rest of the empire or something"
+  BAR_leopold_conquest_13_desc:0 "Cultists find out in leoppold notes that he hates republicans"
+
+
+
+             #                            
+            # #    ####  # #    # ##### # 
+           #   #  #      # ##   #   #   # 
+          #     #  ####  # # #  #   #   # 
+          #######      # # #  # #   #   # 
+          #     # #    # # #   ##   #   # 
+          #     #  ####  # #    #   #   # 
+                                        
+
+  
+  BAR_grand_ritual_preparation:0 "Ritual Prepariation"
+  BAR_summon_the_spirit:0 "The Grand Ritual"
+  BAR_a_new_path:0 "A New Path"
+  BAR_convert_population:0 "Free the Population"
+  BAR_food_drugs:0 "Food Drugs"
+  BAR_week_to_the_weak:0 "To the Weak we became Weak"
+  BAR_fleece_the_herd:0 "Fleece the Herd"
+  BAR_convert_cultists:0 "Enlight the Cult"
+  BAR_airborne_drugs:0 "Airborne Drugs"
+  BAR_intensive_preaching:0 "Intensive Preaching"
+  BAR_new_world_order:0 "New Wold Order"
+  BAR_asinti_research:0 "Self Defense Research"
+  BAR_asinti_battlefield_drugs:0 "Battlefield Supplements"
+  BAR_asinti_enable_chargers:0 "Mirage of Old Days"
+  BAR_asinti_enable_knights:0 "Freed Birds"
+  BAR_asinti_enable_pegasi:0 "Pegasi "
+  BAR_asinti_enable_ironpaws:0 "Ironpaws Recruits"
+  BAR_asinti_super_drugs:0 "Magicaly Enchanted Supplements"
+  BAR_asinti_upgrade_chargers:0 "Chargers Advancements"
+  BAR_asinti_upgrade_knights:0 "Knights Advancements"
+  BAR_asinti_upgrade_pegasi:0 "Pegasi Advancements"
+  BAR_asinti_upgrade_ironpaws:0 "Ironpaws Advancements"
+  BAR_asinti_mountaineers:0 "Mountain Warriors"
+  BAR_asinti_spec_forces:0 "Inner Strenght"
+  BAR_asinti_marines:0 "Marine Infantry"
+  BAR_asinti_spec_forces_2:0 "Unstoppable Force"
+  BAR_asinti_spec_forces_3:0 "Always Better Yourself"
+  BAR_asinti_spec_forces_4:0 "Strength to Free"
+  BAR_asinti_weapons:0 "Necessary Evil"
+  BAR_asinti_weapons_2:0 "Artillery Effort"
+  BAR_asinti_weapons_3:0 "Armed Freedom"
+  BAR_asinti_air:0 "Above the Battlefield"
+  BAR_asinti_air_2:0 "Estabilish Airfields"
+  BAR_asinti_air_3:0 "Hellfire Bringers"
+  BAR_asinti_support:0 "Troop Support"
+  BAR_asinti_hospitals:0 "Field Hospitals"
+  BAR_asinti_hospitals_1:0 "Efficient Medical Staff"
+  BAR_asinti_hospitals_2:0 "Medical Equipment Standarization"
+  BAR_asinti_hospitals_3:0 "Armed Aid"
+  BAR_poverty_ascetism:0 "Asceticism Virtue"
+  BAR_literacy_indoctrination:0 "Text Indoctrination"
+  BAR_grand_sanctuary:0 "New Sanctuary"
+  BAR_capital_temple_0:0 "Construct New Temple"
+  BAR_capital_temple_1:0 "Expand the Temple"
+  BAR_capital_temple_2:0 "The Temple"
+  BAR_capital_temple_3:0 "The Grand Temple"
+  BAR_blood_rituals:0 "Forbidden Knowledge"
+  BAR_asinti_new_economy:0 "Restructured Economy"
+  BAR_asinti_new_conscription:0 "Faith and Duty"
+  BAR_blood_for_better_future:0 "Blood for our Sins"
+  BAR_asinti_attack_kasa:0 "The Free State"
+  BAR_asinti_core_kasa:0 "True Freedom"
+  BAR_asinti_attack_wittenland:0 "Land of Serfs"
+  BAR_asinti_core_wittenland:0 "Freedom and Worship"
+  BAR_asinti_attack_olv:0 "Across the River"
+  BAR_asinti_core_olv:0 "Join the Herd"
+  BAR_asinti_attack_gryphus:0 "Strike Gryphus"
+  BAR_asinti_core_gryphus:0 "The Truth Will Set You Free"
+  BAR_asinti_attack_riverlands:0 "An Unwiling Sacrifice"
+  BAR_asinti_second_grand_ritual:0 "Second Grand Ritual"
+  BAR_asinti_where_it_all_began:0 "Where it All Began"
+  BAR_asinti_find_exact_place:0 "In Search of the Source"
+  BAR_asinti_get_jumpoints:0 "Aquire Staging Ground"
+  BAR_asinti_source_of_power:0 "Source of Power"
+  BAR_asinti_industry:0 "Efficient Work"
+  BAR_asinti_industry_2:0 "Self Protection"
+  BAR_asinti_industry_3:0 "Equal Chances"
+  BAR_asinti_industry_4:0 "Masonry Works"
+  BAR_asinti_industry_5:0 "Gunworks"
+  BAR_asinti_industry_6:0 "Manufacturies Expansion"
+  BAR_asinti_industry_7:0 "Basic Commodities"
+  BAR_asinti_industry_10:0 "Industrialization Effort""
+  BAR_asinti_industry_11:0 "Expand Military Complex"
+  BAR_asinti_industry_12:0 "Armed Hoof Of Freedom"
+  BAR_asinti_industry_13:0 "Dunburh Manufacturies"
+  BAR_asinti_industry_14:0 "Common Cause"
+  BAR_asinti_industry_15:0 "Work for Roughers Creatures"
+  BAR_asinti_industry_16:0 "Elisay Industries"
+  BAR_asinti_industry_17:0 "Expand Elysium Factories"
+  BAR_asinti_fleet:0 "Set the Sail"
+  BAR_asinti_fleet_1:0 "Ship Design"
+  BAR_asinti_fleet_2:0 "Expand shipyards"
+  BAR_asinti_fleet_3:0 "Flying Feathisian"
+  BAR_asinti_fleet_4:0 "Shipbuilding Plants"
+  BAR_asinti_fleet_5:0 "Naval Expansion"
+  BAR_asinti_fleet_6:0 "Ship Equipment"
+  BAR_asinti_fleet_7:0 "Naval Armament "
+
+  #tooltips
+  BAR_asinti_upgrade_chargers_tooltip:0 "Charges can upgraded using §Rblood§! £blood_icon"
+  BAR_asinti_upgrade_knights_tooltip:0 "Knights can upgraded using §Rblood§! £blood_icon"
+  BAR_asinti_upgrade_pegasi_tooltip:0 "Pegasi can upgraded using §Rblood§! £blood_icon"
+  BAR_asinti_upgrade_ironpaws_tooltip:0 "Ironpaws can be upgraded using §Rblood§! £blood_icon"
+  two_dockyards_tooltip:0 "Will grant two dockyards when coast is aquired."
+  three_dockyards_tooltip:0 "Will grant three dockyards when coast is aquired."
+  BAR_flying_dutchman_tooltip:0 "Powerful ghost ship will come to your aid."
+  BAR_blood_rituals_tooltip:0 "Will unlock §Rpowerful§! rituals."
+
+
+
+                 #                      #####                       
+                # #   #    # #####     #     #   ##   #    # ###### 
+               #   #  ##  ## #    #    #        #  #  ##   # #      
+              #     # # ## # #####      #####  #    # # #  # #####  
+              ####### #    # #    #          # ###### #  # # #      
+              #     # #    # #    #    #     # #    # #   ## #      
+              #     # #    # #####      #####  #    # #    # ###### 
+                                                                    
+
+
+  BAR_amb_extend_of_my_tragedy:0 "REPLACE_ME"
+  BAR_ambrosius_fortune:0 "REPLACE_ME"
+  BAR_ambrosius_buy_mils:0 "REPLACE_ME"
+  BAR_ambrosius_foreign_experts:0 "REPLACE_ME"
+  BAR_ambrosius_buy_civs:0 "REPLACE_ME"
+  BAR_ambrosius_mercs:0 "REPLACE_ME"
+  BAR_ambrosius_mercs_available:0 "REPLACE_ME"
+  BAR_ambrosius_buy_refinery:0 "REPLACE_ME"
+  BAR_ambrosius_buy_experts:0 "REPLACE_ME"
+  BAR_amb_pilgrimage:0 "REPLACE_ME"
+  BAR_amb_ideals_of_freedom:0 "REPLACE_ME"
+  BAR_amb_matters_of_sucession:0 "REPLACE_ME"
+  BAR_amb_realm_of_mortals:0 "REPLACE_ME"
+  BAR_amb_shield_from_god:0 "REPLACE_ME"
+  BAR_amb_in_search_of_answer:0 "REPLACE_ME"
+  BAR_amb_awaiting_peneance:0 "REPLACE_ME"
+  BAR_amb_spirits_of_mountains:0 "REPLACE_ME"
+  BAR_amb_enlighted_magocracy:0 "REPLACE_ME"
+  BAR_amb_guided_by_magic:0 "REPLACE_ME"
+  BAR_amb_giving_free_hoof:0 "REPLACE_ME"
+  BAR_amb_western_focus:0 "REPLACE_ME"
+  BAR_amb_around_mountains:0 "REPLACE_ME"
+  BAR_amb_kasan_shipbuilding:0 "REPLACE_ME"
+  BAR_amb_old_subjects:0 "REPLACE_ME"
+  BAR_amb_kasa_connect_railway:0 "REPLACE_ME"
+  BAR_amb_griffon_administration:0 "REPLACE_ME"
+  BAR_amb_kasa_barrad_laws:0 "REPLACE_ME"
+  BAR_amb_kasa_advisors:0 "REPLACE_ME"
+  BAR_amb_west_east_railroad:0 "REPLACE_ME"
+  BAR_amb_deliver_promise:0 "REPLACE_ME"
+  BAR_amb_connect_realms:0 "REPLACE_ME"
+  BAR_amb_free_city:0 "REPLACE_ME"
+  BAR_amb_fate_of_the_order:0 "REPLACE_ME"
+  BAR_amb_adapt_old_imperial_bureaucracy:0 "REPLACE_ME"
+  BAR_amb_all_hail_liberator:0 "REPLACE_ME"
+  BAR_amb_oil_extraction:0 "REPLACE_ME"
+  BAR_amb_integrate_gryphus:0 "REPLACE_ME"
+  BAR_amb_grand_county:0 "REPLACE_ME"
+  BAR_amb_call_of_steppes:0 "REPLACE_ME"
+  BAR_amb_pacify_steppes:0 "REPLACE_ME"
+  BAR_amb_estabilish_cossaac_units:0 "REPLACE_ME"
+  BAR_amb_open_plains_combat:0 "REPLACE_ME"
+  BAR_amb_new_military_administrative_division:0 "REPLACE_ME"
+  BAR_amb_into_the_steppe:0 "REPLACE_ME"
+  BAR_amb_rebuild_kaiv:0 "REPLACE_ME"
+  BAR_amb_infrastructure_projects:0 "REPLACE_ME"
+  BAR_amb_integrate_host:0 "REPLACE_ME"
+  BAR_amb_secure_the_flank:0 "REPLACE_ME"
+  BAR_amb_build_up_olv:0 "REPLACE_ME"
+  BAR_amb_build_up_olv_1:0 "REPLACE_ME"
+  BAR_amb_integrate_olv:0 "REPLACE_ME"
+  BAR_amb_olv_zes_railroad:0 "REPLACE_ME"
+  BAR_amb_olv_zes_combined_naval_experience:0 "REPLACE_ME"
+  BAR_amb_olv_zes_factories:0 "REPLACE_ME"
+  BAR_amb_commonwealth:0 "REPLACE_ME"
+  BAR_amb_final_letter:0 "REPLACE_ME"
+  BAR_amb_old_homeland:0 "REPLACE_ME"
+  BAR_amb_fortify_border:0 "REPLACE_ME"
+  BAR_amb_military_build_up:0 "REPLACE_ME"
+  BAR_amb_unite_south:0 "REPLACE_ME"
+  BAR_amb_kasa_build_1:0 "REPLACE_ME"
+  BAR_amb_kasa_build_2:0 "REPLACE_ME"
+  BAR_amb_kasa_build_3:0 "REPLACE_ME"
+  BAR_amb_kasa_build_4:0 "REPLACE_ME"
+  BAR_amb_core_kasa:0 "REPLACE_ME"
+  BAR_amb_olv_build_1:0 "REPLACE_ME"
+  BAR_amb_olv_build_2:0 "REPLACE_ME"
+  BAR_amb_olv_build_3:0 "REPLACE_ME"
+  BAR_amb_olv_build_4:0 "REPLACE_ME"
+  BAR_amb_core_olv:0 "REPLACE_ME"
+  BAR_amb_attack_wit:0 "REPLACE_ME"
+  BAR_amb_claim_wit_crown:0 "REPLACE_ME"
+  BAR_amb_realm_reunion:0 "REPLACE_ME"
+  BAR_amb_nationwide_electrification:0 "REPLACE_ME"
+  BAR_amb_restore_guilds:0 "REPLACE_ME"
+  BAR_amb_patronage:0 "REPLACE_ME"
+  BAR_amb_state_controlled_trade:0 "REPLACE_ME"
+  BAR_amb_public_works:0 "REPLACE_ME"
+  BAR_amb_expand_silver_mine:0 "REPLACE_ME"
+  ANG_mining_bonus:0 "REPLACE_ME"
+  BAR_amb_royal_university:0 "REPLACE_ME"
+  BAR_amb_ancient_regime:0 "REPLACE_ME"
+  BAR_amb_royal_pardon:0 "REPLACE_ME"
+  BAR_amb_divine_guidance:0 "REPLACE_ME"
+  BAR_amb_cult_in_high_places:0 "REPLACE_ME"
+  BAR_amb_high_kingdom_claims:0 "REPLACE_ME"
+  BAR_amb_high_kingdom:0 "REPLACE_ME"
+  BAR_amb_king_of_mountains:0 "REPLACE_ME"
+  BAR_amb_what_we_once_took:0 "REPLACE_ME"
+  BAR_amb_king_and_country:0 "REPLACE_ME"
+  BAR_amb_victory_at_heavy_price:0 "REPLACE_ME"
+
+
+  ######## ##     ## ######## ##    ## ########  ######  
+  ##       ##     ## ##       ###   ##    ##    ##    ## 
+  ##       ##     ## ##       ####  ##    ##    ##       
+  ######   ##     ## ######   ## ## ##    ##     ######  
+  ##        ##   ##  ##       ##  ####    ##          ## 
+  ##         ## ##   ##       ##   ###    ##    ##    ## 
+  ########    ###    ######## ##    ##    ##     ######  
+
+           #####                                                          
+          #     # #####   ##   #####  #####    ##### #####  ###### ###### 
+          #         #    #  #  #    #   #        #   #    # #      #      
+           #####    #   #    # #    #   #        #   #    # #####  #####  
+                #   #   ###### #####    #        #   #####  #      #      
+          #     #   #   #    # #   #    #        #   #   #  #      #      
+           #####    #   #    # #    #   #        #   #    # ###### ###### 
+                                                                          
+  barrad_friends.997.a:0 "REPLACE_ME"
+  barrad_friends.12.t:0 "REPLACE_ME"
+  barrad_friends.12.d:0 "REPLACE_ME"
+  barrad_friends.12.a:0 "REPLACE_ME"
+  barrad_friends.13.t:0 "REPLACE_ME"
+  barrad_friends.13.d:0 "REPLACE_ME"
+  barrad_friends.13.a:0 "REPLACE_ME"
+  barrad_friends.14.t:0 "REPLACE_ME"
+  barrad_friends.14.d:0 "REPLACE_ME"
+  barrad_friends.14.a:0 "REPLACE_ME"
+  bar_titan_fight.2.a:0 "REPLACE_ME"
+  bar_titan_fight.2.b:0 "REPLACE_ME"
+  bar_titan_fight.3.t:0 "REPLACE_ME"
+  bar_titan_fight.3.d:0 "REPLACE_ME"
+  bar_titan_fight.3.a:0 "REPLACE_ME"
+  bar_titan_fight.3.b:0 "REPLACE_ME"
+  bar_titan_fight.3.c:0 "REPLACE_ME"
+  bar_viira_kills_leopold_tooltip:0 "REPLACE_ME"
+  barrad_second.22.t:0 "REPLACE_ME"
+  barrad_second.22.d:0 "REPLACE_ME"
+  barrad_second.22.a:0 "REPLACE_ME"
+  barrad_second.8.t:0 "REPLACE_ME"
+  barrad_second.8.d:0 "REPLACE_ME"
+  barrad_second.8.a:0 "REPLACE_ME"
+  barrad_second.9.t:0 "REPLACE_ME"
+  barrad_second.9.d:0 "REPLACE_ME"
+  barrad_second.9.a:0 "REPLACE_ME"
+  barrad_second.10.t:0 "REPLACE_ME"
+  barrad_second.10.d:0 "REPLACE_ME"
+  barrad_second.10.a:0 "REPLACE_ME"
+  bar_fallen_pentarchy.997.t:0 "REPLACE_ME"
+  bar_fallen_pentarchy.997.d:0 "REPLACE_ME"
+  bar_fallen_pentarchy.997.a:0 "REPLACE_ME"
+
+  ### friendship stuff###
+  barrad_friends.997.t:0 "End of an Era"
+  barrad_friends.997.d:0 "As Silver Star, Viira, Leopold, and Asinti embraced the spirit of Harmony, they decided to overthrow Count Ambrosius and his cruel minions. The mad Count refused to abdicate, and battle was joined. Ambrosius and his minions were no match for the combined power of the four friends, however, and they were quickly defeated. As the four became close friends, they fully realized the depths of their wrongdoing. They appeared before the commoners of Barrad and apologized for their actions, admitting that their aims were misguided.\n\nThe peasants, however, did not care. When they realized the four had let their guard down and were within reach, they immediately descended upon them to enact their vengeance for decades of horror, abuse and slavery. An angry mob of hundreds of ponies armed with pitchforks and torches swarmed the magocrats and slew them one by one before they even realized what was happening. Thus, the Pentarchy came to a violent and sudden end.\n\nThis unexpected turn of events is sure to signal the beginning of a new era for Barrad, although only time will tell if it is to be a happy one."
+  barrad_friends.997a:0 "So ends the Pentarchy."
+  barrad_friends.1.t:0 "Library Use"
+  barrad_friends.1.d:0 "Viira always left Silver uneasy: that calm, collected deer held a smile that strained his calm; her eyes, seemingly docile, that kept a secret beneath. Profoundly unsettled, trying to converse with Viira was akin to chatting with a ravenous wolf behind its toothy grin.\n\nHowever, this sensation had recently changed. Before, Silver would've searched a way out of a situation involving Viira. He now found himself oddly at peace as the two of them shared the main table at the library, each diving deep into their tomes. The unicorn hadn't even noticed Viira, and when he did, there was no reflexive recoil nor a shudder. Instead, as Viira looked up to meet his eyes, she smiled and greeted him with a "you're looking well."\n\nPerhaps, had Silver been anypony else, Viira might have seen him as a threat that required eliminating. Together, however, she merely treated him as a partner, an ally... a friend?\n\nSilver, with a faint smile, greeted back."
+  barrad_friends.1.a:0 "You too, Viira."
+  barrad_friends.2.t:0 "Mechanical Aid"
+  barrad_friends.2.d:0 ""So, what have you been up to, Silver?"\n\nSilver nursed his glass of red wine with some hesitation. He kept eyeing Leopold's study for some hidden trap or weapon stash that the griffon would reach for were he to take a disliking to Silver suddenly.\n\nHe swallowed his hesitation. "What else? Worrying over the frailty of mortality."\n\nLeopold's mechanical eye whirred as he sipped his drink, making Silver tense up slightly. "Do you fear me?" Leopold asked unexpectedly.\n\n"I– yes," Silver replied with a start, somewhat surprised at his own candidness.\n\n"And why is that?" Leopold placed his glass on the table beside him. "I've never once made an attempt on your life, have I?" At Silver's silence, the griffon added, "I've only spoken about bettering people. I've mostly referred to enhancements in strength and durability, true, but in essence, I want people to live better. And how do people who enjoy better lives fare?"\n\nSilver looked up. "They... they live longer," he answered, slowly understanding.\n\n"Exactly, Silver," Leopold said with a cackle. "Were we to work together, why, you could live forever. Wouldn't you fancy that?"\n\nSilver suddenly became very interested in what Leopold had to say."
+  barrad_friends.2.a:0 "I would... I would so very much!"
+  barrad_friends.3.t:0 "Skulls"
+  barrad_friends.3.d:0 "Silver eyed the bleached form of what he presumed were zebra skulls. They looked startlingly like that of a pony, and it unnerved him how Asinti seemed to speak unheard words to them. Silver wasn't even sure why he'd come to Asinti's own abode—the mad stallion was talking to skulls!\n\nAsinti's cold eyes shifted. "What brings you here, Silver Star of Wittenland?" He spoke quietly yet with authority.\n\n"Did– did you know them?" Silver asked, trying not to imagine the corpses that the skulls once were.\n\nThe zebra rose to all four, a grimace forming on his face. "Not all of them," he admitted, "but they all deserve respect regardless."\n\nSilver had to fight against baulking at the idea of giving praise to skeletons—to death itself, but his reaction was still evident. "I know of your fears, young one." The elder zebra slowly approached the Wittenlander, and placed a hoof upon his shoulder. "I only wish to stop the institution that causes the needless pain and suffering that always ends in the deaths of innocents."\n\nThe unicorn turned to face the grinning skulls. Had he been born a zebra, how likely would it have been that his skull was part of Asinti's collection? Facing Asinti, Silver asked, "To stop their deaths and those of others?"\n\n"Wherever I am capable of doing so," he stated firmly, his grimace fading. "Why won't you help me to stop the deaths of those in suffering?"\n\nSilver mulled over his words. Perhaps he would never get over the absurdity of the skull collection. Still, he could put his unease aside to save others besides himself."
+  barrad_friends.3.a:0 "How can I help, Asinti?"
+
+  barrad_friends.4.t:0 "Waking Up"
+  barrad_friends.4.d:0 "#TODO: Right off the back of barrad_end.2, Silver Star wakes up in a cold sweat. He's terrified. The thought of ending up with his head on a pike is too much, even though he doesn't really want to keep at the horrible murder thing."
+  barrad_friends.4.a:0 "How can I save my friends, my land, and my soul?"
+
+  barrad_friends.5.t:0 "A Most Unpleasant Surprise"
+  barrad_friends.5.d:0 "#TODO: Ambrosius and Gąsienica find out the fighting has stopped. They're very displeased, Ambrosius because no more chaos and Gąsienica because this may be a threat. With Silver Star at the center of this, they plan to have him attacked and frame his friends."
+  barrad_friends.5.a:0 "Time to take action into our own hooves..."
+
+  barrad_friends.6.t:0 "Shadows in the Night"
+  barrad_friends.6.d:0 "#TODO: Silver Star is attacked and wounded by a trio of assassins, but manages to fight them off with his magic. He finds evidence of all three of his friends' involvements. While healing his injuries he wonders who could be behind this."
+  barrad_friends.6.a:0 "Was it all a lie?"
+
+  barrad_friends.7.t:0 "Finding the Truth"
+  barrad_friends.7.d:0 "#TODO: Silver meets with his three friends. They deny any involvement, and swear they don't know what happened. Silver comes to the conclusion that it was probably Ambrosius behind this, and they decide to kill him instead."
+  barrad_friends.7.a:0 "Was it all a lie?"
+
+  barrad_friends.8.t:0 "Plan A"
+  barrad_friends.8.d:0 "#TODO: The gang have settled on a plan. They're going to tell Ambrosius the reactor is ready, lure him into it, and then kill him."
+  barrad_friends.8.a:0 "Let's do this."
+
+  barrad_friends.9.t:0 "Diverted"
+  barrad_friends.9.d:0 "#TODO: Ambrosius is kidnapped by cultists! Oh noes, we can't kill him if he's kidnapped."
+  barrad_friends.9.a:0 "Time to speak with Gąsienica..."
+
+  barrad_friends.10.t:0 "Alliance of Convenience"
+  barrad_friends.10.d:0 "#TODO: Gąsienica agrees to help the gang and save his master. They don't trust him, but they have to work together for now."
+  barrad_friends.10.a:0 "Together!"
+
+  barrad_friends.11.t:0 "Into the Maw"
+  barrad_friends.11.d:0 "#TODO: The expanded gang find the cult's main base. They crash inside, and manage to find Ambrosius, but when they go to kill him Gąsienica stops them. Maybe a fight scene, like the baseline barrad one?"
+  barrad_friends.11.a:0 "So much for teamwork..."
+  
+             #                            
+            # #    ####  # #    # ##### # 
+           #   #  #      # ##   #   #   # 
+          #     #  ####  # # #  #   #   # 
+          #######      # # #  # #   #   # 
+          #     # #    # # #   ##   #   # 
+          #     #  ####  # #    #   #   # 
+                                        
+
+
+  barrad_asinti.6.t:0 "REPLACE_ME"
+  barrad_asinti.6.d:0 "REPLACE_ME"
+  barrad_asinti.6.a:0 "REPLACE_ME"
+  barrad_asinti.7.t:0 "REPLACE_ME"
+  barrad_asinti.7.d:0 "REPLACE_ME"
+  barrad_asinti.7.a:0 "REPLACE_ME"
+  barrad_asinti.8.t:0 "REPLACE_ME"
+  barrad_asinti.8.d:0 "REPLACE_ME"
+  barrad_asinti.8.a:0 "REPLACE_ME"
+  barrad_asinti.9.t:0 "REPLACE_ME"
+  barrad_asinti.9.d:0 "REPLACE_ME"
+  barrad_asinti.9.a:0 "REPLACE_ME"
+  barrad_asinti.10.t:0 "REPLACE_ME"
+  barrad_asinti.10.d:0 "REPLACE_ME"
+  barrad_asinti.10.a:0 "REPLACE_ME"
+  barrad_asinti.11.t:0 "REPLACE_ME"
+  barrad_asinti.11.d:0 "REPLACE_ME"
+  barrad_asinti.11.a:0 "REPLACE_ME"
+  barrad_asinti.12.t:0 "REPLACE_ME"
+  barrad_asinti.12.d:0 "REPLACE_ME"
+  barrad_asinti.12.a:0 "REPLACE_ME"
+  
+
+
+                   #####                                    #####                      
+                  #     # # #      #    # ###### #####     #     # #####   ##   #####  
+                  #       # #      #    # #      #    #    #         #    #  #  #    # 
+                   #####  # #      #    # #####  #    #     #####    #   #    # #    # 
+                        # # #      #    # #      #####           #   #   ###### #####  
+                  #     # # #       #  #  #      #   #     #     #   #   #    # #   #  
+                   #####  # ######   ##   ###### #    #     #####    #   #    # #    # 
+
+  barrad_silver.22.t:0 ""
+  barrad_silver.22.d:0 "silver star despite his victory feels empty, he thought this would bring him a joy or something so he wants to push for more power"
+  barrad_silver.22.a:0 ""
+  barrad_silver.8.t:0 ""
+  barrad_silver.8.d:0 "silver star reigns barrad supreme but still feels nothing, so he plans even greater conquest"
+  barrad_silver.8.a:0 ""
+  barrad_silver.9.t:0 ""
+  barrad_silver.9.d:0 "silver star even after taking crown of wittenland feels absolutely n othing which drives him mad"
+  barrad_silver.9.a:0 ""
+  barrad_silver.10.t:0 ""
+  barrad_silver.10.d:0 "even conquering extends od the high kingdom of winttelnad fills the void"
+  barrad_silver.10.a:0 ""
+
+
+             #                        # #     #                   
+            # #   #    # #####       #  #     # # # #####    ##   
+           #   #  ##  ## #    #     #   #     # # # #    #  #  #  
+          #     # # ## # #####     #    #     # # # #    # #    # 
+          ####### #    # #    #   #      #   #  # # #####  ###### 
+          #     # #    # #    #  #        # #   # # #   #  #    # 
+          #     # #    # #####  #          #    # # #    # #    # 
+                                                                  
+  barrad_viira_amb.3.t:0 "REPLACE_ME"
+  barrad_viira_amb.3.d:0 "REPLACE_ME"
+  barrad_viira_amb.3.a:0 "REPLACE_ME"
+  barrad_viira_amb.4.t:0 "REPLACE_ME"
+  barrad_viira_amb.4.d:0 "REPLACE_ME"
+  barrad_viira_amb.4.a:0 "REPLACE_ME"
+  barrad_viira_amb.5.t:0 ""
+  barrad_viira_amb.5.d:0 "The entity uses viira abilities to look into the future and sees destructrion created by modern warfare, to stop this decides it needs to intensify its mission of comming up with plan for saving the world. Meanwhile it also decisdes that modern means of warfare could be useful in acomplishing that."
+  barrad_viira_amb.5.a:0 ""
+  barrad_viira_amb.6.t:0 ""
+  barrad_viira_amb.6.d:0 "Entity summons Ambrosius, Gąsienica and Viira and explain that to see the future it needs more reactors."
+  barrad_viira_amb.6.a:0 ""
+
+
+             #                      #####                       
+            # #   #    # #####     #     #   ##   #    # ###### 
+           #   #  ##  ## #    #    #        #  #  ##   # #      
+          #     # # ## # #####      #####  #    # # #  # #####  
+          ####### #    # #    #          # ###### #  # # #      
+          #     # #    # #    #    #     # #    # #   ## #      
+          #     # #    # #####      #####  #    # #    # ###### 
+                                                       
+
+  bar_sane_ambrosius.1001.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1001.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1001.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1001.b:0 "REPLACE_ME"
+  bar_sane_ambrosius.1002.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1002.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1002.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1002.b:0 "REPLACE_ME"
+  bar_sane_ambrosius.1003.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1003.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1003.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1004.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1004.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1004.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1005.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1005.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1005.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1006.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1006.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1006.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1007.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1007.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1007.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1008.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1008.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1008.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1009.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1009.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1009.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1010.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1010.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1010.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1011.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1011.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1011.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1012.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1012.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1012.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1013.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1013.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1013.a:0 "REPLACE_ME"
+  bar_sane_ambrosius.1014.t:0 "REPLACE_ME"
+  bar_sane_ambrosius.1014.d:0 "REPLACE_ME"
+  bar_sane_ambrosius.1014.a:0 "REPLACE_ME"
+
+
+
+            #######                                                      
+            #       #####  # ###### #    # #####   ####  #    # # #####  
+            #       #    # # #      ##   # #    # #      #    # # #    # 
+            #####   #    # # #####  # #  # #    #  ####  ###### # #    # 
+            #       #####  # #      #  # # #    #      # #    # # #####  
+            #       #   #  # #      #   ## #    # #    # #    # # #      
+            #       #    # # ###### #    # #####   ####  #    # # #      
+
+
+
+  barrad_friendship_tree.1.t:0 "REPLACE_ME"
+  barrad_friendship_tree.1.d:0 "REPLACE_ME"
+  barrad_friendship_tree.1.a:0 "REPLACE_ME"
+  barrad_friendship_tree.2.t:0 "REPLACE_ME"
+  barrad_friendship_tree.2.d:0 "REPLACE_ME"
+  barrad_friendship_tree.2.a:0 "REPLACE_ME"
+  barrad_friendship_tree.3.t:0 "REPLACE_ME"
+  barrad_friendship_tree.3.d:0 "REPLACE_ME"
+  barrad_friendship_tree.3.a:0 "REPLACE_ME"
+  barrad_friendship_tree.4.t:0 "REPLACE_ME"
+  barrad_friendship_tree.4.d:0 "REPLACE_ME"
+  barrad_friendship_tree.4.a:0 "REPLACE_ME"
+  barrad_friendship_tree.5.t:0 "REPLACE_ME"
+  barrad_friendship_tree.5.d:0 "REPLACE_ME"
+  barrad_friendship_tree.5.a:0 "REPLACE_ME"
+  barrad_friendship_tree.6.t:0 "REPLACE_ME"
+  barrad_friendship_tree.6.d:0 "REPLACE_ME"
+  barrad_friendship_tree.6.a:0 "REPLACE_ME"
+  barrad_friendship_tree.7.t:0 "REPLACE_ME"
+  barrad_friendship_tree.7.d:0 "REPLACE_ME"
+  barrad_friendship_tree.7.a:0 "REPLACE_ME"
+  barrad_friendship_tree.8.t:0 "REPLACE_ME"
+  barrad_friendship_tree.8.d:0 "REPLACE_ME"
+  barrad_friendship_tree.8.a:0 "REPLACE_ME"
+  barrad_friendship_tree.9.t:0 "REPLACE_ME"
+  barrad_friendship_tree.9.d:0 "REPLACE_ME"
+  barrad_friendship_tree.9.a:0 "REPLACE_ME"
+  barrad_friendship_tree.10.t:0 "REPLACE_ME"
+  barrad_friendship_tree.10.d:0 "REPLACE_ME"
+  barrad_friendship_tree.10.a:0 "REPLACE_ME"
+  barrad_friendship_tree.11.t:0 "REPLACE_ME"
+  barrad_friendship_tree.11.d:0 "REPLACE_ME"
+  barrad_friendship_tree.11.a:0 "REPLACE_ME"
+  barrad_friendship_tree.12.t:0 "REPLACE_ME"
+  barrad_friendship_tree.12.d:0 "REPLACE_ME"
+  barrad_friendship_tree.12.a:0 "REPLACE_ME"
+  barrad_friendship_tree.13.t:0 "REPLACE_ME"
+  barrad_friendship_tree.13.d:0 "REPLACE_ME"
+  barrad_friendship_tree.13.a:0 "REPLACE_ME"
+  barrad_friendship_tree.14.t:0 "REPLACE_ME"
+  barrad_friendship_tree.14.d:0 "REPLACE_ME"
+  barrad_friendship_tree.14.a:0 "REPLACE_ME"
+  barrad_friendship_tree.15.t:0 "REPLACE_ME"
+  barrad_friendship_tree.15.d:0 "REPLACE_ME"
+  barrad_friendship_tree.15.a:0 "REPLACE_ME"
+  barrad_friendship_tree.16.t:0 "REPLACE_ME"
+  barrad_friendship_tree.16.d:0 "REPLACE_ME"
+  barrad_friendship_tree.16.a:0 "REPLACE_ME"
+  barrad_friendship_tree.17.t:0 "REPLACE_ME"
+  barrad_friendship_tree.17.d:0 "REPLACE_ME"
+  barrad_friendship_tree.17.a:0 "REPLACE_ME"
+  barrad_friendship_tree.18.t:0 "REPLACE_ME"
+  barrad_friendship_tree.18.d:0 "REPLACE_ME"
+  barrad_friendship_tree.18.a:0 "REPLACE_ME"
+  barrad_friendship_tree.19.t:0 "REPLACE_ME"
+  barrad_friendship_tree.19.d:0 "REPLACE_ME"
+  barrad_friendship_tree.19.a:0 "REPLACE_ME"
+  barrad_friendship_tree.19.b:0 "REPLACE_ME"
+  barrad_friendship_tree.20.t:0 "Different Types of Relations"
+  barrad_friendship_tree.20.d:0 "Silver Star sat alone in his study, amidst an ocean of books and scrolls that sprawled across his desk and shelves. The room, steeped in the musty scent of old paper and ink, was his refuge, yet those pages he struggled on now were making him uneasy.\n\nSuddenly, the tranquility of his sanctuary was shattered. Viira, like a gust of wind, breezed in from behind a towering stack of books, her sudden appearance sending a few volumes tumbling to the floor. She retrieved one of fallen books, reading the title aloud with a tinge of sarcasm - „Modern Theory of Nation State Relations” - She arched an eyebrow, looking at Silver Star curiously - What are you doing here all alone?\n\n- Just... nothing- Silver Star replied, his voice barely above a whisper, tinged with a hint of embarrassment.\n\nViira glanced around at the scattered books - That's a lot of nothing - she remarked, handing him the book she had picked up.\n\nSilver Star took it hesitantly and sat back down, a sigh escaping him as he opened the cover - During my education, I might not have paid enough attention to the intricacies of relations between states... or ponies - he admitted quietly.\n\nA soft chuckle escaped Viira, her eyes twinkling with unspoken jokes. Instead of teasing him, she asked - Would you rather be left alone with your books?\n\nHe nodded in silence.\n\nIgnoring it, Viira moved closer, her presence a warm contrast to the cold stillness of the room. Silver Star felt a sudden tightness in his chest, his breath hitching slightly.\n\n- Perhaps we could study together? - she suggested, her voice gentle and inviting.\n\nSilver Star's heart raced, and his eyes widened at the thought - I would be more than happy to - he replied, his voice now steady and filled with anticipation."
+  barrad_friendship_tree.20.a:0 "Make room for me on that chair then!"
+  barrad_friendship_tree.21.t:0 "REPLACE_ME"
+  barrad_friendship_tree.21.d:0 "REPLACE_ME"
+  barrad_friendship_tree.21.a:0 "REPLACE_ME"
+  barrad_friendship_tree.22.t:0 "REPLACE_ME"
+  barrad_friendship_tree.22.d:0 "REPLACE_ME"
+  barrad_friendship_tree.22.a:0 "REPLACE_ME"
+  barrad_friendship_tree.23.t:0 "REPLACE_ME"
+  barrad_friendship_tree.23.d:0 "REPLACE_ME"
+  barrad_friendship_tree.23.a:0 "REPLACE_ME"
+  barrad_friendship_tree.24.t:0 "REPLACE_ME"
+  barrad_friendship_tree.24.d:0 "REPLACE_ME"
+  barrad_friendship_tree.24.a:0 "REPLACE_ME"
+  barrad_friendship_tree.25.t:0 "REPLACE_ME"
+  barrad_friendship_tree.25.d:0 "REPLACE_ME"
+  barrad_friendship_tree.25.a:0 "REPLACE_ME"
+  barrad_friendship_tree.26.t:0 "Behind Closed Doors"
+  barrad_friendship_tree.26.d:0 "With a burst of energy, Leopold swung the bedroom door open, his excitement palpable. "Silver Star, Silver Star! We've been looking everywhere for you," he exclaimed, his voice rising with each word. "You won't believe what we've discovered!" He looked around, but due to the lack of response, he started approaching the bed.\n\nJust then, Asinti appeared in the doorway, his expression showing that he was equally moved by their discovery. "You're still under the duvet, I see. Better get up, or our enthusiastic friend here might just drag you out," he joked.\n\nLeopold, continuing with undiminished vigor, said, "What we've discovered is huge, like magical crystalline batteries huge," as he turned towards the bed. "Are you there?"\n\nFrom beneath the folds of the duvet emerged Silver Star, his mane messy and his eyes showing signs of a sleepless night. "I'm here, I'm here," he murmured, his voice heavy with fatigue.\n\nLeopold, with a sympathetic smile, asked, "Rough night?" But before he could continue, something else caught his attention. A sudden movement in the duvet next to Silver Star grew into a noticeable bulge, from which Viira appeared, yawning loudly and stretching wide. It took her a moment to notice the others in the room, and upon realizing she wasn't alone, her cheeks turned pink with embarrassment.\n\nThe room fell silent, an awkward tension hanging in the air, only to be broken by Asinti's hearty laughter.\n\n"Leopold, my friend," he said with a playful tone, "I hate to break it to you, but it seems there have been greater discoveries made right here." He gestured towards the door with a knowing look. "Come, I heard our presence is requested somewhere else."\n\nLeopold and Asinti left the room quickly, their steps fading down the hallway, leaving behind a room filled with a kind of silence only seen under a bright night sky."
+  barrad_friendship_tree.26.a:0 "Just the two of us..." 
+  barrad_friendship_tree.27.t:0 "REPLACE_ME"
+  barrad_friendship_tree.27.d:0 "REPLACE_ME"
+  barrad_friendship_tree.27.a:0 "REPLACE_ME"
+
+
+
+            #                                                 
+            #       ######  ####  #####   ####  #      #####  
+            #       #      #    # #    # #    # #      #    # 
+            #       #####  #    # #    # #    # #      #    # 
+            #       #      #    # #####  #    # #      #    # 
+            #       #      #    # #      #    # #      #    # 
+            ####### ######  ####  #       ####  ###### #####  
+
+
+
+  barrad_leopold.8.t:0 "Surreal Mathematics"
+  barrad_leopold.8.d:0 "#TODO: While searching thought ancient machines Leopold could reuse he finds traces of ancient mathematical equasion and ask cultists about it, they have no clue but they decide to check it for their god"
+  barrad_leopold.8.a:0 ""
+  barrad_leopold.9.t:0 "Brilliant Mathematician"
+  barrad_leopold.9.d:0 "#TODO: Riegriff tries to explain to cultists that surreal mathematic has nothing to do with magic or other nonsense but is just regular field of math. But despite it he agrees to help them solve their problem (not like he has any choice)"
+  barrad_leopold.9.a:0 ""
+  barrad_leopold.10.t:0 "Riegriff Hypothesis"
+  barrad_leopold.10.d:0 "#TODO: after studying ancient equation Riegriff becomes mad and kills himself, leaving metric ton of valuable notes"
+  barrad_leopold.10.a:0 ""
+  barrad_leopold.11.t:0 "New Servants"
+  barrad_leopold.11.d:0 "#TODO: Cultist pledge their lives to Leopold and offers their resources to him"
+  barrad_leopold.11.a:0 ""
+  barrad_leopold.12.t:0 "Critical Thinking"
+  barrad_leopold.12.d:0 "#TODO: Leopold thanks Asinti for his help but the zebra tells him that he did it only because they were once friends and now he does not want to have anything to do with him. Leopold tells him that everyone seems to be happy with how things are, and in response Asinti says that he knew at least two creatures that think differently, Leopold wishes to talk with the second one. Then Asinti let his demon speak though him, the demon proceed to laugh at Leopold warning him that he does not understand what he is doing and that he will be consumed in anger. After a longer moment of demon insulting the griffon Leopold kills Asinti in burst of anger."
+  barrad_leopold.12.a:0 ""
+  barrad_leopold.13.t:0 "Silver Friend"
+  barrad_leopold.13.d:0 "#TODO: Leopold wants to thank Silver Star for his help with digging up resources. After he can not find him in his tower he gets angry and destroy few things when he realizes there is sound coming from the closet. Silver Star was hiding there from him (just like in one of first events in Barrad), the unicorn tells him that he is scared on what is going on in Barrad. Leopold reassures him that he will not let anything bad happen to him and thanks for his help. Then looking at destroyed room Silver Star starts to regret his life choices."
+  barrad_leopold.13.a:0 ""
+
+
+
+            #     #                   
+            #     # # # #####    ##   
+            #     # # # #    #  #  #  
+            #     # # # #    # #    # 
+             #   #  # # #####  ###### 
+              # #   # # #   #  #    # 
+               #    # # #    # #    # 
+  
+
+
+  barrad_viira.15.t:0 "REPLACE_ME"
+  barrad_viira.15.d:0 "REPLACE_ME"
+  barrad_viira.15.a:0 "REPLACE_ME"
+  barrad_viira.17:0 "REPLACE_ME"
+  barrad_viira.24.t:0 "Unexpected visit"
+  barrad_viira.24.d:0 "Turns out Gąsienica survived the blast and goes after Viira. They confront in fron of the reactor and Viira tries to mindcontroll him using the cultist god (who is now her puppet). Gąsienica resists but ultimetly crumbles just before he could land a blow on her. Then he becomes her servant as archpriess or something."
+  barrad_viira.24.a:0 ""
+  barrad_viira.16.t:0 "The end?"
+  barrad_viira.16.d:0 "Viira is so high on magic and ancient knowledge that she leaves the material world in front of the seer she found in one of the events and Gąsienica. Both of them can head her disembodied voice, she still looks over her servants but now more like a real god."
+  barrad_viira.16.a:0 ""
+
+  #spell upgrades events, they take place in minds making up the ancient cultist god, can be cryptic mambojambo or anything just align to the thing each represent
+  barrad_viira.17.t:0 ""
+  barrad_viira.17.d:0 "Dreams of golden towns, rivers of milk and honey. Many followed the dream, but one ramained in §renvy§! not willing to join."
+  barrad_viira.17.a:0 ""
+  barrad_viira.18.t:0 ""
+  barrad_viira.18.d:0 "Immense knowledge is locked up in this mind, hidden in §rgreed§! from eyes of others."
+  barrad_viira.18.a:0 ""
+  barrad_viira.19.t:0 ""
+  barrad_viira.19.d:0 "Great power resonates from within this one... it seems like it wants to unleash it's §rwrath§!."
+  barrad_viira.19.a:0 ""
+  barrad_viira.20.t:0 ""
+  barrad_viira.20.d:0 "The very essence here is filled with joy... joy that overhelms you and crawls into every corner of the brain just so you §rlust§! for more."
+  barrad_viira.20.a:0 ""
+  barrad_viira.21.t:0 ""
+  barrad_viira.21.d:0 "A glimpse into this mind shows great diligence and hard work when raising new buildings from the ground, but also great §rpride§! in their work."
+  barrad_viira.21.a:0 ""
+  barrad_viira.22.t:0 ""
+  barrad_viira.22.d:0 "This does not seem like consciousnesses it is organized like postal office... or is commanded to work by very §rslothful§! one."
+  barrad_viira.22.a:0 ""
+  barrad_viira.23.t:0 ""
+  barrad_viira.23.d:0 "Feeling of overambundance is overhelming with this one, yet despite it it still §ryearns for more§!"
+  barrad_viira.23.a:0 ""
+
+ ###                          #####                
+  #  #    # ######  ####     #     #  ####  #####  
+  #  ##   # #      #    #    #       #    # #    # 
+  #  # #  # #####  #    #     #####  #      #    # 
+  #  #  # # #      #    #          # #      #####  
+  #  #   ## #      #    #    #     # #    # #   #  
+ ### #    # #       ####      #####   ####  #    # 
+                                                   
+
+
+  ambrosius_text:0 "Ambrosius"
+  of_barrad_text:0 "of Barrad"
+  asinti_text:0 "Asinti"
+  Leopold_text:0 "Leopold"
+  schmeller_text:0 "Shmeller"
+  silver_star_text:0 "Silver Star"
+  of_wittenland_text:0 "of Wittenland"
+  viira_Text:0 "Viira"
+  lehtola_text:0 "Lehtola"
+
+  bar_pen_screen_silver_info_first_name:0 "First name:  Silver Star"
+  bar_pen_screen_silver_info_last_name:0 "Last name:  of Wittenland"
+  bar_pen_screen_silver_info_birthplace:0 "Birthplace:  Wittenland, High Mane"
+  bar_pen_screen_silver_info_birthyear:0 "Birthyear:  979"
+  bar_pen_screen_silver_info_threat:0 "Threat:  [BAR_silver_star_threat]"
+  bar_pen_screen_silver_info_status:0 "Status:  [bar_silver_star_status]"
+  bar_pen_screen_asinti_info_first_name:0 "First name:  Asinti"
+  bar_pen_screen_asinti_info_last_name:0 "Last name:  ??"
+  bar_pen_screen_asinti_info_birthplace:0 "Birthplace:  North Zebrica, ??"
+  bar_pen_screen_asinti_info_birthyear:0 "Birthyear:  ??"
+  bar_pen_screen_asinti_info_threat:0 "Threat: [BAR_asinti_threat]"
+  bar_pen_screen_asinti_info_status:0 "Status:  [bar_asinti_status]"
+  bar_pen_screen_ambrosius_info_first_name:0 "First name:  Ambrosius"
+  bar_pen_screen_ambrosius_info_last_name:0 "Last name:  of Barrad"
+  bar_pen_screen_ambrosius_info_birthplace:0 "Birthplace:  Wittenland, Dunburgh"
+  bar_pen_screen_ambrosius_info_birthyear:0 "Birthyear:  927"
+  bar_pen_screen_ambrosius_info_threat:0 "Threat:  -"
+  bar_pen_screen_ambrosius_info_status:0 "Status:  [bar_ambrosius_status]"
+  bar_pen_screen_leopold_info_first_name:0 "First name:  Leopold"
+  bar_pen_screen_leopold_info_last_name:0 "Last name:  Schmeller"
+  bar_pen_screen_leopold_info_birthplace:0 "Birthplace:  Griffon Empire, Gamia"
+  bar_pen_screen_leopold_info_birthyear:0 "Birthyear:  962"
+  bar_pen_screen_leopold_info_threat:0 "Threat:  [BAR_leopold_threat]"
+  bar_pen_screen_leopold_info_status:0 "Status:  [bar_leopold_status]"
+  bar_pen_screen_viira_info_first_name:0 "First name:  Viira"
+  bar_pen_screen_viira_info_last_name:0 "Last name:  Lehtola"
+  bar_pen_screen_viira_info_birthplace:0 "Birthplace:  Austurland(?), ??"
+  bar_pen_screen_viira_info_birthyear:0 "Birthyear:  978"
+  bar_pen_screen_viira_info_threat:0 "Threat:  [BAR_viira_threat]"
+  bar_pen_screen_viira_info_status:0 "Status:  [bar_viira_status]"
+  BAR_status_alive:0 "alive"
+  BAR_status_dead:0 "dead"
+  BAR_threat_low:0 "low"
+  BAR_threat_high:0 "high"
+
+
+
+ #     #                      #     #                        
+ #     # # # #####    ##      ##   ##   ##    ####  #  ####  
+ #     # # # #    #  #  #     # # # #  #  #  #    # # #    # 
+ #     # # # #    # #    #    #  #  # #    # #      # #      
+  #   #  # # #####  ######    #     # ###### #  ### # #      
+   # #   # # #   #  #    #    #     # #    # #    # # #    # 
+    #    # # #    # #    #    #     # #    #  ####  #  ####  
+                                                             
+
+
+
+  ##### deet magic ######
+  BAR_viira_spells:0 "Viira's New Powers"
+
+  BAR_viira_spells_desc:0 "After getting hold of the reactor power and binding the ancient Entity to her will Viira had aquired a set of new powers, but with such great power goes great power gets great responsibility. One wrong decision can have §Rdire consequences§!\n\nBut for now...\n[Root.BAR_viira_magic_tired]"
+  BAR_viira_magic_tired_0:0 "§2...Viira is rested and ready to put her powers to use.§!"
+  BAR_viira_magic_tired_1:0 "§3...Viira has not even broken a sweat yet.§!"
+  BAR_viira_magic_tired_2:0 "§4...Viira had her fun, maybe a little break won't hurt...§!"
+  BAR_viira_magic_tired_3:0 "§5...Viira starts to feel the burden of her power...§!"
+  BAR_viira_magic_tired_4:0 "§6...it starts to be harder for Viira to keep her powers on the leash...§!"
+  BAR_viira_magic_tired_5:0 "§7...each new show of power starts to inflict physical pain for Viira...§!"
+  BAR_viira_magic_tired_6:0 "§8...the blood running through Viira's veins starts to run hot...§!"
+  BAR_viira_magic_tired_7:0 "§9...I can push it a bit further...§!"
+  BAR_viira_magic_tired_8:0 "§t...Viira is past the point of no return...§!"
+
+
+  BAR_viira_spell_sub_zero_tooltip:0 "All infantry:\n   Marsh\n     Movement: §G+5%§!\n     Attack: §G+30%§!\n   River\n     Movement: §G+5§!\n     Attack: §G+30%§!\n\nLasts 30 days\n\nChill out!"
+  BAR_viira_spell_x_decay_tooltip:0 "One of our enemies will face severe attrition\n\nWither and rot!\n\nLasts 14 days"
+  BAR_viira_spell_gravity_tooltip:0 "Army:\n   Mountains\n     Movement: §G+200%§!\n   Hills\n     Movement: §G+100%§!\nLasts 30 days\n\nGravity cannot be defied, but it can be helped along!"
+  BAR_viira_spell_gas_tooltip:0 "Some of enemy soldiers will die as well as their will to fight\n\nThere's something in the air...\n\nLasts 14 days"
+  BAR_viira_spell_electromagnetism_tooltip:0 "Will damage enemy buildings\n\nNever underestimate the power of magnetism!"
+  BAR_viira_spell_psi_emission_tooltip:0 "Some of your enemies will change side.\n\nMy wish is your command!"
+  BAR_viira_spell_incineration_tooltip:0 "Increases supply usage for enemies.\nLasts 14 days\n\nToasty!"
+  BAR_viira_spell_earthshocks_tooltip:0 "Will damage enemy buildings and kill population\n\nQuake in fear!"
+  BAR_viira_spells_teleport_tooltip:0 "Army:\n   Movement: §G+100%§!\nLasts 7 days\n\nWhy walk when you can teleport?"
+  BAR_viira_spell_global_psi_emission_tooltip:0 "Will decrease enemy will to fight.\nLasts 14 days\n\nTotal psychic domination is within reach..."
+  BAR_viira_spell_sub_zero:0 "Freezing Ground"
+  BAR_viira_spell_x_decay:0 "Decay"
+  BAR_viira_spell_gravity:0 "Gravitational Anomalies"
+  BAR_viira_spell_gas:0 "Deadly Air"
+  BAR_viira_spell_electromagnetism:0 "Electromagnetic Shock"
+  BAR_viira_spell_psi_emission:0 "Psi Emission"
+  BAR_viira_spell_incineration:0 "Incineration"
+  BAR_viira_spell_earthshocks:0 "Groundshock"
+  BAR_viira_spell_teleport:0 "Teleport"
+  BAR_viira_spell_global_psi_emission:0 "Global Psi Emission"
+
+  #TODO rewite text below
+  bar_viira_spells_upgrade_text:0 "Yet Viira still feels like there is more power to grab, by using more reactors She could try to break into the consciousness of the ancient being that once was a god and now was reduced to Her slave."
+  bar_viira_spells_mana_help:0 "Write in cool way that 1 reactor == 100 mana."
+
+  #spell tooltips
+  bar_viira_nukes_button_tooltip:0 "Let them feel my wrath of thousand thunders!"
+  bar_viira_zone_button_tooltip:0 "Spread your home"
+  bar_viira_x_decay_button_tooltip:0 "Wither and rot!"
+  bar_viira_spell_gas_mode_button_tooltip:0 "There's something in the air..."
+  bar_viira_electromagnetism_mode_button_tooltip:0 "Never underestimate the power of magnetism!"
+  bar_viira_psi_emission_mode_button_tooltip:0 "My wish is your command!"
+  bar_viira_incineration_mode_button_tooltip:0 "Toasty!"
+  bar_viira_earthshocks_mode_button_tooltip:0 "Quake in fear!"
+  bar_viira_global_psi_emission_mode_button_tooltip:0 "Total psychic domination is within reach..."
+  bar_viira_psi_migration_mode_button_tooltip:0 "Come to me and obey!"
+  BAR_viira_title_100:0 "Viira will use power of §Cwhole§! reactor"
+  BAR_viira_title_200:0 "Viira will use power of §Cwhole two§! reactors"
+
+  #viira titles unlock
+  BAR_viira_spell_mirror_of_knowledge:0 "§CMirror of Knowledge§! pray for us!"
+  BAR_viira_spell_saviour_of_faithful:0 "§CSaviour of the Faithful§! pray for us!"
+  BAR_viira_spell_vessel_of_honour:0 "§CVessel of Honour§! pray for us!"
+  BAR_viira_spell_voice_in_darkness:0 "§CVoice in the Darkness§! pray for us!"
+  BAR_viira_spell_mystical_rose:0 "§CMystical Rose§! pray for us!"
+  BAR_viira_spell_houseof_gold:0 "§CHouse of Gold§! pray for us!"
+  BAR_viira_spell_morning_star:0 "§CMorning Star§! pray for us!"
+  BAR_viira_spell_health_of_sick:0 "§CHealth of the Sick§! pray for us!"
+  BAR_viira_spell_gate_of_heavens:0 "§CGate of Heaven§! pray for us!"
+  BAR_viira_spell_comfort_of_afflicted:0 "§CComfort of the Afflicted§! pray for us!"
+
+  #spell upgrades unlock
+  bar_viira_button_unlock_1_tooltip:0 "Dreams of golden towns, rivers of milk and honey. Many followed the dream, but one ramained in §renvy§! not willing to join."
+  bar_viira_button_unlock_2_tooltip:0 "Immense knowledge is locked up in this mind, hidden in §rgreed§! from eyes of others."
+  bar_viira_button_unlock_3_tooltip:0 "Great power resonates from within this one... it seems like it wants to unleash it's §rwrath§!."
+  bar_viira_button_unlock_4_tooltip:0 "The very essence here is filled with joy... joy that overhelms you and crawls into every corner of the brain just so you §rlust§! for more."
+  bar_viira_button_unlock_5_tooltip:0 "A glimpse into this mind shows great diligence and hard work when raising new buildings from the ground, but also great §rpride§! in their work."
+  bar_viira_button_unlock_6_tooltip:0 "This does not seem like consciousnesses it is organized like postal office... or is commanded to work by very §rslothful§! one."
+  bar_viira_button_unlock_7_tooltip:0 "Feeling of overambundance is overhelming with this one, yet despite it it still §ryearns for more§!."
+  bar_viira_button_unlock_8_tooltip:0 "The ultimate answer to life, the universe, and everything is withing reach of my hoof. I just need to penetrate each of the consciousnesses forming up the ancient entity."
+
+
+
+ #######                              
+    #    #####    ##   # #####  ####  
+    #    #    #  #  #  #   #   #      
+    #    #    # #    # #   #    ####  
+    #    #####  ###### #   #        # 
+    #    #   #  #    # #   #   #    # 
+    #    #    # #    # #   #    ####  
+                                      
+  BAR_amb_title_victorious:0 "The Victorious"
+  BAR_amb_title_lifetime_warrior:0 "A Lifetime Warrior"
+  BAR_amb_title_generous_lord:0 "The Generous Lord"
+  BAR_amb_title_benelovent_judge:0 "The Benelovent Judge"
+  BAR_marshal_gasienica:0 "Marshal Gąsienica"
+  BAR_silver_star_archlich:0 "Archlich"
+  BAR_asinti_witch_doctor:0 "Witch Doctor"
+  BAR_asinti_puppet:0 "Flesh Puppet"
+  bar_leopold_trait:0 "Mechanical Demigod"
+  bar_leopold_clock:0 "Mechanical Demigod"
+
+  BAR_viira_lehtola_desc:0 "\n\n"
+  bar_viira_title_1:0 "§CThe First Under the Sky§!"
+  bar_viira_title_2:0 "§CMirror of Knowledge§!"
+  bar_viira_title_3:0 "§CSeat of Wisdom§!"
+  bar_viira_title_4:0 "§CCause of our Joy§!"
+  bar_viira_title_5:0 "§CSaviour of the Faithful§!"
+  bar_viira_title_6:0 "§CVessel of Honour§!"
+  bar_viira_title_6_bba:0 "§CVessel of Honour§!"
+  bar_viira_title_7:0 "§CVoice in the Darkness§!"
+  bar_viira_title_8:0 "§CMystical Rose§!"
+  bar_viira_title_9:0 "§CHouse of Gold§!"
+  bar_viira_title_10:0 "§CGate of Heaven§!"
+  bar_viira_title_11:0 "§CMorning Star§!"
+  bar_viira_title_12:0 "§CHealth of the Sick§!"
+  bar_viira_title_13:0 "§CRefuge of Sinners§!"
+  bar_viira_title_14:0 "§CComfort of the Afflicted§!"
+
+  bar_viira_title_8_tooltip:0 "Soul of the Goddess is perfect like a rose, let the world be Her garden"
+  bar_viira_title_10_tooltip:0 "All of us can hear Her beautiful melody in our heads, now it is the time for our old gods to hear it too!"
+
+  bar_viira_what_now:0 "...???"
+  BAR_true_avatar_of_chaos:0 "True Avatar of Chaos"
+  BAR_true_avatar_of_chaos_lar:0 "True Avatar of Chaos"
+  BAR_despot:0 "Barradian Despot"
+
+
+
+
+  #######                                                            
+  #       #    # #####  ###### #####  # ##### #  ####  #    #  ####  
+  #        #  #  #    # #      #    # #   #   # #    # ##   # #      
+  #####     ##   #    # #####  #    # #   #   # #    # # #  #  ####  
+  #         ##   #####  #      #    # #   #   # #    # #  # #      # 
+  #        #  #  #      #      #    # #   #   # #    # #   ## #    # 
+  ####### #    # #      ###### #####  #   #   #  ####  #    #  ####  
+                                                                                  
+
+
+  bar_expedition.2.t:0 "REPLACE_ME"
+  bar_expedition.2.d:0 "REPLACE_ME"
+  bar_expedition.2.b:0 "REPLACE_ME"
+  bar_expedition.3.t:0 "REPLACE_ME"
+  bar_expedition.3.d:0 "REPLACE_ME"
+  bar_expedition.3.b:0 "REPLACE_ME"
+  bar_expedition.4.t:0 "REPLACE_ME"
+  bar_expedition.4.d:0 "REPLACE_ME"
+  bar_expedition.4.b:0 "REPLACE_ME"
+  bar_expedition_title_text:0 "Prepare Expedition"
+  bar_expedition_members:0 "Members"
+  bar_expedition_additional_equipment_text:0 "Equipment Cost:"
+  bar_expedition_additional_equipment_current_level:0 "[?Root.bar_expedition_additional_equipment] guns"
+  bar_expedition_length_text:0 "Expedition length:"
+  bar_expedition_length_current_level:0 "[?Root.bar_expedition_length] week(s)"
+  bar_expedition_success_chance_title:0 "Success Chance:"
+  bar_expedition_success_chance_text:0 "[?Root.bar_expedition_success_chance]% + ([?Root.bar_expedition_success_chance_bonus]%)"
+  bar_expedition_cohesion_title:0 "Cohesion:"
+  bar_expedition_cohesion_text:0 "[?Root.bar_expedition_cohesion]%"
+  bar_expedition_peril_title:0 "Peril:"
+  bar_expedition_peril_text:0 "[?Root.bar_expedition_peril]%"
+  expedition_launch:0 "Launch Expedition"
+  bar_expedition_external_targets:0 "External Targets"
+  bar_expedition_gasienica_tooltip:0 "Warriors loyal towards the Count and Gąsienica will focus on gathering military equipment and resources used for internal politics."
+  bar_expedition_silver_star_tooltip:0 "Hidden in safety of his tower Silver Star will send his minions to look for resources he can use."
+  bar_expedition_leopold_tooltip:0 "Common thugs and soldiers might be not the best party for seeking industrial grade materials but in this wasteland Leopold will use any scrap they can find."
+  bar_expedition_asinti_tooltip:0 "Devoted followers will seek anything that could aid his master."
+  bar_expedition_viira_tooltip:0 "While Viira would preffer to seek resources by herself not beliving in capabilities of others to do the job properly... there is something great in ordering ponies around."
+  bar_expedition_decision_text:0 "In order to gather more resources we could outfit an expedition to one of our neighboors. However before we do that we need to estimate how likely it is to succeed, fail horribly and to keep the track on its mission."
+
+
+
+
+ #     #                      #     #                            
+ #     # # # #####    ##      ##    #  ####  ##### ######  ####  
+ #     # # # #    #  #  #     # #   # #    #   #   #      #      
+ #     # # # #    # #    #    #  #  # #    #   #   #####   ####  
+  #   #  # # #####  ######    #   # # #    #   #   #           # 
+   # #   # # #   #  #    #    #    ## #    #   #   #      #    # 
+    #    # # #    # #    #    #     #  ####    #   ######  ####  
+                                                                 
+
+
+  #only first and last needs to be written
+  bar_pen_viira_clues_text_flavor1:0 "#TODO: Some starting flavor mambojambo so the button does something at the game start"
+  bar_pen_viira_clues_text1:0 "The Count called us all together for another one of his ridiculous feasts, and afterwards forced us to go on a hunting expedition in the forest. Things were quite dull until we stumbled upon the schematics for a mysterious device. Asinti wanted custody of the ponies that led us to them, the fool, but I ensured that did not happen.\n\nClearly, further investigation into the origin of these schematics will be necessary. Contacting the cult that provided them would be a good place to start."
+  bar_pen_viira_clues_text2:0 " After questioning members of this cult, I discovered that they believe the schematics originate from the deity they worship. This calls for further questioning into the nature of this deity."
+  bar_pen_viira_clues_text3:0 "The deity cultists worship: the "Great Machine". Quite curious. Contacting Inner Circle cultists will be necessary to discover more about the nature of this deity."
+  bar_pen_viira_clues_text4:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?"
+  bar_pen_viira_clues_text5:0 "I have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence."
+  bar_pen_viira_clues_text6:0 " I visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions."
+  bar_pen_viira_clues_text7:0 " Asinti was grateful enough to provide me with samples of living rock he stumbled upon while constructing his absurd temple. This rock seems to have a will of its own. Quite bizarre..."
+  bar_pen_viira_clues_text8:0 "I feel more confident in making a link between the living rock and the hostile plants. The two are connected, but what power could be behind the corruption of the very earth? I am at a loss."
+  bar_pen_viira_clues_text9:0 "Perhaps the answers I seek lie beneath the ground? I hear Leopold is conducting quite the excavation..."
+  bar_pen_viira_clues_text10:0 "The Titan of living rock uncovered by Leopold's excavation was obviously a magical construct, but creating it would be well beyond the ability of any living mage. It must have been the same power behind Asinti's living rock and the plants that attacked the mountain villages. It's all connected, I know it, but how? I just need to find one more missing piece... Silver Star's library is the only place in Barrad that might contain answers, but I doubt he would ever let me peruse it voluntarily."
+  bar_pen_viira_clues_text11:0 "Everything now seems much more clear, the time draws near..."
+  bar_pen_viira_clues_text_friendship:0 "#TODO: Something about her making friends yet still needing to stay TRUE to her PATH (get it? because you literraly need to follow that game path to get the friendship tree)"

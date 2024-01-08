@@ -347,7 +347,7 @@ focus_tree = {
 			focus = BAR_reactor_space
 		}
 		completion_reward = {
-			add_ideas = BAR_grand_crusade
+			add_ideas = BAR_grand_crusade_idea
 		}
 	}
 	focus = {
@@ -365,8 +365,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				add_idea = BAR_grand_crusade_2
-				remove_idea = BAR_grand_crusade
+				add_idea = BAR_grand_crusade_idea_2
+				remove_idea = BAR_grand_crusade_idea
 			}
 		}
 	}

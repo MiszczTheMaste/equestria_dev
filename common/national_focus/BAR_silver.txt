@@ -27,7 +27,7 @@ focus_tree = {
 		id = BAR_undying_call
 		icon = GFX_goal_silver_something_begins
 		cost = 5
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = BAR_path_to_immortality
 		ai_will_do = {
@@ -130,10 +130,27 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BAR_cult_knowledge
+		icon = GFX_goal_enslave_the_deer
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = BAR_path_to_immortality
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_path_to_immortality
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
 		id = BAR_beggining_of_end
 		icon = GFX_goal_silver_something_ends
 		cost = 5
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = BAR_path_to_immortality
 		ai_will_do = {
@@ -160,20 +177,40 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_new_barrad
-		icon = GFX_goal_silver_new_barrad
-		cost = 5
+		id = BAR_cult_knowledge_2
+		icon = GFX_goal_enslave_the_deer
+		cost = 10
 		x = 0
-		y = 2
-		relative_position_id = BAR_path_to_immortality
+		y = 1
+		relative_position_id = BAR_cult_knowledge
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_beggining_of_end
+			focus = BAR_undying_call
 		}
 		prerequisite = {
-			focus = BAR_undying_call
+			focus = BAR_cult_knowledge
+		}
+		prerequisite = {
+			focus = BAR_beggining_of_end
+		}
+		completion_reward = {
+			increase_science_base = yes
+		}
+	}
+	focus = {
+		id = BAR_new_barrad
+		icon = GFX_goal_silver_new_barrad
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = BAR_cult_knowledge_2
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_cult_knowledge_2
 		}
 		completion_reward = {
 			country_event = {
@@ -264,40 +301,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_cult_knowledge
-		icon = GFX_goal_enslave_the_deer
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = BAR_undying_call
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_undying_call
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = BAR_cult_knowledge_2
-		icon = GFX_goal_enslave_the_deer
-		cost = 10
-		x = -1
-		y = 1
-		relative_position_id = BAR_beggining_of_end
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_beggining_of_end
-		}
-		completion_reward = {
-			increase_science_base = yes
-		}
-	}
-	focus = {
 		id = BAR_biggest_gift
 		icon = GFX_goal_skull_treaty2
 		cost = 8
@@ -383,6 +386,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ss_infantry_1
+		icon = GFX_goal_skull_treaty2
 		icon = GFX_goal_skull_treaty2
 		cost = 8
 		x = -2

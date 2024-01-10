@@ -2671,52 +2671,6 @@ country_event = {
 }
 
 
-country_event = {
-	id = barrad_second.8
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.8"
-	}
-	title = barrad_second.8.t
-	desc = barrad_second.8.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_second.8.a
-		BAR_resources_add_silver_250 = yes
-		BAR_resources_add_viira_250 = yes
-	}
-}
-country_event = {
-	id = barrad_second.9
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.9"
-	}
-	title = barrad_second.9.t
-	desc = barrad_second.9.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_second.9.a
-		BAR_resources_add_silver_250 = yes
-		BAR_resources_add_leopold_250 = yes
-	}
-}
-country_event = {
-	id = barrad_second.10
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.10"
-	}
-	title = barrad_second.10.t
-	desc = barrad_second.10.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_second.10.a
-		BAR_resources_add_silver_250 = yes
-		BAR_resources_add_asinti_250 = yes
-	}
-}
-
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################

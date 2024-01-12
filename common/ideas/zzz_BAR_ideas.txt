@@ -1521,7 +1521,6 @@ ideas = {
 		BAR_undead_soldiers_1 = {
 			picture = pony_militarization
 			modifier = {	
-				army_org_Factor = 0.1
 				army_attack_factor = 0.05
 				attrition = -1
 				supply_consumption_factor = -0.25
@@ -1584,7 +1583,7 @@ ideas = {
 				}
 			}
 			modifier = {	
-				army_org_Factor = 0.15
+				army_org_Factor = 0.1
 				army_attack_factor = 0.1
 				attrition = -1
 				supply_consumption_factor = -0.25

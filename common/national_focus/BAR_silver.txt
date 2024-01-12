@@ -577,7 +577,6 @@ focus_tree = {
 			focus = BAR_ss_infantry_2
 		}
 		completion_reward = {
-			
 			swap_ideas = {
 				remove_idea = BAR_undead_soldiers
 				add_idea = BAR_undead_soldiers_1
@@ -602,10 +601,20 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_weapons_bonus
+				name = magical_tech_bonus
 				bonus = 1
-				uses = 2
-				category = infantry_weapons
+				uses = 1
+				ahead_reduction = 2
+				technology = magical_weapons
+				technology = magical_weapons1
+				technology = magical_weapons2
+				technology = magical_weapons3
+			}
+			add_tech_bonus = {
+				name = magical_tech_bonus
+				bonus = 1
+				uses = 1
+				category = magical_tech
 			}
 		}
 	}
@@ -800,7 +809,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = special_forces_tech
 			}
 		}

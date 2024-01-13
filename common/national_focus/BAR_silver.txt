@@ -229,7 +229,12 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_asinti_friends
+				check_variable = {
+					BAR_relations_asinti_silver > 69
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_new_barrad
@@ -270,7 +275,12 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_country_flag = barrad_leopold_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_leopold_friends
+				check_variable = {
+					BAR_relations_silver_leopold > 69
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_new_barrad
@@ -290,6 +300,14 @@ focus_tree = {
 		relative_position_id = BAR_new_barrad
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_viira_friends
+				check_variable = {
+					BAR_relations_silver_viira > 69
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_new_barrad
@@ -344,6 +362,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 			FOCUS_FILTER_RESEARCH
 			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_MANPOWER
 			FOCUS_FILTER_MANPOWER
 		}
 	}
@@ -952,9 +971,9 @@ focus_tree = {
 		id = BAR_ss_planes_3
 		icon = GFX_goal_skull_treaty2
 		cost = 8
-		x = -2
-		y = 2
-		relative_position_id = BAR_ss_planes
+		x = 0
+		y = 1
+		relative_position_id = BAR_ss_planes_1
 		ai_will_do = {
 			factor = 10
 		}
@@ -975,13 +994,10 @@ focus_tree = {
 		icon = GFX_goal_skull_treaty2
 		cost = 8
 		x = 0
-		y = 2
-		relative_position_id = BAR_ss_planes
+		y = 1
+		relative_position_id = BAR_ss_planes_2
 		ai_will_do = {
 			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_ss_planes_1
 		}
 		prerequisite = {
 			focus = BAR_ss_planes_2
@@ -1009,28 +1025,6 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ss_planes_5
-		icon = GFX_goal_skull_treaty2
-		cost = 8
-		x = 2
-		y = 2
-		relative_position_id = BAR_ss_planes
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_ss_planes_2
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-	}
-	focus = {
-		id = BAR_ss_planes_6
 		icon = GFX_goal_skull_treaty2
 		cost = 8
 		x = -1
@@ -1061,7 +1055,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_ss_planes_7
+		id = BAR_ss_planes_6
 		icon = GFX_goal_skull_treaty2
 		cost = 8
 		x = 1
@@ -1071,17 +1065,23 @@ focus_tree = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_ss_planes_4
+			focus = BAR_ss_planes_3
 		}
 		prerequisite = {
-			focus = BAR_ss_planes_5
+			focus = BAR_ss_planes_4
 		}
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = cat_strategic_bomber
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = cat_anti_air
 			}
 		}
 	}
@@ -1097,6 +1097,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_ss_army
+		}
+		available = {
+			has_completed_focus = BAR_fate_of_ambrosius
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1130,7 +1133,14 @@ focus_tree = {
 			} else = {
 				increase_society_development_gradual = yes
 			}
-			one_random_arms_factory = yes
+			626 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1199,7 +1209,14 @@ focus_tree = {
 			} else = {
 				increase_society_development_gradual = yes
 			}
-			one_random_arms_factory = yes
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1216,10 +1233,18 @@ focus_tree = {
 			focus = BAR_ss_industry_1
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
 			626 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 1
 					instant_build = yes
 				}
@@ -1240,15 +1265,14 @@ focus_tree = {
 			focus = BAR_ss_industry_2
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = modern_society
+			626 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
 			}
-			one_random_industrial_complex = yes
 		}
 	}
 	focus = {
@@ -1265,15 +1289,14 @@ focus_tree = {
 			focus = BAR_ss_industry_3
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = modern_society
+			625 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
 			}
-			one_random_industrial_complex = yes
 		}
 	}
 	focus = {
@@ -1317,12 +1340,28 @@ focus_tree = {
 			focus = BAR_ss_industry_6
 		}
 		completion_reward = {
-			625 = {
-				add_extra_state_shared_building_slots = 4
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_industrial_complex = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
+			626 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 1
+					type = industrial_complex
+					level = 2
 					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 10
+					instant_build = yes
+					province = {
+						id = 12307
+					}
 				}
 			}
 		}
@@ -1352,7 +1391,22 @@ focus_tree = {
 			} else = {
 				increase_society_development_gradual = yes
 			}
-			one_random_industrial_complex = yes
+			625 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			624 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1590,6 +1644,7 @@ focus_tree = {
 			focus = BAR_ss_war
 		}
 		completion_reward = {
+			add_ideas = bar_lich_defence
 		}
 	}
 	focus = {

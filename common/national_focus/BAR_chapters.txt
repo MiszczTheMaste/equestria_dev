@@ -1048,7 +1048,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = barrad_second.22
+				id = barrad_second.2
 			}
 		}
 	}

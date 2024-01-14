@@ -1182,7 +1182,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = BAR_asinti_kill_count
-			country_event = { id = barrad_asinti.12 }
 			custom_effect_tooltip = BAR_blood_rituals_tooltip
 		}
 	}

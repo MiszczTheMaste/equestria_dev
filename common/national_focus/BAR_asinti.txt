@@ -24,7 +24,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_summon_the_spirit
+		id = BAR_a_new_path
 		icon = GFX_goal_revolution_pony
 		cost = 3.5
 		x = 0
@@ -39,25 +39,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_asinti.7
-			}
-		}
-	}
-	focus = {
-		id = BAR_a_new_path
-		icon = GFX_goal_revolution_pony
-		cost = 3.5
-		x = 0
-		y = 1
-		relative_position_id = BAR_summon_the_spirit
-		prerequisite = {
-			focus = BAR_summon_the_spirit
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			country_event = {
-				id = barrad_asinti.1
 			}
 		}
 	}
@@ -780,7 +761,7 @@ focus_tree = {
 				category = engineers_tech
 			}
 			add_tech_bonus = {
-				name = special_forces_bonus
+				name = support_bonus
 				bonus = 1
 				uses = 1
 				category = recon_tech

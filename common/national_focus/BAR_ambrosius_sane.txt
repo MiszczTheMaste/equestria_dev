@@ -1331,8 +1331,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 		}
-		search_filters = {
-		}
 	}
 	focus = {
 		id = BAR_rebuild_countryside
@@ -3001,7 +2999,7 @@ focus_tree = {
 		completion_reward = {
 			every_owned_state = {
 				limit = {
-					is_core_of = BAR
+					is_core_of = GRY
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -3343,7 +3341,43 @@ focus_tree = {
 			focus = BAR_amb_old_homeland
 		}
 		completion_reward = {
-			
+			624 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = { 
+						id = 4557
+						id = 12420 
+						id = 10401
+						id = 1510
+					}
+				}
+			}
+			626 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = { 
+						id = 12480
+						id = 10471 
+						id = 1637
+					}
+				}
+			}
+			625 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = { 
+						id = 4571
+						id = 4516 
+						id = 12796
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -3364,10 +3398,11 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -3410,8 +3445,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_unite_south
 		}
+		available = {
+			owns_state = 578
+		}
 		completion_reward = {
-
+			578 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}		
 		}
 	}
 	focus = {
@@ -3427,8 +3472,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_kasa_build_1
 		}
+		available = {
+			owns_state = 578
+		}
 		completion_reward = {
-
+			578 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3444,8 +3499,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_unite_south
 		}
+		available = {
+			owns_state = 558
+		}
 		completion_reward = {
-
+			558 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3461,28 +3526,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_kasa_build_3
 		}
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = BAR_amb_core_kasa
-		icon = GFX_goal_industrial_pony
-		cost = 6
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_kasa_build_4
-		prerequisite = {
-			focus = BAR_amb_kasa_build_4
-		}
-		prerequisite = {
-			focus = BAR_amb_kasa_build_2
+		available = {
+			owns_state = 558
 		}
 		completion_reward = {
-
+			558 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3498,8 +3553,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_unite_south
 		}
+		available = {
+			owns_state = 412
+		}
 		completion_reward = {
-
+			412 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3515,8 +3580,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_olv_build_1
 		}
+		available = {
+			owns_state = 412
+		}
 		completion_reward = {
-
+			412 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3532,8 +3607,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_unite_south
 		}
+		available = {
+			owns_state = 579
+		}
 		completion_reward = {
-
+			579 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3549,8 +3634,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_olv_build_3
 		}
+		available = {
+			owns_state = 579
+		}
 		completion_reward = {
-
+			579 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -3812,14 +3907,10 @@ focus_tree = {
 			add_ideas = WIT_silver_mine
 			set_global_flag = WIT_mine_built
 			add_tech_bonus = {
-				name = ANG_mining_bonus
-				bonus = 1.0
+				name = excavation_bonus
+				bonus = 1
 				uses = 2
-				technology = excavation1
-				technology = excavation2
-				technology = excavation3
-				technology = excavation4
-				technology = excavation5
+				category = excavation_tech
 			}
 		}
 	}
@@ -4078,6 +4169,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			624 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2

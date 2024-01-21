@@ -148,6 +148,8 @@ add_ideas = {
 	BAR_wittenland_witchhunters
 	BAR_no_volunteers
 	BAR_cpt_novak
+	poverty
+	lack_of_scientists2
 }
 
 set_rule = {

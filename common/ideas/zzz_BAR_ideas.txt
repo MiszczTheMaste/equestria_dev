@@ -547,25 +547,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.10
 				war_support_factor = 0.10
-				research_speed_factor = -0.5
-			}
-		}
-		BAR_pentarchy_2 = {
-			picture = pentarchy
-
-			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.10
-				research_speed_factor = -0.35
-			}
-		}
-		BAR_pentarchy_3 = {
-			picture = pentarchy
-
-			modifier = {
-				stability_factor = 0.10
-				war_support_factor = 0.10
-				research_speed_factor = -0.2
+				military_leader_cost_factor = 100
+				trade_laws_cost_factor = 1
 			}
 		}
 		BAR_ambrosius_goods = {

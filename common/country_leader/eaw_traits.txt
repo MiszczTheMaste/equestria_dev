@@ -3202,8 +3202,7 @@ apn_time_queen= {
 	BAR_benevolent_ruler = {
 		random = no
 		conscription = 0.025
-		military_leader_cost_factor = 100
-		trade_laws_cost_factor = 1
+		consumer_goods_factor = -0.05
 	}
 	BAR_silver_star_archlich = {
 		random = no

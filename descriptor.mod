@@ -45,3 +45,4 @@ tags={
 }
 picture="equestria.jpg"
 supported_version="1.13.*"
+path="mod/equestria"

@@ -1329,7 +1329,7 @@ guiTypes = {
 			name = "bar_new_journal_entry_window_text"
 			position = { x = -80 y = 0 }
 			font = "hoi_36header"
-			maxHeight = 300
+			maxWidth = 300
 			format = left
 			text = bar_new_journal_entry_window_text
 		}

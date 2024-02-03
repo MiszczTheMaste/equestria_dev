@@ -101,7 +101,11 @@ focus_tree = {
 			focus = BAR_the_general
 		}
 		completion_reward = {
-
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -546,6 +550,7 @@ focus_tree = {
 			focus = BAR_duality_of_god
 		}
 		completion_reward = {
+			remove_poverty = yes
 		}
 	}
 	focus = {
@@ -2796,7 +2801,7 @@ focus_tree = {
 			focus = BAR_glimpse_into_future
 		}
 		completion_reward = {	
-			increase_society_development_gradual = yes
+			increase_society_development = yes
 		}
 	}
 	focus = {
@@ -2816,7 +2821,7 @@ focus_tree = {
 			nuclear_reactor > 3
 		}
 		completion_reward = {	
-			increase_society_development_gradual = yes
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -2836,7 +2841,7 @@ focus_tree = {
 			nuclear_reactor > 7
 		}
 		completion_reward = {	
-			increase_society_development_gradual = yes
+			increase_society_development = yes
 		}
 	}
 	focus = {
@@ -2856,7 +2861,7 @@ focus_tree = {
 			nuclear_reactor > 11
 		}
 		completion_reward = {	
-			increase_society_development_gradual = yes
+			add_ideas = post_modern_society
 		}
 	}
 }

@@ -341,6 +341,7 @@ focus_tree = {
 			focus = BAR_contact_him
 		}
 		completion_reward = {
+			decrease_poverty = yes
 			add_ideas = BAR_agricultural_miracle
 		}
 		search_filters = {
@@ -420,7 +421,7 @@ focus_tree = {
 			focus = BAR_inner_circle
 		}
 		completion_reward = {
-			add_stability = 0.05
+			decrease_poverty = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -489,6 +490,7 @@ focus_tree = {
 			focus = BAR_cult_peacekeepers
 		}
 		completion_reward = {
+			add_stability = 0.05
 			add_political_power = 75
 		}
 		search_filters = {
@@ -1423,7 +1425,8 @@ focus_tree = {
 			focus = BAR_ambrosius_fortune
 		}
 		completion_reward = {
-			increase_society_development = yes
+			increase_society_development_gradual = yes
+			increase_society_development_gradual = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -1689,8 +1692,7 @@ focus_tree = {
 			focus = BAR_river_system_transport
 		}
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
+			increase_society_development_gradual = yes
 		}
 	}
 	focus = {
@@ -1711,6 +1713,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.1
+			decrease_poverty = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_STABILITY
@@ -3341,6 +3344,8 @@ focus_tree = {
 			focus = BAR_amb_old_homeland
 		}
 		completion_reward = {
+			decrease_poverty = yes
+			custom_effect_tooltip = bar_forfify_border_with_riverlands
 			624 = {
 				add_building_construction = {
 					type = bunker
@@ -3771,6 +3776,7 @@ focus_tree = {
 				start_state = 624
 				target_state = 617
 			}
+			increase_society_development_gradual = yes
 		}
 	}
 	focus = {
@@ -3884,6 +3890,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			decrease_poverty = yes
 		}
 	}
 	focus = {

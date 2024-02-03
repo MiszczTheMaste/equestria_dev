@@ -75,7 +75,7 @@ country_event = {
 		load_focus_tree = barrad_focus_tree_friendship
 	}
 }
-country_event = {
+country_event = { #przemysł musi być ulepszony 6 razy w kolejnych drzewkach, bieda 3 razy
 	id = bar_cheat.3
 	is_triggered_only = yes
 	option = {
@@ -96,10 +96,9 @@ country_event = {
 		set_country_flag = bar_viira_investigation_step_10
 		set_country_flag = bar_viira_investigation_step_11
 	}
-	option = {
+	option = {  
 		name = "all ideas from 1st tree"
-		add_ideas = pre_industrial_society1
-		add_ideas = poverty4
+		add_ideas = poverty3
 		remove_ideas = BAR_wittenland_witchhunters
 		add_ideas = BAR_machines_powered
 		add_ideas = BAR_machines_studied
@@ -112,8 +111,7 @@ country_event = {
 	}
 	option = {
 		name = "ideas from 1st tree (set 1)"
-		add_ideas = pre_industrial_society1
-		add_ideas = poverty4
+		add_ideas = poverty3
 		remove_ideas = BAR_wittenland_witchhunters
 		add_ideas = BAR_machines_powered
 		add_ideas = BAR_simplier_tasks
@@ -123,8 +121,7 @@ country_event = {
 	}
 	option = {
 		name = "ideas from 1st tree (set 2)"
-		add_ideas = pre_industrial_society1
-		add_ideas = poverty4
+		add_ideas = poverty3
 		remove_ideas = BAR_wittenland_witchhunters
 		add_ideas = BAR_machines_studied
 		add_ideas = BAR_even_simplier_tasks
@@ -5002,7 +4999,7 @@ country_event = {
 	option = {
 		name = barrad_leopold.11.a
 		add_research_slot = 1
-
+		decrease_poverty = yes
 		country_event = { id = barrad_leopold.6 days = 12}
 	}
 }
@@ -5988,7 +5985,7 @@ country_event = { #rachunek sumienia
 		}
 	}
 }
-country_event = { #ambrosius się zastanawia czy wolność jest uniwersalnie dobra i czy warto za nią ginać i podbijać lądy
+country_event = { #ambrosius się zastanawia czy to co robią jest warte tego że ludzie giną, + pierdolenie o wolności równości i innych
 	id = bar_sane_ambrosius.1005
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1005"
@@ -6003,9 +6000,10 @@ country_event = { #ambrosius się zastanawia czy wolność jest uniwersalnie dob
 			id = bar_sane_ambrosius_balance
 			value = -0.05
 		}
+		increase_society_development_gradual = yes
 	}
 }
-country_event = { #ambrosius rozkimnia kto powinien głosować
+country_event = { #ambrosius rozkimnia jak by go można było zastąpić i że najlepiej chyba jak będzie głosowanie
 	id = bar_sane_ambrosius.1006
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1006"

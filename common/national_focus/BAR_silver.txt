@@ -160,6 +160,7 @@ focus_tree = {
 			focus = BAR_path_to_immortality
 		}
 		completion_reward = {
+			decrease_poverty = yes
 			every_owned_state = {
 				damage_building = {
 					type = infrastructure
@@ -1101,12 +1102,20 @@ focus_tree = {
 			has_completed_focus = BAR_fate_of_ambrosius
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				category = industry
-				uses = 1
-				bonus = 1
+			if = {
+				limit = {
+					has_poverty = yes
+				}
+				decrease_poverty = yes
+			} else = {
+				add_tech_bonus = {
+					name = industrial_bonus
+					category = industry
+					uses = 1
+					bonus = 1
+				}
 			}
+			
 			add_ideas = BAR_undead_economy
 		}
 	}
@@ -1126,18 +1135,25 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = modern_society
+					has_poverty = yes
 				}
-				one_random_arms_factory = yes
+				decrease_poverty = yes
+				626 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
 			} else = {
-				increase_society_development_gradual = yes
-			}
-			626 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+				626 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1156,6 +1172,14 @@ focus_tree = {
 			focus = BAR_ss_industry
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = modern_society
+				}
+				one_random_arms_factory = yes
+			} else = {
+				increase_society_development_gradual = yes
+			}
 			add_tech_bonus = {
 				name = industrial_bonus
 				category = industry

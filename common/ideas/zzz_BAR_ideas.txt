@@ -1686,7 +1686,7 @@ ideas = {
 			non_core_manpower = 0.2
 		}
 	}
-	BAR_viira_manpower1 = {
+	BAR_viira_manpower1_idea = {
 		picture = viirasoldat
 		modifier = {
 			conscription_factor = 0.2
@@ -1695,7 +1695,7 @@ ideas = {
 			minimum_training_level = -0.05
 		}
 	}
-	BAR_viira_manpower2 = {
+	BAR_viira_manpower2_idea = {
 		picture = viirasoldat2
 		modifier = {
 			conscription_factor = 0.4
@@ -1708,10 +1708,10 @@ ideas = {
 			research_speed_factor = -0.1
 		}
 	}
-	BAR_viira_manpower3 = {
+	BAR_viira_manpower3_idea = {
 		picture = viirasoldat3
 		modifier = {
-			conscription = 0.2
+			conscription_factor = 0.5
 			mobilization_speed = 0.8
 			training_time_army_factor = -0.3
 			minimum_training_level = -0.15
@@ -1721,7 +1721,7 @@ ideas = {
 			research_speed_factor = -0.15
 		}
 	}
-	BAR_viira_manpower4 = {
+	BAR_viira_manpower4_idea = {
 		picture = viirasoldat4
 		modifier = {
 			conscription_factor = 0.6
@@ -1734,7 +1734,7 @@ ideas = {
 			research_speed_factor = -0.2
 		}
 	}
-	BAR_viira_manpower5 = {
+	BAR_viira_manpower5_idea = {
 		picture = viirasoldat5
 		modifier = {
 			conscription_factor = 0.8
@@ -1747,7 +1747,7 @@ ideas = {
 			research_speed_factor = -0.25
 		}
 	}
-	BAR_viira_manpower6 = {
+	BAR_viira_manpower6_idea = {
 		picture = viirasoldat6
 		modifier = {
 			conscription_factor = 1.2
@@ -1772,7 +1772,7 @@ ideas = {
 	BAR_viira_manpower3_up = {
 		picture = viirasoldat3
 		modifier = {
-			conscription = 0.2
+			conscription_factor = 0.5
 			mobilization_speed = 0.8
 			training_time_army_factor = -0.3
 			minimum_training_level = -0.15

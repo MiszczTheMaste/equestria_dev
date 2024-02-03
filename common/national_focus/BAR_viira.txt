@@ -161,6 +161,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
+			decrease_poverty = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -181,6 +182,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = BAR_pentarchy
+			add_war_support = 0.2
+			decrease_poverty = yes
 		}
 	}
 	focus = {
@@ -227,6 +230,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 1
 			}
+			decrease_poverty = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -694,7 +698,7 @@ focus_tree = {
 			focus = BAR_viira_manpower10
 		}
 		completion_reward = {
-			add_ideas = BAR_viira_manpower1
+			add_ideas = BAR_viira_manpower1_idea
 		}
 		search_filters = {
 			FOCUS_FILTER_ARMY_BONUS
@@ -720,12 +724,12 @@ focus_tree = {
 					has_country_flag = BAR_spells_unlocked_6
 				}
 				swap_ideas = {
-					remove_idea = BAR_viira_manpower1
+					remove_idea = BAR_viira_manpower1_idea
 					add_idea = BAR_viira_manpower2_up
 				}
 			} else = {
 				swap_ideas = {
-					remove_idea = BAR_viira_manpower1
+					remove_idea = BAR_viira_manpower1_idea
 					add_idea = BAR_viira_manpower2
 				}
 			}
@@ -763,10 +767,10 @@ focus_tree = {
 				}
 				if = {
 					limit = { 
-						has_idea = BAR_viira_manpower2
+						has_idea = BAR_viira_manpower2_idea
 					}
 					swap_ideas = {
-						remove_idea = BAR_viira_manpower2
+						remove_idea = BAR_viira_manpower2_idea
 						add_idea = BAR_viira_manpower3_up
 					}
 				} else = {
@@ -777,8 +781,8 @@ focus_tree = {
 				}	
 			} else = {
 				swap_ideas = {
-					remove_idea = BAR_viira_manpower2
-					add_idea = BAR_viira_manpower3
+					remove_idea = BAR_viira_manpower2_idea
+					add_idea = BAR_viira_manpower3_idea
 				}
 			}
 		}
@@ -816,10 +820,10 @@ focus_tree = {
 				}
 				if = {
 					limit = { 
-						has_idea = BAR_viira_manpower3
+						has_idea = BAR_viira_manpower3_idea
 					}
 					swap_ideas = {
-						remove_idea = BAR_viira_manpower3
+						remove_idea = BAR_viira_manpower3_idea
 						add_idea = BAR_viira_manpower4_up
 					}
 				} else = {
@@ -830,8 +834,8 @@ focus_tree = {
 				}	
 			} else = {
 				swap_ideas = {
-					remove_idea = BAR_viira_manpower3
-					add_idea = BAR_viira_manpower4
+					remove_idea = BAR_viira_manpower3_idea
+					add_idea = BAR_viira_manpower4_idea
 				}
 			}
 		}
@@ -868,10 +872,10 @@ focus_tree = {
 				}
 				if = {
 					limit = { 
-						has_idea = BAR_viira_manpower4
+						has_idea = BAR_viira_manpower4_idea
 					}
 					swap_ideas = {
-						remove_idea = BAR_viira_manpower4
+						remove_idea = BAR_viira_manpower4_idea
 						add_idea = BAR_viira_manpower5_up
 					}
 				} else = {
@@ -882,8 +886,8 @@ focus_tree = {
 				}	
 			} else = {
 				swap_ideas = {
-					remove_idea = BAR_viira_manpower4
-					add_idea = BAR_viira_manpower5
+					remove_idea = BAR_viira_manpower4_idea
+					add_idea = BAR_viira_manpower5_idea
 				}
 			}
 		}
@@ -916,10 +920,10 @@ focus_tree = {
 				}
 				if = {
 					limit = { 
-						has_idea = BAR_viira_manpower5
+						has_idea = BAR_viira_manpower5_idea
 					}
 					swap_ideas = {
-						remove_idea = BAR_viira_manpower5
+						remove_idea = BAR_viira_manpower5_idea
 						add_idea = BAR_viira_manpower6_up
 					}
 				} else = {
@@ -930,8 +934,8 @@ focus_tree = {
 				}	
 			} else = {
 				swap_ideas = {
-					remove_idea = BAR_viira_manpower5
-					add_idea = BAR_viira_manpower6
+					remove_idea = BAR_viira_manpower5_idea
+					add_idea = BAR_viira_manpower6_idea
 				}
 			}
 		}
@@ -1261,11 +1265,8 @@ focus_tree = {
 			focus = BAR_viira_hierarchy_for_society
 		}
 		completion_reward = {
-			one_random_industrial_complex = yes
-			one_random_industrial_complex = yes
-			one_random_industrial_complex = yes
-			increase_society_development_gradual = yes
-			increase_society_development_gradual = yes
+			three_random_industrial_complex = yes
+			increase_society_development = yes
 		}
 	}
 	focus = {
@@ -1282,10 +1283,8 @@ focus_tree = {
 			focus = BAR_viira_slave_economy
 		}
 		completion_reward = {
-			one_random_arms_factory = yes
-			one_random_arms_factory = yes
-			increase_society_development_gradual = yes
-			increase_society_development_gradual = yes
+			three_random_arms_factory = yes
+			increase_society_development = yes
 		}
 	}
 	focus = {

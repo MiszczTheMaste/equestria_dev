@@ -4116,7 +4116,7 @@ apn_time_queen= {
 	BAR_amb_title_lifetime_warrior = {
 		random = no
 		justify_war_goal_time = -0.66
-		war_support_factor = 0.07
+		war_support_factor = 0.08
 	}
 	BAR_amb_title_generous_lord = {
 		random = no

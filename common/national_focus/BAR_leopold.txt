@@ -728,6 +728,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			increase_society_development_gradual = yes
+			decrease_poverty = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
@@ -811,7 +812,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_2
-		icon = GFX_goal_bar_leopold_repurpose_sanctuaries
+		icon = GFX_goal_bar_leopold_repurpose_sanctuaries_silver
 		cost = 3.5
 		x = -1
 		y = 1
@@ -899,7 +900,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_leopold_resources_3
-		icon = GFX_goal_bar_leopold_repurpose_sanctuaries_silver
+		icon = GFX_goal_bar_leopold_repurpose_sanctuaries
 		cost = 3.5
 		x = 1
 		y = 1
@@ -1093,6 +1094,7 @@ focus_tree = {
 				target_state = 625
 				build_only_on_allied = yes
 			}
+			decrease_poverty = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION

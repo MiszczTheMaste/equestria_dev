@@ -99,6 +99,7 @@ country_event = {
 	option = {
 		name = "all ideas from 1st tree"
 		add_ideas = pre_industrial_society1
+		add_ideas = poverty4
 		remove_ideas = BAR_wittenland_witchhunters
 		add_ideas = BAR_machines_powered
 		add_ideas = BAR_machines_studied
@@ -112,6 +113,7 @@ country_event = {
 	option = {
 		name = "ideas from 1st tree (set 1)"
 		add_ideas = pre_industrial_society1
+		add_ideas = poverty4
 		remove_ideas = BAR_wittenland_witchhunters
 		add_ideas = BAR_machines_powered
 		add_ideas = BAR_simplier_tasks
@@ -122,6 +124,7 @@ country_event = {
 	option = {
 		name = "ideas from 1st tree (set 2)"
 		add_ideas = pre_industrial_society1
+		add_ideas = poverty4
 		remove_ideas = BAR_wittenland_witchhunters
 		add_ideas = BAR_machines_studied
 		add_ideas = BAR_even_simplier_tasks
@@ -4299,7 +4302,7 @@ country_event = {
 	option = {
 		name = barrad_asinti.7.a
 		swap_ideas = {
-			remove_idea = BAR_pentarchy_3
+			remove_idea = BAR_pentarchy
 			add_idea = BAR_asinti_petnarchy
 		}
 
@@ -4549,7 +4552,7 @@ country_event = {
 				}
 			}
 		}
-		remove_ideas = BAR_pentarchy_3
+		remove_ideas = BAR_pentarchy
 		
 		add_stability = 0.1
 		if = {
@@ -6547,7 +6550,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.7.a
-		remove_ideas = BAR_pentarchy_3
+		remove_ideas = BAR_pentarchy
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.05

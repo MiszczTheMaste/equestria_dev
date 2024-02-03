@@ -1456,7 +1456,6 @@ ideas = {
 			modifier = {
 				stability_factor = -0.10
 				war_support_factor = -0.10
-				research_speed_factor = -0.2
 			}
 		}
 		BAR_asinti_invasion = {

@@ -101,7 +101,7 @@ focus_tree = {
 			focus = BAR_the_general
 		}
 		completion_reward = {
-			remove_ideas = BAR_pentarchy_3
+
 		}
 	}
 	focus = {

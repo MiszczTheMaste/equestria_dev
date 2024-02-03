@@ -336,7 +336,6 @@ focus_tree = {
 				set_country_flag = BAR_everyone_ded
 				set_country_flag = BAR_undead_nation_flag
 			}
-			remove_ideas = BAR_pentarchy_3
 			every_owned_state = {
 				limit = {
 					is_core_of = BAR

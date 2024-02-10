@@ -659,7 +659,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_leopold_ascesion_2"
-		texturefile = "gfx/interface/bar/goals/leopold_ascesion_2.dds"
+		texturefile = "gfx/interface/bar/goals/leopold/leopold_ascesion_2.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_leopold_cult_fanatism"
@@ -907,15 +907,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_goal_bar_screaming_viira"
-		texturefile = "gfx/interface/bar/goals/leopold/bar_screaming_viira.dds"
+		texturefile = "gfx/interface/bar/goals/bar_screaming_viira.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_silver_and_viira"
-		texturefile = "gfx/interface/bar/goals/leopold/bar_silver_and_viira.dds"
+		texturefile = "gfx/interface/bar/goals/bar_silver_and_viira.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_silver_and_viira_2"
-		texturefile = "gfx/interface/bar/goals/leopold/bar_silver_and_viira_2.dds"
+		texturefile = "gfx/interface/bar/goals/bar_silver_and_viira_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"

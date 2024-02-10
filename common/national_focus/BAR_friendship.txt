@@ -443,6 +443,7 @@ focus_tree = {
 				idea = BAR_convert_factories
 				days = 180
 			}
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 	focus = {
@@ -475,6 +476,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -1129,7 +1131,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = BAR_friend_white_star_is_helping
+				tooltip = BAR_friend_white_star_is_helping_tooltip
 				has_idea = BAR_friend_white_star
 			}
 		}
@@ -1382,7 +1384,8 @@ focus_tree = {
 			focus = BAR_friend_now_what
 		}
 		completion_reward = {
-			add_war_support = 0.1
+			add_stability = 0.05
+			add_war_support = 0.05
 			add_political_power = 75
 		}
 	}
@@ -1436,7 +1439,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = modern_society
+					has_idea = outdated_industry2
 				}
 				one_random_industrial_complex = yes
 			} else = {
@@ -1747,7 +1750,7 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = BAR_fix_the_climate
+			custom_effect_tooltip = BAR_fix_the_climate_tooltip
 		}
 	}
 	focus = {
@@ -1855,7 +1858,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = modern_society
+					has_idea = outdated_industry2
 				}
 				one_random_industrial_complex = yes
 			} else = {
@@ -1950,7 +1953,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_idea = modern_society
+					has_idea = outdated_industry2
 				}
 				one_random_industrial_complex = yes
 			} else = {
@@ -2467,7 +2470,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = modern_society
+					has_idea = outdated_industry2
 				}
 				one_random_industrial_complex = yes
 			} else = {
@@ -3238,7 +3241,7 @@ focus_tree = {
 			focus = BAR_friend_independent_military_units
 		}
 		completion_reward = {
-			two_random_arms_factory = yes
+			one_random_arms_factory = yes
 		}
 	}
 	focus = {
@@ -3497,7 +3500,7 @@ focus_tree = {
 			}
 			else = {
 				add_tech_bonus = {
-					name = bomber_bonus
+					name = cas_bonus
 					bonus = 1
 					uses = 1
 					category = cas_bomber
@@ -3525,7 +3528,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = battlefield_support_tree
 				cost_reduction = 0.5
-				uses = 2
+				uses = 4
 				category = battlefield_support_tree
 			}
 		}

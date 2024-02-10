@@ -550,7 +550,7 @@ focus_tree = {
 			focus = BAR_duality_of_god
 		}
 		completion_reward = {
-			remove_poverty = yes
+			add_ideas = no_poverty
 		}
 	}
 	focus = {

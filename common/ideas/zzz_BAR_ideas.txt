@@ -2175,10 +2175,14 @@ ideas = {
 			}
 		}  
 
-		BAR_convert_factories = {
+		bar_total_mobilisation = {
 			picture = BAL_hell
 			modifier = {	
-				conversion_cost_civ_to_mil_factor = -1
+				conscription = 0.05
+				conversion_cost_civ_to_mil_factor = -1	
+				army_org_factor = -0.05
+				stability_factor = -0.1
+				political_power_gain = -0.1
 			}
 		}
 		BAR_friend_attack_zes_bonus_idea = {
@@ -2404,7 +2408,13 @@ ideas = {
 				land_reinforce_rate = 0.15
 				consumer_goods_factor = -0.02
 			}
-		}                                      
+		}  
+		BAR_friend_dip_begging_idea = {
+			picture = generic_pp_unity_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}                                       
 	}
 	hidden_ideas = {
 		BAR_no_volunteers = {

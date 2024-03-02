@@ -136,7 +136,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_operation_tempest		#attacking remaining influential ponies in barrad
+		id = BAR_friend_operation_tempest
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
 		x = 1
@@ -160,7 +160,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_operation_lomnica		#massive anti-bandit operation
+		id = BAR_friend_operation_lomnica
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
 		x = -1
@@ -440,8 +440,8 @@ focus_tree = {
 				}
 			}
 			add_timed_idea = {
-				idea = BAR_convert_factories
-				days = 180
+				idea = bar_total_mobilisation
+				days = 360
 			}
 			add_ideas = tot_economic_mobilisation
 		}
@@ -663,7 +663,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				country_event = {
-					id = barrad_friendship_tree.27
+					id = barrad_friendship_tree.28
 					days = 21
 				}
 			}	
@@ -695,6 +695,11 @@ focus_tree = {
 		relative_position_id = BAR_friend_prince_of_wittenland
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			WIT_white_star = {
+				is_country_leader = yes
+			}
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_serving_justice
@@ -728,6 +733,64 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BAR_friend_serving_justice
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_prince_of_wittenland
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				WIT_white_star = {
+					is_country_leader = yes
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = BAR_friend_letter_to_sister
+		}
+		prerequisite = {
+			focus = BAR_friend_prince_of_wittenland
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = WIT
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_homecoming
+		icon = GFX_goal_cry_com_sync
+		cost = 3.5
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_serving_justice
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				country_exists = WIT
+			}
+			any_owned_state = {
+				is_core_of = WIT
+			}
+		}
+		prerequisite = {
+			focus = BAR_friend_serving_justice
+		}
+		completion_reward = {
+			WIT = {
+				add_to_ROOT_potential_cores = yes
+			}
+			set_cosmetic_tag = BAR_WIT_magocracy
+		}
+	}
+	focus = {
 		id = BAR_friend_move_to_wittenburgh
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
@@ -740,6 +803,12 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_fight_for_friendship
 			focus = BAR_friend_homecoming
+		}
+		available = {
+			owns_state = 617
+			NOT = {
+				country_exists = WIT
+			}
 		}
 		completion_reward = {
 			set_capital = {
@@ -819,57 +888,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_serving_justice
-		icon = GFX_goal_cry_com_sync
-		cost = 3.5
-		x = -1
-		y = 1
-		relative_position_id = BAR_friend_prince_of_wittenland
-		ai_will_do = {
-			factor = 10
-		}
-		mutually_exclusive = {
-			focus = BAR_friend_letter_to_sister
-		}
-		prerequisite = {
-			focus = BAR_friend_prince_of_wittenland
-		}
-		completion_reward = {
-			create_wargoal = {
-				target = WIT
-				type = annex_everything
-			}
-		}
-	}
-	focus = {
-		id = BAR_friend_homecoming
-		icon = GFX_goal_cry_com_sync
-		cost = 3.5
-		x = 0
-		y = 1
-		relative_position_id = BAR_friend_serving_justice
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			NOT = {
-				country_exists = WIT
-			}
-			any_owned_state = {
-				is_core_of = WIT
-			}
-		}
-		prerequisite = {
-			focus = BAR_friend_serving_justice
-		}
-		completion_reward = {
-			WIT = {
-				add_to_ROOT_potential_cores = yes
-			}
-			set_cosmetic_tag = BAR_WIT_magocracy
-		}
-	}
-	focus = {
 		id = BAR_friend_river_federation_membership
 		icon = GFX_goal_cry_com_sync
 		cost = 3.5
@@ -930,6 +948,10 @@ focus_tree = {
 			focus = BAR_friend_viira_and_silver_diplomacy
 		}
 		completion_reward = {
+			add_timed_idea = {
+				idea = BAR_friend_dip_begging_idea
+				days = 120
+			}
 		}
 	}
 	focus = {
@@ -946,6 +968,18 @@ focus_tree = {
 			focus = BAR_friend_viira_and_silver_diplomacy
 		}
 		completion_reward = {
+			GRU = {
+				add_opinion_modifier = {
+					target = BAR
+					modifier = supported_somehow
+				}
+			}
+			GRY = {
+				add_opinion_modifier = {
+					target = BAR
+					modifier = supported_somehow
+				}
+			}
 		}
 	}
 	focus = {
@@ -962,6 +996,7 @@ focus_tree = {
 			focus = BAR_friend_viira_and_silver_diplomacy
 		}
 		completion_reward = {
+			one_random_infrastructure = yes
 		}
 	}
 	focus = {
@@ -984,12 +1019,13 @@ focus_tree = {
 			focus = BAR_friend_beg_for_stuff2
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
 		id = BAR_friend_riverlands_diplomacy
 		icon = GFX_goal_cry_com_sync
-		cost = 3.5
+		cost = 2
 		x = 5
 		y = 1
 		relative_position_id = BAR_friend_diplomacy_getting_somebody_competent
@@ -1001,23 +1037,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_diplomacy_getting_somebody_competent
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	focus = {
-		id = BAR_friend_noblility_by_deeds_not_birth
-		icon = GFX_goal_cry_com_sync
-		cost = 3.5
-		x = 2
-		y = 1
-		relative_position_id = BAR_friend_riverlands_diplomacy
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_riverlands_diplomacy
 		}
 		completion_reward = {
 			custom_effect_tooltip = BAR_friend_ambrosius_tooltip
@@ -1247,15 +1266,6 @@ focus_tree = {
 			focus = BAR_friend_regional_interventionism
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					GRU = {
-						has_government = communism
-					}
-				}
-				add_stability = -0.05
-				add_political_power = -50
-			}
 			create_wargoal = {
 				target = GRU
 				type = annex_everything

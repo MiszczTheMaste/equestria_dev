@@ -6853,7 +6853,7 @@ country_event = { #lus gets ultimatium
 	is_triggered_only = yes
 	option = { 
 		ai_chance = {
-			factor = 1-
+			factor = 1
 		}
 		name = barrad_friendship_tree.19.a
 		BAR = {
@@ -7104,7 +7104,7 @@ country_event = { #viira and silver star visits asinti in temple he had built an
 	}
 }
 country_event = { #silver star drinks with leopold and decides to throw away all his books about dark magic
-	id = barrad_friendship_tree.27
+	id = barrad_friendship_tree.28
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
 	}

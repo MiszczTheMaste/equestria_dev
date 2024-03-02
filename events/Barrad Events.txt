@@ -7108,12 +7108,12 @@ country_event = { #silver star drinks with leopold and decides to throw away all
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
 	}
-	title = barrad_friendship_tree.27.t
-	desc = barrad_friendship_tree.27.d
+	title = barrad_friendship_tree.28.t
+	desc = barrad_friendship_tree.28.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = { 
-		name = barrad_friendship_tree.27.a
+		name = barrad_friendship_tree.28.a
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.05

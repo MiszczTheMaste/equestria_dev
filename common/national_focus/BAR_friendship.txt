@@ -2806,14 +2806,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = support_bonus
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = engineers_tech
-			}
-			add_tech_bonus = {
-				name = support_bonus
-				bonus = 1
-				uses = 1
-				category = recon_tech
 			}
 		}
 	}
@@ -3451,7 +3445,7 @@ focus_tree = {
 			focus = BAR_friend_tac_bomber
 		}
 		completion_reward = {
-			add_ideas = BAR_friend_sky_aces_idea
+			add_ideas = BAR_air_acc
 		}
 	}
 	focus = {
@@ -3469,92 +3463,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			two_random_arms_factory = yes
-		}
-	}
-	focus = {
-		id = BAR_friend_sky_aces
-		icon = GFX_goal_cry_com_sync
-		cost = 6
-		x = -1
-		y = 1
-		relative_position_id = BAR_friend_light_planes
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_light_planes
-		}
-		completion_reward = {
-			add_ideas = BAR_air_acc
-		}
-	}
-	focus = {
-		id = BAR_friend_cas
-		icon = GFX_goal_cry_com_sync
-		cost = 6
-		x = -1
-		y = 1
-		relative_position_id = BAR_friend_air_accidents_prevention
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_air_accidents_prevention
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = cat_air_bombs
-					bonus = 1
-					uses = 1
-					category = cat_anti_tank
-				}
-				add_tech_bonus = {
-					name = cas_bonus
-					bonus = 1
-					uses = 1
-					category = light_air
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = cas_bonus
-					bonus = 1
-					uses = 1
-					category = cas_bomber
-				}
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-	}
-	focus = {
-		id = BAR_friend_cas_doctrine
-		icon = GFX_goal_cry_com_sync
-		cost = 6
-		x = 1
-		y = 1
-		relative_position_id = BAR_friend_air_accidents_prevention
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_air_accidents_prevention
-		}
-		completion_reward = {
-			add_doctrine_cost_reduction = {
-				name = battlefield_support_tree
-				cost_reduction = 0.5
-				uses = 4
-				category = battlefield_support_tree
-			}
-		}
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
 		}
 	}
 }

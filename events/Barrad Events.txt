@@ -7103,7 +7103,7 @@ country_event = { #viira and silver star visits asinti in temple he had built an
 		}
 	}
 }
-country_event = { #silver star drinks with leopold and decides to throw away all his books about dark magic
+country_event = { #gąsienica nachodzi silvera w nocy
 	id = barrad_friendship_tree.28
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"

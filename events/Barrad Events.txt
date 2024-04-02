@@ -32,12 +32,38 @@ country_event = {
 	option = {
 		name = "viira"
 		load_focus_tree = barrad_focus_tree_goddess_viira
+		BAR_viira_lehtola = {
+			set_portraits = {
+				civilian = {
+					large = "gfx/leaders/BAR/Viira2.tga"
+				}
+				army = {
+					large = "gfx/leaders/BAR/Viira2.tga"
+				}
+			}
+		}
 		add_country_leader_role = {
 			character = BAR_viira_lehtola
 			promote_leader = yes
 			country_leader = {
 				expire = "1965.1.1"
 				ideology = magocracy
+				traits = {
+					bar_viira_title_1
+					bar_viira_title_2
+					bar_viira_title_3
+					bar_viira_title_4
+					bar_viira_title_5
+					bar_viira_title_6_bba
+					bar_viira_title_7
+					bar_viira_title_8
+					bar_viira_title_9
+					bar_viira_title_10
+					bar_viira_title_11
+					bar_viira_title_12
+					bar_viira_title_13
+					bar_viira_title_14
+				}
 			}
 		}
 	}
@@ -128,6 +154,28 @@ country_event = { #przemysł musi być ulepszony 6 razy w kolejnych drzewkach, b
 		add_ideas = BAR_temple_construct
 		add_ideas = BAR_clockwerk_soldiers
 		add_ideas = BAR_vechicle_reliability
+	}
+}
+country_event = {
+	id = bar_cheat.4
+	is_triggered_only = yes
+	option = {
+		name = "starting tree"
+		load_focus_tree = barrad_focus_tree
+	}
+	option = {
+		name = "unlock viira notes"
+		set_country_flag = bar_viira_investigation_step_1
+		set_country_flag = bar_viira_investigation_step_2
+		set_country_flag = bar_viira_investigation_step_3
+		set_country_flag = bar_viira_investigation_step_4
+		set_country_flag = bar_viira_investigation_step_5
+		set_country_flag = bar_viira_investigation_step_6
+		set_country_flag = bar_viira_investigation_step_7
+		set_country_flag = bar_viira_investigation_step_8
+		set_country_flag = bar_viira_investigation_step_9
+		set_country_flag = bar_viira_investigation_step_10
+		set_country_flag = bar_viira_investigation_step_11
 	}
 }
 
@@ -6503,6 +6551,7 @@ country_event = {
 		name = barrad_friendship_tree.4.a
 		add_war_support = 0.1
 		add_political_power = 100
+		country_event = { id = barrad_friendship_tree.29 }
 	}
 }
 country_event = {
@@ -7017,7 +7066,7 @@ country_event = { #barrad sex event bottom text
 country_event = { #viira and silver star visits asinti in temple he had built and discovers that its been converted to charity, and that asinti took care of the filly from previous event
 	id = barrad_friendship_tree.27
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.27"
 	}
 	title = barrad_friendship_tree.27.t
 	desc = barrad_friendship_tree.27.d
@@ -7106,7 +7155,7 @@ country_event = { #viira and silver star visits asinti in temple he had built an
 country_event = { #gąsienica nachodzi silvera w nocy
 	id = barrad_friendship_tree.28
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.26"
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.28"
 	}
 	title = barrad_friendship_tree.28.t
 	desc = barrad_friendship_tree.28.d
@@ -7117,6 +7166,23 @@ country_event = { #gąsienica nachodzi silvera w nocy
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.05
+		}
+	}
+}
+country_event = { #viira się wygadała
+	id = barrad_friendship_tree.29
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.29"
+	}
+	title = barrad_friendship_tree.29.t
+	desc = barrad_friendship_tree.29.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.29.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
 		}
 	}
 }

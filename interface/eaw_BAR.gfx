@@ -119,6 +119,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/bar/pentarchy_gui/BAR_pen_icon.dds"
 	}
 	spriteType = {
+		name = "GFX_BAR_viira_note_icon"
+		textureFile = "gfx/interface/bar/pentarchy_gui/viira_note.dds"
+	}
+	spriteType = {
 		name = "GFX_BAR_pen_background"
 		textureFile = "gfx/interface/bar/BAR_pen_background.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

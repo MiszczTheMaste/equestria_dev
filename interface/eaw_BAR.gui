@@ -16,7 +16,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "viira_journal_button"
-			spriteType = "GFX_BAR_pen_icon"
+			spriteType = "GFX_BAR_viira_note_icon"
 			position = { x=0 y=0 }
 		}
 	}	

@@ -437,13 +437,6 @@ music = {
 	}
 }
 music = {
-	song = "loss"
-
-	chance = {
-		factor = 0
-	}
-}
-music = {
 	song = "WH40K-Chaos-Gate_Ultramarines-Chant"
 	chance = {
 		factor = 1

@@ -4311,6 +4311,189 @@ BAR_reactor_research = {
 }
 
 BAR_viira_spells = {
+	BAR_viira_spell_upgrade_1 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 1
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_1"
+			}
+			BAR_unlock_spells_1 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	BAR_viira_spell_upgrade_2 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 3
+				has_country_flag = BAR_spells_unlocked_1
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_2"
+			}
+			BAR_unlock_spells_2 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	BAR_viira_spell_upgrade_3 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 5
+				has_country_flag = BAR_spells_unlocked_2
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_3"
+			}
+			BAR_unlock_spells_3 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_upgrade_4 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 7
+				has_country_flag = BAR_spells_unlocked_3
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_4"
+			}
+			BAR_unlock_spells_4 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_upgrade_5 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 9
+				has_country_flag = BAR_spells_unlocked_4
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_5"
+			}
+			BAR_unlock_spells_5 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_upgrade_6 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 11
+				has_country_flag = BAR_spells_unlocked_5
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_6"
+			}
+			BAR_unlock_spells_6 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_upgrade_7 = {
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 13
+				has_country_flag = BAR_spells_unlocked_6
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_7"
+			}
+			BAR_unlock_spells_7 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	BAR_viira_spell_upgrade_8 = { #true goodhood
+		icon = GFX_BAR_viira_nuke_button
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_viira_spells_upgrade_unlock
+				nuclear_reactor > 15
+				has_country_flag = BAR_spells_unlocked_7
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_upgrade_8"
+			}
+			BAR_unlock_spells_8 = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	BAR_spread_zone = {
 		fire_only_once = yes
 		state_target = yes
@@ -5508,9 +5691,7 @@ BAR_viira_spells = {
 		}
 		remove_effect = {
 			add_country_leader_trait = bar_viira_title_10
-			set_variable = {
-				bar_viira_spells_upgrade_unlock = 1
-			}
+			set_country_flag = bar_viira_spells_upgrade_unlock
 		}
 		days_remove = 30
 		ai_will_do = {

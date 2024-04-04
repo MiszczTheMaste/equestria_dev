@@ -21,6 +21,7 @@ focus_tree = {
 			custom_effect_tooltip = BAR_path_have_been_choosen
 			set_country_flag = bar_viira_corrupt_states
 			set_country_flag = bar_viira_show_states_to_corrupt
+			set_country_flag = bar_viira_investigation_step_12
 		}
 	}
 	focus = {

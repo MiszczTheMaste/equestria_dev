@@ -902,7 +902,7 @@
                                                    
 
 
-  BAR_leopold_children_of_wrath:0 "Children of Wrath"
+  BAR_leopold_children_of_wrath:0 "Foals of Wrath"
   BAR_leopold_cult_convert_1:0 "Elisay Preaching"
   BAR_leopold_cult_convert_2:0 "Grand Sancturay Conversion"
   BAR_leopold_cult_convert_3:0 "With Fire and Sword"
@@ -1524,11 +1524,11 @@
   barrad_friends.4.a:0 "How can I save my friends, my land, and my soul?"
 
   barrad_friends.5.t:0 "A Most Unpleasant Surprise"
-  barrad_friends.5.d:0 "    Gąsienica cautiously entered a room in the basement of the manor. "My lord," he greeted, finding Ambrosius in the midst of one of his experiments, holding a vial that looked to be filled with blood.\n    Ambrosius turned around, slightly startled. Recognizing Gąsienica, he casually tossed the vial aside and asked, "Yes? What brings you here?"\n    "It's about Asinti, Viira, Leopold, and Silver Star," Gąsienica started, getting straight to the point.\n    "Have they done something amusing?" Ambrosius asked with clear excitation in his voice.\n    "No, my lord. They have, in fact, formed an alliance and ceased their conflicts,” Gąsienica reported.\n    Upon hearing it Ambrosius bursted into laughter. It echoed off the stone walls, growing in intensity until it felt like it was repleacing the air in the room. And as the cound of laughter were consuming the room, shadows on the walls began stretching and expanding until they threatened to engulf everything in darkness.\n    Gąsienica acted swiftly. He reached for his master, pulling him close with one claw while retrieving a small vial of liquid from around his neck. Without hesitation he uncorked the vial and poured its contents into Ambrosius's open mouth. Upon drinking it, his body and spirit began to calm down, and so too did the shadows retreating to their corners.\n    Once Ambrosius was steady on his hooves again, Gąsienica asked, "Should I deal with them, my lord?""
+  barrad_friends.5.d:0 "    Gąsienica cautiously entered a room in the basement of the manor. "My lord," he greeted, finding Ambrosius in the midst of one of his experiments, holding a vial that looked to be filled with blood.\n    Ambrosius turned around, slightly startled. Recognizing Gąsienica, he casually tossed the vial aside and asked, "Yes? What brings you here?"\n    "It's about Asinti, Viira, Leopold, and Silver Star," Gąsienica started, getting straight to the point.\n    "Have they done something amusing?" Ambrosius asked with clear excitation in his voice.\n    "No, my lord. They have, in fact, formed an alliance and ceased their conflicts,” Gąsienica reported.\n    Upon hearing it Ambrosius bursted into laughter. It echoed off the stone walls, growing in intensity until it felt like it was repleacing the air in the room. And as the sound of laughter were consuming the room, shadows on the walls began stretching and expanding until they threatened to engulf everything in darkness.\n    Gąsienica acted swiftly. He reached for his master, pulling him close with one claw while retrieving a small vial of liquid from around his neck. Without hesitation he uncorked the vial and poured its contents into Ambrosius's open mouth. Upon drinking it, his body and spirit began to calm down, and so too did the shadows retreating to their corners.\n    Once Ambrosius was steady on his hooves again, Gąsienica asked, "Should I deal with them, my lord?""
   barrad_friends.5.a:0 "Yes, do it"
 
   barrad_friends.6.t:0 "Shadows in the Night"
-  barrad_friends.6.d:0 "    The sun was setting, creating a rare backdrop for Silver Star who usually did not get outside at this hour. However, an invite from Leopold for a card games night was enough for him to change his usual habits. Although he had always been skeptical about card games until he discovered you can play them with others. He was so distracted by strategizing about the night ahead, he nearly missed out the subtle movement in the bushes beside the road.\n    At near instant alert he turned towards the noise, ready for whatever might emerge. His readiness paid off when a hooded figure with a knife jumped out of the bushes. Silver Star had imagined this exact situation too many times and reacted quickly, sidestepping the initial attack. As the attacker spun for a second strike, aiming for Silver Star's throat, the knife met not flesh but a magical barrier.\n    "Face your end, vile beast!" Silver Star shouted, convinced about his victory.\n    However, the assasing didn't waste time with barter. When their knife got stuck in the barrier, they pulled out a strange device that began draining the magic from Silver Star's shield. Caught off guard, Silver Star felt a rush of panic. Without time to think of a new plan, he channeled all his magic into a powerful beam that fired it at the attacker, hitting them in the head.\n    After ensuring there were no more attackers hiding nearby, Silver Star took a moment to catch his breath and approached the fallen assasin. Removing the hood revealed a zebra, which left Silver Star'sv confused. The cloak, adorned with odd symbols that matched those found in the cave the explored and on the garments of cultists Viira had taken an interest in, raised further questions."
+  barrad_friends.6.d:0 "    The sun was setting, creating a rare backdrop for Silver Star who usually did not get outside at this hour. However, an invite from Leopold for a card games night was enough for him to change his usual habits. Although he had always been skeptical about card games until he discovered you can play them with others. He was so distracted by strategizing about the night ahead, he nearly missed out the subtle movement in the bushes beside the road.\n    At near instant alert he turned towards the noise, ready for whatever might emerge. His readiness paid off when a hooded figure with a knife jumped out of the bushes. Silver Star had imagined this exact situation too many times and reacted quickly, sidestepping the initial attack. As the attacker spun for a second strike, aiming for Silver Star's throat, the knife met not flesh but a magical barrier.\n    "Face your end, vile beast!" Silver Star shouted, convinced about his victory.\n    However, the assassin didn't waste time with barter. When their knife got stuck in the barrier, they pulled out a strange device that began draining the magic from Silver Star's shield. Caught off guard, Silver Star felt a rush of panic. Without time to think of a new plan, he channeled all his magic into a powerful beam that fired it at the attacker, hitting them in the head.\n    After ensuring there were no more attackers hiding nearby, Silver Star took a moment to catch his breath and approached the fallen assassin. Removing the hood revealed a zebra, which left Silver Star's confused. The cloak, adorned with odd symbols that matched those found in the cave the explored and on the garments of cultists Viira had taken an interest in, raised further questions."
   barrad_friends.6.a:0 "My friends?"
 
   barrad_friends.7.t:0 "Finding the Truth"
@@ -1548,18 +1548,26 @@
   barrad_friends.10.a:0 "Together!"
 
   barrad_friends.11.t:0 "Into the Maw"
-  barrad_friends.11.d:0 "#TODO: The expanded gang find the cult's main base. They crash inside, and manage to find Ambrosius, but when they go to kill him Gąsienica stops them. Maybe a fight scene, like the baseline barrad one?"
-  barrad_friends.11.a:0 "So much for teamwork..."
-
-  barrad_friends.12.t:0 "REPLACE_ME"
-  barrad_friends.12.d:0 "#TODO: fired from the above, Silver Star, Viira, Leopold and Asinti fights Gąsienica, the griffon mops the floor with them because Silver Star is too scarred to do anything (literally his biggest nightmare comming true) but then he finds courage to act, saves viira from fatal blow and they proceed to beat him up using power of friendship"
-  barrad_friends.12.a:0 "REPLACE_ME"
-  barrad_friends.13.t:0 "REPLACE_ME"
-  barrad_friends.13.d:0 "#TODO fired from the above, Silver Star despite objections from the others decides to spare Ambrosius and Gąsienica they help them get out (Ambrosius is in coma), but before they leave Viira stands in front od the gate behind which the ancient cultist god lies, but decides to leave it be."
-  barrad_friends.13.a:0 "REPLACE_ME"
+  barrad_friends.11.d:0 "    The expedition made its way deep underground, navigating darkness veiling the ancient tunnels. As they delved deeper and deeper, it seemed like walls and floor they were walking on started to whisper secrets from past ages. However this relative calm soon turned into an ambush. Cultists attacked with ferocity and swiftness beyond that of mere mortal. Their moves unpredictable, appearing to be driven by power beyond comprehension. The black robes they wore fluttered around them, resembling the wings of some dark, otherworldly creatures.\n    The battle's intensity grew as the cultists, fueled by their fanatic devotion, seemed unstoppable. With eerie chants on their lips, calling upon their dark deity, drawing strength from their faith. Gąsienica and the four friends managed to break away from the ambush and press forward, leaving their soldiers behind. Soon they entered the cult’s central chamber, a grand cathedral where they were met with an ominous silence. At the heart of the sanctum stood a massive gate, darker than the night sky itself. There,  Ambrosius lying unconscious on the altar. Seeing his master Gąsienica flew to assist him, but was stopped by a sudden gunshot. Turning around, he saw Leopold with a smoking gun.\n    "Sorry, big one, neither you nor he are getting out of here alive," Leopold declared.\n    Gąsienica examining his new wound said without turning to face them, “We will see”."
+  barrad_friends.11.a:0 "Empty threats..."
+  barrad_friends.12.t:0 "Right Claw and Sword of Mad Count"
+  barrad_friends.12.d:0 "Leopold aimed at the massive griffon. However before he could pull the trigger he found himself knocked down on the ground. In the blink of an eye, Gąsienica managed to close the gap between them and now stood above the sickly griffon, preparing to finish him off. Lying there, Leopold struggled to catch his breath and unable to reach his gun. But suddenly a thick cloud of smoke enveloped both griffons.\n    Viira, seizing the moment quickly dragged Leopold behind a large stone bench for cover. When Leopold tried to speak, she shushed him. "Hold your breath. I'll try to get Asinti here to help you," she whispered urgently, peeking over the bench. Through the clearing smoke, she saw Asinti and Gąsienica in a standoff, each waiting for the other to make the next move.\n    Driven more by instinct than by a well-thought-out strategy, Viira picked up a stone tablet from the bench and hurled it at Gąsienica, hoping to distract or, better yet, injure him. To her astonishment, he caught it mid-air and sent it flying towards Asinti with much greater speed. The tablet struck the old zebra in the head, causing him to fall to the ground.\n    As Viira tried to understand what had just happened, Gąsienica's gaze fixed on her. Seeing it she knew she had to run, though outrunning the griffon was unlikely. Preparing to flee, her mind filled with fear and desperation, she cried for a miracle to save her."
+  barrad_friends.12.a:0 "As the lights goes off..."
+  barrad_friends.13.t:0 "...the Darkness of the Night Arise..."
+  barrad_friends.13.d:0 "Facing his worst nightmare, Silver Star was overwhelmed, but now he was also about to witness those close to him suffer a same terrible fate. As Gąsienica attacked Leopold, he was paralyzed by fear, unable to act, and instinctively sought refuge in the darkness. His whole body was frozen by the shock of the attack.\n    Lost in his fear, Silver Star hid, losing track of time in his panic. Seconds felt like hours as he tried to make sense of his thoughts, but the terror of his situation made it impossible to think clearly.\n    Then, a sharp scream snapped him out of his daze. It was Viira, trying to escape wrath of Gąsienica. Yet, what recourse did Silver Star possess, other than to flee as he had done countless times before? But in this very moment a chilling revelation crystalized within him."
+  barrad_friends.13.a:0 "..."
   barrad_friends.14.t:0 "REPLACE_ME"
   barrad_friends.14.d:0 "#TODO: we get here from bar_viira_murders.1 an alternative to bar_viira_murders.2, where viira instead of murdering Silver Star in his library do idk what something wholesome because they are friends and we are doing friendship path"
-  barrad_friends.14.a:0 "REPLACE_ME"
+  barrad_friends.14.a:0 "REPLACE_ME"  
+  barrad_friends.15.t:0 "...for Stars to Shine the Brightest..."
+  barrad_friends.15.d:0 "Viira's ears rang with a resounding slam that she thought was the end, but when she opened her eyes, there was no pain. Confused, she saw Silver Star standing before Gąsienica, trying to maintain a magical barrier between them. Fearing that any sound might break his concentration, she ran away to check on Asinti and Leopold.\n    "Are you both okay?" Viira asked as she approached, her voice full of concern.\n    Leopold, despite his injuries responded, "I've had worse." He held up a vial for Asinti. "This one?"\n    Asinti, weakly, corrected him, "Indigo, not purple."\n    Leopold finding the right potion, administered it to Asinti. "I hope this elixir has some effect," he murmured before collapsing to the ground, his eyes clouded by a haze of pain.\n    "Silver Star is fighting Gąsienica. We need to help him," Viira urged.\n    With every movement causing him pain, Leopold began to unbutton his suit. "I have a hypothesis," he said while revealing arcane machinery infused into part of his body. He began to detach part of it. "Get to him point-blank and connect these two cables," he explained while giving a magical crystal to Viira. "Don't lose it, I will die without it," he added with a heavy sigh.\n    "No! You can't risk your life like that," Viira protested.\n    "Just go and save that unicorn," he said, barely audible."
+  barrad_friends.15.a:0 "Thank you."
+  barrad_friends.16.t:0 "...So They Can Conquer It"
+  barrad_friends.16.d:0 "The battle between Silver Star and Gąsienica raged on, their fight shaking the room with its intensity as Silver Star bravely faced Gąsienica. But each blow from the colossal griffon threatened to shatter the unicorn's defense, his hope of striking back fading like a dying ember.\n    In the midst of this chaos Viira emerged from the shadows seizing upon an opportune moment and rushed towards the griffon. Unseen by him, as he was focused on attacking the unicorn, she prepared a mysterious device Leopold gave her. Viira yelled for Silver Star to take cover, then activated the device causing a massive magical impulse that shook the room and incapacitated Gąsienica.\n    Viira quickly rushed to ensure Silver Star is alright, relieved to find him safe. Leopold and Asinti also appeared, supporting each other in standing straight. Seeing Gąsienica defeated, Leopold was started to look for the gun to finish him off.\n    Yet, as Silver Star looked at the defeated griffon crawling toward his unconscious master, a flicker of recognition danced within his mind. He heard the faint echoes of a familiar scene, the day he survived the savage Cossack raid as a mere foal. A loyal servant, who shielded him with his own body against the blades. For two harrowing days, Silver Star had lain beneath the lifeless form of his devoted servant, bearing witness to that very same look he saw in Gąsienica’s eyes right now.\n    "Leave them," Silver Star commanded. Hearing Leopold's objections, Silver Star added “Let’s be above this”."
+  barrad_friends.16.a:0 "Do we have more potions by any chance?"
+  barrad_friends.17.t:0 "Whispers of Desire"
+  barrad_friends.17.d:0 "As the fight ceased a blissful silence settled over the cathedral. But from the large gate at the center of the chamber an eerie sound came to Virra's ears. The gate was covered in strange symbols that were impossible to understand and seemed to radiate a mysterious energy, drawing her closer despite herself.\n    The mysterious melody she heard was both unsettling and strangely inviting, making her come closer step by step. And as she was about to touch the black surface of the giant gate Silver Star's voice brought her back to reality.\n    "If you want to explore it we can come back later," said Silver Star. "Leopold needs us more at the moment."\n    Snapped from the trance Viira stepped away, her gaze still lingering on gate's ancient surface."
+  barrad_friends.17.a:0 "I suppose some things are better left untouched..."
 
 
 
@@ -1834,35 +1842,13 @@
   
 
 
-  barrad_viira.24.t:0 "Unexpected visit"
-  barrad_viira.24.d:0 "#TODO: Turns out Gąsienica survived the blast and goes after Viira. They confront in front of the reactor and Viira tries to mindcontroll him using the cultist god (who is now her puppet). Gąsienica resists but ultimetly crumbles just before he could land a blow on her. Then he becomes her servant."
-  barrad_viira.24.a:0 ""
+  barrad_viira.17.t:0 "Unexpected visit"
+  barrad_viira.17.d:0 "#TODO: Turns out Gąsienica survived the blast and goes after Viira. They confront in front of the reactor and Viira tries to mindcontroll him using the cultist god (who is now her puppet). Gąsienica resists but ultimetly crumbles just before he could land a blow on her. Then he becomes her servant."
+  barrad_viira.17.a:0 ""
   barrad_viira.16.t:0 "The end?"
   barrad_viira.16.d:0 "#TODO: Viira is so high on magic and ancient knowledge that she leaves the material world in front of the seer she found in one of the events and Gąsienica. Both of them can head her disembodied voice, she still looks over her servants but now more like a real god. (this is ending event)"
   barrad_viira.16.a:0 ""
 
-  #spell upgrades events, they take place in minds making up the ancient cultist god, can be cryptic mambojambo or anything just align to thing they were corrupted by, yes it was no coincidence that the cultist god was made out of 7 unicorns
-  barrad_viira.17.t:0 ""
-  barrad_viira.17.d:0 "#TODO: corrupted by envy, look bar_viira_button_unlock_1_tooltip"
-  barrad_viira.17.a:0 ""
-  barrad_viira.18.t:0 ""
-  barrad_viira.18.d:0 "#TODO: corrupted by greed, look bar_viira_button_unlock_2_tooltip"
-  barrad_viira.18.a:0 ""
-  barrad_viira.19.t:0 ""
-  barrad_viira.19.d:0 "#TODO: corrupted by wratch, look bar_viira_button_unlock_3_tooltip"
-  barrad_viira.19.a:0 ""
-  barrad_viira.20.t:0 ""
-  barrad_viira.20.d:0 "#TODO: corrupted by lust, look bar_viira_button_unlock_4_tooltip"
-  barrad_viira.20.a:0 ""
-  barrad_viira.21.t:0 ""
-  barrad_viira.21.d:0 "#TODO: corrupted by pride, look bar_viira_button_unlock_5_tooltip"
-  barrad_viira.21.a:0 ""
-  barrad_viira.22.t:0 ""
-  barrad_viira.22.d:0 "#TODO: corrupted slothfulness, look bar_viira_button_unlock_6_tooltip"
-  barrad_viira.22.a:0 ""
-  barrad_viira.23.t:0 ""
-  barrad_viira.23.d:0 "#TODO: corrupted by gluttony, look bar_viira_button_unlock_7_tooltip"
-  barrad_viira.23.a:0 ""
 
  ###                          #####                
   #  #    # ######  ####     #     #  ####  #####  
@@ -1969,7 +1955,6 @@
   BAR_viira_spell_global_psi_emission:0 "Global Psi Emission"
 
   #TODO rewite text below
-  bar_viira_spells_upgrade_text:0 "Yet Viira still feels like there is more power to grab, by using more reactors She could try to break into the consciousness of the ancient being that once was a god and now was reduced to Her slave."
   bar_viira_spells_mana_help:0 "Write in cool way that 1 reactor == 100 mana."
 
   #spell tooltips
@@ -1997,17 +1982,6 @@
   BAR_viira_spell_health_of_sick:0 "§CHealth of the Sick§! pray for us!"
   BAR_viira_spell_gate_of_heavens:0 "§CGate of Heaven§! pray for us!"
   BAR_viira_spell_comfort_of_afflicted:0 "§CComfort of the Afflicted§! pray for us!"
-
-  #spell upgrades unlock
-  bar_viira_button_unlock_1_tooltip:0 "Dreams of golden towns, rivers of milk and honey. Many followed the dream, but one ramained in §renvy§! not willing to join."
-  bar_viira_button_unlock_2_tooltip:0 "Immense knowledge is locked up in this mind, hidden in §rgreed§! from eyes of others."
-  bar_viira_button_unlock_3_tooltip:0 "Great power resonates from within this one... it seems like it wants to unleash it's §rwrath§!."
-  bar_viira_button_unlock_4_tooltip:0 "The very essence here is filled with joy... joy that overhelms you and crawls into every corner of the brain just so you §rlust§! for more."
-  bar_viira_button_unlock_5_tooltip:0 "A glimpse into this mind shows great diligence and hard work when raising new buildings from the ground, but also great §rpride§! in their work."
-  bar_viira_button_unlock_6_tooltip:0 "This one feels different like it is §rindifferent§! to what happens."
-  bar_viira_button_unlock_7_tooltip:0 "Feeling of overambundance is overhelming with this one, yet despite it it still §ryearns for more§!."
-  bar_viira_button_unlock_8_tooltip:0 "#TODO: The ultimate answer to life, the universe, and everything is withing reach of my hoof. I just need to penetrate each of the consciousnesses forming up the ancient entity."
-
 
 
  #######                              
@@ -2111,10 +2085,10 @@
 
 
   #only first and last needs to be written
-  bar_pen_viira_clues_text_flavor1:0 "#TODO: Some starting flavor mambojambo so the button does something at the game start"
+  bar_pen_viira_clues_text_flavor1:0 "Leopold had a point, taking notes is definitely more practical. What kind of looser carry around a bulky journal all the time anyway?\n\nHopefully, I'll come across something noteworthy soon.\n\n\n\nP.S. I need to investigate anomaly that swallowed my journal."
   bar_pen_viira_clues_text1:0 "The Count called us all together for another one of his ridiculous feasts, and afterwards forced us to go on a hunting expedition in the forest. Things were quite dull until we stumbled upon the schematics for a mysterious device. Asinti wanted custody of the ponies that led us to them, the fool, but I ensured that did not happen.\n\nClearly, further investigation into the origin of these schematics will be necessary. Contacting the cult that provided them would be a good place to start."
   bar_pen_viira_clues_text2:0 " After questioning members of this cult, I discovered that they believe the schematics originate from the deity they worship. This calls for further questioning into the nature of this deity."
-  bar_pen_viira_clues_text3:0 "The deity cultists worship: the "Great Machine". Quite curious. Contacting Inner Circle cultists will be necessary to discover more about the nature of this deity."
+  bar_pen_viira_clues_text3:0 "The deity cultists worship, the "Great Machine". Quite curious. Contacting Inner Circle cultists will be necessary to discover more about the nature of this deity."
   bar_pen_viira_clues_text4:0 "After contacting the Inner Circle cultists, I received a very strange vision, possibly from their deity. The vision seemed to indicate that it was withering away and in need of something. What kind of god needs something from mortals?"
   bar_pen_viira_clues_text5:0 "I have heard word that hostile plants recently attacked the mountain villages, but were ultimately defeated. It would be a good idea for me to travel there and investigate the nature of this strange occurrence."
   bar_pen_viira_clues_text6:0 " I visited the mountain villages and recovered samples from the hostile plants that attacked them. While there I met an interesting griffon with a magical trinket which he used to protect the villages. I studied the trinket and the warding spell he cast, but it is too early to draw any definitive conclusions."
@@ -2124,9 +2098,34 @@
   bar_pen_viira_clues_text10:0 "The Titan of living rock uncovered by Leopold's excavation was obviously a magical construct, but creating it would be well beyond the ability of any living mage. It must have been the same power behind Asinti's living rock and the plants that attacked the mountain villages. It's all connected, I know it, but how? I just need to find one more missing piece... Silver Star's library is the only place in Barrad that might contain answers, but I doubt he would ever let me peruse it voluntarily."
   bar_pen_viira_clues_text11:0 "Everything now seems much more clear, the time draws near..."
   bar_pen_viira_clues_text_friendship:0 "#TODO: Something about her making friends yet still needing to stay TRUE to her PATH (get it? because you literraly need to follow that game path to get the friendship tree)"
+  bar_pen_viira_clues_text12:0 "So it is done. What was once a god now lies under my hoof as a slave, with me ascending to its former position. It's unfortunate that others couldn't accept it.\n\nYet despite the vast powers I've acquired, there remain places beyond my grasp, such as mind  of the cultist's god. Perhaps, by constructing additional reactors, I might find a way to access it?"
+  bar_pen_viira_clues_text13:0 "Yes, yes, yes! I can sense an even greater power flowing through my flesh. It's an exhilarating sensation! Even surpassing the joy I get from sensing ancient entity’s fear.\n\nIt's time to teach it that no secrets can be kept from me."
+  bar_pen_viira_clues_text14:0 "Most fascinating, the entity comprises seven distinct consciousnesses. Yet, these separate entities come together to form a single, unified mind. What a remarkable phenomenon.\n\nThe one I succeeded in accessing revealed to me visions of cities gleaming with gold and rivers flowing with milk and honey. It became apparent that these were not just visions but manifestations of its desires and envy.\n\nCould such promises help me draw more followers while I'll be acquiring power?"
+  bar_pen_viira_clues_text15:0 "Accessing the second consciousness proved to be a more challenging task. It contained vast knowledge but was fiercely protected by a level of greed surpassing that of any griffon or dragon.\n\nDespite the obstacles, it now lies exposed before me, akin to an open book, and I intend to explore its contents thoroughly."
+  bar_pen_viira_clues_text16:0 "The only word that aptly describes this consciousness is wrath, starkly different from the others. I wonder, has it always been driven by a desire for pain and destruction? Or did it, at some point, become aware of its own potential?\n\nMuch like I have now..."
+  bar_pen_viira_clues_text17:0 "I once believed I understood what of joy and pleasure is, but I was mistaken. The third consciousness inundated me with visions of pure ecstasy, igniting a lust for more.\n\nHowever, I saw through its allure. As tempting as it is to indulge in such pleasures, this experience showed me the importance of not succumbing too easily to the desires of the flesh, reminding me to maintain clarity of thought."
+  bar_pen_viira_clues_text18:0 "This consciousness exhibits significant diligence and takes pride in its accomplishments. While it's somewhat boring, there's value in self-praise. Fortunately, I can leave the hard work part to others."
+  bar_pen_viira_clues_text19:0 "It's surprising how creature so powerful can become so indifferent and apathetic.\n\nI must ensure that neither I nor my followers ever find ourselves in a similar condition."
+  bar_pen_viira_clues_text20:0 "This consciousness would explain  Ambrosius' actions, dominated by hedonistic desires and an insatiable appetite for magic. It's unfortunate it never found a way to quench its thirst for power like I did.\n\nIt makes me wonder if I could use my abilities in reverse to create physical objects on a large scale.\n\nP.S. There has to bo something more I can put into my hooves!"
+  bar_pen_viira_clues_text21:0 "I barely feel my own flesh anymore, but there is no turning back. I must venture further, even if it means leaving the mortal realm."
+
+
+
+
+
+
+
+
+
+
 
 
   BAR_decrease_poverty_tooltip:0 "Common ponies might be able to get some leftovers.\n"
   BAR_decrease_poverty_2_tooltip:0 "Gąsienica will try to help as much as he can.\n"
   BAR_decrease_poverty_3_tooltip:0 "For some of the peasants it's only chance to scavenge some money or food.\n"
   BAR_decrease_illiteracy_tooltip:0 "There will be need to have workers and servants able to follow written instructions.\n"
+
+
+
+
+  BAR_friend_feeling_of_unfinished_buissness:0 "Feeling of Unfinished Buissness"

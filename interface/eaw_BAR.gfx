@@ -153,60 +153,6 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
-		name = "GFX_viira_spells_unlock_bg"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_spells_unlock_bg.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_1"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_1.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_2"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_2.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_3"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_3.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_4"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_4.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_5"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_5.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_6"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_6.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_7"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_7.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
-		name = "GFX_viira_button_unlock_8"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_button_unlock_8.dds"
-		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-		alwaystransparent = no
-	}
-	spriteType = {
 		name = "GFX_viira_mana_crystal"
 		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_mana_crystal.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

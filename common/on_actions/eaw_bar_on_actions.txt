@@ -298,6 +298,16 @@ on_actions = {
 					}
 					activate_mission = BAR_viira_declares_war
 				}
+				if = {
+					limit = {
+						BAR = {
+							has_country_flag = bar_viira_investigation_step_12
+							NOT = { has_country_flag = bar_viira_investigation_step_13 }
+							nuclear_reactor > 1
+						}
+					}
+					set_country_flag = bar_viira_investigation_step_13
+				}
 			}	
 		}
 	}

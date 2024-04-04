@@ -189,6 +189,106 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_11
 		}
 	}
+	bar_viira_note_12 = { 
+		window_name = "bar_viira_note_12"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_12
+		}
+	}
+	bar_viira_note_13 = { 
+		window_name = "bar_viira_note_13"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_13
+		}
+	}
+	bar_viira_note_14 = {
+		window_name = "bar_viira_note_14"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_14
+		}
+	}
+	bar_viira_note_15 = { 
+		window_name = "bar_viira_note_15"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_15
+		}
+	}
+	bar_viira_note_16 = { 
+		window_name = "bar_viira_note_16"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_16
+		}
+	}
+	bar_viira_note_17 = { 
+		window_name = "bar_viira_note_17"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_17
+		}
+	}
+	bar_viira_note_18 = { 
+		window_name = "bar_viira_note_18"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_18
+		}
+	}
+	bar_viira_note_19 = {
+		window_name = "bar_viira_note_19"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_19
+		}
+	}
+	bar_viira_note_20 = {
+		window_name = "bar_viira_note_20"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_20
+		}
+	}
+	bar_viira_note_21 = {
+		window_name = "bar_viira_note_21"
+		context_type = player_context
+		dirty = bar_viira_show_notes
+		visible = {
+			tag = BAR
+			has_variable = bar_viira_show_notes
+			has_country_flag = bar_viira_investigation_step_21
+		}
+	}
 	bar_viira_note_friendship = {
 		window_name = "bar_viira_note_friendship"
 		context_type = player_context
@@ -511,150 +611,6 @@ scripted_gui = {
 					set_country_flag = bar_viira_psi_migration_mode
 				}
 			}
-		}
-	}
-
-	BAR_viira_spells_ui = {
-		window_name = "BAR_viira_spells_ui_container"
-		context_type = decision_category
-		dirty = BAR_viira_godhood
-		visible = {
-			has_variable = BAR_viira_godhood
-		}	
-		triggers = {
-			bar_viira_spells_upgrade_open_button_available = {
-				has_variable = bar_viira_spells_upgrade_unlock
-			}
-		}
-		effects = {
-			bar_viira_spells_upgrade_open_button_click = {
-				BAR_spell_upgrades_prepare = yes
-				if = {
-					limit = {
-						has_variable = bar_viira_spells_upgrade
-					}
-					clear_variable = bar_viira_spells_upgrade
-				} else = {
-					set_variable = {
-						bar_viira_spells_upgrade = 1
-					}
-				}
-			}
-		}
-	}
-
-	# @var bar_viira_mana_crystal_array array<{1-16},{1,2}> holds amount of nuclear reactors up to 16
-	# each row can have two states:
-	# 1 => no reactor
-	# 2 => reactor
-	bar_viira_spells_unlock = {
-		window_name = "bar_viira_spells_unlock_container"
-		context_type = player_context
-		dirty = bar_viira_spells_upgrade
-		visible = {
-			has_variable = bar_viira_spells_upgrade
-		}
-		effects = {
-			exit_button_click = {
-				clear_variable = bar_viira_spells_upgrade
-			}
-			bar_viira_button_unlock_1_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 1
-						NOT = { has_country_flag = BAR_spells_unlocked_1 }
-					}
-					BAR_unlock_spells_1 = yes
-				}
-			}
-			bar_viira_button_unlock_2_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 3
-						NOT = { has_country_flag = BAR_spells_unlocked_2 }
-					}
-					BAR_unlock_spells_2 = yes
-				}
-			}
-			bar_viira_button_unlock_3_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 5
-						NOT = { has_country_flag = BAR_spells_unlocked_3 }
-					}
-					BAR_unlock_spells_3 = yes
-				}
-			}
-			bar_viira_button_unlock_4_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 7
-						NOT = { has_country_flag = BAR_spells_unlocked_4 }
-					}
-					BAR_unlock_spells_4 = yes
-				}
-			}
-			bar_viira_button_unlock_5_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 9
-						NOT = { has_country_flag = BAR_spells_unlocked_5 }
-					}
-					BAR_unlock_spells_5 = yes
-				}
-			}
-			bar_viira_button_unlock_6_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 11
-						NOT = { has_country_flag = BAR_spells_unlocked_6 }
-					}
-					BAR_unlock_spells_6 = yes
-				}
-			}
-			bar_viira_button_unlock_7_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 13
-						NOT = { has_country_flag = BAR_spells_unlocked_7 }
-					}
-					BAR_unlock_spells_7 = yes
-				}
-			}
-			bar_viira_button_unlock_8_click = {
-				if = {
-					limit = {
-						nuclear_reactor > 15
-						has_country_flag = BAR_spells_unlocked_1
-						has_country_flag = BAR_spells_unlocked_2
-						has_country_flag = BAR_spells_unlocked_3
-						has_country_flag = BAR_spells_unlocked_4
-						has_country_flag = BAR_spells_unlocked_5
-						has_country_flag = BAR_spells_unlocked_6
-						has_country_flag = BAR_spells_unlocked_7
-						NOT = { has_country_flag = BAR_spells_unlocked_8 }
-					}
-					BAR_unlock_spells_8 = yes
-				}
-			}
-		}
-		properties = {
-			bar_viira_mana_crystal_1 = { frame = bar_viira_mana_crystal_array^0 }
-			bar_viira_mana_crystal_2 = { frame = bar_viira_mana_crystal_array^1 }
-			bar_viira_mana_crystal_3 = { frame = bar_viira_mana_crystal_array^2 }
-			bar_viira_mana_crystal_4 = { frame = bar_viira_mana_crystal_array^3 }
-			bar_viira_mana_crystal_5 = { frame = bar_viira_mana_crystal_array^4 }
-			bar_viira_mana_crystal_6 = { frame = bar_viira_mana_crystal_array^5 }
-			bar_viira_mana_crystal_7 = { frame = bar_viira_mana_crystal_array^6 }
-			bar_viira_mana_crystal_8 = { frame = bar_viira_mana_crystal_array^7 }
-			bar_viira_mana_crystal_9 = { frame = bar_viira_mana_crystal_array^8 }
-			bar_viira_mana_crystal_10 = { frame = bar_viira_mana_crystal_array^9 }
-			bar_viira_mana_crystal_11 = { frame = bar_viira_mana_crystal_array^10 }
-			bar_viira_mana_crystal_12 = { frame = bar_viira_mana_crystal_array^11 }
-			bar_viira_mana_crystal_13 = { frame = bar_viira_mana_crystal_array^12 }
-			bar_viira_mana_crystal_14 = { frame = bar_viira_mana_crystal_array^13 }
-			bar_viira_mana_crystal_15 = { frame = bar_viira_mana_crystal_array^14 }
-			bar_viira_mana_crystal_16 = { frame = bar_viira_mana_crystal_array^15 }
 		}
 	}
 	

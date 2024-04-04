@@ -143,6 +143,11 @@ music = {
 	volume = 0.9
 }
 music = {
+	name = "DSTechnician_honorguard"
+	file = "DSTechnician_honorguard.ogg"
+	volume = 0.9
+}
+music = {
 	name = "WH40K-Chaos-Gate_Ultramarines-Chant"
 	file = "WH40K-Chaos-Gate_Ultramarines-Chant.ogg"
 	volume = 0.9

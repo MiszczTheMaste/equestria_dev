@@ -231,7 +231,7 @@ the_goddess = {
     }
     
     happened = {
-		has_focus_tree = barrad_focus_tree_goddess_viira
+    has_country_flag = BAR_spells_unlocked_8
     }    
 }
 defying_fate = {

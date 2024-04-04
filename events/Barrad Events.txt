@@ -121,6 +121,16 @@ country_event = { #przemysł musi być ulepszony 6 razy w kolejnych drzewkach, b
 		set_country_flag = bar_viira_investigation_step_9
 		set_country_flag = bar_viira_investigation_step_10
 		set_country_flag = bar_viira_investigation_step_11
+		set_country_flag = bar_viira_investigation_step_12
+		set_country_flag = bar_viira_investigation_step_13
+		set_country_flag = bar_viira_investigation_step_14
+		set_country_flag = bar_viira_investigation_step_15
+		set_country_flag = bar_viira_investigation_step_16
+		set_country_flag = bar_viira_investigation_step_17
+		set_country_flag = bar_viira_investigation_step_18
+		set_country_flag = bar_viira_investigation_step_19
+		set_country_flag = bar_viira_investigation_step_20
+		set_country_flag = bar_viira_investigation_step_21
 	}
 	option = {  
 		name = "all ideas from 1st tree"
@@ -955,6 +965,9 @@ country_event = {
 	id = barrad_friends.11
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friends.11"
+		hidden_effect = {
+			play_song = "DSTechnician_honorguard"
+		}
 	}
 	title = barrad_friends.11.t
 	desc = barrad_friends.11.d
@@ -970,7 +983,7 @@ country_event = {
 	# fighting gąsienica
 	id = barrad_friends.12
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_friends.12"
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.12"	
 	}
 	title = barrad_friends.12.t
 	desc = barrad_friends.12.d
@@ -983,8 +996,7 @@ country_event = {
 }
 
 country_event = {
-	# showing mercy to ambrosius and gąsienica
-	id = barrad_friends.13
+	id = barrad_friends.13 # silver star being scared af
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friends.13"
 	}
@@ -994,29 +1006,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.13.a
-		add_country_leader_role = {
-			character = BAR_captain_gasienica
-			promote_leader = yes
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = magocracy
-				traits = {
-					BAR_cpt_novak_advisor
-				}
-			}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
 		}
-		BAR_add_gasienica_as_commander = yes
-		load_focus_tree = barrad_focus_tree_friendship
-		add_stability = -0.3
-		add_war_support = -0.3
-		add_ideas = BAR_friend_feeling_of_unfinished_buissness
-		hidden_effect = {
-			change_all_province_names = yes
-			remove_advisor_role = {
-				character = BAR_captain_gasienica
-				slot = political_advisor
-			  }
-		}
+		country_event = { id = barrad_friends.15 }
 	}
 }
 
@@ -1032,6 +1026,80 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.14.a
+	}
+}
+
+country_event = {
+	id = barrad_friends.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.15"
+	}
+	title = barrad_friends.15.t
+	desc = barrad_friends.15.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_friends.15.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		country_event = { id = barrad_friends.16 }
+	}
+}
+
+country_event = {
+	id = barrad_friends.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.16"
+	}
+	title = barrad_friends.16.t
+	desc = barrad_friends.16.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_friends.16.a
+		add_country_leader_role = {
+			character = BAR_captain_gasienica
+			promote_leader = yes
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = magocracy
+				traits = {
+					BAR_cpt_novak_advisor
+				}
+			}
+		}
+		BAR_add_gasienica_as_commander = yes
+		add_stability = -0.3
+		add_war_support = -0.3
+		hidden_effect = {
+			change_all_province_names = yes
+			remove_advisor_role = {
+				character = BAR_captain_gasienica
+				slot = political_advisor
+			  }
+		}
+		country_event = { id = barrad_friends.17 }
+	}
+}
+country_event = {
+	id = barrad_friends.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends.17"
+	}
+	title = barrad_friends.17.t
+	desc = barrad_friends.17.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_friends.17.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		add_ideas = BAR_friend_feeling_of_unfinished_buissness
+		load_focus_tree = barrad_focus_tree_friendship
 	}
 }
 
@@ -5359,167 +5427,15 @@ country_event = {
 
 country_event = {
 	id = barrad_viira.17
-	title = barrad_viira.17.t
-	desc = barrad_viira.17.d
+	title = barrad_viira.24.t
+	desc = barrad_viira.24.d
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_viira.17"
 	}
 	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2.a
+	picture = GFX_event_medieval_village_2
 	option = {
 		name = barrad_viira.17.a
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = steel
-			amount = 2
-		}
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = aluminium 
-			amount = 2
-		}
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = chromium
-			amount = 2
-		}
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = tungsten
-			amount = 2
-		}
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = rubber
-			amount = 2
-		}
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = oil
-			amount = 2
-		}
-		modify_building_resources = {
-			building = nuclear_reactor
-			resource = crystals
-			amount = 2
-		}
-	}
-}
-
-country_event = {
-	id = barrad_viira.18
-	title = barrad_viira.18.t
-	desc = barrad_viira.18.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.18"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.18.a
-	}
-}
-country_event = {
-	id = barrad_viira.19
-	title = barrad_viira.19.t
-	desc = barrad_viira.19.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.19"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.19.a
-	}
-}
-country_event = {
-	id = barrad_viira.20
-	title = barrad_viira.20.t
-	desc = barrad_viira.20.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.20"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.20.a
-		hidden_effect = {
-			every_owned_state = {
-				if = {
-					limit = {
-						has_state_flag = BAR_climate
-					}
-					remove_province_modifier = {
-						static_modifiers = {
-							barrad_climate3
-						}
-						province = {
-							all_provinces = yes
-						}
-					}
-					add_province_modifier = {
-						static_modifiers = {
-							barrad_climate4
-						}
-						province = {
-							all_provinces = yes
-						}
-					}
-				}
-			}
-		}
-	}
-}
-country_event = {
-	id = barrad_viira.21
-	title = barrad_viira.21.t
-	desc = barrad_viira.21.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.21"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.21.a
-	}
-}
-country_event = {
-	id = barrad_viira.22
-	title = barrad_viira.22.t
-	desc = barrad_viira.22.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.22"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.22.a
-	}
-}
-country_event = {
-	id = barrad_viira.23
-	title = barrad_viira.23.t
-	desc = barrad_viira.23.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.23"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.23.a
-	}
-}
-country_event = {
-	id = barrad_viira.24
-	title = barrad_viira.24.t
-	desc = barrad_viira.24.d
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira.24"
-	}
-	is_triggered_only = yes
-	picture = GFX_event_medieval_village_2
-	option = {
-		name = barrad_viira.24.a
 		BAR_add_gasienica_as_commander = yes
 	}
 }

@@ -1899,57 +1899,101 @@ BAR_merge_commandments = {
 
 BAR_unlock_spells_1 = {
 	#mass migration
-	country_event = {
-		id = barrad_viira.23
-	}
 	set_country_flag = BAR_spells_unlocked_1
+	set_country_flag = bar_viira_investigation_step_14
 }
 
 BAR_unlock_spells_2 = {
 	#research bonuses
-	country_event = {
-		id = barrad_viira.22
-	}
 	set_country_flag = BAR_spells_unlocked_2
+	set_country_flag = bar_viira_investigation_step_15
 }
 
 BAR_unlock_spells_3 = {
 	#stronger spells
-	country_event = {
-		id = barrad_viira.21
-	}
 	set_country_flag = BAR_spells_unlocked_3
+	set_country_flag = bar_viira_investigation_step_16
 }
 
 BAR_unlock_spells_4 = {
 	#psi powers upgrade
-	country_event = {
-		id = barrad_viira.20
+	every_owned_state = {
+		if = {
+			limit = {
+				has_state_flag = BAR_climate
+			}
+			remove_province_modifier = {
+				static_modifiers = {
+					barrad_climate3
+				}
+				province = {
+					all_provinces = yes
+				}
+			}
+			add_province_modifier = {
+				static_modifiers = {
+					barrad_climate4
+				}
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
 	}
 	set_country_flag = BAR_spells_unlocked_4
+	set_country_flag = bar_viira_investigation_step_17
 }
 
 BAR_unlock_spells_5 = {
 	#conjure buildings
-	country_event = {
-		id = barrad_viira.19
-	}
 	set_country_flag = BAR_spells_unlocked_5
+	set_country_flag = bar_viira_investigation_step_18
 }
 
 BAR_unlock_spells_6 = {
 	#mind control perfection
-	country_event = {
-		id = barrad_viira.18
-	}
 	set_country_flag = BAR_spells_unlocked_6
+	set_country_flag = bar_viira_investigation_step_19
 }
 
 BAR_unlock_spells_7 = {
 	#conjure resources
-	country_event = {
-		id = barrad_viira.17
+	building = nuclear_reactor
+		resource = steel
+		amount = 2
 	}
+	modify_building_resources = {
+		building = nuclear_reactor
+		resource = aluminium 
+		amount = 2
+	}
+	modify_building_resources = {
+		building = nuclear_reactor
+		resource = chromium
+		amount = 2
+	}
+	modify_building_resources = {
+		building = nuclear_reactor
+		resource = tungsten
+		amount = 2
+	}
+	modify_building_resources = {
+		building = nuclear_reactor
+		resource = rubber
+		amount = 2
+	}
+	modify_building_resources = {
+		building = nuclear_reactor
+		resource = oil
+		amount = 2
+	}
+	modify_building_resources = {
+		building = nuclear_reactor
+		resource = crystals
+		amount = 2
+	}
+	set_country_flag = BAR_spells_unlocked_7
+	set_country_flag = bar_viira_investigation_step_20
 }
 
 BAR_unlock_spells_8 = {
@@ -1957,6 +2001,8 @@ BAR_unlock_spells_8 = {
 	country_event = {
 		id = barrad_viira.16
 	}
+	set_country_flag = BAR_spells_unlocked_8
+	set_country_flag = bar_viira_investigation_step_21
 }
 BAR_spell_upgrades_prepare = {
 	resize_array = {

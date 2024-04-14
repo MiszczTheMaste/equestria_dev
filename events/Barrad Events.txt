@@ -3416,7 +3416,15 @@ country_event = {
 			is_ai = yes
 		}
 		country_event = {
-			id = barrad_ai.11
+			id = barrad_ai.1
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = bar_skip_boss_fight	
+		}
+		country_event = {
+			id = barrad_ai.2
 		}
 	}
 }
@@ -6949,6 +6957,45 @@ country_event = {
 	}
 	option = {
 		name = barrad_ai.1.a
+	}
+}
+country_event = {
+	id = barrad_ai.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_ai.2"
+	}
+	title = barrad_ai.2.t
+	desc = barrad_ai.2.d
+	is_triggered_only = yes
+	option = {
+		name = barrad_ai.2.a
+		barrad_kill_viira = yes
+		load_focus_tree = barrad_focus_tree_asinti
+	}
+	option = {
+		name = barrad_ai.2.a
+		barrad_kill_viira = yes
+		load_focus_tree = barrad_focus_tree_silver
+	}
+	option = {
+		name = barrad_ai.2.a
+		barrad_kill_viira = yes
+		load_focus_tree = barrad_focus_tree_leopold
+	}
+	option = {
+		name = barrad_ai.2.a
+		barrad_kill_leopold = yes
+		barrad_kill_asinti = yes
+		barrad_kill_silver = yes
+		load_focus_tree = barrad_focus_tree_goddess_viira
+	}
+	option = {
+		name = barrad_ai.2.a
+		barrad_kill_leopold = yes
+		barrad_kill_asinti = yes
+		barrad_kill_silver = yes
+		barrad_kill_viira = yes
+		load_focus_tree = barrad_focus_tree_sane_ambrosius
 	}
 }
 

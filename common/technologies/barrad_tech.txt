@@ -2298,4 +2298,18 @@ technologies = {
 			}
 		}
 	}
+
+	BAR_plains_experts = {
+		research_cost = 1
+		allow = {
+			always = no
+		}
+		category_army = {
+			plains = {
+				movement = 0.1
+				attack = 0.15
+				defence = 0.15
+			}
+		}
+	}
 }

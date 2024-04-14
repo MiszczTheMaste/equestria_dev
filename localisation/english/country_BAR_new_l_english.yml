@@ -1,5 +1,142 @@
 ﻿l_english:
 
+   #####                                          
+  #       ####  #    # #    # ##### #####  #   # 
+  #      #    # #    # ##   #   #   #    #  # #  
+  #      #    # #    # # #  #   #   #    #   #   
+  #      #    # #    # #  # #   #   #####    #   
+  #      #    # #    # #   ##   #   #   #    #   
+   #####  ####   ####  #    #   #   #    #   #   
+
+  # party names
+  BAR_neutrality_party:0 "Wittenland Loyalists"
+  BAR_communism_party:0 "Sixth Column"
+  BAR_democratic_party:0 "Unification Front"
+  BAR_fascism_party:0 "The Pentarchy"
+  BAR_asinti_rule:0 "Asinti's Followers"
+  BAR_elysium_confederation:0 "Elysium Confederation"
+  BAR_barradian_army:0 "Barradian Army"
+
+
+  ### Country Names ###
+  BAR_neutrality:0 "County of Barrad"
+  BAR_fascism:0 "Barrad Magocracy"
+  BAR_communism:0 "Commune of Barrad"
+  BAR_democratic:0 "Barradian Republic"
+  BAR_neutrality_DEF:0 "the County of Barrad"
+  BAR_fascism_DEF:0 "the Barrad Magocracy"
+  BAR_communism_DEF:0 "the Commune of Barrad"
+  BAR_democratic_DEF:0 "the Barradian Republic"
+  BAR_fascism_ADJ:0 "Barradian"
+  BAR_democratic_ADJ:0 "Barradian"
+  BAR_neutrality_ADJ:0 "Barradian"
+  BAR_communism_ADJ:0 "Barradian"
+
+  BAR_grand_county_neutrality:0 "Grand County of Barrad"
+  BAR_grand_county_fascism:0 "Greater Barrad Magocracy"
+  BAR_grand_county_communism:0 "Barradian Soviet Republic"
+  BAR_grand_county_democratic:0 "Grand Barrad Republic"
+  BAR_grand_county_neutrality_DEF:0 "the Grand County of Barrad"
+  BAR_grand_county_fascism_DEF:0 "the Greater Barrad Magocracy"
+  BAR_grand_county_communism_DEF:0 "the Barradian Soviet Republic"
+  BAR_grand_county_democratic_DEF:0 "the Grand Barrad Republic"
+  BAR_grand_county_fascism_ADJ:0 "Barradian"
+  BAR_grand_county_democratic_ADJ:0 "Barradian"
+  BAR_grand_county_neutrality_ADJ:0 "Barradian"
+  BAR_grand_county_communism_ADJ:0 "Barradian"
+
+  BAR_WIT_neutrality:0 "Kingdom of Wittenland"
+  BAR_WIT_fascism:0 "Kingdom of Wittenland"
+  BAR_WIT_communism:0 "Wittenlandic Soviet Republics"
+  BAR_WIT_democratic:0 "Grand Wittenland Republic"
+  BAR_WIT_neutrality_DEF:0 "the Kingdom of Wittenland"
+  BAR_WIT_fascism_DEF:0 "the Kingdom of Wittenland"
+  BAR_WIT_communism_DEF:0 "the Wittenlandic Soviet Republics"
+  BAR_WIT_democratic_DEF:0 "the Grand Wittenland Republic"
+  BAR_WIT_fascism_ADJ:0 "Wittenlandic"
+  BAR_WIT_democratic_ADJ:0 "Wittenlandic"
+  BAR_WIT_neutrality_ADJ:0 "Wittenlandic"
+  BAR_WIT_communism_ADJ:0 "Wittenlandic"
+
+  BAR_WIT_magocracy_neutrality:0 "Wittenland Magocracy"
+  BAR_WIT_magocracy_fascism:0 "Wittenland Magocracy"
+  BAR_WIT_magocracy_communism:0 "Wittenlandic Soviet Republics"
+  BAR_WIT_magocracy_democratic:0 "Wittenland Magocracy"
+  BAR_WIT_magocracy_neutrality_DEF:0 "the Wittenland Magocracy"
+  BAR_WIT_magocracy_fascism_DEF:0 "the Wittenland Magocracy"
+  BAR_WIT_magocracy_communism_DEF:0 "the Wittenlandic Soviet Republics"
+  BAR_WIT_magocracy_democratic_DEF:0 "the Wittenland Magocracy"
+  BAR_WIT_magocracy_fascism_ADJ:0 "Wittenlandic"
+  BAR_WIT_magocracy_democratic_ADJ:0 "Wittenlandic"
+  BAR_WIT_magocracy_neutrality_ADJ:0 "Wittenlandic"
+  BAR_WIT_magocracy_communism_ADJ:0 "Wittenlandic"
+
+  BAR_WIT_magocracy_rivfed_neutrality:0 "Wittenland Magocracy"
+  BAR_WIT_magocracy_rivfed_fascism:0 "Wittenland Magocracy"
+  BAR_WIT_magocracy_rivfed_communism:0 "Wittenlandic Soviet Republics"
+  BAR_WIT_magocracy_rivfed_democratic:0 "Wittenland Magocracy"
+  BAR_WIT_magocracy_rivfed_neutrality_DEF:0 "the Wittenland Magocracy"
+  BAR_WIT_magocracy_rivfed_fascism_DEF:0 "the Wittenland Magocracy"
+  BAR_WIT_magocracy_rivfed_communism_DEF:0 "the Wittenlandic Soviet Republics"
+  BAR_WIT_magocracy_rivfed_democratic_DEF:0 "the Wittenland Magocracy"
+  BAR_WIT_magocracy_rivfed_fascism_ADJ:0 "Wittenlandic"
+  BAR_WIT_magocracy_rivfed_democratic_ADJ:0 "Wittenlandic"
+  BAR_WIT_magocracy_rivfed_neutrality_ADJ:0 "Wittenlandic"
+  BAR_WIT_magocracy_rivfed_communism_ADJ:0 "Wittenlandic"
+
+  BAR_WIT_high_kingdom_neutrality:0 "High Kingdom of Wittenland"
+  BAR_WIT_high_kingdom_fascism:0 "High Kingdom of Wittenland"
+  BAR_WIT_high_kingdom_communism:0 "Grand Republic of Wittenland"
+  BAR_WIT_high_kingdom_democratic:0 "High Kingdom of Wittenland"
+  BAR_WIT_high_kingdom_neutrality_DEF:0 "the High Kingdom of Wittenland"
+  BAR_WIT_high_kingdom_fascism_DEF:0 "the High Kingdom of Wittenland"
+  BAR_WIT_high_kingdom_communism_DEF:0 "the Grand Republic of Wittenland"
+  BAR_WIT_high_kingdom_democratic_DEF:0 "the High Kingdom of Wittenland"
+
+  BAR_rivfed_neutrality:0 "Riverland Magocracy"
+  BAR_rivfed_fascism:0 "Riverland Magocracy"
+  BAR_rivfed_communism:0 "Riverland Union"
+  BAR_rivfed_democratic:0 "Riverland Magocracy"
+  BAR_rivfed_neutrality_DEF:0 "the Riverland Magocracy"
+  BAR_rivfed_fascism_DEF:0 "the Riverland Magocracy"
+  BAR_rivfed_communism_DEF:0 "the Riverland Union"
+  BAR_rivfed_democratic_DEF:0 "the Riverland Magocracy"
+  BAR_rivfed_fascism_ADJ:0 "Riverlander"
+  BAR_rivfed_democratic_ADJ:0 "Riverlander"
+  BAR_rivfed_neutrality_ADJ:0 "Riverlander"
+  BAR_rivfed_communism_ADJ:0 "Riverlander"
+
+  BAR_viira_fascism:0 "Viirad"
+  BAR_viira_fascism_DEF:0 "Viirad"
+  BAR_viira_fascism_ADJ:0 "Viiradian"
+
+  BAR_leopold_fascism:0 "Barrad Directory"
+  BAR_leopold_fascism_DEF:0 "the Barrad Directory"
+  BAR_leopold_fascism_ADJ:0 "Barradian"
+
+  BAR_leopold_empire_fascism:0 "Griffonian Empire"
+  BAR_leopold_empire_fascism_DEF:0 "the Griffonian Empire"
+  BAR_leopold_empire_fascism_ADJ:0 "Griffonian"
+
+  BAR_free_state_communism:0 "Mountain Free State"
+  BAR_free_state_communism_DEF:0 "the Mountain Free State"
+  BAR_free_state_communism_ADJ:0 "Free State"
+
+  BAR_RIV_neutrality:0 "Great Principality of Riverlands"
+  BAR_RIV_fascism:0 "Riverlands"
+  BAR_RIV_communism:0 "Riverland Union"
+  BAR_RIV_democratic:0 "Riverland Federation"
+  BAR_RIV_neutrality_DEF:0 "the Great Principality of Riverlands"
+  BAR_RIV_fascism_DEF:0 "the Riverlands"
+  BAR_RIV_communism_DEF:0 "the Riverland Union"
+  BAR_RIV_democratic_DEF:0 "the Riverland Federation"
+  BAR_RIV_fascism_ADJ:0 "Riverlander"
+  BAR_RIV_democratic_ADJ:0 "Riverlander"
+  BAR_RIV_neutrality_ADJ:0 "Riverlander"
+  BAR_RIV_communism_ADJ:0 "Riverlander"
+
+
+
   ######                                                
   #     # ######  ####  #  ####  #  ####  #    #  ####  
   #     # #      #    # # #      # #    # ##   # #      
@@ -64,6 +201,7 @@
   decision_cost_500_guns:0 "£infequip_text §Y500§!"
   decision_cost_500_guns_blocked:0 "£infequip_text §R500§!"
 
+
   #     #                  #####                                 
   ##    #   ##   #####    #     # #####  # #####  # #####  ####  
   # #   #  #  #    #      #       #    # # #    # #   #   #      
@@ -98,17 +236,17 @@
 
 
   bar_sane_ambrosius_balance:0 "Cult Influence"
-  bar_sane_ambrosius_mysticism:0 "Spiritual"
-  bar_sane_ambrosius_mysticism_low:0 "Moderate Skepticism"
+  bar_sane_ambrosius_mysticism:0 "The Cult"
+  bar_sane_ambrosius_mysticism_low:0 "Moderate Cult Influence"
   bar_sane_ambrosius_mysticism_widespread:0 "Mystical Revelation"
   bar_sane_ambrosius_mysticism_unrelenting_faith:0 "Connection with the Consciousness"
   bar_sane_ambrosius_mysticism_faith_above_all:0 "The Word Became Flesh"
-  bar_sane_ambrosius_legalism:0 "Flesh"
-  bar_sane_ambrosius_legalism_low:0 "Focus on Earthly Matters"
-  bar_sane_ambrosius_legalism_moderate:0 "Skeptical Rationalism"
-  bar_sane_ambrosius_legalism_hardline:0 "A Non-Mere Nortal"
+  bar_sane_ambrosius_legalism:0 "Ambrosius"
+  bar_sane_ambrosius_legalism_low:0 "Low Ambrosius Influence"
+  bar_sane_ambrosius_legalism_moderate:0 "Focus on Earthly Matters"
+  bar_sane_ambrosius_legalism_hardline:0 "High Ambrosius Influence"
   bar_sane_ambrosius_legalism_dura_lex_sed_lex:0 "The Flesh Spoke Words"
-  bar_sane_ambrosius_balance_balanced:0 "Undecided"
+  bar_sane_ambrosius_balance_balanced:0 "Uneasy Balance"
 
 
 
@@ -158,6 +296,8 @@
   bar_commander_clockwerk:0 "Commanding Clockworks"
   bar_weak_clockwerk:0 "Crude Clockworks"
   bar_ok_clockwerk:0 "Military Clockworks"
+
+  #tech tooltips
   BAR_clockwerks_upgrade_org_tooltip:0 "All Infantry Clockworks \n     Organisation: §G+10§!\n     Reliability: §G+10%§!"
   BAR_clockwerks_combat_width_tooltip:0 "All Infantry Clockworks \n     Combat Witdth: §G-0.5§!"
   BAR_clockwerks_combat_attack_tooltip:0 "All Infantry Clockworks \n     Soft Attack: §G+15%§!\n     Hard Attack: §G+15%§!"
@@ -166,9 +306,8 @@
   BAR_clockwerks_terrain_upgrade_tooltip:0 "All Infantry Clockworks\n     Hills\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     Mountains\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     Marshes\n          Movement: §G+25%§!\n          Attack: §G+25%§!\n     River\n          Movement: §G+25%§!\n          Attack: §G+25%§!"
   BAR_friend_mountain_buff_tooltip:0 "All Infantry\n     Hills\n          Movement: §G+10%§!\n          Attack: §G+10%§!\n          Defense: §G+30%§!\n     Mountains\n          Movement: §G+20%§!\n          Attack: §G+15%§!\n          Defense: §G+30%§!"
 
-  FOCUS_FILTER_LEOPOLD_ASCESION:0 "Leopold's Final Ascesion"
-  FOCUS_FILTER_PATCH_OF_WRATCH:0 "Patch of Wratch"
-
+  
+  BAR_plains_experts_tooltip:0 "Army\n     Plains\n          Movement: §G+10%§!\n          Attack: §G+15%§!\n          Defense: §G+15%§!"
 
 
   ########  #######   ######  ##     ##  ######  ########  ######  
@@ -659,7 +798,11 @@
             #       #      #    # #####  #    # #      #    # 
             #       #      #    # #      #    # #      #    # 
             ####### ######  ####  #       ####  ###### #####  
-                                                   
+
+
+
+  FOCUS_FILTER_LEOPOLD_ASCESION:0 "Leopold's Final Ascesion"
+  FOCUS_FILTER_PATCH_OF_WRATCH:0 "Patch of Wratch"
 
 
   BAR_leopold_children_of_wrath:0 "Foals of Wrath"
@@ -1081,7 +1224,7 @@
   BAR_amb_connect_realms:0 "Into the Gryphus"
   BAR_amb_free_city:0 "A Free City"
   BAR_amb_fate_of_the_order:0 "Fate of the Order"
-  BAR_amb_adapt_old_imperial_bureaucracy:0 "Imperial Inspirations"
+  BAR_amb_adapt_old_imperial_bureaucracy:0 "Adopt Old Imperial Administration"
   BAR_amb_all_hail_liberator:0 "The Liberator"
   BAR_amb_oil_extraction:0 "Oil Extraction"
   BAR_amb_integrate_gryphus:0 "Integrate Gryphus"
@@ -1108,15 +1251,11 @@
   BAR_amb_fortify_border:0 "Fortify the Border"
   BAR_amb_military_build_up:0 "Rapid Military Buildup"
   BAR_amb_unite_south:0 "Unite High-Kingdom"
-  BAR_amb_kasa_build_1:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
-  BAR_amb_kasa_build_2:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
-  BAR_amb_kasa_build_3:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
-  BAR_amb_kasa_build_4:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
+  BAR_amb_kasa_build:0 "Expand Bymnonian Industry"
+  BAR_amb_kasa_build_1:0 "Rebuild Fireshore"
   BAR_amb_core_kasa:0 "Curtain Kasan Autonomy"
-  BAR_amb_olv_build_1:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
-  BAR_amb_olv_build_2:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
-  BAR_amb_olv_build_3:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
-  BAR_amb_olv_build_4:0 "#TODO: i have no idea how to name it bc its needed only for gameplay purpose"
+  BAR_amb_olv_build:0 "Military Production Consolidation"
+  BAR_amb_olv_build_1:0 "War Preparation"
   BAR_amb_core_olv:0 "Curtain Austurland Autonomy"
   BAR_amb_attack_wit:0 "Wittenland Preemptive Strike"
   BAR_amb_claim_wit_crown:0 "Right of Conquest"
@@ -1371,7 +1510,6 @@
           #     #  ####  # #    #   #   # 
                                         
 
-
   barrad_asinti.6.t:0 "REPLACE_ME"
   barrad_asinti.6.d:0 "#TODO: initial event in focus tree, asinti gets his fellow zebra followers (he also is kinda running a small cult) and prepare ritual to summon the demon in asinti head"
   barrad_asinti.6.a:0 "REPLACE_ME"
@@ -1615,6 +1753,58 @@
   barrad_viira.16.t:0 "The end?"
   barrad_viira.16.d:0 "#TODO: Viira is so high on magic and ancient knowledge that she leaves the material world in front of the seer she found in one of the events and Gąsienica. Both of them can head her disembodied voice, she still looks over her servants but now more like a real god. (this is ending event)"
   barrad_viira.16.a:0 ""
+
+
+
+              #####                                                     
+            #     #   ##   #####   ####  #    #  ####  # #    #  ####  
+            #        #  #  #    # #    # #    # #      # ##   # #    # 
+            #       #    # #    # #    # #    #  ####  # # #  # #      
+            #       ###### #####  #    # #    #      # # #  # # #  ### 
+            #     # #    # #   #  #    # #    # #    # # #   ## #    # 
+              #####  #    # #    #  ####   ####   ####  # #    #  ####  
+                                                                        
+  barrad_leopold_carousing.1.t:0 "Carousing With Viira"
+  barrad_leopold_carousing.1.d:0 "One day, Leopold stopped by to have a friendly chat with Viira. The two got along nicely, and she peppered him with questions about magical-technological augmentation, soaking in his vast knowledge. Leopold was gracious, and then..."
+  barrad_leopold_carousing.1.a:0 "...praised Viira."
+  barrad_leopold_carousing.1.b:0 "...turned to the other Magistrates..."
+
+  barrad_leopold_carousing.11.t:0 "Carousing With Viira"
+  barrad_leopold_carousing.11.d:0 "Eventually the conversation turned to their fellow Magistrates. Viira expressed her own opinions about all of them, but was curious to hear Leopold's thoughts. He considered his relations with them carefully, and then..."
+  barrad_leopold_carousing.11.a:0 "...Leopold slandered Asinti."
+  barrad_leopold_carousing.11.b:0 "...Leopold praised Asinti."
+  barrad_leopold_carousing.11.c:0 "...Leopold praised Asinti."
+  barrad_leopold_carousing.11.e:0 "...Leopold slandered Silver Star."
+  barrad_leopold_carousing.11.f:0 "...Leopold praised Silver Star."
+  barrad_leopold_carousing.11.g:0 "...Leopold praised Silver Star."
+
+  barrad_leopold_carousing.2.t:0 "Carousing With Asinti"
+  barrad_leopold_carousing.2.d:0 "One day, Leopold stopped by to have a friendly chat with Asinti. After a rocky start, the two bonded over their shared outcast status, with Asinti coming to appreciate Leopold's unique intellect. Leopold was gracious, and then..."
+  barrad_leopold_carousing.2.a:0 "...praised Asinti."
+  barrad_leopold_carousing.2.b:0 "...turned to the other Magistrates..."
+
+  barrad_leopold_carousing.22.t:0 "Carousing With Asinti"
+  barrad_leopold_carousing.22.d:0 "Eventually the conversation turned to their fellow Magistrates. Asinti expressed his own opinions about all of them, but was curious to hear Leopold's thoughts. He considered his relations with them carefully, and then..."
+  barrad_leopold_carousing.22.a:0 "...Leopold slandered Viira."
+  barrad_leopold_carousing.22.b:0 "...Leopold praised Viira."
+  barrad_leopold_carousing.22.c:0 "...Leopold praised Viira."
+  barrad_leopold_carousing.22.e:0 "...Leopold slandered Silver Star."
+  barrad_leopold_carousing.22.f:0 "...Leopold praised Silver Star."
+  barrad_leopold_carousing.22.g:0 "...Leopold praised Silver Star."
+
+  barrad_leopold_carousing.3.t:0 "Carousing With Silver Star"
+  barrad_leopold_carousing.3.d:0 "One day, Leopold stopped by to have a friendly chat with Silver Star. Despite their past disagreements, the two reconciled and agreed to put the past behind them. Silver Star went so far as to begrudgingly express admiration for Leopold's magical and mechanical knowledge. Leopold was gracious, and then..."
+  barrad_leopold_carousing.3.a:0 "...praised Silver Star."
+  barrad_leopold_carousing.3.b:0 "...turned to the other Magistrates..."
+
+  barrad_leopold_carousing.33.t:0 "Carousing With Silver Star"
+  barrad_leopold_carousing.33.d:0 "Eventually the conversation turned to their fellow Magistrates. Silver Star expressed his own opinions about all of them, but was curious to hear Leopold's thoughts. He considered his relations with them carefully, and then..."
+  barrad_leopold_carousing.33.a:0 "...Leopold slandered Viira."
+  barrad_leopold_carousing.33.b:0 "...Leopold praised Viira."
+  barrad_leopold_carousing.33.c:0 "...Leopold praised Viira."
+  barrad_leopold_carousing.33.e:0 "...Leopold slandered Asinti."
+  barrad_leopold_carousing.33.f:0 "...Leopold praised Asinti."
+  barrad_leopold_carousing.33.g:0 "...Leopold praised Asinti."
 
 
  ###                          #####                

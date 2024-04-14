@@ -11431,12 +11431,16 @@ bar_sane_ambrosius_balance_category = {
 		allowed = { 
 			original_tag = BAR 
 		} 
-		cost = 80
+		cost = 100
 		days_remove = 29
 		fire_only_once = yes
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_mercenaries"
 			add_manpower = 10000
+			add_power_balance_value = {
+				id = bar_sane_ambrosius_balance
+				value = 0.03
+			}
 		}
 	}	
 }

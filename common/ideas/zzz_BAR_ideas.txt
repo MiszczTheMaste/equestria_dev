@@ -961,6 +961,13 @@ ideas = {
 				army_leader_start_planning_level = 1 
 			}
 		}
+		BAR_cult_in_high_places_idea = {
+			picture = chi_wargaming_division
+			modifier = {
+				conscription_factor = 0.05
+				political_power_factor = 0.25
+			}
+		}
 		BAR_royal_university = {
 			picture = chi_wargaming_division
 			modifier = {

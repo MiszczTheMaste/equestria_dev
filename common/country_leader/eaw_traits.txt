@@ -4154,6 +4154,13 @@ apn_time_queen= {
 		conscription = 0.025
 		conscription_factor = 0.3
 	}
+	BAR_amb_title_lifetime_warrior = {
+		random = no
+		army_morale_factor = 0.05
+		conscription = 0.025
+		conscription_factor = 0.3
+		political_power_factor = 0.25
+	}
 	BAR_first_president = {
 		random = no
 		stability_factor = 0.1

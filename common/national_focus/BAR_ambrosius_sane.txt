@@ -1986,7 +1986,7 @@ focus_tree = {
 			focus = BAR_amb_grand_county
 		}
 		completion_reward = {
-			country_event = { id = bar_sane_ambrosius.1005 }
+			increase_society_development_gradual = yes
 		}
 	}
 	focus = {
@@ -2031,7 +2031,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_amb_shield_from_god
+		id = BAR_amb_cult_crackdown
 		icon = GFX_goal_ITA_urban
 		cost = 3
 		x = 0
@@ -2080,7 +2080,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_amb_awaiting_peneance
+		id = BAR_amb_awaiting_penance
 		icon = GFX_goal_ITA_urban
 		cost = 3
 		x = 0
@@ -2177,9 +2177,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		relative_position_id = BAR_amb_shield_from_god
+		relative_position_id = BAR_amb_cult_crackdown
 		prerequisite = {
-			focus = BAR_amb_shield_from_god
+			focus = BAR_amb_cult_crackdown
 		}
 		completion_reward = {
 			increase_science_base = yes
@@ -3334,7 +3334,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_amb_giving_free_hoof
-			focus = BAR_amb_awaiting_peneance
+			focus = BAR_amb_awaiting_penance
 			focus = BAR_amb_guided_by_magic
 		}
 		completion_reward = {

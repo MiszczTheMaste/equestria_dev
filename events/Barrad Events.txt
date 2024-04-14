@@ -5646,7 +5646,7 @@ country_event = {
 						value > 0.89
 					}
 				}
-				country_event = { id = bar_sane_ambrosius.1009 days = 7}
+				country_event = { id = bar_sane_ambrosius.1009 days = 7 }
 			} else_if = { #cultists democracy
 				limit = {
 					power_balance_value = {
@@ -5654,19 +5654,19 @@ country_event = {
 						value < 0.89
 					}
 				}
-				country_event = { id = bar_sane_ambrosius.1010 days = 7}
+				country_event = { id = bar_sane_ambrosius.1010 days = 7 }
 			} else = { #regular party system
-				country_event = { id = bar_sane_ambrosius.1011 days = 7}
+				country_event = { id = bar_sane_ambrosius.1011 days = 7 }
 			}
 		} else = { #kingdom ending
-			if = { #duels for crown continue
+			if = { #gąsienica becomes regent for life as nobody makes claim for crown
 				limit = {
 					power_balance_value = {
 						id = bar_sane_ambrosius_balance
 						value > 0.89
 					}
-				}
-				country_event = { id = bar_sane_ambrosius.1012 days = 7}
+				} 
+				country_event = { id = bar_sane_ambrosius.1012 days = 7 }
 			} else_if = { #cultist monarch
 				limit = {
 					power_balance_value = {
@@ -5674,53 +5674,10 @@ country_event = {
 						value < 0.89
 					}
 				}
-				country_event = { id = bar_sane_ambrosius.1013 days = 7}
-			} else = { #gąsienica continues despotic rule
-				country_event = { id = bar_sane_ambrosius.1014 days = 7}
+				country_event = { id = bar_sane_ambrosius.1013 days = 7 }
+			} else = { #duels for crown continue
+				country_event = { id = bar_sane_ambrosius.1014 days = 7 }
 			}
-		}
-	}
-}
-
-country_event = {
-	id = bar_sane_ambrosius.8	#ask kasa for their poniez
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.8"
-	}
-	title = bar_sane_ambrosius.8.t
-	desc = bar_sane_ambrosius.8.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.8.a		#fok off
-		BAR = {
-			country_event = {
-				id = bar_sane_ambrosius.81
-				days = 14
-			}
-		}
-	}
-}
-
-country_event = {
-	id = bar_sane_ambrosius.81
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.81"
-	}
-	title = bar_sane_ambrosius.81.t
-	desc = bar_sane_ambrosius.81.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.81.a
-		add_political_power = -100
-		add_stability = -0.1
-	}
-	option = {
-		name = bar_sane_ambrosius.81.b		#fok you
-		declare_war_on = {
-			target = ZES
-			type = annex_everything
 		}
 	}
 }
@@ -5739,8 +5696,22 @@ country_event = {
 		
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
-			value = -0.1
+			value = -0.25
 		}
+		set_technology = {
+			tech_knights = 1
+		}
+		set_technology = {
+			tech_knights2 = 1
+		}
+		set_technology = {
+			tech_knights_magical = 1
+		}
+		set_technology = {
+			tech_knights_magical2 = 1
+		}
+
+		add_political_power = -100
 	}
 	option = {
 		name = bar_sane_ambrosius.1001.b
@@ -5748,6 +5719,19 @@ country_event = {
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
 			value = 0.1
+		}
+		
+		set_technology = {
+			tech_knights = 1
+		}
+		set_technology = {
+			tech_knights2 = 1
+		}
+		set_technology = {
+			tech_knights_regular = 1
+		}
+		set_technology = {
+			tech_knights_regular2 = 1
 		}
 	}
 }
@@ -5766,7 +5750,7 @@ country_event = {
 		
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
-			value = -0.1
+			value = 0.1
 		}
 	}
 	option = {
@@ -5774,7 +5758,7 @@ country_event = {
 		
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
-			value = 0.1
+			value = -0.1
 		}
 	}
 }
@@ -5794,49 +5778,9 @@ country_event = {
 			id = bar_sane_ambrosius_balance
 			value = -0.05
 		}
-
-		hidden_effect = {
-			country_event = { days = 16 id = bar_sane_ambrosius.1004 }
-		}
 	}
 }
-country_event = { #rachunek sumienia
-	id = bar_sane_ambrosius.1004
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1004"
-	}
-	title = bar_sane_ambrosius.1004.t
-	desc = bar_sane_ambrosius.1004.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1004.a
-
-		add_power_balance_value = {
-			id = bar_sane_ambrosius_balance
-			value = -0.1
-		}
-	}
-}
-country_event = { #ambrosius się zastanawia czy to co robią jest warte tego że ludzie giną, + pierdolenie o wolności równości i innych
-	id = bar_sane_ambrosius.1005
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1005"
-	}
-	title = bar_sane_ambrosius.1005.t
-	desc = bar_sane_ambrosius.1005.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1005.a
-		add_power_balance_value = {
-			id = bar_sane_ambrosius_balance
-			value = -0.05
-		}
-		increase_society_development_gradual = yes
-	}
-}
-country_event = { #ambrosius rozkimnia jak by go można było zastąpić i że najlepiej chyba jak będzie głosowanie
+country_event = { 
 	id = bar_sane_ambrosius.1006
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1006"
@@ -5849,18 +5793,18 @@ country_event = { #ambrosius rozkimnia jak by go można było zastąpić i że n
 		name = bar_sane_ambrosius.1006.a
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
-			value = -0.05
+			value = 0.05
 		}
 	}	
 	option = {
-		name = bar_sane_ambrosius.1006.a
+		name = bar_sane_ambrosius.1006.b
 		add_power_balance_value = {
 			id = bar_sane_ambrosius_balance
-			value = 0.05
+			value = -0.05
 		}
 	}
 }
-country_event = { #ambrosius ułakawia generałów
+country_event = { 
 	id = bar_sane_ambrosius.1007
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1007"

@@ -731,7 +731,7 @@ focus_tree = {
 			} else = {
 				swap_ideas = {
 					remove_idea = BAR_viira_manpower1_idea
-					add_idea = BAR_viira_manpower2
+					add_idea = BAR_viira_manpower2_idea
 				}
 			}
 		}
@@ -1488,6 +1488,186 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 			FOCUS_FILTER_MANPOWER
+		}
+	}
+	focus = {
+		id = BAR_commandments_sacrifice_for_the_cause
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = -6
+		y = 5
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_sacrifice_for_the_cause_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_faith_primacy
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = -5
+		y = 4
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_faith_primacy_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_ritual_enlightment
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = -4
+		y = 3
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_ritual_enlightment_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_asceticism
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = -3
+		y = 2
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_asceticism_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_piety_of_work
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = -2
+		y = 1
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_piety_of_work_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_redempt_sins
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_redempt_sins_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_servitude_or_death
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 3
+		y = 2
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_servitude_or_death_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_sacred_insanity
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 4
+		y = 3
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_sacred_insanity_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_cult_of_progress
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 5
+		y = 4
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_cult_of_progress_idea
+			BAR_merge_commandments = yes
+		}
+	}
+	focus = {
+		id = BAR_commandments_holy_commune
+		icon = GFX_goal_revolution_pony
+		cost = 7
+		x = 6
+		y = 5
+		relative_position_id = BAR_viira_manpower4
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_viira_manpower4
+		}
+		completion_reward = {
+			add_ideas = BAR_commandments_holy_commune_idea
+			BAR_merge_commandments = yes
 		}
 	}
 }

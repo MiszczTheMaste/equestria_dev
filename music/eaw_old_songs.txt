@@ -428,14 +428,6 @@ music = {
 		}
 	}
 }
-#### Barrad ####
-music = {
-	song = "DST-Darkess_extended"
-
-	chance = {
-		factor = 0
-	}
-}
 music = {
 	song = "WH40K-Chaos-Gate_Ultramarines-Chant"
 	chance = {

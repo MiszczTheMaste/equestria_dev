@@ -1308,7 +1308,18 @@ BAR_pen_fight_ai_turn = {
 				has_country_flag = bar_fight_viira_side
 			}
 			log = "[GetDateText]: [Root.GetName]: pen fight pentarchy next round"
-			BAR_pentarchy_turn = yes
+			if = {
+				limit = {
+					check_variable = {
+						v_hp > 0
+					}
+				}
+				BAR_pentarchy_turn = yes
+			} else = {
+				country_event = {
+					id = barrad_viira_fight.9
+				}
+			}
 		}
 		bar_pen_fight_gui_reload = yes
 	}

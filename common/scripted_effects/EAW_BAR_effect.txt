@@ -1406,6 +1406,12 @@ barrad_kill_silver = {
 }
 
 barrad_kill_viira = {
+	barrad_kill_viira_no_ending_check = yes
+	hidden_effect = {
+		BAR_pentarchy_is_dead = yes
+	}
+}
+barrad_kill_viira_no_ending_check = {
 	hidden_effect = {
 		clr_country_flag = barrad_viira_alive
 		if = {
@@ -1451,7 +1457,6 @@ barrad_kill_viira = {
 		set_variable = {
 			bar_expedition_members^4 = 1
 		}
-		BAR_pentarchy_is_dead = yes
 	}
 }
 
@@ -1958,11 +1963,11 @@ BAR_unlock_spells_6 = {
 
 BAR_unlock_spells_7 = {
 	#conjure resources
-	building = nuclear_reactor
-		resource = steel
-		amount = 2
-	}
 	modify_building_resources = {
+		building = nuclear_reactor
+		resource = aluminium 
+		amount = 2
+	}modify_building_resources = {
 		building = nuclear_reactor
 		resource = aluminium 
 		amount = 2

@@ -697,9 +697,11 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			WIT_white_star = {
-				is_country_leader = yes
-			}
+			WIT = {
+				WIT_white_star = {
+					is_country_leader = yes
+				}
+			}	
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_serving_justice
@@ -744,8 +746,10 @@ focus_tree = {
 		}
 		available = {
 			NOT = {
-				WIT_white_star = {
-					is_country_leader = yes
+				WIT = {
+					WIT_white_star = {
+						is_country_leader = yes
+					}
 				}
 			}
 		}

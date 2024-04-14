@@ -85,14 +85,6 @@ country_event = {
 	id = bar_cheat.2
 	is_triggered_only = yes
 	option = {
-		name = "ambrosius & viira - machine god"
-		load_focus_tree = barrad_focus_tree_viira
-	}
-	option = {
-		name = "ambrosius bad"
-		load_focus_tree = barrad_focus_tree_mad_ambrosius
-	}
-	option = {
 		name = "ambrosius sane"
 		load_focus_tree = barrad_focus_tree_sane_ambrosius
 	}
@@ -331,7 +323,7 @@ country_event = {
 	}
 	title = barrad_leopold_carousing.1.t
 	desc = barrad_leopold_carousing.1.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_carousing
 	is_triggered_only = yes
 	option = {
 		#default
@@ -362,7 +354,7 @@ country_event = {
 	}
 	title = barrad_leopold_carousing.11.t
 	desc = barrad_leopold_carousing.11.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_carousing
 	is_triggered_only = yes
 	option = {
 		#slander asinti
@@ -440,7 +432,7 @@ country_event = {
 	}
 	title = barrad_leopold_carousing.2.t
 	desc = barrad_leopold_carousing.2.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_carousing
 	is_triggered_only = yes
 	option = {
 		#default
@@ -471,7 +463,7 @@ country_event = {
 	}
 	title = barrad_leopold_carousing.22.t
 	desc = barrad_leopold_carousing.22.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_carousing
 	is_triggered_only = yes
 	option = {
 		#slander viira
@@ -549,7 +541,7 @@ country_event = {
 	}
 	title = barrad_leopold_carousing.3.t
 	desc = barrad_leopold_carousing.3.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_carousing
 	is_triggered_only = yes
 	option = {
 		#default
@@ -580,7 +572,7 @@ country_event = {
 	}
 	title = barrad_leopold_carousing.33.t
 	desc = barrad_leopold_carousing.33.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_carousing
 	is_triggered_only = yes
 	option = {
 		#slander viira
@@ -673,7 +665,7 @@ country_event = {
 	}
 	title = bar_silver_star_nightmares.1.t
 	desc = bar_silver_star_nightmares.1.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_nightmare_2
 	is_triggered_only = yes
 	option = {
 		name = bar_silver_star_nightmares.1.a
@@ -692,7 +684,7 @@ country_event = {
 	}
 	title = bar_silver_star_nightmares.1.t
 	desc = bar_silver_star_nightmares.1.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_nightmare_2
 	hidden = yes
 	is_triggered_only = yes
 	option = {
@@ -729,7 +721,7 @@ country_event = {
 	}
 	title = barrad_friends.997.t
 	desc = barrad_friends.997.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_nightmare
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.997.a
@@ -760,7 +752,7 @@ country_event = {
 	}
 	title = barrad_friends.1.t
 	desc = barrad_friends.1.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_blush_confused
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -778,7 +770,7 @@ country_event = {
 	}
 	title = barrad_friends.2.t
 	desc = barrad_friends.2.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_leopold
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -796,7 +788,7 @@ country_event = {
 	}
 	title = barrad_friends.3.t
 	desc = barrad_friends.3.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_asinti
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -814,7 +806,7 @@ country_event = {
 	}
 	title = barrad_friends.4.t
 	desc = barrad_friends.4.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_lost
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -849,7 +841,7 @@ country_event = {
 	}
 	title = barrad_friends.5.t
 	desc = barrad_friends.5.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -871,7 +863,7 @@ country_event = {
 	}
 	title = barrad_friends.6.t
 	desc = barrad_friends.6.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_confused
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -893,7 +885,7 @@ country_event = {
 	}
 	title = barrad_friends.7.t
 	desc = barrad_friends.7.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_iritated
 	is_triggered_only = yes
 	option = {
 		#:)
@@ -909,7 +901,7 @@ country_event = {
 	}
 	title = barrad_friends.8.t
 	desc = barrad_friends.8.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.8.a
@@ -971,7 +963,7 @@ country_event = {
 	}
 	title = barrad_friends.11.t
 	desc = barrad_friends.11.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_cultists_cave
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.11.a
@@ -1002,7 +994,7 @@ country_event = {
 	}
 	title = barrad_friends.13.t
 	desc = barrad_friends.13.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_cry
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.13.a
@@ -1022,7 +1014,7 @@ country_event = {
 	}
 	title = barrad_friends.14.t
 	desc = barrad_friends.14.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_shattered_2
 	is_triggered_only = yes
 	option = {
 		name = barrad_friends.14.a
@@ -1252,7 +1244,7 @@ country_event = {
 	}
 	title = barrad_death.1.t
 	desc = barrad_death.1.d
-	picture = GFX_event_griffon_with_gun
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BAR_silver_immunity
@@ -1304,7 +1296,7 @@ country_event = {
 	}
 	title = barrad_death.2.t
 	desc = barrad_death.2.d
-	picture = GFX_event_griffon_with_gun
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BAR_leopold_immunity
@@ -1356,7 +1348,7 @@ country_event = {
 	}
 	title = barrad_death.3.t
 	desc = barrad_death.3.d
-	picture = GFX_event_griffon_with_gun
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BAR_viira_immunity
@@ -1408,7 +1400,7 @@ country_event = {
 	}
 	title = barrad_death.4.t
 	desc = barrad_death.4.d
-	picture = GFX_event_griffon_with_gun
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BAR_leopold_immunity
@@ -1460,7 +1452,7 @@ country_event = {
 	}
 	title = barrad_death.5.t
 	desc = barrad_death.5.d
-	picture = GFX_event_griffon_with_gun
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BAR_viira_immunity
@@ -1512,7 +1504,7 @@ country_event = {
 	}
 	title = barrad_death.6.t
 	desc = barrad_death.6.d
-	picture = GFX_event_griffon_with_gun
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
 		set_country_flag = BAR_leopold_immunity
@@ -2563,7 +2555,7 @@ country_event = {
 	}
 	title = barrad_first.6.t
 	desc = barrad_first.6.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_confounded
 	is_triggered_only = yes
 	option = {
 		name = barrad_first.6.a
@@ -2890,7 +2882,7 @@ country_event = {
 	}
 	title = barrad_third.4.t
 	desc = barrad_third.4.d
-	picture = GFX_event_cave
+	picture = GFX_event_cultists_cave
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.4.a
@@ -2921,7 +2913,7 @@ country_event = {
 	}
 	title = barrad_third.6.t
 	desc = barrad_third.6.d
-	picture = GFX_event_spook_1
+	picture = GFX_event_ancient_machines
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.6.a
@@ -2936,7 +2928,7 @@ country_event = {
 	}
 	title = barrad_third.61.t
 	desc = barrad_third.61.d
-	picture = GFX_event_spook_1
+	picture = GFX_event_ancient_machines
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.61.a
@@ -2952,7 +2944,7 @@ country_event = {
 	}
 	title = barrad_third.62.t
 	desc = barrad_third.62.d
-	picture = GFX_event_spook_1
+	picture = GFX_event_ancient_machines
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.62.a
@@ -2968,7 +2960,7 @@ country_event = {
 	}
 	title = barrad_third.7.t
 	desc = barrad_third.7.d
-	picture = GFX_event_spook_3
+	picture = GFX_event_vision
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.7.a
@@ -3361,7 +3353,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.1.t
 	desc = barrad_viira_fight.1.d
-	picture = GFX_event_cave
+	picture = GFX_event_reactor_ignition
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -3437,7 +3429,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.2.t
 	desc = barrad_viira_fight.2.d
-	picture = GFX_event_cave
+	picture = GFX_event_bar_viira_closeup
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -3461,37 +3453,6 @@ country_event = {
 }
 
 country_event = {
-	#viira demands pentarchy subjugation
-	id = barrad_viira_fight.21
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_fight.21"
-	}
-	title = barrad_viira_fight.21.t
-	desc = barrad_viira_fight.21.d
-	picture = GFX_event_cave
-	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			play_song = "DST-Darkess_extended"
-		}
-	}
-	option = {
-		#fight - pentarchy side
-		hidden_effect = {
-			bar_fight_initialisation_pentarchy_side = yes
-		}
-		name = barrad_viira_fight.21.a
-	}
-	option = {
-		#bow down
-		name = barrad_viira_fight.21.b
-		country_event = {
-			id = barrad_viira_fight.11
-		}
-	}
-}
-
-country_event = {
 	#test goes smoothly
 	id = barrad_viira_fight.3
 	immediate = {
@@ -3499,7 +3460,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.3.t
 	desc = barrad_viira_fight.3.d
-	picture = GFX_event_cave
+	picture = GFX_event_reactor_ignition
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira_fight.3.a
@@ -3520,97 +3481,12 @@ country_event = {
 	picture = GFX_event_cave
 	is_triggered_only = yes
 	option = {
-		trigger = {
-			check_variable = {
-				BAR_resources_viira > 1999
-			}
-		}
 		name = barrad_viira_fight.4.a
 		hidden_effect = {
 			load_focus_tree = barrad_unhappy_ending
 		}
 		country_event = {
 			id = barrad_viira.1
-		}
-	}
-	option = {
-		trigger = {
-			check_variable = {
-				BAR_resources_viira < 2000
-			}
-		}
-		name = barrad_viira_fight.4.b
-		if = {
-			limit = {
-				has_country_flag = bar_viira_investigation_step_11
-			}
-			hidden_effect = {
-				clr_country_flag = barrad_viira_alive
-				if = {
-					limit = {
-						BAR_viira_lehtola = {
-							is_unit_leader = yes
-						}
-					}
-					remove_unit_leader_role = BAR_viira_lehtola
-				}
-				set_technology = {
-					popup = no
-					barrad_viira_alive = 0
-				}
-				clear_variable = BAR_resources_viira
-				if = {
-					limit = {
-						625 = {
-							is_owned_by = BAR
-						}
-					}
-					set_province_name = {
-						id = 4910
-						name = BAR_axford
-					}
-				}
-				remove_ideas = BAR_relations_leopold_viira_negative
-				remove_ideas = BAR_relations_leopold_viira_positive
-				remove_ideas = BAR_relations_silver_viira_negative
-				remove_ideas = BAR_relations_silver_viira_positive
-				remove_ideas = BAR_relations_asinti_viira_negative
-				remove_ideas = BAR_relations_asinti_viira_positive
-				clr_country_flag = barrad_early_game
-				load_focus_tree = barrad_focus_tree_sane_ambrosius
-				swap_ideas = {
-					remove_idea = BAR_pentarchy
-					add_idea = BAR_pentarchy_enemy
-				}
-				add_country_leader_role = {
-					character = BAR_angrier_mob
-					promote_leader = yes
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = kratokracy
-					}
-				}
-				set_politics = {
-					ruling_party = neutrality
-				}
-				set_party_name = {
-					ideology = neutrality
-					name = BAR_ambrosius_party_name
-					long_name = BAR_ambrosius_party_name
-				}
-				add_country_leader_role = {
-					character = BAR_count_ambrosius
-					promote_leader = yes
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = despotism
-					}
-				}
-			}
-		}
-		else = {
-			barrad_kill_viira = yes
-			load_focus_tree = barrad_focus_tree_mad_ambrosius
 		}
 	}
 }
@@ -3623,7 +3499,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.6.t
 	desc = barrad_viira_fight.6.d
-	picture = GFX_event_spook_3
+	picture = GFX_event_bar_viira_closeup
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira_fight.6.a
@@ -3644,7 +3520,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.61.t
 	desc = barrad_viira_fight.61.d
-	picture = GFX_event_cave
+	picture = GFX_event_bar_viira_closeup_2
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira_fight.61.a
@@ -3779,9 +3655,8 @@ country_event = {
 	option = {
 		name = barrad_viira_fight.73.a
 		hidden_effect = {
-			BAR_add_gasienica_as_commander = yes
 			clr_country_flag = barrad_early_game
-			load_focus_tree = barrad_focus_tree_mad_ambrosius
+			load_focus_tree = barrad_focus_tree_sane_ambrosius
 		}
 	}
 }
@@ -3838,7 +3713,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.9.t
 	desc = barrad_viira_fight.9.d
-	picture = GFX_event_spook_3
+	picture = GFX_event_bar_viira_closeup_2
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira_fight.9.a
@@ -3859,7 +3734,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.91.t
 	desc = barrad_viira_fight.91.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_bar_viira_closeup
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira_fight.91.a
@@ -3895,25 +3770,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	#viira prevails
-	id = barrad_viira_fight.11
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_fight.11"
-	}
-	title = barrad_viira_fight.11.t
-	desc = barrad_viira_fight.11.d
-	picture = GFX_event_cave
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_fight.11.a
-		hidden_effect = {
-			country_event = {
-				id = barrad_viira.1
-			}
-		}
-	}
-}
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -5175,13 +5031,18 @@ country_event = {
 	}
 	title = barrad_viira.1.t
 	desc = barrad_viira.1.d
-	picture = GFX_event_cave
+	picture = GFX_event_reactor_ignition
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira.1.a
 		trigger = {
-			NOT = {
-				has_country_flag = bar_viira_investigation_step_11
+			OR = {
+				NOT = {
+					has_country_flag = bar_viira_investigation_step_11
+				}
+				check_variable = {
+					BAR_resources_viira < 2000
+				}
 			}
 		}
 		custom_effect_tooltip = bar_virra_becomes_leader
@@ -5199,6 +5060,9 @@ country_event = {
 		name = barrad_viira.1.b
 		trigger = {
 			has_country_flag = bar_viira_investigation_step_11
+			check_variable = {
+				BAR_resources_viira > 1990
+			}
 		}
 		country_event = {
 			id = barrad_viira.12
@@ -5213,14 +5077,43 @@ country_event = {
 	}
 	title = barrad_viira.11.t
 	desc = barrad_viira.11.d
-	picture = GFX_event_cave
+	picture = GFX_event_bar_viira_closeup_2
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira.11.a
-		load_focus_tree = barrad_focus_tree_viira
 		hidden_effect = {
-			complete_national_focus = BAR_shouts_from_the_darkness
+			barrad_kill_viira_no_ending_check = yes
+			clr_country_flag = barrad_early_game
+			swap_ideas = {
+				remove_idea = BAR_pentarchy
+				add_idea = BAR_pentarchy_enemy
+			}
+			add_country_leader_role = {
+				character = BAR_angrier_mob
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = kratokracy
+				}
+			}
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = BAR_ambrosius_party_name
+				long_name = BAR_ambrosius_party_name
+			}
+			add_country_leader_role = {
+				character = BAR_count_ambrosius
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+				}
+			}
 		}
+		load_focus_tree = barrad_focus_tree_sane_ambrosius
 	}
 }
 
@@ -5231,7 +5124,7 @@ country_event = {
 	}
 	title = barrad_viira.12.t
 	desc = barrad_viira.12.d
-	picture = GFX_event_cave
+	picture = GFX_event_bar_viira_closeup
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira.12.a
@@ -5447,7 +5340,7 @@ country_event = {
 	}
 	title = bar_viira_murders.1.t
 	desc = bar_viira_murders.1.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_lib
 	is_triggered_only = yes
 	option = {
 		name = bar_viira_murders.1.a
@@ -5490,7 +5383,7 @@ country_event = {
 	}
 	title = bar_viira_murders.2.t
 	desc = bar_viira_murders.2.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_shattered
 	is_triggered_only = yes
 	option = {
 		name = bar_viira_murders.2.a
@@ -5592,51 +5485,19 @@ country_event = {
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 
-    #                                                          ######                
-   # #   #    # #####  #####   ####   ####  # #    #  ####     #     #   ##   #####  
-  #   #  ##  ## #    # #    # #    # #      # #    # #         #     #  #  #  #    # 
- #     # # ## # #####  #    # #    #  ####  # #    #  ####     ######  #    # #    # 
- ####### #    # #    # #####  #    #      # # #    #      #    #     # ###### #    # 
- #     # #    # #    # #   #  #    # #    # # #    # #    #    #     # #    # #    # 
- #     # #    # #####  #    #  ####   ####  #  ####   ####     ######  #    # #####  
+    #                                                         
+   # #   #    # #####  #####   ####   ####  # #    #  ####     
+  #   #  ##  ## #    # #    # #    # #      # #    # #      
+ #     # # ## # #####  #    # #    #  ####  # #    #  ####   
+ ####### #    # #    # #####  #    #      # # #    #      #   
+ #     # #    # #    # #   #  #    # #    # # #    # #    #  
+ #     # #    # #####  #    #  ####   ####  #  ####   ####    
     
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
                                                                                  
 
-country_event = {
-	id = bar_fallen_pentarchy.1
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_fallen_pentarchy.1"
-	}
-	title = bar_fallen_pentarchy.1.t
-	desc = bar_fallen_pentarchy.1.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = bar_fallen_pentarchy.1.a
-		country_event = {
-			id = bar_fallen_pentarchy.11
-			days = 2
-		}
-	}
-}
-
-country_event = {
-	id = bar_fallen_pentarchy.11
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_fallen_pentarchy.11"
-	}
-	title = bar_fallen_pentarchy.11.t
-	desc = bar_fallen_pentarchy.11.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = bar_fallen_pentarchy.11.a
-		load_focus_tree = barrad_focus_tree_mad_ambrosius
-	}
-}
 
 country_event = {
 	id = bar_sane_ambrosius.1
@@ -6159,127 +6020,6 @@ country_event = {
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 
- #     #                         #    #                                                                                                    
- #     # # # #####    ##        #    # #   #    # #####  #####   ####   ####  # #    #  ####     #    # ###### #####    ##   #      #####  
- #     # # # #    #  #  #      #    #   #  ##  ## #    # #    # #    # #      # #    # #         #    # #      #    #  #  #  #      #    # 
- #     # # # #    # #    #    #    #     # # ## # #####  #    # #    #  ####  # #    #  ####     ###### #####  #    # #    # #      #    # 
-  #   #  # # #####  ######   #     ####### #    # #    # #####  #    #      # # #    #      #    #    # #      #####  ###### #      #    # 
-   # #   # # #   #  #    #  #      #     # #    # #    # #   #  #    # #    # # #    # #    #    #    # #      #   #  #    # #      #    # 
-    #    # # #    # #    # #       #     # #    # #####  #    #  ####   ####  #  ####   ####     #    # ###### #    # #    # ###### #####  
-        
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-
-	
-
-
-country_event = {
-	id = barrad_viira_amb.1
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_amb.1"
-	}
-	title = barrad_viira_amb.1.t
-	desc = barrad_viira_amb.1.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_amb.1.a
-		BAR_add_wigberht_as_commander = yes
-		BAR_add_gebleod_as_commander = yes
-		custom_effect_tooltip = BAR_cult_creeps_on_the_ground
-	}
-}
-
-country_event = {
-	#viira kneels before Ambrosius at the command of her master
-	id = barrad_viira_amb.2
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_amb.2"
-	}
-	title = barrad_viira_amb.2.t
-	desc = barrad_viira_amb.2.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_amb.2.a
-		hidden_effect = {
-			remove_country_leader_trait = BAR_benevolent_ruler
-		}
-		add_country_leader_trait = BAR_amb_title_victorious
-	}
-}
-country_event = {
-	id = barrad_viira_amb.3
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_amb.3"
-	}
-	title = barrad_viira_amb.3.t
-	desc = barrad_viira_amb.3.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_amb.3.a
-		BAR_add_gasienica_as_commander = yes
-		BAR_captain_gasienica = {
-			set_character_name = "BAR_marshal_gasienica"
-			promote_leader = yes
-			add_attack = 1
-			add_defense = 1
-			add_logistics = 1
-			add_planning = 1
-		}
-	}
-}
-country_event = {
-	id = barrad_viira_amb.4
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_amb.4"
-	}
-	title = barrad_viira_amb.4.t
-	desc = barrad_viira_amb.4.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_amb.4.a
-	}
-}
-country_event = {
-	id = barrad_viira_amb.5
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_amb.5"
-	}
-	title = barrad_viira_amb.5.t
-	desc = barrad_viira_amb.5.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_amb.5.a
-	}
-}
-country_event = {
-	id = barrad_viira_amb.6
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_viira_amb.6"
-	}
-	title = barrad_viira_amb.6.t
-	desc = barrad_viira_amb.6.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_viira_amb.6.a
-		add_ideas = BAR_nuke_ban
-		army_experience = 30
-		air_experience = 30
-		navy_experience = 30
-	}
-}
-
-
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-
  #######                                                         #######                      
  #       #####  # ###### #    # #####   ####  #    # # #####        #    #####  ###### ###### 
  #       #    # # #      ##   # #    # #      #    # # #    #       #    #    # #      #      
@@ -6467,7 +6207,6 @@ country_event = {
 		name = barrad_friendship_tree.4.a
 		add_war_support = 0.1
 		add_political_power = 100
-		country_event = { id = barrad_friendship_tree.29 }
 	}
 }
 country_event = {
@@ -6509,7 +6248,7 @@ country_event = {
 	}
 	title = barrad_friendship_tree.7.t
 	desc = barrad_friendship_tree.7.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_silver_star_psy_relief
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.7.a
@@ -6673,26 +6412,31 @@ country_event = { #white star response
 	desc = barrad_friendship_tree.11.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
-	option = { #nope lol
-		ai_chance = {
-			factor = 0
-		}
-		name = barrad_friendship_tree.11.a
-		BAR = {
-			country_event = { id = barrad_friendship_tree.12 days = 2 }
-		}	
-	}
 	option = { #okej
 		ai_chance = {
-			factor = 10
+			base = 10
 		}
 		name = barrad_friendship_tree.11.a
 		BAR = {
 			country_event = { id = barrad_friendship_tree.13 days = 2 }
 		}
 	}
+	option = { #lets talk it out
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				BAR = { is_ai = no }
+			}
+		}
+		
+		name = barrad_friendship_tree.11.b
+		BAR = {
+			country_event = { id = barrad_friendship_tree.12 days = 2 }
+		}	
+	}
 }
-country_event = { #refused
+country_event = { #talk with sister
 	id = barrad_friendship_tree.12
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.12"
@@ -6701,8 +6445,9 @@ country_event = { #refused
 	desc = barrad_friendship_tree.12.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
-	option = { 
+	option = { #agree to talk
 		name = barrad_friendship_tree.12.a
+		country_event = { id = barrad_friendship_tree.29 days = 3}
 	}
 }
 country_event = { #accepted
@@ -6739,6 +6484,8 @@ country_event = { #duel
 			}
 			add_core_of = BAR
 		}
+
+		country_event = { id = barrad_friendship_tree.15 days = 4 }
 	}
 }
 country_event = { #brother sister no hard feeling moment
@@ -7085,7 +6832,7 @@ country_event = { #gąsienica nachodzi silvera w nocy
 		}
 	}
 }
-country_event = { #viira się wygadała
+country_event = { #silver i white gadają o pierdolecie
 	id = barrad_friendship_tree.29
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.29"
@@ -7094,11 +6841,22 @@ country_event = { #viira się wygadała
 	desc = barrad_friendship_tree.29.d
 	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
-	option = { 
+	option = { #wit ally
 		name = barrad_friendship_tree.29.a
-		add_popularity = {
-			ideology = democratic
-			popularity = 0.02
+		ai_chance = {
+			base = 0
+		}
+		random_country = {
+			limit = {
+				has_idea = RIV_member_state
+				is_faction_leader = yes
+			}
+			add_to_faction = ROOT
+		}
+		add_ideas = RIV_member_state
+		hidden_effect = {
+			RIV_set_cosmetic_tag = yes
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }

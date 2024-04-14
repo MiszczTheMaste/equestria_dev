@@ -2515,9 +2515,9 @@ ABY_AF_aeternite_artifact_spending_cat = {
 			custom_effect_tooltip = ABY_AF_soulbots_1_decision_tt
 			add_ideas = clockwerk_industry
 			hidden_effect = {
-				set_technology = { BAR_knights = 1 popup = no }
-				set_technology = { BAR_knights2 = 1 popup = no }
-				set_technology = { BAR_knights_upgrade = 1 popup = no }
+				set_technology = { BAR_clockwerks = 1 popup = no }
+				set_technology = { BAR_clockwerks2 = 1 popup = no }
+				set_technology = { BAR_clockwerks_upgrade = 1 popup = no }
 				fix_weapon_techs = yes
 			}
 		}
@@ -2532,7 +2532,7 @@ ABY_AF_aeternite_artifact_spending_cat = {
 			original_tag = ABY
 		}
 		visible = {
-			has_tech = BAR_knights
+			has_tech = BAR_clockwerks
 			always = yes
 		}
 		available = {

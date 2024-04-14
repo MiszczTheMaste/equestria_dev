@@ -2097,7 +2097,7 @@ country_event = { #world unification
 					ideology = democratic
 					popularity = 1.00
 				}
-				load_focus_tree = BAR_empty_tree
+				load_focus_tree = barrad_unhappy_ending
 				if = {
 					limit = { is_in_faction = yes }
 					leave_faction = yes

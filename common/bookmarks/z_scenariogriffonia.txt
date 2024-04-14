@@ -204,8 +204,6 @@ bookmarks = {
 				BAR_wittenland_witchhunters
 			}
 			focuses = {
-				BAR_bulwark_have_fallen
-				BAR_shouts_from_the_darkness
 				BAR_amb_extend_of_my_tragedy
 			}
 		}

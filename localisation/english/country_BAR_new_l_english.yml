@@ -1217,7 +1217,6 @@
   BAR_amb_state_controlled_trade_desc:0 "REPLACE_ME"
   BAR_amb_public_works_desc:0 "REPLACE_ME"
   BAR_amb_expand_silver_mine_desc:0 "REPLACE_ME"
-  ANG_mining_bonus_desc:0 "REPLACE_ME"
   BAR_amb_royal_university_desc:0 "REPLACE_ME"
   BAR_amb_ancient_regime_desc:0 "REPLACE_ME"
   BAR_amb_royal_pardon_desc:0 "REPLACE_ME"
@@ -1231,21 +1230,40 @@
   BAR_amb_victory_at_heavy_price_desc:0 "REPLACE_ME"
 
   BAR_ambrosius_mercs_available:0 "Enables Irregular Infantry"
-  ANG_mining_bonus:0 "REPLACE_ME"
 
 
-#viira
-  BAR_commandments_of_faith:0 "Commandments of Faith"
+
+            #     #                   
+            #     # # # #####    ##   
+            #     # # # #    #  #  #  
+            #     # # # #    # #    # 
+             #   #  # # #####  ###### 
+              # #   # # #   #  #    # 
+               #    # # #    # #    # 
+
+
+
   BAR_commandments_sacrifice_for_the_cause:0 "Holy Sacrifice"
   BAR_commandments_faith_primacy:0 "Faith Primacy"
   BAR_commandments_ritual_enlightment:0 "Ritual Enlightment"
-  BAR_commandments_asceticism:0 "Ascetticism"
+  BAR_commandments_asceticism:0 "Asceticism"
   BAR_commandments_piety_of_work:0 "Piety of Work"
   BAR_commandments_redempt_sins:0 "Redempt Sins"
   BAR_commandments_servitude_or_death:0 "Servitude or Death"
   BAR_commandments_sacred_insanity:0 "Sacred Insanity"
   BAR_commandments_cult_of_progress:0 "Cult of Progress"
-  BAR_commandments_holy_commune:0 "Holy Comune"
+  BAR_commandments_holy_commune:0 "Holy Comune"  
+
+  BAR_commandments_sacrifice_for_the_cause_desc:0 "Holy Sacrifice"
+  BAR_commandments_faith_primacy_desc:0 "Faith Primacy"
+  BAR_commandments_ritual_enlightment_desc:0 "Ritual Enlightment"
+  BAR_commandments_asceticism_desc:0 "Asceticism"
+  BAR_commandments_piety_of_work_desc:0 "Piety of Work"
+  BAR_commandments_redempt_sins_desc:0 "Redempt Sins"
+  BAR_commandments_servitude_or_death_desc:0 "Servitude or Death"
+  BAR_commandments_sacred_insanity_desc:0 "Sacred Insanity"
+  BAR_commandments_cult_of_progress_desc:0 "Cult of Progress"
+  BAR_commandments_holy_commune_desc:0 "Holy Comune"
 
 
 

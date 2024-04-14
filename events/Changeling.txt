@@ -110,7 +110,6 @@ country_event = { ################ Puppet success ############
 				}
 			}
 		}
-		puppet = FROM
 		if = {
 			limit = { has_dlc = "La Resistance" }
 			FROM = { set_variable = { collaboration_formed_by = PREV } }
@@ -217,7 +216,6 @@ country_event = { ################ Ole surrenderrs ############
 				has_completed_focus = offer_puppet
 			}
 			effect_tooltip = {
-				puppet = FROM
 				if = {
 					limit = { has_dlc = "La Resistance" }
 					FROM = { set_variable = { collaboration_formed_by = PREV } }
@@ -1479,7 +1477,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 	}
 	option = { ## resources
@@ -1492,7 +1490,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 0
+			factor = 100
 		}
 	}
 	option = { ## oil
@@ -1505,7 +1503,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 100
+			factor = 1
 		}
 	}
 	option = { ## all three
@@ -1581,7 +1579,7 @@ country_event = {
 		add_stability = -0.1
 		add_war_support = -0.1
 		ai_chance = {
-			factor = 0
+			factor = 1
 			modifier = {
 				is_historical_focus_on = yes
 				add = 100
@@ -2230,17 +2228,11 @@ country_event = {
 
 	option = {
 		name = changelings.57.a
-		if = {
-			limit = { has_dlc = "Together for Victory" }
-			FROM = { add_to_tech_sharing_group = PLB_CHN_advisors_tech_group }
-			add_to_tech_sharing_group = PLB_CHN_advisors_tech_group
-			modify_tech_sharing_bonus = {
-				id = PLB_CHN_advisors_tech_group
-				bonus = 0.5
-			}
-		}
-		else = {
-			add_ideas = CHN_changeling_advisor_in_PLB
+		FROM = { add_to_tech_sharing_group = PLB_CHN_advisors_tech_group }
+		add_to_tech_sharing_group = PLB_CHN_advisors_tech_group
+		modify_tech_sharing_bonus = {
+			id = PLB_CHN_advisors_tech_group
+			bonus = 0.5
 		}
 		add_ideas = CHN_construction_tech_PLB
 	}
@@ -6856,6 +6848,103 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = changelings_paxchrysalia.9501.a
+		custom_effect_tooltip = CHN_96th_canterlonian_division_effect_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+					NOT = { has_tech = basic_light_art }
+				}
+				set_technology = { basic_light_art = 1 popup = no }
+			}
+			division_template = {
+				name = "Canterlot Garrison"
+				division_names_group = CHN_ALTINF_01
+				template_counter = 6
+				is_locked = yes
+				priority = 2
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mot_artillery_brigade = { x = 3 y = 0 }
+					mot_artillery_brigade = { x = 3 y = 1 }
+					mot_anti_air_brigade = { x = 3 y = 2 }
+					light_armor = { x = 4 y = 0 }
+					light_sp_artillery_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					mot_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					anti_tank = { x = 0 y = 2 }
+				}
+			}
+			division_template = {
+				name = "Canterlot Guard"
+				division_names_group = CHN_ALTINF_01
+				template_counter = 6
+				is_locked = yes
+				priority = 2
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					mechanized = { x = 2 y = 0 }
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mot_artillery_brigade = { x = 3 y = 0 }
+					mot_artillery_brigade = { x = 3 y = 1 }
+					mot_anti_air_brigade = { x = 3 y = 2 }
+					light_armor = { x = 4 y = 0 }
+					light_sp_artillery_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					mot_recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					anti_tank = { x = 0 y = 2 }
+				}
+			}
+			3 = {
+				create_unit = {
+					division = "name = \"96. Infanterie-Division 'Canterlonian'\" division_template = \"Canterlot Garrison\" start_experience_factor = 0.90 start_equipment_factor = 1.0"
+					officer = {
+						name = CHN_jachs
+						portraits = {
+							army = {
+								large = GFX_portrait_CHN_Jachs
+								small = GFX_portrait_CHN_Jachs_small
+							}
+						}
+					}
+					owner = CHN
+					count = 1
+				}
+				create_unit = {
+					division = "name = \"Schutzkommando III-Kanterlot\" division_template = \"Canterlot Guard\" start_experience_factor = 0.75 start_equipment_factor = 1.0"
+					officer = {
+						name = CHN_alcippe
+						portraits = {
+							army = {
+								large = GFX_portrait_CHN_Alcippe
+								small = GFX_portrait_CHN_Alcippe_small
+							}
+						}
+					}
+					owner = CHN
+					count = 1
+				}
+			}
+			set_country_flag = CHN_special_divisions_created
+		}
 	}
 }
 

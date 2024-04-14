@@ -2732,7 +2732,6 @@ country_event = {#Release CTH
 			}
 		}
 		HIP = {
-			puppet = CVA
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -2792,7 +2791,6 @@ country_event = {
 				end_puppet_this = yes
 			}
 			CTH = {
-				puppet = CVA
 				set_autonomy = {target = CVA autonomy_state = autonomy_colony}
 			}
 		}
@@ -3432,7 +3430,7 @@ country_event = { #Fate of Warzena
 	option = { #Supervised State
 		name = hippogriff.71.b
 		ai_chance = { factor = 0 }
-	if = {
+		if = {
 			limit = {
 				has_dlc = "Man the Guns"
 			}
@@ -7919,37 +7917,12 @@ country_event = {
 
 	option = {#excellent
 		name = arisfirst.75.a
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			hidden_effect = { ABY = { get_current_government_type = yes } }
-			set_autonomy = {
-				target = ABY
-				autonomy_state = autonomy_satellite
-			}
-			hidden_effect = { ABY = { restore_previous_government_type = yes } }
+		hidden_effect = { ABY = { get_current_government_type = yes } }
+		set_autonomy = {
+			target = ABY
+			autonomy_state = autonomy_satellite
 		}
-		else_if = {
-			limit = {
-				OR = {
-					has_dlc = "Together for Victory"
-					has_dlc = "Waking the Tiger"
-				}
-			}
-			hidden_effect = { ABY = { get_current_government_type = yes } }
-			puppet = ABY
-			set_autonomy = {
-				target = ABY
-				autonomy_state = autonomy_colony
-			}
-			hidden_effect = { ABY = { restore_previous_government_type = yes } }
-		}
-		else = {
-			hidden_effect = { ABY = { get_current_government_type = yes } }
-			puppet = ABY
-			hidden_effect = { ABY = { restore_previous_government_type = yes } }
-		}
+		hidden_effect = { ABY = { restore_previous_government_type = yes } }
 		ABY = {
 			transfer_state = 784
 		}
@@ -8145,18 +8118,10 @@ country_event = {
 		}
 		ZUM = { add_to_ROOT_potential_cores = yes }
 		ai_chance = {factor = 1}
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			release_autonomy = {
-				target = WAR
-				autonomy_state = autonomy_reichskommissariat
-				release_non_owned_controlled = yes
-			}
-		}
-		else = {
-			release_puppet = WAR
+		release_autonomy = {
+			target = WAR
+			autonomy_state = autonomy_reichskommissariat
+			release_non_owned_controlled = yes
 		}
 		WAR = {
 			add_country_leader_role = {
@@ -8277,9 +8242,6 @@ country_event = {#oh shit fish
 				strength_ratio = { tag = HIP ratio > 1 }
 				factor = 0
 			}
-		}
-		HIP = {
-			puppet = WAR
 		}
 		set_autonomy = {
 			target = WAR
@@ -11626,7 +11588,7 @@ country_event = { # Mixed success on gigantic tank
 			}
 			add_tech_bonus = {
 				name = secret_bonus
-				technology = super_heavy_tank_chassis
+				technology = super_heavy_tank_chassis_a
 				technology = super_heavy_tank_chassis_b
 				technology = super_heavy_tank_chassis_c
 				bonus = 1
@@ -12289,7 +12251,7 @@ country_event = { # Posada kills herself
 			character = HIP_supreme_workers_council
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				expire = "1965.1.1"
 				traits = {
 					provisional
@@ -12317,6 +12279,9 @@ country_event = { # Posada gets a seashell necklace
 				set_leader_description = HIP_POSADA_GOODEND_DESC
 			}
 		}
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = HIP_coral_ridge
+		set_country_flag = HIP_coral_rejoined
 	}
 }
 
@@ -12332,7 +12297,7 @@ country_event = { # New gensec
 			character = HIP_terrafin
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				desc = HIP_TERRAFIN_LEADER_DESC
 				expire = "1965.1.1"
 				traits = {
@@ -12914,12 +12879,7 @@ country_event = { # Invitation to associate status in the Comintern
 				active = yes
 			}
 		}
-		if = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			add_to_tech_sharing_group = HIP_comintern_research
-		}
+		add_to_tech_sharing_group = HIP_comintern_research
 		FROM = {
 			country_event = hippocommie.58
 		}
@@ -12969,12 +12929,7 @@ country_event = { # Invitation to full status in the Comintern
 	}
 	option = { #Yeah
 		name = hippocommie.60.a
-		if = {
-			limit = {
-				has_dlc = "Together for Victory"
-			}
-			add_to_tech_sharing_group = HIP_comintern_research
-		}
+		add_to_tech_sharing_group = HIP_comintern_research
 		FROM = {
 			country_event = hippocommie.61
 		}
@@ -13250,7 +13205,7 @@ country_event = { # Posada assassinated
 			character = HIP_supreme_workers_council
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				expire = "1965.1.1"
 				traits = {
 					provisional
@@ -13274,7 +13229,7 @@ country_event = { # Posada forced out of office
 			character = HIP_supreme_workers_council
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				expire = "1965.1.1"
 				traits = {
 					provisional
@@ -13298,7 +13253,7 @@ country_event = { # Posada resigns
 			character = HIP_supreme_workers_council
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				expire = "1965.1.1"
 				traits = {
 					provisional
@@ -13425,7 +13380,7 @@ country_event = { # Posada retires
 			character = HIP_supreme_workers_council
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				expire = "1965.1.1"
 				traits = {
 					provisional
@@ -13453,7 +13408,7 @@ country_event = { # Starry Eyes is the new gensec
 			character = HIP_starry_eyes
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				desc = HIP_STARRYEYES_DESC
 				expire = "1965.1.1"
 				traits = {
@@ -14858,7 +14813,7 @@ country_event = { # Popular march
 			character = HIP_posada
 			promote_leader = yes
 			country_leader = {
-				ideology = marxism
+				ideology = technosocialism
 				desc = "HIP_POSADA_DESC"
 				expire = "1965.1.1"
 				traits = {
@@ -16013,16 +15968,16 @@ country_event = { # Aria does something, idk, use your imagination
 			limit = {
 				is_ai = yes
 			}
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.025 }
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.025 } # this is times 10 the final value for calcualtions
 			set_variable = { HIP_MAGIC_industrial_capacity_factory = pre_HIP_MAGIC_industrial_capacity_factory }
 			set_variable = { HIP_MAGIC_industrial_capacity_dockyard = pre_HIP_MAGIC_industrial_capacity_dockyard }
 			set_variable = { HIP_MAGIC_army_morale_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_morale_factor }
+			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_attack_factor }
+			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_defence_factor }
 
 			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.01 }
 			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.01 }
@@ -16062,16 +16017,16 @@ country_event = { # Magic the Gathering, or something
 			limit = {
 				is_ai = yes
 			}
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.025 }
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.025 } # this is times 10 the final value for calcualtions
 			set_variable = { HIP_MAGIC_industrial_capacity_factory = pre_HIP_MAGIC_industrial_capacity_factory }
 			set_variable = { HIP_MAGIC_industrial_capacity_dockyard = pre_HIP_MAGIC_industrial_capacity_dockyard }
 			set_variable = { HIP_MAGIC_army_morale_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_morale_factor }
+			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_attack_factor }
+			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_defence_factor }
 
 			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.01 }
 			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.01 }
@@ -16287,16 +16242,16 @@ country_event = { # The siren healthcare system
 			limit = {
 				is_ai = yes
 			}
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = -0.025 }
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = -0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = -0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = -0.025 }
-			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = -0.025 }
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = -0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = -0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = -0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = -0.025 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = -0.025 } # this is times 10 the final value for calcualtions
 			set_variable = { HIP_MAGIC_industrial_capacity_factory = pre_HIP_MAGIC_industrial_capacity_factory }
 			set_variable = { HIP_MAGIC_industrial_capacity_dockyard = pre_HIP_MAGIC_industrial_capacity_dockyard }
 			set_variable = { HIP_MAGIC_army_morale_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_morale_factor }
+			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_attack_factor }
+			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_defence_factor }
 
 			add_to_variable = { HIP_MAGIC_consumer_goods_factor = 0.01 }
 			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = -0.01 }
@@ -16408,16 +16363,16 @@ country_event = { # you know maybe racism is a bit of a problem
 			limit = {
 				is_ai = yes
 			}
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.05 }
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.05 }
-			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.05 }
-			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.05 }
-			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.05 }
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.05 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.05 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.05 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.05 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.05 } # this is times 10 the final value for calcualtions
 			set_variable = { HIP_MAGIC_industrial_capacity_factory = pre_HIP_MAGIC_industrial_capacity_factory }
 			set_variable = { HIP_MAGIC_industrial_capacity_dockyard = pre_HIP_MAGIC_industrial_capacity_dockyard }
 			set_variable = { HIP_MAGIC_army_morale_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_morale_factor }
+			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_attack_factor }
+			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_defence_factor }
 
 			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.02 }
 			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.02 }
@@ -19502,16 +19457,16 @@ country_event = { # What is the future for the ponies?
 			limit = {
 				is_ai = yes
 			}
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.075 }
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.075 }
-			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.075 }
-			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.075 }
-			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.075 }
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = 0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = 0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = 0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = 0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = 0.075 } # this is times 10 the final value for calcualtions
 			set_variable = { HIP_MAGIC_industrial_capacity_factory = pre_HIP_MAGIC_industrial_capacity_factory }
 			set_variable = { HIP_MAGIC_industrial_capacity_dockyard = pre_HIP_MAGIC_industrial_capacity_dockyard }
 			set_variable = { HIP_MAGIC_army_morale_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_morale_factor }
+			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_attack_factor }
+			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_defence_factor }
 
 			add_to_variable = { HIP_MAGIC_consumer_goods_factor = -0.03 }
 			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = 0.03 }
@@ -19536,16 +19491,16 @@ country_event = { # What is the future for the ponies?
 			limit = {
 				is_ai = yes
 			}
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = -0.075 }
-			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = -0.075 }
-			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = -0.075 }
-			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = -0.075 }
-			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = -0.075 }
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_factory = -0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_industrial_capacity_dockyard = -0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_morale_factor = -0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_attack_factor = -0.075 } # this is times 10 the final value for calcualtions
+			add_to_variable = { pre_HIP_MAGIC_army_defence_factor = -0.075 } # this is times 10 the final value for calcualtions
 			set_variable = { HIP_MAGIC_industrial_capacity_factory = pre_HIP_MAGIC_industrial_capacity_factory }
 			set_variable = { HIP_MAGIC_industrial_capacity_dockyard = pre_HIP_MAGIC_industrial_capacity_dockyard }
 			set_variable = { HIP_MAGIC_army_morale_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_morale_factor }
-			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_morale_factor }
+			set_variable = { HIP_MAGIC_army_attack_factor = pre_HIP_MAGIC_army_attack_factor }
+			set_variable = { HIP_MAGIC_army_defence_factor = pre_HIP_MAGIC_army_defence_factor }
 
 			add_to_variable = { HIP_MAGIC_consumer_goods_factor = 0.03 }
 			add_to_variable = { HIP_MAGIC_production_speed_buildings_factor = -0.03 }
@@ -20084,7 +20039,7 @@ country_event = { # Uh oh, everyone's angry
 			promote_leader = yes
 			country_leader = {
 				desc = "HIP_POSADA_DESC"
-				ideology = marxism
+				ideology = technosocialism
 				expire="1965.1.1"
 				traits = {
 					nuclear_revolutionary

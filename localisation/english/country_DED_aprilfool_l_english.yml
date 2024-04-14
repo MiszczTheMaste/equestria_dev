@@ -53,7 +53,7 @@ DED_APN_shines_above_all_desc:0 "Focusing the training of our mages toward comba
 
 DED_APN_these_the_masters:0 "These are the Masters"
 DED_APN_these_the_masters_desc:0 "As our final showdown approaches, new armies are being raised. These shall be led by some of our newest liches."
-DED_APN_these_the_masters_tooltip:0 "§Y3 20-width Divisions of Undead lead by Necromancers will be organized.§!"
+DED_APN_these_the_masters_tooltip:0 "§YSix 20-width Divisions of Undead lead by Necromancers will be organized.§!"
 
 DED_APN_death_is_the_meaning:0 "For Whom Death is the Meaning"
 DED_APN_death_is_the_meaning_desc:0 "We, the Necromancers, Vanguard of the Crusade against Death, we fight with only one goal. One end. One mean. Life to end Life. Death to end Death. We are the Prophets of a New Era."
@@ -574,6 +574,10 @@ ded_sea_monster:0 "Sea Serpents"
 ded_big_sea_monster:0 "Leviathans"
 ded_fish:0 "Sea Serpents"
 ded_big_fish:0 "Leviathans"
+modifier_experience_gain_ded_fish_training_factor:0 "$ded_fish$ training factor"
+modifier_experience_gain_ded_fish_combat_factor:0 "$ded_fish$ combat factor"
+modifier_experience_gain_ded_big_fish_training_factor:0 "$ded_big_fish$ training factor"
+modifier_experience_gain_ded_big_fish_combat_factor:0 "$ded_big_fish$ combat factor"
 
 living_factory_equipment:0 "Living Factory Equipment"
 bone_abomination_equipment:0 "Bone Abomination Equipment"

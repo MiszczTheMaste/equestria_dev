@@ -985,6 +985,17 @@ country_event = {
 			NOT = { country_exists = DED }
 			NOT = { has_war_with = DED }
 		}
+		NOT = {
+			original_tag = ABY
+			has_game_rule = {
+				rule = aby_april_fool
+				option = ABY_APRIL_FOOL
+			}
+			has_country_leader = {
+				character = ABY_AF_kaiser_kattail
+				ruling_only = yes
+			}
+		}
 		owns_state = 415
 	}
 
@@ -1111,6 +1122,7 @@ country_event = {
 				HLR = { transfer_state = PREV }
 			}
 		}
+		HLR = { load_focus_tree = generic_griffon_focus }		
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -1118,6 +1130,12 @@ country_event = {
 				factor = 0
 			}
 		}
+		hidden_effect = {
+			if = {
+				limit = { HLR = { has_idea = detached_country} }
+				HLR = { add_ideas = agrarian_society }
+			}
+		}		
 	}
 }
 

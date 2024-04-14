@@ -3586,12 +3586,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				add_to_tech_sharing_group = CTH_scientifid_student_exchange
-			}
+			add_to_tech_sharing_group = CTH_scientifid_student_exchange
 			set_country_flag = CTH_student_decision_unlocked
 			unlock_decision_tooltip = CTH_propose_student_exchange
 		}
@@ -10977,7 +10972,9 @@ focus_tree = {
 			country_event = colthage_other.109
 			if = {
 				limit = {
-					CTB = {
+					any_country_with_original_tag = {
+						original_tag_to_check = CTH
+						has_country_flag = CTH_colthage_bandit
 						exists = yes
 					}
 				}

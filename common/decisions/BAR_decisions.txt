@@ -11336,6 +11336,20 @@ bar_sane_ambrosius_balance_category = {
 				value = -0.05
 			}
 		}
+	}		
+	bar_sane_ambrosius_balance_solidify_control = {
+		icon = pawn
+		allowed = { 
+			original_tag = BAR 
+		} 
+		cost = 100
+		days_remove = 20
+		modifier = {
+			power_balance_weekly = 0.025
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_solidify_controll"
+		}
 	}	
 	bar_sane_ambrosius_balance_charity = {
 		icon = pawn

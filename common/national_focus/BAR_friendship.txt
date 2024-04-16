@@ -1545,6 +1545,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = { id = barrad_friendship_tree.22 }
+			every_owned_state = {
+				limit = {
+					is_core_of = BAR
+				}
+				add_manpower = 25000
+			}
+			add_manpower = 20000
 		}
 	}
 	focus = {
@@ -1561,34 +1568,14 @@ focus_tree = {
 			focus = BAR_friend_first_census
 		}
 		completion_reward = {
-			country_event = { id = barrad_friendship_tree.23 }
-		}
-	}
-	focus = {
-		id = BAR_friend_infrastructure
-		icon = GFX_goal_cry_com_sync
-		cost = 3.5
-		x = 0
-		y = 1
-		relative_position_id = BAR_friend_first_census
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_first_census
-		}
-		completion_reward = {
+			country_event = { id = barrad_friendship_tree.23 }	
 			every_owned_state = {
 				limit = {
 					is_core_of = BAR
 				}
-				add_building_construction = { 
-					type = infrastructure
-					level = 1
-					instant_build = yes 
-				}
+				add_manpower = 25000
 			}
-			decrease_poverty = yes
+			add_manpower = 20000	
 		}
 	}
 	focus = {
@@ -1688,27 +1675,17 @@ focus_tree = {
 			focus = BAR_friend_first_census
 		}
 		completion_reward = {
-			626 = {
+			every_owned_state = {
+				limit = {
+					is_core_of = BAR
+				}
 				add_building_construction = { 
 					type = infrastructure
 					level = 1
 					instant_build = yes 
 				}
 			}
-			625 = {
-				add_building_construction = { 
-					type = infrastructure
-					level = 1
-					instant_build = yes 
-				}
-			}
-			624 = {
-				add_building_construction = { 
-					type = infrastructure
-					level = 1
-					instant_build = yes 
-				}
-			}
+			decrease_poverty = yes
 		}
 	}
 	focus = {

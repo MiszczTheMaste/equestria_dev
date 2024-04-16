@@ -6572,17 +6572,11 @@ country_event = { #asinti and his followers travel thought the barrad conducting
 	}
 	title = barrad_friendship_tree.22.t
 	desc = barrad_friendship_tree.22.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_asinti_eye_closeup
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.22.a
-		every_owned_state = {
-			limit = {
-				is_core_of = BAR
-			}
-			add_manpower = 50000
-		}
-		add_manpower = 20000
+		custom_effect_tooltip = barrad_friendship_tree_22_tooltip
 	}
 }
 country_event = { #during census in one of villages filly tells asinti that their mom was too weak to work in the field so the landowner took her away but now he was killed by cultists so they dont know where mommy went and asks asinti if he can help find her
@@ -6592,12 +6586,12 @@ country_event = { #during census in one of villages filly tells asinti that thei
 	}
 	title = barrad_friendship_tree.23.t
 	desc = barrad_friendship_tree.23.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_asinti_eye_closeup
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.23.a
 		add_popularity = {
-			ideology = democratic
+			ideology = fascism
 			popularity = 0.05
 		}
 	}
@@ -6685,7 +6679,7 @@ country_event = { #viira and silver star visits asinti in temple he had built an
 	}
 	title = barrad_friendship_tree.27.t
 	desc = barrad_friendship_tree.27.d
-	picture = GFX_event_gothic_interior
+	picture = GFX_event_asinti_eye_closeup
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.27.a
@@ -6763,7 +6757,7 @@ country_event = { #viira and silver star visits asinti in temple he had built an
 		}
 		add_popularity = {
 			ideology = democratic
-			popularity = 0.1
+			popularity = 0.2
 		}
 	}
 }

@@ -37,6 +37,10 @@ focus_tree = {
 				id = barrad_first.1
 			}
 		}
+		
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
+		}
 	}
 	focus = {
 		id = BAR_silver_hides_in_the_corner
@@ -62,6 +66,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_first.6
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -97,7 +104,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -128,7 +135,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -159,8 +166,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -197,7 +203,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -240,7 +246,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -324,7 +330,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -351,8 +357,8 @@ focus_tree = {
 				factor = 0
 			}
 		}
-		completion_reward = {
-			BAR_resources_add_asinti_250 = yes
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -381,7 +387,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	focus = {
@@ -400,6 +406,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_first.4
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
 	
@@ -436,6 +445,9 @@ focus_tree = {
 				id = barrad_second.1
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_viira_adventure
@@ -468,7 +480,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -503,7 +515,7 @@ focus_tree = {
 			add_political_power = -75
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -541,8 +553,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -572,6 +583,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_resources_add_viira_250 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -616,7 +630,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -652,7 +666,7 @@ focus_tree = {
 			add_political_power = 50
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -684,9 +698,7 @@ focus_tree = {
 			BAR_resources_add_asinti_750 = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_STABILITY
-			FOCUS_FILTER_WAR_SUPPORT
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -729,7 +741,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -764,7 +776,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -801,7 +813,7 @@ focus_tree = {
 			add_political_power = 50
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -834,7 +846,7 @@ focus_tree = {
 			add_political_power = 75
 		}
 		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -880,7 +892,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -917,8 +929,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -956,7 +967,7 @@ focus_tree = {
 			one_random_industrial_complex = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -993,7 +1004,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1024,6 +1035,9 @@ focus_tree = {
 		completion_reward = {
 			BAR_resources_add_leopold_500 = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_another_party
@@ -1053,6 +1067,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_second.2
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1085,7 +1102,7 @@ focus_tree = {
 			add_manpower = -500
 		}
 		search_filters = {
-			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1119,7 +1136,7 @@ focus_tree = {
 			BAR_relations_increase_silver_viira_5 = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1158,6 +1175,9 @@ focus_tree = {
 			BAR_resources_add_silver_250 = yes
 			BAR_resources_add_viira_250 = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_another_party_silver_star_leopold
@@ -1189,7 +1209,7 @@ focus_tree = {
 			BAR_relations_increase_silver_leopold_5 = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1228,6 +1248,9 @@ focus_tree = {
 			BAR_resources_add_silver_250 = yes
 			BAR_resources_add_leopold_250 = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_another_party_silver_star_asinti
@@ -1259,7 +1282,7 @@ focus_tree = {
 			BAR_relations_increase_asinti_silver_5 = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1298,6 +1321,9 @@ focus_tree = {
 			BAR_resources_add_silver_250 = yes
 			BAR_resources_add_asinti_250 = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_another_party_silver_star_ambrosius
@@ -1329,7 +1355,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1361,6 +1387,9 @@ focus_tree = {
 		completion_reward = {
 			BAR_resources_add_silver_250 = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_party_best_guests
@@ -1390,6 +1419,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1422,6 +1454,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_second.3
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1458,6 +1493,9 @@ focus_tree = {
 				category = race_tech
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_party_leopold
@@ -1487,6 +1525,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_resources_add_leopold_250 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 	focus = {
@@ -1518,6 +1559,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_party_asinti
@@ -1548,6 +1592,9 @@ focus_tree = {
 		completion_reward = {
 			BAR_resources_add_asinti_100 = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
 	}
 	focus = {
 		id = BAR_party_asinti_2
@@ -1577,6 +1624,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_resources_add_asinti_250 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
 
@@ -1618,7 +1668,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1641,6 +1691,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_third.1
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1667,6 +1720,9 @@ focus_tree = {
 				}
 				custom_effect_tooltip = bar_friendship_important
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}                                                                                 
 	focus = {
@@ -1706,7 +1762,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1762,7 +1818,7 @@ focus_tree = {
 			custom_effect_tooltip = BAR_reactor_research_bonus
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1799,7 +1855,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1839,7 +1895,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1870,6 +1926,9 @@ focus_tree = {
 		completion_reward = {
 			BAR_resources_add_leopold_750 = yes
 			custom_effect_tooltip = BAR_next_focus_prerequisite
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1911,8 +1970,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_RESEARCH
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -1946,6 +2004,9 @@ focus_tree = {
 				id = barrad_third.3
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	focus = {
 		id = BAR_trial_of_the_machine
@@ -1977,6 +2038,9 @@ focus_tree = {
 				id = barrad_third.4
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	focus = {
 		id = BAR_pilgrimage_to_the_deeps
@@ -2007,6 +2071,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_third.5
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2044,6 +2111,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	focus = {
 		id = BAR_pilgrimage_to_the_ancient_machines
@@ -2074,6 +2144,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_third.6
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2109,6 +2182,9 @@ focus_tree = {
 				id = barrad_third.61
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	focus = {
 		id = BAR_closer_look
@@ -2142,6 +2218,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_third.62
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2182,6 +2261,9 @@ focus_tree = {
 				custom_effect_tooltip = bar_friendship_important_for_viira
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	focus = {
 		id = BAR_minimal_undead_autonomy
@@ -2213,8 +2295,7 @@ focus_tree = {
 			BAR_resources_add_silver_250 = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2244,6 +2325,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_resources_add_silver_500 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2276,6 +2360,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_resources_add_silver_250 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2318,7 +2405,7 @@ focus_tree = {
 			add_political_power = 100
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2352,6 +2439,9 @@ focus_tree = {
 			increase_society_development_gradual = yes
 			one_random_industrial_complex = yes
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	focus = {
 		id = BAR_architectural_thought
@@ -2384,7 +2474,7 @@ focus_tree = {
 			custom_effect_tooltip = BAR_next_focus_prerequisite
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2422,7 +2512,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2460,7 +2550,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2513,7 +2603,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2566,7 +2656,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2637,7 +2727,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2708,7 +2798,7 @@ focus_tree = {
 			}
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
 	focus = {
@@ -2757,6 +2847,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_3
+		}
 	}
 	
  #######                                #####                                           
@@ -2801,6 +2894,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
+		}
 	}
 	focus = {
 		id = BAR_party_never_stops
@@ -2825,6 +2921,9 @@ focus_tree = {
 			country_event = {
 				id = barrad_fourth.2
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 	focus = {
@@ -2863,6 +2962,9 @@ focus_tree = {
 			} else = {
 				country_event = { id = barrad_viira_fight.1 }
 			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 	focus = {
@@ -2935,6 +3037,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
+		}
 	}
 	focus = {
 		id = BAR_clockwerk_dev
@@ -2983,6 +3088,9 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
+		}
 	}
 	focus = {
 		id = BAR_clockwerk_military
@@ -3018,7 +3126,7 @@ focus_tree = {
 			add_ideas = BAR_clockwerk_soldiers
 		}
 		search_filters = {
-			FOCUS_FILTER_ARMY_BONUS
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 	focus = {
@@ -3053,6 +3161,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_resources_add_leopold_1000 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 	focus = {
@@ -3089,7 +3200,7 @@ focus_tree = {
 			add_ideas = BAR_clockwerk_factories
 		}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 	focus = {
@@ -3123,7 +3234,7 @@ focus_tree = {
 			decrease_poverty = yes
 		}
 		search_filters = {
-			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 	focus = {
@@ -3257,6 +3368,9 @@ focus_tree = {
 				set_country_flag = BAR_temple_reactor_integration
 			}
 		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_4
+		}
 	}
 	focus = {
 		id = BAR_separate_entity
@@ -3310,7 +3424,7 @@ focus_tree = {
 			add_political_power = 150
 		}
 		search_filters = {
-			FOCUS_FILTER_POLITICAL
+			FOCUS_FILTER_BAR_CHAPTER_4
 		}
 	}
 }

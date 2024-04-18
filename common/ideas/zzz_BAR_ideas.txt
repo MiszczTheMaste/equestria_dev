@@ -1106,7 +1106,7 @@ ideas = {
 
 			modifier = {
 				army_attack_factor = 0.15
-				army_morale_factor = -0.05 
+				army_morale_factor = -0.1 
 			}
 		}
 		BAR_leopold_cheaper_guns = {
@@ -1124,6 +1124,7 @@ ideas = {
 			modifier = {
 				attrition = -0.1
 				supply_consumption_factor = -0.1
+				equipment_capture_factor = 0.15
 			}
 		}
 		BAR_leopold_bonus_planning = {

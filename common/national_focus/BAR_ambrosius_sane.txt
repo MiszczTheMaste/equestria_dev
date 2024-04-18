@@ -2985,6 +2985,18 @@ focus_tree = {
 			build_railway = {
 				path = {7619 8019 4160 8054 11745 11904 1953 10764 10827 8078 2154 2034 10805 7201}
 			}
+			630 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			611 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			598 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			597 = {
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 	focus = {

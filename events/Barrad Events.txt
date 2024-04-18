@@ -6789,9 +6789,6 @@ country_event = { #silver i white gadają o pierdolecie
 	is_triggered_only = yes
 	option = { #wit ally
 		name = barrad_friendship_tree.29.a
-		ai_chance = {
-			base = 0
-		}
 		random_country = {
 			limit = {
 				has_idea = RIV_member_state
@@ -6806,6 +6803,24 @@ country_event = { #silver i white gadają o pierdolecie
 		}
 	}
 }
+country_event = { 
+	id = barrad_friendship_tree.30
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.30"
+	}
+	title = barrad_friendship_tree.30.t
+	desc = barrad_friendship_tree.30.d
+	picture = GFX_event_gothic_interior
+	is_triggered_only = yes
+	option = {
+		name = barrad_friendship_tree.30.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+	}
+}
+
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################

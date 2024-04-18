@@ -1891,6 +1891,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_research_slot = 1
+			hidden_effect = {
+				country_event = {
+					id = barrad_friendship_tree.30
+					days = 13
+				}
+			}
 		}
 	}
 	focus = {

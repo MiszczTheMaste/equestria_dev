@@ -4499,6 +4499,7 @@ country_event = {
 				add_planning = 1
 			}
 		}
+		country_event = { id = barrad_leopold.14 }
 		custom_effect_tooltip = BAR_leopold_ascesion_desc
 	}
 }
@@ -4570,6 +4571,45 @@ country_event = {
 				}
 			}
 		}
+
+		if = {
+			limit = {
+				has_country_flag = barrad_asinti_alive
+				check_variable = {
+					BAR_relations_asinti_leopold > 69
+				}
+			}
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					barrad_asinti_alive = 1
+				}
+			}
+			add_ideas = BAR_leo_asinti
+		}
+		if = {
+			limit = {
+				has_country_flag = barrad_silver_star_alive
+				check_variable = {
+					BAR_relations_silver_leopold > 69
+				}
+			}
+			hidden_effect = {
+				set_technology = {
+					popup = no
+					barrad_silver_star_alive = 1
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_ideas = BAR_leo_silver_lar
+			}
+			else = {
+				add_ideas = BAR_leo_silver
+			}
+		}
 		set_cosmetic_tag = BAR_leopold
 	}
 }
@@ -4616,254 +4656,6 @@ country_event = {
 		name = barrad_leopold.4.a
 		add_ideas = BAR_leopold_titan_armor
 		remove_ideas = BAR_leopold_partial
-	}
-}
-
-country_event = {
-	id = barrad_leopold.5
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.5"
-	}
-	title = barrad_leopold.5.t
-	desc = barrad_leopold.5.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_leopold.5.a
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-				check_variable = {
-					BAR_relations_asinti_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_asinti_alive = 1
-				}
-			}
-			add_ideas = BAR_leo_asinti
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				check_variable = {
-					BAR_relations_silver_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_silver_star_alive = 1
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				add_ideas = BAR_leo_silver_lar
-			}
-			else = {
-				add_ideas = BAR_leo_silver
-			}
-		}
-	}
-	option = {
-		name = barrad_leopold.5.b
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-				check_variable = {
-					BAR_relations_asinti_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_asinti_alive = 1
-				}
-			}
-			every_possible_country = {
-				limit = {
-					has_character = BAR_asinti
-				}
-				BAR_asinti = {
-					set_nationality = ROOT
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				check_variable = {
-					BAR_relations_silver_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_silver_star_alive = 1
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				add_ideas = BAR_leo_silver_lar
-			}
-			else = {
-				add_ideas = BAR_leo_silver
-			}
-		}
-	}
-	option = {
-		name = barrad_leopold.5.c
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-				check_variable = {
-					BAR_relations_asinti_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_asinti_alive = 1
-				}
-			}
-			add_ideas = BAR_leo_asinti
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				check_variable = {
-					BAR_relations_silver_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_silver_star_alive = 1
-				}
-			}
-			every_possible_country = {
-				limit = {
-					has_character = BAR_silver_star
-				}
-				BAR_silver_star = {
-					set_nationality = ROOT
-				}
-			}
-		}
-	}
-	option = {
-		name = barrad_leopold.5.e
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-				check_variable = {
-					BAR_relations_asinti_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_asinti_alive = 1
-				}
-			}
-			every_possible_country = {
-				limit = {
-					has_character = BAR_asinti
-				}
-				BAR_asinti = {
-					set_nationality = ROOT
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				check_variable = {
-					BAR_relations_silver_leopold > 69
-				}
-			}
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_silver_star_alive = 1
-				}
-			}
-			every_possible_country = {
-				limit = {
-					has_character = BAR_silver_star
-				}
-				BAR_silver_star = {
-					set_nationality = ROOT
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-	id = barrad_leopold.6	#enemies
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.6"
-	}
-	title = barrad_leopold.6.t
-	desc = barrad_leopold.6.d
-	picture = GFX_event_gothic_interior
-	is_triggered_only = yes
-	option = {
-		name = barrad_leopold.6.a
-		add_stability = 0.05
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-				check_variable = {
-					BAR_relations_asinti_leopold < 31
-				}
-			}
-			hidden_effect = {
-				barrad_kill_asinti = yes
-			}
-			add_stability = 0.05
-			add_political_power = 100
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-				check_variable = {
-					BAR_relations_silver_leopold < 31
-				}
-			}
-			hidden_effect = {
-				barrad_kill_silver = yes
-			}
-			add_stability = 0.05
-			add_political_power = 100
-		}
-
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						has_country_flag = barrad_asinti_alive
-						check_variable = {
-							BAR_relations_asinti_leopold > 69
-						}
-					}
-					AND = {
-						has_country_flag = barrad_silver_star_alive
-						check_variable = {
-							BAR_relations_silver_leopold > 69
-						}
-					}
-				}
-			}
-			country_event = { id = barrad_leopold.5 days = 12}
-		}
 	}
 }
 
@@ -4980,7 +4772,32 @@ country_event = {
 		name = barrad_leopold.11.a
 		add_research_slot = 1
 		decrease_poverty = yes
-		country_event = { id = barrad_leopold.6 days = 12}
+		if = {
+			limit = {
+				has_country_flag = barrad_asinti_alive
+				check_variable = {
+					BAR_relations_asinti_leopold < 31
+				}
+			}
+			hidden_effect = {
+				barrad_kill_asinti = yes
+			}
+			add_stability = 0.05
+			add_political_power = 100
+		}
+		if = {
+			limit = {
+				has_country_flag = barrad_silver_star_alive
+				check_variable = {
+					BAR_relations_silver_leopold < 31
+				}
+			}
+			hidden_effect = {
+				barrad_kill_silver = yes
+			}
+			add_stability = 0.05
+			add_political_power = 100
+		}
 	}
 }
 country_event = {
@@ -5011,6 +4828,19 @@ country_event = {
 		name = barrad_leopold.13.a
 		add_political_power = 10
 		add_stability = 0.02
+	}
+}
+country_event = {
+	id = barrad_leopold.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.14"
+	}
+	title = barrad_leopold.14.t
+	desc = barrad_leopold.14.d
+	picture = GFX_event_forge_city
+	is_triggered_only = yes
+	option = {
+		name = barrad_leopold.14.a
 	}
 }
 

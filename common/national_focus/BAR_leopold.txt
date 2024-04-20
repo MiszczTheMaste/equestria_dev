@@ -230,14 +230,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = support_bonus
 				bonus = 1
-				uses = 2
+				uses = 1
 				category = logistics_tech
 			}
 			add_tech_bonus = {
-				name = support_bonus
+				name = infantry_weapons_bonus
 				bonus = 1
-				uses = 2
-				category = hospital_tech
+				uses = 1
+				category = infantry_weapons
 			}
 		}
 		search_filters = {
@@ -261,12 +261,6 @@ focus_tree = {
 			focus = BAR_leopold_cultist_warriors_3
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = support_bonus
-				bonus = 1
-				uses = 2
-				category = engineers_tech
-			}
 			add_tech_bonus = {
 				name = support_bonus
 				bonus = 1
@@ -553,7 +547,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1.5
+				bonus = 2
 				uses = 1
 				category = artillery
 			}
@@ -610,7 +604,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = magical_tech_bonus
-				bonus = 1.0
+				bonus = 1
 				uses = 1
 				technology = magical_weapons
 				technology = magical_weapons1

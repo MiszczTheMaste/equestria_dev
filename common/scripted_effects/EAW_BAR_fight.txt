@@ -2095,7 +2095,7 @@ BAR_asinti_turn = {
 					a_in = 0
 				}
 			}
-			BAR_pen_fight_rest = yes
+			BAR_pen_fight_rest_pentarchs = yes
 			set_variable = {
 				BAR_fight_pentarchy_action_log = 4
 			}
@@ -2114,7 +2114,7 @@ BAR_asinti_turn = {
 						BAR_pen_fight_asinti_normal_attack = yes
 					}
 					40 = {
-						BAR_pen_fight_rest = yes
+						BAR_pen_fight_rest_pentarchs = yes
 					}
 				}
 			}
@@ -2138,7 +2138,7 @@ BAR_asinti_turn = {
 							BAR_pen_fight_asinti_heal = yes
 						}
 						40 = {
-							BAR_pen_fight_rest = yes
+							BAR_pen_fight_rest_pentarchs = yes
 						}
 					}
 				}
@@ -2148,7 +2148,7 @@ BAR_asinti_turn = {
 							BAR_pen_fight_asinti_normal_attack = yes
 						}
 						30 = {
-							BAR_pen_fight_rest = yes
+							BAR_pen_fight_rest_pentarchs = yes
 						}
 					}
 				}
@@ -2173,7 +2173,7 @@ BAR_asinti_turn = {
 							BAR_pen_fight_asinti_heal = yes
 						}
 						40 = {
-							BAR_pen_fight_rest = yes
+							BAR_pen_fight_rest_pentarchs = yes
 						}
 					}
 				}
@@ -2182,7 +2182,7 @@ BAR_asinti_turn = {
 						BAR_pen_fight_asinti_normal_attack = yes
 					}
 					40 = {
-						BAR_pen_fight_rest = yes
+						BAR_pen_fight_rest_pentarchs = yes
 					}
 				}
 			}
@@ -2272,7 +2272,7 @@ BAR_leopold_turn = {
 					l_in = 0
 				}
 			}
-			BAR_pen_fight_rest = yes
+			BAR_pen_fight_rest_pentarchs = yes
 		}
 		else = {
 			if = {
@@ -2463,7 +2463,7 @@ BAR_silver_turn = {
 					s_in = 0
 				}
 			}
-			BAR_pen_fight_rest = yes
+			BAR_pen_fight_rest_pentarchs = yes
 		}
 		else = {
 			if = {

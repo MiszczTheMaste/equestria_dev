@@ -958,7 +958,7 @@ country_event = {
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friends.11"
 		hidden_effect = {
-			play_song = "DSTechnician_honorguard"
+			scoped_play_song = "DSTechnician_honorguard"
 		}
 	}
 	title = barrad_friends.11.t
@@ -3441,7 +3441,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			play_song = "DST-Darkess_extended"
+			scoped_play_song = "DST-Darkess_extended"
 		}
 	}
 	option = {

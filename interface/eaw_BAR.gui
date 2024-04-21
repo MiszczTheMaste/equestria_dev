@@ -1444,19 +1444,19 @@ guiTypes = {
 			spriteType = "GFX_bar_viira_portrait"
 			position = { x = 1204 y = 0 }
 		}
-		iconType = {
+		buttonType = {
 			name = "bar_viira_heal"
 			spriteType = "GFX_bar_fight_self_heal"
 			position = { x = 1144 y = 80 }
 			pdx_tooltip = "bar_viira_heal"
 		}
-		iconType = {
+		buttonType = {
 			name = "bar_viira_strong_attack"
 			spriteType = "GFX_bar_fight_viira_stronk"
 			position = { x = 1084 y = 80 }
 			pdx_tooltip = "bar_viira_strong_attack"
 		}
-		iconType = {
+		buttonType = {
 			name = "bar_viira_normal_attack"
 			spriteType = "GFX_bar_fight_normal_attack"
 			position = { x = 1024 y = 80 }
@@ -1663,70 +1663,60 @@ guiTypes = {
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=1164 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_2"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=1134 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_3"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=1104 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_4"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=1074 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_5"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=1044 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_6"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=1014 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_7"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=984 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_8"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=954 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_9"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=924 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_10"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=894 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_11"
@@ -1739,63 +1729,54 @@ guiTypes = {
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=834 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_13"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=804 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_14"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=774 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_15"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=744 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_16"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=714 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_17"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=684 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_18"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=654 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_19"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=624 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_viira_in_20"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=594 y=40 }
-			pdx_tooltip = "bar_pen_fight_viira_in"
 		}
 	}
 	containerWindowType = {
@@ -2229,70 +2210,60 @@ guiTypes = {
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=166 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_2"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=196 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_3"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=226 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_4"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=256 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_5"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=286 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_6"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=316 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_7"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=346 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_8"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=376 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_9"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=406 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		iconType = {
 			name ="bar_pen_fight_leopold_in_10"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
 			position = { x=436 y=40 }
-			pdx_tooltip = "bar_pen_fight_leopold_in"
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_leopold"
@@ -2630,7 +2601,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "bar_expedition_additional_equipment_container"
-			position = {x=600 y=400}
+			position = {x=400 y=400}
 
 			instantTextBoxType = {
 				name = "bar_expedition_additional_equipment_text"
@@ -2665,7 +2636,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "bar_expedition_length_container"
-			position = { x = 600 y = 550 }
+			position = { x = 400 y = 550 }
 			
 			instantTextBoxType = {
 				name = "bar_expedition_length_text"
@@ -2697,6 +2668,27 @@ guiTypes = {
 				quadTextureSprite ="GFX_button_94x31"
 				buttonFont = "hoi_16mbs"
 			}
+		}
+		containerWindowType = {
+			name = "bar_expedition_info_container"
+			position = { x = 700 y = 400 }
+			
+			instantTextBoxType = {
+				name = "bar_expedition_info_title"
+				position = {x=0 y=0}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_info_title
+			}	
+			instantTextBoxType = {
+				name = "bar_expedition_info_text"
+				position = {x=0 y=50}
+				font = "hoi_16mbs"
+				maxWidth = 500
+				format = left
+				text = bar_expedition_info_text
+			}	
 		}
 		containerWindowType = {
 			name = "bar_expedition_controls_targets_container"
@@ -2840,7 +2832,7 @@ guiTypes = {
 			position = {x=20 y=0}
 			font = "hoi_16mbs"
 			format = left
-			maxWidth = 250
+			maxWidth = 300
 			maxHeight = 50
 			text = bar_silver_star_category_resources_text
 		}
@@ -2864,7 +2856,7 @@ guiTypes = {
 			position = {x=20 y=0}
 			font = "hoi_16mbs"
 			format = left
-			maxWidth = 250
+			maxWidth = 300
 			maxHeight = 50
 			text = bar_leopold_category_resources_text
 		}
@@ -2888,7 +2880,7 @@ guiTypes = {
 			position = {x=20 y=0}
 			font = "hoi_16mbs"
 			format = left
-			maxWidth = 250
+			maxWidth = 300
 			maxHeight = 50
 			text = bar_asinti_category_resources_text
 		}
@@ -2912,7 +2904,7 @@ guiTypes = {
 			position = {x=20 y=0}
 			font = "hoi_16mbs"
 			format = left
-			maxWidth = 250
+			maxWidth = 300
 			maxHeight = 50
 			text = bar_viira_category_resources_text
 		}

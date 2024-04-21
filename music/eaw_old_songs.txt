@@ -464,6 +464,28 @@ music = {
 	}
 }
 music = {
+	song = "loss"
+
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "DSTechnician_honorguard"
+
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "DST-Darkess_extended"
+
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
 	song = "Brad_Cypy-Battle_For_Supremacy"
 
 	chance = {

@@ -1788,8 +1788,13 @@ technologies = {
 				attack = 0.3
 				defence = 0.3
 			}
+			hills = {
+				movement = 0.3
+				attack = 0.3
+				defence = 0.3
+			}
 			breakthrough = 0.2
-			reliability = 0.1
+			reliability = 0.15
 		}
 	}
 

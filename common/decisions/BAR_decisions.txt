@@ -2346,7 +2346,7 @@ BAR_silver_star_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_dev_up"
 			increase_society_development_gradual = yes
-			BAR_resources_subtract_silver_1500 = yes
+			bar_silver_resources_subtract_1500 = yes
 		}
 		ai_will_do = {
 			factor = 20
@@ -2375,7 +2375,7 @@ BAR_silver_star_cat = {
 		custom_cost_text = silver_resources_over_1000_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_dev_up"
-			BAR_resources_subtract_silver_1000 = yes
+			bar_silver_resources_subtract_1000 = yes
 			add_doctrine_cost_reduction = {
 				name = cat_grand_battle_plan
 				cost_reduction = 0.5
@@ -2407,7 +2407,7 @@ BAR_silver_star_cat = {
 		fixed_random_seed = no
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_raise_spook_bois"
-			BAR_resources_subtract_silver_500 = yes
+			bar_silver_resources_subtract_500 = yes
 			hidden_effect = {
 				set_variable_to_random = {
 					var = manpower_rand_var
@@ -2719,17 +2719,17 @@ BAR_silver_star_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_study"
 			random_list = {
-				10 = {
-					BAR_resources_add_silver_1000 = yes
+				5 = {
+					bar_silver_resources_add_1000 = yes
 				}
-				30 = {
-					BAR_resources_add_silver_500 = yes
+				10 = {
+					bar_silver_resources_add_750 = yes
+				}
+				35 = {
+					bar_silver_resources_add_500 = yes
 				}
 				50 = {
-					BAR_resources_add_silver_250 = yes
-				}
-				10 = {
-					BAR_resources_add_silver_100 = yes
+					bar_silver_resources_add_250 = yes
 				}
 			}
 		}
@@ -2756,7 +2756,7 @@ BAR_silver_star_cat = {
 		fixed_random_seed = no
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_convert_equipment"
-			BAR_resources_add_silver_500 = yes
+			bar_silver_resources_add_500 = yes
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -3037,7 +3037,7 @@ BAR_leopold_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
 			increase_society_development_gradual = yes
-			BAR_resources_subtract_leopold_1500 = yes
+			bar_leopold_resources_subtract_1500 = yes
 		}
 		ai_will_do = {
 			factor = 20
@@ -3066,7 +3066,7 @@ BAR_leopold_cat = {
 		custom_cost_text = leopold_resources_over_1000_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
-			BAR_resources_subtract_leopold_1000 = yes
+			bar_leopold_resources_subtract_1000 = yes
 			add_doctrine_cost_reduction = {
 				name = cat_superior_firepower
 				cost_reduction = 0.5
@@ -3097,7 +3097,7 @@ BAR_leopold_cat = {
 		custom_cost_text = leopold_resources_over_500_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
-			BAR_resources_subtract_leopold_500 = yes
+			bar_leopold_resources_subtract_500 = yes
 			army_experience = 30
 		}
 		ai_will_do = {
@@ -3123,10 +3123,10 @@ BAR_leopold_cat = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
 			random_list = {
 				50 = {
-					BAR_resources_add_leopold_500 = yes
+					bar_leopold_resources_add_500 = yes
 				}
 				50 = {
-					BAR_resources_add_leopold_250 = yes
+					bar_leopold_resources_add_250 = yes
 				}
 			}
 		}
@@ -3156,7 +3156,7 @@ BAR_leopold_cat = {
 		custom_cost_text = decision_cost_500_guns
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_convert_equipment"
-			BAR_resources_add_leopold_500 = yes
+			bar_leopold_resources_add_500 = yes
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -3212,22 +3212,10 @@ BAR_asinti_cat = {
 					BAR_nuclear_progress = 100
 				}
 			}
-			if = {
-				limit = {
-					has_country_flag = BAR_asinti_discount
-				}
-				custom_effect_tooltip = BAR_resources_substract_asinti_1350
-				subtract_from_variable = {
-					var = BAR_resources_asinti
-					value = 70
-				}
-			}
-			else = {
-				custom_effect_tooltip = BAR_resources_substract_asinti_1500
-				subtract_from_variable = {
-					var = BAR_resources_asinti
-					value = 100
-				}
+			custom_effect_tooltip = BAR_resources_substract_asinti_1500
+			subtract_from_variable = {
+				var = BAR_resources_asinti
+				value = 100
 			}
 		}
 	}
@@ -3284,20 +3272,9 @@ BAR_asinti_cat = {
 					BAR_nuclear_research = 100
 				}
 			}
-			if = {
-				limit = {
-					has_country_flag = BAR_asinti_discount
-				}
-				subtract_from_variable = {
-					var = BAR_resources_asinti
-					value = 70
-				}
-			}
-			else = {
-				subtract_from_variable = {
-					var = BAR_resources_asinti
-					value = 100
-				}
+			subtract_from_variable = {
+				var = BAR_resources_asinti
+				value = 100
 			}
 			custom_effect_tooltip = BAR_reactor_research_tooltip
 		}
@@ -3324,7 +3301,7 @@ BAR_asinti_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
 			increase_society_development_gradual = yes
-			BAR_resources_subtract_asinti_1500 = yes
+			bar_asinti_resources_subtract_1500 = yes
 		}
 		ai_will_do = {
 			factor = 20
@@ -3354,7 +3331,7 @@ BAR_asinti_cat = {
 		fixed_random_seed = no
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
-			BAR_resources_subtract_asinti_500 = yes
+			bar_asinti_resources_subtract_500 = yes
 			hidden_effect = {
 				random_list = {
 					15 = {
@@ -3405,17 +3382,17 @@ BAR_asinti_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
 			random_list = {
+				5 = {
+					bar_asinti_resources_add_1000 = yes
+				}
 				10 = {
-					BAR_resources_add_asinti_750 = yes
+					bar_asinti_resources_add_750 = yes
 				}
-				15 = {
-					BAR_resources_add_asinti_500 = yes
+				25 = {
+					bar_asinti_resources_add_500 = yes
 				}
-				45 = {
-					BAR_resources_add_asinti_250 = yes
-				}
-				30 = {
-					BAR_resources_add_asinti_100 = yes
+				60 = {
+					bar_asinti_resources_add_250 = yes
 				}
 			}
 		}
@@ -3443,13 +3420,13 @@ BAR_asinti_cat = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
 			random_list = {
 				20 = {
-					BAR_resources_add_asinti_1000 = yes
+					bar_asinti_resources_add_1000 = yes
 				}
 				50 = {
-					BAR_resources_add_asinti_750 = yes
+					bar_asinti_resources_add_750 = yes
 				}
 				30 = {
-					BAR_resources_add_asinti_500 = yes
+					bar_asinti_resources_add_500 = yes
 				}
 			}
 		}
@@ -3468,7 +3445,7 @@ BAR_asinti_cat = {
 	BAR_asinti_exort_followers = {
 		icon = GFX_decision_sombra_crystals
 		days_remove = 50
-		cost = 10
+		cost = 25
 		allowed = {
 			original_tag = BAR
 		}
@@ -3480,14 +3457,14 @@ BAR_asinti_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
 			random_list = {
-				15 = {
-					BAR_resources_add_asinti_500 = yes
+				5 = {
+					bar_asinti_resources_add_750 = yes
 				}
-				35 = {
-					BAR_resources_add_asinti_250 = yes
+				25 = {
+					bar_asinti_resources_add_500 = yes
 				}
-				50 = {
-					BAR_resources_add_asinti_100 = yes
+				70 = {
+					bar_asinti_resources_add_250 = yes
 				}
 			}
 		}
@@ -3517,7 +3494,7 @@ BAR_asinti_cat = {
 		custom_cost_text = decision_cost_500_guns
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_convert_equipment"
-			BAR_resources_add_asinti_500 = yes
+			bar_asinti_resources_add_500 = yes
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -3768,7 +3745,7 @@ BAR_viira_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_dev_up"
 			increase_society_development_gradual = yes
-			BAR_resources_subtract_viira_1000 = yes
+			bar_viira_resources_subtract_1000 = yes
 		}
 		ai_will_do = {
 			factor = 20
@@ -3797,7 +3774,7 @@ BAR_viira_cat = {
 		custom_cost_text = viira_resources_over_750_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_dev_up"
-			BAR_resources_subtract_viira_750 = yes
+			bar_viira_resources_subtract_750 = yes
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
@@ -3824,13 +3801,13 @@ BAR_viira_cat = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_treasure_hunt"
 			random_list = {
 				5 = {
-					BAR_resources_add_viira_1000 = yes
+					bar_viira_resources_add_1000 = yes
 				}
 				25 = {
-					BAR_resources_add_viira_500 = yes
+					bar_viira_resources_add_500 = yes
 				}
 				50 = {
-					BAR_resources_add_viira_250 = yes
+					bar_viira_resources_add_250 = yes
 				}
 				20 = {
 				}
@@ -3858,7 +3835,7 @@ BAR_viira_cat = {
 		custom_cost_text = decision_cost_500_guns
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: BAR_viira_convert_equipment BAR_asinti_convert_equipment"
-			BAR_resources_add_viira_500 = yes
+			bar_viira_resources_add_500 = yes
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -500
@@ -11109,7 +11086,7 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_gasienica_dealth
 		}
 		remove_effect = {
-			BAR_add_gasienica_as_commander = yes
+			clr_country_flag = BAR_gasienica_hidden
 		}
 	}
 	BAR_asinti_pentarchs_kill_leopold = {

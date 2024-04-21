@@ -138,6 +138,7 @@ recruit_character = BAR_hrothgar_fiscford
 recruit_character = BAR_wilfrith_faegerwell
 recruit_character = BAR_cyneweard_stangaet
 recruit_character = BAR_ondska
+recruit_character = BAR_gasienica
 
 add_ideas = {
 	pre_industrial_society
@@ -147,7 +148,7 @@ add_ideas = {
 	BAR_pentarchy
 	BAR_wittenland_witchhunters
 	BAR_no_volunteers
-	BAR_cpt_novak
+	BAR_gasienica_advisor
 	poverty
 	lack_of_scientists2
 }

@@ -11,52 +11,7 @@
                                                         
 
 
-  BAR_ambrosius_boredoom:0 "Ambrosius"
-  BAR_ambrosius_boredoom_desc:0 "Sometimes, the self-styled Count of Barrad needs a bit more §Rfun§!. Ennui is such a malignant burden, difficult to cast aside. His periodical shenanigans can be a blessing, or a curse for his subjects."
 
-  BAR_silver_star_cat:0 "Silver Star"
-  BAR_leopold_cat:0 "Leopold Schmeller"
-  BAR_asinti_cat:0 "Asinti"
-  BAR_viira_cat:0 "Viira Lehtola"
-
-  BAR_silver_star_cat_desc:0 "The brother to Wittenland's Queen White Star, Silver Star has always despised being in his sister's shadow. Desire for power and fear of death have pushed the powerful unicorn mage down the path of the dark arts, feeding his paranoia.\n\nCurrent resources: §C[?BAR_resources_silver]§!£silver_resources_text \nResources represent combined power and assets of character, it might be wise to keep some of them for unforseen events\n\nRelations with other Pentarchy members:\n\nAsinti [Root.BAR_relations_asinti_silver_color]\nLeopold [Root.BAR_relations_silver_leopold_color]\nViira [Root.BAR_relations_silver_viira_color]\n"
-  BAR_leopold_cat_desc:0 "Leopold was a sickly but genius griffon, whose desire to help was once noble. Rejecting normal medicine, the griffon became obsessed with the art of enchanting with magical crystals. Having practised his medicines on himself, he went too far in the eyes of many griffons. However, Leopold sees his knowledge as the only way to safeguard Griffonia from its endless wars of destruction.\n\nCurrent resources: §C[?BAR_resources_leopold]§!£leopold_resources_text \nResources represent combined power and assets of character, it might be wise to keep some of them for unforseen events\n\nRelations with other Pentarchy members:\n\nAsinti [Root.BAR_relations_asinti_leopold_color]\nSilver Star [Root.BAR_relations_silver_leopold_color]\nViira [Root.BAR_relations_leopold_viira_color]\n"
-  BAR_asinti_cat_desc:0 "A zebra shaman and former slave, Asinti's powerful spirit allows him to interact with the plane of the divine and commune with otherworldly beings. He was exiled from Kása after his experiments on living creatures came to light.\n\nCurrent resources: §C[?BAR_resources_asinti]§!£asinti_resources_text \nResources represent combined power and assets of character, it might be wise to keep some of them for unforseen events\n\nRelations with other Pentarchy members:\n\nSilver Star [Root.BAR_relations_asinti_silver_color]\nLeopold [Root.BAR_relations_asinti_leopold_color]\nViira [Root.BAR_relations_asinti_viira_color]\n"
-  BAR_viira_cat_desc:0 "Viira is a deer born with abnormally strong magical powers. She wishes to understand the nature of magic and use it to create a new society for the deer, where they can dominate the material world.\n\nCurrent resources: §C[?BAR_resources_viira]§!£viira_resources_text \nResources represent combined power and assets of character, it might be wise to keep some of them for unforseen events\n\n[BAR_viira_needed_resources]\n\nRelations with other Pentarchy members:\n\nAsinti [Root.BAR_relations_asinti_viira_color]\nLeopold [Root.BAR_relations_leopold_viira_color]\nSilver Star [Root.BAR_relations_silver_viira_color]\n"
-
-  BAR_viira_needed_resources_enough:0 "§CViira seems confident with the amount of resources she helds§!"
-  BAR_viira_needed_resources_not_enough:0 "§RViira seems not confident with the amount of resources she helds§!"
-
-  #relations
-  BAR_relations_asinti_silver_color_green:0 "§G[?BAR_relations_asinti_silver]/100§!"
-  BAR_relations_asinti_silver_color_yellow:0 "§Y[?BAR_relations_asinti_silver]/100§!"
-  BAR_relations_asinti_silver_color_red:0 "§R[?BAR_relations_asinti_silver]/100§!"
-  BAR_relations_asinti_silver_color_gray:0 "§g[?BAR_relations_asinti_silver]/100§!"
-
-  BAR_relations_asinti_leopold_color_green:0 "§G[?BAR_relations_asinti_leopold]/100§!"
-  BAR_relations_asinti_leopold_color_yellow:0 "§Y[?BAR_relations_asinti_leopold]/100§!"
-  BAR_relations_asinti_leopold_color_red:0 "§R[?BAR_relations_asinti_leopold]/100§!"
-  BAR_relations_asinti_leopold_color_gray:0 "§g[?BAR_relations_asinti_leopold]/100§!"
-
-  BAR_relations_asinti_viira_color_green:0 "§G[?BAR_relations_asinti_viira]/100§!"
-  BAR_relations_asinti_viira_color_yellow:0 "§Y[?BAR_relations_asinti_viira]/100§!"
-  BAR_relations_asinti_viira_color_red:0 "§R[?BAR_relations_asinti_viira]/100§!"
-  BAR_relations_asinti_viira_color_gray:0 "§g[?BAR_relations_asinti_viira]/100§!"
-
-  BAR_relations_silver_leopold_color_green:0 "§G[?BAR_relations_silver_leopold]/100§!"
-  BAR_relations_silver_leopold_color_yellow:0 "§Y[?BAR_relations_silver_leopold]/100§!"
-  BAR_relations_silver_leopold_color_red:0 "§R[?BAR_relations_silver_leopold]/100§!"
-  BAR_relations_silver_leopold_color_gray:0 "§g[?BAR_relations_silver_leopold]/100§!"
-
-  BAR_relations_silver_viira_color_green:0 "§G[?BAR_relations_silver_viira]/100§!"
-  BAR_relations_silver_viira_color_yellow:0 "§Y[?BAR_relations_silver_viira]/100§!"
-  BAR_relations_silver_viira_color_red:0 "§R[?BAR_relations_silver_viira]/100§!"
-  BAR_relations_silver_viira_color_gray:0 "§g[?BAR_relations_silver_viira]/100§!"
-
-  BAR_relations_leopold_viira_color_green:0 "§G[?BAR_relations_leopold_viira]/100§!"
-  BAR_relations_leopold_viira_color_yellow:0 "§Y[?BAR_relations_leopold_viira]/100§!"
-  BAR_relations_leopold_viira_color_red:0 "§R[?BAR_relations_leopold_viira]/100§!"
-  BAR_relations_leopold_viira_color_gray:0 "§g[?BAR_relations_leopold_viira]/100§!"
 
   BAR_silver_undead_buffs_desc:0 "[Root.BAR_undead_pp_bonus_text]" 
   BAR_undead_pp_bonus_text_ap:0 "Archlich Silver Star enchants his forces' weapons to destroy enemy armour"
@@ -94,21 +49,7 @@
   decision_cost_pp_25_manpower_250_blocked:0 "£manpower_icon  §R250§! £pol_power  §R25§!"
   decision_cost_pp_25_manpower_250_tooltip:0 "It costs [This.GetDecisionCostPP25Man250] to take the decision"
 
-  ### assasinations ###
-  BAR_assasination_attempts:0 "Pentarchy Dissagreements"
-  BAR_assasination_asinti_silver:0 "Silver Star and Asinti"
-  BAR_assasination_asinti_leopold:0 "Asinti and Leopold"
-  BAR_assasination_asinti_viira:0 "Viira and Asinti"
-  BAR_assasination_silver_leopold:0 "Leopold and Silver Star"
-  BAR_assasination_silver_viira:0 "Silver Star and Viira"
-  BAR_assasination_leopold_viira:0 "Leopold and Viira"
 
-  BAR_assasination_asinti_silver_desc:0 "It seems like they have things to §Rsettle§!."
-  BAR_assasination_asinti_leopold_desc:0 "It seems like they have things to §Rsettle§!."
-  BAR_assasination_asinti_viira_desc:0 "It seems like they have things to §Rsettle§!."
-  BAR_assasination_silver_leopold_desc:0 "It seems like they have things to §Rsettle§!."
-  BAR_assasination_silver_viira_desc:0 "It seems like they have things to §Rsettle§!."
-  BAR_assasination_leopold_viira_desc:0 "It seems like they have things to §Rsettle§!."
 
 
 
@@ -1071,9 +1012,9 @@
   BAR_gasping_breath:0 "Gasping Breath"
 
   ### advisors ###
-  BAR_cpt_novak:0 "Captain Gąsienica"
-  BAR_cpt_novak_desc:0 "Despite his prominence, the origins of Count Ambrosius' most trusted advisor have always been shrouded in mystery. Rumour has it that Gąsienica grew up in a Gryphussian village located near the Barradian border before being abducted as a child by Ambrosius. He is then said to have been subjected to experiments which mutated him into an unstoppable killing machine.\n\nThe griffon's monstrous stature and reputation for brutality quickly earned him his position as the Count's Right Claw, acting as the Ambrosius' bodyguard as well as commanding his soldiers. But, as many who have underestimated Gąsienica have learned, brutality does not equal stupidity. Gąsienica has retained his intelligence and cleverness throughout his time in the Count's service, and is a well-liked and competent commander of troops. In fact, given the eccentricities of the Pentarchs, Gąsienica is often referred to as the last sane creature in Barrad."
-  BAR_cpt_novak_advisor:0 "Count's Right Claw"
+  BAR_gasienica:0 "Gąsienica"
+  BAR_gasienica_desc:0 "Despite his prominence, the origins of Count Ambrosius' most trusted advisor have always been shrouded in mystery. Rumour has it that Gąsienica grew up in a Gryphussian village located near the Barradian border before being abducted as a child by Ambrosius. He is then said to have been subjected to experiments which mutated him into an unstoppable killing machine.\n\nThe griffon's monstrous stature and reputation for brutality quickly earned him his position as the Count's Right Claw, acting as the Ambrosius' bodyguard as well as commanding his soldiers. But, as many who have underestimated Gąsienica have learned, brutality does not equal stupidity. Gąsienica has retained his intelligence and cleverness throughout his time in the Count's service, and is a well-liked and competent commander of troops. In fact, given the eccentricities of the Pentarchs, Gąsienica is often referred to as the last sane creature in Barrad."
+  BAR_gasienica_advisor:0 "Count's Right Claw"
   BAR_pen_scientist:0 "Leofric & Godgifu Glaedwine"
   BAR_ded_scientist:0 "Godgifu Glaedwine"
   BAR_pen_pp_pol:0 "Aethelflaed Sigeweard"
@@ -1365,7 +1306,7 @@
   BAR_reactor_build_viira:0 "Construct Reactor"
   BAR_search_in_silver_library:0 "Search Silver Star's Library"
   BAR_viira_info:0 "Viira Information"
-  BAR_asinti_summon_more_demons:0 "Summon More Demons"
+  BAR_asinti_summon_more_demons:0 "Recruit More Followers"
   BAR_asinti_dev_up:0 "Improve Society"
   BAR_reactor_research_asinti:0 "Research Reactor"
   BAR_reactor_build_asinti:0 "Construct Reactor"
@@ -2610,3 +2551,5 @@
   BAR_leopold_efficient_management_desc:0 "The Clockworks know no excuses and no shortcuts. The need for improvement is absolute, even if they must rip apart the very factories around them to rebuild them better than before."
   BAR_leopold_perpetum_mobile:0 "Perpetuum Mobile"
   BAR_leopold_perpetum_mobile_desc:0 "The clockworks are reaching true independence, and from their very creation to their disassembly, they are working fully on their own, acquiring more and more resources and producing more and more goods." 
+
+  bar_pen_fight_viira_hp:0 "[?v_hp]/280"

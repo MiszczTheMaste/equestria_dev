@@ -252,8 +252,8 @@ characters={
 		}
 		gender = female
 	}
-	BAR_captain_gasienica={
-		name=BAR_cpt_novak
+	BAR_gasienica={
+		name=BAR_gasienica
 		portraits={
 			army={
 				small=GFX_idea_BAR_Gasienica
@@ -262,7 +262,7 @@ characters={
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = BAR_cpt_novak
+			idea_token = BAR_gasienica_advisor
 			can_be_fired = no
 			allowed = {
 				original_tag = BAR
@@ -282,7 +282,27 @@ characters={
 				}
 			}
 			traits = {
-				BAR_cpt_novak_advisor
+				BAR_gasienica_advisor
+			}
+		}
+		field_marshal = {
+			traits = {
+				griffon_race_trait
+				bar_cpt_gasienica
+				trait_mountaineer
+				infantry_officer
+				organizer
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+			legacy_id = 997003
+			visible = {
+				NOT = {
+					has_country_flag = BAR_gasienica_hidden
+				}
 			}
 		}
 	}

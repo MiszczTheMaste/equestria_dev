@@ -804,20 +804,6 @@ ideas = {
 				army_core_attack_factor = 0.1
 			}
 		}
-		BAR_pentarchy_enemy = {
-			picture = DED_magehold
-
-			modifier = {
-				stability_factor = -1
-				war_support_factor = -1
-				research_speed_factor = -0.5
-				political_power_gain = -1
-				political_advisor_cost_factor = 100
-				economy_cost_factor = 100
-				high_command_cost_factor = 100
-				theorist_cost_factor = 100
-			}
-		}
 		BAR_agricultural_miracle = {
 			picture = syndicate_of_agriculture
 

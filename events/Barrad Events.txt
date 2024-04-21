@@ -86,7 +86,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "ambrosius sane"
-		load_focus_tree = barrad_focus_tree_sane_ambrosius
+		bar_load_sane_ambrosius = yes
 	}
 	option = {
 		name = "friendship"
@@ -1058,11 +1058,10 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = magocracy
 				traits = {
-					BAR_cpt_novak_advisor
+					BAR_gasienica_advisor
 				}
 			}
 		}
-		BAR_add_gasienica_as_commander = yes
 		add_stability = -0.3
 		add_war_support = -0.3
 		hidden_effect = {
@@ -1070,7 +1069,7 @@ country_event = {
 			remove_advisor_role = {
 				character = BAR_captain_gasienica
 				slot = political_advisor
-			  }
+			}
 		}
 		country_event = { id = barrad_friends.17 }
 	}
@@ -1155,7 +1154,7 @@ country_event = {
 		#dismantle a titan for resources
 		name = bar_titan_fight.2.a
 		set_country_flag = BAR_strike_the_earth_unlocked
-		BAR_resources_add_leopold_1000 = yes
+		bar_leopold_resources_add_1000 = yes
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
 	}
@@ -1190,7 +1189,7 @@ country_event = {
 		clr_country_flag = BAR_leopold_immunity
 		clr_country_flag = BAR_viira_immunity
 		set_country_flag = BAR_strike_the_earth_unlocked
-		BAR_resources_add_leopold_1000 = yes
+		bar_leopold_resources_add_1000 = yes
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
 	}
@@ -2629,7 +2628,7 @@ country_event = {
 	option = {
 		name = barrad_second.3.a
 		add_manpower = -2000
-		BAR_resources_add_viira_250 = yes
+		bar_viira_resources_add_250 = yes
 		add_political_power = 50
 	}
 }
@@ -2871,7 +2870,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.3.a
-		BAR_resources_add_viira_250 = yes
+		bar_viira_resources_add_250 = yes
 	}
 }
 
@@ -2964,7 +2963,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.7.a
-		BAR_resources_add_viira_250 = yes
+		bar_viira_resources_add_250 = yes
 		if = {
 			limit = {
 				check_variable = {
@@ -3197,7 +3196,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						has_variable = barrad_plants
+						has_country_flag = barrad_plants
 					}
 					if = {
 						limit = {
@@ -3236,7 +3235,8 @@ country_event = {
 							restore_previous_manpower = yes
 						}
 					}
-					clear_variable = barrad_plants
+					clr_country_flag = barrad_plants
+					set_country_flag = bar_mountain_griffs_ran_away
 				}
 			}
 		}
@@ -3535,11 +3535,7 @@ country_event = {
 		hidden_effect = {
 			bar_pen_fight_close_window = yes
 			barrad_kill_viira = yes
-			BAR_add_gasienica_as_commander = yes
-			country_event = {
-				days = 1
-				id = bar_fallen_pentarchy.977
-			}
+			bar_load_sane_ambrosius = yes
 		}
 	}
 }
@@ -3595,39 +3591,10 @@ country_event = {
 	desc = barrad_viira_fight.72.d
 	picture = GFX_event_cave
 	is_triggered_only = yes
-	immediate = {
-		set_variable = {
-			res_total = 0
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_asinti_alive
-			}
-			add_to_variable = {
-				res_total = BAR_resources_asinti
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_leopold_alive
-			}
-			add_to_variable = {
-				res_total = BAR_resources_leopold
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			add_to_variable = {
-				res_total = BAR_resources_silver
-			}
-		}
-	}
 	option = {
 		trigger = {
 			check_variable = {
-				res_total < 1200
+				res_total < 2000
 			}
 		}
 		name = barrad_viira_fight.72.a
@@ -3639,12 +3606,15 @@ country_event = {
 	option = {
 		trigger = {
 			check_variable = {
-				res_total > 1199
+				res_total > 1999
 			}
 		}
 		name = barrad_viira_fight.72.b
 		country_event = {
 			id = barrad_viira_fight.74
+		}
+		hidden_effect = {
+			BAR_hide_gasienica = yes
 		}
 		#git gitara
 	}
@@ -3663,8 +3633,7 @@ country_event = {
 	option = {
 		name = barrad_viira_fight.73.a
 		hidden_effect = {
-			clr_country_flag = barrad_early_game
-			load_focus_tree = barrad_focus_tree_sane_ambrosius
+			bar_load_sane_ambrosius = yes
 		}
 	}
 }
@@ -3751,8 +3720,7 @@ country_event = {
 			barrad_kill_asinti = yes
 			barrad_kill_leopold = yes
 			barrad_kill_silver = yes
-			BAR_add_gasienica_as_commander = yes
-			country_event = { id = bar_fallen_pentarchy.977 }
+			bar_load_sane_ambrosius = yes
 		}
 	}
 }
@@ -3771,9 +3739,10 @@ country_event = {
 		name = barrad_viira_fight.10.a
 		hidden_effect = {
 			bar_pen_fight_close_window = yes
-			country_event = {
-				id = barrad_viira.1
-			}
+			BAR_hide_gasienica = yes
+		}
+		country_event = {
+			id = barrad_viira.1
 		}
 	}
 }
@@ -4919,39 +4888,8 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira.11.a
-		hidden_effect = {
-			barrad_kill_viira_no_ending_check = yes
-			clr_country_flag = barrad_early_game
-			swap_ideas = {
-				remove_idea = BAR_pentarchy
-				add_idea = BAR_pentarchy_enemy
-			}
-			add_country_leader_role = {
-				character = BAR_angrier_mob
-				promote_leader = yes
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = kratokracy
-				}
-			}
-			set_politics = {
-				ruling_party = neutrality
-			}
-			set_party_name = {
-				ideology = neutrality
-				name = BAR_ambrosius_party_name
-				long_name = BAR_ambrosius_party_name
-			}
-			add_country_leader_role = {
-				character = BAR_count_ambrosius
-				promote_leader = yes
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-				}
-			}
-		}
-		load_focus_tree = barrad_focus_tree_sane_ambrosius
+		barrad_kill_viira = yes
+		bar_load_sane_ambrosius = yes
 	}
 }
 
@@ -5167,7 +5105,7 @@ country_event = {
 	picture = GFX_event_medieval_village_2
 	option = {
 		name = barrad_viira.17.a
-		BAR_add_gasienica_as_commander = yes
+		clr_country_flag = BAR_gasienica_hidden
 	}
 }
 
@@ -5199,7 +5137,7 @@ country_event = {
 		country_event = {
 			id = bar_viira_murders.2
 		}
-		BAR_resources_subtract_viira_1000 = yes
+		bar_viira_resources_subtract_1000 = yes
 	}
 	option = {
 		name = bar_viira_murders.1.c
@@ -5241,7 +5179,7 @@ country_event = {
 	option = {
 		name = bar_viira_murders.3.a
 		barrad_kill_asinti = yes
-		BAR_resources_subtract_viira_1000 = yes
+		bar_viira_resources_subtract_1000 = yes
 		if = {
 			limit = {
 				has_idea = BAR_temple_construct_z_f_p
@@ -5352,10 +5290,7 @@ country_event = {
 			id = bar_sane_ambrosius_balance
 		}
 		set_country_flag = bar_sane_ambrosius_balance_enabled
-		BAR_add_gasienica_as_commander = yes
 		BAR_captain_gasienica = {
-			set_character_name = "BAR_marshal_gasienica"
-			promote_leader = yes
 			add_attack = 1
 			add_defense = 1
 			add_logistics = 1
@@ -5431,7 +5366,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.6.a
-		remove_ideas = BAR_pentarchy_enemy
 		hidden_effect = {
 			set_country_flag = BAR_ambrosius_diplomacy_unlocked
 			remove_ideas = BAR_no_volunteers
@@ -6778,7 +6712,7 @@ country_event = {
 		barrad_kill_asinti = yes
 		barrad_kill_silver = yes
 		barrad_kill_viira = yes
-		load_focus_tree = barrad_focus_tree_sane_ambrosius
+		bar_load_sane_ambrosius = yes
 	}
 }
 

@@ -202,6 +202,111 @@
   decision_cost_500_guns_blocked:0 "£infequip_text §R500§!"
 
 
+  #resources tooltips
+  bar_silver_resources_add_250_tooltip:0 "Silver Star Resources: §G+250§!\n"
+  bar_silver_resources_add_500_tooltip:0 "Silver Star Resources: §G+500§!\n"
+  bar_silver_resources_add_750_tooltip:0 "Silver Star Resources: §G+750§!\n"
+  bar_silver_resources_add_1000_tooltip:0 "Silver Star Resources: §G+100§!\n"
+  bar_leopold_resources_add_250_tooltip:0 "Leopold Resources: §G+250§!\n"
+  bar_leopold_resources_add_500_tooltip:0 "Leopold Resources: §G+500§!\n"
+  bar_leopold_resources_add_750_tooltip:0 "Leopold Resources: §G+750§!\n"
+  bar_leopold_resources_add_1000_tooltip:0 "Leopold Resources: §G+1000§!\n"
+  bar_asinti_resources_add_250_tooltip:0 "Asint Resources: §G+250§!\n"
+  bar_asinti_resources_add_500_tooltip:0 "Asint Resources: §G+500§!\n"
+  bar_asinti_resources_add_750_tooltip:0 "Asint Resources: §G+750§!\n"
+  bar_asinti_resources_add_1000_tooltip:0 "Asint Resources: §G+1000§!\n"
+  bar_viira_resources_add_250_tooltip:0 "Viira Resources: §G+250§!\n"
+  bar_viira_resources_add_500_tooltip:0 "Viira Resources: §G+500§!\n"
+  bar_viira_resources_add_750_tooltip:0 "Viira Resources: §G+750§!\n"
+  bar_viira_resources_add_1000_tooltip:0 "Viira Resources: §G+1000§!\n"
+  bar_silver_resources_subtract_500_tooltip:0 "Silver Star Resources: §R-500§!\n"
+  bar_silver_resources_subtract_1000_tooltip:0 "Silver Star Resources: §R-100§!\n"
+  bar_silver_resources_subtract_1500_tooltip:0 "Silver Star Resources: §R-1500§!\n"
+  bar_leopold_resources_subtract_500_tooltip:0 "Leopold Resources: §R-500§!\n"
+  bar_leopold_resources_subtract_1000_tooltip:0 "Leopold Resources: §R-1000§!\n"
+  bar_leopold_resources_subtract_1500_tooltip:0 "Leopold Resources: §R-1500§!\n"
+  bar_asinti_resources_subtract_500_tooltip:0 "Asint Resources: §R-500§!\n"
+  bar_asinti_resources_subtract_1500_tooltip:0 "Asint Resources: §R-1500§!\n"
+  bar_viira_resources_subtract_750_tooltip:0 "Viira Resources: §R-750§!\n"
+  bar_viira_resources_subtract_1000_tooltip:0 "Viira Resources: §R-1000§!\n"
+
+
+  #pentarch tabs
+  BAR_ambrosius_boredoom:0 "Ambrosius"
+  BAR_ambrosius_boredoom_desc:0 "Sometimes, the self-styled Count of Barrad needs a bit more §Rfun§!. Ennui is such a malignant burden, difficult to cast aside. His periodical shenanigans can be a blessing, or a curse for his subjects."
+
+  BAR_silver_star_cat:0 "Silver Star"
+  BAR_leopold_cat:0 "Leopold Schmeller"
+  BAR_asinti_cat:0 "Asinti"
+  BAR_viira_cat:0 "Viira Lehtola"
+
+  bar_silver_star_category_resources_text:0 "Resources:\n  [?BAR_resources_silver]£silver_resources_text\n\n\n[BAR_pentarchy_needed_resources]"
+  bar_silver_star_category_relations_text:0 "Relations:\n\nAsinti [Root.BAR_relations_asinti_silver_color]\nLeopold [Root.BAR_relations_silver_leopold_color]\nViira [Root.BAR_relations_silver_viira_color]"  
+  
+  bar_leopold_category_resources_text:0 "Resources:\n [?BAR_resources_leopold]£leopold_resources_text\n\n\n[BAR_pentarchy_needed_resources]"
+  bar_leopold_category_relations_text:0 "Relations:\n\nAsinti [Root.BAR_relations_asinti_leopold_color]\nSilver Star [Root.BAR_relations_silver_leopold_color]\nViira [Root.BAR_relations_leopold_viira_color]"  
+
+  bar_asinti_category_resources_text:0 "resources:\n [?BAR_resources_asinti]£asinti_resources_text\n\n\n[BAR_pentarchy_needed_resources]"
+  bar_asinti_category_relations_text:0 "Relations:\n\nSilver Star [Root.BAR_relations_asinti_silver_color]\nLeopold [Root.BAR_relations_asinti_leopold_color]\nViira [Root.BAR_relations_asinti_viira_color]"
+  
+  bar_viira_category_resources_text:0 "Resources:\n §C[?BAR_resources_viira]§!£viira_resources_text\n\n\n[BAR_viira_needed_resources]"
+  bar_viira_category_relations_text:0 "Relations:\n\nAsinti [Root.BAR_relations_asinti_viira_color]\nLeopold [Root.BAR_relations_leopold_viira_color]\nSilver Star [Root.BAR_relations_silver_viira_color]"
+
+
+  BAR_pentarchy_resources_enough:0 "§CWe seems prepared for any challenge§!"
+  BAR_pentarchy_resources_not_enough:0 "During crucial moments, a lack of resources\n§Rmay have dire consequences"§!"
+
+  BAR_viira_needed_resources_enough:0 "§CViira seems confident with the amount of resources she helds§!"
+  BAR_viira_needed_resources_not_enough:0 "§RViira seems not confident with the amount of resources she helds§!"
+
+  BAR_relations_asinti_silver_color_green:0 "§G[?BAR_relations_asinti_silver]/100§!"
+  BAR_relations_asinti_silver_color_yellow:0 "§Y[?BAR_relations_asinti_silver]/100§!"
+  BAR_relations_asinti_silver_color_red:0 "§R[?BAR_relations_asinti_silver]/100§!"
+  BAR_relations_asinti_silver_color_gray:0 "§g[?BAR_relations_asinti_silver]/100§!"
+
+  BAR_relations_asinti_leopold_color_green:0 "§G[?BAR_relations_asinti_leopold]/100§!"
+  BAR_relations_asinti_leopold_color_yellow:0 "§Y[?BAR_relations_asinti_leopold]/100§!"
+  BAR_relations_asinti_leopold_color_red:0 "§R[?BAR_relations_asinti_leopold]/100§!"
+  BAR_relations_asinti_leopold_color_gray:0 "§g[?BAR_relations_asinti_leopold]/100§!"
+
+  BAR_relations_asinti_viira_color_green:0 "§G[?BAR_relations_asinti_viira]/100§!"
+  BAR_relations_asinti_viira_color_yellow:0 "§Y[?BAR_relations_asinti_viira]/100§!"
+  BAR_relations_asinti_viira_color_red:0 "§R[?BAR_relations_asinti_viira]/100§!"
+  BAR_relations_asinti_viira_color_gray:0 "§g[?BAR_relations_asinti_viira]/100§!"
+
+  BAR_relations_silver_leopold_color_green:0 "§G[?BAR_relations_silver_leopold]/100§!"
+  BAR_relations_silver_leopold_color_yellow:0 "§Y[?BAR_relations_silver_leopold]/100§!"
+  BAR_relations_silver_leopold_color_red:0 "§R[?BAR_relations_silver_leopold]/100§!"
+  BAR_relations_silver_leopold_color_gray:0 "§g[?BAR_relations_silver_leopold]/100§!"
+
+  BAR_relations_silver_viira_color_green:0 "§G[?BAR_relations_silver_viira]/100§!"
+  BAR_relations_silver_viira_color_yellow:0 "§Y[?BAR_relations_silver_viira]/100§!"
+  BAR_relations_silver_viira_color_red:0 "§R[?BAR_relations_silver_viira]/100§!"
+  BAR_relations_silver_viira_color_gray:0 "§g[?BAR_relations_silver_viira]/100§!"
+
+  BAR_relations_leopold_viira_color_green:0 "§G[?BAR_relations_leopold_viira]/100§!"
+  BAR_relations_leopold_viira_color_yellow:0 "§Y[?BAR_relations_leopold_viira]/100§!"
+  BAR_relations_leopold_viira_color_red:0 "§R[?BAR_relations_leopold_viira]/100§!"
+  BAR_relations_leopold_viira_color_gray:0 "§g[?BAR_relations_leopold_viira]/100§!"
+
+  ### assasinations ###
+  BAR_assasination_attempts:0 "Pentarchy Dissagreements"
+  BAR_assasination_asinti_silver:0 "Silver Star and Asinti"
+  BAR_assasination_asinti_leopold:0 "Asinti and Leopold"
+  BAR_assasination_asinti_viira:0 "Viira and Asinti"
+  BAR_assasination_silver_leopold:0 "Leopold and Silver Star"
+  BAR_assasination_silver_viira:0 "Silver Star and Viira"
+  BAR_assasination_leopold_viira:0 "Leopold and Viira"
+
+  BAR_assasination_asinti_silver_desc:0 "It seems like they have things to §Rsettle§!."
+  BAR_assasination_asinti_leopold_desc:0 "It seems like they have things to §Rsettle§!."
+  BAR_assasination_asinti_viira_desc:0 "It seems like they have things to §Rsettle§!."
+  BAR_assasination_silver_leopold_desc:0 "It seems like they have things to §Rsettle§!."
+  BAR_assasination_silver_viira_desc:0 "It seems like they have things to §Rsettle§!."
+  BAR_assasination_leopold_viira_desc:0 "It seems like they have things to §Rsettle§!."
+
+
+
   #     #                  #####                                 
   ##    #   ##   #####    #     # #####  # #####  # #####  ####  
   # #   #  #  #    #      #       #    # # #    # #   #   #      
@@ -308,7 +413,7 @@
 
   
   BAR_plains_experts_tooltip:0 "Army\n     Plains\n          Movement: §G+10%§!\n          Attack: §G+15%§!\n          Defense: §G+15%§!"
-
+    BAR_amb_mountai_tanks_tooltip:0 "Light Tanks\n     Breakthrough: §G+20%§!\n     Reliability: §G+15%§!\n\n     Mountains\n          Movement: §G+30%§!\n          Attack: §G+30%§!\n          Defense: §G+30%§!\n     Hills\n          Movement: §G+15%§!\n          Attack: §G+15%§!\n          Defense: §G+15%§!"
 
   ########  #######   ######  ##     ##  ######  ########  ######  
   ##       ##     ## ##    ## ##     ## ##    ## ##       ##    ## 
@@ -2008,7 +2113,6 @@
     #    #   #  #    # #   #   #    # 
     #    #    # #    # #   #    ####  
                                       
-  BAR_marshal_gasienica:0 "Marshal Gąsienica"
   BAR_silver_star_archlich:0 "Archlich"
   BAR_asinti_witch_doctor:0 "Witch Doctor"
   BAR_asinti_witch_doctor_1:0 "Witch Doctor"
@@ -2064,7 +2168,9 @@
   bar_expedition.4.t:0 "Expedition Returns"
   bar_expedition.4.d:0 "Report just came, our forces achieved all goals. We are now in a process of unpacking the loot they bringed in."
   bar_expedition.4.b:0 "Excellent"
+  BAR_expeditions:0 "Expeditions"
   bar_expedition_title_text:0 "Prepare Expedition"
+  bar_expedition_title__button_text:0 "Prepare Expedition"
   bar_expedition_members:0 "Members"
   bar_expedition_additional_equipment_text:0 "Equipment Cost:"
   bar_expedition_additional_equipment_current_level:0 "[?Root.bar_expedition_additional_equipment] guns"
@@ -2075,17 +2181,24 @@
   bar_expedition_cohesion_title:0 "Cohesion:"
   bar_expedition_cohesion_text:0 "[?Root.bar_expedition_cohesion]%"
   bar_expedition_peril_title:0 "Peril:"
-  bar_expedition_peril_text:0 "[?Root.bar_expedition_peril]%"
+  bar_expedition_peril_text:0 "[bar_peril_fixed]%"
+  bar_expedition_peril_current:0 "[?Root.bar_expedition_peril]"
+  bar_expedition_peril_zero:0 "0%"
   expedition_launch:0 "Launch Expedition"
-  bar_expedition_external_targets:0 "External Targets"
+  bar_expedition_external_targets:0 "Target"
   bar_expedition_gasienica_tooltip:0 "Warriors loyal towards the Count and Gąsienica will focus on gathering military equipment and resources used for internal politics."
   bar_expedition_silver_star_tooltip:0 "Hidden in safety of his tower Silver Star will send his minions to look for resources he can use."
   bar_expedition_leopold_tooltip:0 "Common thugs and soldiers might be not the best party for seeking industrial grade materials but in this wasteland Leopold will use any scrap they can find."
   bar_expedition_asinti_tooltip:0 "Devoted followers will seek anything that could aid his master."
   bar_expedition_viira_tooltip:0 "While Viira would preffer to seek resources by herself not beliving in capabilities of others to do the job properly... there is something great in ordering ponies around."
   bar_expedition_decision_text:0 "In order to gather more resources we could outfit an expedition to one of our neighboors. However before we do that we need to estimate how likely it is to succeed, fail horribly and to keep the track on its mission."
-
-
+  bar_expedition_increase_text:0 "Increase"
+  bar_expedition_decrease_text:0 "Decrease"
+  bar_expedition_loot_gasienica:0 "Possible loot:\n\n5% - Political Power §G+25§!\n5% - Political Power §G+50§!\n10% - Political Power §G+75§!\n10% - Political Power §G+100§!\n5% - Trains §G+2§! Or Infantry Equipment §G+500§! \n5% - Infantry Equipment §G+500§! \n10% - Infantry Equipment §G+1000§! \n5% - Trucks §G+50§! Or Infantry Equipment §G+500§! \n5% - Civilian Factory §G+1§!\n5% - Military Factory §G+1§!\n10% - Ponypower §G+3000§!\n10% - Ponypower §G+6000§!\n5% - Artillery §G+50§! \n5% - Support Equipment §G+100§! \n5% - §G200%§! Research Bonus for Armor or Artillery or Infantry Weapons or Support Companies"
+  bar_expedition_loot_silver:0 "Possible loot:\n\n40% - Resources: §G+250§!\n30% - Resources: §G+500§!\n20% - Resources: §G+750§!\n10% - Resources: §G+1000§!\n"
+  bar_expedition_loot_leopold:0 "Possible loot:\n\n40% - Resources: §G+250§!\n30% - Resources: §G+500§!\n20% - Resources: §G+750§!\n10% - Resources: §G+1000§!\n"
+  bar_expedition_loot_asinti:0 "Possible loot:\n\n40% - Resources: §G+250§!\n30% - Resources: §G+500§!\n20% - Resources: §G+750§!\n10% - Resources: §G+1000§!\n"
+  bar_expedition_loot_viira:0 "Possible loot:\n\n40% - Resources: §G+250§!\n30% - Resources: §G+500§!\n20% - Resources: §G+750§!\n10% - Resources: §G+1000§!\n"
 
 
  #     #                      #     #                            
@@ -2134,6 +2247,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   BAR_decrease_poverty_tooltip:0 "Common ponies might be able to get some leftovers.\n"
   BAR_decrease_poverty_2_tooltip:0 "Gąsienica will try to help as much as he can.\n"
   BAR_decrease_poverty_3_tooltip:0 "For some of the peasants it's only chance to scavenge some money or food.\n"
@@ -2143,12 +2271,6 @@
 
 
   BAR_friend_feeling_of_unfinished_buissness:0 "Feeling of Unfinished Buissness"
-
-
-
-
-
-
 
 
 

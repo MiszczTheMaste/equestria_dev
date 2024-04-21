@@ -659,6 +659,25 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = BAR_pentarchy_needed_resources
+	text = {
+		trigger = {
+			check_variable = {
+				BAR_resources_viira > 1999
+			}
+		}
+		localization_key = BAR_pentarchy_resources_enough
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				BAR_resources_viira < 2000
+			}
+		}
+		localization_key = BAR_pentarchy_resources_not_enough
+	}
+}
+defined_text = {
 	name = BAR_viira_threat
 	text = {
 		trigger = {
@@ -843,5 +862,17 @@ defined_text = {
 	}
 	text = {
 		localization_key = empty_key
+	}
+}
+defined_text = {
+	name = bar_peril_fixed
+	text = {
+		trigger = {
+			check_variable = { bar_expedition_peril > 0 }
+		}
+		localization_key = bar_expedition_peril_current
+	}
+	text = {
+		localization_key = bar_expedition_peril_zero
 	}
 }

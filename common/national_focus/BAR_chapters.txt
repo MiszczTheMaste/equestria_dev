@@ -230,7 +230,7 @@ focus_tree = {
 			factor = 20
 		}
 		completion_reward = {
-			BAR_resources_add_leopold_250 = yes
+			bar_leopold_resources_add_250 = yes
 			625 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -582,7 +582,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_viira_250 = yes
+			bar_viira_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -695,7 +695,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_asinti_750 = yes
+			bar_asinti_resources_add_750 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -770,7 +770,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
+			bar_silver_resources_add_250 = yes
 			626 = {
 				add_extra_state_shared_building_slots = 2
 			}
@@ -809,7 +809,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			BAR_relations_decrease_asinti_silver_5 = yes
-			BAR_resources_add_asinti_250 = yes
+			bar_asinti_resources_add_250 = yes
 			add_political_power = 50
 		}
 		search_filters = {
@@ -842,7 +842,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_asinti_500 = yes
+			bar_asinti_resources_add_500 = yes
 			add_political_power = 75
 		}
 		search_filters = {
@@ -1033,7 +1033,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_leopold_500 = yes
+			bar_leopold_resources_add_500 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1172,8 +1172,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
-			BAR_resources_add_viira_250 = yes
+			bar_silver_resources_add_250 = yes
+			bar_viira_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1245,8 +1245,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
-			BAR_resources_add_leopold_250 = yes
+			bar_silver_resources_add_250 = yes
+			bar_leopold_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1318,8 +1318,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
-			BAR_resources_add_asinti_250 = yes
+			bar_silver_resources_add_250 = yes
+			bar_asinti_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1385,7 +1385,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
+			bar_silver_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1524,7 +1524,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_leopold_250 = yes
+			bar_leopold_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1590,7 +1590,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_asinti_100 = yes
+			bar_asinti_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1623,7 +1623,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_asinti_250 = yes
+			bar_asinti_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1791,7 +1791,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_leopold_250 = yes
+			bar_leopold_resources_add_250 = yes
 			add_tech_bonus = {
 				name = magical_tech_bonus
 				bonus = 1
@@ -1924,7 +1924,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_leopold_750 = yes
+			bar_leopold_resources_add_750 = yes
 			custom_effect_tooltip = BAR_next_focus_prerequisite
 		}
 		search_filters = {
@@ -2292,7 +2292,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 50
-			BAR_resources_add_silver_250 = yes
+			bar_silver_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_3
@@ -2324,7 +2324,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_500 = yes
+			bar_silver_resources_add_500 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_3
@@ -2359,7 +2359,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
+			bar_silver_resources_add_250 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_3
@@ -2401,7 +2401,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_250 = yes
+			bar_silver_resources_add_250 = yes
 			add_political_power = 100
 		}
 		search_filters = {
@@ -2435,7 +2435,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_silver_500 = yes
+			bar_silver_resources_add_500 = yes
 			increase_society_development_gradual = yes
 			one_random_industrial_complex = yes
 		}
@@ -2469,7 +2469,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_asinti_250 = yes
+			bar_asinti_resources_add_250 = yes
 			add_ideas = BAR_temple_construct
 			custom_effect_tooltip = BAR_next_focus_prerequisite
 		}
@@ -2828,8 +2828,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_asinti_500 = yes
-			set_country_flag = BAR_asinti_discount
+			bar_asinti_resources_add_500 = yes
 			if = {
 				limit = {
 					has_country_flag = BAR_begun_friendship_path
@@ -3160,7 +3159,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_resources_add_leopold_1000 = yes
+			bar_leopold_resources_add_1000 = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_4

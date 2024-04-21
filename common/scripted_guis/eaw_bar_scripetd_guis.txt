@@ -1039,6 +1039,22 @@ scripted_gui = {
 	###############################################
 	###############################################
 
+	bar_silver_star_decisions_gui = {
+		window_name = "bar_silver_star_decisions_gui_container"
+		context_type = decision_category
+	}	
+	bar_leopold_decisions_gui = {
+		window_name = "bar_leopold_decisions_gui_container"
+		context_type = decision_category
+	}	
+	bar_asinti_decisions_gui = {
+		window_name = "bar_asinti_decisions_gui_container"
+		context_type = decision_category
+	}	
+	bar_viira_decisions_gui = {
+		window_name = "bar_viira_decisions_gui_container"
+		context_type = decision_category
+	}
 	bar_expedition_decisions_gui = {
 		window_name = "bar_expedition_decisions_gui_container"
 		context_type = decision_category

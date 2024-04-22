@@ -2641,6 +2641,9 @@ bar_recalculate_expedition = {
 }
 
 bar_expedition_week_end = {
+	set_variable = {
+		bar_expedition_phase_length = 7
+	}
 	add_to_variable = { bar_expedition_week = 1 }
 
 	bar_expedition_success_phase = yes

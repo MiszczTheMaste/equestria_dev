@@ -2183,7 +2183,7 @@
   bar_expedition_peril_title:0 "Peril:"
   bar_expedition_peril_text:0 "[bar_peril_fixed]%"
   bar_expedition_peril_current:0 "[?Root.bar_expedition_peril]"
-  bar_expedition_peril_zero:0 "0%"
+  bar_expedition_peril_zero:0 "0"
   expedition_launch:0 "Launch Expedition"
   bar_expedition_external_targets:0 "Target"
   bar_expedition_gasienica_tooltip:0 "Warriors loyal towards the Count and Gąsienica will focus on gathering military equipment and resources used for internal politics."
@@ -2200,7 +2200,7 @@
   bar_expedition_loot_asinti:0 "Possible loot:\n\n40% - Resources: §G+250§!\n30% - Resources: §G+500§!\n20% - Resources: §G+750§!\n10% - Resources: §G+1000§!\n"
   bar_expedition_loot_viira:0 "Possible loot:\n\n40% - Resources: §G+250§!\n30% - Resources: §G+500§!\n20% - Resources: §G+750§!\n10% - Resources: §G+1000§!\n"
   bar_expedition_info_title:0 "Additional Info:"
-  bar_expedition_info_text:0 "Each week expedition will go thought 3 phases:\n - Peril, in which it needs to face the expedition's dangers (with possibility of aborting the mission and coming without loot)\n - Cohesion, where members decide if they will continue or go back home\n - Success, in which the loot is gathered.\n\nIn each Success phase every member gets to roll for the loot.\n\nStolen equipment and technologies are based on target country.\n\nChoosing low stability target will add to success chance."
+  bar_expedition_info_text:0 "Each week expedition will go thought 3 phases:\n - Peril, in which it needs to face the expedition's dangers (with possibility of aborting the mission and coming without loot)\n - Cohesion, where members decide if they will continue or go back home\n - Success, in which the loot is gathered.\n\nIn each Success phase every member gets to roll for the loot.\n\nStolen equipment and technologies are based on target country.\n\nChoosing low stability target will add to success chance.\n\nIn addition to first week of expedition additional 14 days are added for preparations."
   BAR_expedition_progresses:0 "Ongoing Expedition"
 
 

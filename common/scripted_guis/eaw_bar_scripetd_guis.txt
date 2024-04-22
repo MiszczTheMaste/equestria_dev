@@ -1273,6 +1273,9 @@ scripted_gui = {
 					limit = {
 						BAR_expedition_can_be_launched = yes
 					}
+					set_variable = {
+						bar_expedition_phase_length = 21
+					}
 					activate_mission = BAR_expedition_progresses
 					set_variable = { bar_expedition_week = 0 }
 					set_country_flag = bar_expedition_launched

@@ -11285,7 +11285,7 @@ BAR_expeditions = {
 		}
 		icon = pawn
 		selectable_mission = yes
-		days_mission_timeout = 7
+		days_mission_timeout = var:bar_expedition_phase_length
 		is_good = yes
 		days_remove = 0
 		fixed_random_seed = no

@@ -2553,6 +2553,6 @@
   BAR_leopold_perpetum_mobile_desc:0 "The clockworks are reaching true independence, and from their very creation to their disassembly, they are working fully on their own, acquiring more and more resources and producing more and more goods." 
 
   bar_pen_fight_viira_hp:0 "[?v_hp]/280"
-  bar_pen_fight_leopold_hp:0 "[?l_hp]/280"
-  bar_pen_fight_silver_star_hp:0 "[?s_hp]/280"
-  bar_pen_fight_asinti_hp:0 "[?a_hp]/280"
+  bar_pen_fight_leopold_hp:0 "[?l_hp]/220"
+  bar_pen_fight_silver_star_hp:0 "[?s_hp]/170"
+  bar_pen_fight_asinti_hp:0 "[?a_hp]/190"

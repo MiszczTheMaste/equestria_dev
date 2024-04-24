@@ -1776,7 +1776,16 @@ guiTypes = {
 			name ="bar_pen_fight_viira_in_20"
 			spriteType = "GFX_bar_initiative"
 			frame = 1
-			position = { x=594 y=40 }
+			position = { x=654 y=40 }
+		}
+		instantTextBoxType = {
+			name = "bar_pen_fight_viira_resources"
+			position = { x=1144 y=150 }
+			font = "hoi_18mbs"
+			format = left
+			maxWidth = 350
+			maxHeight = 350
+			text = bar_pen_fight_res_viira_f
 		}
 	}
 	containerWindowType = {
@@ -2009,7 +2018,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_asinti"
-			position = { x=470 y=45 }
+			position = { x=166 y=150 }
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 350
@@ -2267,7 +2276,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_leopold"
-			position = { x=470 y=45 }
+			position = { x=166 y=150 }
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 350
@@ -2500,7 +2509,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "bar_pen_fight_res_silver"
-			position = { x=470 y=45 }
+			position = { x=166 y=150 }
 			font = "hoi_18mbs"
 			format = left
 			maxWidth = 350

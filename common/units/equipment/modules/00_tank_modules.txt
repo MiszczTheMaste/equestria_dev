@@ -2792,7 +2792,6 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			crystals = 4
-			steel = -10
 		}
 	}
 }

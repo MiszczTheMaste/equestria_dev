@@ -977,6 +977,9 @@ bar_viira_fight_normal_attack = {
 		set_variable = {
 			bar_viira_attack_prepared = 1
 		}
+		set_variable = {
+			v_resources_to_subtract = 0
+		}
 	}
 }
 
@@ -1010,6 +1013,9 @@ bar_viira_fight_strong_attack = {
 		set_variable = {
 			bar_viira_attack_prepared = 1
 		}
+		set_variable = {
+			v_resources_to_subtract = 100
+		}
 	}
 }
 
@@ -1037,6 +1043,9 @@ bar_viira_fight_deal_dmg_asinti = {
 				a_hp = 0
 			}
 			barrad_kill_asinti = yes
+		}
+		subtract_from_variable = {
+			BAR_resources_viira = v_resources_to_subtract
 		}
 		BAR_pen_fight_ai_turn = yes
 		clear_variable = bar_viira_attack_prepared
@@ -1067,6 +1076,9 @@ bar_viira_fight_deal_dmg_leopold = {
 				l_hp = 0
 			}
 			barrad_kill_leopold = yes
+		}
+		subtract_from_variable = {
+			BAR_resources_viira = v_resources_to_subtract
 		}
 		BAR_pen_fight_ai_turn = yes
 		clear_variable = bar_viira_attack_prepared
@@ -1099,7 +1111,7 @@ bar_viira_fight_deal_dmg_silver = {
 			barrad_kill_silver = yes
 		}
 		subtract_from_variable = {
-			BAR_resources_viira = 100
+			BAR_resources_viira = v_resources_to_subtract
 		}
 		BAR_pen_fight_ai_turn = yes
 		clear_variable = bar_viira_attack_prepared
@@ -1321,8 +1333,8 @@ BAR_pen_fight_ai_turn = {
 				}
 			}
 		}
-		bar_pen_fight_gui_reload = yes
 	}
+	bar_pen_fight_gui_reload = yes
 
 	set_variable = {
 		bar_pen_fight_ai_already_attacked = 0

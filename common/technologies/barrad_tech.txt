@@ -2187,7 +2187,7 @@ technologies = {
 			always = no
 		}
 		category_front_line = {
-			soft_attack = 0.2
+			soft_attack = 0.15
 	  	}
 	}
 

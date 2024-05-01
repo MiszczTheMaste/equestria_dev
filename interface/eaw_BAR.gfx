@@ -112,6 +112,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/events/silver_star_psy_lib.dds"
 	}
 	SpriteType = {
+		name = "GFX_event_silver_star_psy"
+		texturefile = "gfx/interface/bar/events/silver_star_psy.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_silver_star_psy_indifferent"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_indifferent.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_silver_star_psy_happy"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_happy.dds"
+	}
+	SpriteType = {
 		name = "GFX_event_cultists_cave"
 		texturefile = "gfx/interface/bar/events/cultists_cave.dds"
 	}
@@ -124,12 +136,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/events/ancient_machines.dds"
 	}
 	SpriteType = {
-		name = "GFX_event_vision"
-		texturefile = "gfx/interface/bar/events/vision.dds"
-	}
-	SpriteType = {
 		name = "GFX_event_bar_viira_closeup_2"
 		texturefile = "gfx/interface/bar/events/bar_viira_closeup_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_bar_viira_closeup_3"
+		texturefile = "gfx/interface/bar/events/bar_viira_closeup_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_bar_viira_closeup_4"
+		texturefile = "gfx/interface/bar/events/bar_viira_closeup_4.dds"
 	}
 	SpriteType = {
 		name = "GFX_event_carousing"
@@ -249,6 +265,24 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_BAR_pentarchy_clip"
 		textureFile = "gfx/interface/bar/pentarchy_gui/clip.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_dialogue_box"
+		textureFile = "gfx/interface/bar/super_dialogue/dialogue_box.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_dialogue_silver_portrait"
+		textureFile = "gfx/interface/bar/super_dialogue/silver_portrait_1.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_dialogue_viira_portrait"
+		textureFile = "gfx/interface/bar/super_dialogue/viira_portrait_1.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}

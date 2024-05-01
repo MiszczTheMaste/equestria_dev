@@ -1230,6 +1230,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = ZES
 		completion_reward = {
 			create_wargoal = {
 				target = ZES
@@ -1269,6 +1270,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = WIT
 		completion_reward = {
 			create_wargoal = {
 				target = WIT
@@ -1308,6 +1310,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = OLV
 		completion_reward = {
 			create_wargoal = {
 				target = OLV
@@ -1347,6 +1350,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = GRU
 		completion_reward = {
 			create_wargoal = {
 				target = GRU
@@ -1488,6 +1492,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = CTH
 		completion_reward = {
 			create_wargoal = {
 				target = CTH
@@ -1508,6 +1513,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = ZAR
+		will_lead_to_war_with = CGI
 		completion_reward = {
 			create_wargoal = {
 				target = ZAR
@@ -1532,6 +1539,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		will_lead_to_war_with = MIT
+		will_lead_to_war_with = MCW
 		completion_reward = {
 			create_wargoal = {
 				target = MIT

@@ -911,7 +911,7 @@ on_actions = {
 					limit = {
 						BAR = { is_ai = yes }
 					}
-					else_if = {
+					if = {
 						limit = {
 							has_game_rule = {
 								rule = BAR_ai_behavior
@@ -919,8 +919,7 @@ on_actions = {
 							}
 						}
 						BAR = {
-							set_country_flag = BAR_ai_viira`
-							set_country_flag = BAR_viira_immunity
+							set_country_flag = BAR_ai_viira
 						}
 					}
 					else_if = {
@@ -932,7 +931,6 @@ on_actions = {
 						}
 						BAR = {
 							set_country_flag = BAR_ai_leopold
-							set_country_flag = BAR_leopold_immunity
 						}
 					}
 					else_if = {
@@ -944,7 +942,6 @@ on_actions = {
 						}
 						BAR = {
 							set_country_flag = BAR_ai_silver
-							set_country_flag = BAR_silver_immunity
 						}
 					}
 					else_if = {
@@ -956,7 +953,6 @@ on_actions = {
 						}
 						BAR = {
 							set_country_flag = BAR_ai_asinti
-							set_country_flag = BAR_asinti_immunity
 						}
 					}
 					else_if = {
@@ -967,7 +963,10 @@ on_actions = {
 							}
 						}
 						BAR = {
-							set_country_flag = BAR_ai_ambrosius
+							random_list = {
+								50 = { set_country_flag = BAR_ai_ambrosius_west }
+								50 = { set_country_flag = BAR_ai_ambrosius_east }
+							}
 						}
 					}
 					else_if = {
@@ -985,15 +984,70 @@ on_actions = {
 							set_country_flag = BAR_viira_immunity
 						}
 					}
-					else = {
-						random_list = {
-							50 = { BAR = { set_country_flag = BAR_ai_ambrosius } }
-							10 = { BAR = { set_country_flag = BAR_ai_viira } }
-							10 = { BAR = { set_country_flag = BAR_ai_leopold } }
-							10 = { BAR = { set_country_flag = BAR_ai_silver } }
-							10 = { BAR = { set_country_flag = BAR_ai_asinti } }
-							10 = { BAR = { set_country_flag = BAR_ai_frendship } }
+					else_if = {
+						limit = {
+							has_game_rule = {
+								rule = BAR_ai_behavior
+								option = RULE_OPTION_BAR_RANDOM_REACTOR
+							}
 						}
+						BAR = {
+							random_list = {
+								20 = { set_country_flag = BAR_ai_viira } 
+								20 = { set_country_flag = BAR_ai_leopold } 
+								20 = { set_country_flag = BAR_ai_silver } 
+								20 = { set_country_flag = BAR_ai_asinti } 
+								20 = { set_country_flag = BAR_ai_frendship } 
+							}
+						}
+					}
+					else = {
+						BAR = {
+							random_list = {
+								25 = { set_country_flag = BAR_ai_ambrosius_west } 
+								25 = { set_country_flag = BAR_ai_ambrosius_east } 
+								10 = { set_country_flag = BAR_ai_viira } 
+								10 = { set_country_flag = BAR_ai_leopold } 
+								10 = { set_country_flag = BAR_ai_silver } 
+								10 = { set_country_flag = BAR_ai_asinti } 
+								10 = { set_country_flag = BAR_ai_frendship } 
+							}
+						}
+					}
+					BAR = {
+						if = {
+							limit = {
+								has_country_flag = BAR_ai_viira
+							}
+							set_country_flag = BAR_viira_immunity
+						}
+						else_if = {
+							limit = {
+								has_country_flag = BAR_ai_leopold
+							}
+							set_country_flag = BAR_leopold_immunity
+						}
+						else_if = {
+							limit = {
+								has_country_flag = BAR_ai_silver
+							}
+							set_country_flag = BAR_silver_immunity
+						}
+						else_if = {
+							limit = {
+								has_country_flag = BAR_ai_asinti
+							}
+							set_country_flag = BAR_asinti_immunity
+						} 
+						else_if = {
+							limit = {
+								has_country_flag = BAR_ai_frendship
+							}
+							set_country_flag = BAR_leopold_immunity
+							set_country_flag = BAR_silver_immunity
+							set_country_flag = BAR_asinti_immunity
+							set_country_flag = BAR_viira_immunity
+						} 
 					}
 				}
 			}

@@ -2927,4 +2927,1020 @@ guiTypes = {
 			text = bar_viira_category_relations_text
 		}
 	}
+
+	containerWindowType = {
+		name = "bar_ending_dialogue_controlls_container"
+		size = { width=630 height=118 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = accelerated
+		hide_animation_type = decelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		buttonType = {
+			name = "bar_ending_dialogue_line_next"
+			position = { x = 650 y = 50 }
+			buttonText = "..."
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+		}
+	}		
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_1"
+		size = { width=630 height=118 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = accelerated
+		hide_animation_type = decelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_1_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_2_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_1_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_1_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_2"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_2_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_2_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_2_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_2_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_3"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_3_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_3_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_3_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_3_text
+		}
+	}		
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_4"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_4_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_4_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_4_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_4_text
+		}
+	}		
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_5"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		show_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_5_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_5_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_5_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_5_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_6"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_6_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_6_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_6_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_6_text
+		}
+	}	
+	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_7"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_7_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_7_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_7_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_7_text
+		}
+	}		
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_8"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		show_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_8_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_8_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_8_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_8_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_9"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		show_position = { x = 200 y = 350 }
+		show_position = { x = 200 y = 500 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_9_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_9_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_9_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_9_text
+		}
+	}
+	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_10"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_10_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_10_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_10_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_10_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_11"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_11_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_11_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_11_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_11_text
+		}
+	}		
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_12"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_12_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_12_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_12_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_12_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_13"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 350 }
+		show_position = { x = 200 y = 500 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_13_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_13_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_13_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_13_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_14"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_14_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_14_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_14_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_14_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_15"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_15_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_15_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_15_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_15_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_16"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_16_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_16_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_16_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_16_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_17"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_17_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_17_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_17_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_17_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_18"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 350 }
+		show_position = { x = 200 y = 500 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_18_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_18_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_18_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_18_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_19"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_19_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_19_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_19_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_19_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_20"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_20_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_20_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_20_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_20_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_21"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 350 }
+		show_position = { x = 200 y = 500 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_21_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_21_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_21_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_21_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_22"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_22_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_22_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_22_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_22_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_23"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_23_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_23_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_23_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_23_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_24"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 350 }
+		show_position = { x = 200 y = 500 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_24_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_24_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_24_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_24_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_25"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_25_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_25_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_25_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_25_text
+		}
+	}		
+	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_26"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_26_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_26_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_26_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_26_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_27"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_27_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_27_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_27_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_27_text
+		}
+	}
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_28"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 50 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_28_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_28_portrait"
+			spriteType = "GFX_BAR_dialogue_viira_portrait"
+			position = { x=17 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_28_text"
+			position = {x=93 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_28_text
+		}
+	}		
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_29"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 600 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_29_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_29_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_29_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_29_text
+		}
+	}	
+	containerWindowType = {
+		name = "bar_ending_dialogue_line_30"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+		hide_position = { x = 200 y = 200 }
+		show_position = { x = 200 y = 350 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 500
+		fade_time = 500
+		fade_type = linear
+
+		Background = {
+			name = "bar_ending_dialogue_line_30_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		iconType ={
+			name ="bar_ending_dialogue_line_30_portrait"
+			spriteType = "GFX_BAR_dialogue_silver_portrait"
+			position = { x=553 y=18 }
+		}
+		instantTextBoxType = {
+			name = "bar_ending_dialogue_line_30_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = right
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_ending_dialogue_line_30_text
+		}
+	}	
 }

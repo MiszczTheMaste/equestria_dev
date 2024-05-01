@@ -1622,6 +1622,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_ss_war
 		}
+		will_lead_to_war_with = WIT
 		completion_reward = {
 			create_wargoal = {
 				target = WIT
@@ -1642,6 +1643,8 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_ss_war
 		}
+		will_lead_to_war_with = ZES
+		will_lead_to_war_with = OLV
 		completion_reward = {
 			create_wargoal = {
 				target = ZES
@@ -1821,6 +1824,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_ss_attack_coast
 		}
+		will_lead_to_war_with = GRY
 		completion_reward = {
 			create_wargoal = {
 				target = GRY
@@ -1841,6 +1845,12 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_ss_attack_cossacks
 		}
+		will_lead_to_war_with = FRE
+		will_lead_to_war_with = LCT
+		will_lead_to_war_with = RCT
+		will_lead_to_war_with = NIM
+		will_lead_to_war_with = BAK
+		will_lead_to_war_with = DMT
 		completion_reward = {
 			create_wargoal = {
 				target = FRE

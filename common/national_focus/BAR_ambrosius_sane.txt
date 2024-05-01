@@ -2246,6 +2246,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_western_focus
 		}
+		will_lead_to_war_with = ZES
 		completion_reward = {
 			create_wargoal = {
 				target = ZES
@@ -2500,6 +2501,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_west_east_railroad
 		}
+		will_lead_to_war_with = GRU
 		completion_reward = {
 			create_wargoal = {
 				target = GRU
@@ -2890,6 +2892,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_grand_county
 		}
+		will_lead_to_war_with = GRY
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -3113,6 +3116,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_grand_county
 		}
+		will_lead_to_war_with = OLV
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -3332,6 +3336,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_olv_zes_factories
 		}
+		will_lead_to_war_with = LUS
+		will_lead_to_war_with = BRF
+		will_lead_to_war_with = GRW
 		completion_reward = {
 			LUS = { add_to_ROOT_potential_cores = yes }
 			BRF = { add_to_ROOT_potential_cores = yes }
@@ -3497,6 +3504,8 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_military_build_up
 		}
+		will_lead_to_war_with = ZES
+		will_lead_to_war_with = OLV
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -3670,6 +3679,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_olv_build_1
 		}
+		will_lead_to_war_with = WIT
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -4025,6 +4035,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_claim_wit_crown
 		}
+		will_lead_to_war_with = FRE
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything

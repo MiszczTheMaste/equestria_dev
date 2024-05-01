@@ -1476,14 +1476,8 @@ ideas = {
 			picture = strategic_bombing_focus
 			modifier = {
 				air_strategic_bomber_bombing_factor = 0.2
-				air_cas_efficiency = 0.1
-				ground_attack_factor = 0.1
-			}
-			equipment_bonus = {
-				artillery_equipment = {
-					soft_attack = 0.15
-					instant = yes
-				}
+				air_cas_efficiency = 0.15
+				ground_attack_factor = 0.15
 			}
 		}
 		barrad_wmd_gas = {

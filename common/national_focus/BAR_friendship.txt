@@ -759,6 +759,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_prince_of_wittenland
 		}
+		will_lead_to_war_with = WIT
 		completion_reward = {
 			create_wargoal = {
 				target = WIT
@@ -1206,6 +1207,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_regional_interventionism
 		}
+		will_lead_to_war_with = GRY
 		completion_reward = {
 			create_wargoal = {
 				target = GRY
@@ -1284,6 +1286,7 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_regional_interventionism
 		}
+		will_lead_to_war_with = GRU
 		completion_reward = {
 			create_wargoal = {
 				target = GRU
@@ -1309,6 +1312,8 @@ focus_tree = {
 			focus = BAR_friend_aproach_cossacs
 			focus = BAR_friend_conquer_steppe
 		}
+		will_lead_to_war_with = GRW
+		will_lead_to_war_with = BAN
 		completion_reward = {
 			create_wargoal = {
 				target = GRW
@@ -1354,6 +1359,8 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_lushi_ultimatum
 		}
+		will_lead_to_war_with = LNS
+		will_lead_to_war_with = HLQ
 		completion_reward = {
 			create_wargoal = {
 				target = LNS

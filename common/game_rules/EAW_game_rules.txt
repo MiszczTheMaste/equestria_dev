@@ -1705,6 +1705,12 @@ BAR_ai_behavior = {
 		name = DEFAULT
 		text = "RULE_OPTION_DEFAULT"
 		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}	
+	option = {
+		name = RULE_OPTION_BAR_RANDOM_REACTOR
+        text = "RULE_OPTION_BAR_RANDOM_REACTOR"
+        desc = "RULE_OPTION_BAR_RANDOM_REACTOR_AI_DESC"
+        allow_achievements = yes
 	}
 	option = {
         name = RULE_OPTION_BAR_AMBROSIUS

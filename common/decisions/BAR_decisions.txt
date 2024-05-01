@@ -4109,8 +4109,10 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 1
 			}
+		}
+		available = {
+			nuclear_reactor > 2
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4131,9 +4133,11 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 3
 				has_country_flag = BAR_spells_unlocked_1
 			}
+		}
+		available = {
+			nuclear_reactor > 5
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4154,9 +4158,11 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 5
 				has_country_flag = BAR_spells_unlocked_2
 			}
+		}
+		available = {
+			nuclear_reactor > 8
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4177,9 +4183,11 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 7
 				has_country_flag = BAR_spells_unlocked_3
 			}
+		}
+		available = {
+			nuclear_reactor > 11
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4200,9 +4208,11 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 9
 				has_country_flag = BAR_spells_unlocked_4
 			}
+		}
+		available = {
+			nuclear_reactor > 14
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4223,9 +4233,11 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 11
 				has_country_flag = BAR_spells_unlocked_5
 			}
+		}
+		available = {
+			nuclear_reactor > 17
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4246,9 +4258,11 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 13
 				has_country_flag = BAR_spells_unlocked_6
 			}
+		}
+		available = {
+			nuclear_reactor > 20
 		}
 		complete_effect = {
 			hidden_effect = {
@@ -4269,8 +4283,30 @@ BAR_viira_spells = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_spells_upgrade_unlock
-				nuclear_reactor > 15
 				has_country_flag = BAR_spells_unlocked_7
+			}
+		}
+		available = {
+			nuclear_reactor > 30
+			custom_trigger_tooltip = {
+				tooltip = BAR_viira_spell_upgrade_8_unlock_tooltip
+				BAR_viira_lehtola = { has_trait = bar_viira_title_1 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_2 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_3 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_4 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_5 }
+				OR = {
+					BAR_viira_lehtola = { has_trait = bar_viira_title_6 }
+					BAR_viira_lehtola = { has_trait = bar_viira_title_6_bba }
+				}
+				BAR_viira_lehtola = { has_trait = bar_viira_title_7 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_8 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_9 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_10 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_11 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_12 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_13 }
+				BAR_viira_lehtola = { has_trait = bar_viira_title_14 }
 			}
 		}
 		complete_effect = {

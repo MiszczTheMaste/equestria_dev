@@ -629,19 +629,6 @@
   bar_ambrosius_madness.1.m:0 "Ambrosius has been seeking better relations with Leopold lately. Whether this actually works or not, the gift he has sent has improved Leopold's position."
   bar_ambrosius_madness.1.n:0 "Very well..."
 
-  bar_ambrosius_madness.2.t:0 "The End of Leopold"
-  bar_ambrosius_madness.2.d:0 "While the other members of the Pentarchy fell, Leopold's dreams became haunted by violent and disturbing visions. It was as if a mysterious presence was speaking to him, but he was incapable of understanding what it was trying to say. As he became more and more isolated, his mind continued to deteriorate. He was so consumed by his madness that he could not notice the shadowy assassins that crept up on him in the dark, intent on killing him to advance the cause of their cult. In the end, the griffon who had traveled to Barrad to construct a new future for Griffonia met a bloody and ignoble end."
-  bar_ambrosius_madness.2.a:0 "Good riddance."
-  bar_ambrosius_madness.21.t:0 "The End of Silver Star"
-  bar_ambrosius_madness.21.d:0 "While the other members of the Pentarchy fell, Silver Star's dreams became haunted by violent and disturbing visions. It was as if a mysterious presence was speaking to him, but he was incapable of understanding what it was trying to say. As he became more and more isolated, his mind continued to deteriorate. He was so consumed by his madness that he could not notice the shadowy assassins that crept up on him in the dark, intent on killing him to advance the cause of their cult. In the end, the unicorn who had traveled to Barrad to conquer the spectre of death met a bloody and ignoble end."
-  bar_ambrosius_madness.21.a:0 "Good riddance."
-  bar_ambrosius_madness.22.t:0 "The End of Asinti"
-  bar_ambrosius_madness.22.d:0 "While the other members of the Pentarchy fell, Asinti's dreams became haunted by violent and disturbing visions. It was as if a mysterious presence was speaking to him, but he was incapable of understanding what it was trying to say. As he became more and more isolated, his mind continued to deteriorate. He was so consumed by his madness that he could not notice the shadowy assassins that crept up on him in the dark, intent on killing him to advance the cause of their cult. In the end, the zebra who had traveled to Barrad to break the chains of the weak met a bloody and ignoble end."
-  bar_ambrosius_madness.22.a:0 "Good riddance."
-  bar_ambrosius_madness.23.t:0 "The End of Viira"
-  bar_ambrosius_madness.23.d:0 "While the other members of the Pentarchy fell, Viira's dreams became haunted by violent and disturbing visions. It was as if a mysterious presence was speaking to her, but she was incapable of understanding what it was trying to say. As she became more and more isolated, her mind continued to deteriorate. She was so consumed by her madness that she could not notice the shadowy assassins that crept up on her in the dark, intent on killing her to advance the cause of their cult. In the end, the deer who had traveled to Barrad to obtain the magical strength to dominate the world met a bloody and ignoble end."
-  bar_ambrosius_madness.23.a:0 "Good riddance."
-
   ### you lost ###
   bar_fallen_pentarchy.977.t:0 "End of an Era"
   bar_fallen_pentarchy.977.d:0 "So ends the Pentarchy. After much sorrow and hardship, all members now lie dead except for Count Ambrosius. Their mysterious plans will forever remain unenacted, leaving Barrad's lonely Count to stew in his madness. This unexpected turn of events is sure to signal the beginning of a new era for Barrad, although it is unlikely to be a happy one."
@@ -1429,7 +1416,6 @@
   BAR_sacrifice:0 "Fight for Greater Good"
   BAR_desperate_defence_idea:0 "Desperate Defence"
   BAR_prepared_defence_idea:0 "Prepared Defence"
-  BAR_viira:0 "The Highest Priestess Viira Lehtola"
 
   BAR_pen_fight_stunned_text_f:0 "[This.BAR_pen_fight_stunned_text]"
   BAR_pen_fight_stunned_text1:0 ""

@@ -790,6 +790,29 @@ bar_viira_resources_subtract_1000 = {
  # @BAR_begun_friendship_path flag disables raising/lowering relations
  #
 
+BAR_relations_max_out = {
+	set_variable = {
+		BAR_relations_asinti_silver = 100
+	}	
+	set_variable = {
+		BAR_relations_asinti_leopold = 100
+	}	
+	set_variable = {
+		BAR_relations_asinti_viira = 100
+	}	
+	set_variable = {
+		BAR_relations_silver_leopold = 100
+	}	
+	set_variable = {
+		BAR_relations_silver_viira = 100
+	}	
+	set_variable = {
+		BAR_relations_leopold_viira = 100
+	}
+
+	BAR_relations_idea_swap = yes
+}
+
 BAR_relations_increase_asinti_silver_5 = {
 	if = {
 		limit = {
@@ -2212,7 +2235,7 @@ bar_gui_update = {
 BAR_hide_gasienica = {
 	set_country_flag = BAR_gasienica_hidden
 	remove_advisor_role = {
-		character = BAR_captain_gasienica
+		character = BAR_gasienica
 		slot = political_advisor
 	}
 }
@@ -3332,6 +3355,100 @@ bar_count_resources = {
 		}
 		add_to_variable = {
 			res_total = BAR_resources_silver
+		}
+	}
+}
+
+bar_spawn_divs_for_ai = {
+	if = {
+		limit = {
+			NOT = {
+				has_template = "Organised Battalions"
+			}
+		}
+		division_template = {
+			name = "Organised Battalions"
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 0
+					y = 2
+				}
+				infantry = {
+					x = 1
+					y = 0
+				}
+				infantry = {
+					x = 1
+					y = 1
+				}
+				infantry = {
+					x = 1
+					y = 2
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_template = "Peasant Levy"
+			}
+		}
+		division_template = {
+			name = "Peasant Levy"
+			priority = 0
+			regiments = {
+				infantry = {
+					x = 0
+					y = 0
+				}
+				infantry = {
+					x = 0
+					y = 1
+				}
+				infantry = {
+					x = 0
+					y = 2
+				}
+			}
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Noble Battalions\" division_template = \"Organised Battalions\" start_experience_factor = 0.6 start_equipment_factor = 1"
+			owner = BAR
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Noble Battalions\" division_template = \"Organised Battalions\" start_experience_factor = 0.6 start_equipment_factor = 1"
+			owner = BAR
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Peasants\" division_template = \"Peasant Levy\" start_experience_factor = 0.2 start_equipment_factor = 0.1"
+			owner = BAR
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Peasants\" division_template = \"Peasant Levy\" start_experience_factor = 0.2 start_equipment_factor = 0.1"
+			owner = BAR
+		}
+	}
+	random_owned_controlled_state = {
+		create_unit = {
+			division = "name = \"Peasants\" division_template = \"Peasant Levy\" start_experience_factor = 0.2 start_equipment_factor = 0.1"
+			owner = BAR
 		}
 	}
 }

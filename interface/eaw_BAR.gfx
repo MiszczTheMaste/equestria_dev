@@ -3205,7 +3205,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/traits/experienced_fighter.dds"
 	}
 	spriteType = {
-		name = "GFX_trait_bar_cpt_gasienica"
+		name = "GFX_trait_BAR_gasienica_giant"
 		texturefile = "gfx/interface/bar/traits/bar_cpt_gasienica.dds"
 	}
 	spriteType = {

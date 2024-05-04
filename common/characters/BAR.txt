@@ -260,35 +260,11 @@ characters={
 				large="gfx/leaders/BAR/gasienica.tga"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = BAR_gasienica_advisor
-			can_be_fired = no
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				NOT = {
-					has_country_flag = BAR_Advisors_killed
-					has_country_flag = BAR_ambrosius_killed
-				}
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_Advisors_killed
-						has_country_flag = BAR_ambrosius_killed
-					}
-				}
-			}
-			traits = {
-				BAR_gasienica_advisor
-			}
-		}
 		field_marshal = {
+			desc = BAR_gasienica_desc
 			traits = {
 				griffon_race_trait
-				bar_cpt_gasienica
+				BAR_gasienica_giant
 				trait_mountaineer
 				infantry_officer
 				organizer
@@ -319,20 +295,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
-			}
 			traits = {
 				unhindered_s
 			}
@@ -350,20 +312,6 @@ characters={
 			idea_token = BAR_pen_pp_pol
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
 			}
 			traits = {
 				silent_workhorse
@@ -383,22 +331,8 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
-			}
 			traits = {
-				backroom_backstabber
+				prince_of_terror
 			}
 		}
 	}
@@ -414,20 +348,6 @@ characters={
 			idea_token = BAR_pen_industrialist
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
 			}
 			traits = {
 				industrialist
@@ -447,20 +367,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
-			}
 			traits = {
 				occultist
 			}
@@ -479,20 +385,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
-			}
 			traits = {
 				war_industrialist
 			}
@@ -510,22 +402,6 @@ characters={
 			idea_token = BAR_head_of_intel
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				can_create_intelligence_agency = yes
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_science_2
-				}
-			}
-			available = {
-				has_intelligence_agency = yes
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_science_2
-					}
-				}
 			}
 			traits = {
 				head_of_intelligence
@@ -554,20 +430,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
-			}
 			traits = {
 				army_artillery_1
 			}
@@ -586,20 +448,6 @@ characters={
 			cost = 100
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
 			}
 			traits = {
 				army_chief_defensive_2
@@ -623,20 +471,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
-			}
 			traits = {
 				army_chief_offensive_2
 			}
@@ -651,20 +485,6 @@ characters={
 			cost = 100
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
 			}
 			traits = {
 				army_regrouping_2
@@ -688,20 +508,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
-			}
 			traits = {
 				army_chief_reform_3
 			}
@@ -716,20 +522,6 @@ characters={
 			cost = 100
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
 			}
 			traits = {
 				army_infantry_2
@@ -750,20 +542,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
-			}
 			traits = {
 				alt_air_air_superiority_1
 			}
@@ -775,20 +553,6 @@ characters={
 			cost = 200
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
 			}
 			traits = {
 				army_concealment_3
@@ -809,20 +573,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
-			}
 			traits = {
 				air_chief_ground_support_1
 			}
@@ -837,20 +587,6 @@ characters={
 			cost = 100
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
 			}
 			traits = {
 				alt_army_chief_maneuver_2
@@ -874,20 +610,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
-			}
 			traits = {
 				navy_chief_decisive_battle_2
 			}
@@ -910,20 +632,6 @@ characters={
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors_1
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors_1
-					}
-				}
-			}
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
@@ -938,20 +646,6 @@ characters={
 			cost = 100
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
 			}
 			traits = {
 				army_entrenchment_2
@@ -971,20 +665,6 @@ characters={
 			cost = 100
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				OR = {
-					NOT = { has_country_flag = BAR_Advisors_killed }
-					has_country_flag = BAR_undead_mil_Advisors
-				}
-			}
-			available = {
-				hidden_trigger = {
-					OR = {
-						NOT = { has_country_flag = BAR_Advisors_killed }
-						has_country_flag = BAR_undead_mil_Advisors
-					}
-				}
 			}
 			traits = {
 				military_theorist

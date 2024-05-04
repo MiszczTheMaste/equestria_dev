@@ -1983,7 +1983,7 @@ leader_traits = {
 		new_commander_weight = { factor = 0 }
 	}
 	
-	bar_cpt_gasienica = {
+	BAR_gasienica_giant = {
 		type = all
 		trait_type = personality_trait
 

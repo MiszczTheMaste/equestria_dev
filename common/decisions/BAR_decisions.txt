@@ -10,6 +10,15 @@ BAR_ambrosius_boredoom = {
 		fire_only_once = yes
 		cost = 10
 		days_remove = 7
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				not = {
+					has_country_flag = BAR_ai_ambrosius_west
+				}
+				factor = 0
+			}
+		}
 		remove_effect = {
 			clr_country_flag = barrad_plants
 			country_event = {
@@ -3504,6 +3513,25 @@ BAR_asinti_cat = {
 			factor = 0
 		}
 	}
+	BAR_asinti_wish_granter_expedition = {
+		icon = GFX_decision_scroll
+		fire_only_once = yes
+		cost = 25
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = barrad_early_game
+			has_country_flag = barrad_asinti_alive
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_convert_equipment"
+			country_event = { id = barrad_asinti.12 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }
 
 BAR_viira_cat = {		
@@ -5908,7 +5936,7 @@ BAR_leopold_empire_decisions = {
 			owns_state = 382
 		}
 		visible = {
-			has_completed_focus = BAR_leopold_conquest_7
+			has_completed_focus = BAR_leopold_conquest
 		}
 		complete_effect = {
 			set_cosmetic_tag = BAR_leopold_empire
@@ -6131,6 +6159,39 @@ BAR_leopold_decisions = {
 }
 
 BAR_asinti_blood_sacrifices = {
+	BAR_freest_state = {
+		icon = daggers
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_cosmetic_tag =  BAR_free_state
+		}
+		available = {
+			ZES = {
+				all_cores_owned_by_ROOT = yes
+			}	
+			OLV = {
+				all_cores_owned_by_ROOT = yes
+			}	
+			GRU = {
+				all_cores_owned_by_ROOT = yes
+			}
+			has_idea = barrad_demon_conscription
+		}
+		days_remove = 45
+		remove_effect = {
+			set_cosmetic_tag = BAR_free_state_2
+			swap_ideas = {
+				remove_idea = barrad_demon_conscription
+				add_idea = barrad_demon_conscription_2
+			}
+		}
+		ai_will_do = {
+			factor = 30
+		}
+	}	
 	BAR_call_for_blood = {
 		icon = daggers
 		fire_only_once = yes

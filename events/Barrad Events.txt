@@ -3370,14 +3370,6 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			is_ai = yes
-		}
-		country_event = {
-			id = barrad_ai.4
-		}
-	}
-	option = {
-		trigger = {
 			has_country_flag = bar_skip_boss_fight	
 		}
 		country_event = {
@@ -4351,6 +4343,39 @@ country_event = {
 	option = {
 		name = barrad_asinti.11.a
 		add_ideas = BAR_asinti_end
+	}
+}
+
+country_event = {
+	id = barrad_asinti.12 #wish granter
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.12"
+	}
+	title = barrad_asinti.12.t
+	desc = barrad_asinti.12.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.12.a
+		add_political_power = 25
+		hidden_effect = {
+			country_event = { id = barrad_asinti.13 days = 3 }
+		}
+	}
+}
+
+country_event = {
+	id = barrad_asinti.13 #gąsienicaopowiadający że też próbował znaleźć to gówno
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.13"
+	}
+	title = barrad_asinti.13.t
+	desc = barrad_asinti.13.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.13.a
+		add_political_power = 50
 	}
 }
 
@@ -6376,8 +6401,44 @@ country_event = { #silver star siedzi sobie an wzgórzach elysium i patrzy na mi
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.25.a
-		set_variable = {
-			bar_final_dialogue = 1
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			increase_society_development_gradual = yes
+			set_party_name = {
+				ideology = neutrality
+				name = BAR_barradian_army
+				long_name = BAR_barradian_army
+			}
+			set_party_name = {
+				ideology = democratic
+				name = BAR_fascism_party
+				long_name = BAR_fascism_party
+			}
+			add_country_leader_role = {
+				character = BAR_gasienica
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = oligarchism
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+			}	
+			add_country_leader_role = {
+				character = BAR_silver_star
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = harmonic_magocracy
+				}
+			}
+		} else = {
+			set_variable = {
+				bar_final_dialogue = 1
+			}
 		}
 	}
 }
@@ -6647,6 +6708,12 @@ country_event = {
 			}
 			barrad_kill_viira = yes
 			load_focus_tree = barrad_focus_tree_asinti
+		} 
+		else_if = {
+			limit = {
+				has_country_flag = BAR_ai_frendship
+			}
+			country_event = { id = barrad_friends.9 }
 		} 
 		else = {
 			barrad_kill_viira = yes

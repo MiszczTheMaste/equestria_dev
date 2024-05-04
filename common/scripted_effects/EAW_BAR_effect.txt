@@ -1612,7 +1612,6 @@ bar_kill_advisors = {
 		}
 		bar_gui_update = yes
 	}
-	set_country_flag = BAR_advisors_killed
 	BAR_leofric_and_godgifu_glaedwine = {
 		set_character_name = BAR_ded_scientist
 		set_portraits = {
@@ -2078,149 +2077,11 @@ BAR_clear_mess_puppet = {
  #     # #    # # 
  #     # #    # # 
   #####   ####  # 
-                  
 
-
-BAR_gui_reset = {
-	if = {
-		limit = {
-			has_country_flag = barrad_leopold_alive
-		}
-		set_variable = {
-			bar_leopold_state = 2
-		}
-	}
-	else = {
-		set_variable = {
-			bar_leopold_state = 4
-		}
-	}
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = BAR_advisors_killed
-				has_country_flag = BAR_ambrosius_killed
-			}
-		}
-		set_variable = {
-			bar_ambrosius_state = 4
-		}
-	}
-	else = {
-		set_variable = {
-			bar_ambrosius_state = 2
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_silver_star_alive
-		}
-		set_variable = {
-			bar_silver_state = 2
-		}
-	}
-	else = {
-		set_variable = {
-			bar_silver_state = 4
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_asinti_alive
-		}
-		set_variable = {
-			bar_asinti_state = 2
-		}
-	}
-	else = {
-		set_variable = {
-			bar_asinti_state = 4
-		}
-	}
-	if = {
-		limit = {
-			has_country_flag = barrad_viira_alive
-		}
-		set_variable = {
-			bar_viira_state = 2
-		}
-	}
-	else = {
-		set_variable = {
-			bar_viira_state = 4
-		}
-	}
-}
 
 bar_gui_update = {
 	add_to_variable = {
 		bar_pen_screen_show = 1
-	}
-	if = {
-		limit = {
-			OR = {
-				has_country_flag = BAR_advisors_killed
-				has_country_flag = BAR_ambrosius_killed
-			}
-			check_variable = {
-				bar_ambrosius_state < 3
-			}
-		}
-		add_to_variable = {
-			bar_ambrosius_state = 2
-		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_leopold_alive
-			}
-			check_variable = {
-				bar_leopold_state < 3
-			}
-		}
-		add_to_variable = {
-			bar_leopold_state = 2
-		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			check_variable = {
-				bar_silver_state < 3
-			}
-		}
-		add_to_variable = {
-			bar_silver_state = 2
-		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_asinti_alive
-			}
-			check_variable = {
-				bar_asinti_state < 3
-			}
-		}
-		add_to_variable = {
-			bar_asinti_state = 2
-		}
-	}
-	if = {
-		limit = {
-			NOT = {
-				has_country_flag = barrad_viira_alive
-			}
-			check_variable = {
-				bar_viira_state < 3
-			}
-		}
-		add_to_variable = {
-			bar_viira_state = 2
-		}
 	}
 }
 
@@ -2234,10 +2095,7 @@ bar_gui_update = {
                                                                                                                                         
 BAR_hide_gasienica = {
 	set_country_flag = BAR_gasienica_hidden
-	remove_advisor_role = {
-		character = BAR_gasienica
-		slot = political_advisor
-	}
+	remove_ideas = BAR_gasienica_advisor
 }
 
 BAR_add_janosik_as_commander = {

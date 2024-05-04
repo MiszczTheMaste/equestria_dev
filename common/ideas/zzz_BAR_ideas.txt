@@ -43,20 +43,6 @@ ideas = {
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
 			research_bonus = {
 				artillery = 0.15
 			}
@@ -76,20 +62,6 @@ ideas = {
 
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
 			}
 			research_bonus = {
 				infantry_weapons = 0.12
@@ -112,20 +84,6 @@ ideas = {
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
 			research_bonus = {
 				magical_tech = 0.15
 			}
@@ -139,95 +97,23 @@ ideas = {
 				magical_weapons_enthusiast
 			}
 		}
-
-		BAR_ded_arty = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			research_bonus = {
-				artillery = 0.15
-			}
-			equipment_bonus = {
-				artillery_equipment = {
-					soft_attack = 0.05
-					instant = yes
-				}
-			}
-			traits = {
-				artillery_manufacturer
-			}
-		}
-
-		BAR_ded_guns = {
-			picture = BAR_undead_advisor
+		BAR_support_eq_mio = {
+			picture = unknown_advisor
 
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
 			research_bonus = {
-				infantry_weapons = 0.12
+				magical_tech = 0.15
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					breakthrough = 0.05
-					defense = 0.05
+					reliability = 0.05
 					instant = yes
 				}
 			}
 			traits = {
-				infantry_equipment_designer
-			}
-		}
-
-		BAR_ded_magic_guns = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			research_bonus = {
-				magical_tech = 0.15
-			}
-			equipment_bonus = {
-				magical_equipment = {
-					reliability = 0.1
-					instant = yes
-				}
-			}
-			traits = {
-				magical_weapons_enthusiast
+				support_equipment_manufacturer
 			}
 		}
 	}
@@ -238,20 +124,6 @@ ideas = {
 
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
 			}
 			research_bonus = {
 				industry = 0.15
@@ -267,64 +139,8 @@ ideas = {
 				original_tag = BAR
 			}
 			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
 			}
 			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			research_bonus = {
-				synth_resources = 0.15
-			}
-
-			traits = { refinery_concern }
-		}
-
-		BAR_ded_industry = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			research_bonus = {
-				industry = 0.15
-			}
-
-			traits = { industrial_concern }
-		}
-
-		BAR_ded_refinery = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
 			}
 			research_bonus = {
 				synth_resources = 0.15
@@ -341,20 +157,6 @@ ideas = {
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
 
 			traits = { light_aircraft_manufacturer }
 		}
@@ -364,20 +166,6 @@ ideas = {
 
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
 			}
 
 			traits = { CAS_manufacturer }
@@ -389,80 +177,7 @@ ideas = {
 			allowed = {
 				original_tag = BAR
 			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
 
-			traits = { medium_aircraft_manufacturer }
-		}
-
-		BAR_ded_light_planes = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-
-			traits = { light_aircraft_manufacturer }
-		}
-
-		BAR_ded_cas = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-
-			traits = { CAS_manufacturer }
-		}
-
-		BAR_ded_medium_planes = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
 
 			traits = { medium_aircraft_manufacturer }
 		}
@@ -474,47 +189,6 @@ ideas = {
 
 			allowed = {
 				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = BAR_advisors_killed
-					}
-				}
-			}
-			traits = { naval_manufacturer }
-			equipment_bonus = {
-				ship_hull_cruiser = {
-					armor_value = 0.05
-					anti_air_attack = 0.07
-					surface_visibility = -0.05
-					naval_speed = 0.05
-					instant = yes
-				}
-			}
-		}
-		BAR_ded_shipyard = {
-			picture = BAR_undead_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			visible = {
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
-			}
-			available = { 
-				hidden_trigger = {
-					has_country_flag = BAR_undead_science
-				}
 			}
 			traits = { naval_manufacturer }
 			equipment_bonus = {
@@ -550,6 +224,14 @@ ideas = {
 				military_leader_cost_factor = 100
 				trade_laws_cost_factor = 1
 			}
+		}
+		BAR_gasienica_advisor = {
+			picture = BAR_Gasienica
+
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+			}	
 		}
 		BAR_ambrosius_goods = {
 			picture = BAR_money_party
@@ -1360,6 +1042,22 @@ ideas = {
 				non_core_manpower = 0.1
 			}
 		}
+		barrad_demon_conscription = {
+			removal_cost = -1
+
+			picture = pony_militarization
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		barrad_demon_conscription_2 = {
+			removal_cost = -1
+
+			picture = pony_militarization
+			modifier = {
+				conscription_factor = 0.5
+			}
+		}
 
   #####                                    #####                      
  #     # # #      #    # ###### #####     #     # #####   ##   #####  
@@ -2054,39 +1752,39 @@ ideas = {
 		BAR_relations_asinti_silver_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	
-				weekly_manpower = 500 
+				weekly_manpower = 300 
 			}
 		}
 		BAR_relations_asinti_leopold_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		BAR_relations_asinti_viira_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	
-				research_speed_factor = 0.1
+				research_speed_factor = 0.05
 			}
 		}
 		BAR_relations_silver_leopold_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	
 				political_power_gain = 0.075
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.05
 			}
 		}
 		BAR_relations_silver_viira_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	
-				political_power_gain = 0.075
-				research_speed_factor = 0.04 
+				political_power_gain = 0.05
+				research_speed_factor = 0.02 
 			}
 		}
 		BAR_relations_leopold_viira_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	
-				research_speed_factor = 0.04 
+				research_speed_factor = 0.02 
 				production_speed_buildings_factor = 0.075
 			}
 		}
@@ -2097,7 +1795,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.25
 					instant = yes
 				}
 			}
@@ -2105,28 +1803,28 @@ ideas = {
 		BAR_relations_asinti_leopold_negative = {
 			picture = BAL_hell
 			modifier = {	
-				experience_gain_army = 0.05
+				experience_gain_army = 0.1
 			}
 		}
 		BAR_relations_asinti_viira_negative = {
 			picture = BAL_hell
 			modifier = {
-				research_speed_factor = -0.1
+				research_speed_factor = -0.05
 				production_factory_max_efficiency_factor = 0.15
 			}
 		}
 		BAR_relations_silver_leopold_negative = {
 			picture = BAL_hell
 			modifier = {	
-				political_power_gain = 0.15
-				production_speed_buildings_factor = -0.1 
+				political_power_gain = 0.25
+				production_speed_buildings_factor = -0.05
 			}
 		}
 		BAR_relations_silver_viira_negative = {
 			picture = BAL_hell
 			modifier = {	
-				political_power_gain = 0.15
-				research_speed_factor = -0.04 
+				political_power_gain = 0.25
+				research_speed_factor = -0.02 
 			}
 		}
 		BAR_relations_leopold_viira_negative = {

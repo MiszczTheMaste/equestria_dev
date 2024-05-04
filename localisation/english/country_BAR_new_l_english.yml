@@ -120,7 +120,11 @@
 
   BAR_free_state_communism:0 "Mountain Free State"
   BAR_free_state_communism_DEF:0 "the Mountain Free State"
-  BAR_free_state_communism_ADJ:0 "Free State"
+  BAR_free_state_communism_ADJ:0 "Free State"  
+
+  BAR_free_state_2_communism:0 "Free State"
+  BAR_free_state_2_communism_DEF:0 "the Free State"
+  BAR_free_state_2_communism_ADJ:0 "Free State"
 
   BAR_RIV_neutrality:0 "Great Principality of Riverlands"
   BAR_RIV_fascism:0 "Riverlands"
@@ -1636,7 +1640,12 @@
   barrad_asinti.11.t:0 "Moment of Truth"
   barrad_asinti.11.d:0 "#TODO: coming from barrad_asinti.10, asinti sits in the temple for few days and discovers nothing, demon in his head finally explains to him that what he wanted to do is not possible and he was just messing around with him"
   barrad_asinti.11.a:0 "REPLACE_ME"
-  
+  barrad_asinti.12.t:0 "REPLACE_ME"
+  barrad_asinti.12.d:0 "REPLACE_ME"
+  barrad_asinti.12.a:0 "REPLACE_ME"
+  barrad_asinti.13.t:0 "REPLACE_ME"
+  barrad_asinti.13.d:0 "REPLACE_ME"
+  barrad_asinti.13.a:0 "REPLACE_ME"
 
 
                    #####                                    #####                      

@@ -23,7 +23,6 @@ scripted_gui = {
 					set_variable = {
 						bar_pen_screen_show = 1
 					}
-					BAR_gui_reset = yes
 				}
 			}
 		}

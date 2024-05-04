@@ -3298,11 +3298,6 @@ apn_time_queen= {
 		political_power_gain = -0.15
 		war_support_factor = -0.1
 	}
-	BAR_gasienica_advisor = {
-		random = no
-		political_power_factor = 0.15
-		stability_factor = 0.1
-	}
 	magical_weapons_enthusiast = {
 		random = no
 	}

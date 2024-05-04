@@ -138,6 +138,7 @@ recruit_character = BAR_wilfrith_faegerwell
 recruit_character = BAR_cyneweard_stangaet
 recruit_character = BAR_ondska
 recruit_character = BAR_gasienica
+recruit_character = BAR_aelfraed_bealdbeorn
 
 add_ideas = {
 	pre_industrial_society

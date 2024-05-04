@@ -937,6 +937,33 @@ BAR_ambrosius_boredoom = {
 			}
 		}
 	}
+	bar_create_intel_agency = {
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			can_create_intelligence_agency = yes
+			has_intelligence_agency = no
+			has_country_flag = barrad_early_game
+		}
+		available = {
+			has_intelligence_agency = no
+			has_country_flag = barrad_early_game
+		}
+		icon = daggers
+		fire_only_once = yes
+		cost = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			create_intelligence_agency = {
+				name = "Watchers in the Darkness"
+				icon = GFX_intelligence_agency_logo_ded
+			}
+			add_ideas = BAR_agency_bonus
+		}
+	}
 }
 BAR_strike_the_earth_cat = {
 	BAR_longterm_excavation = {

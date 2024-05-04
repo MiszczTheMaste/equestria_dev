@@ -227,7 +227,7 @@ country_event = {
 	}
 	title = barrad_monthy_relation_hit_event.1.t
 	desc = barrad_monthy_relation_hit_event.1.d
-	picture = TO_CHANGE
+	picture = GFX_event_atree_lighting
 	is_triggered_only = yes
 	option = {
 		name = barrad_monthy_relation_hit_event.1.a
@@ -242,7 +242,7 @@ country_event = {
 	}
 	title = barrad_monthy_relation_hit_event.2.t
 	desc = barrad_monthy_relation_hit_event.2.d
-	picture = TO_CHANGE
+	picture = GFX_event_atree_lighting
 	is_triggered_only = yes
 	option = {
 		name = barrad_monthy_relation_hit_event.2.a
@@ -257,7 +257,7 @@ country_event = {
 	}
 	title = barrad_monthy_relation_hit_event.3.t
 	desc = barrad_monthy_relation_hit_event.3.d
-	picture = TO_CHANGE
+	picture = GFX_event_atree_lighting
 	is_triggered_only = yes
 	option = {
 		name = barrad_monthy_relation_hit_event.3.a
@@ -272,7 +272,7 @@ country_event = {
 	}
 	title = barrad_monthy_relation_hit_event.4.t
 	desc = barrad_monthy_relation_hit_event.4.d
-	picture = TO_CHANGE
+	picture = GFX_event_atree_lighting
 	is_triggered_only = yes
 	option = {
 		name = barrad_monthy_relation_hit_event.4.a
@@ -287,7 +287,7 @@ country_event = {
 	}
 	title = barrad_monthy_relation_hit_event.5.t
 	desc = barrad_monthy_relation_hit_event.5.d
-	picture = TO_CHANGE
+	picture = GFX_event_atree_lighting
 	is_triggered_only = yes
 	option = {
 		name = barrad_monthy_relation_hit_event.5.a
@@ -302,7 +302,7 @@ country_event = {
 	}
 	title = barrad_monthy_relation_hit_event.6.t
 	desc = barrad_monthy_relation_hit_event.6.d
-	picture = TO_CHANGE
+	picture = GFX_event_atree_lighting
 	is_triggered_only = yes
 	option = {
 		name = barrad_monthy_relation_hit_event.6.a
@@ -2539,7 +2539,7 @@ country_event = {
 	}
 	title = barrad_second.1.t
 	desc = barrad_second.1.d
-	picture = TO_CHANGE
+	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.1.a
@@ -2634,7 +2634,7 @@ country_event = {
 	}
 	title = barrad_second.6.t
 	desc = barrad_second.6.d
-	picture = TO_CHANGE
+	picture = GFX_event_dark_forest
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.6.a
@@ -2676,7 +2676,7 @@ country_event = {
 			}
 		}
 	}
-	picture = TO_CHANGE
+	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -2767,10 +2767,6 @@ country_event = {
 				add_mio_size = 1
 				add_mio_funds = 1000
 			}	
-			mio:BAR_truck_manufacturer = {
-				add_mio_size = 1
-				add_mio_funds = 1000
-			}
 		}
 		else = {
 			add_ideas = BAR_vechicle_reliability
@@ -2786,7 +2782,7 @@ country_event = {
 	}
 	title = barrad_third.2.t
 	desc = barrad_third.2.d
-	picture = TO_CHANGE
+	picture = GFX_event_mountain_villlages
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.2.a
@@ -2803,7 +2799,7 @@ country_event = {
 	}
 	title = barrad_third.22.t
 	desc = barrad_third.22.d
-	picture = TO_CHANGE
+	picture = GFX_event_mountain_villlages
 	is_triggered_only = yes
 	option = {
 		name = barrad_third.22.a
@@ -3141,7 +3137,7 @@ country_event = {
 	}
 	title = barrad_third.9.t
 	desc = barrad_third.9.d
-	picture = TO_CHANGE
+	picture = GFX_event_gothic_interior
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -3577,7 +3573,7 @@ country_event = {
 	}
 	title = barrad_viira_fight.73.t
 	desc = barrad_viira_fight.73.d
-	picture = TO_CHANGE
+	picture = GFX_event_cultists_cave
 	is_triggered_only = yes
 	option = {
 		name = barrad_viira_fight.73.a

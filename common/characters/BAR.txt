@@ -362,13 +362,18 @@ characters={
 			}
 		}
 		advisor={
-			slot = political_advisor
-			idea_token = BAR_pen_occ
+			slot = theorist
+			idea_token = BAR_pen_theorist
+			cost = 100
 			allowed = {
 				original_tag = BAR
 			}
 			traits = {
 				occultist
+				military_theorist
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}
@@ -390,6 +395,29 @@ characters={
 			}
 		}
 	}
+	BAR_aelfraed_bealdbeorn={
+		name=BAR_aelfraed_bealdbeorn
+		portraits={
+			army={
+				small=GFX_idea_BAR_arty_adv
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BAR_pen_war_prof
+			allowed = {
+				original_tag = BAR
+			}
+			research_bonus = {
+				rocketry = 0.15
+				nuclear = 0.15
+			}
+			traits = {
+				rocket_scientist
+				nuclear_scientist
+			}
+		}
+	}
 	BAR_mister_lilly={
 		name=BAR_head_of_intel
 		portraits={
@@ -402,6 +430,12 @@ characters={
 			idea_token = BAR_head_of_intel
 			allowed = {
 				original_tag = BAR
+			}
+			visible = {
+				can_create_intelligence_agency = yes
+			}
+			available = {
+				has_intelligence_agency = yes
 			}
 			traits = {
 				head_of_intelligence
@@ -649,28 +683,6 @@ characters={
 			}
 			traits = {
 				army_entrenchment_2
-			}
-		}
-	}
-	BAR_cyneweard_stangaet={
-		name=BAR_pen_theorist
-		portraits={
-			army={
-				small=GFX_idea_unknown_advisor
-			}
-		}
-		advisor={
-			slot = theorist
-			idea_token = BAR_pen_theorist
-			cost = 100
-			allowed = {
-				original_tag = BAR
-			}
-			traits = {
-				military_theorist
-			}
-			ai_will_do = {
-				factor = 1
 			}
 		}
 	}

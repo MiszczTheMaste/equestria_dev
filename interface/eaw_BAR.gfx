@@ -155,6 +155,18 @@ spriteTypes = {
 		name = "GFX_event_asinti_eye_closeup"
 		texturefile = "gfx/interface/bar/events/asinti_eye_closeup.dds"
 	}
+	SpriteType = {
+		name = "GFX_event_atree_lighting"
+		texturefile = "gfx/interface/bar/events/tree_lighting.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_dark_forest"
+		texturefile = "gfx/interface/bar/events/dark_forest.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_mountain_villlages"
+		texturefile = "gfx/interface/bar/events/mountain_villlages.dds"
+	}
 	spriteType = {
 		name = "GFX_technology_barrad_folder_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_researched_item_bg.dds"
@@ -396,6 +408,46 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_BAR_Gasienica"
 		textureFile = "gfx/interface/ideas/Advisors/BAR/BAR_gasienica.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_stearcstan"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_stearcstan.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_eadburg_armaments"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_eadburg_armaments.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_dunburh_armory"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_dunburh_armory.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_elysium"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_elysium.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_weisgriff_and_daughters"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_weisgriff_and_daughters.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_heahstan_masonry"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_heahstan_masonry.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_dunnstan_alchemical_supplies"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_dunnstan_alchemical_supplies.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_aelfstan_aviation"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_aelfstan_aviation.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_dunburgh_airplanes"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_dunburgh_airplanes.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_bar_batwyrhta_clippers"
+		textureFile = "gfx/interface/ideas/BAR/manufacturers/bar_batwyrhta_clippers.tga"
 	}
 	spriteType = {
 		name = "GFX_idea_BAR_undead_advisor"

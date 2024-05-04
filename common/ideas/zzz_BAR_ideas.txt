@@ -3,7 +3,7 @@ ideas = {
 		designer = yes
 
 		bar_tank = {
-			picture = unknown_advisor
+			picture = bar_stearcstan
 		
 			allowed = {
 				original_tag = BAR
@@ -16,7 +16,7 @@ ideas = {
 		}
 
 		bar_tank2 = {
-			picture = unknown_advisor
+			picture = bar_eadburg_armaments
 			
 			allowed = {
 				original_tag = BAR
@@ -38,7 +38,7 @@ ideas = {
 		designer = yes
 
 		BAR_pen_arty = {
-			picture = BAR_arty_adv
+			picture = bar_dunburh_armory
 
 			allowed = {
 				original_tag = BAR
@@ -58,7 +58,7 @@ ideas = {
 		}
 
 		BAR_pen_guns = {
-			picture = unknown_advisor
+			picture = GFX_idea_bar_elysium
 
 			allowed = {
 				original_tag = BAR
@@ -79,7 +79,7 @@ ideas = {
 		}
 
 		BAR_magic_guns = {
-			picture = unknown_advisor
+			picture = bar_weisgriff_and_daughters
 
 			allowed = {
 				original_tag = BAR
@@ -97,30 +97,11 @@ ideas = {
 				magical_weapons_enthusiast
 			}
 		}
-		BAR_support_eq_mio = {
-			picture = unknown_advisor
-
-			allowed = {
-				original_tag = BAR
-			}
-			research_bonus = {
-				magical_tech = 0.15
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					reliability = 0.05
-					instant = yes
-				}
-			}
-			traits = {
-				support_equipment_manufacturer
-			}
-		}
 	}
 
 	industrial_concern = {
 		BAR_pen_industry = {
-			picture = unknown_advisor
+			picture = bar_heahstan_masonry
 
 			allowed = {
 				original_tag = BAR
@@ -133,7 +114,7 @@ ideas = {
 		}
 
 		BAR_pen_refinery = {
-			picture = unknown_advisor
+			picture = bar_dunnstan_alchemical_supplies
 
 			allowed = {
 				original_tag = BAR
@@ -152,7 +133,7 @@ ideas = {
 
 	aircraft_manufacturer = { 
 		BAR_pen_light_planes = {
-			picture = unknown_advisor
+			picture = bar_dunburgh_airplanes
 
 			allowed = {
 				original_tag = BAR
@@ -162,7 +143,7 @@ ideas = {
 		}
 
 		BAR_pen_cas = {
-			picture = unknown_advisor
+			picture = bar_eadburg_armaments
 
 			allowed = {
 				original_tag = BAR
@@ -172,7 +153,7 @@ ideas = {
 		}
 
 		BAR_pen_medium_planes = {
-			picture = unknown_advisor
+			picture = bar_aelfstan_aviation
 
 			allowed = {
 				original_tag = BAR
@@ -185,12 +166,12 @@ ideas = {
 
 	naval_manufacturer = {
 		BAR_pen_shipyard = {
-			picture = unknown_advisor
+			picture = bar_batwyrhta_clippers
 
 			allowed = {
 				original_tag = BAR
 			}
-			traits = { naval_manufacturer }
+			traits = { convoy_escort_naval_manufacturer }
 			equipment_bonus = {
 				ship_hull_cruiser = {
 					armor_value = 0.05
@@ -231,6 +212,13 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.15
 				stability_factor = 0.1
+			}	
+		}
+		BAR_agency_bonus = {
+			picture = BAR_fire_and_sword
+
+			modifier = {
+				operative_slot = 1
 			}	
 		}
 		BAR_ambrosius_goods = {

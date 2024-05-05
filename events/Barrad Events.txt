@@ -5764,7 +5764,7 @@ country_event = {
 	}
 	title = barrad_friendship_tree.1.t
 	desc = barrad_friendship_tree.1.d
-	picture = TO_CHANGE
+	picture = GFX_event_dark_room
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.1.a
@@ -5778,7 +5778,7 @@ country_event = {
 	}
 	title = barrad_friendship_tree.2.t
 	desc = barrad_friendship_tree.2.d
-	picture = TO_CHANGE
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.2.a
@@ -5793,7 +5793,7 @@ country_event = {
 	}
 	title = barrad_friendship_tree.3.t
 	desc = barrad_friendship_tree.3.d
-	picture = TO_CHANGE
+	picture = GFX_event_mountain_villlages
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.3.a
@@ -5990,7 +5990,7 @@ country_event = {
 	}
 	title = barrad_friendship_tree.8.t
 	desc = barrad_friendship_tree.8.d
-	picture = TO_CHANGE
+	picture = GFX_event_bar_piano
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.8.a
@@ -6042,7 +6042,7 @@ country_event = { #cultist make flood, common ponies work together to fix its ef
 	}
 	title = barrad_friendship_tree.9.t
 	desc = barrad_friendship_tree.9.d
-	picture = TO_CHANGE
+	picture = GFX_event_flood
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.9.a
@@ -6118,7 +6118,7 @@ country_event = { #silver star challenges his siter to a duel
 	}
 	title = barrad_friendship_tree.10.t
 	desc = barrad_friendship_tree.10.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_halo
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.10.a
@@ -6134,7 +6134,7 @@ country_event = { #white star response
 	}
 	title = barrad_friendship_tree.11.t
 	desc = barrad_friendship_tree.11.d
-	picture = TO_CHANGE
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	option = { #okej
 		ai_chance = {
@@ -6167,7 +6167,7 @@ country_event = { #talk with sister
 	}
 	title = barrad_friendship_tree.12.t
 	desc = barrad_friendship_tree.12.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_confused_2
 	is_triggered_only = yes
 	option = { #agree to talk
 		name = barrad_friendship_tree.12.a
@@ -6181,7 +6181,7 @@ country_event = { #accepted
 	}
 	title = barrad_friendship_tree.13.t
 	desc = barrad_friendship_tree.13.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_lost
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.13.a
@@ -6219,7 +6219,7 @@ country_event = { #brother sister no hard feeling moment
 	}
 	title = barrad_friendship_tree.15.t
 	desc = barrad_friendship_tree.15.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_happy
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.15.a
@@ -6240,7 +6240,7 @@ country_event = { #silver star sends letter to his siter
 	}
 	title = barrad_friendship_tree.16.t
 	desc = barrad_friendship_tree.16.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_lost
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.16.a
@@ -6256,7 +6256,7 @@ country_event = { #she responds saying he can come back, his friends... can only
 	}
 	title = barrad_friendship_tree.17.t
 	desc = barrad_friendship_tree.17.d
-	picture = TO_CHANGE
+	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.17.a
@@ -6272,7 +6272,7 @@ country_event = { #silver star is sad af but he cant leave his friends
 	}
 	title = barrad_friendship_tree.18.t
 	desc = barrad_friendship_tree.18.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_cry
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.18.a
@@ -6285,7 +6285,7 @@ country_event = { #lus gets ultimatium
 	}
 	title = barrad_friendship_tree.19.t
 	desc = barrad_friendship_tree.19.d
-	picture = TO_CHANGE
+	picture = GFX_event_green_mountain
 	is_triggered_only = yes
 	option = { 
 		ai_chance = {
@@ -6316,7 +6316,7 @@ country_event = { #silver star trying to learn diplomacy from a book
 	}
 	title = barrad_friendship_tree.20.t
 	desc = barrad_friendship_tree.20.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_relief
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.20.a
@@ -6330,7 +6330,7 @@ country_event = { #silver star has no clue how to run a country and asks others 
 	}
 	title = barrad_friendship_tree.21.t
 	desc = barrad_friendship_tree.21.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_confounded
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.21.a
@@ -6375,7 +6375,7 @@ country_event = { #silver star cant sleep at night and sits at the top of his to
 	}
 	title = barrad_friendship_tree.24.t
 	desc = barrad_friendship_tree.24.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_blush
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.24.a
@@ -6393,7 +6393,7 @@ country_event = { #silver star siedzi sobie an wzgórzach elysium i patrzy na mi
 	}
 	title = barrad_friendship_tree.25.t
 	desc = barrad_friendship_tree.25.d
-	picture = TO_CHANGE
+	picture = GFX_event_green_mountain
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.25.a
@@ -6549,7 +6549,7 @@ country_event = { #gąsienica nachodzi silvera w nocy
 	}
 	title = barrad_friendship_tree.28.t
 	desc = barrad_friendship_tree.28.d
-	picture = TO_CHANGE
+	picture = GFX_event_silver_star_psy_tired
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.28.a
@@ -6566,7 +6566,7 @@ country_event = { #silver i white gadają o pierdolecie
 	}
 	title = barrad_friendship_tree.29.t
 	desc = barrad_friendship_tree.29.d
-	picture = TO_CHANGE
+	picture = TO_CGFX_event_silver_star_psy_happy_2HANGE
 	is_triggered_only = yes
 	option = { #wit ally
 		name = barrad_friendship_tree.29.a
@@ -6591,7 +6591,7 @@ country_event = {
 	}
 	title = barrad_friendship_tree.30.t
 	desc = barrad_friendship_tree.30.d
-	picture = TO_CHANGE
+	picture = GFX_event_dark_room
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.30.a

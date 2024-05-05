@@ -124,6 +124,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/events/silver_star_psy_happy.dds"
 	}
 	SpriteType = {
+		name = "GFX_event_silver_star_psy_blush"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_blush.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_silver_star_psy_tired"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_tired.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_silver_star_psy_happy_2"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_happy_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_event_cultists_cave"
 		texturefile = "gfx/interface/bar/events/cultists_cave.dds"
 	}
@@ -166,6 +178,26 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_event_mountain_villlages"
 		texturefile = "gfx/interface/bar/events/mountain_villlages.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_dark_room"
+		texturefile = "gfx/interface/bar/events/dark_room.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_bar_piano"
+		texturefile = "gfx/interface/bar/events/bar_piano.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_flood"
+		texturefile = "gfx/interface/bar/events/flood.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_silver_star_psy_halo"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_halo.dds"
+	}
+	SpriteType = {
+		name = "GFX_event_silver_star_psy_confused_2"
+		texturefile = "gfx/interface/bar/events/silver_star_psy_confused_2.dds"
 	}
 	spriteType = {
 		name = "GFX_technology_barrad_folder_researched_item_bg"

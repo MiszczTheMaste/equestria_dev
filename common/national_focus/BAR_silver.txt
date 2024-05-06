@@ -894,7 +894,9 @@ focus_tree = {
 			focus = BAR_ss_better_army_11
 		}
 		completion_reward = {
-			set_country_flag = bar_silver_star_army_bonuses
+			set_variable = {
+				bar_silver_star_army_bonuses = 1
+			}
 			custom_effect_tooltip = bar_silver_star_army_bonuses_tooltip
 		}
 	}
@@ -1825,9 +1827,14 @@ focus_tree = {
 			focus = BAR_ss_attack_coast
 		}
 		will_lead_to_war_with = GRY
+		will_lead_to_war_with = GRU
 		completion_reward = {
 			create_wargoal = {
 				target = GRY
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = GRU
 				type = annex_everything
 			}
 		}

@@ -6278,7 +6278,7 @@ country_event = { #silver star is sad af but he cant leave his friends
 		name = barrad_friendship_tree.18.a
 	}
 }
-country_event = { #lus gets ultimatium
+country_event = { #root gets ultimatium
 	id = barrad_friendship_tree.19
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.19"
@@ -6293,17 +6293,17 @@ country_event = { #lus gets ultimatium
 		}
 		name = barrad_friendship_tree.19.a
 		BAR = {
-			puppet = LUS
+			puppet = ROOT
 		}
 	}
 	option = { 
 		ai_chance = {
-			factor = 5
+			factor = 10
 		}
 		name = barrad_friendship_tree.19.b
 		BAR = {
 			create_wargoal = {
-				target = LUS
+				target = ROOT
 				type = puppet_wargoal_focus
 			}
 		}
@@ -6578,6 +6578,7 @@ country_event = { #silver i white gadają o pierdolecie
 			add_to_faction = ROOT
 		}
 		add_ideas = RIV_member_state
+		set_country_flag = bar_friendship_wit_ally
 		hidden_effect = {
 			RIV_set_cosmetic_tag = yes
 			mark_focus_tree_layout_dirty = yes
@@ -6598,6 +6599,31 @@ country_event = {
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
+		}
+	}
+}
+
+country_event = { 
+	id = barrad_friendship_tree.31
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.30"
+	}
+	title = barrad_friendship_tree.30.t
+	desc = barrad_friendship_tree.30.d
+	picture = GFX_event_dark_room
+	is_triggered_only = yes
+	option = {
+		name = barrad_friendship_tree.30.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+	}	
+	option = {
+		name = barrad_friendship_tree.30.a
+		create_wargoal = {
+			target = GRU
+			type = annex_everything
 		}
 	}
 }

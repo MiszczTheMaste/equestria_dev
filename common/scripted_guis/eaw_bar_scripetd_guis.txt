@@ -612,6 +612,138 @@ scripted_gui = {
 			}
 		}
 	}
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+	#######################################################################################
+
+	bar_silver_star_map_overlays_container = {
+		window_name = "bar_silver_star_map_overlays_container"
+		parent_window_name = "MapmodesInterface_Ingame"
+		context_type = player_context
+		dirty = bar_silver_star_army_bonuses
+		visible = {
+			ROOT = {
+				tag = BAR
+				has_variable = bar_silver_star_army_bonuses
+			}
+		}
+		triggers = {
+			bar_silver_star_undead_buff_attack_button_enabled = {
+				NOT = {
+					OR = {
+						has_country_flag = bar_silver_star_undead_buff_cooldown
+						has_country_flag = BAR_un_buff_attack_flag
+					}
+				}	
+			}
+			bar_silver_star_undead_buff_def_button_enabled = {
+				NOT = {
+					OR = {
+						has_country_flag = bar_silver_star_undead_buff_cooldown
+						has_country_flag = BAR_un_buff_def_flag
+					}
+				}	
+			}
+			bar_silver_star_undead_buff_break_button_enabled = {
+				NOT = {
+					OR = {
+						has_country_flag = bar_silver_star_undead_buff_cooldown
+						has_country_flag = BAR_un_buff_break_flag
+					}
+				}	
+			}
+			bar_silver_star_undead_buff_org_button_enabled = {
+				NOT = {
+					OR = {
+						has_country_flag = bar_silver_star_undead_buff_cooldown
+						has_country_flag = BAR_un_buff_org_flag
+					}
+				}	
+			}
+			bar_silver_star_undead_buff_piercing_button_enabled = {
+				NOT = {
+					OR = {
+						has_country_flag = bar_silver_star_undead_buff_cooldown
+						has_country_flag = BAR_un_buff_piercing_flag
+					}
+				}	
+			}
+		}
+		effects = {
+			bar_silver_star_undead_buff_attack_button_click = {
+				hidden_effect = {
+					set_country_flag = bar_silver_star_undead_buff_cooldown
+					activate_mission = BAR_un_buff_change_timeout
+					BAR_un_idea_buffs_remove = yes
+					set_technology = {
+						BAR_un_buff_attack_tech = 1
+						popup = no
+					}
+					set_country_flag = BAR_un_buff_attack_flag
+				}
+			}
+			bar_silver_star_undead_buff_def_button_click = {
+				hidden_effect = {
+					set_country_flag = bar_silver_star_undead_buff_cooldown
+					activate_mission = BAR_un_buff_change_timeout
+					BAR_un_idea_buffs_remove = yes
+					set_technology = {
+						BAR_un_buff_def_tech = 1
+						popup = no
+					}
+					set_country_flag = BAR_un_buff_def_flag
+				}
+			}
+			bar_silver_star_undead_buff_break_button_click = {
+				hidden_effect = {
+					set_country_flag = bar_silver_star_undead_buff_cooldown
+					activate_mission = BAR_un_buff_change_timeout
+					BAR_un_idea_buffs_remove = yes
+					set_technology = {
+						BAR_un_buff_break_tech = 1
+						popup = no
+					}
+					set_country_flag = BAR_un_buff_break_flag
+				}
+			}
+			bar_silver_star_undead_buff_org_button_click = {
+				hidden_effect = {
+					set_country_flag = bar_silver_star_undead_buff_cooldown
+					activate_mission = BAR_un_buff_change_timeout
+					BAR_un_idea_buffs_remove = yes
+					set_technology = {
+						BAR_un_buff_org_tech = 1
+						popup = no
+					}
+					set_country_flag = BAR_un_buff_org_flag
+					BAR_un_idea_buffs_remove = yes
+					set_technology = {
+						BAR_un_buff_piercing_tech = 1
+						popup = no
+					}
+					set_country_flag = BAR_un_buff_piercing_flag
+				}
+			}
+			bar_silver_star_undead_buff_piercing_button_click = {
+				hidden_effect = {
+					set_country_flag = bar_silver_star_undead_buff_cooldown
+					activate_mission = BAR_un_buff_change_timeout
+					BAR_un_idea_buffs_remove = yes
+					set_technology = {
+						BAR_un_buff_piercing_tech = 1
+						popup = no
+					}
+					set_country_flag = BAR_un_buff_piercing_flag
+				}
+			}
+		}
+	}
 	
 	#######################################################################################
 	#######################################################################################

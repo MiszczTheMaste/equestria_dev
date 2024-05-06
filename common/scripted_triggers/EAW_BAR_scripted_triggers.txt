@@ -1,74 +1,7 @@
 BAR_is_possible_to_attempt_murder = {
-	BAR_is_doing_main_storyline = no
+	has_country_flag = barrad_killing_active
 	has_country_flag = barrad_early_game
 	is_ai = no
-}
-BAR_is_doing_main_storyline = {
-	OR = {
-		AND = {
-			focus_progress = {
-				focus = BAR_kind_letter
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_kind_letter
-			}
-		}
-		AND = {
-			focus_progress = {
-				focus = BAR_gather_nobles
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_gather_nobles
-			}
-		}
-		AND = {
-			focus_progress = {
-				focus = BAR_gather_peasants
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_gather_peasants
-			}
-		}
-		AND = {
-			focus_progress = {
-				focus = BAR_hunting_party
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_hunting_party
-			}
-		}
-		AND = {
-			focus_progress = {
-				focus = BAR_meeting_of_four
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_meeting_of_four
-			}
-		}
-		AND = {
-			focus_progress = {
-				focus = BAR_another_party
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_hunting_party
-			}
-		}
-		AND = {
-			focus_progress = {
-				focus = BAR_meeting_of_four_two
-				progress > 0
-			}
-			NOT = {
-				has_completed_focus = BAR_meeting_of_four_two
-			}
-		}
-	}
 }
 BAR_resources_above_asinti_100 = {
 	check_variable = {

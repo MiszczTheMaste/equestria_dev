@@ -175,7 +175,7 @@
   bar_friend_3_tooltip:0 "§HAsinti§![bar_friend_3_tooltip_with_effect]"
   bar_friend_3_tooltip_effect:0 "\n\n§HPreacher of Good Hope§!\n - Division Recovery Rate: §G+10%§!"
   bar_friend_4_tooltip:0 "§HAmbrosius§![bar_friend_4_tooltip_with_effect]"
-  bar_friend_4_tooltip_effect:0 "\n\n§HMisunderstood Visionary!\n - Consumer Goods Factories factor: §Y-10%§!"
+  bar_friend_4_tooltip_effect:0 "\n\n§HGenius Politician!\n - Consumer Goods Factories factor: §Y-10%§!"
   bar_friend_5_tooltip:0 "§HGąsienica§!\n\n§HLawful Good§!\n - Political Power Gain: §G+15%§!\n - Stability: §G+10%§!"
   bar_friend_6_tooltip:0 "§HWhite Star§!\n\n§HBeloved Sister§!\n - War Support: §G+10%§!\n - Stability: §G+5%§! - Political Power Gain: §G+25%§!"
 
@@ -186,7 +186,7 @@
   BAR_friend_asinti_tooltip:0 "\n§HAsinti§!:"
   BAR_friend_asinti:0 "Preacher of Good Hope"
   BAR_friend_ambrosius_tooltip:0 "\n§HAmbrosius§!:"
-  BAR_friend_ambrosius:0 "Misunderstood Visionary"
+  BAR_friend_ambrosius:0 "Genius Politician"
   BAR_friend_white_star_tooltip:0 "White and Silver Stars become friends"
 
   BAR_friend_temple_builded_z_f_p:0 "Sanctuary for the Poor"

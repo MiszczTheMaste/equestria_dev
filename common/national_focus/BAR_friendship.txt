@@ -799,7 +799,7 @@ focus_tree = {
 		id = BAR_friend_move_to_wittenburgh
 		icon = GFX_goal_cry_com_sync
 		cost = 3
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = BAR_friend_homecoming
 		ai_will_do = {
@@ -820,6 +820,95 @@ focus_tree = {
 				state = 617
 			}
 			add_political_power = 100
+			RCT = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			LCT = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			DEP = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			BAK = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			DMT = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			NIM = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			FRE = {
+				remove_opinion_modifier = {
+					target = BAR
+					modifier = distrustful_relations
+				}
+			}
+			remove_opinion_modifier = {
+				target = RCT
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = LCT
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = DEP
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = BAK
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = DMT
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = NIM
+				modifier = distrustful_relations
+			}
+			remove_opinion_modifier = {
+				target = FRE
+				modifier = distrustful_relations
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_rejoin_rivelands
+		icon = GFX_goal_cry_com_sync
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_homecoming
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_fight_for_friendship
+		}
+		available = {
+			has_country_flag = bar_friendship_wit_ally
+		}
+		completion_reward = {
 			RCT = {
 				remove_opinion_modifier = {
 					target = BAR
@@ -932,6 +1021,7 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_river_federation_membership
+			focus = BAR_friend_rejoin_rivelands
 		}
 		completion_reward = {
 			country_event = {
@@ -1168,6 +1258,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		mutually_exclusive = {
+			focus = BAR_friend_capture_gryphus
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_friend_white_star_is_helping_tooltip
@@ -1185,32 +1278,32 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_conquer_steppe
+		id = BAR_friend_capture_gryphus
 		icon = GFX_goal_cry_com_sync
 		cost = 3
-		x = -3
+		x = 2
 		y = 1
-		relative_position_id = BAR_friend_regional_interventionism
+		relative_position_id = BAR_friend_diplomacy_getting_somebody_competent
 		ai_will_do = {
 			factor = 10
 		}
+		mutually_exclusive = {
+			focus = BAR_friend_regional_interventionism
+		}
 		available = {
 			NOT = {
-				GRY = {
-					has_government = democratic
+				custom_trigger_tooltip = {
+					tooltip = BAR_friend_white_star_is_helping_tooltip
+					has_idea = BAR_friend_white_star
 				}
 			}
 		}
-		mutually_exclusive = {
-			focus = BAR_friend_aproach_cossacs
-		}
 		prerequisite = {
-			focus = BAR_friend_regional_interventionism
+			focus = BAR_friend_diplomacy_getting_somebody_competent
 		}
-		will_lead_to_war_with = GRY
 		completion_reward = {
 			create_wargoal = {
-				target = GRY
+				target = GRU
 				type = annex_everything
 			}
 		}
@@ -1225,18 +1318,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			GRY = {
-				has_government = democratic
-			}
-		}
-		mutually_exclusive = {
-			focus = BAR_friend_conquer_steppe
-		}
 		prerequisite = {
 			focus = BAR_friend_regional_interventionism
 		}
 		completion_reward = {
+			GRY = {
+				country_event = {
+					id = barrad_friendship_tree.19
+				}
+			}
 		}
 	}
 	focus = {
@@ -1249,48 +1339,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
+		prerequisite = {
+			focus = BAR_friend_regional_interventionism
+		}
+		completion_reward = {
 			GRU = {
-				has_government = democratic
-			}
-		}
-		mutually_exclusive = {
-			focus = BAR_friend_free_towns_not_for_long
-		}
-		prerequisite = {
-			focus = BAR_friend_regional_interventionism
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_friend_free_towns_not_for_long
-		icon = GFX_goal_cry_com_sync
-		cost = 3
-		x = 3
-		y = 1
-		relative_position_id = BAR_friend_regional_interventionism
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			NOT = {
-				GRU = {
-					has_government = democratic
+				country_event = {
+					id = barrad_friendship_tree.19
 				}
-			}
-		}
-		mutually_exclusive = {
-			focus = BAR_friend_free_towns_deal
-		}
-		prerequisite = {
-			focus = BAR_friend_regional_interventionism
-		}
-		will_lead_to_war_with = GRU
-		completion_reward = {
-			create_wargoal = {
-				target = GRU
-				type = annex_everything
 			}
 		}
 	}
@@ -1306,11 +1362,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_free_towns_deal
-			focus = BAR_friend_free_towns_not_for_long
 		}
 		prerequisite = {
 			focus = BAR_friend_aproach_cossacs
-			focus = BAR_friend_conquer_steppe
 		}
 		will_lead_to_war_with = GRW
 		will_lead_to_war_with = BAN

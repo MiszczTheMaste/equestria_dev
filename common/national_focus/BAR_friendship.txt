@@ -390,6 +390,12 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_enemies_without
 		}
+		bypass = {
+			ZES = {
+				exists = no
+			}
+		}
+		will_lead_to_war_with = ZES
 		completion_reward = {
 			declare_war_on = {
 				target = ZES
@@ -409,6 +415,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_attack_zes
+		}
+		bypass = {
+			ZES = {
+				exists = no
+			}
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -509,6 +520,12 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_enemies_without
 		}
+		bypass = {
+			OLV = {
+				exists = no
+			}
+		}
+		will_lead_to_war_with = OLV
 		completion_reward = {
 			declare_war_on = {
 				target = OLV
@@ -528,6 +545,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_attack_olv
+		}
+		bypass = {
+			OLV = {
+				exists = no
+			}
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -815,6 +837,9 @@ focus_tree = {
 				country_exists = WIT
 			}
 		}
+		mutually_exclusive = {
+			focus = BAR_friend_rejoin_rivelands
+		}
 		completion_reward = {
 			set_capital = {
 				state = 617
@@ -908,6 +933,9 @@ focus_tree = {
 		available = {
 			has_country_flag = bar_friendship_wit_ally
 		}
+		mutually_exclusive = {
+			focus = BAR_friend_move_to_wittenburgh
+		}
 		completion_reward = {
 			RCT = {
 				remove_opinion_modifier = {
@@ -985,7 +1013,7 @@ focus_tree = {
 		id = BAR_friend_river_federation_membership
 		icon = GFX_goal_cry_com_sync
 		cost = 3
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = BAR_friend_move_to_wittenburgh
 		ai_will_do = {
@@ -997,15 +1025,18 @@ focus_tree = {
 		completion_reward = {
 			random_country = {
 				limit = {
-					has_idea = RIV_member_state
+					is_river_fed_member = yes 
 					is_faction_leader = yes
 				}
 				add_to_faction = ROOT
 			}
 			add_ideas = RIV_member_state
+			set_country_flag = riverlands_country
+			update_river_fed_array = yes
 			hidden_effect = {
 				set_cosmetic_tag = BAR_WIT_magocracy_rivfed
 				mark_focus_tree_layout_dirty = yes
+				complete_national_focus = RIV_dreams_of_a_federation
 			}
 		}
 	}
@@ -1245,6 +1276,7 @@ focus_tree = {
 					modifier = made_friends
 				}
 			}
+			RIV_add_to_fed_race = yes
 			RIV_add_to_fed_race = yes
 		}
 	}

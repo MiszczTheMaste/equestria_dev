@@ -92,6 +92,12 @@ country_event = {
 		name = "friendship"
 		load_focus_tree = barrad_focus_tree_friendship
 	}
+	option = {
+		name = "clear early game"
+		clr_country_flag = barrad_early_game
+		set_country_flag = riverlands_country
+		update_river_fed_array = yes
+	}
 }
 country_event = { #przemysł musi być ulepszony 6 razy w kolejnych drzewkach, bieda 3 razy
 	id = bar_cheat.3
@@ -932,11 +938,10 @@ country_event = {
 	option = {
 		#:)
 		name = barrad_friends.9.a
-		hidden_effect = {
-			country_event = {
-				id = barrad_friends.10
-				days = 1
-			}
+		clr_country_flag = barrad_early_game
+		country_event = {
+			id = barrad_friends.10
+			hours = 6
 		}
 	}
 }
@@ -954,11 +959,9 @@ country_event = {
 	option = {
 		#:)
 		name = barrad_friends.10.a
-		hidden_effect = {
-			country_event = {
-				id = barrad_friends.11
-				days = 12
-			}
+		country_event = {
+			id = barrad_friends.11
+			days = 2
 		}
 	}
 }
@@ -1069,18 +1072,16 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = magocracy
 				traits = {
-					BAR_gasienica_advisor
+					BAR_gasienica_trait
 				}
 			}
 		}
+		
 		add_stability = -0.3
 		add_war_support = -0.3
 		hidden_effect = {
 			change_all_province_names = yes
-			remove_advisor_role = {
-				character = BAR_gasienica
-				slot = political_advisor
-			}
+			remove_ideas = BAR_gasienica_advisor
 		}
 		country_event = { id = barrad_friends.17 }
 	}
@@ -1214,6 +1215,13 @@ country_event = {
 	option = {
 		#virra kills leopold
 		name = bar_titan_fight.3.c
+		trigger = {
+			NOT = {
+				check_variable = {
+					BAR_relations_leopold_viira > 69
+				}
+			}
+		}
 		set_country_flag = BAR_strike_the_earth_unlocked
 		add_to_variable = {
 			var = BAR_resources_viira
@@ -2770,6 +2778,12 @@ country_event = {
 		}
 		else = {
 			add_ideas = BAR_vechicle_reliability
+		}
+		add_tech_bonus = {
+			name = motorized_bonus
+			bonus = 2
+			uses = 1
+			category = motorized_equipment
 		}
 	}
 }
@@ -6033,6 +6047,8 @@ country_event = {
 			}
 			add_ideas = BAR_friend_gasienica
 		}
+		BAR_remove_cooperation = yes
+		add_ideas = BAR_relations_combined
 	}
 }
 country_event = { #cultist make flood, common ponies work together to fix its effects (flood of 97')
@@ -6199,6 +6215,7 @@ country_event = { #duel
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.14.a
+		add_to_variable = { var = RIV_fed_race value = WIT.RIV_fed_race }
 		annex_country = {
 			target = WIT
 		}

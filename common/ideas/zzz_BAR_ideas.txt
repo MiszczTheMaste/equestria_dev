@@ -1737,6 +1737,15 @@ ideas = {
  #     # ###### ###### #    #   #   #  ####  #    #  ####  
    
  
+		BAR_relations_combined = {
+			picture = SRS_skynavian_egalitarianism
+			modifier = {	
+				weekly_manpower = 300 
+				production_speed_buildings_factor = 0.175
+				research_speed_factor = 0.09
+				political_power_gain = 0.125
+			}
+		}
 		BAR_relations_asinti_silver_positive = {
 			picture = SRS_skynavian_egalitarianism
 			modifier = {	

@@ -13,6 +13,9 @@ BAR_assasination_attempts = {
 BAR_expeditions = {
 	icon = knife_blood
 	scripted_gui = bar_expedition_decisions_gui
+	visible = {
+		has_country_flag = barrad_early_game
+	}
 	allowed = {
 		original_tag = BAR
 	}

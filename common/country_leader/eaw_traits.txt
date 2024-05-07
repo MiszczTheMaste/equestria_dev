@@ -3301,6 +3301,11 @@ apn_time_queen= {
 	magical_weapons_enthusiast = {
 		random = no
 	}
+	BAR_gasienica_trait = {
+		random = no
+		stability_factor = 0.1
+		political_power_factor = 0.15
+	}
 	bar_leopold_trait = {
 		random = no
 		military_leader_cost_factor = 100

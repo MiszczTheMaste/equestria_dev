@@ -1850,7 +1850,19 @@
   barrad_friendship_tree.30.t:0 "Counting your Griffons"
   barrad_friendship_tree.30.d:0 "The room was cluttered with a variety of arcane instruments, their purpose clear only to their inventor. Even by griffon standards it was mess and its architect was perched on a makeshift platform with his tail swaying idly. Ever since the reactor detonation, Leopold had thrown himself into rebuilding it on a smaller scale, undeterred by the lack of interest from the others. He was occupied by his work until a sharp pain jolted him. Somecreature had pulled his tail. Annoyed, he swiftly pulled it in and turned around to see who interrupted him in such way.\n    "Finally, I've been here for five minutes," Viira said, grinning mischievously.\n    "You could've just said something," Leopold grumbled, leaning over the edge of his platform.\n    "That’s exactly what I’ve been doing," she responded. "Anyway, I found a strange type of crystal I wanted to show you, but..." Viira looked over the room. "It looks like you’ve got enough stuff here"\n    "A crystal?" Leopold's said with excitement. "Let me see it." He reached over the platform to her eagerly. However a sharp pain in his chest stopped him, resulting in quick trip onto the floor.\n    "Are you alright? What happened?" Viira rushed to help him stand up.\n    "It’s nothing..." Leopold tried to catch his breath. With help he sat back down, a grimace crossing his face. "Who am I kidding? Remember the crystal I gave you that helped take down Gąsienica? It’s stable, but it can't transfer as much energy as my body needs."\n    "Are you..." Viira started with uncertain voice.\n    "No, silly," Leopold interrupted. "I’m not dying. Well, technically we all are, but not at an alarming rate," he was unsure if he wants to say what he was about to, but he continued. "I’m working on a prototype of the reactor we built but smaller. I hope it will help me infuse new crystals for my internal machinery."\n    "Wait, a reactor, crystals?" Viira’s interest sparked.\n    "I know none of you are keen on me continuing with the reactor..." Leopold began.\n    "How can griffon be so smart also be so stupid at the same time?" Viira did not allow him to finish. His confusion was evident, but before he could respond, Viira continued, "You could have just asked for our help if you were facing such big problems."\n    "I never..." Leopold tried to explain, but Viira cut him off again.\n    "Have you talked to Asinti or Ambrosius about this?" she sighed. "One of them was putting you back together after having your rear beaten.""
   barrad_friendship_tree.30.a:0 "I might have not thought about it"
-
+  barrad_friendship_tree.31.t:0 "#TODO: cool title"  
+  barrad_friendship_tree.31.d:0 "#TODO: silver star writes letter to his sister about ceasing fire in the war (alternative to barrad_friendship_tree.16)"  
+  barrad_friendship_tree.31.a:0 "REPLACE_ME"   
+  barrad_friendship_tree.32.t:0 "#TODO: cool title"  
+  barrad_friendship_tree.32.d:0 "#TODO: asinti gets called to examine the captured cultist leader as she is speaking in some sort of demonic tongue, leopold explains to him she is just speaking french which counts as a demonic by his book, and also tells him what she is singing about"  
+  barrad_friendship_tree.32.a:0 "REPLACE_ME"   
+  barrad_friendship_tree.33.t:0 "#TODO: cool title"  
+  barrad_friendship_tree.33.d:0 "#TODO: it turns out that gąsienica and the french cultist pony became friends"  
+  barrad_friendship_tree.33.a:0 "REPLACE_ME"  
+  barrad_friendship_tree.34.t:0 "#TODO: cool title"  
+  barrad_friendship_tree.34.d:0 "#TODO: event for wittenland where they got whitepeace offer, completes focus about writing to white star for barrad"  
+  barrad_friendship_tree.34.a:0 "yes"  
+  barrad_friendship_tree.34.a:0 "no"  
 
             #                                                 
             #       ######  ####  #####   ####  #      #####  

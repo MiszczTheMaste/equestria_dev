@@ -732,8 +732,17 @@ focus_tree = {
 			focus = BAR_friend_prince_of_wittenland
 		}
 		completion_reward = {
-			country_event = {
-				id = barrad_friendship_tree.16
+			if = {
+				limit = {
+					has_war_with = WIT
+				}
+				country_event = { 
+					id = barrad_friendship_tree.31 
+				}
+			} else = {
+				country_event = {
+					id = barrad_friendship_tree.16
+				}
 			}
 		}
 	}

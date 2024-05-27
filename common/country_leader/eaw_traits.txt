@@ -3389,6 +3389,18 @@ apn_time_queen= {
 		send_volunteers_tension = 1.0
 		guarantee_tension = 1.0
 	}
+	bar_viira_seer_trait = {
+		random = no
+		command_cap = 10
+		max_planning = 0.3
+		planning_speed = 0.15
+	}
+	bar_silver_star_perpared_trait = {
+		random = no
+		command_cap = 10
+		max_dig_in = 10
+		dig_in_speed_factor = 0.25
+	}
 	
 	secret_police = {
 		random = no

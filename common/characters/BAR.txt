@@ -61,6 +61,21 @@ characters={
 			logistics_skill=1
 			legacy_id=9998
 		}
+		advisor={
+			slot = high_command
+			idea_token = BAR_viira_lehtola_advicor
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = BAR
+			}
+			traits = {
+				bar_viira_seer_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		gender = female
 	}
 	BAR_no_one={
@@ -149,6 +164,21 @@ characters={
 				}
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = BAR_silver_star_advisor
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = BAR
+			}
+			traits = {
+				bar_silver_star_perpared_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	BAR_asinti={
 		name=BAR_asinti
@@ -170,6 +200,21 @@ characters={
 				NOT = {
 					has_country_flag = BAR_asinti_general_hidden
 				}
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BAR_asinti_advisor
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = BAR
+			}
+			traits = {
+				army_logistics_3
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}
@@ -195,6 +240,21 @@ characters={
 				}
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = BAR_leopold_schmeller_advisor
+			ledger = army
+			cost = 150
+			allowed = {
+				original_tag = BAR
+			}
+			traits = {
+				army_armored_3
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	BAR_oleander={
 		name=BAR_oleander
@@ -202,6 +262,18 @@ characters={
 			army={
 				small="gfx/interface/ideas/Advisors/BAR/idea_oleander.tga"
 				large="gfx/leaders/BAR/oleander.tga"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = BAR_oleander_advisor
+			ledger = army
+			cost = 100
+			allowed = {
+				original_tag = BAR
+			}
+			traits = {
+				army_infantry_2
 			}
 		}
 	}
@@ -279,6 +351,25 @@ characters={
 				NOT = {
 					has_country_flag = BAR_gasienica_hidden
 				}
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BAR_pen_army_chief
+			cost = 100
+			allowed = {
+				original_tag = BAR
+			}
+			visible = {
+				NOT = {
+					has_country_flag = BAR_gasienica_hidden
+				}
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}
@@ -417,6 +508,18 @@ characters={
 				nuclear_scientist
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = BAR_pen_high_command
+			ledger = army
+			cost = 100
+			allowed = {
+				original_tag = BAR
+			}
+			traits = {
+				army_artillery_2
+			}
+		}
 	}
 	BAR_mister_lilly={
 		name=BAR_head_of_intel
@@ -446,26 +549,6 @@ characters={
 					has_intelligence_agency = no
 					factor = 0
 				}
-			}
-		}
-	}
-	BAR_leofric_stearcstan={
-		name=BAR_pen_high_command
-		portraits={
-			army={
-				small=GFX_idea_unknown_advisor
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = BAR_pen_high_command
-			ledger = army
-			cost = 50
-			allowed = {
-				original_tag = BAR
-			}
-			traits = {
-				army_artillery_1
 			}
 		}
 	}
@@ -499,20 +582,6 @@ characters={
 			}
 		}
 		advisor={
-			slot = army_chief
-			idea_token = BAR_pen_army_chief_1
-			cost = 100
-			allowed = {
-				original_tag = BAR
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		advisor={
 			slot = high_command
 			idea_token = BAR_pen_high_command_2
 			ledger = army
@@ -528,8 +597,8 @@ characters={
 			}
 		}
 	}
-	BAR_godric_hereweald={
-		name=BAR_pen_army_chief_2
+	BAR_winnelac_hereweald={
+		name=BAR_winnelac_hereweald
 		portraits={
 			army={
 				small=GFX_idea_unknown_advisor
@@ -537,7 +606,7 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = BAR_pen_army_chief_2
+			idea_token = BAR_winnelac_hereweald_advisor
 			cost = 200
 			allowed = {
 				original_tag = BAR
@@ -547,18 +616,6 @@ characters={
 			}
 			ai_will_do = {
 				factor = 1
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = BAR_pen_high_command_1
-			ledger = army
-			cost = 100
-			allowed = {
-				original_tag = BAR
-			}
-			traits = {
-				army_infantry_2
 			}
 		}
 	}
@@ -608,7 +665,7 @@ characters={
 				original_tag = BAR
 			}
 			traits = {
-				air_chief_ground_support_1
+				air_chief_ground_support_2
 			}
 			ai_will_do = {
 				factor = 1

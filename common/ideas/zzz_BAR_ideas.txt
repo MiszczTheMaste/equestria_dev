@@ -124,10 +124,16 @@ ideas = {
 			available = { 
 			}
 			research_bonus = {
+				industry = 0.05
+				excavation_tech = 0.05
 				synth_resources = 0.15
 			}
 
 			traits = { refinery_concern }
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.1
+				fuel_gain_factor = 0.05
+			}
 		}
 	}
 

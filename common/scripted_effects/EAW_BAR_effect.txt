@@ -1683,7 +1683,7 @@ bar_kill_advisors = {
 			}
 		}
 	}
-	BAR_godric_hereweald = {
+	BAR_winnelac_hereweald = {
 		set_portraits = {
 			army = {
 				small = GFX_idea_BAR_undead_advisor

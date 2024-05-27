@@ -890,6 +890,13 @@ focus_tree = {
 				amount = 2
 				state = 624
 			}
+			if = {
+				limit = {
+					has_country_flag = barrad_asinti_alive
+					has_country_flag = barrad_leopold_alive
+				}
+				country_event = {id = barrad_second.7}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -923,7 +930,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = industry_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = excavation_tech
 			}

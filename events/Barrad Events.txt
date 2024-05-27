@@ -2724,6 +2724,19 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = barrad_second.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.7"
+	}
+	title = barrad_second.7.t
+	desc = barrad_second.7.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.7.a
+	}
+}
 
 
 ##############################################################################################################################################################################
@@ -6717,6 +6730,19 @@ country_event = { #whitepeace
 		ai_chance = {
 			base = 0
 		}
+	}	
+}
+country_event = { 
+	id = barrad_friendship_tree.35
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.35"
+	}
+	title = barrad_friendship_tree.35.t
+	desc = barrad_friendship_tree.35.d
+	picture = GFX_event_silver_star_psy_confounded
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.35.a		
 	}	
 }
 

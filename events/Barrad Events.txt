@@ -1222,14 +1222,12 @@ country_event = {
 				}
 			}
 		}
-		set_country_flag = BAR_strike_the_earth_unlocked
+		set_country_flag = BAR_strike_the_earth_unlocked	
 		add_to_variable = {
-			var = BAR_resources_viira
+			var = BAR_resource_to_modify_ammount
 			value = BAR_resources_leopold
 		}
-		set_variable = {
-			BAR_resources_leopold = 0
-		}
+		bar_viira_resources_add = yes
 		barrad_kill_leopold = yes
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
@@ -1577,16 +1575,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_asinti
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_silver
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_asinti
 		}
+		bar_silver_resources_add = yes
 		barrad_kill_asinti = yes
 		clr_country_flag = BAR_silver_immunity
 		clr_country_flag = BAR_asinti_immunity
@@ -1606,16 +1599,8 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_asinti
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
-		add_to_variable = {
-			var = BAR_resources_leopold
-			value = tempRes
-		}
+		set_variable = { BAR_resource_to_modify_ammount = BAR_resources_asinti }
+		bar_leopold_resources_add = yes
 		barrad_kill_asinti = yes
 		clr_country_flag = BAR_leopold_immunity
 		clr_country_flag = BAR_asinti_immunity
@@ -1635,16 +1620,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_asinti
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_viira
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_asinti
 		}
+		bar_viira_resources_add = yes
 		barrad_kill_asinti = yes
 		clr_country_flag = BAR_viira_immunity
 		clr_country_flag = BAR_asinti_immunity
@@ -1665,16 +1645,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_silver
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_asinti
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_silver
 		}
+		bar_asinti_resources_add = yes
 		barrad_kill_silver = yes
 		clr_country_flag = BAR_asinti_immunity
 		clr_country_flag = BAR_silver_immunity
@@ -1694,16 +1669,8 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_silver
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
-		add_to_variable = {
-			var = BAR_resources_leopold
-			value = tempRes
-		}
+		set_variable = { BAR_resource_to_modify_ammount = BAR_resources_silver }
+		bar_leopold_resources_add = yes
 		barrad_kill_silver = yes
 		clr_country_flag = BAR_leopold_immunity
 		clr_country_flag = BAR_silver_immunity
@@ -1723,16 +1690,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_silver
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_viira
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_silver
 		}
+		bar_viira_resources_add = yes
 		barrad_kill_silver = yes
 		clr_country_flag = BAR_viira_immunity
 		clr_country_flag = BAR_silver_immunity
@@ -1753,16 +1715,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_leopold
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_asinti
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_leopold
 		}
+		bar_asinti_resources_add = yes
 		barrad_kill_leopold = yes
 		clr_country_flag = BAR_asinti_immunity
 		clr_country_flag = BAR_leopold_immunity
@@ -1782,16 +1739,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_leopold
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_silver
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_leopold
 		}
+		bar_silver_resources_add = yes
 		barrad_kill_leopold = yes
 		clr_country_flag = BAR_silver_immunity
 		clr_country_flag = BAR_leopold_immunity
@@ -1810,17 +1762,12 @@ country_event = {
 	desc = barrad_death.733.d
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
-	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_leopold
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
+	immediate = {	
 		add_to_variable = {
-			var = BAR_resources_viira
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_leopold
 		}
+		bar_viira_resources_add = yes
 		barrad_kill_leopold = yes
 		clr_country_flag = BAR_viira_immunity
 		clr_country_flag = BAR_leopold_immunity
@@ -1841,16 +1788,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_viira
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_asinti
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_viira
 		}
+		bar_asinti_resources_add = yes
 		barrad_kill_viira = yes
 		clr_country_flag = BAR_viira_immunity
 		clr_country_flag = BAR_asinti_immunity
@@ -1870,16 +1812,11 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_viira
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
 		add_to_variable = {
-			var = BAR_resources_silver
-			value = tempRes
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_viira
 		}
+		bar_silver_resources_add = yes
 		barrad_kill_viira = yes
 		clr_country_flag = BAR_viira_immunity
 		clr_country_flag = BAR_silver_immunity
@@ -1899,16 +1836,8 @@ country_event = {
 	picture = GFX_event_old_mannor
 	is_triggered_only = yes
 	immediate = {
-		set_temp_variable = {
-			tempRes = BAR_resources_viira
-		}
-		divide_temp_variable = {
-			tempRes = 2
-		}
-		add_to_variable = {
-			var = BAR_resources_leopold
-			value = tempRes
-		}
+		set_variable = { BAR_resource_to_modify_ammount = BAR_resources_viira }
+		bar_leopold_resources_add = yes
 		barrad_kill_viira = yes
 		clr_country_flag = BAR_viira_immunity
 		clr_country_flag = BAR_leopold_immunity
@@ -2117,6 +2046,14 @@ country_event = {
 			}
 		}
 	}
+	desc = {
+		text = bar_ambrosius_madness.1.n
+		trigger = {
+			check_variable = {
+				amb_bor = 13
+			}
+		}
+	}
 	picture = GFX_event_dice
 	is_triggered_only = yes
 	option = {
@@ -2294,10 +2231,7 @@ country_event = {
 				amb_bor = 9
 			}
 		}
-		custom_effect_tooltip = BAR_resources_gain_silver
-		add_to_variable = {
-			BAR_resources_silver = 100
-		}
+		bar_silver_resources_add_250 = yes
 	}
 	option = {
 		name = bar_ambrosius_madness.1.n
@@ -2306,10 +2240,7 @@ country_event = {
 				amb_bor = 10
 			}
 		}
-		custom_effect_tooltip = BAR_resources_gain_asinti
-		add_to_variable = {
-			BAR_resources_asinti = 100
-		}
+		bar_asinti_resources_add_250 = yes
 	}
 	option = {
 		name = bar_ambrosius_madness.1.n
@@ -2318,10 +2249,7 @@ country_event = {
 				amb_bor = 11
 			}
 		}
-		custom_effect_tooltip = BAR_resources_gain_viira
-		add_to_variable = {
-			BAR_resources_viira = 100
-		}
+		bar_viira_resources_add_250 = yes
 	}
 	option = {
 		name = bar_ambrosius_madness.1.n
@@ -2330,10 +2258,16 @@ country_event = {
 				amb_bor = 12
 			}
 		}
-		custom_effect_tooltip = BAR_resources_gain_leopold
-		add_to_variable = {
-			BAR_resources_leopold = 100
+		bar_leopold_resources_add_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.n
+		trigger = {
+			check_variable = {
+				amb_bor = 13
+			}
 		}
+		add_political_power = 50
 	}
 }
 

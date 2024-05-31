@@ -866,7 +866,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = barrad_friends.6
-				days = 20
+				days = 16
 			}
 		}
 	}
@@ -2456,6 +2456,64 @@ country_event = {
 		BAR_relations_increase_silver_leopold_5 = yes
 	}
 }
+country_event = {
+	id = barrad_first.7	#silver star get pep talk from leopold
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_first.7"
+	}
+	title = barrad_first.7.t
+	desc = barrad_first.7.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_first.7.a
+		BAR_relations_increase_silver_leopold_5 = yes
+	}
+}
+country_event = {
+	id = barrad_first.8	#silver star and viira goes on forest adventure
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_first.8"
+	}
+	title = barrad_first.8.t
+	desc = barrad_first.8.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_first.8.a
+		BAR_relations_increase_silver_viira_5 = yes
+		bar_silver_resources_add_250 = yes
+		bar_viira_resources_add_250 = yes
+	}
+}
+country_event = {
+	id = barrad_first.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_first.9"
+	}
+	title = barrad_first.9.t
+	desc = barrad_first.9.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_first.9.a
+		BAR_relations_increase_asinti_viira_5 = yes
+	}
+}
+country_event = {
+	id = barrad_first.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_first.10"
+	}
+	title = barrad_first.10.t
+	desc = barrad_first.10.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_first.10.a
+		BAR_relations_increase_leopold_viira_5 = yes
+	}
+}
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -2659,16 +2717,17 @@ country_event = {
 	}
 }
 country_event = {
-	id = barrad_second.7
+	id = barrad_second.8
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.7"
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.8"
 	}
-	title = barrad_second.7.t
-	desc = barrad_second.7.d
+	title = barrad_second.8.t
+	desc = barrad_second.8.d
 	picture = TO_CHANGE
 	is_triggered_only = yes
 	option = {
-		name = barrad_second.7.a
+		BAR_relations_decrease_asinti_leopold_5 = yes
+		name = barrad_second.8.a
 	}
 }
 

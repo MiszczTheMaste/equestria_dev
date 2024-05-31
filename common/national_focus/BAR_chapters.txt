@@ -46,8 +46,9 @@ focus_tree = {
 		id = BAR_silver_hides_in_the_corner
 		icon = GFX_goal_griffon_chair
 		cost = 3.5
-		x = 16
+		x = 6
 		y = 1
+		relative_position_id = BAR_kind_letter
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -72,11 +73,75 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = BAR_silver_gets_pep_talk
+		icon = GFX_goal_griffon_chair
+		cost = 1
+		x = 0
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_phunt_progress
+				NOT = {
+					has_completed_focus = BAR_hunting_party
+				}
+			}
+		}
+		prerequisite = {
+			focus = BAR_silver_hides_in_the_corner
+		}
+		relative_position_id = BAR_silver_hides_in_the_corner
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_first.7
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
+		}
+	}
+	focus = {
+		id = BAR_silver_and_viira_forest_adventure
+		icon = GFX_goal_griffon_chair
+		cost = 1
+		x = -1
+		y = 1
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_phunt_progress
+				NOT = {
+					has_completed_focus = BAR_hunting_party
+				}
+			}
+		}
+		prerequisite = {
+			focus = BAR_silver_gets_pep_talk
+		}
+		prerequisite = {
+			focus = BAR_put_an_effort
+		}
+		relative_position_id = BAR_silver_gets_pep_talk
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			country_event = {
+				id = barrad_first.8
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
+		}
+	}
+	focus = {
 		id = BAR_viira_focus_on_important_things
 		icon = GFX_goal_cry_book
 		cost = 3.5
-		x = 14
+		x = 4
 		y = 1
+		relative_position_id = BAR_kind_letter
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -111,8 +176,9 @@ focus_tree = {
 		id = BAR_put_an_effort
 		icon = GFX_goal_bookstack
 		cost = 3.5
-		x = 14
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = BAR_viira_focus_on_important_things
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -142,8 +208,9 @@ focus_tree = {
 		id = BAR_produce_guns
 		icon = GFX_goal_generic_small_arms
 		cost = 2
-		x = 7
+		x = -3
 		y = 1
+		relative_position_id = BAR_kind_letter
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -173,8 +240,9 @@ focus_tree = {
 		id = BAR_produce_magical_guns
 		icon = GFX_goal_magical_weapon_focus
 		cost = 3.5
-		x = 8
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = BAR_produce_guns
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -182,9 +250,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_produce_more_guns
 		}
 		prerequisite = {
 			focus = BAR_produce_guns
@@ -207,11 +272,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_produce_more_guns
-		icon = GFX_goal_continuous_reduce_training_time
-		cost = 3.5
-		x = 6
-		y = 2
+		id = BAR_produce_magical_guns_2
+		icon = GFX_goal_magical_weapon_focus
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = BAR_produce_magical_guns
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -220,8 +286,33 @@ focus_tree = {
 				}
 			}
 		}
-		mutually_exclusive = {
+		prerequisite = {
 			focus = BAR_produce_magical_guns
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = { id = barrad_first.10. }
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
+		}
+	}
+	focus = {
+		id = BAR_produce_more_guns
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 3.5
+		x = -1
+		y = 1
+		relative_position_id = BAR_produce_guns
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_phunt_progress
+				NOT = {
+					has_completed_focus = BAR_hunting_party
+				}
+			}
 		}
 		prerequisite = {
 			focus = BAR_produce_guns
@@ -253,8 +344,9 @@ focus_tree = {
 		id = BAR_gather_peasants
 		icon = GFX_goal_slavery
 		cost = 3
-		x = 12
+		x = 0
 		y = 1
+		relative_position_id = BAR_kind_letter
 		prerequisite = {
 			focus = BAR_kind_letter
 		}
@@ -337,8 +429,9 @@ focus_tree = {
 		id = BAR_borrow_peasants
 		icon = GFX_goal_voodoo
 		cost = 2.5
-		x = 10
-		y = 2
+		x = 2
+		y = 1
+		relative_position_id = BAR_gather_peasants
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -357,6 +450,46 @@ focus_tree = {
 				factor = 0
 			}
 		}
+		completion_reward = {
+			bar_asinti_resources_add_500 = yes
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_1
+		}
+	}
+	focus = {
+		id = BAR_borrow_peasants_2
+		icon = GFX_goal_voodoo
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = BAR_borrow_peasants
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_phunt_progress
+				NOT = {
+					has_completed_focus = BAR_hunting_party
+				}
+			}
+		}
+		prerequisite = {
+			focus = BAR_borrow_peasants
+		}
+		prerequisite = {
+			focus = BAR_put_an_effort
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_country_flag = BAR_ai_amb_default
+				factor = 0
+			}
+		}
+		completion_reward = {
+			country_event = { id = barrad_first.9 }
+			BAR_relations_increase_asinti_viira_5 = yes
+			bar_viira_resources_add_250 = yes
+		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_1
 		}
@@ -365,8 +498,9 @@ focus_tree = {
 		id = BAR_gather_nobles
 		icon = GFX_goal_rich_focus
 		cost = 1
-		x = 12
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = BAR_gather_peasants
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -394,8 +528,9 @@ focus_tree = {
 		id = BAR_hunting_party
 		icon = GFX_goal_TEM_terror_campaign
 		cost = 4
-		x = 12
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = BAR_gather_peasants
 		prerequisite = {
 			focus = BAR_gather_nobles
 		}
@@ -895,7 +1030,7 @@ focus_tree = {
 					has_country_flag = barrad_asinti_alive
 					has_country_flag = barrad_leopold_alive
 				}
-				country_event = {id = barrad_second.7}
+				country_event = {id = barrad_second.8 }
 			}
 		}
 		search_filters = {

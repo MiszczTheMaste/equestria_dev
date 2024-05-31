@@ -753,7 +753,14 @@ country_event = {
 			}
 			remove_ideas = BAR_pentarchy
 		}
-		set_country_flag = BAR_begun_friendship_path
+		if = {
+			limit = {
+				not = {
+					has_completed_focus = BAR_search_for_knowledge
+				}
+			}
+			set_country_flag = BAR_begun_friendship_path
+		}
 		country_event = {
 			id = barrad_friends.4
 			hours = 1
@@ -2726,7 +2733,7 @@ country_event = {
 	picture = TO_CHANGE
 	is_triggered_only = yes
 	option = {
-		BAR_relations_decrease_asinti_leopold_5 = yes
+		BAR_relations_increase_asinti_leopold_5 = yes
 		name = barrad_second.8.a
 	}
 }

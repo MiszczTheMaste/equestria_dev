@@ -12,17 +12,6 @@ focus_tree = {
 		x = 290
 		y = 3000
 	}
-
-
-	#######                           #####                                           
-	#       # #####   ####  #####    #     # #    #   ##   #####  ##### ###### #####  
-	#       # #    # #        #      #       #    #  #  #  #    #   #   #      #    # 
-	#####   # #    #  ####    #      #       ###### #    # #    #   #   #####  #    # 
-	#       # #####       #   #      #       #    # ###### #####    #   #      #####  
-	#       # #   #  #    #   #      #     # #    # #    # #        #   #      #   #  
-	#       # #    #  ####    #       #####  #    # #    # #        #   ###### #    # 
-                                                                                   
-
 	focus = {
 		id = BAR_kind_letter
 		icon = GFX_goal_ambrosius
@@ -37,7 +26,6 @@ focus_tree = {
 				id = barrad_first.1
 			}
 		}
-		
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_1
 		}
@@ -49,6 +37,9 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = BAR_kind_letter
+		prerequisite = {
+			focus = BAR_kind_letter
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -56,9 +47,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_kind_letter
 		}
 		ai_will_do = {
 			factor = 0
@@ -78,6 +66,10 @@ focus_tree = {
 		cost = 1
 		x = 0
 		y = 1
+		relative_position_id = BAR_silver_hides_in_the_corner
+		prerequisite = {
+			focus = BAR_silver_hides_in_the_corner
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -86,10 +78,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_silver_hides_in_the_corner
-		}
-		relative_position_id = BAR_silver_hides_in_the_corner
 		ai_will_do = {
 			factor = 0
 		}
@@ -108,6 +96,13 @@ focus_tree = {
 		cost = 1
 		x = -1
 		y = 1
+		relative_position_id = BAR_silver_gets_pep_talk
+		prerequisite = {
+			focus = BAR_silver_gets_pep_talk
+		}
+		prerequisite = {
+			focus = BAR_put_an_effort
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -116,13 +111,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_silver_gets_pep_talk
-		}
-		prerequisite = {
-			focus = BAR_put_an_effort
-		}
-		relative_position_id = BAR_silver_gets_pep_talk
 		ai_will_do = {
 			factor = 0
 		}
@@ -142,6 +130,9 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = BAR_kind_letter
+		prerequisite = {
+			focus = BAR_kind_letter
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -149,9 +140,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_kind_letter
 		}
 		ai_will_do = {
 			factor = 10
@@ -179,6 +167,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BAR_viira_focus_on_important_things
+		prerequisite = {
+			focus = BAR_viira_focus_on_important_things
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -186,9 +177,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_viira_focus_on_important_things
 		}
 		ai_will_do = {
 			factor = 10
@@ -211,6 +199,9 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = BAR_kind_letter
+		prerequisite = {
+			focus = BAR_kind_letter
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -218,9 +209,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_kind_letter
 		}
 		ai_will_do = {
 			factor = 100
@@ -243,6 +231,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BAR_produce_guns
+		prerequisite = {
+			focus = BAR_produce_guns
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -250,9 +241,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_produce_guns
 		}
 		ai_will_do = {
 			factor = 10
@@ -278,6 +266,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BAR_produce_magical_guns
+		prerequisite = {
+			focus = BAR_produce_magical_guns
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -286,14 +277,13 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_produce_magical_guns
-		}
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = barrad_first.10. }
+			country_event = {
+				id = barrad_first.10
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_1
@@ -306,6 +296,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = BAR_produce_guns
+		prerequisite = {
+			focus = BAR_produce_guns
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -313,9 +306,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_produce_guns
 		}
 		ai_will_do = {
 			factor = 20
@@ -432,6 +422,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BAR_gather_peasants
+		prerequisite = {
+			focus = BAR_gather_peasants
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -439,9 +432,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_gather_peasants
 		}
 		ai_will_do = {
 			factor = 50
@@ -464,6 +454,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BAR_borrow_peasants
+		prerequisite = {
+			focus = BAR_borrow_peasants
+		}
+		prerequisite = {
+			focus = BAR_put_an_effort
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -471,12 +467,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_borrow_peasants
-		}
-		prerequisite = {
-			focus = BAR_put_an_effort
 		}
 		ai_will_do = {
 			factor = 50
@@ -486,7 +476,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = { id = barrad_first.9 }
+			country_event = {
+				id = barrad_first.9
+			}
 			BAR_relations_increase_asinti_viira_5 = yes
 			bar_viira_resources_add_250 = yes
 		}
@@ -501,6 +493,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BAR_gather_peasants
+		prerequisite = {
+			focus = BAR_gather_peasants
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_phunt_progress
@@ -508,9 +503,6 @@ focus_tree = {
 					has_completed_focus = BAR_hunting_party
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_gather_peasants
 		}
 		ai_will_do = {
 			factor = 10
@@ -530,7 +522,7 @@ focus_tree = {
 		cost = 4
 		x = 0
 		y = 1
-		relative_position_id = BAR_gather_peasants
+		relative_position_id = BAR_gather_nobles
 		prerequisite = {
 			focus = BAR_gather_nobles
 		}
@@ -546,26 +538,13 @@ focus_tree = {
 			FOCUS_FILTER_BAR_CHAPTER_1
 		}
 	}
-	
-
-  #####                                         #####                                           
- #     # ######  ####   ####  #    # #####     #     # #    #   ##   #####  ##### ###### #####  
- #       #      #    # #    # ##   # #    #    #       #    #  #  #  #    #   #   #      #    # 
-  #####  #####  #      #    # # #  # #    #    #       ###### #    # #    #   #   #####  #    # 
-       # #      #      #    # #  # # #    #    #       #    # ###### #####    #   #      #####  
- #     # #      #    # #    # #   ## #    #    #     # #    # #    # #        #   #      #   #  
-  #####  ######  ####   ####  #    # #####      #####  #    # #    # #        #   ###### #    # 
-                                                                                                
-
 	focus = {
 		id = BAR_meeting_of_four
 		icon = GFX_goal_skull_treaty
 		cost = 1
-		x = 12
-		y = 4
-		ai_will_do = {
-			factor = 10
-		}
+		x = 0
+		y = 2
+		relative_position_id = BAR_hunting_party
 		prerequisite = {
 			focus = BAR_hunting_party
 		}
@@ -574,6 +553,9 @@ focus_tree = {
 				tooltip = bar_hunt_completed_tooltip
 				has_country_flag = bar_hunt_completed
 			}
+		}
+		ai_will_do = {
+			factor = 10
 		}
 		completion_reward = {
 			country_event = {
@@ -588,8 +570,12 @@ focus_tree = {
 		id = BAR_viira_adventure
 		icon = GFX_goal_skull_treaty2
 		cost = 3.5
-		x = 16
-		y = 5
+		x = 4
+		y = 1
+		relative_position_id = BAR_meeting_of_four
+		prerequisite = {
+			focus = BAR_meeting_of_four
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -598,9 +584,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_meeting_of_four
 		}
 		ai_will_do = {
 			factor = 10
@@ -622,8 +605,12 @@ focus_tree = {
 		id = BAR_contact_cultists
 		icon = GFX_focus_indy_necromancers
 		cost = 3.5
-		x = 14
-		y = 6
+		x = -2
+		y = 1
+		relative_position_id = BAR_viira_adventure
+		prerequisite = {
+			focus = BAR_viira_adventure
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -632,12 +619,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_capture_cultists
-		}
-		prerequisite = {
-			focus = BAR_viira_adventure
 		}
 		ai_will_do = {
 			factor = 10
@@ -657,8 +638,12 @@ focus_tree = {
 		id = BAR_barrad_machine_concept
 		icon = GFX_goal_purchase_tech
 		cost = 3.5
-		x = 15
-		y = 7
+		x = 1
+		y = 1
+		relative_position_id = BAR_contact_cultists
+		prerequisite = {
+			focus = BAR_contact_cultists
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -667,9 +652,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_contact_cultists
 		}
 		ai_will_do = {
 			factor = 10
@@ -695,8 +677,12 @@ focus_tree = {
 		id = BAR_viira_resources
 		icon = GFX_goal_cry_book
 		cost = 3.5
-		x = 13
-		y = 7
+		x = -1
+		y = 1
+		relative_position_id = BAR_contact_cultists
+		prerequisite = {
+			focus = BAR_contact_cultists
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -705,9 +691,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_contact_cultists
 		}
 		ai_will_do = {
 			factor = 10
@@ -727,8 +710,15 @@ focus_tree = {
 		id = BAR_barrad_machine_mystery
 		icon = GFX_focus_indy_unequal_treaties
 		cost = 3.5
-		x = 14
-		y = 8
+		x = 1
+		y = 1
+		relative_position_id = BAR_viira_resources
+		prerequisite = {
+			focus = BAR_viira_resources
+		}
+		prerequisite = {
+			focus = BAR_barrad_machine_concept
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -738,12 +728,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_viira_resources
-		}
-		prerequisite = {
-			focus = BAR_barrad_machine_concept
-		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -752,7 +736,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = { id = barrad_second.5 }
+			country_event = {
+				id = barrad_second.5
+			}
 			if = {
 				limit = {
 					has_country_flag = BAR_begun_friendship_path
@@ -769,11 +755,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_capture_cultists		#vira gets angry at asinti for that
+		id = BAR_wish_granter_expedition
 		icon = GFX_goal_step_on_skull
 		cost = 5
-		x = 18
-		y = 6
+		x = 2
+		y = 1
+		relative_position_id = BAR_viira_adventure
+		prerequisite = {
+			focus = BAR_viira_adventure
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
 			custom_trigger_tooltip = {
@@ -782,12 +772,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_contact_cultists
-		}
-		prerequisite = {
-			focus = BAR_viira_adventure
 		}
 		ai_will_do = {
 			factor = 50
@@ -797,7 +781,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_relations_decrease_asinti_viira_5 = yes
+			country_event = { id = barrad_second.14 }
 			add_political_power = 50
 		}
 		search_filters = {
@@ -805,12 +789,55 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_grand_sacrifice
-		icon = GFX_goal_the_black_book
-		cost = 3.5
-		x = 18
-		y = 7
+		id = BAR_wish_granter_expedition_again
+		icon = GFX_goal_step_on_skull
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = BAR_wish_granter_expedition
+		prerequisite = {
+			focus = BAR_wish_granter_expedition
+		}	
+		prerequisite = {
+			focus = BAR_barrad_machine_concept
+		}
 		available = {
+			has_country_flag = barrad_asinti_alive
+			has_country_flag = barrad_viira_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_research
+				NOT = {
+					has_completed_focus = BAR_search_for_knowledge
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_country_flag = BAR_ai_amb_default
+				factor = 0.5
+			}
+		}
+		completion_reward = {
+			country_event = { id = barrad_second.16 }
+			add_political_power = 25
+		}
+		search_filters = {
+			FOCUS_FILTER_BAR_CHAPTER_2
+		}
+	}
+	focus = {
+		id = BAR_elisay_land_dispute
+		icon = GFX_goal_generic_construction
+		cost = 1
+		x = -6
+		y = 1
+		relative_position_id = BAR_meeting_of_four
+		prerequisite = {
+			focus = BAR_meeting_of_four
+		}
+		available = {
+			has_country_flag = barrad_silver_star_alive
 			has_country_flag = barrad_asinti_alive
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_research
@@ -819,18 +846,31 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_capture_cultists
+		bypass = {
+			OR = {
+				NOT = {
+					has_country_flag = barrad_silver_star_alive
+				}
+				NOT = {
+					has_country_flag = barrad_asinti_alive
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				has_country_flag = BAR_ai_amb_default
-				factor = 0.5
+				factor = 0.2
 			}
 		}
 		completion_reward = {
-			bar_asinti_resources_add_750 = yes
+			bar_silver_resources_add_250 = yes
+			626 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			country_event = {
+				id = barrad_second.10
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -840,8 +880,15 @@ focus_tree = {
 		id = BAR_elisay_valley_factories
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 3.5
-		x = 7
-		y = 5
+		x = 1
+		y = 1
+		relative_position_id = BAR_elisay_land_dispute
+		prerequisite = {
+			focus = BAR_elisay_land_dispute
+		}
+		mutually_exclusive = {
+			focus = BAR_alchemy_plantations
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -850,12 +897,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_alchemy_plantations
-		}
-		prerequisite = {
-			focus = BAR_meeting_of_four
 		}
 		ai_will_do = {
 			factor = 10
@@ -882,9 +923,13 @@ focus_tree = {
 	focus = {
 		id = BAR_elisay_valley_terraforming
 		icon = GFX_goal_generic_construction
-		cost = 3.5
-		x = 7
-		y = 6
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = BAR_elisay_valley_factories
+		prerequisite = {
+			focus = BAR_elisay_valley_factories
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -893,9 +938,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_elisay_valley_factories
 		}
 		ai_will_do = {
 			factor = 10
@@ -917,9 +959,16 @@ focus_tree = {
 	focus = {
 		id = BAR_alchemy_plantations
 		icon = GFX_goal_agriculture
-		cost = 3.5
-		x = 5
-		y = 5
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = BAR_elisay_land_dispute
+		prerequisite = {
+			focus = BAR_elisay_land_dispute
+		}
+		mutually_exclusive = {
+			focus = BAR_elisay_valley_factories
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
 			custom_trigger_tooltip = {
@@ -928,12 +977,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_elisay_valley_factories
-		}
-		prerequisite = {
-			focus = BAR_meeting_of_four
 		}
 		ai_will_do = {
 			factor = 10
@@ -955,8 +998,12 @@ focus_tree = {
 		id = BAR_sentient_livestock
 		icon = GFX_goal_skull_treaty2
 		cost = 3.5
-		x = 5
-		y = 6
+		x = 0
+		y = 1
+		relative_position_id = BAR_alchemy_plantations
+		prerequisite = {
+			focus = BAR_alchemy_plantations
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
 			custom_trigger_tooltip = {
@@ -965,9 +1012,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_alchemy_plantations
 		}
 		ai_will_do = {
 			factor = 10
@@ -988,8 +1032,12 @@ focus_tree = {
 		id = BAR_new_mine
 		icon = GFX_goal_generic_lau_industry
 		cost = 3.5
-		x = 10
-		y = 5
+		x = -2
+		y = 1
+		relative_position_id = BAR_meeting_of_four
+		prerequisite = {
+			focus = BAR_meeting_of_four
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -998,9 +1046,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_meeting_of_four
 		}
 		ai_will_do = {
 			factor = 10
@@ -1030,7 +1075,9 @@ focus_tree = {
 					has_country_flag = barrad_asinti_alive
 					has_country_flag = barrad_leopold_alive
 				}
-				country_event = {id = barrad_second.8 }
+				country_event = {
+					id = barrad_second.8
+				}
 			}
 		}
 		search_filters = {
@@ -1041,8 +1088,12 @@ focus_tree = {
 		id = BAR_mining_eq
 		icon = GFX_focus_indy_excavations
 		cost = 3.5
-		x = 9
-		y = 6
+		x = -1
+		y = 1
+		relative_position_id = BAR_new_mine
+		prerequisite = {
+			focus = BAR_new_mine
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -1051,9 +1102,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_new_mine
 		}
 		ai_will_do = {
 			factor = 10
@@ -1078,8 +1126,12 @@ focus_tree = {
 		id = BAR_leopold_research
 		icon = GFX_goal_crystals_cry
 		cost = 3.5
-		x = 9
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_mining_eq
+		prerequisite = {
+			focus = BAR_mining_eq
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -1088,9 +1140,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_mining_eq
 		}
 		ai_will_do = {
 			factor = 10
@@ -1116,8 +1165,12 @@ focus_tree = {
 		id = BAR_industrial_eq
 		icon = GFX_goal_generic_production
 		cost = 3.5
-		x = 11
-		y = 6
+		x = 1
+		y = 1
+		relative_position_id = BAR_new_mine
+		prerequisite = {
+			focus = BAR_new_mine
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -1126,9 +1179,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_new_mine
 		}
 		ai_will_do = {
 			factor = 10
@@ -1153,8 +1203,12 @@ focus_tree = {
 		id = BAR_leopold_res
 		icon = GFX_goal_arms_dealing
 		cost = 3.5
-		x = 11
-		y = 7
+		x = 0
+		y = 1
+		relative_position_id = BAR_industrial_eq
+		prerequisite = {
+			focus = BAR_industrial_eq
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -1163,9 +1217,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_industrial_eq
 		}
 		ai_will_do = {
 			factor = 10
@@ -1185,8 +1236,12 @@ focus_tree = {
 		id = BAR_another_party
 		icon = GFX_focus_indy_champagne_bribes
 		cost = 3.5
-		x = 12
-		y = 8
+		x = 0
+		y = 4
+		relative_position_id = BAR_meeting_of_four
+		prerequisite = {
+			focus = BAR_meeting_of_four
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_research
@@ -1194,9 +1249,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_meeting_of_four
 		}
 		ai_will_do = {
 			factor = 10
@@ -1221,6 +1273,9 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = BAR_another_party
+		prerequisite = {
+			focus = BAR_another_party
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1230,9 +1285,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_another_party
-		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1241,6 +1293,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			country_event = {
+				id = barrad_second.9
+			}
 			add_manpower = -500
 		}
 		search_filters = {
@@ -1254,6 +1309,9 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			has_country_flag = barrad_viira_alive
@@ -1264,9 +1322,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star
-		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1275,6 +1330,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			country_event = { id = barrad_second.11 }
 			BAR_relations_increase_silver_viira_5 = yes
 		}
 		search_filters = {
@@ -1288,6 +1344,9 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star_viira
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1302,9 +1361,6 @@ focus_tree = {
 					BAR_relations_silver_viira > 69
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star_viira
 		}
 		ai_will_do = {
 			factor = 10
@@ -1328,6 +1384,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1337,9 +1396,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star
-		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1348,6 +1404,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			country_event = { id = barrad_second.12 }
 			BAR_relations_increase_silver_leopold_5 = yes
 		}
 		search_filters = {
@@ -1361,6 +1418,9 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star_leopold
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1375,9 +1435,6 @@ focus_tree = {
 					BAR_relations_silver_leopold > 69
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star_leopold
 		}
 		ai_will_do = {
 			factor = 10
@@ -1401,6 +1458,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1410,9 +1470,6 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star
-		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1421,6 +1478,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			country_event = { id = barrad_second.13 }
 			BAR_relations_increase_asinti_silver_5 = yes
 		}
 		search_filters = {
@@ -1434,6 +1492,9 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star_asinti
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1448,9 +1509,6 @@ focus_tree = {
 					BAR_relations_asinti_silver > 69
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star_asinti
 		}
 		ai_will_do = {
 			factor = 10
@@ -1474,6 +1532,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1482,9 +1543,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star
 		}
 		ai_will_do = {
 			factor = 10
@@ -1507,6 +1565,9 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = BAR_another_party_silver_star
+		prerequisite = {
+			focus = BAR_another_party_silver_star_ambrosius
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
 			custom_trigger_tooltip = {
@@ -1515,9 +1576,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_another_party_silver_star_ambrosius
 		}
 		ai_will_do = {
 			factor = 10
@@ -1540,6 +1598,9 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = BAR_another_party
+		prerequisite = {
+			focus = BAR_another_party
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -1548,9 +1609,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_another_party
 		}
 		ai_will_do = {
 			factor = 10
@@ -1573,6 +1631,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BAR_party_best_guests
+		prerequisite = {
+			focus = BAR_party_best_guests
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -1581,9 +1642,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_party_best_guests
 		}
 		ai_will_do = {
 			factor = 10
@@ -1605,9 +1663,12 @@ focus_tree = {
 		id = BAR_party_viira_2
 		icon = GFX_focus_indy_card_tricks
 		cost = 1
-		x = -2
-		y = 2
-		relative_position_id = BAR_party_best_guests
+		x = 0
+		y = 1
+		relative_position_id = BAR_party_viira
+		prerequisite = {
+			focus = BAR_party_viira
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
 			custom_trigger_tooltip = {
@@ -1616,9 +1677,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_party_viira
 		}
 		ai_will_do = {
 			factor = 10
@@ -1646,6 +1704,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BAR_party_best_guests
+		prerequisite = {
+			focus = BAR_party_best_guests
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -1654,9 +1715,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_party_best_guests
 		}
 		ai_will_do = {
 			factor = 10
@@ -1677,8 +1735,11 @@ focus_tree = {
 		icon = GFX_focus_indy_card_tricks
 		cost = 1
 		x = 0
-		y = 2
-		relative_position_id = BAR_party_best_guests
+		y = 1
+		relative_position_id = BAR_party_leopold
+		prerequisite = {
+			focus = BAR_party_leopold
+		}
 		available = {
 			has_country_flag = barrad_leopold_alive
 			custom_trigger_tooltip = {
@@ -1687,9 +1748,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_party_leopold
 		}
 		ai_will_do = {
 			factor = 10
@@ -1712,6 +1770,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BAR_party_best_guests
+		prerequisite = {
+			focus = BAR_party_best_guests
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
 			custom_trigger_tooltip = {
@@ -1720,9 +1781,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_party_best_guests
 		}
 		ai_will_do = {
 			factor = 10
@@ -1742,9 +1800,12 @@ focus_tree = {
 		id = BAR_party_asinti_2
 		icon = GFX_focus_indy_card_tricks
 		cost = 1
-		x = 2
-		y = 2
-		relative_position_id = BAR_party_best_guests
+		x = 0
+		y = 1
+		relative_position_id = BAR_party_asinti
+		prerequisite = {
+			focus = BAR_party_asinti
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
 			custom_trigger_tooltip = {
@@ -1753,9 +1814,6 @@ focus_tree = {
 					has_completed_focus = BAR_search_for_knowledge
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_party_asinti
 		}
 		ai_will_do = {
 			factor = 10
@@ -1771,31 +1829,23 @@ focus_tree = {
 			FOCUS_FILTER_BAR_CHAPTER_2
 		}
 	}
-
-
- #######                            #####                                           
-    #    #    # # #####  #####     #     # #    #   ##   #####  ##### ###### #####  
-    #    #    # # #    # #    #    #       #    #  #  #  #    #   #   #      #    # 
-    #    ###### # #    # #    #    #       ###### #    # #    #   #   #####  #    # 
-    #    #    # # #####  #    #    #       #    # ###### #####    #   #      #####  
-    #    #    # # #   #  #    #    #     # #    # #    # #        #   #      #   #  
-    #    #    # # #    # #####      #####  #    # #    # #        #   ###### #    # 
-                                                                                    
-
 	focus = {
 		id = BAR_search_for_knowledge
 		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		cost = 3.5
-		x = 12
-		y = 13
-		ai_will_do = {
-			factor = 10
-		}
+		x = 0
+		y = 4
+		relative_position_id = BAR_another_party
 		prerequisite = {
 			focus = BAR_another_party
 		}
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
-			country_event = { id = barrad_second.7 }
+			country_event = {
+				id = barrad_second.7
+			}
 			add_research_slot = 1
 			hidden_effect = {
 				if = {
@@ -1818,8 +1868,9 @@ focus_tree = {
 		id = BAR_ambrosius_wants_a_car
 		icon = GFX_goal_Automobile_Production
 		cost = 3.5
-		x = 12
-		y = 15
+		x = 0
+		y = 2
+		relative_position_id = BAR_search_for_knowledge
 		prerequisite = {
 			focus = BAR_search_for_knowledge
 		}
@@ -1843,8 +1894,9 @@ focus_tree = {
 		id = BAR_attack_of_mutant_plants
 		icon = GFX_focus_indy_agriculture_2
 		cost = 3.5
-		x = 12
-		y = 17
+		x = 0
+		y = 2
+		relative_position_id = BAR_ambrosius_wants_a_car
 		prerequisite = {
 			focus = BAR_ambrosius_wants_a_car
 		}
@@ -1856,7 +1908,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = { id = barrad_third.2 }
+			country_event = {
+				id = barrad_third.2
+			}
 			if = {
 				limit = {
 					has_country_flag = BAR_begun_friendship_path
@@ -1867,25 +1921,26 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_3
 		}
-	}                                                                                 
+	}
 	focus = {
 		id = BAR_underground_forges
 		icon = GFX_focus_generic_industry_1
 		cost = 3.5
-		x = 9
-		y = 14
+		x = -3
+		y = 1
+		relative_position_id = BAR_search_for_knowledge
+		prerequisite = {
+			focus = BAR_search_for_knowledge
+		}
 		available = {
 			has_completed_focus = BAR_new_mine
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_search_for_knowledge
 		}
 		ai_will_do = {
 			factor = 10
@@ -1912,14 +1967,15 @@ focus_tree = {
 		id = BAR_crystals_experiments
 		icon = GFX_goal_generic_crystals
 		cost = 3.5
-		x = 8
-		y = 15
+		x = -1
+		y = 1
+		relative_position_id = BAR_underground_forges
 		prerequisite = {
 			focus = BAR_underground_forges
 		}
 		available = {
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
@@ -1968,14 +2024,15 @@ focus_tree = {
 		id = BAR_leopold_tanks
 		icon = GFX_goal_generic_army_tank_2
 		cost = 3.5
-		x = 10
-		y = 15
+		x = 1
+		y = 1
+		relative_position_id = BAR_underground_forges
 		prerequisite = {
 			focus = BAR_underground_forges
 		}
 		available = {
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
@@ -2005,8 +2062,9 @@ focus_tree = {
 		id = BAR_leopold_rifles
 		icon = GFX_goal_generic_small_arms
 		cost = 3.5
-		x = 9
-		y = 16
+		x = 1
+		y = 1
+		relative_position_id = BAR_crystals_experiments
 		prerequisite = {
 			focus = BAR_leopold_tanks
 		}
@@ -2015,7 +2073,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
@@ -2045,14 +2103,15 @@ focus_tree = {
 		id = BAR_leopold_clockwerks
 		icon = GFX_goal_economic_control
 		cost = 3.5
-		x = 9
-		y = 17
+		x = 0
+		y = 1
+		relative_position_id = BAR_leopold_rifles
 		prerequisite = {
 			focus = BAR_leopold_rifles
 		}
 		available = {
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
@@ -2078,14 +2137,15 @@ focus_tree = {
 		id = BAR_dig_deeper
 		icon = GFX_goal_construction_engineering
 		cost = 3.5
-		x = 7
-		y = 16
+		x = -1
+		y = 1
+		relative_position_id = BAR_crystals_experiments
 		prerequisite = {
 			focus = BAR_crystals_experiments
 		}
 		available = {
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
@@ -2120,20 +2180,21 @@ focus_tree = {
 		id = BAR_seek_cultist_knowledge
 		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
 		cost = 3.5
-		x = 3
-		y = 14
+		x = -9
+		y = 1
+		relative_position_id = BAR_search_for_knowledge
+		prerequisite = {
+			focus = BAR_search_for_knowledge
+		}
 		available = {
 			has_completed_focus = BAR_barrad_machine_mystery
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_search_for_knowledge
 		}
 		ai_will_do = {
 			factor = 10
@@ -2155,19 +2216,20 @@ focus_tree = {
 		id = BAR_trial_of_the_machine
 		icon = GFX_goal_blacksun_production
 		cost = 3.5
-		x = 3
-		y = 15
+		x = 0
+		y = 1
+		relative_position_id = BAR_seek_cultist_knowledge
+		prerequisite = {
+			focus = BAR_seek_cultist_knowledge
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_seek_cultist_knowledge
 		}
 		ai_will_do = {
 			factor = 10
@@ -2189,19 +2251,20 @@ focus_tree = {
 		id = BAR_pilgrimage_to_the_deeps
 		icon = GFX_goal_forest_spirit
 		cost = 3.5
-		x = 5
-		y = 16
+		x = 2
+		y = 1
+		relative_position_id = BAR_trial_of_the_machine
+		prerequisite = {
+			focus = BAR_trial_of_the_machine
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_trial_of_the_machine
 		}
 		ai_will_do = {
 			factor = 10
@@ -2223,19 +2286,20 @@ focus_tree = {
 		id = BAR_cult_connections
 		icon = GFX_goal_forest_spirit
 		cost = 3.5
-		x = 5
-		y = 17
+		x = 0
+		y = 1
+		relative_position_id = BAR_pilgrimage_to_the_deeps
+		prerequisite = {
+			focus = BAR_pilgrimage_to_the_deeps
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_pilgrimage_to_the_deeps
 		}
 		ai_will_do = {
 			factor = 10
@@ -2262,19 +2326,20 @@ focus_tree = {
 		id = BAR_pilgrimage_to_the_ancient_machines
 		icon = GFX_focus_indy_necromancers
 		cost = 3.5
-		x = 1
-		y = 16
+		x = -1
+		y = 1
+		relative_position_id = BAR_trial_of_the_machine
+		prerequisite = {
+			focus = BAR_trial_of_the_machine
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_trial_of_the_machine
 		}
 		ai_will_do = {
 			factor = 10
@@ -2296,22 +2361,23 @@ focus_tree = {
 		id = BAR_power_machines
 		icon = GFX_goal_double_research
 		cost = 3.5
-		x = 0
-		y = 17
+		x = -1
+		y = 1
+		relative_position_id = BAR_pilgrimage_to_the_ancient_machines
+		prerequisite = {
+			focus = BAR_pilgrimage_to_the_ancient_machines
+		}
+		mutually_exclusive = {
+			focus = BAR_closer_look
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_closer_look
-		}
-		prerequisite = {
-			focus = BAR_pilgrimage_to_the_ancient_machines
 		}
 		ai_will_do = {
 			factor = 10
@@ -2333,22 +2399,23 @@ focus_tree = {
 		id = BAR_closer_look
 		icon = GFX_goal_generic_lightbulb
 		cost = 3.5
-		x = 2
-		y = 17
+		x = 1
+		y = 1
+		relative_position_id = BAR_pilgrimage_to_the_ancient_machines
+		prerequisite = {
+			focus = BAR_pilgrimage_to_the_ancient_machines
+		}
+		mutually_exclusive = {
+			focus = BAR_power_machines
+		}
 		available = {
 			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_power_machines
-		}
-		prerequisite = {
-			focus = BAR_pilgrimage_to_the_ancient_machines
 		}
 		ai_will_do = {
 			factor = 10
@@ -2370,23 +2437,24 @@ focus_tree = {
 		id = BAR_listen_to_whispers
 		icon = GFX_goal_AST_maori
 		cost = 3.5
-		x = 3
-		y = 18
-		available = {
-			has_country_flag = barrad_viira_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = BAR_closer_look
 		prerequisite = {
 			focus = BAR_closer_look
 			focus = BAR_power_machines
 		}
 		prerequisite = {
 			focus = BAR_cult_connections
+		}
+		available = {
+			has_country_flag = barrad_viira_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2396,7 +2464,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = { id = barrad_third.7 }
+			country_event = {
+				id = barrad_third.7
+			}
 			if = {
 				limit = {
 					has_country_flag = BAR_begun_friendship_path
@@ -2412,19 +2482,20 @@ focus_tree = {
 		id = BAR_minimal_undead_autonomy
 		icon = GFX_focus_indy_skelly_pony
 		cost = 3.5
-		x = 15
-		y = 14
+		x = 3
+		y = 1
+		relative_position_id = BAR_search_for_knowledge
+		prerequisite = {
+			focus = BAR_search_for_knowledge
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_search_for_knowledge
 		}
 		ai_will_do = {
 			factor = 10
@@ -2445,19 +2516,20 @@ focus_tree = {
 		id = BAR_undead_overseers
 		icon = GFX_goal_Study_the_Dead_2
 		cost = 3.5
-		x = 15
-		y = 15
+		x = 0
+		y = 1
+		relative_position_id = BAR_minimal_undead_autonomy
+		prerequisite = {
+			focus = BAR_minimal_undead_autonomy
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_minimal_undead_autonomy
 		}
 		ai_will_do = {
 			factor = 10
@@ -2477,22 +2549,23 @@ focus_tree = {
 		id = BAR_simplyfy_factory_tasks
 		icon = GFX_goal_skull_treaty
 		cost = 3.5
-		x = 14
-		y = 16
-		available = {
-			has_country_flag = barrad_silver_star_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = BAR_undead_overseers
 		prerequisite = {
 			focus = BAR_undead_overseers
 		}
 		mutually_exclusive = {
 			focus = BAR_simplyfy_factory_tasks_leopold_help
+		}
+		available = {
+			has_country_flag = barrad_silver_star_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2512,29 +2585,30 @@ focus_tree = {
 		id = BAR_simplyfy_factory_tasks_leopold_help
 		icon = GFX_goal_generic_dangerous_deal_pony_griffon
 		cost = 3.5
-		x = 16
-		y = 16
-		available = {
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_silver_and_leopold_friends
-				check_variable = {
-					BAR_relations_silver_leopold > 59
-				}
-			}
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = BAR_undead_overseers
 		prerequisite = {
 			focus = BAR_undead_overseers
 		}
 		mutually_exclusive = {
 			focus = BAR_simplyfy_factory_tasks
+		}
+		available = {
+			has_country_flag = barrad_silver_star_alive
+			has_country_flag = barrad_leopold_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_silver_and_leopold_friends
+				check_variable = {
+					BAR_relations_silver_leopold > 59
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2555,20 +2629,21 @@ focus_tree = {
 		id = BAR_streamline_production
 		icon = GFX_goal_industry_air
 		cost = 3.5
-		x = 15
-		y = 17
+		x = 1
+		y = 1
+		relative_position_id = BAR_simplyfy_factory_tasks
+		prerequisite = {
+			focus = BAR_simplyfy_factory_tasks_leopold_help
+			focus = BAR_simplyfy_factory_tasks
+		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_simplyfy_factory_tasks_leopold_help
-			focus = BAR_simplyfy_factory_tasks
 		}
 		ai_will_do = {
 			factor = 10
@@ -2590,19 +2665,20 @@ focus_tree = {
 		id = BAR_architectural_thought
 		icon = GFX_goal_new_temple
 		cost = 3.5
-		x = 19
-		y = 14
+		x = 7
+		y = 1
+		relative_position_id = BAR_search_for_knowledge
+		prerequisite = {
+			focus = BAR_search_for_knowledge
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_search_for_knowledge
 		}
 		ai_will_do = {
 			factor = 10
@@ -2624,22 +2700,23 @@ focus_tree = {
 		id = BAR_bring_architects_zebra
 		icon = GFX_focus_indy_zebra_potion_masters
 		cost = 3.5
-		x = 18
-		y = 15
-		available = {
-			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = -1
+		y = 1
+		relative_position_id = BAR_architectural_thought
 		prerequisite = {
 			focus = BAR_architectural_thought
 		}
 		mutually_exclusive = {
 			focus = BAR_bring_architects_deets
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2662,22 +2739,23 @@ focus_tree = {
 		id = BAR_bring_architects_deets
 		icon = GFX_goal_blacksun_deer
 		cost = 3.5
-		x = 20
-		y = 15
-		available = {
-			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 1
+		y = 1
+		relative_position_id = BAR_architectural_thought
 		prerequisite = {
 			focus = BAR_architectural_thought
 		}
 		mutually_exclusive = {
 			focus = BAR_bring_architects_zebra
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2700,23 +2778,24 @@ focus_tree = {
 		id = BAR_local_resources
 		icon = GFX_goal_riv_shovels
 		cost = 3.5
-		x = 20
-		y = 16
-		available = {
-			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = BAR_bring_architects_deets
 		prerequisite = {
 			focus = BAR_bring_architects_deets
 			focus = BAR_bring_architects_zebra
 		}
 		mutually_exclusive = {
 			focus = BAR_foreign_resources
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2753,23 +2832,24 @@ focus_tree = {
 		id = BAR_foreign_resources
 		icon = GFX_goal_bag_of_money_pony_griffon
 		cost = 3.5
-		x = 18
-		y = 16
-		available = {
-			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = BAR_bring_architects_zebra
 		prerequisite = {
 			focus = BAR_bring_architects_deets
 			focus = BAR_bring_architects_zebra
 		}
 		mutually_exclusive = {
 			focus = BAR_local_resources
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2806,23 +2886,24 @@ focus_tree = {
 		id = BAR_bring_architects_ponies
 		icon = GFX_goal_pony_labour
 		cost = 3.5
-		x = 20
-		y = 17
-		available = {
-			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = BAR_local_resources
 		prerequisite = {
 			focus = BAR_foreign_resources
 			focus = BAR_local_resources
 		}
 		mutually_exclusive = {
 			focus = BAR_bring_architects_griffons
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2877,23 +2958,24 @@ focus_tree = {
 		id = BAR_bring_architects_griffons
 		icon = GFX_goal_griffon_harmony_char
 		cost = 3.5
-		x = 18
-		y = 17
-		available = {
-			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
-				tooltip = BAR_story_start_building
-				NOT = {
-					has_completed_focus = BAR_begin_building
-				}
-			}
-		}
+		x = 0
+		y = 1
+		relative_position_id = BAR_foreign_resources
 		prerequisite = {
 			focus = BAR_foreign_resources
 			focus = BAR_local_resources
 		}
 		mutually_exclusive = {
 			focus = BAR_bring_architects_ponies
+		}
+		available = {
+			has_country_flag = barrad_asinti_alive
+			custom_trigger_tooltip = {
+				tooltip = BAR_story_start_building
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -2945,23 +3027,24 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_living_rock		#will lower cost of asinti rewards
+		id = BAR_living_rock		#willlowercostofasintirewards
 		icon = GFX_goal_GRF_beak_mines
 		cost = 3.5
-		x = 19
-		y = 18
+		x = 1
+		y = 1
+		relative_position_id = BAR_bring_architects_griffons
+		prerequisite = {
+			focus = BAR_bring_architects_griffons
+			focus = BAR_bring_architects_ponies
+		}
 		available = {
 			has_country_flag = barrad_asinti_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_building
 				NOT = {
 					has_completed_focus = BAR_begin_building
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_bring_architects_griffons
-			focus = BAR_bring_architects_ponies
 		}
 		ai_will_do = {
 			factor = 10
@@ -2993,26 +3076,18 @@ focus_tree = {
 			FOCUS_FILTER_BAR_CHAPTER_3
 		}
 	}
-	
- #######                                #####                                           
- #        ####  #####  ##### #    #    #     # #    #   ##   #####  ##### ###### #####  
- #       #    # #    #   #   #    #    #       #    #  #  #  #    #   #   #      #    # 
- #####   #    # #    #   #   ######    #       ###### #    # #    #   #   #####  #    # 
- #       #    # #####    #   #    #    #       #    # ###### #####    #   #      #####  
- #       #    # #   #    #   #    #    #     # #    # #    # #        #   #      #   #  
- #        ####  #    #   #   #    #     #####  #    # #    # #        #   ###### #    # 
-                                                                                        
 	focus = {
 		id = BAR_begin_building
 		icon = GFX_goal_generic_lau_factory
 		cost = 3.5
-		x = 12
-		y = 19
-		available = {
-			has_tech = nuclear_reactor
-		}
+		x = 0
+		y = 2
+		relative_position_id = BAR_attack_of_mutant_plants
 		prerequisite = {
 			focus = BAR_attack_of_mutant_plants
+		}
+		available = {
+			has_tech = nuclear_reactor
 		}
 		ai_will_do = {
 			factor = 10
@@ -3022,7 +3097,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			country_event = { id = barrad_third.9 }
+			country_event = {
+				id = barrad_third.9
+			}
 			decrease_illiteracy = yes
 			hidden_effect = {
 				if = {
@@ -3047,8 +3124,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BAR_begin_building
-		available = {
-		}
 		prerequisite = {
 			focus = BAR_begin_building
 		}
@@ -3075,11 +3150,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BAR_party_never_stops
-		available = {
-			nuclear_reactor > 0
-		}
 		prerequisite = {
 			focus = BAR_party_never_stops
+		}
+		available = {
+			nuclear_reactor > 0
 		}
 		ai_will_do = {
 			factor = 10
@@ -3093,15 +3168,23 @@ focus_tree = {
 				limit = {
 					is_ai = yes
 				}
-				country_event = { id = barrad_ai.4 }
-			} else_if = {
+				country_event = {
+					id = barrad_ai.4
+				}
+			}
+			else_if = {
 				limit = {
 					has_country_flag = bar_viira_investigation_step_11
 					has_country_flag = BAR_begun_friendship_path
 				}
-				country_event = { id = barrad_friends.9 }
-			} else = {
-				country_event = { id = barrad_viira_fight.1 }
+				country_event = {
+					id = barrad_friends.9
+				}
+			}
+			else = {
+				country_event = {
+					id = barrad_viira_fight.1
+				}
 			}
 		}
 		search_filters = {
@@ -3115,18 +3198,18 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BAR_begin_building
+		prerequisite = {
+			focus = BAR_begin_building
+		}
 		available = {
 			has_completed_focus = BAR_dig_deeper
 			has_country_flag = barrad_leopold_alive
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
 				}
 			}
-		}
-		prerequisite = {
-			focus = BAR_begin_building
 		}
 		ai_will_do = {
 			factor = 10
@@ -3189,18 +3272,18 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = BAR_begin_building
+		prerequisite = {
+			focus = BAR_begin_building
+		}
 		available = {
 			has_completed_focus = BAR_leopold_clockwerks
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
 				}
 			}
 			has_country_flag = barrad_leopold_alive
-		}
-		prerequisite = {
-			focus = BAR_begin_building
 		}
 		ai_will_do = {
 			factor = 10
@@ -3237,24 +3320,24 @@ focus_tree = {
 		id = BAR_clockwerk_military
 		icon = GFX_goal_military_academy
 		cost = 3.5
-		x = -6
-		y = 2
-		relative_position_id = BAR_begin_building
+		x = -2
+		y = 1
+		relative_position_id = BAR_clockwerk_dev
+		prerequisite = {
+			focus = BAR_clockwerk_dev
+		}
+		mutually_exclusive = {
+			focus = BAR_clockwerk_workers
+			focus = BAR_clockwerk_industrial
+		}
 		available = {
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
 				}
 			}
 			has_country_flag = barrad_leopold_alive
-		}
-		mutually_exclusive = {
-			focus = BAR_clockwerk_workers
-			focus = BAR_clockwerk_industrial
-		}
-		prerequisite = {
-			focus = BAR_clockwerk_dev
 		}
 		ai_will_do = {
 			factor = 10
@@ -3274,24 +3357,24 @@ focus_tree = {
 		id = BAR_clockwerk_workers
 		icon = GFX_goal_goal_machine
 		cost = 3.5
-		x = -4
-		y = 2
-		relative_position_id = BAR_begin_building
+		x = 0
+		y = 1
+		relative_position_id = BAR_clockwerk_dev
+		prerequisite = {
+			focus = BAR_clockwerk_dev
+		}
+		mutually_exclusive = {
+			focus = BAR_clockwerk_industrial
+			focus = BAR_clockwerk_military
+		}
 		available = {
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
 				}
 			}
 			has_country_flag = barrad_leopold_alive
-		}
-		mutually_exclusive = {
-			focus = BAR_clockwerk_industrial
-			focus = BAR_clockwerk_military
-		}
-		prerequisite = {
-			focus = BAR_clockwerk_dev
 		}
 		ai_will_do = {
 			factor = 10
@@ -3311,24 +3394,24 @@ focus_tree = {
 		id = BAR_clockwerk_industrial
 		icon = GFX_goal_factory_complex
 		cost = 3.5
-		x = -2
-		y = 2
-		relative_position_id = BAR_begin_building
+		x = 2
+		y = 1
+		relative_position_id = BAR_clockwerk_dev
+		prerequisite = {
+			focus = BAR_clockwerk_dev
+		}
+		mutually_exclusive = {
+			focus = BAR_clockwerk_workers
+			focus = BAR_clockwerk_military
+		}
 		available = {
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
 				}
 			}
 			has_country_flag = barrad_leopold_alive
-		}
-		mutually_exclusive = {
-			focus = BAR_clockwerk_workers
-			focus = BAR_clockwerk_military
-		}
-		prerequisite = {
-			focus = BAR_clockwerk_dev
 		}
 		ai_will_do = {
 			factor = 10
@@ -3351,17 +3434,17 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = BAR_begin_building
+		prerequisite = {
+			focus = BAR_begin_building
+		}
 		available = {
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
 				}
 			}
 			has_country_flag = barrad_asinti_alive
-		}
-		prerequisite = {
-			focus = BAR_begin_building
 		}
 		ai_will_do = {
 			factor = 10
@@ -3382,11 +3465,17 @@ focus_tree = {
 		id = BAR_reactor_integration
 		icon = GFX_goal_generic_lightbulb
 		cost = 3.5
-		x = 2
-		y = 2
-		relative_position_id = BAR_begin_building
+		x = -1
+		y = 1
+		relative_position_id = BAR_sanctuary_for_poor
+		prerequisite = {
+			focus = BAR_sanctuary_for_poor
+		}
+		mutually_exclusive = {
+			focus = BAR_separate_entity
+		}
 		available = {
-			Custom_trigger_tooltip = {
+			custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
 				NOT = {
 					has_completed_focus = BAR_initial_spark
@@ -3412,12 +3501,6 @@ focus_tree = {
 					has_idea = BAR_temple_construct_d_l_g
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_separate_entity
-		}
-		prerequisite = {
-			focus = BAR_sanctuary_for_poor
 		}
 		ai_will_do = {
 			factor = 10
@@ -3517,9 +3600,15 @@ focus_tree = {
 		id = BAR_separate_entity
 		icon = GFX_focus_indy_generic_political
 		cost = 3.5
-		x = 4
-		y = 2
-		relative_position_id = BAR_begin_building
+		x = 1
+		y = 1
+		relative_position_id = BAR_sanctuary_for_poor
+		prerequisite = {
+			focus = BAR_sanctuary_for_poor
+		}
+		mutually_exclusive = {
+			focus = BAR_reactor_integration
+		}
 		available = {
 			Custom_trigger_tooltip = {
 				tooltip = BAR_story_start_spark
@@ -3547,12 +3636,6 @@ focus_tree = {
 					has_idea = BAR_temple_construct_d_l_g
 				}
 			}
-		}
-		mutually_exclusive = {
-			focus = BAR_reactor_integration
-		}
-		prerequisite = {
-			focus = BAR_sanctuary_for_poor
 		}
 		ai_will_do = {
 			factor = 10

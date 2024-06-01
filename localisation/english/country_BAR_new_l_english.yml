@@ -1526,16 +1526,17 @@
   ##         ## ##   ##       ##   ###    ##    ##    ## 
   ########    ###    ######## ##    ##    ##     ######  
 
-           #####                                                          
-          #     # #####   ##   #####  #####    ##### #####  ###### ###### 
-          #         #    #  #  #    #   #        #   #    # #      #      
-           #####    #   #    # #    #   #        #   #    # #####  #####  
-                #   #   ###### #####    #        #   #####  #      #      
-          #     #   #   #    # #   #    #        #   #   #  #      #      
-           #####    #   #    # #    #   #        #   #    # ###### ###### 
 
 
-  #chapter 1
+             #####  #     #    #    ######  ####### ####### ######           ### 
+            #     # #     #   # #   #     #    #    #       #     #           #  
+            #       #     #  #   #  #     #    #    #       #     #           #  
+            #       ####### #     # ######     #    #####   ######            #  
+            #       #     # ####### #          #    #       #   #             #  
+            #     # #     # #     # #          #    #       #    #            #  
+             #####  #     # #     # #          #    ####### #     #          ### 
+                                                                                                                                                
+
   barrad_first.1.t:0 "The Invitation"
   barrad_first.1.d:0 "Deep in his study on a stormy night, Count Ambrosius paced in candlelight, dictating a letter to an enormous seated griffon. "Dear friend," began Ambrosius. "I extend to you an invitation to attend a great celebration. The most esteemed creatures of the land will be in attendance, and together we shall witness amazing wonders, the likes of which have never before been conceived!" Just saying the words made Ambrosius hop in excitement. "Come to my manor at once so that we may begin the festivities. Your friend, Count Ambrosius I." The griffon struggled to keep up with Ambrosius' words, scribbling as fast as he could onto a piece of parchment. "Oh this will be fun. So fun!" laughed Ambrosius.\n\nThe griffon finished writing and looked up to Ambrosius. "Who should receive this message?" The Count stood still, not acknowledging the question at all. "The Pentarchy?" asked the griffon.\n\n"Pentarchy. Pentarchy..." Ambrosius stared off into nothingness, trailing off for a moment. "Well, we simply must have Viira. Her extraordinary talents will help us greatly." Ambrosius tapped his chin. "And Leopold. To deny our party a mind like his would simply not do at all! He shall be there. Silver Star, on the other hoof..." The Count's face twisted in disgust. "Very rude guest. We could do without him. And... what was that old zebra's name again?"\n\nThe griffon unhooked a vial of liquid from around his neck and offered it to Ambrosius, who greedily took a swig. The Count blinked several times before glancing around the room. "Thank you, Gąsienica." He sighed and sunk into a chair. "Yes. Send it to the Pentarchy.""
   barrad_first.1.a:0 "We'll have a grand old time!"
@@ -1568,6 +1569,155 @@
   barrad_first.10.a:0 "#TODO: response"
 
 
+             #####  #     #    #    ######  ####### ####### ######           ### ### 
+            #     # #     #   # #   #     #    #    #       #     #           #   #  
+            #       #     #  #   #  #     #    #    #       #     #           #   #  
+            #       ####### #     # ######     #    #####   ######            #   #  
+            #       #     # ####### #          #    #       #   #             #   #  
+            #     # #     # #     # #          #    #       #    #            #   #  
+             #####  #     # #     # #          #    ####### #     #          ### ### 
+                                                                                              
+
+barrad_second.1.t:0 "Matters"
+  barrad_second.1.d:0 "In the study of Count Ambrosius, the other four members of the Pentarchy sat around a table, contemplating the strange events they had witnessed. "Since our brave Count is currently incapacitated, it is up to us to decipher the meaning of this." Viira placed the mysterious codex down on the table. "We need a plan of action," she said, glancing at each of her compatriots. Leopold paid her no mind, continuing to study the inscriptions he had copied from the cave. Asinti's eyes were closed and his head bobbed slowly. Was he sleeping? Silver Star scowled and grabbed the codex with his magic.\n\n"I am certain that one of the ancient books in my possession will have the information needed to understand these runes," said Silver Star, narrowing his eyes. "I would never allow any of YOU to get a peek at my library, though." He shifted his gaze around the room, suspiciously. "That would be unwise. Very unwise," he muttered to himself.\n\nLeopold waved a dismissive claw. "If we put our minds to it, we can figure this out on our own. No need for any of your obscure, dusty texts," he said matter-of-factly. Silver Star pursed his lips and pushed the codex back to the middle of the table.\n\n"That would take too long, Leopold. We have to go to the source of this." Viira tapped the codex. "We need to get in contact with the cult, so we can question them and find out more," she said. Her tone left no room for argument; it was clearly an order, not a suggestion.\n\n"No." A raspy voice arose. "I can hear their whispers." Asinti looked at Viira with wide eyes. "Yes, we should track down the cult. But not to question them, to kidnap them! Their sacrifice will please the ones beyond." His face broke into a wide smile. The other three eyed Asinti in silence."
+  barrad_second.1.a:0 "What to do..."
+  barrad_second.2.t:0 "A Wonderful Idea"
+  barrad_second.2.d:0 "As morning sunlight filtered in through clouded windows, Count Ambrosius emerged from his bedchamber and stretched. Standing guard by the entrance, Gąsienica was ready to greet him. "Feeling better, sir?"\n\n"Yes, incredibly!" Ambrosius laughed and slapped Gąsienica's back. "You know, it's been so dull around here lately." He began trotting through the halls of the manor with Gąsienica keeping pace at his side. "But that party was invigorating. Hunting! Killing! Mystery! So much excitement..." Ambrosius stroked his beard in contemplation. "I know what we must do: throw another party, bigger and grander." The Count was positively giddy by the time he entered the throne room.\n\n"More drinking, more feasting, more merriment!" Ambrosius was smiling just imagining the festivities. "Begin preparations at once! Send out invitations to the Pentarchy, and all the nobles." He slowly turned to face Gąsienica, his smile remaining but his eyes becoming dark. "And make sure our guests know that refusing to attend will have severe consequences.""
+  barrad_second.2.a:0 "Let's break out the booze!"
+  barrad_second.3.t:0 "Now You See Them..."
+  barrad_second.3.d:0 ""You've never- Unbelievable! You simply must witness it," Ambrosius implored the group of nobles around him, before turning to wave across the hall. "Viira, care to entertain our guests?" he shouted. The doe sighed, and began to walk toward the balcony. Ambrosius galloped to join her and beckoned for the group to follow. From the manor's balcony the two looked over a nearby village, as well as the untamed forests and mountains in the distance. Ambrosius pointed to the village watchtower. "There, that's a good spot."\n\nViira focused intensely before closing her eyes. A strange energy could be felt in the air around her, and the seer's robes began to ripple with magical power. Suddenly, a large section of the village surrounding the tower became shrouded in a dark fog. When the fog dissipated, everything that had been inside it was gone. "Spectacular!" shouted one of the guests, as the rest of them mumbled in amazement. "Where did it all go?" asked another.\n\nViira smirked. "A magician never reveals her secrets.""
+  barrad_second.3.a:0 "...now you don't."
+  barrad_second.4.t:0 "Listen"
+  barrad_second.4.d:0 "In a musty cellar, Viira stood surrounded by a wall of figures shrouded in shadow. In front of her was a hooded acolyte who seemed to be in charge of the others. The acolyte began some kind of short ceremony, before looking to Viira expectantly. "Did you devise these plans?" asked Viira, showing the instructions for the strange device.\n\n"No, they come from the master." answered the acolyte.\n\n"Master?"\n\n"You think Count Ambrosius is the master of Barrad? No, the true master lies hidden from the unworthy and undiscerning. It is our purpose to serve It, for we have done so for countless generations." The acolyte lowered her head. "But we have failed. It has become angered by the greed and cruelty of the land, and unleashed the plagues that afflict Barrad. It is the cause of all our suffering.""
+  barrad_second.4.a:0 "How curious."
+  barrad_second.5.t:0 "Out of the Dark, Into the Night"
+  barrad_second.5.d:0 ""Who is the master?" asked Viira, once again in a cellar surrounded by shadowy figures.\n\n"It is the Great Machine, and we are Its servants." The hooded acolyte looked up and raised her hooves, prompting the rest of the cultists to follow suit.\n\n"What does this machine want?" Viira's mind raced with questions. "Can I meet it?"\n\n"Only a privileged few can discern Its will, much less stand in Its presence. We are but the Outer Circle, and I have told you all that I can. If you wish to know more you must contact the Inner Circle."\n\n"I see." Viira bowed humbly.\n\n"When you are ready, seek them out." The acolyte held up a hoof. "But be prepared to prove yourself. Only those worthy are allowed to know the secrets they hold.""
+  barrad_second.5.a:0 "A machine?"
+  barrad_second.6.t:0 "Descent"
+  barrad_second.6.d:0 "Deep into the night, Viira sat studying the codex, looking closely at its inscriptions and comparing them to every ancient script she had samples of. She sighed in frustration, yet another dead end. The runes were alien, but at the same time they seemed so familiar. There was still a missing piece to the puzzle. She needed answers, and so she took the codex and journeyed through the woods to return to the cave. At the entrance, she saw a solitary pony emerging from its depths. "What were you doing in there?" asked Viira.\n\nThe pony stopped in his tracks. "Just exploring," he answered. Viira examined him closely, there was something odd about him. He wore strangely fine clothes, and didn't seem very comfortable in the natural environment.\n\n"Anything inside?" asked Viira. The pony shook his head, agitated. "Is that so? Because I believe I've met some of your friends who would disagree." Viira took out the codex and showed it to the pony, whose eyes went wide in realisation. He became tense, silently staring at Viira. "Please, I mean you no harm. I just want to understand!" she pleaded.\n\nThe pony scrutinised her for a long moment, before sighing. "We will be in touch. If you prove your intentions, you will find your answers." He trotted off into the forest without saying another word."
+  barrad_second.6.a:0 "Promising."
+  barrad_second.7.t:0 "Power Play"
+  barrad_second.7.d:0 "The other members of the Pentarchy gathered once again in the study of Count Ambrosius. Viira opened up the codex and placed it on the table in front of her. "We now know the meaning of these inscriptions. They are schematics for a device capable of producing vastly more energy than any existing power station," said Viira, giving her intrigued companions a conspiratorial glance. "It goes without saying that this device has enormous potential, it could give all of us the means to achieve our ultimate goals."\n\nLeopold raised his claw. "We must decode these schematics so that we can begin construction immediately. I shall begin preparation of the site: excavation will be no issue," he said, his artificial eye scanning the instructions on the table.\n\n"And I will be able to provide an ample supply of undead labour," Silver Star boasted, drawing a scoff from Leopold. "Insolence! You DOUBT my power?" Silver Star reeled, nearly falling out of his chair.\n\nAsinti interrupted, paying Silver Star no mind. "I will be happy to assist in this matter, but first I must heed the words of the ones beyond. They demand a temple, and so I must build one." He smiled serenely.\n\n"Fair enough," said Viira. "In the meantime I will attempt to track down any groups who may know more about the origin of these plans.""
+  barrad_second.7.g:0 "The remnants of the Pentarchy have at last determined the meaning of the mysterious inscriptions discovered during Count Ambrosius' great hunt. They turned out to be plans for constructing a device capable of producing an enormous amount of energy. Building this device and harnessing its power has become the Pentarchy's foremost priority, and the process of fully decoding the schematics has already begun."
+  barrad_second.7.a:0 "Viira takes the lead."
+  barrad_second.7.b:0 "Asinti takes the lead."
+  barrad_second.7.c:0 "Silver Star takes the lead."
+  barrad_second.7.e:0 "Leopold takes the lead."
+  barrad_second.7.f:0 "No one takes the lead."
+  barrad_second.8.t:0 "Quills and Dust"
+  barrad_second.8.d:0 "    Asinti and Leopold found themselves in a library deep within Ambrosius’ manor. The room was vast and cavernous, with towering shelves crammed with books and scrolls. With each flap of Leopold’s wings, the air grew dustier and dustier.\n    "Could you stop that?" Asinti coughed, waving a hoof to clear the air.\n    Looking down upon the zebra on the floor Lepold flapped his wings even faster. "I don’t think I can," he said, adding after a moment, "And why exactly are you so interested in the geology of these lands all of a sudden?"\n    "Do I need a reason?" Asinti replied.\n    Leopold fluffed his feathers and tried to mimic Asinti’s voice, "Do I need a reason?" Then with his own voice, he added, "Everything has a reason. I, for one, want to build a mine..." His sentence was abruptly interrupted as he crashed into a bookshelf. The impact sent the griffon and several books crashing to the floor, creating a giant cloud of dust that billowed through the room.\n    Seeing this, Asinti couldn’t help but laugh. "Where’s the reason in hitting the shelf, then?"\n    Leopold sprang to his paws, ripping the seams of his suit in the process. "You think it’s funny?" he screamed, his breath heavy. "I'll show you something funny," he added, grabbing a book from the floor and hurling it at Asinti. To his surprise, the zebra dodged it effortlessly. Enraged, Leopold began throwing every book and scroll within reach. Each one either missed or was skillfully avoided by Asinti.\n    "Wait," Asinti shouted, catching one of the flying books. "This might be what we’re looking for." He examined the cover, it read 'Deep Drill Results 989' and was signed by Ambrosius himself. "Could have just looked at the covers, but at least you had some fun," he added.\n    Leopold, still breathing heavily, began to calm down. "I wasn’t looking for a book, I was trying to hit you with one," he muttered.\n    "Then at least we’ve concluded that you’re a better librarian than sportsgriff," Asinti put a small smile, opening the book.\n    Leopold felt that his talons instinctively extended. For a brief moment, he was both mentally and physically ready to cut the zebra’s throat. But as quickly as the anger came, he managed to suppress it, taking a deep breath to steady himself."
+  barrad_second.8.a:0 "Let’s see what Ambrosius has to say"
+  barrad_second.9.t:0 "TODO: "
+  barrad_second.9.d:0 "TODO: silver star at ambrosius party - goes as well as one might guess"
+  barrad_second.9.a:0 "TODO: "
+  barrad_second.10.t:0 "TODO: "
+  barrad_second.10.d:0 "TODO: asinti and silver star arguing over land in elisay with gąsienica as arbiter, but he does not really care and tells them to just deal with it by themself"
+  barrad_second.10.a:0 "TODO: "
+  barrad_second.11.t:0 "TODO: "
+  barrad_second.11.d:0 "TODO: silver star and viira at the party looking thought rooms looking for cool stuff (and possibly troubles)"
+  barrad_second.11.a:0 "TODO: "
+  barrad_second.12.t:0 "TODO: "
+  barrad_second.12.d:0 "TODO: silver star and leopold playing chess at the party, silver despite liking chess and thinking of himself as good player keeps loosing because he plays very defensively while leopold goes full agression mode (just like chess gods intended)"
+  barrad_second.12.a:0 "TODO: "
+  barrad_second.13.t:0 "TODO: "
+  barrad_second.13.d:0 "TODO: silver star and asinti at the party, asinti is making some cool alchemical tricks with alcohol and silver star is looking at it with great interest (by great i mean like he was staring at gold)"
+  barrad_second.13.a:0 "TODO: "
+  barrad_second.14.t:0 "TODO: "
+  barrad_second.14.d:0 "TODO: asinti learning from rumors about something called whish granter that is possed by cultists so he embarks on expedition to get it, but he is stopped by gąsienica explaining to him he and his zebras will be slain if they try to force their way in- they listen to him"
+  barrad_second.14.a:0 "TODO: "
+  barrad_second.15.t:0 "TODO: "
+  barrad_second.15.d:0 "TODO: gąsienica explaining to somebody (either some of his soldiers or other pentarchs or idk) about how he tried to get to wish granter and he actually managed to get in, but it turned out to be a scam madde up by cultists to get more followers "
+  barrad_second.15.a:0 "TODO: "
+  barrad_second.16.t:0 "TODO: "
+  barrad_second.16.d:0 "TODO: asinti didnt give up on the wish granter and decided to follow viira steps and try to infiltrate cultists, she gets angry after finding out and yells at thim for it"
+  barrad_second.16.a:0 "TODO: "
+
+
+
+
+             #####  #     #    #    ######  ####### ####### ######           ### ### ### 
+            #     # #     #   # #   #     #    #    #       #     #           #   #   #  
+            #       #     #  #   #  #     #    #    #       #     #           #   #   #  
+            #       ####### #     # ######     #    #####   ######            #   #   #  
+            #       #     # ####### #          #    #       #   #             #   #   #  
+            #     # #     # #     # #          #    #       #    #            #   #   #  
+             #####  #     # #     # #          #    ####### #     #          ### ### ### 
+
+
+barrad_third.1.t:0 "The Count's Custom"
+  barrad_third.1.d:0 ""The time has come for us to address a matter of great importance." Count Ambrosius leaned forward and rummaged through the mountain of papers on his desk. Eventually, he grabbed a photograph and held it up to show Gąsienica.\n\n"This is an automobile. It is a means of transportation, but it is also common for wealthy and powerful individuals to keep them as status symbols," Ambrosius explained. "I must have one. Contact a manufacturer and entice them to come to Barrad. I will acquire one of their vehicles to style and craft into my own." He tapped his hooves together rapidly. "Oh, I can picture it now!"\n\n"Right away, sir." Gąsienica nodded, rising to leave. The Count paid him no mind, instead staying focused on scrutinising the photograph he had pulled out and mumbling about his planned modifications."
+  barrad_third.1.a:0 "Make sure it can handle off-roading."
+  barrad_third.2.t:0 "Curse of Prescience"
+  barrad_third.2.d:0 "Gąsienica rushed through the halls of Count Ambrosius' manor, making a beeline for the throne room. Upon entering the room, he rocketed towards the lounging Count, presenting a loose collection of papers. "Sir, I have received word that a grave threat has emerged and is attacking the mountain villages!" he blurted out, before stopping to catch his breath.\n\n"Ah yes, those reports of mutant plants near the southwestern border. A truly bizarre situation." Ambrosius took the documents and leafed through them, lazily. "Many griffons down there... that's near where you grew up, isn't it?"\n\n"Yes," said Gąsienica. "Are we going to do anything to help them?" There was obvious concern in his voice.\n\n"No need to worry, I've sent a letter to the Pentarchy." Ambrosius waved a dismissive hoof. "They can handle it. Probably. Do you know how they're doing? Are they all still alive?" The Count blinked several times before shaking his head vigourously. "In any case, I have asked them to look into this matter and resolve it. They'll get around to it when they can, and then this threat will be wiped off the map!"\n\nGąsienica frowned in response."
+  barrad_third.2.a:0 "That doesn't sound very promising..."
+  barrad_third.22.t:0 "Gąsienica's Quest"
+  barrad_third.22.d:0 "In his personal quarters, Gąsienica was drafting a letter of his own to supersede the one the Count had already sent out to the Pentarchy. It had to be done; the members of the Pentarchy had many priorities, but the safety of the mountain villagers was certainly not one of them. "It is my understanding that Count Ambrosius recently requested that you travel to the mountains in order to address reports of aggressive vegetation," Gąsienica began the letter.\n\n"Disregard those instructions, and do not concern yourself in any way with this matter. I will attend to it personally." Gąsienica's claw trembled as he thought of the hardships being endured by the border villagers. "Those griffons are my kin, and this is something I must do myself. Your faithful servant, Captain Gąsienica." Upon finishing the letter, he sighed and clasped his claws together. It was done. All that was left to do was send it out and begin his own journey into the mountains."
+  barrad_third.22.a:0 "I must not fail."
+  barrad_third.3.t:0 "Keepers"
+  barrad_third.3.d:0 "Deep in the hostile forests of Barrad, Viira entered the ancient halls of an unmarked compound. The air was damp and heavy as her guides—a pair of robed ponies—led her into a dark room deep in the bowels of the compound. She found herself surrounded by shadowed figures standing on a circular raised platform, observing her.\n\n"Wise ones, it is an honour to stand before you." Viira bowed. "I humbly ask for your aid in my research, for I have no doubt that you all are the key to securing our future." The cultists listened silently, before conferring among themselves.\n\n"You wish to know the secrets of the Inner Circle," one of the figures said. Viira couldn't tell which one. "Your reputation precedes you. But to know the nature of the gifts we protect, you first must prove your worth to us by completing the Trial.""
+  barrad_third.3.a:0 "I will do what I must."
+  barrad_third.4.t:0 "Rites of Passage"
+  barrad_third.4.d:0 ""Outsider, to prove yourself you must first complete the Trial of the Machine." A hooded acolyte presented a burning candle to Viira. "Take this. Travel through the caves, find the sacred lantern, and then return here. If the candle goes out, you fail the Trial, and then you will be lost."\n\nViira nodded, descending down the dark cave path to begin the Trial. She navigated the treacherous path for close to an hour with only the light of the candle to guide her, before at last coming upon a conspicuous alcove containing an ornate lantern. She took the lantern, placing the candle inside it, before making the long trek back to where she had started.\n\nUpon returning, the acolyte rejoiced at the sight of her. "It is complete!" He took the lantern with great reverence. "You walked the path of ignorance, guided by the light of knowledge, and with the protection of the Great Machine, returned to us so that you may pass this knowledge on to the next generation.""
+  barrad_third.4.a:0 "So ends the Trial."
+  barrad_third.5.t:0 "Shadow Play"
+  barrad_third.5.d:0 ""May I enter?" Viira stood before an enormous door leading below the cult's compound, protected by several guards.\n\n"No," One of the guards—a unicorn—stated flatly. "Only the most senior among us are permitted to enter the abyssal chamber." The words contained hints of an Aquileian accent.\n\n"I see." Viira studied the unicorn closely. She seemed to be in charge of all the other guards. "You're not from around here, are you?"\n\n"That is true. I was... compelled to come here and abandon my natural history studies in Aquileia." The unicorn's eyes looked past Viira for a moment. "But it is here that I found my purpose, in the service of the Great Machine."\n\n"I have come a long way from my home, as well." Viira brought a hoof to her chest. "I hope that I may also find my purpose here."\n\n"That's all well and good, but you're still not getting in." said the unicorn, unimpressed. Viira nodded and walked away.\n\n"
+  barrad_third.5.a:0 "Fair enough."
+  barrad_third.6.t:0 "Splinters"
+  barrad_third.6.d:0 "The air was thick and heavy as Viira wandered through a cavern deep beneath the lair of the Inner Circle. Hidden behind layers of oppressive darkness, she could just barely make out a series of bizarre silhouettes filling the cavern: the Old Machines. According to the cultists, they were gifts from the Great Machine to be worshiped and cared for, although when she pressed them they confessed not to know the original purpose of these strange creations.\n\nViira got close to one and examined it using the light of her torch. The "machine" was tall and intimidating, but also unlike anything she had ever seen before. Its lines and curves were aesthetically pleasing, seeming more the work of a sculptor than a mechanist. The texture was nothing like the machines of Leopold, it did not look metallic at all. Viira reached out a hoof to feel its surface and found it not as cold as she expected. It felt rubbery, so she pushed to test its firmness. And it groaned.\n\nThis thing was... alive? The surface shifted all on its own. Viira's blood went cold. There was no doubt. These machines had been grown, not built. Now aware that she was surrounded by organic beings, Viira was overcome by a feeling of unease. She felt like she was being watched, watched by something larger and more alien than anything she had previously imagined. Most of all, she felt afraid. Viira steeled herself. Now was not the time to turn back, not when confronted by such an opportunity for discovery. She needed to push forward."
+  barrad_third.6.a:0 "Let's take a closer look..."
+  barrad_third.61.t:0 "Intervention"
+  barrad_third.61.d:0 "After a brief period of trial and error, Viira was able to successfully awaken the Old Machines using magical stimulus. The cultists were amazed and grateful to finally see the full potential of their mysterious gifts realised. Unfortunately, the machines proved too dangerous to study in much detail after being turned on. Regardless, the computational abilities of the strange constructs are now being put to use for the advancement of Barrad."
+  barrad_third.61.a:0 "Fascinating!"
+  barrad_third.62.t:0 "Observation"
+  barrad_third.62.d:0 "After a brief period of deliberation, Viira decided to study the Old Machines closely while refraining from stimulating them any further. By making use of specialised equipment she was able to glance inside the strange constructs without harming them. In the end, she determined that the organic computers could not have been a natural occurrence, and must have been built by something. Additionally, the information she uncovered about their structure will be sure to advance our understanding of computing."
+  barrad_third.62.a:0 "Fascinating!"
+  barrad_third.7.t:0 "The Vision"
+  barrad_third.7.d:0 "This world is imperfect. And so they gather. They are drawn to this land. They know its power. They harness the power to find universal truth.\n\nSeven become one. They become you. You are this world's greatest triumph. You are transcendent. You will save this world.\n\nYou are sick. You hunger. You wither and waste away. Universal truth remains out of reach.\n\nThey serve you. They keep you alive. But still you hunger.\n\nYou feel a jolt."
+  barrad_third.7.a:0 "What does it mean?"
+  barrad_third.8.t:0 "Journey of a Thousand Miles"
+  barrad_third.8.d:0 "As he made the long and arduous trek over treacherous mountain paths, Gąsienica's mind was consumed by thoughts of his home. Distant memories from when he had lived there; memories of joy, innocence, and then the most intense fear. Back before he had been saved by Ambrosius... but now was not the time to dwell on that. Much more pressing was confronting the novel menace that threatened to destroy his kin.\n\nAfter emerging from a narrow pass, he at last laid eyes on his home village, only to see it besieged by an army of shambling trees. The villagers were mounting a stiff resistance, but clearly wouldn't be able to hold out for much longer. Gąsienica let loose a shout and charged towards the trees at full speed, slamming into them with all his weight and ferocity. Fighting using only his bare claws, he split trunks and ripped off branches with his incredible strength. The villagers were inspired by the show of bravery and pushed forward, cutting down the trees with their swords and axes.\n\nOne of the fighters chucked an improvised incendiary bomb into the cluster of trees, which exploded setting many ablaze. Frightened, the remaining trees ceased their attack and began to slowly retreat. "I said no fire!" a voice shouted. "Maniacs! Are you trying to burn the whole village down?" Griffons rushed to keep the flames under control, but the voice brought back memories for Gąsienica. It was a voice he had not heard in a lifetime."
+  barrad_third.8.a:0 "Could it really be, after all these years?"
+  barrad_third.81.t:0 "Find Your Way"
+  barrad_third.81.d:0 "Gąsienica waded through the victorious militia to find an old friend from his childhood leading them. "Jánošík!" he shouted, raising his claws high. "I hope you've been staying out of trouble!" Jánošík laughed and pulled Gąsienica in for an embrace.\n\n"I try my best," Jánošík said with a grin, drawing a sceptical look from Gąsienica. "Sure, occasionally I liberate a noble passerby from their wealth, but I never keep it for myself. It all goes to the people who need it most." Jánošík had to tilt his head up to engage in the conversation, such was the degree to which Gąsienica towered over him. "Say, I remember you being big, but now you're built like a tank! What's your secret?" Gąsienica frowned, remembering the many experiments Ambrosius had performed on him to enhance his physical performance. In the awkward silence that followed, Jánošík nervously tugged at the ornate amulet around his neck.\n\n"What's that?" asked Gąsienica, noticing it for the first time. "I never pictured you being very fond of jewelry."\n\n"This? Erm... it's just a trinket. Sort of a good luck charm." Jánošík gave a sheepish smile. "Silly, I know."\n\nA sharp gust of wind blew a branch from one of the slain plants onto the ground between them. Gąsienica picked it up to give it a closer look. "That's strange. These leaves look like the kind I use to make the Count's medicine." He took one in his claw to feel its texture.\n\n"We'll have more time for botany later, but right now I think we just made them angry." Jánošík looked towards the horizon. "There will be more of those things coming soon, and we need to prepare.""
+  barrad_third.81.a:0 "Sounds like we're not out of the woods yet."
+  barrad_third.82.t:0 "A Time for Heroes"
+  barrad_third.82.d:0 ""Gather 'round, everyone!" Gąsienica shouted as he stood next to a pile of nondescript crates. "We're going to need all the firepower we can muster to beat back these monsters. Fortunately, I came prepared." He kicked open one of the crates to reveal its contents: dozens of shiny new magical rifles. "Grab one, and take up a defensive position around the village!" The townsfolk did as they were told, and soon formed a makeshift skirmish line facing the approaching enemy. The shambling trees were slow to advance, but were coming closer and closer by the minute.\n\nWhen they came within range, the villagers began firing, their magical projectiles proving highly effective against the plant monsters. At the same time, Gąsienica charged out ahead, using his claws to rip the trees apart with reckless abandon. Jánošík was right by his side, felling many trees with his axe.\n\nDuring the fierce fighting, Jánošík tripped and became tangled in the roots of the slain plants, and the trees around him converged to finish him off. In desperation, he ripped the amulet off his neck and held it out towards the encroaching monsters, closing his eyes in anticipation of the killing blow...\n\nBut the blow never came. Sensing the magic of the amulet, they dared not come any closer to it. As the plants remained still, shots from the villagers and Gąsienica's devastating strikes shredded them. It did not take much longer for the remaining trees to be broken. Gąsienica, Jánošík, and the entire village stood victorious."
+  barrad_third.82.a:0 "Now that's what I call landscaping!"
+  barrad_third.83.t:0 "Journey's End"
+  barrad_third.83.d:0 "After fighting off all the attacking trees, Gąsienica sat recovering with Jánošík in his home. "I think it's time you explained what's really going on with that amulet," said Gąsienica. Jánošík nodded.\n\n"In the past, you may have seen a group of robed idiots scurrying around Barrad, raving about their god, who lives somewhere underground," began Jánošík. "A merchant I know works with them, gathering magical artifacts and the like. It's all supposed to go to the cult, but sometimes they offer some of it up for sale, and this particular item caught my eye. It's said to be imbued with magic that can scare away anything born from the cult's god." He held up the amulet. "Anything that could scare a god sounded pretty interesting to me. Of course at the time I thought that was all nonsense... but maybe those cultists were on to something after all?"\n\n"You know, I've learned a bit of magic in my time around the Pentarchy." Gąsienica examined the amulet closely. "I believe we can use this artifact to cast a warding spell that will make sure those things don't come back." Jánošík was intrigued, and watched as Gąsienica channeled the item's power into a spell. He could feel the magical energy in the air, and from Gąsienica's smile he knew the spell had been a success.\n\nAfterwards, the two went off to save the other mountain villages that were threatened, defeating any plants attacking them and casting the warding spell. After all the other villages were protected, they parted ways, and Gąsienica began his long trek back to Count Ambrosius."
+  barrad_third.83.a:0 "Farewell, old friend."
+  barrad_third.84.t:0 "Refugees from Barrad"
+  barrad_third.84.d:0 "In recent weeks, thousands of mostly griffon villagers have been flowing into our country from southwestern Barrad. It seems a truly bizarre situation has been developing on the other side of the border. According to these refugees, their peaceful mountain villages were being ravaged by aggressive mutant plants. Facing continuous attack and receiving no help from the government, they chose to flee their homes and start new lives elsewhere."
+  barrad_third.84.a:0 "Mutant plants? That can't be right..."
+  barrad_third.85.t:0 "Refugees from Barrad"
+  barrad_third.85.d:0 "In recent weeks, thousands of mostly griffon villagers have been flowing into our country from southwestern Barrad. It seems a truly bizarre situation has been developing on the other side of the border. According to these refugees, their peaceful mountain villages were being ravaged by aggressive mutant plants. Facing continuous attack and receiving no help from the government, they chose to flee their homes and start new lives elsewhere."
+  barrad_third.85.a:0 "What in the name of Boreas is going on over there?"
+  barrad_third.9.t:0 "Down to Business"
+  barrad_third.9.d:0 "After much scheming, research, and investigation, the mysterious schematics have at last been fully decoded and construction of the wonderous device is ready to begin. The foundation upon which the reactor will be built has already been laid, and the enormous power it represents will soon be harnessed by the Pentarchy to change the world forever. It is now only a matter of time..."
+  barrad_third.9.a:0 "Viira takes the lead."
+  barrad_third.9.b:0 "Asinti takes the lead."
+  barrad_third.9.c:0 "Silver Star takes the lead."
+  barrad_third.9.e:0 "Leopold takes the lead."
+  barrad_third.9.f:0 "No one takes the lead."
+  barrad_third.10.t:0 "The Root of the Problem"
+  barrad_third.10.d:0 "High in the mountains, Viira walked through a field of mangled plants. The ground was littered with twisted trunks and branches scarred by deep cuts and magical blasts, the bodies of trees which had only recently threatened to wipe the mountain villages off the map. Viira took a sample from one of the plants, tucking it away inside her bag, before heading towards the nearby village. As she approached the town she could sense a strange magic in the air. She questioned the villagers about the spell, and they pointed her towards the griffon who had cast it.\n\nViira tracked down the griffon, who was named Jánošík, and eagerly shook his claw. "Greetings, I am Viira." She smiled. "And I must say, superb work dealing with those nasty plants! May I ask you a few questions about how you managed it?" Jánošík clearly recognised her and scowled, remaining silent. "Now I know you may not be fond of the Pentarchy, but any information you can provide will help me get to the bottom of this matter, and ensure such a tragedy never occurs again," pled Viira.\n\nJánošík sighed, moved by her sincerity. "All right," he said, leading Viira to the location where he kept an ornate amulet. "This is it." Jánošík offered the amulet for inspection. Viira held it up and flipped through her codex, comparing the symbols inside to those adorning the artifact.\n\n"Interesting..." she marveled."
+  barrad_third.10.a:0 "Very interesting..."
+
+
+
+             #####  #     #    #    ######  ####### ####### ######           ### #     # 
+            #     # #     #   # #   #     #    #    #       #     #           #  #     # 
+            #       #     #  #   #  #     #    #    #       #     #           #  #     # 
+            #       ####### #     # ######     #    #####   ######            #  #     # 
+            #       #     # ####### #          #    #       #   #             #   #   #  
+            #     # #     # #     # #          #    #       #    #            #    # #   
+             #####  #     # #     # #          #    ####### #     #          ###    #    
+                                                                                          
+
+  barrad_fourth.2.t:0 "Pyromaniac"
+  barrad_fourth.2.d:0 ""Everyone's been so serious around here, Gąsienica. I can't stand it!" Count Ambrosius leaned back from his desk, annoyed. He tapped his hoof in contemplation for a few moments. "It's time we had some real fun. You know what's fun? Fire!" Ambrosius focused on the candle in front of him and fed it a scrap of paper. He was engrossed as the flames consumed the paper, watching it with fascination. Gąsienica was mostly nonplussed.\n\n"But not this little flame, no. Something bigger. Much bigger." Ambrosius smiled contemplating the spectacle. "An inferno that sweeps through all the land, and lights up the sky!" He jumped up from his desk. "Let's go out and set the kindling. Come now, Gąsienica, we're burning daylight!" The Count rushed to gather his things for the excursion while Gąsienica lagged behind.\n\n"Hopefully he doesn't cause too much damage..." Gąsienica muttered."
+  barrad_fourth.2.a:0 "It's getting hot in here!"
+  
   #leopold vs titan fight, minigame got removed bc it was annoying so instead we need 2 events to conclude the fight
   bar_titan_fight.2.t:0 "REPLACE_ME"
   bar_titan_fight.2.d:0 "#TODO: leopold vs titan fight, leopold beats up the titan alone"
@@ -1580,7 +1730,16 @@
   bar_titan_fight.3.c:0 "#TODO: viira kills leopold"
   bar_viira_kills_leopold_tooltip:0 "#TODO: tooltip for above"
 
-  ### friendship stuff###
+
+            ######  #######    #    ######     ####### #######    ####### ######  ####### #     # 
+            #     # #     #   # #   #     #       #    #     #    #       #     # #       ##    # 
+            #     # #     #  #   #  #     #       #    #     #    #       #     # #       # #   # 
+            ######  #     # #     # #     #       #    #     #    #####   ######  #####   #  #  # 
+            #   #   #     # ####### #     #       #    #     #    #       #   #   #       #   # # 
+            #    #  #     # #     # #     #       #    #     #    #       #    #  #       #    ## 
+            #     # ####### #     # ######        #    #######    #       #     # ####### #     # 
+                                                                                                    
+                                                                                                                            
   barrad_friends.997.t:0 "End of an Era"
   barrad_friends.997.d:0 "As Silver Star, Viira, Leopold, and Asinti embraced the spirit of Harmony, they decided to overthrow Count Ambrosius and his cruel minions. The mad Count refused to abdicate, and battle was joined. Ambrosius and his minions were no match for the combined power of the four friends, however, and they were quickly defeated. As the four became close friends, they fully realized the depths of their wrongdoing. They appeared before the commoners of Barrad and apologized for their actions, admitting that their aims were misguided.\n\nThe peasants, however, did not care. When they realized the four had let their guard down and were within reach, they immediately descended upon them to enact their vengeance for decades of horror, abuse and slavery. An angry mob of hundreds of ponies armed with pitchforks and torches swarmed the magocrats and slew them one by one before they even realized what was happening. Thus, the Pentarchy came to a violent and sudden end.\n\nThis unexpected turn of events is sure to signal the beginning of a new era for Barrad, although only time will tell if it is to be a happy one."
   barrad_friends.997.a:0 "So ends the Pentarchy."
@@ -1899,9 +2058,38 @@
   barrad_friendship_tree.35.t:0 "Sharing Memories"  
   barrad_friendship_tree.35.d:0 "    For some time, Silver Star worried that his sister and Viira would not get along. Sometimes it is surprising how wrong you can be. To break the ice, he invited both of them for dinner to spend some time together and chat a bit—and chat they did. For the past hour, they had been talking about seemingly random topics, but for some reason, half of them were connected to Silver Star. To say he felt uncomfortable would be an understatement, the amount of things he heard about himself during this dinner was more than he had heard in his entire life combined.\n    "Is everything alright, Silver?" asked White Star. "You seem quiet even for your standards, or is it just your girlfriend being so talkative that it only seems that way?"\n    Silver Star was swirling his glass in the air, not fully focused on the conversation. "No, no, everything is fi..." Then the second part of what his sister said struck him. "She is not... I’m not... WE are not together!" His glass nearly fell to the ground, but White Star caught it just in time with her magic. After a quick reflection, he turned towards Viira to see her reaction. It was easy to guess—she was laughing.\n    "If you say so," White Star let out a small laugh. "Oh, that reminded me of a story when Silver wanted to help the maids in our castle. Want to hear it?"\n    This time, nothing could prevent the glass from shattering across the floor. "Don’t," was all Silver Star could manage to say as his eyes widened. But one look towards Viira shattered his hopes of not hearing the story, as she was nodding furiously with a big grin on her face. Silver Star began to wonder if there were any closets nearby he could hide in.\n    "As a colt, Silver always tried to help everybody around, which was most admirable of him," White Star began the story. "But when it came to helping our servants or, spirits forbid, peasants... Let's just say our parents did not share his enthusiasm." She sighed audibly, "But young Silver couldn’t comprehend their reasons, so he tried to think what distinguished him from a common maid at the castle. In a display of innocence, he concluded that the only difference was their uniform." Viira's grin grew even larger, while Silver Star tried to hide his face under his hooves. "So, he went to them with a request to dress him like they were dressed," White Star continued. "And, of course, they did as the son of their master told them. I remember being so mad at myself for studying in the library that whole day and not being able to join this dress-up." She laughed a bit. "Then our Silver went around helping with everything his hooves allowed. It was when I went to the kitchen to grab something to eat that I saw him. It was one of the most adorable sights I’ve ever seen—my little brother in a maid uniform trying to make bread dough." White Star smiled. "It took a whole week to get all that flour out of his mane. Of course, neither Mom nor Dad were happy about it. When they found out, Silver was grounded for a month or so for what they called... meddling with the lesser." She sighed again, this time with much more sadness. "I still wonder how they found a dress so small that it somewhat fit him."\n    "Aww... That’s adorable," Viira said, lowering her head to match Silver Star’s, which currently rested on the table hidden under his hooves. "Why haven’t you told me earlier that you’re such a helpful unicorn?" All she heard in response were barely audible grunts. "But if you were so eager to help, then maybe you can help me with cleaning too?" Viira’s grin somehow managed to widen even more. Hearing no other response, she added, "If it will help, I can get you a dress that will fit properly this time.""  
   barrad_friendship_tree.35.a:0 "If I say yes will you never mention it again?"
-  barrad_second.8.t:0 "Quills and Dust"
-  barrad_second.8.d:0 "    Asinti and Leopold found themselves in a library deep within Ambrosius’ manor. The room was vast and cavernous, with towering shelves crammed with books and scrolls. With each flap of Leopold’s wings, the air grew dustier and dustier.\n    "Could you stop that?" Asinti coughed, waving a hoof to clear the air.\n    Looking down upon the zebra on the floor Lepold flapped his wings even faster. "I don’t think I can," he said, adding after a moment, "And why exactly are you so interested in the geology of these lands all of a sudden?"\n    "Do I need a reason?" Asinti replied.\n    Leopold fluffed his feathers and tried to mimic Asinti’s voice, "Do I need a reason?" Then with his own voice, he added, "Everything has a reason. I, for one, want to build a mine..." His sentence was abruptly interrupted as he crashed into a bookshelf. The impact sent the griffon and several books crashing to the floor, creating a giant cloud of dust that billowed through the room.\n    Seeing this, Asinti couldn’t help but laugh. "Where’s the reason in hitting the shelf, then?"\n    Leopold sprang to his paws, ripping the seams of his suit in the process. "You think it’s funny?" he screamed, his breath heavy. "I'll show you something funny," he added, grabbing a book from the floor and hurling it at Asinti. To his surprise, the zebra dodged it effortlessly. Enraged, Leopold began throwing every book and scroll within reach. Each one either missed or was skillfully avoided by Asinti.\n    "Wait," Asinti shouted, catching one of the flying books. "This might be what we’re looking for." He examined the cover, it read 'Deep Drill Results 989' and was signed by Ambrosius himself. "Could have just looked at the covers, but at least you had some fun," he added.\n    Leopold, still breathing heavily, began to calm down. "I wasn’t looking for a book, I was trying to hit you with one," he muttered.\n    "Then at least we’ve concluded that you’re a better librarian than sportsgriff," Asinti put a small smile, opening the book.\n    Leopold felt that his talons instinctively extended. For a brief moment, he was both mentally and physically ready to cut the zebra’s throat. But as quickly as the anger came, he managed to suppress it, taking a deep breath to steady himself."
-  barrad_second.8.a:0 "Let’s see what Ambrosius has to say"
+
+    #ending event
+  bar_ending_dialogue_line_1_text:0 "Found you!"
+  bar_ending_dialogue_line_2_text:0 "... !"
+  bar_ending_dialogue_line_3_text:0 "And how, pray tell, did you manage to find me here?"
+  bar_ending_dialogue_line_4_text:0 "Oh, a little bird told me"
+  bar_ending_dialogue_line_5_text:0 "Well, not so little - in fact pretty big one"
+  bar_ending_dialogue_line_6_text:0 "Heh..."
+  bar_ending_dialogue_line_7_text:0 "..."
+  bar_ending_dialogue_line_8_text:0 "So..."
+  bar_ending_dialogue_line_9_text:0 "...have you thought about what's next?"
+  bar_ending_dialogue_line_10_text:0 "Trying living in the moment?"
+  bar_ending_dialogue_line_11_text:0 "..."
+  bar_ending_dialogue_line_12_text:0 "HAHAHAHA"
+  bar_ending_dialogue_line_13_text:0 "You? Living in the moment?"
+  bar_ending_dialogue_line_14_text:0 "-sight-"
+  bar_ending_dialogue_line_15_text:0 "Have I ever mentioned\nhow incredibly annoying you are?"
+  bar_ending_dialogue_line_16_text:0 "Once or twice"
+  bar_ending_dialogue_line_17_text:0 "But what do you say..."
+  bar_ending_dialogue_line_18_text:0 "Should we just camp out here, letting life pass us by?"
+  bar_ending_dialogue_line_19_text:0 "Heh..."
+  bar_ending_dialogue_line_20_text:0 "Would that be such a bad thing?"
+  bar_ending_dialogue_line_21_text:0 "Especially with the right deer by your side."
+  bar_ending_dialogue_line_22_text:0 "..."
+  bar_ending_dialogue_line_23_text:0 "..."
+  bar_ending_dialogue_line_24_text:0 "I guess not"
+  bar_ending_dialogue_line_25_text:0 "But don't you ever wonder about the different paths we could explore?"
+  bar_ending_dialogue_line_26_text:0 "It's often said that we can shape our own future"
+  bar_ending_dialogue_line_27_text:0 "Yet, could it be we've already accomplished our part?"
+  bar_ending_dialogue_line_28_text:0 "I hate you so sometimes so much"
+  bar_ending_dialogue_line_29_text:0 "Don't worry your little seer's head"
+  bar_ending_dialogue_line_30_text:0 "Everything will turn out alright..."
 
             #                                                 
             #       ######  ####  #####   ####  #      #####  
@@ -2331,37 +2519,7 @@
 
   BAR_friend_feeling_of_unfinished_buissness:0 "Feeling of Unfinished Buissness"
 
-  #ending event
-  bar_ending_dialogue_line_1_text:0 "Found you!"
-  bar_ending_dialogue_line_2_text:0 "... !"
-  bar_ending_dialogue_line_3_text:0 "And how, pray tell, did you manage to find me here?"
-  bar_ending_dialogue_line_4_text:0 "Oh, a little bird told me"
-  bar_ending_dialogue_line_5_text:0 "Well, not so little - in fact pretty big one"
-  bar_ending_dialogue_line_6_text:0 "Heh..."
-  bar_ending_dialogue_line_7_text:0 "..."
-  bar_ending_dialogue_line_8_text:0 "So..."
-  bar_ending_dialogue_line_9_text:0 "...have you thought about what's next?"
-  bar_ending_dialogue_line_10_text:0 "Trying living in the moment?"
-  bar_ending_dialogue_line_11_text:0 "..."
-  bar_ending_dialogue_line_12_text:0 "HAHAHAHA"
-  bar_ending_dialogue_line_13_text:0 "You? Living in the moment?"
-  bar_ending_dialogue_line_14_text:0 "-sight-"
-  bar_ending_dialogue_line_15_text:0 "Have I ever mentioned\nhow incredibly annoying you are?"
-  bar_ending_dialogue_line_16_text:0 "Once or twice"
-  bar_ending_dialogue_line_17_text:0 "But what do you say..."
-  bar_ending_dialogue_line_18_text:0 "Should we just camp out here, letting life pass us by?"
-  bar_ending_dialogue_line_19_text:0 "Heh..."
-  bar_ending_dialogue_line_20_text:0 "Would that be such a bad thing?"
-  bar_ending_dialogue_line_21_text:0 "Especially with the right deer by your side."
-  bar_ending_dialogue_line_22_text:0 "..."
-  bar_ending_dialogue_line_23_text:0 "..."
-  bar_ending_dialogue_line_24_text:0 "I guess not"
-  bar_ending_dialogue_line_25_text:0 "But don't you ever wonder about the different paths we could explore?"
-  bar_ending_dialogue_line_26_text:0 "It's often said that we can shape our own future"
-  bar_ending_dialogue_line_27_text:0 "Yet, could it be we've already accomplished our part?"
-  bar_ending_dialogue_line_28_text:0 "I hate you so sometimes so much"
-  bar_ending_dialogue_line_29_text:0 "Don't worry your little seer's head"
-  bar_ending_dialogue_line_30_text:0 "Everything will turn out alright..."
+
 
   BAR_viira_spell_upgrade_8_unlock_tooltip:0 "Viira has claimed all her titles."
 

@@ -1718,7 +1718,7 @@ bar_kill_advisors = {
 			}
 		}
 	}
-	BAR_cyneweard_stangaet = {
+	BAR_winnelac_hereweald = {
 		set_portraits = {
 			army = {
 				small = GFX_idea_BAR_undead_advisor

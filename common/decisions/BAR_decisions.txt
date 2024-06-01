@@ -4012,25 +4012,6 @@ BAR_asinti_cat = {
 			}
 		}
 	}
-	BAR_asinti_wish_granter_expedition = {
-		icon = GFX_decision_scroll
-		fire_only_once = yes
-		cost = 25
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_asinti_alive
-		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_convert_equipment"
-			country_event = { id = barrad_asinti.12 }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }
 
 BAR_viira_cat = {		

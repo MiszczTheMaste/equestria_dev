@@ -2737,7 +2737,123 @@ country_event = {
 		name = barrad_second.8.a
 	}
 }
+country_event = { #silver star arrives at ambrosius' party
+	id = barrad_second.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.9"
+	}
+	title = barrad_second.9.t
+	desc = barrad_second.9.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.9.a
+	}
+}
 
+country_event = { #asinti and silver star dispute over land in elisay
+	id = barrad_second.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.10"
+	}
+	title = barrad_second.10.t
+	desc = barrad_second.10.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.10.a
+	}
+}
+
+country_event = { #silver and viira on party
+	id = barrad_second.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.10"
+	}
+	title = barrad_second.11.t
+	desc = barrad_second.11.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.11.a
+	}
+}
+
+country_event = { #silver and leopold on party
+	id = barrad_second.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.10"
+	}
+	title = barrad_second.12.t
+	desc = barrad_second.12.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.12.a
+	}
+}
+
+country_event = { #silver and asinti on party
+	id = barrad_second.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.10"
+	}
+	title = barrad_second.13.t
+	desc = barrad_second.13.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.10.a
+	}
+}
+
+country_event = {
+	id = barrad_second.14 #wish granter
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.14"
+	}
+	title = barrad_second.12.t
+	desc = barrad_second.12.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.14.a
+		add_political_power = 14
+		hidden_effect = {
+			country_event = { id = barrad_second.15 days = 3 }
+		}
+	}
+}
+
+country_event = { #gąsienica talking with someone about what he knows about cultists
+	id = barrad_second.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
+	}
+	title = barrad_second.15.t
+	desc = barrad_second.15.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.15.a
+		add_political_power = 25
+	}
+}
+country_event = { #viira gets agry at asinti for trying to infiltrate the cult and messing with her work
+	id = barrad_second.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
+	}
+	title = barrad_second.16.t
+	desc = barrad_second.16.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.16.a
+		add_political_power = 25
+		BAR_relations_decrease_asinti_viira_5 = yes
+	}
+}
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -4366,39 +4482,6 @@ country_event = {
 	option = {
 		name = barrad_asinti.11.a
 		add_ideas = BAR_asinti_end
-	}
-}
-
-country_event = {
-	id = barrad_asinti.12 #wish granter
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.12"
-	}
-	title = barrad_asinti.12.t
-	desc = barrad_asinti.12.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.12.a
-		add_political_power = 25
-		hidden_effect = {
-			country_event = { id = barrad_asinti.13 days = 3 }
-		}
-	}
-}
-
-country_event = {
-	id = barrad_asinti.13 #gąsienicaopowiadający że też próbował znaleźć to gówno
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.13"
-	}
-	title = barrad_asinti.13.t
-	desc = barrad_asinti.13.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.13.a
-		add_political_power = 50
 	}
 }
 

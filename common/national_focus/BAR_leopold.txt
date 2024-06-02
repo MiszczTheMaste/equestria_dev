@@ -2045,6 +2045,11 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_leopold_conquest
 		}
+		bypass = {
+			NOT = {
+				country_exists = ZES
+			}
+		}
 		will_lead_to_war_with = ZES
 		completion_reward = {
 			declare_war_on = {
@@ -2068,6 +2073,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_leopold_conquest
+		}
+		bypass = {
+			NOT = {
+				country_exists = OLV
+			}
 		}
 		will_lead_to_war_with = OLV
 		completion_reward = {
@@ -2093,8 +2103,28 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_leopold_conquest_1
 		}
+		prerequisite = {
+			focus = BAR_leopold_conquest_2
+		}
 		available = {
 			has_completed_focus = BAR_leopold_push_the_boundaries
+		}
+		bypass = {
+			NOT = {
+				country_exists = GRU
+			}
+			NOT = {
+				country_exists = GRY
+			}
+			NOT = {
+				country_exists = LUS
+			}
+			NOT = {
+				country_exists = GRW
+			}
+			NOT = {
+				country_exists = BRF
+			}
 		}
 		will_lead_to_war_with = GRU
 		will_lead_to_war_with = GRY
@@ -2178,6 +2208,14 @@ focus_tree = {
 		available = {
 			has_completed_focus = BAR_leopold_push_the_boundaries
 		}
+		bypass = {
+			NOT = {
+				country_exists = LNS
+			}
+			NOT = {
+				country_exists = HLQ
+			}
+		}
 		will_lead_to_war_with = LNS
 		will_lead_to_war_with = HLQ
 		completion_reward = {
@@ -2221,6 +2259,38 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_leopold_conquest_5
 			focus = BAR_leopold_conquest_7
+		}
+		bypass = {
+			NOT = {
+				country_exists = GRI
+			}
+			NOT = {
+				country_exists = KAT
+			}
+			NOT = {
+				country_exists = ANG
+			}
+			NOT = {
+				country_exists = YAL
+			}
+			NOT = {
+				country_exists = PYT
+			}
+			NOT = {
+				country_exists = ROU
+			}
+			NOT = {
+				country_exists = FEA
+			}
+			NOT = {
+				country_exists = STW
+			}
+			NOT = {
+				country_exists = BRZ
+			}
+			NOT = {
+				country_exists = MNC
+			}
 		}
 		will_lead_to_war_with = GRI
 		will_lead_to_war_with = KAT
@@ -2361,6 +2431,23 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_leopold_conquest_5
 		}
+		bypass = {
+			NOT = {
+				country_exists = BAN
+			}
+			NOT = {
+				country_exists = BOI
+			}
+			NOT = {
+				country_exists = LAK
+			}
+			NOT = {
+				country_exists = MIT
+			}
+			NOT = {
+				country_exists = SIC
+			}
+		}
 		will_lead_to_war_with = BAN
 		will_lead_to_war_with = BOI
 		will_lead_to_war_with = LAK
@@ -2440,11 +2527,63 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_leopold_conquest_9
 		}
+		bypass = {
+			NOT = {
+				country_exists = JER
+			}
+			NOT = {
+				country_exists = JEB
+			}
+			NOT = {
+				country_exists = JRR
+			}
+			NOT = {
+				country_exists = VIN
+			}
+			NOT = {
+				country_exists = JFT
+			}	
+			NOT = {
+				country_exists = POM
+			}
+			NOT = {
+				country_exists = FLO
+			}
+			NOT = {
+				country_exists = ERI
+			}
+			NOT = {
+				country_exists = EYR
+			}
+			NOT = {
+				country_exists = AVI
+			}
+			NOT = {
+				country_exists = HEL
+			}
+			NOT = {
+				country_exists = AET
+			}
+			NOT = {
+				country_exists = TRD
+			}
+			NOT = {
+				country_exists = FEZ
+			}
+			NOT = {
+				country_exists = FAT
+			}
+			NOT = {
+				country_exists = VED
+			}
+			NOT = {
+				country_exists = SRS
+			}
+		}
 		will_lead_to_war_with = JER
 		will_lead_to_war_with = JEB
 		will_lead_to_war_with = JRR
 		will_lead_to_war_with = VIN
-		will_lead_to_war_with = JFT
 		will_lead_to_war_with = JFT
 		will_lead_to_war_with = POM
 		will_lead_to_war_with = FLO
@@ -2663,6 +2802,20 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_leopold_conquest_10
+		}
+		bypass = {
+			NOT = {
+				country_exists = FAL
+			}
+			NOT = {
+				country_exists = WNG
+			}
+			NOT = {
+				country_exists = TAL
+			}
+			NOT = {
+				country_exists = ARA
+			}
 		}
 		will_lead_to_war_with = FAL
 		will_lead_to_war_with = WNG

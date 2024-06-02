@@ -1229,6 +1229,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}		
+		bypass = {
+			NOT = {
+				country_exists = ZES
+			}
 		}
 		will_lead_to_war_with = ZES
 		completion_reward = {
@@ -1269,6 +1274,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}		
+		bypass = {
+			NOT = {
+				country_exists = WIT
+			}
 		}
 		will_lead_to_war_with = WIT
 		completion_reward = {
@@ -1309,6 +1319,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}	
+		bypass = {
+			NOT = {
+				country_exists = OLV
+			}
 		}
 		will_lead_to_war_with = OLV
 		completion_reward = {
@@ -1349,6 +1364,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}
+		bypass = {
+			NOT = {
+				country_exists = GRU
+			}
 		}
 		will_lead_to_war_with = GRU
 		completion_reward = {
@@ -1492,6 +1512,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+			NOT = {
+				country_exists = CTH
+			}
+		}
 		will_lead_to_war_with = CTH
 		completion_reward = {
 			create_wargoal = {
@@ -1512,6 +1537,14 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}
+		bypass = {
+			NOT = {
+				country_exists = ZAR
+			}
+			NOT = {
+				country_exists = CGI
+			}
 		}
 		will_lead_to_war_with = ZAR
 		will_lead_to_war_with = CGI

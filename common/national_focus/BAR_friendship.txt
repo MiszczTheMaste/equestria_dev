@@ -1389,6 +1389,14 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_aproach_cossacs
 		}
+		bypass = {
+			NOT = {
+				country_exists = GRW
+			}
+			NOT = {
+				country_exists = BAN
+			}
+		}
 		will_lead_to_war_with = GRW
 		will_lead_to_war_with = BAN
 		completion_reward = {
@@ -1438,6 +1446,14 @@ focus_tree = {
 		}
 		will_lead_to_war_with = LNS
 		will_lead_to_war_with = HLQ
+		bypass = {
+			NOT = {
+				country_exists = LNS
+			}
+			NOT = {
+				country_exists = HLQ
+			}
+		}
 		completion_reward = {
 			create_wargoal = {
 				target = LNS

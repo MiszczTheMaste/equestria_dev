@@ -2140,23 +2140,21 @@ BAR_strike_the_earth_cat = {
 			}
 			hidden_trigger = {
 				has_manpower > 250
-				has_political_power > 25
 			}
 			owns_state = 624
 		}
 		custom_cost_trigger = {
 			has_manpower > 250
-			has_political_power > 25
 		}
-		custom_cost_text = decision_cost_pp_25_manpower_250
+		custom_cost_text = decision_cost_manpower_250
 		complete_effect = {
 			subtract_from_variable = {
 				BAR_strike_the_earth_uses = 1
 			}
 			hidden_effect = {
 				add_manpower = -250
-				add_political_power = -25
 			}
+			add_political_power = 25
 			custom_effect_tooltip = BAR_ste_res_tlp
 			add_to_variable = {
 				BAR_resources_leopold = BAR_ste_res

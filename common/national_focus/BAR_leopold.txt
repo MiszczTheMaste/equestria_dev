@@ -161,6 +161,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = { id = barrad_leopold.11 }
+			BAR_add_wigberht_as_commander = yes
+			BAR_add_gebleod_as_commander = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
@@ -882,6 +884,8 @@ focus_tree = {
 				}
 			}
 			country_event = { id = barrad_leopold.13 days = 3 }
+			clr_country_flag = BAR_silver_general_hidden
+			custom_effect_tooltip = bar_make_silver_star_general_again
 		}
 		available = {
 			has_country_flag = barrad_silver_star_alive

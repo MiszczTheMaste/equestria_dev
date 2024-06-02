@@ -11808,7 +11808,7 @@ bar_sane_ambrosius_balance_category = {
 		}
 	}	
 }
-bar_friendship_category = {
+RIV_political_decisions = {
 	bar_change_riverlands_flag = {
 		icon = pawn
 		allowed = { 
@@ -11823,4 +11823,146 @@ bar_friendship_category = {
 			set_cosmetic_tag = BAR_rivfed
 		}
 	}	
+	BAR_rifved_mutual_invest = {
+		target_array = global.river_coalition_members
+		icon = pawn
+		days_remove = 30
+		cost = 100
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = bar_art_of_the_deal
+			FROM = {
+				NOT = {
+					has_country_flag = bar_made_a_deal
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				set_country_flag = bar_made_a_deal
+				one_random_industrial_complex = yes
+			}
+			one_random_industrial_complex = yes
+			RIV_add_to_fed_race = yes
+		}
+	}
+	BAR_rifved_mutual_invest_mil = {
+		target_array = global.river_coalition_members
+		icon = pawn
+		days_remove = 30
+		cost = 100
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = bar_art_of_the_deal
+			FROM = {
+				NOT = {
+					has_country_flag = bar_made_a_deal
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				set_country_flag = bar_made_a_deal
+				one_random_arms_factory = yes
+			}
+			one_random_arms_factory = yes
+			RIV_add_to_fed_race = yes
+		}
+	}
+	BAR_rivfed_attempt_to_cure_purple_plague = {
+		fire_only_once = yes
+		icon = pawn
+		cost = 75
+		days_remove = 70
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			any_country = {
+				has_idea = HLQ_the_plague
+			}
+			has_completed_focus = BAR_friend_visit_in_asinti_temple
+		}
+		remove_effect = {
+			country_event = { id = barrad_friendship_tree.38 }
+			RIV_add_to_fed_race = yes
+		}
+	}
+	BAR_rivfed_spread_zebra_medicine = {
+		fire_only_once = yes
+		icon = pawn
+		cost = 100
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			is_river_fed_member = yes
+			has_completed_focus = BAR_friend_visit_in_asinti_temple
+		}
+		complete_effect = {
+			add_ideas = bar_rivfed_zebra_medicine_idea
+			set_country_flag = BAR_rivfed_can_spread_medicine
+			RIV_add_to_fed_race = yes
+		}
+	}
+	BAR_rivfed_get_zebra_medicine = {
+		fire_only_once = yes
+		icon = pawn
+		cost = 150
+		allowed = {
+
+		}
+		visible = {
+			is_river_fed_member = yes
+			BAR = {
+				has_country_flag = BAR_rivfed_can_spread_medicine
+			}
+			NOT = {
+				has_idea = bar_rivfed_zebra_medicine_idea
+			}
+		}
+		complete_effect = {
+			add_ideas = bar_rivfed_zebra_medicine_idea
+		}
+	}
+	BAR_rivfed_spread_clockwerks = {
+		fire_only_once = yes
+		icon = pawn
+		cost = 50
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			is_river_fed_member = yes
+			has_completed_focus = BAR_clockwerk_dev
+		}
+		complete_effect = {
+			set_country_flag = BAR_rivfed_can_clockwerks
+			RIV_add_to_fed_race = yes
+		}
+	}
+	BAR_rivfed_get_clockwerks = {
+		fire_only_once = yes
+		icon = pawn
+		cost = 100
+		allowed = {
+
+		}
+		visible = {
+			is_river_fed_member = yes
+			BAR = {
+				has_country_flag = BAR_rivfed_can_clockwerks
+			}
+			NOT = {
+				has_idea = bar_rivfed_clockwerks_idea
+			}
+		}
+		complete_effect = {
+			add_ideas = bar_rivfed_clockwerks_idea
+		}
+	}
 }

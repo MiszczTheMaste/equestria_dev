@@ -196,3 +196,36 @@ BAR_expedition_can_be_launched = {
 		}
 	}
 }
+
+bar_is_chapter_1 = {
+	custom_trigger_tooltip = {
+		tooltip = BAR_story_phunt_progress
+		NOT = {
+			has_completed_focus = BAR_hunting_party
+		}
+	}
+}
+bar_is_chapter_2 = {
+	custom_trigger_tooltip = {
+		tooltip = BAR_story_start_research
+		NOT = {
+			has_completed_focus = BAR_search_for_knowledge
+		}
+	}
+}
+bar_is_chapter_3 = {
+	custom_trigger_tooltip = {
+		tooltip = BAR_story_start_building
+		NOT = {
+			has_completed_focus = BAR_begin_building
+		}
+	}
+}
+bar_is_chapter_4 = {
+	custom_trigger_tooltip = {
+		tooltip = BAR_story_start_spark
+		NOT = {
+			has_completed_focus = BAR_initial_spark
+		}
+	}
+}

@@ -1072,8 +1072,8 @@ focus_tree = {
 	focus = {
 		id = BAR_friend_beg_for_stuff
 		icon = GFX_goal_bar_screaming_viira
-		cost = 3
-		x = -2
+		cost = 2
+		x = -1
 		y = 1
 		relative_position_id = BAR_friend_viira_and_silver_diplomacy
 		ai_will_do = {
@@ -1087,13 +1087,14 @@ focus_tree = {
 				idea = BAR_friend_dip_begging_idea
 				days = 120
 			}
+			one_random_infrastructure = yes
 		}
 	}
 	focus = {
 		id = BAR_friend_evi_griffons_diplomacy
 		icon = GFX_goal_bar_screaming_viira
-		cost = 3
-		x = 0
+		cost = 2
+		x = 1
 		y = 1
 		relative_position_id = BAR_friend_viira_and_silver_diplomacy
 		ai_will_do = {
@@ -1118,23 +1119,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_beg_for_stuff2
-		icon = GFX_goal_bar_screaming_viira
-		cost = 3
-		x = 2
-		y = 1
-		relative_position_id = BAR_friend_viira_and_silver_diplomacy
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_viira_and_silver_diplomacy
-		}
-		completion_reward = {
-			one_random_infrastructure = yes
-		}
-	}
-	focus = {
 		id = BAR_friend_diplomacy_getting_somebody_competent
 		icon = GFX_goal_bar_silver_and_viira_2
 		cost = 3
@@ -1149,9 +1133,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_evi_griffons_diplomacy
-		}
-		prerequisite = {
-			focus = BAR_friend_beg_for_stuff2
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -1176,6 +1157,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BAR_friend_ambrosius_tooltip
 			add_ideas = BAR_friend_ambrosius
+			country_event = { id = barrad_friendship_tree.36 }
 		}
 	}
 	focus = {
@@ -1286,7 +1268,6 @@ focus_tree = {
 				}
 			}
 			RIV_add_to_fed_race = yes
-			RIV_add_to_fed_race = yes
 		}
 	}
 	focus = {
@@ -1316,6 +1297,7 @@ focus_tree = {
 			set_rule = {
 				can_only_justify_war_on_threat_country = no
 			}
+			country_event = { id = barrad_friendship_tree.35 }
 		}
 	}
 	focus = {

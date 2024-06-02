@@ -436,6 +436,19 @@ ideas = {
 				}
 			}
 		}
+		bar_rivfed_zebra_medicine_idea = {
+			picture = generic_central_management
+			modifier = {
+				weekly_manpower = 50
+				army_morale_factor = 0.05
+			}
+		}
+		bar_rivfed_clockwerks_idea = {
+			picture = generic_central_management
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
 
     #                                                       
    # #   #    # #####  #####   ####   ####  # #    #  ####  

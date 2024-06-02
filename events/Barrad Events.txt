@@ -2443,7 +2443,6 @@ country_event = {
 	option = {
 		name = barrad_first.51.a
 		set_country_flag = barrad_killing_active
-		set_country_flag = bar_hunt_completed
 	}
 }
 
@@ -6826,6 +6825,47 @@ country_event = {
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.35.a		
+		country_event = { id = barrad_friendship_tree.37 days = 19 }
+	}	
+}
+country_event = { 
+	id = barrad_friendship_tree.36
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.36"
+	}
+	title = barrad_friendship_tree.36.t
+	desc = barrad_friendship_tree.36.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.36.a		
+		set_country_flag = bar_art_of_the_deal
+	}	
+}
+country_event = { 
+	id = barrad_friendship_tree.37
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.37"
+	}
+	title = barrad_friendship_tree.37.t
+	desc = barrad_friendship_tree.37.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.37.a		
+	}	
+}
+country_event = { 
+	id = barrad_friendship_tree.38
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.38"
+	}
+	title = barrad_friendship_tree.38.t
+	desc = barrad_friendship_tree.38.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.38.a		
 	}	
 }
 

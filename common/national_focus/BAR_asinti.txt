@@ -9,7 +9,7 @@ focus_tree = {
 		y = 3000
 	}
 	focus = {
-		id = BAR_grand_ritual_preparation
+		id = BAR_a_new_path
 		icon = GFX_goal_revolution_pony
 		cost = 4
 		x = 15
@@ -20,25 +20,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = barrad_asinti.6
-			}
-		}
-	}
-	focus = {
-		id = BAR_a_new_path
-		icon = GFX_goal_revolution_pony
-		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = BAR_grand_ritual_preparation
-		prerequisite = {
-			focus = BAR_grand_ritual_preparation
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			country_event = {
-				id = barrad_asinti.7
 			}
 		}
 	}
@@ -1214,7 +1195,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = barrad_asinti.8 }
+			country_event = {
+				id = barrad_asinti.8
+			}
 		}
 	}
 	focus = {
@@ -1229,7 +1212,7 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
-		}		
+		}
 		bypass = {
 			NOT = {
 				country_exists = ZES
@@ -1274,7 +1257,7 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
-		}		
+		}
 		bypass = {
 			NOT = {
 				country_exists = WIT
@@ -1319,7 +1302,7 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
-		}	
+		}
 		bypass = {
 			NOT = {
 				country_exists = OLV
@@ -1496,7 +1479,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = barrad_asinti.9 }
+			country_event = {
+				id = barrad_asinti.9
+			}
 		}
 	}
 	focus = {
@@ -1572,6 +1557,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+			NOT = {
+				country_exists = MIT
+			}
+			NOT = {
+				country_exists = MCW
+			}
+		}
 		will_lead_to_war_with = MIT
 		will_lead_to_war_with = MCW
 		completion_reward = {
@@ -1613,7 +1606,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = { id = barrad_asinti.10 }
+			country_event = {
+				id = barrad_asinti.10
+			}
 		}
 	}
 	focus = {
@@ -1693,7 +1688,8 @@ focus_tree = {
 				}
 				one_random_industrial_complex = yes
 				one_random_arms_factory = yes
-			} else = {
+			}
+			else = {
 				increase_society_development = yes
 			}
 		}
@@ -1753,7 +1749,8 @@ focus_tree = {
 				}
 				one_random_industrial_complex = yes
 				one_random_arms_factory = yes
-			} else = {
+			}
+			else = {
 				increase_society_development = yes
 			}
 		}
@@ -1781,7 +1778,8 @@ focus_tree = {
 				}
 				one_random_industrial_complex = yes
 				one_random_arms_factory = yes
-			} else = {
+			}
+			else = {
 				increase_society_development = yes
 			}
 			add_tech_bonus = {

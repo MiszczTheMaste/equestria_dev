@@ -1707,6 +1707,7 @@ BAR_ambrosius_boredoom = {
 		}
 	}
 }
+#TODO: change to custom gui
 BAR_strike_the_earth_cat = {
 	BAR_longterm_excavation = {
 		icon = generic_construction

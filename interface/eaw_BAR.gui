@@ -3977,5 +3977,190 @@ guiTypes = {
 			maxHeight = 44
 			text = bar_ending_dialogue_line_30_text
 		}
+	}
+		
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_bg"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=200 }
+
+		containerWindowType = {
+			name = "BAR_asinti_sigma_event_bg_1"
+			size = { width=700 height=422 }
+			moveable = no
+			clipping = no
+			position = { x=0 y=0 }
+			iconType = {
+				name = "BAR_asinti_sigma_event_bg_1"
+				spriteType = "GFX_BAR_asinti_sigma_event_bg_1"
+				position = {x=0 y=0}
+			}
+		}	
+		containerWindowType = {
+			name = "BAR_asinti_sigma_event_bg_2"
+			size = { width=700 height=422 }
+			moveable = no
+			clipping = no
+			position = { x=0 y=0 }
+			iconType = {
+				name = "BAR_asinti_sigma_event_bg_2"
+				spriteType = "GFX_BAR_asinti_sigma_event_bg_2"
+				position = {x=0 y=0}
+			}
+		}			
+		containerWindowType = {
+			name = "BAR_asinti_sigma_event_bg_3"
+			size = { width=700 height=422 }
+			moveable = no
+			clipping = no
+			position = { x=0 y=0 }
+			iconType = {
+				name = "BAR_asinti_sigma_event_bg_3"
+				spriteType = "GFX_BAR_asinti_sigma_event_bg_3"
+				position = {x=0 y=0}
+			}
+		}	
+		containerWindowType = {
+			name = "BAR_asinti_sigma_event_bg_4"
+			size = { width=700 height=422 }
+			moveable = no
+			clipping = no
+			position = { x=0 y=0 }
+			iconType = {
+				name = "BAR_asinti_sigma_event_bg_4"
+				spriteType = "GFX_BAR_asinti_sigma_event_bg_4"
+				position = {x=0 y=0}
+			}
+		}			
+	}
+		
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_asinti"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		hide_position = { x = 200 y = 250 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 400
+		fade_time = 200
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_asinti"
+			spriteType = "GFX_BAR_asinti_sigma_event_asinti"
+			position = {x=0 y=0}
+		}
 	}	
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_asinti_annoyed"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		fade_time = 1000
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_asinti_annoyed"
+			spriteType = "GFX_BAR_asinti_sigma_event_asinti_annoyed"
+			position = {x=0 y=0}
+		}
+	}	
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_follower_1"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		hide_position = { x = 200 y = 250 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = decelerated
+		animation_time = 400
+		fade_time = 400
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_follower_1"
+			spriteType = "GFX_BAR_asinti_sigma_event_follower_1"
+			position = {x=0 y=0}
+		}
+	}
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_follower_2"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		hide_position = { x = 200 y = 250 }
+		show_position = { x = 200 y = 200 }
+		show_animation_type = decelerated
+		hide_animation_type = decelerated
+		animation_time = 400
+		fade_time = 400
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_follower_2"
+			spriteType = "GFX_BAR_asinti_sigma_event_follower_2"
+			position = {x=0 y=0}
+		}
+	}
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_stars"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		fade_time = 2000
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_stars"
+			spriteType = "GFX_BAR_asinti_sigma_event_stars"
+			position = {x=0 y=0}
+		}
+	}
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_eye"
+		size = { width=700 height=422 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		fade_time = 2500
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_eye"
+			spriteType = "GFX_BAR_asinti_sigma_event_eye"
+			position = {x=0 y=0}
+		}
+	}
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_dialogue_box"
+		size = { width=405 height=500 }
+		moveable = no
+		clipping = no
+		position = { x=200 y=622 }
+
+		Background = {
+			name = "bar_asinti_sigma_event_dialogue_box_bg"
+			spriteType = "GFX_BAR_dialogue_box"
+		}
+		instantTextBoxType = {
+			name = "bar_asinti_sigma_event_dialogue_text"
+			position = {x=27 y=35}
+			font = "hoi4_typewriter22"
+			format = left
+			maxWidth = 520
+			maxHeight = 44
+			text = bar_asinti_sigma_event_dialogue_text
+		}
+		buttonType = {
+			name = "bar_asinti_sigma_event_next_scene"
+			position = { x = 650 y = 50 }
+			buttonText = ">"
+			quadTextureSprite ="GFX_button_94x31"
+			buttonFont = "hoi_16mbs"
+		}
+	}
 }

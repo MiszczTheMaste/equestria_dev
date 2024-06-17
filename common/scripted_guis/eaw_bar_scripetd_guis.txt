@@ -1876,13 +1876,179 @@ scripted_gui = {
 			}
 		}
 	}
-	bar_ending_dialogue_line_30 = {
-		window_name = "bar_ending_dialogue_line_30"
-		dirty = bar_final_dialogue
+	bar_asinti_sigma_event_bg = {
+		window_name = "bar_asinti_sigma_event_bg"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			has_variable = bar_asinti_sigma_event
+		}
+		triggers = {
+			BAR_asinti_sigma_event_bg_1_visible = {
+				OR = {
+					check_variable = {
+						bar_asinti_sigma_event = 1
+					}
+					check_variable = {
+						bar_asinti_sigma_event = 2
+					}
+					check_variable = {
+						bar_asinti_sigma_event = 3
+					}
+				}
+			}
+			BAR_asinti_sigma_event_bg_2_visible = {
+				OR = {
+					check_variable = {
+						bar_asinti_sigma_event = 0
+					}
+					AND = {
+						check_variable = {
+							bar_asinti_sigma_event > 3
+						}
+						check_variable = {
+							bar_asinti_sigma_event < 12
+						}
+					}
+				}
+				
+			}
+			BAR_asinti_sigma_event_bg_3_visible = {
+				check_variable = {
+					bar_asinti_sigma_event > 11
+				}
+				check_variable = {
+					bar_asinti_sigma_event < 21
+				}
+			}
+			BAR_asinti_sigma_event_bg_4_visible = {
+				check_variable = {
+					bar_asinti_sigma_event > 20
+				}
+			}
+		}
+	}	
+	bar_asinti_sigma_event_asinti = {
+		window_name = "bar_asinti_sigma_event_asinti"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			OR = {
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event > 0
+					}
+					check_variable = {
+						bar_asinti_sigma_event < 4
+					}
+				}
+				check_variable = {
+					bar_asinti_sigma_event > 4
+				}
+			}
+		}
+	}	
+	bar_asinti_sigma_event_follower_1 = {
+		window_name = "bar_asinti_sigma_event_follower_1"
+		dirty = bar_asinti_sigma_event
 		context_type = player_context
 		visible = {
 			check_variable = {
-				bar_final_dialogue = 30
+				bar_asinti_sigma_event > 5
+			}
+			check_variable = {
+				bar_asinti_sigma_event < 11
+			}
+		}
+	}
+	bar_asinti_sigma_event_follower_2 = {
+		window_name = "bar_asinti_sigma_event_follower_2"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event > 6
+			}
+			check_variable = {
+				bar_asinti_sigma_event < 11
+			}
+		}
+	}
+	bar_asinti_sigma_event_asinti_annoyed = {
+		window_name = "bar_asinti_sigma_event_asinti_annoyed"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			OR = {
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event > 5
+					}
+					check_variable = {
+						bar_asinti_sigma_event < 10
+					}
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 14
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 15
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 16
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 17
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_stars = {
+		window_name = "bar_asinti_sigma_event_stars"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event > 21
+			}
+		}
+	}
+	bar_asinti_sigma_event_eye = {
+		window_name = "bar_asinti_sigma_event_eye"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event = 23
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 24
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_dialogue_box = {
+		window_name = "bar_asinti_sigma_event_dialogue_box"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			has_variable = bar_asinti_sigma_event
+		}
+		effects = {
+			bar_asinti_sigma_event_next_scene_click = {
+				if = {
+					limit = {
+						check_variable = {
+							bar_asinti_sigma_event = 24
+						}
+					}
+					clear_variable = bar_asinti_sigma_event
+				} else = {
+					add_to_variable = {
+						bar_asinti_sigma_event = 1
+					}
+				}
 			}
 		}
 	}

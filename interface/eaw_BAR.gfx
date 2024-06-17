@@ -304,6 +304,72 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_bg_1"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_bg_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_bg_3"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_3.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_bg_4"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_4.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_annoyed"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_annoyed.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_follower_1"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_follower_1.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_follower_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_follower_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_follower_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_follower_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_stars"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_stars.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_eye"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_eye.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
 		name = "GFX_viira_mana_crystal"
 		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_mana_crystal.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

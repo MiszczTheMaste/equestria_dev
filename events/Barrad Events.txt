@@ -4319,7 +4319,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_asinti.6.a
-		add_political_power = 50
+		country_event = { id = barrad_asinti.7 }
 	}
 }
 
@@ -4362,6 +4362,7 @@ country_event = {
 			ideology = communism 	
 			popularity = 0.06
 		}
+		add_political_power = 50
 		set_cosmetic_tag = BAR_free_state
 		hidden_effect = {
 			bar_kill_ambrosius = yes

@@ -158,7 +158,12 @@ BAR_reactor_research = {
 }
 BAR_strike_the_earth_cat = {
 	icon = generic_prospect_for_resources
-
+	scripted_gui = bar_strike_earth_decisions_gui
+	visible_when_empty = yes
+	visible = {
+		has_country_flag = barrad_early_game
+		has_country_flag = BAR_strike_the_earth_unlocked
+	}
 	allowed = {
 		original_tag = BAR
 	}

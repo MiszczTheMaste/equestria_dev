@@ -9,6 +9,9 @@ on_actions = {
 				set_variable = {
 					BAR_resource_to_modify_ammount = 0
 				}
+				set_variable = {
+					BAR_protection_cost = 25
+				}
 			}
 		}
 	}

@@ -1213,6 +1213,1097 @@ scripted_gui = {
 			}
 		}
 	}
+	bar_strike_earth_decisions_gui = {
+		window_name = "bar_strike_earth_decisions_gui_container"
+		context_type = decision_category
+		effects = {
+			bar_strike_the_earth_excavation_1_click = {
+				set_country_flag = bar_strike_the_earth_excavation_1_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 2
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_2_click = {
+				set_country_flag = bar_strike_the_earth_excavation_2_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_3_click = {
+				set_country_flag = bar_strike_the_earth_excavation_3_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 2
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_4_click = {
+				set_country_flag = bar_strike_the_earth_excavation_4_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 2
+					state = 624
+				}
+			}			
+			bar_strike_the_earth_excavation_5_click = {
+				set_country_flag = bar_strike_the_earth_excavation_5_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_6_click = {
+				set_country_flag = bar_strike_the_earth_excavation_6_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_7_click = {
+				set_country_flag = bar_strike_the_earth_excavation_7_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_8_click = {
+				set_country_flag = bar_strike_the_earth_excavation_8_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+					state = 624
+				}
+			}	
+			bar_strike_the_earth_excavation_9_click = {
+				set_country_flag = bar_strike_the_earth_excavation_9_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_10_click = {
+				set_country_flag = bar_strike_the_earth_excavation_10_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_11_click = {
+				set_country_flag = bar_strike_the_earth_excavation_11_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_12_click = {
+				set_country_flag = bar_strike_the_earth_excavation_12_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_13_click = {
+				set_country_flag = bar_strike_the_earth_excavation_13_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_14_click = {
+				set_country_flag = bar_strike_the_earth_excavation_14_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_15_click = {
+				set_country_flag = bar_strike_the_earth_excavation_15_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_16_click = {
+				set_country_flag = bar_strike_the_earth_excavation_16_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_17_click = {
+				set_country_flag = bar_strike_the_earth_excavation_17_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_18_click = {
+				set_country_flag = bar_strike_the_earth_excavation_18_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_19_click = {
+				set_country_flag = bar_strike_the_earth_excavation_19_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_20_click = {
+				set_country_flag = bar_strike_the_earth_excavation_20_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_21_click = {
+				set_country_flag = bar_strike_the_earth_excavation_21_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 2
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_22_click = {
+				set_country_flag = bar_strike_the_earth_excavation_22_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_23_click = {
+				set_country_flag = bar_strike_the_earth_excavation_23_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 2
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_24_click = {
+				set_country_flag = bar_strike_the_earth_excavation_24_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 2
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 2
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_25_click = {
+				set_country_flag = bar_strike_the_earth_excavation_25_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_26_click = {
+				set_country_flag = bar_strike_the_earth_excavation_26_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_27_click = {
+				set_country_flag = bar_strike_the_earth_excavation_27_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_28_click = {
+				set_country_flag = bar_strike_the_earth_excavation_28_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 3
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_29_click = {
+				set_country_flag = bar_strike_the_earth_excavation_29_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_30_click = {
+				set_country_flag = bar_strike_the_earth_excavation_30_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_31_click = {
+				set_country_flag = bar_strike_the_earth_excavation_31_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_32_click = {
+				set_country_flag = bar_strike_the_earth_excavation_32_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 4
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_33_click = {
+				set_country_flag = bar_strike_the_earth_excavation_33_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_34_click = {
+				set_country_flag = bar_strike_the_earth_excavation_34_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_35_click = {
+				set_country_flag = bar_strike_the_earth_excavation_35_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_36_click = {
+				set_country_flag = bar_strike_the_earth_excavation_36_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 5
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 8
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_37_click = {
+				set_country_flag = bar_strike_the_earth_excavation_37_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = tungsten
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_38_click = {
+				set_country_flag = bar_strike_the_earth_excavation_38_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = steel
+					amount = 12
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_39_click = {
+				set_country_flag = bar_strike_the_earth_excavation_39_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = aluminium
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_excavation_40_click = {
+				set_country_flag = bar_strike_the_earth_excavation_40_done
+				add_political_power = -15
+				add_resource = {
+					type = crystals
+					amount = 6
+					state = 624
+				}
+				add_resource = {
+					type = chromium
+					amount = 10
+					state = 624
+				}
+			}
+			bar_strike_the_earth_skull_click = {
+				set_country_flag = BAR_earth_struck_back
+				country_event = {
+					id = bar_titan_fight.1
+				}
+				624 = {
+					set_state_flag = BAR_strike_the_earth_followup_1
+					set_state_flag = BAR_strike_the_earth_followup_2
+					set_state_flag = BAR_strike_the_earth_followup_3
+					set_state_flag = BAR_strike_the_earth_followup_4
+				}
+			}
+			bar_strike_the_earth_dig_deeper_1_click = {
+				set_country_flag = bar_strike_the_earth_unlock_level_1
+				add_political_power = -50
+			}
+			bar_strike_the_earth_dig_deeper_2_click = {
+				set_country_flag = bar_strike_the_earth_unlock_level_2
+				add_political_power = -50
+			}
+			bar_strike_the_earth_dig_deeper_3_click = {
+				set_country_flag = bar_strike_the_earth_unlock_level_3
+				add_political_power = -50
+			}
+			bar_strike_the_earth_dig_deeper_4_click = {
+				set_country_flag = bar_strike_the_earth_unlock_level_4
+				add_political_power = -50
+			}
+			bar_strike_the_earth_dig_deeper_5_click = {
+				set_country_flag = bar_strike_the_earth_unlock_level_5
+				add_political_power = -50
+			}
+		}
+		triggers = {
+			bar_strike_the_earth_excavation_1_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_1_done
+				}
+			}
+			bar_strike_the_earth_excavation_2_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_2_done
+				}
+			}
+			bar_strike_the_earth_excavation_3_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_3_done
+				}
+			}
+			bar_strike_the_earth_excavation_4_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_4_done
+				}
+			}
+			bar_strike_the_earth_excavation_5_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_5_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_6_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_6_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_7_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_7_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_8_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_8_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_9_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_9_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_10_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_10_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_11_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_11_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_12_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_12_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_13_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_13_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_14_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_14_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_15_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_15_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_16_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_16_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_17_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_17_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_18_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_18_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_19_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_19_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_20_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_20_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_21_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_21_done
+				}
+			}
+			bar_strike_the_earth_excavation_22_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_22_done
+				}
+			}
+			bar_strike_the_earth_excavation_23_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_23_done
+				}
+			}
+			bar_strike_the_earth_excavation_24_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_24_done
+				}
+			}
+			bar_strike_the_earth_excavation_25_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_25_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_26_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_26_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_27_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_27_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_28_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_28_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_29_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_29_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_30_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_30_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_31_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_31_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_32_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_32_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_33_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_33_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_34_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_34_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_35_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_35_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_36_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_36_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_37_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_37_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_38_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_38_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_39_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_39_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_40_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_excavation_40_done
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_skull_visible = {
+				NOT = {
+					has_country_flag = BAR_earth_struck_back
+				}
+				has_completed_focus = BAR_strike_the_earth_focus
+			}
+			bar_strike_the_earth_dig_deeper_1_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_unlock_level_1
+				}
+			}
+			bar_strike_the_earth_dig_deeper_2_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_unlock_level_2
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+				has_completed_focus = BAR_dig_deeper
+			}
+			bar_strike_the_earth_dig_deeper_3_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_unlock_level_3
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+				has_completed_focus = BAR_dig_deeper
+			}
+			bar_strike_the_earth_dig_deeper_4_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_unlock_level_4
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+				has_completed_focus = BAR_strike_the_earth_focus
+			}
+			bar_strike_the_earth_dig_deeper_5_visible = {
+				NOT = {
+					has_country_flag = bar_strike_the_earth_unlock_level_5
+				}
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+				has_completed_focus = BAR_strike_the_earth_focus
+			}
+			bar_strike_the_earth_excavation_1_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_2_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_3_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_4_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_5_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_6_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_7_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_8_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_9_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_10_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_11_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_12_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_13_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_14_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_15_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_16_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_17_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_18_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_19_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_20_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_21_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_22_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_23_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_24_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_25_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_26_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_27_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_28_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_29_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_30_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_31_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_32_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_33_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_34_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_35_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_36_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_37_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_38_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_39_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_40_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_skull_enabled = {
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_5
+			}
+			bar_strike_the_earth_dig_deeper_1_enabled = {
+				has_political_power > 49
+				owns_state = 624
+			}
+			bar_strike_the_earth_dig_deeper_2_enabled = {
+				has_political_power > 49
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_dig_deeper_3_enabled = {
+				has_political_power > 49
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_dig_deeper_4_enabled = {
+				has_political_power > 49
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_dig_deeper_5_enabled = {
+				has_political_power > 49
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+		}
+	}
 
 
 	# @var bar_expedition_members array{
@@ -1887,13 +2978,16 @@ scripted_gui = {
 			BAR_asinti_sigma_event_bg_1_visible = {
 				OR = {
 					check_variable = {
-						bar_asinti_sigma_event = 1
-					}
-					check_variable = {
-						bar_asinti_sigma_event = 2
-					}
-					check_variable = {
 						bar_asinti_sigma_event = 3
+					}
+					check_variable = {
+						bar_asinti_sigma_event = 4
+					}
+					check_variable = {
+						bar_asinti_sigma_event = 5
+					}
+					check_variable = {
+						bar_asinti_sigma_event = 6
 					}
 				}
 			}
@@ -1902,12 +2996,18 @@ scripted_gui = {
 					check_variable = {
 						bar_asinti_sigma_event = 0
 					}
+					check_variable = {
+						bar_asinti_sigma_event = 1
+					}
+					check_variable = {
+						bar_asinti_sigma_event = 2
+					}
 					AND = {
 						check_variable = {
-							bar_asinti_sigma_event > 3
+							bar_asinti_sigma_event > 6
 						}
 						check_variable = {
-							bar_asinti_sigma_event < 12
+							bar_asinti_sigma_event < 16
 						}
 					}
 				}
@@ -1915,15 +3015,15 @@ scripted_gui = {
 			}
 			BAR_asinti_sigma_event_bg_3_visible = {
 				check_variable = {
-					bar_asinti_sigma_event > 11
+					bar_asinti_sigma_event > 15
 				}
 				check_variable = {
-					bar_asinti_sigma_event < 21
+					bar_asinti_sigma_event < 25
 				}
 			}
 			BAR_asinti_sigma_event_bg_4_visible = {
 				check_variable = {
-					bar_asinti_sigma_event > 20
+					bar_asinti_sigma_event > 24
 				}
 			}
 		}
@@ -1943,7 +3043,7 @@ scripted_gui = {
 					}
 				}
 				check_variable = {
-					bar_asinti_sigma_event > 4
+					bar_asinti_sigma_event > 8
 				}
 			}
 		}
@@ -1954,10 +3054,10 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			check_variable = {
-				bar_asinti_sigma_event > 5
+				bar_asinti_sigma_event > 9
 			}
 			check_variable = {
-				bar_asinti_sigma_event < 11
+				bar_asinti_sigma_event < 14
 			}
 		}
 	}
@@ -1967,10 +3067,10 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			check_variable = {
-				bar_asinti_sigma_event > 6
+				bar_asinti_sigma_event > 10
 			}
 			check_variable = {
-				bar_asinti_sigma_event < 11
+				bar_asinti_sigma_event < 14
 			}
 		}
 	}
@@ -1980,25 +3080,29 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			OR = {
-				AND = {
-					check_variable = {
-						bar_asinti_sigma_event > 5
-					}
-					check_variable = {
-						bar_asinti_sigma_event < 10
-					}
+				check_variable = {
+					bar_asinti_sigma_event = 10
 				}
 				check_variable = {
-					bar_asinti_sigma_event = 14
+					bar_asinti_sigma_event = 11
 				}
 				check_variable = {
-					bar_asinti_sigma_event = 15
+					bar_asinti_sigma_event = 12
 				}
 				check_variable = {
-					bar_asinti_sigma_event = 16
+					bar_asinti_sigma_event = 13
 				}
 				check_variable = {
-					bar_asinti_sigma_event = 17
+					bar_asinti_sigma_event = 18
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 19
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 20
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 21
 				}
 			}
 		}
@@ -2009,7 +3113,7 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			check_variable = {
-				bar_asinti_sigma_event > 21
+				bar_asinti_sigma_event > 25
 			}
 		}
 	}
@@ -2020,10 +3124,10 @@ scripted_gui = {
 		visible = {
 			OR = {
 				check_variable = {
-					bar_asinti_sigma_event = 23
+					bar_asinti_sigma_event = 27
 				}
 				check_variable = {
-					bar_asinti_sigma_event = 24
+					bar_asinti_sigma_event = 28
 				}
 			}
 		}
@@ -2040,7 +3144,7 @@ scripted_gui = {
 				if = {
 					limit = {
 						check_variable = {
-							bar_asinti_sigma_event = 24
+							bar_asinti_sigma_event = 28
 						}
 					}
 					clear_variable = bar_asinti_sigma_event

@@ -1023,6 +1023,30 @@ defined_text = {
 		localization_key = bar_asinti_sigma_event_dialogue_text_24
 	}
 	text = {
+		trigger = {
+			check_variable = { bar_asinti_sigma_event = 25 }
+		}
+		localization_key = bar_asinti_sigma_event_dialogue_text_25
+	}
+	text = {
+		trigger = {
+			check_variable = { bar_asinti_sigma_event = 26 }
+		}
+		localization_key = bar_asinti_sigma_event_dialogue_text_26
+	}
+	text = {
+		trigger = {
+			check_variable = { bar_asinti_sigma_event = 27 }
+		}
+		localization_key = bar_asinti_sigma_event_dialogue_text_27
+	}
+	text = {
+		trigger = {
+			check_variable = { bar_asinti_sigma_event = 28 }
+		}
+		localization_key = bar_asinti_sigma_event_dialogue_text_28
+	}
+	text = {
 		localization_key = bar_asinti_sigma_event_dialogue_text_empty
 	}
 }

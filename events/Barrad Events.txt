@@ -1172,7 +1172,6 @@ country_event = {
 	option = {
 		#dismantle a titan for resources
 		name = bar_titan_fight.2.a
-		set_country_flag = BAR_strike_the_earth_unlocked
 		bar_leopold_resources_add_1000 = yes
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
@@ -1181,7 +1180,6 @@ country_event = {
 		#dismantle a titan for leopolds new body
 		name = bar_titan_fight.2.b
 		set_country_flag = bar_titan_tech
-		set_country_flag = BAR_strike_the_earth_unlocked
 		custom_effect_tooltip = BAR_next_focus_prerequisite
 	}
 }
@@ -1207,7 +1205,6 @@ country_event = {
 		name = bar_titan_fight.3.a
 		clr_country_flag = BAR_leopold_immunity
 		clr_country_flag = BAR_viira_immunity
-		set_country_flag = BAR_strike_the_earth_unlocked
 		bar_leopold_resources_add_1000 = yes
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
@@ -1216,7 +1213,6 @@ country_event = {
 		#dismantle a titan for leopolds new body
 		name = bar_titan_fight.3.b
 		set_country_flag = bar_titan_tech
-		set_country_flag = BAR_strike_the_earth_unlocked
 		custom_effect_tooltip = BAR_next_focus_prerequisite
 	}
 	option = {
@@ -1229,7 +1225,6 @@ country_event = {
 				}
 			}
 		}
-		set_country_flag = BAR_strike_the_earth_unlocked	
 		add_to_variable = {
 			var = BAR_resource_to_modify_ammount
 			value = BAR_resources_leopold
@@ -4440,12 +4435,15 @@ country_event = {
 	}
 	title = barrad_asinti.9.t
 	desc = barrad_asinti.9.d
-	picture = TO_CHANGE
+	picture = GFX_event_bar_asinti_demon_summon
 	is_triggered_only = yes
 	option = {
 		name = barrad_asinti.9.a
 		add_ideas = BAR_asinti_invasion
 		increase_science_base = yes
+		set_variable = {
+			bar_asinti_sigma_event = 0
+		}
 	}
 }
 

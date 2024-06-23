@@ -919,21 +919,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_resource = {
-				type = crystals
-				amount = 8
-				state = 624
-			}
-			add_resource = {
-				type = tungsten
-				amount = 3
-				state = 624
-			}
-			add_resource = {
-				type = aluminium
-				amount = 2
-				state = 624
-			}
 			if = {
 				limit = {
 					has_country_flag = barrad_asinti_alive
@@ -943,6 +928,7 @@ focus_tree = {
 					id = barrad_second.8
 				}
 			}
+			set_country_flag = BAR_strike_the_earth_unlocked
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1879,11 +1865,7 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
-			add_resource = {
-				type = tungsten
-				amount = 3
-				state = 624
-			}
+			custom_effect_tooltip = bar_unlocks_more_mine_levels
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_3
@@ -2829,7 +2811,6 @@ focus_tree = {
 				custom_effect_tooltip = bar_friendship_important_for_leopold
 			}
 			hidden_effect = {
-				set_country_flag = BAR_strike_the_earth_unlocked
 				set_variable = {
 					var = BAR_strike_the_earth_level
 					value = 1
@@ -2853,12 +2834,6 @@ focus_tree = {
 					}
 					set_country_flag = bar_viira_investigation_step_9
 					BAR_new_viira_note = yes
-				}
-				624 = {
-					set_state_flag = BAR_strike_the_earth_followup_1
-					set_state_flag = BAR_strike_the_earth_followup_2
-					set_state_flag = BAR_strike_the_earth_followup_3
-					set_state_flag = BAR_strike_the_earth_followup_4
 				}
 			}
 		}

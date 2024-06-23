@@ -22,8 +22,6 @@
   BAR_undead_pp_bonus_text_nothing:0 "Archlich Silver Star is planning his next move"
 
   #strike the earth
-  BAR_strike_the_earth_cat:0 "Strike the Earth"
-  BAR_strike_the_earth_cat_desc:0 "Mining operation underway.\n\nCurrent shaft depth: §Y[?BAR_strike_the_earth_level]§!\n\nRoom left for expansion: §Y[?BAR_strike_the_earth_uses]§!"
   BAR_first_lvl_longterm_excavation:0 "Prepare long term excavation in this mineshaft"
   BAR_first_lvl_quick_excavation:0 "Excavate resources for current projects"
   BAR_go_to_lvl_two:0 "Dig Deeper"

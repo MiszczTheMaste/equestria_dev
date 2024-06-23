@@ -199,6 +199,10 @@ spriteTypes = {
 		name = "GFX_event_silver_star_psy_confused_2"
 		texturefile = "gfx/interface/bar/events/silver_star_psy_confused_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_event_bar_asinti_demon_summon"
+		texturefile = "gfx/interface/bar/events/bar_asinti_demon_summon.dds"
+	}
 	spriteType = {
 		name = "GFX_decision_daggers"
 		texturefile = "gfx/interface/decisions/daggers.dds"
@@ -304,6 +308,12 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_bg_border"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_border.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_bg_1"
 		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -370,11 +380,28 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
-		name = "GFX_viira_mana_crystal"
-		textureFile = "gfx/interface/bar/viira_spells/spell_unlock/viira_mana_crystal.dds"
+		name = "GFX_bar_strike_the_earth_bg"
+		textureFile = "gfx/interface/bar/strike_the_earth/strike_the_earth_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
-		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_bar_strike_the_earth_helmet"
+		textureFile = "gfx/interface/bar/strike_the_earth/strike_the_earth_helmet.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_strike_the_earth_pickaxe"
+		textureFile = "gfx/interface/bar/strike_the_earth/strike_the_earth_pickaxe.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_strike_the_earth_skull"
+		textureFile = "gfx/interface/bar/strike_the_earth/strike_the_earth_skull.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_BAR_viira_nuke_button"

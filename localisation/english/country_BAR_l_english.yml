@@ -888,6 +888,7 @@
   BAR_gebleod:0 "Gebléod"
   BAR_jerzy_janosik:0 "Jerzy Jánošík"
   BAR_gasienica:0 "Gąsienica"
+  BAR_amber_aurora:0 "Amber Aurora"
 
   ### admirals ###
   BAR_gasping_breath:0 "Gasping Breath"
@@ -905,7 +906,7 @@
   BAR_head_of_intel:0 "Mister Lilly"
   BAR_pen_army_chief:0 "Beorhtsige Sigespere"
   BAR_pen_army_chief_1:0 "Ceadda Sigeweald"
-  BAR_winnelac_hereweald:0 "Winnelac Hereweald"
+  BAR_valentino_hereweald:0 "Valentino Hereweald"
   BAR_pen_air_chief:0 "Wigmund Sunnespere"
   BAR_pen_air_chief_1:0 "Stithulf Frostdun"
   BAR_pen_navy_chief:0 "Hrothgar Fiscford"
@@ -1475,47 +1476,11 @@
   BAR_upgrade_clockwerks_tooltip:0 "Military grade clockworks will use magical weapons"
   BAR_reactor_integration_tooltip:0 "Some elements of the temple might be used to fasten up construction of the reactor\n\nMight be §Gvery§! useful under §Bspecific circumstances§!"
 
-  BAR_asinti_blood_sacrifices:0 "Blood of Nation"
-  BAR_you_are_terrible_person:0 "Crime Above All"
-  BAR_call_for_blood:0 "Call for Blood"
-  BAR_blood_to_oil:0 "Bloody Oil"
-  BAR_bloody_steel:0 "Bloodsteel"
-  BAR_blood_curse:0 "Grand Curse"
-  BAR_bloody_navy:0 "Naval Influence"
-  BAR_blood_of_kasa:0 "Corrupted Ideals"
-  BAR_blood_of_deets:0 "Blood of Warriors"
-  BAR_blood_stability:0 "Reminder for Subjects"
-  BAR_blood_ws:0 "War Frenzy"
-
-  BAR_asinti_blood_sacrifices_desc:0 "Our new masters works in ways that are beyond our comprehension. Yet we are more than sure that each time we split blood of those who dare to oppose them they are pleased.\n\nCurrent amount of blood spilled on battlefield:§R [?BAR_asinti_blood_resource]k§!£blood_icon\n\nEach killed enemy soldier will count as one."
-  BAR_you_are_terrible_person_desc:0 ""
-  BAR_call_for_blood_desc:0 ""
-  BAR_blood_to_oil_desc:0 ""
-  BAR_bloody_steel_desc:0 ""
-  BAR_blood_curse_desc:0 ""
-  BAR_bloody_navy_desc:0 ""
-  BAR_blood_of_kasa_desc:0 ""
-  BAR_blood_of_deets_desc:0 ""
-  BAR_blood_stability_desc:0 "Sometimes those on the bottom of the chain needs reminder with words or actions on why they are there."
-  BAR_blood_ws_desc:0 ""
 
   BAR_blood_curse_idea:0 "Grand Curse"
   BAR_call_for_blood_idea:0 "Call for Blood"
 
-  bar_asinti_blood_2k:0 "§Y2k§! £blood_icon"
-  bar_asinti_blood_5k:0 "§Y5k§! £blood_icon"
-  bar_asinti_blood_10k:0 "§Y10k§! £blood_icon"
-  bar_asinti_blood_15k:0 "§Y15k§! £blood_icon"
-  bar_asinti_blood_20k:0 "§Y20k§! £blood_icon"
-  bar_asinti_blood_25k:0 "§Y25k§! £blood_icon"
-  bar_asinti_blood_30k:0 "§Y30k§! £blood_icon"
-  bar_asinti_blood_2k_blocked:0 "§R2k§! £blood_icon"
-  bar_asinti_blood_5k_blocked:0 "§R5k§! £blood_icon"
-  bar_asinti_blood_10k_blocked:0 "§R10k§! £blood_icon"
-  bar_asinti_blood_15k_blocked:0 "§R15k§! £blood_icon"
-  bar_asinti_blood_20k_blocked:0 "§R20k§! £blood_icon"
-  bar_asinti_blood_25k_blocked:0 "§R25k§! £blood_icon"
-  bar_asinti_blood_30k_blocked:0 "§R30k§! £blood_icon"
+
 
 
   ###Equipment loc

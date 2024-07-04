@@ -56,7 +56,7 @@ BAR_asinti_pentarchs = {
 }
 BAR_asinti_blood_sacrifices = {
 	icon = knife_blood
-	
+	scripted_gui = bar_blood_decisions_gui
 	allowed = {
 		original_tag = BAR
 	}

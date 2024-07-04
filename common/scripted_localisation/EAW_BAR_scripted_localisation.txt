@@ -1050,3 +1050,388 @@ defined_text = {
 		localization_key = bar_asinti_sigma_event_dialogue_text_empty
 	}
 }
+
+
+defined_text = {
+    name = BAR_asinti_knights_upgrade_1_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_knights2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_knights
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_knights_upgrade_2_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_knights3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_knights2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_knights_upgrade_3_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_knights_a
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_knights3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_knights_upgrade_4_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_knights_b
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_knights_a
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_knights_upgrade_5_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_knights_b
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_knights_c
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+
+defined_text = {
+    name = BAR_asinti_pegasi_upgrade_1_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_pegasi2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_pegasi
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_pegasi_upgrade_2_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_pegasi3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_pegasi2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_pegasi_upgrade_3_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_pegasi_a
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_pegasi3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_pegasi_upgrade_4_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_pegasi_b
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_pegasi_a
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_pegasi_upgrade_5_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_pegasi_b
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_pegasi_c
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+
+defined_text = {
+    name = BAR_asinti_chargers_upgrade_1_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_chargers_upgrade_2_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_chargers_upgrade_3_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors4
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_chargers_upgrade_4_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors5
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors4
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_chargers_upgrade_5_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors6
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_spirit_warriors5
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+
+defined_text = {
+    name = BAR_asinti_ironpaws_upgrade_1_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_ironpaws_upgrade_2_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws2
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_ironpaws_upgrade_3_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws_a
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws3
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_ironpaws_upgrade_4_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws_b
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws_a
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}
+defined_text = {
+    name = BAR_asinti_ironpaws_upgrade_5_button_bg_image
+    
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws_c
+        }
+        localization_key = "GFX_technology_barrad_folder_small_researched_item_bg"
+    }
+    text = {
+        trigger = {
+            has_tech = tech_ironpaws_b
+        }
+        localization_key = "GFX_technology_barrad_folder_small_available_item_bg"
+    }
+    text = {
+        localization_key = "GFX_technology_barrad_folder_small_unavailable_item_bg"
+    }
+}

@@ -634,7 +634,7 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			bar_silver_star_undead_buff_attack_button_enabled = {
+			bar_silver_star_undead_buff_attack_button_click_enabled = {
 				NOT = {
 					OR = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
@@ -642,7 +642,7 @@ scripted_gui = {
 					}
 				}	
 			}
-			bar_silver_star_undead_buff_def_button_enabled = {
+			bar_silver_star_undead_buff_def_button_click_enabled = {
 				NOT = {
 					OR = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
@@ -650,7 +650,7 @@ scripted_gui = {
 					}
 				}	
 			}
-			bar_silver_star_undead_buff_break_button_enabled = {
+			bar_silver_star_undead_buff_break_button_click_enabled = {
 				NOT = {
 					OR = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
@@ -658,7 +658,7 @@ scripted_gui = {
 					}
 				}	
 			}
-			bar_silver_star_undead_buff_org_button_enabled = {
+			bar_silver_star_undead_buff_org_button_click_enabled = {
 				NOT = {
 					OR = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
@@ -666,7 +666,7 @@ scripted_gui = {
 					}
 				}	
 			}
-			bar_silver_star_undead_buff_piercing_button_enabled = {
+			bar_silver_star_undead_buff_piercing_button_click_enabled = {
 				NOT = {
 					OR = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
@@ -1210,6 +1210,436 @@ scripted_gui = {
 						bar_expedition_show = 1
 					}
 				}
+			}
+		}
+	}
+	bar_blood_decisions_gui = {
+		window_name = "bar_blood_decisions_gui_container"
+		context_type = decision_category
+		effects = {
+			BAR_asinti_knights_upgrade_1_button_click = {
+				set_technology = {
+					tech_knights2 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_knights_upgrade_2_button_click = {
+				set_technology = {
+					tech_knights3 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_knights_upgrade_3_button_click = {
+				set_technology = {
+					tech_knights_a = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_knights_upgrade_4_button_click = {
+				set_technology = {
+					tech_knights_b = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_knights_upgrade_5_button_click = {
+				set_technology = {
+					tech_knights_c = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_pegasi_upgrade_1_button_click = {
+				set_technology = {
+					tech_pegasi2 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_pegasi_upgrade_2_button_click = {
+				set_technology = {
+					tech_pegasi3 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_pegasi_upgrade_3_button_click = {
+				set_technology = {
+					tech_pegasi_a = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_pegasi_upgrade_4_button_click = {
+				set_technology = {
+					tech_pegasi_b = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_pegasi_upgrade_5_button_click = {
+				set_technology = {
+					tech_pegasi_c = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_chargers_upgrade_1_button_click = {
+				set_technology = {
+					tech_spirit_warriors2 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_chargers_upgrade_2_button_click = {
+				set_technology = {
+					tech_spirit_warriors3 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_chargers_upgrade_3_button_click = {
+				set_technology = {
+					tech_spirit_warriors4 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_chargers_upgrade_4_button_click = {
+				set_technology = {
+					tech_spirit_warriors5 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_chargers_upgrade_5_button_click = {
+				set_technology = {
+					tech_spirit_warriors6 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_1_button_click = {
+				set_technology = {
+					tech_ironpaws2 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_2_button_click = {
+				set_technology = {
+					tech_ironpaws3 = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_3_button_click = {
+				set_technology = {
+					tech_ironpaws_a = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_4_button_click = {
+				set_technology = {
+					tech_ironpaws_b = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_5_button_click = {
+				set_technology = {
+					tech_ironpaws_c = 1
+				}
+				subtract_from_variable = {
+					BAR_asinti_blood_resource = 10
+				}
+			}
+		}
+		triggers = {
+			BAR_asinti_knights_upgrade_1_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_knights
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_knights
+				NOT = {
+					has_tech = tech_knights2
+				}
+			}
+			BAR_asinti_knights_upgrade_2_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_knights
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_knights2
+				NOT = {
+					has_tech = tech_knights3
+				}
+			}
+			BAR_asinti_knights_upgrade_3_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_knights
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_knights3
+				NOT = {
+					has_tech = tech_knights_a
+				}
+			}
+			BAR_asinti_knights_upgrade_4_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_knights
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_knights_a
+				NOT = {
+					has_tech = tech_knights_b
+				}
+			}
+			BAR_asinti_knights_upgrade_5_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_knights
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_knights_b
+				NOT = {
+					has_tech = tech_knights_c
+				}
+			}			
+			BAR_asinti_pegasi_upgrade_1_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_pegasi
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_pegasi
+				NOT = {
+					has_tech = tech_pegasi2
+				}
+			}
+			BAR_asinti_pegasi_upgrade_2_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_pegasi
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_pegasi2
+				NOT = {
+					has_tech = tech_pegasi3
+				}
+			}
+			BAR_asinti_pegasi_upgrade_3_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_pegasi
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_pegasi3
+				NOT = {
+					has_tech = tech_pegasi_a
+				}
+			}
+			BAR_asinti_pegasi_upgrade_4_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_pegasi
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_pegasi_a
+				NOT = {
+					has_tech = tech_pegasi_b
+				}
+			}
+			BAR_asinti_pegasi_upgrade_5_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_pegasi
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_pegasi_b
+				NOT = {
+					has_tech = tech_pegasi_c
+				}
+			}
+			BAR_asinti_chargers_upgrade_1_button_click_enabled = {
+				has_completed_focus = BAR_asinti_super_drugs
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_spirit_warriors
+				NOT = {
+					has_tech = tech_spirit_warriors2
+				}
+			}
+			BAR_asinti_chargers_upgrade_2_button_click_enabled = {
+				has_completed_focus = BAR_asinti_super_drugs
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_spirit_warriors2
+				NOT = {
+					has_tech = tech_spirit_warriors3
+				}
+			}
+			BAR_asinti_chargers_upgrade_3_button_click_enabled = {
+				has_completed_focus = BAR_asinti_super_drugs
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_spirit_warriors3
+				NOT = {
+					has_tech = tech_spirit_warriors4
+				}
+			}
+			BAR_asinti_chargers_upgrade_4_button_click_enabled = {
+				has_completed_focus = BAR_asinti_super_drugs
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_spirit_warriors4
+				NOT = {
+					has_tech = tech_spirit_warriors5
+				}
+			}
+			BAR_asinti_chargers_upgrade_5_button_click_enabled = {
+				has_completed_focus = BAR_asinti_super_drugs
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_spirit_warriors5
+				NOT = {
+					has_tech = tech_spirit_warriors6
+				}
+			}	
+			BAR_asinti_ironpaws_upgrade_1_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_ironpaws
+				NOT = {
+					has_tech = tech_ironpaws2
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_2_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_ironpaws2
+				NOT = {
+					has_tech = tech_ironpaws3
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_3_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_ironpaws3
+				NOT = {
+					has_tech = tech_ironpaws_a
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_4_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_ironpaws_a
+				NOT = {
+					has_tech = tech_ironpaws_b
+				}
+			}
+			BAR_asinti_ironpaws_upgrade_5_button_click_enabled = {
+				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				check_variable = {
+					BAR_asinti_blood_resource > 9
+				}
+				has_tech = tech_ironpaws_b
+				NOT = {
+					has_tech = tech_ironpaws_c
+				}
+			}
+		}
+		properties = {
+			BAR_asinti_knights_upgrade_1_button = {
+				image = "[BAR_asinti_knights_upgrade_1_button_bg_image]"
+			}
+			BAR_asinti_knights_upgrade_2_button = {
+				image = "[BAR_asinti_knights_upgrade_2_button_bg_image]"
+			}
+			BAR_asinti_knights_upgrade_3_button = {
+				image = "[BAR_asinti_knights_upgrade_3_button_bg_image]"
+			}
+			BAR_asinti_knights_upgrade_4_button = {
+				image = "[BAR_asinti_knights_upgrade_4_button_bg_image]"
+			}
+			BAR_asinti_knights_upgrade_5_button = {
+				image = "[BAR_asinti_knights_upgrade_5_button_bg_image]"
+			}
+			BAR_asinti_pegasi_upgrade_1_button = {
+				image = "[BAR_asinti_pegasi_upgrade_1_button_bg_image]"
+			}
+			BAR_asinti_pegasi_upgrade_2_button = {
+				image = "[BAR_asinti_pegasi_upgrade_2_button_bg_image]"
+			}
+			BAR_asinti_pegasi_upgrade_3_button = {
+				image = "[BAR_asinti_pegasi_upgrade_3_button_bg_image]"
+			}
+			BAR_asinti_pegasi_upgrade_4_button = {
+				image = "[BAR_asinti_pegasi_upgrade_4_button_bg_image]"
+			}
+			BAR_asinti_pegasi_upgrade_5_button = {
+				image = "[BAR_asinti_pegasi_upgrade_5_button_bg_image]"
+			}
+			BAR_asinti_chargers_upgrade_1_button = {
+				image = "[BAR_asinti_chargers_upgrade_1_button_bg_image]"
+			}
+			BAR_asinti_chargers_upgrade_2_button = {
+				image = "[BAR_asinti_chargers_upgrade_2_button_bg_image]"
+			}
+			BAR_asinti_chargers_upgrade_3_button = {
+				image = "[BAR_asinti_chargers_upgrade_3_button_bg_image]"
+			}
+			BAR_asinti_chargers_upgrade_4_button = {
+				image = "[BAR_asinti_chargers_upgrade_4_button_bg_image]"
+			}
+			BAR_asinti_chargers_upgrade_5_button = {
+				image = "[BAR_asinti_chargers_upgrade_5_button_bg_image]"
+			}
+			BAR_asinti_ironpaws_upgrade_1_button = {
+				image = "[BAR_asinti_ironpaws_upgrade_1_button_bg_image]"
+			}
+			BAR_asinti_ironpaws_upgrade_2_button = {
+				image = "[BAR_asinti_ironpaws_upgrade_2_button_bg_image]"
+			}
+			BAR_asinti_ironpaws_upgrade_3_button = {
+				image = "[BAR_asinti_ironpaws_upgrade_3_button_bg_image]"
+			}
+			BAR_asinti_ironpaws_upgrade_4_button = {
+				image = "[BAR_asinti_ironpaws_upgrade_4_button_bg_image]"
+			}
+			BAR_asinti_ironpaws_upgrade_5_button = {
+				image = "[BAR_asinti_ironpaws_upgrade_5_button_bg_image]"
 			}
 		}
 	}
@@ -2082,222 +2512,222 @@ scripted_gui = {
 				has_country_flag = bar_strike_the_earth_unlock_level_4
 				has_completed_focus = BAR_strike_the_earth_focus
 			}
-			bar_strike_the_earth_excavation_1_enabled = {
+			bar_strike_the_earth_excavation_1_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 			}
-			bar_strike_the_earth_excavation_2_enabled = {
+			bar_strike_the_earth_excavation_2_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 			}
-			bar_strike_the_earth_excavation_3_enabled = {
+			bar_strike_the_earth_excavation_3_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 			}
-			bar_strike_the_earth_excavation_4_enabled = {
+			bar_strike_the_earth_excavation_4_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 			}
-			bar_strike_the_earth_excavation_5_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_1
-			}
-			bar_strike_the_earth_excavation_6_enabled = {
+			bar_strike_the_earth_excavation_5_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_7_enabled = {
+			bar_strike_the_earth_excavation_6_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_8_enabled = {
+			bar_strike_the_earth_excavation_7_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_9_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_2
-			}
-			bar_strike_the_earth_excavation_10_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_2
-			}
-			bar_strike_the_earth_excavation_11_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_2
-			}
-			bar_strike_the_earth_excavation_12_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_2
-			}
-			bar_strike_the_earth_excavation_13_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_3
-			}
-			bar_strike_the_earth_excavation_14_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_3
-			}
-			bar_strike_the_earth_excavation_15_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_3
-			}
-			bar_strike_the_earth_excavation_16_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_3
-			}
-			bar_strike_the_earth_excavation_17_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_4
-			}
-			bar_strike_the_earth_excavation_18_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_4
-			}
-			bar_strike_the_earth_excavation_19_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_4
-			}
-			bar_strike_the_earth_excavation_20_enabled = {
-				has_political_power > 14
-				owns_state = 624
-				has_country_flag = bar_strike_the_earth_unlock_level_4
-			}
-			bar_strike_the_earth_excavation_21_enabled = {
-				has_political_power > 14
-				owns_state = 624
-			}
-			bar_strike_the_earth_excavation_22_enabled = {
-				has_political_power > 14
-				owns_state = 624
-			}
-			bar_strike_the_earth_excavation_23_enabled = {
-				has_political_power > 14
-				owns_state = 624
-			}
-			bar_strike_the_earth_excavation_24_enabled = {
-				has_political_power > 14
-				owns_state = 624
-			}
-			bar_strike_the_earth_excavation_25_enabled = {
+			bar_strike_the_earth_excavation_8_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_26_enabled = {
+			bar_strike_the_earth_excavation_9_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_10_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_11_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_12_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_2
+			}
+			bar_strike_the_earth_excavation_13_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_14_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_15_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_16_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_3
+			}
+			bar_strike_the_earth_excavation_17_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_18_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_19_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_20_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_4
+			}
+			bar_strike_the_earth_excavation_21_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_22_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_23_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_24_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+			}
+			bar_strike_the_earth_excavation_25_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_27_enabled = {
+			bar_strike_the_earth_excavation_26_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_28_enabled = {
+			bar_strike_the_earth_excavation_27_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_excavation_29_enabled = {
+			bar_strike_the_earth_excavation_28_click_enabled = {
+				has_political_power > 14
+				owns_state = 624
+				has_country_flag = bar_strike_the_earth_unlock_level_1
+			}
+			bar_strike_the_earth_excavation_29_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_2
 			}
-			bar_strike_the_earth_excavation_30_enabled = {
+			bar_strike_the_earth_excavation_30_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_2
 			}
-			bar_strike_the_earth_excavation_31_enabled = {
+			bar_strike_the_earth_excavation_31_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_2
 			}
-			bar_strike_the_earth_excavation_32_enabled = {
+			bar_strike_the_earth_excavation_32_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_2
 			}
-			bar_strike_the_earth_excavation_33_enabled = {
+			bar_strike_the_earth_excavation_33_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_3
 			}
-			bar_strike_the_earth_excavation_34_enabled = {
+			bar_strike_the_earth_excavation_34_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_3
 			}
-			bar_strike_the_earth_excavation_35_enabled = {
+			bar_strike_the_earth_excavation_35_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_3
 			}
-			bar_strike_the_earth_excavation_36_enabled = {
+			bar_strike_the_earth_excavation_36_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_3
 			}
-			bar_strike_the_earth_excavation_37_enabled = {
+			bar_strike_the_earth_excavation_37_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_4
 			}
-			bar_strike_the_earth_excavation_38_enabled = {
+			bar_strike_the_earth_excavation_38_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_4
 			}
-			bar_strike_the_earth_excavation_39_enabled = {
+			bar_strike_the_earth_excavation_39_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_4
 			}
-			bar_strike_the_earth_excavation_40_enabled = {
+			bar_strike_the_earth_excavation_40_click_enabled = {
 				has_political_power > 14
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_4
 			}
-			bar_strike_the_earth_skull_enabled = {
+			bar_strike_the_earth_skull_click_enabled = {
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_5
 			}
-			bar_strike_the_earth_dig_deeper_1_enabled = {
+			bar_strike_the_earth_dig_deeper_1_click_enabled = {
 				has_political_power > 49
 				owns_state = 624
 			}
-			bar_strike_the_earth_dig_deeper_2_enabled = {
+			bar_strike_the_earth_dig_deeper_2_click_enabled = {
 				has_political_power > 49
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_1
 			}
-			bar_strike_the_earth_dig_deeper_3_enabled = {
+			bar_strike_the_earth_dig_deeper_3_click_enabled = {
 				has_political_power > 49
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_2
 			}
-			bar_strike_the_earth_dig_deeper_4_enabled = {
+			bar_strike_the_earth_dig_deeper_4_click_enabled = {
 				has_political_power > 49
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_3
 			}
-			bar_strike_the_earth_dig_deeper_5_enabled = {
+			bar_strike_the_earth_dig_deeper_5_click_enabled = {
 				has_political_power > 49
 				owns_state = 624
 				has_country_flag = bar_strike_the_earth_unlock_level_4

@@ -3861,10 +3861,10 @@ country_event = {
 			BAR_silver_star = {
 				set_portraits = {
 					civilian = {
-						large = "gfx/leaders/BAR/lich.tga"
+						large = "gfx/leaders/BAR/silver_star_lich.tga"
 					}
 					army = {
-						large = "gfx/leaders/BAR/lich.tga"
+						large = "gfx/leaders/BAR/silver_star_lich.tga"
 						small = "gfx/interface/ideas/Advisors/BAR/idea_lich.tga"
 					}
 				}
@@ -4414,21 +4414,6 @@ country_event = {
 }
 
 country_event = {
-	id = barrad_asinti.8
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.8"
-	}
-	title = barrad_asinti.8.t
-	desc = barrad_asinti.8.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.8.a
-		add_war_support = 0.1
-	}
-}
-
-country_event = {
 	id = barrad_asinti.9
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.9"
@@ -4480,6 +4465,32 @@ country_event = {
 	option = {
 		name = barrad_asinti.11.a
 		add_ideas = BAR_asinti_end
+	}
+}
+country_event = {
+	id = barrad_asinti.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.12"
+	}
+	title = barrad_asinti.12.t
+	desc = barrad_asinti.12.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.12.a
+		add_ideas = BAR_asinti_end
+		add_corps_commander_role = {
+			character = BAR_asinti_jr
+			traits = {
+				zebra_race_trait
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 }
 

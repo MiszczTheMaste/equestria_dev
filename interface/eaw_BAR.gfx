@@ -3002,7 +3002,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_bar_viira_portrait"
-		texturefile = "gfx/leaders/BAR/Viira.tga"
+		texturefile = "gfx/leaders/BAR/viira.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}

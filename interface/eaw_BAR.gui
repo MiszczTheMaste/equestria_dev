@@ -2867,6 +2867,423 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
+		name = "bar_blood_decisions_gui_container"
+		position = { x = 0 y = 20 }
+		size = { width = 100% height = 400 }
+	
+		### knights row
+
+		buttonType = {
+			name ="BAR_asinti_knights_upgrade_1_button"
+			spriteType = "GFX_blank"
+			position = { x=20 y=0 }
+		}
+		iconType = {
+			name ="BAR_asinti_knights_upgrade_1_icon"
+			spriteType = "GFX_tech_knights2_medium"
+			position = { x=21 y=2 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_knights_upgrade_1_cost"
+			position = {x=30 y=75}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}			
+		buttonType = {
+			name ="BAR_asinti_knights_upgrade_2_button"
+			spriteType = "GFX_blank"
+			position = { x=120 y=0 }
+		}
+		iconType = {
+			name ="BAR_asinti_knights_upgrade_2_icon"
+			spriteType = "GFX_tech_knights3_medium"
+			position = { x=121 y=2 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_knights_upgrade_2_cost"
+			position = {x=130 y=75}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_knights_upgrade_3_button"
+			spriteType = "GFX_blank"
+			position = { x=220 y=0 }
+		}
+		iconType = {
+			name ="BAR_asinti_knights_upgrade_3_icon"
+			spriteType = "GFX_tech_knights_a_medium"
+			position = { x=221 y=2 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_knights_upgrade_3_cost"
+			position = {x=230 y=75}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_knights_upgrade_4_button"
+			spriteType = "GFX_blank"
+			position = { x=320 y=0 }
+		}
+		iconType = {
+			name ="BAR_asinti_knights_upgrade_4_icon"
+			spriteType = "GFX_tech_knights_b_medium"
+			position = { x=321 y=2 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_knights_upgrade_4_cost"
+			position = {x=330 y=75}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_knights_upgrade_5_button"
+			spriteType = "GFX_blank"
+			position = { x=420 y=0 }
+		}
+		iconType = {
+			name ="BAR_asinti_knights_upgrade_5_icon"
+			spriteType = "GFX_tech_knights_c_medium"
+			position = { x=421 y=2 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_knights_upgrade_5_cost"
+			position = {x=430 y=75}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}	
+
+		### pegasi row
+
+		buttonType = {
+			name ="BAR_asinti_pegasi_upgrade_1_button"
+			spriteType = "GFX_blank"
+			position = { x=20 y=100 }
+		}
+		iconType = {
+			name ="BAR_asinti_pegasi_upgrade_1_icon"
+			spriteType = "GFX_tech_pegasi2_medium"
+			position = { x=21 y=102 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_pegasi_upgrade_1_cost"
+			position = {x=30 y=175}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}			
+		buttonType = {
+			name ="BAR_asinti_pegasi_upgrade_2_button"
+			spriteType = "GFX_blank"
+			position = { x=120 y=100 }
+		}
+		iconType = {
+			name ="BAR_asinti_pegasi_upgrade_2_icon"
+			spriteType = "GFX_tech_pegasi3_medium"
+			position = { x=121 y=102 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_pegasi_upgrade_2_cost"
+			position = {x=130 y=175}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_pegasi_upgrade_3_button"
+			spriteType = "GFX_blank"
+			position = { x=220 y=100 }
+		}
+		iconType = {
+			name ="BAR_asinti_pegasi_upgrade_3_icon"
+			spriteType = "GFX_tech_pegasi_a_medium"
+			position = { x=221 y=102 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_pegasi_upgrade_3_cost"
+			position = {x=230 y=175}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_pegasi_upgrade_4_button"
+			spriteType = "GFX_blank"
+			position = { x=320 y=100 }
+		}
+		iconType = {
+			name ="BAR_asinti_pegasi_upgrade_4_icon"
+			spriteType = "GFX_tech_pegasi_b_medium"
+			position = { x=321 y=102 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_pegasi_upgrade_4_cost"
+			position = {x=330 y=175}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_pegasi_upgrade_5_button"
+			spriteType = "GFX_blank"
+			position = { x=420 y=100 }
+		}
+		iconType = {
+			name ="BAR_asinti_pegasi_upgrade_5_icon"
+			spriteType = "GFX_tech_pegasi_c_medium"
+			position = { x=421 y=102 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_pegasi_upgrade_5_cost"
+			position = {x=430 y=175}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}	
+
+		### chargers row
+
+		buttonType = {
+			name ="BAR_asinti_chargers_upgrade_1_button"
+			spriteType = "GFX_blank"
+			position = { x=20 y=200 }
+		}
+		iconType = {
+			name ="BAR_asinti_chargers_upgrade_1_icon"
+			spriteType = "GFX_tech_spirit_warriors2_medium"
+			position = { x=21 y=202 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_chargers_upgrade_1_cost"
+			position = {x=30 y=275}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}			
+		buttonType = {
+			name ="BAR_asinti_chargers_upgrade_2_button"
+			spriteType = "GFX_blank"
+			position = { x=120 y=200 }
+		}
+		iconType = {
+			name ="BAR_asinti_chargers_upgrade_2_icon"
+			spriteType = "GFX_tech_spirit_warriors3_medium"
+			position = { x=121 y=202 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_chargers_upgrade_2_cost"
+			position = {x=130 y=275}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_chargers_upgrade_3_button"
+			spriteType = "GFX_blank"
+			position = { x=220 y=200 }
+		}
+		iconType = {
+			name ="BAR_asinti_chargers_upgrade_3_icon"
+			spriteType = "GFX_tech_spirit_warriors4_medium"
+			position = { x=221 y=202 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_chargers_upgrade_3_cost"
+			position = {x=230 y=275}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_chargers_upgrade_4_button"
+			spriteType = "GFX_blank"
+			position = { x=320 y=200 }
+		}
+		iconType = {
+			name ="BAR_asinti_chargers_upgrade_4_icon"
+			spriteType = "GFX_tech_spirit_warriors5_medium"
+			position = { x=321 y=202 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_chargers_upgrade_4_cost"
+			position = {x=330 y=275}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_chargers_upgrade_5_button"
+			spriteType = "GFX_blank"
+			position = { x=420 y=200 }
+		}
+		iconType = {
+			name ="BAR_asinti_chargers_upgrade_5_icon"
+			spriteType = "GFX_tech_spirit_warriors6_medium"
+			position = { x=421 y=202 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_chargers_upgrade_5_cost"
+			position = {x=430 y=275}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}	
+
+		### diamond dogs row
+
+		buttonType = {
+			name ="BAR_asinti_ironpaws_upgrade_1_button"
+			spriteType = "GFX_blank"
+			position = { x=20 y=300 }
+		}
+		iconType = {
+			name ="BAR_asinti_ironpaws_upgrade_1_icon"
+			spriteType = "GFX_tech_ironpaws2_medium"
+			position = { x=21 y=302 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_ironpaws_upgrade_1_cost"
+			position = {x=30 y=375}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}			
+		buttonType = {
+			name ="BAR_asinti_ironpaws_upgrade_2_button"
+			spriteType = "GFX_blank"
+			position = { x=120 y=300 }
+		}
+		iconType = {
+			name ="BAR_asinti_ironpaws_upgrade_2_icon"
+			spriteType = "GFX_tech_ironpaws3_medium"
+			position = { x=121 y=302 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_ironpaws_upgrade_2_cost"
+			position = {x=130 y=375}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_ironpaws_upgrade_3_button"
+			spriteType = "GFX_blank"
+			position = { x=220 y=300 }
+		}
+		iconType = {
+			name ="BAR_asinti_ironpaws_upgrade_3_icon"
+			spriteType = "GFX_tech_ironpaws_a_medium"
+			position = { x=221 y=302 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_ironpaws_upgrade_3_cost"
+			position = {x=230 y=375}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_ironpaws_upgrade_4_button"
+			spriteType = "GFX_blank"
+			position = { x=320 y=300 }
+		}
+		iconType = {
+			name ="BAR_asinti_ironpaws_upgrade_4_icon"
+			spriteType = "GFX_tech_ironpaws_b_medium"
+			position = { x=321 y=302 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_ironpaws_upgrade_4_cost"
+			position = {x=330 y=375}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}		
+		buttonType = {
+			name ="BAR_asinti_ironpaws_upgrade_5_button"
+			spriteType = "GFX_blank"
+			position = { x=420 y=300 }
+		}
+		iconType = {
+			name ="BAR_asinti_ironpaws_upgrade_5_icon"
+			spriteType = "GFX_tech_ironpaws_c_medium"
+			position = { x=421 y=302 }
+			alwaystransparent = yes		
+		}
+		instantTextBoxType = {
+			name = "BAR_asinti_ironpaws_upgrade_5_cost"
+			position = {x=430 y=375}
+			font = "hoi_16mbs"
+			format = left
+			maxWidth = 70
+			maxHeight = 50
+			text = bar_blood_cost_10k
+		}	
+	}
+	containerWindowType = {
 		name = "bar_strike_earth_decisions_gui_container"
 		position = { x = 0 y = 0 }
 		size = { width = 100% height = 570 }

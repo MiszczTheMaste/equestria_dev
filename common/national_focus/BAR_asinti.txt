@@ -137,6 +137,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05
+			country_event = { id = barrad_asinti.12 }
 		}
 	}
 	focus = {
@@ -347,98 +348,7 @@ focus_tree = {
 				remove_idea = BAR_asinti_drugs
 				add_idea = BAR_asinti_drugs_2
 			}
-		}
-	}
-	focus = {
-		id = BAR_asinti_upgrade_chargers
-		icon = GFX_goal_revolution_pony
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = BAR_asinti_enable_chargers
-		prerequisite = {
-			focus = BAR_asinti_enable_chargers
-		}
-		prerequisite = {
-			focus = BAR_asinti_super_drugs
-		}
-		available = {
-			has_completed_focus = BAR_blood_rituals
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = BAR_asinti_upgrade_chargers_tooltip
-		}
-	}
-	focus = {
-		id = BAR_asinti_upgrade_knights
-		icon = GFX_goal_revolution_pony
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = BAR_asinti_enable_knights
-		prerequisite = {
-			focus = BAR_asinti_enable_knights
-		}
-		prerequisite = {
-			focus = BAR_asinti_super_drugs
-		}
-		available = {
-			has_completed_focus = BAR_blood_rituals
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = BAR_asinti_upgrade_knights_tooltip
-		}
-	}
-	focus = {
-		id = BAR_asinti_upgrade_pegasi
-		icon = GFX_goal_revolution_pony
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = BAR_asinti_enable_pegasi
-		prerequisite = {
-			focus = BAR_asinti_enable_pegasi
-		}
-		prerequisite = {
-			focus = BAR_asinti_super_drugs
-		}
-		available = {
-			has_completed_focus = BAR_blood_rituals
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = BAR_asinti_upgrade_pegasi_tooltip
-		}
-	}
-	focus = {
-		id = BAR_asinti_upgrade_ironpaws
-		icon = GFX_goal_revolution_pony
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = BAR_asinti_enable_ironpaws
-		prerequisite = {
-			focus = BAR_asinti_enable_ironpaws
-		}
-		prerequisite = {
-			focus = BAR_asinti_super_drugs
-		}
-		available = {
-			has_completed_focus = BAR_blood_rituals
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			custom_effect_tooltip = BAR_asinti_upgrade_ironpaws_tooltip
+			custom_effect_tooltip = BAR_asinti_upgrade_special_units_tooltip
 		}
 	}
 	focus = {
@@ -1195,9 +1105,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			country_event = {
-				id = barrad_asinti.8
-			}
+			add_war_support = 0.1
 		}
 	}
 	focus = {

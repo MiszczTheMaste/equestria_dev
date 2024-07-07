@@ -1950,11 +1950,11 @@ focus_tree = {
 		id = BAR_asinti_fleet_5
 		icon = GFX_goal_revolution_pony
 		cost = 4
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = BAR_asinti_fleet_4
+		relative_position_id = BAR_asinti_fleet_3
 		prerequisite = {
-			focus = BAR_asinti_fleet_4
+			focus = BAR_asinti_fleet_3
 		}
 		available = {
 			any_owned_state = {

@@ -1247,6 +1247,16 @@ BAR_remove_cooperation = {
                                                                                                                 
 
 
+bar_debuff_leopold = {
+
+}
+bar_debuff_silver_star = {
+
+}
+bar_debuff_asinti = {
+
+}
+
 barrad_kill_leopold = {
 	hidden_effect = {
 		clr_country_flag = barrad_leopold_alive

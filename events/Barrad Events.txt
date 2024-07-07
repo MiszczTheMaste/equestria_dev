@@ -1230,622 +1230,10 @@ country_event = {
 			value = BAR_resources_leopold
 		}
 		bar_viira_resources_add = yes
-		barrad_kill_leopold = yes
+		bar_debuff_leopold = yes
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
 		custom_effect_tooltip = bar_viira_kills_leopold_tooltip
-	}
-}
-
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-
-  #####                                                            ######                                    
- #     # #    #   ##   #####    ##    ####  ##### ###### #####     #     # ######   ##   ##### #    #  ####  
- #       #    #  #  #  #    #  #  #  #    #   #   #      #    #    #     # #       #  #    #   #    # #      
- #       ###### #    # #    # #    # #        #   #####  #    #    #     # #####  #    #   #   ######  ####  
- #       #    # ###### #####  ###### #        #   #      #####     #     # #      ######   #   #    #      # 
- #     # #    # #    # #   #  #    # #    #   #   #      #   #     #     # #      #    #   #   #    # #    # 
-  #####  #    # #    # #    # #    #  ####    #   ###### #    #    ######  ###### #    #   #   #    #  ####  
-                                                                                                             
-
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-
-country_event = {
-	#asinti_silver
-	id = barrad_death.1
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.1"
-	}
-	title = barrad_death.1.t
-	desc = barrad_death.1.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = BAR_silver_immunity
-		set_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		#kill asinti
-		name = barrad_death.1.a
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.711
-				}
-				#asinti
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.721
-				}
-				#silver
-			}
-		}
-	}
-	option = {
-		#kill silver
-		name = barrad_death.1.b
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.721
-				}
-				#silver
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.711
-				}
-				#asinti
-			}
-		}
-	}
-}
-
-country_event = {
-	#asinti_leopold
-	id = barrad_death.2
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.2"
-	}
-	title = barrad_death.2.t
-	desc = barrad_death.2.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = BAR_leopold_immunity
-		set_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		#kill asinti
-		name = barrad_death.2.a
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.712
-				}
-				#asinti
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.731
-				}
-				#leopold
-			}
-		}
-	}
-	option = {
-		#kill leopold
-		name = barrad_death.2.b
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.731
-				}
-				#leopold
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.712
-				}
-				#asinti
-			}
-		}
-	}
-}
-
-country_event = {
-	#asinti_viira
-	id = barrad_death.3
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.3"
-	}
-	title = barrad_death.3.t
-	desc = barrad_death.3.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = BAR_viira_immunity
-		set_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		#kill asinti
-		name = barrad_death.3.a
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.713
-				}
-				#asinti
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.741
-				}
-				#viira
-			}
-		}
-	}
-	option = {
-		#kill viira
-		name = barrad_death.3.b
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.741
-				}
-				#viira
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.713
-				}
-				#asinti
-			}
-		}
-	}
-}
-
-country_event = {
-	#silver_leopold
-	id = barrad_death.4
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.4"
-	}
-	title = barrad_death.4.t
-	desc = barrad_death.4.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = BAR_leopold_immunity
-		set_country_flag = BAR_silver_immunity
-	}
-	option = {
-		#kill leopold
-		name = barrad_death.4.a
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.732
-				}
-				#leopold
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.722
-				}
-				#silver
-			}
-		}
-	}
-	option = {
-		#kill silver
-		name = barrad_death.4.b
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.722
-				}
-				#silver
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.732
-				}
-				#leopold
-			}
-		}
-	}
-}
-
-country_event = {
-	#silver_viira
-	id = barrad_death.5
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.5"
-	}
-	title = barrad_death.5.t
-	desc = barrad_death.5.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = BAR_viira_immunity
-		set_country_flag = BAR_silver_immunity
-	}
-	option = {
-		#kill viira
-		name = barrad_death.5.a
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.742
-				}
-				#viira
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.723
-				}
-				#silver
-			}
-		}
-	}
-	option = {
-		#kill silver
-		name = barrad_death.5.b
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.723
-				}
-				#silver
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.742
-				}
-				#viira
-			}
-		}
-	}
-}
-
-country_event = {
-	#leopold_viira
-	id = barrad_death.6
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.6"
-	}
-	title = barrad_death.6.t
-	desc = barrad_death.6.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_country_flag = BAR_leopold_immunity
-		set_country_flag = BAR_viira_immunity
-	}
-	option = {
-		#kill viira
-		name = barrad_death.6.a
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.743
-				}
-				#viira
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.733
-				}
-				#leopold
-			}
-		}
-	}
-	option = {
-		#kill leopold
-		name = barrad_death.6.b
-		random_list = {
-			75 = {
-				country_event = {
-					id = barrad_death.733
-				}
-				#leopold
-			}
-			25 = {
-				country_event = {
-					id = barrad_death.743
-				}
-				#viira
-			}
-		}
-	}
-}
-
-### asinti death ###
-country_event = {
-	id = barrad_death.711
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.711"
-	}
-	title = barrad_death.711.t
-	desc = barrad_death.711.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_asinti
-		}
-		bar_silver_resources_add = yes
-		barrad_kill_asinti = yes
-		clr_country_flag = BAR_silver_immunity
-		clr_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		name = barrad_death.711.a
-	}
-}
-
-country_event = {
-	id = barrad_death.712
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.712"
-	}
-	title = barrad_death.712.t
-	desc = barrad_death.712.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_variable = { BAR_resource_to_modify_ammount = BAR_resources_asinti }
-		bar_leopold_resources_add = yes
-		barrad_kill_asinti = yes
-		clr_country_flag = BAR_leopold_immunity
-		clr_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		name = barrad_death.712.a
-	}
-}
-
-country_event = {
-	id = barrad_death.713
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.713"
-	}
-	title = barrad_death.713.t
-	desc = barrad_death.713.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_asinti
-		}
-		bar_viira_resources_add = yes
-		barrad_kill_asinti = yes
-		clr_country_flag = BAR_viira_immunity
-		clr_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		name = barrad_death.713.a
-	}
-}
-
-### Silver Star death ###
-country_event = {
-	id = barrad_death.721
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.721"
-	}
-	title = barrad_death.721.t
-	desc = barrad_death.721.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_silver
-		}
-		bar_asinti_resources_add = yes
-		barrad_kill_silver = yes
-		clr_country_flag = BAR_asinti_immunity
-		clr_country_flag = BAR_silver_immunity
-	}
-	option = {
-		name = barrad_death.721.a
-	}
-}
-
-country_event = {
-	id = barrad_death.722
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.722"
-	}
-	title = barrad_death.722.t
-	desc = barrad_death.722.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_variable = { BAR_resource_to_modify_ammount = BAR_resources_silver }
-		bar_leopold_resources_add = yes
-		barrad_kill_silver = yes
-		clr_country_flag = BAR_leopold_immunity
-		clr_country_flag = BAR_silver_immunity
-	}
-	option = {
-		name = barrad_death.722.a
-	}
-}
-
-country_event = {
-	id = barrad_death.723
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.723"
-	}
-	title = barrad_death.723.t
-	desc = barrad_death.723.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_silver
-		}
-		bar_viira_resources_add = yes
-		barrad_kill_silver = yes
-		clr_country_flag = BAR_viira_immunity
-		clr_country_flag = BAR_silver_immunity
-	}
-	option = {
-		name = barrad_death.723.a
-	}
-}
-
-### Leopold death ###
-country_event = {
-	id = barrad_death.731
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.731"
-	}
-	title = barrad_death.731.t
-	desc = barrad_death.731.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_leopold
-		}
-		bar_asinti_resources_add = yes
-		barrad_kill_leopold = yes
-		clr_country_flag = BAR_asinti_immunity
-		clr_country_flag = BAR_leopold_immunity
-	}
-	option = {
-		name = barrad_death.731.a
-	}
-}
-
-country_event = {
-	id = barrad_death.732
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.732"
-	}
-	title = barrad_death.732.t
-	desc = barrad_death.732.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_leopold
-		}
-		bar_silver_resources_add = yes
-		barrad_kill_leopold = yes
-		clr_country_flag = BAR_silver_immunity
-		clr_country_flag = BAR_leopold_immunity
-	}
-	option = {
-		name = barrad_death.732.a
-	}
-}
-
-country_event = {
-	id = barrad_death.733
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.733"
-	}
-	title = barrad_death.733.t
-	desc = barrad_death.733.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {	
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_leopold
-		}
-		bar_viira_resources_add = yes
-		barrad_kill_leopold = yes
-		clr_country_flag = BAR_viira_immunity
-		clr_country_flag = BAR_leopold_immunity
-	}
-	option = {
-		name = barrad_death.733.a
-	}
-}
-
-### Viira death ###
-country_event = {
-	id = barrad_death.741
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.741"
-	}
-	title = barrad_death.741.t
-	desc = barrad_death.741.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_viira
-		}
-		bar_asinti_resources_add = yes
-		barrad_kill_viira = yes
-		clr_country_flag = BAR_viira_immunity
-		clr_country_flag = BAR_asinti_immunity
-	}
-	option = {
-		name = barrad_death.741.a
-	}
-}
-
-country_event = {
-	id = barrad_death.742
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.742"
-	}
-	title = barrad_death.742.t
-	desc = barrad_death.742.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		add_to_variable = {
-			var = BAR_resource_to_modify_ammount
-			value = BAR_resources_viira
-		}
-		bar_silver_resources_add = yes
-		barrad_kill_viira = yes
-		clr_country_flag = BAR_viira_immunity
-		clr_country_flag = BAR_silver_immunity
-	}
-	option = {
-		name = barrad_death.742.a
-	}
-}
-
-country_event = {
-	id = barrad_death.743
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_death.743"
-	}
-	title = barrad_death.743.t
-	desc = barrad_death.743.d
-	picture = GFX_event_old_mannor
-	is_triggered_only = yes
-	immediate = {
-		set_variable = { BAR_resource_to_modify_ammount = BAR_resources_viira }
-		bar_leopold_resources_add = yes
-		barrad_kill_viira = yes
-		clr_country_flag = BAR_viira_immunity
-		clr_country_flag = BAR_leopold_immunity
-	}
-	option = {
-		name = barrad_death.743.a
 	}
 }
 
@@ -4433,27 +3821,6 @@ country_event = {
 }
 
 country_event = {
-	id = barrad_asinti.10
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.10"
-	}
-	title = barrad_asinti.10.t
-	desc = barrad_asinti.10.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.10.a
-		BAR_asinti = {
-			add_trait = {
-				ideology = religious_socialism
-				trait = BAR_asinti_absent
-			}
-		}
-		country_event = { id = barrad_asinti.11 days = 4 }
-	}
-}
-
-country_event = {
 	id = barrad_asinti.11
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.11"
@@ -4465,6 +3832,15 @@ country_event = {
 	option = {
 		name = barrad_asinti.11.a
 		add_ideas = BAR_asinti_end
+		BAR_asinti = {
+			add_trait = {
+				ideology = religious_socialism
+				trait = BAR_asinti_absent
+			}
+		}
+		set_variable = {
+			bar_asinti_sigma_event_2 = 0
+		}
 	}
 }
 country_event = {
@@ -5259,12 +4635,13 @@ country_event = {
 			BAR_new_viira_note = yes
 		}
 		trigger = {
-			BAR_resources_above_viira_1000 = yes
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
+			}
 		}
 		country_event = {
 			id = bar_viira_murders.2
 		}
-		bar_viira_resources_subtract_1000 = yes
 	}
 	option = {
 		name = bar_viira_murders.1.c
@@ -5290,7 +4667,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_viira_murders.2.a
-		barrad_kill_silver = yes
+		add_to_variable = {
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_silver
+		}
+		bar_viira_resources_add = yes
+		bar_debuff_silver_star = yes
 	}
 }
 
@@ -5305,8 +4687,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_viira_murders.3.a
-		barrad_kill_asinti = yes
-		bar_viira_resources_subtract_1000 = yes
+		add_to_variable = {
+			var = BAR_resource_to_modify_ammount
+			value = BAR_resources_asinti
+		}
+		bar_viira_resources_add = yes
+		bar_debuff_asinti = yes
 		if = {
 			limit = {
 				has_idea = BAR_temple_construct_z_f_p

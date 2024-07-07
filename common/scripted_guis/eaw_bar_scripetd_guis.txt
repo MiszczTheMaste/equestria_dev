@@ -14,19 +14,21 @@ scripted_gui = {
 					}
 					clear_variable = bar_pen_screen_show
 					clear_variable = bar_pen_screen
-				} else_if = {
+				}
+				else_if = {
 					limit = {
 						has_variable = bar_pen_screen
 					}
 					clear_variable = bar_pen_screen
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_pen_screen_show = 1
 					}
 				}
 			}
 		}
-	}	
+	}
 	viira_journal_button = {
 		window_name = "viira_journal_button_container"
 		parent_window_token = politics_tab
@@ -41,14 +43,15 @@ scripted_gui = {
 						has_variable = bar_viira_show_notes
 					}
 					clear_variable = bar_viira_show_notes
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_viira_show_notes = 1
 					}
 				}
 			}
 		}
-	}	
+	}
 	pentarchy_friendship_tab = {
 		window_name = "pentarchy_friendship_tab_container"
 		parent_window_token = politics_tab
@@ -87,7 +90,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_2
 		}
 	}
-	bar_viira_note_2= {
+	bar_viira_note_2 = {
 		window_name = "bar_viira_note_2"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -188,7 +191,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_11
 		}
 	}
-	bar_viira_note_12 = { 
+	bar_viira_note_12 = {
 		window_name = "bar_viira_note_12"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -198,7 +201,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_12
 		}
 	}
-	bar_viira_note_13 = { 
+	bar_viira_note_13 = {
 		window_name = "bar_viira_note_13"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -218,7 +221,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_14
 		}
 	}
-	bar_viira_note_15 = { 
+	bar_viira_note_15 = {
 		window_name = "bar_viira_note_15"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -228,7 +231,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_15
 		}
 	}
-	bar_viira_note_16 = { 
+	bar_viira_note_16 = {
 		window_name = "bar_viira_note_16"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -238,7 +241,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_16
 		}
 	}
-	bar_viira_note_17 = { 
+	bar_viira_note_17 = {
 		window_name = "bar_viira_note_17"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -248,7 +251,7 @@ scripted_gui = {
 			has_country_flag = bar_viira_investigation_step_17
 		}
 	}
-	bar_viira_note_18 = { 
+	bar_viira_note_18 = {
 		window_name = "bar_viira_note_18"
 		context_type = player_context
 		dirty = bar_viira_show_notes
@@ -480,7 +483,6 @@ scripted_gui = {
 			tag = BAR
 		}
 	}
-
 	#######################################################################################
 	#######################################################################################
 	#######################################################################################
@@ -490,7 +492,6 @@ scripted_gui = {
 	#######################################################################################
 	#######################################################################################
 	#######################################################################################
-
 	bar_viira_map_overlays = {
 		window_name = "bar_viira_map_overlays_container"
 		parent_window_name = "MapmodesInterface_Ingame"
@@ -515,7 +516,8 @@ scripted_gui = {
 					}
 					clr_country_flag = bar_viira_nuke_mode
 					scoped_play_song = "maintheme"
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_nuke_mode
 					scoped_play_song = "loss"
 				}
@@ -526,7 +528,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_zone_mode
 					}
 					clr_country_flag = bar_viira_zone_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_zone_mode
 				}
 			}
@@ -536,7 +539,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_x_decay_mode
 					}
 					clr_country_flag = bar_viira_x_decay_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_x_decay_mode
 				}
 			}
@@ -546,7 +550,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_spell_gas_mode
 					}
 					clr_country_flag = bar_viira_spell_gas_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_spell_gas_mode
 				}
 			}
@@ -556,7 +561,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_electromagnetism_mode
 					}
 					clr_country_flag = bar_viira_electromagnetism_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_electromagnetism_mode
 				}
 			}
@@ -566,7 +572,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_psi_emission_mode
 					}
 					clr_country_flag = bar_viira_psi_emission_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_psi_emission_mode
 				}
 			}
@@ -576,7 +583,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_incineration_mode
 					}
 					clr_country_flag = bar_viira_incineration_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_incineration_mode
 				}
 			}
@@ -586,7 +594,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_earthshocks_mode
 					}
 					clr_country_flag = bar_viira_earthshocks_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_earthshocks_mode
 				}
 			}
@@ -596,7 +605,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_global_psi_emission_mode
 					}
 					clr_country_flag = bar_viira_global_psi_emission_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_global_psi_emission_mode
 				}
 			}
@@ -606,7 +616,8 @@ scripted_gui = {
 						has_country_flag = bar_viira_psi_migration_mode
 					}
 					clr_country_flag = bar_viira_psi_migration_mode
-				} else = {
+				}
+				else = {
 					set_country_flag = bar_viira_psi_migration_mode
 				}
 			}
@@ -621,7 +632,6 @@ scripted_gui = {
 	#######################################################################################
 	#######################################################################################
 	#######################################################################################
-
 	bar_silver_star_map_overlays_container = {
 		window_name = "bar_silver_star_map_overlays_container"
 		parent_window_name = "MapmodesInterface_Ingame"
@@ -640,7 +650,7 @@ scripted_gui = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
 						has_country_flag = BAR_un_buff_attack_flag
 					}
-				}	
+				}
 			}
 			bar_silver_star_undead_buff_def_button_click_enabled = {
 				NOT = {
@@ -648,7 +658,7 @@ scripted_gui = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
 						has_country_flag = BAR_un_buff_def_flag
 					}
-				}	
+				}
 			}
 			bar_silver_star_undead_buff_break_button_click_enabled = {
 				NOT = {
@@ -656,7 +666,7 @@ scripted_gui = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
 						has_country_flag = BAR_un_buff_break_flag
 					}
-				}	
+				}
 			}
 			bar_silver_star_undead_buff_org_button_click_enabled = {
 				NOT = {
@@ -664,7 +674,7 @@ scripted_gui = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
 						has_country_flag = BAR_un_buff_org_flag
 					}
-				}	
+				}
 			}
 			bar_silver_star_undead_buff_piercing_button_click_enabled = {
 				NOT = {
@@ -672,7 +682,7 @@ scripted_gui = {
 						has_country_flag = bar_silver_star_undead_buff_cooldown
 						has_country_flag = BAR_un_buff_piercing_flag
 					}
-				}	
+				}
 			}
 		}
 		effects = {
@@ -744,7 +754,6 @@ scripted_gui = {
 			}
 		}
 	}
-	
 	#######################################################################################
 	#######################################################################################
 	#######################################################################################
@@ -754,7 +763,6 @@ scripted_gui = {
 	#######################################################################################
 	#######################################################################################
 	#######################################################################################
-
 	bar_pentarchy_fight = {
 		window_name = "bar_pentarchy_fight_window"
 		dirty = bar_pentarchy_fight_show
@@ -774,13 +782,11 @@ scripted_gui = {
 			}
 		}
 	}
-	
 	bar_pentarchy_fight_viira = {
 		window_name = "bar_pentarchy_fight_viira"
 		parent_window_name = "bar_pentarchy_fight_window"
 		dirty = bar_pentarchy_fight_show
 		context_type = player_context
-
 		triggers = {
 			bar_viira_heal_click_enabled = {
 				has_country_flag = bar_fight_viira_side
@@ -819,7 +825,6 @@ scripted_gui = {
 				}
 			}
 		}
-
 		effects = {
 			bar_viira_heal_click = {
 				bar_viira_fight_heal = yes
@@ -831,59 +836,153 @@ scripted_gui = {
 				bar_viira_fight_normal_attack = yes
 			}
 		}
-		properties = {			
-			bar_pen_fight_viira_hp_10 = { frame = bar_fight_viira_hp_bar^0 }
-			bar_pen_fight_viira_hp_20 = { frame = bar_fight_viira_hp_bar^1 }
-			bar_pen_fight_viira_hp_30 = { frame = bar_fight_viira_hp_bar^2 }
-			bar_pen_fight_viira_hp_40 = { frame = bar_fight_viira_hp_bar^3 }
-			bar_pen_fight_viira_hp_50 = { frame = bar_fight_viira_hp_bar^4 }
-			bar_pen_fight_viira_hp_60 = { frame = bar_fight_viira_hp_bar^5 }
-			bar_pen_fight_viira_hp_70 = { frame = bar_fight_viira_hp_bar^6 }
-			bar_pen_fight_viira_hp_80 = { frame = bar_fight_viira_hp_bar^7 }
-			bar_pen_fight_viira_hp_90 = { frame = bar_fight_viira_hp_bar^8 }
-			bar_pen_fight_viira_hp_100 = { frame = bar_fight_viira_hp_bar^9 }
-			bar_pen_fight_viira_hp_110 = { frame = bar_fight_viira_hp_bar^10 }
-			bar_pen_fight_viira_hp_120 = { frame = bar_fight_viira_hp_bar^11 }
-			bar_pen_fight_viira_hp_130 = { frame = bar_fight_viira_hp_bar^12 }
-			bar_pen_fight_viira_hp_140 = { frame = bar_fight_viira_hp_bar^13 }
-			bar_pen_fight_viira_hp_150 = { frame = bar_fight_viira_hp_bar^14 }
-			bar_pen_fight_viira_hp_160 = { frame = bar_fight_viira_hp_bar^15 }
-			bar_pen_fight_viira_hp_170 = { frame = bar_fight_viira_hp_bar^16 }
-			bar_pen_fight_viira_hp_180 = { frame = bar_fight_viira_hp_bar^17 }
-			bar_pen_fight_viira_hp_190 = { frame = bar_fight_viira_hp_bar^18 }
-			bar_pen_fight_viira_hp_200 = { frame = bar_fight_viira_hp_bar^19 }
-			bar_pen_fight_viira_hp_210 = { frame = bar_fight_viira_hp_bar^20 }
-			bar_pen_fight_viira_hp_220 = { frame = bar_fight_viira_hp_bar^21 }
-			bar_pen_fight_viira_hp_230 = { frame = bar_fight_viira_hp_bar^22 }
-			bar_pen_fight_viira_hp_240 = { frame = bar_fight_viira_hp_bar^23 }
-			bar_pen_fight_viira_hp_250 = { frame = bar_fight_viira_hp_bar^24 }
-			bar_pen_fight_viira_hp_260 = { frame = bar_fight_viira_hp_bar^25 }
-			bar_pen_fight_viira_hp_270 = { frame = bar_fight_viira_hp_bar^26 }
-			bar_pen_fight_viira_hp_280 = { frame = bar_fight_viira_hp_bar^27 }
-
-			bar_pen_fight_viira_in_1 = { frame = bar_fight_viira_initiative_bar^0 }
-			bar_pen_fight_viira_in_2 = { frame = bar_fight_viira_initiative_bar^1 }
-			bar_pen_fight_viira_in_3 = { frame = bar_fight_viira_initiative_bar^2 }
-			bar_pen_fight_viira_in_4 = { frame = bar_fight_viira_initiative_bar^3 }
-			bar_pen_fight_viira_in_5 = { frame = bar_fight_viira_initiative_bar^4 }
-			bar_pen_fight_viira_in_6 = { frame = bar_fight_viira_initiative_bar^5 }
-			bar_pen_fight_viira_in_7 = { frame = bar_fight_viira_initiative_bar^6 }
-			bar_pen_fight_viira_in_8 = { frame = bar_fight_viira_initiative_bar^7 }
-			bar_pen_fight_viira_in_9 = { frame = bar_fight_viira_initiative_bar^8 }
-			bar_pen_fight_viira_in_10 = { frame = bar_fight_viira_initiative_bar^9 }
-			bar_pen_fight_viira_in_11 = { frame = bar_fight_viira_initiative_bar^10 }
-			bar_pen_fight_viira_in_12 = { frame = bar_fight_viira_initiative_bar^11 }
-			bar_pen_fight_viira_in_13 = { frame = bar_fight_viira_initiative_bar^12 }
-			bar_pen_fight_viira_in_14 = { frame = bar_fight_viira_initiative_bar^13 }
-			bar_pen_fight_viira_in_15 = { frame = bar_fight_viira_initiative_bar^14 }
-			bar_pen_fight_viira_in_16 = { frame = bar_fight_viira_initiative_bar^15 }
-			bar_pen_fight_viira_in_17 = { frame = bar_fight_viira_initiative_bar^16 }
-			bar_pen_fight_viira_in_18 = { frame = bar_fight_viira_initiative_bar^17 }
-			bar_pen_fight_viira_in_19 = { frame = bar_fight_viira_initiative_bar^18 }
-			bar_pen_fight_viira_in_20 = { frame = bar_fight_viira_initiative_bar^19 }
+		properties = {
+			bar_pen_fight_viira_hp_10 = {
+				frame = bar_fight_viira_hp_bar^0
+			}
+			bar_pen_fight_viira_hp_20 = {
+				frame = bar_fight_viira_hp_bar^1
+			}
+			bar_pen_fight_viira_hp_30 = {
+				frame = bar_fight_viira_hp_bar^2
+			}
+			bar_pen_fight_viira_hp_40 = {
+				frame = bar_fight_viira_hp_bar^3
+			}
+			bar_pen_fight_viira_hp_50 = {
+				frame = bar_fight_viira_hp_bar^4
+			}
+			bar_pen_fight_viira_hp_60 = {
+				frame = bar_fight_viira_hp_bar^5
+			}
+			bar_pen_fight_viira_hp_70 = {
+				frame = bar_fight_viira_hp_bar^6
+			}
+			bar_pen_fight_viira_hp_80 = {
+				frame = bar_fight_viira_hp_bar^7
+			}
+			bar_pen_fight_viira_hp_90 = {
+				frame = bar_fight_viira_hp_bar^8
+			}
+			bar_pen_fight_viira_hp_100 = {
+				frame = bar_fight_viira_hp_bar^9
+			}
+			bar_pen_fight_viira_hp_110 = {
+				frame = bar_fight_viira_hp_bar^10
+			}
+			bar_pen_fight_viira_hp_120 = {
+				frame = bar_fight_viira_hp_bar^11
+			}
+			bar_pen_fight_viira_hp_130 = {
+				frame = bar_fight_viira_hp_bar^12
+			}
+			bar_pen_fight_viira_hp_140 = {
+				frame = bar_fight_viira_hp_bar^13
+			}
+			bar_pen_fight_viira_hp_150 = {
+				frame = bar_fight_viira_hp_bar^14
+			}
+			bar_pen_fight_viira_hp_160 = {
+				frame = bar_fight_viira_hp_bar^15
+			}
+			bar_pen_fight_viira_hp_170 = {
+				frame = bar_fight_viira_hp_bar^16
+			}
+			bar_pen_fight_viira_hp_180 = {
+				frame = bar_fight_viira_hp_bar^17
+			}
+			bar_pen_fight_viira_hp_190 = {
+				frame = bar_fight_viira_hp_bar^18
+			}
+			bar_pen_fight_viira_hp_200 = {
+				frame = bar_fight_viira_hp_bar^19
+			}
+			bar_pen_fight_viira_hp_210 = {
+				frame = bar_fight_viira_hp_bar^20
+			}
+			bar_pen_fight_viira_hp_220 = {
+				frame = bar_fight_viira_hp_bar^21
+			}
+			bar_pen_fight_viira_hp_230 = {
+				frame = bar_fight_viira_hp_bar^22
+			}
+			bar_pen_fight_viira_hp_240 = {
+				frame = bar_fight_viira_hp_bar^23
+			}
+			bar_pen_fight_viira_hp_250 = {
+				frame = bar_fight_viira_hp_bar^24
+			}
+			bar_pen_fight_viira_hp_260 = {
+				frame = bar_fight_viira_hp_bar^25
+			}
+			bar_pen_fight_viira_hp_270 = {
+				frame = bar_fight_viira_hp_bar^26
+			}
+			bar_pen_fight_viira_hp_280 = {
+				frame = bar_fight_viira_hp_bar^27
+			}
+			bar_pen_fight_viira_in_1 = {
+				frame = bar_fight_viira_initiative_bar^0
+			}
+			bar_pen_fight_viira_in_2 = {
+				frame = bar_fight_viira_initiative_bar^1
+			}
+			bar_pen_fight_viira_in_3 = {
+				frame = bar_fight_viira_initiative_bar^2
+			}
+			bar_pen_fight_viira_in_4 = {
+				frame = bar_fight_viira_initiative_bar^3
+			}
+			bar_pen_fight_viira_in_5 = {
+				frame = bar_fight_viira_initiative_bar^4
+			}
+			bar_pen_fight_viira_in_6 = {
+				frame = bar_fight_viira_initiative_bar^5
+			}
+			bar_pen_fight_viira_in_7 = {
+				frame = bar_fight_viira_initiative_bar^6
+			}
+			bar_pen_fight_viira_in_8 = {
+				frame = bar_fight_viira_initiative_bar^7
+			}
+			bar_pen_fight_viira_in_9 = {
+				frame = bar_fight_viira_initiative_bar^8
+			}
+			bar_pen_fight_viira_in_10 = {
+				frame = bar_fight_viira_initiative_bar^9
+			}
+			bar_pen_fight_viira_in_11 = {
+				frame = bar_fight_viira_initiative_bar^10
+			}
+			bar_pen_fight_viira_in_12 = {
+				frame = bar_fight_viira_initiative_bar^11
+			}
+			bar_pen_fight_viira_in_13 = {
+				frame = bar_fight_viira_initiative_bar^12
+			}
+			bar_pen_fight_viira_in_14 = {
+				frame = bar_fight_viira_initiative_bar^13
+			}
+			bar_pen_fight_viira_in_15 = {
+				frame = bar_fight_viira_initiative_bar^14
+			}
+			bar_pen_fight_viira_in_16 = {
+				frame = bar_fight_viira_initiative_bar^15
+			}
+			bar_pen_fight_viira_in_17 = {
+				frame = bar_fight_viira_initiative_bar^16
+			}
+			bar_pen_fight_viira_in_18 = {
+				frame = bar_fight_viira_initiative_bar^17
+			}
+			bar_pen_fight_viira_in_19 = {
+				frame = bar_fight_viira_initiative_bar^18
+			}
+			bar_pen_fight_viira_in_20 = {
+				frame = bar_fight_viira_initiative_bar^19
+			}
 		}
 	}
-
 	bar_pentarchy_fight_leopold = {
 		window_name = "bar_pentarchy_fight_leopold_window"
 		parent_window_name = "bar_pentarchy_fight_window"
@@ -945,39 +1044,102 @@ scripted_gui = {
 			}
 		}
 		properties = {
-			bar_pen_fight_leopold_hp_10 = { frame = bar_fight_leopold_hp_bar^0 }
-			bar_pen_fight_leopold_hp_20 = { frame = bar_fight_leopold_hp_bar^1 }
-			bar_pen_fight_leopold_hp_30 = { frame = bar_fight_leopold_hp_bar^2 }
-			bar_pen_fight_leopold_hp_40 = { frame = bar_fight_leopold_hp_bar^3 }
-			bar_pen_fight_leopold_hp_50 = { frame = bar_fight_leopold_hp_bar^4 }
-			bar_pen_fight_leopold_hp_60 = { frame = bar_fight_leopold_hp_bar^5 }
-			bar_pen_fight_leopold_hp_70 = { frame = bar_fight_leopold_hp_bar^6 }
-			bar_pen_fight_leopold_hp_80 = { frame = bar_fight_leopold_hp_bar^7 }
-			bar_pen_fight_leopold_hp_90 = { frame = bar_fight_leopold_hp_bar^8 }
-			bar_pen_fight_leopold_hp_100 = { frame = bar_fight_leopold_hp_bar^9 }
-			bar_pen_fight_leopold_hp_110 = { frame = bar_fight_leopold_hp_bar^10 }
-			bar_pen_fight_leopold_hp_120 = { frame = bar_fight_leopold_hp_bar^11 }
-			bar_pen_fight_leopold_hp_130 = { frame = bar_fight_leopold_hp_bar^12 }
-			bar_pen_fight_leopold_hp_140 = { frame = bar_fight_leopold_hp_bar^13 }
-			bar_pen_fight_leopold_hp_150 = { frame = bar_fight_leopold_hp_bar^14 }
-			bar_pen_fight_leopold_hp_160 = { frame = bar_fight_leopold_hp_bar^15 }
-			bar_pen_fight_leopold_hp_170 = { frame = bar_fight_leopold_hp_bar^16 }
-			bar_pen_fight_leopold_hp_180 = { frame = bar_fight_leopold_hp_bar^17 }
-			bar_pen_fight_leopold_hp_190 = { frame = bar_fight_leopold_hp_bar^18 }
-			bar_pen_fight_leopold_hp_200 = { frame = bar_fight_leopold_hp_bar^19 }
-			bar_pen_fight_leopold_hp_210 = { frame = bar_fight_leopold_hp_bar^20 }
-			bar_pen_fight_leopold_hp_220 = { frame = bar_fight_leopold_hp_bar^21 }
-
-			bar_pen_fight_leopold_in_1 = { frame = bar_fight_leopold_initiative_bar^0 }
-			bar_pen_fight_leopold_in_2 = { frame = bar_fight_leopold_initiative_bar^1 }
-			bar_pen_fight_leopold_in_3 = { frame = bar_fight_leopold_initiative_bar^2 }
-			bar_pen_fight_leopold_in_4 = { frame = bar_fight_leopold_initiative_bar^3 }
-			bar_pen_fight_leopold_in_5 = { frame = bar_fight_leopold_initiative_bar^4 }
-			bar_pen_fight_leopold_in_6 = { frame = bar_fight_leopold_initiative_bar^5 }
-			bar_pen_fight_leopold_in_7 = { frame = bar_fight_leopold_initiative_bar^6 }
-			bar_pen_fight_leopold_in_8 = { frame = bar_fight_leopold_initiative_bar^7 }
-			bar_pen_fight_leopold_in_9 = { frame = bar_fight_leopold_initiative_bar^8 }
-			bar_pen_fight_leopold_in_10 = { frame = bar_fight_leopold_initiative_bar^9 }
+			bar_pen_fight_leopold_hp_10 = {
+				frame = bar_fight_leopold_hp_bar^0
+			}
+			bar_pen_fight_leopold_hp_20 = {
+				frame = bar_fight_leopold_hp_bar^1
+			}
+			bar_pen_fight_leopold_hp_30 = {
+				frame = bar_fight_leopold_hp_bar^2
+			}
+			bar_pen_fight_leopold_hp_40 = {
+				frame = bar_fight_leopold_hp_bar^3
+			}
+			bar_pen_fight_leopold_hp_50 = {
+				frame = bar_fight_leopold_hp_bar^4
+			}
+			bar_pen_fight_leopold_hp_60 = {
+				frame = bar_fight_leopold_hp_bar^5
+			}
+			bar_pen_fight_leopold_hp_70 = {
+				frame = bar_fight_leopold_hp_bar^6
+			}
+			bar_pen_fight_leopold_hp_80 = {
+				frame = bar_fight_leopold_hp_bar^7
+			}
+			bar_pen_fight_leopold_hp_90 = {
+				frame = bar_fight_leopold_hp_bar^8
+			}
+			bar_pen_fight_leopold_hp_100 = {
+				frame = bar_fight_leopold_hp_bar^9
+			}
+			bar_pen_fight_leopold_hp_110 = {
+				frame = bar_fight_leopold_hp_bar^10
+			}
+			bar_pen_fight_leopold_hp_120 = {
+				frame = bar_fight_leopold_hp_bar^11
+			}
+			bar_pen_fight_leopold_hp_130 = {
+				frame = bar_fight_leopold_hp_bar^12
+			}
+			bar_pen_fight_leopold_hp_140 = {
+				frame = bar_fight_leopold_hp_bar^13
+			}
+			bar_pen_fight_leopold_hp_150 = {
+				frame = bar_fight_leopold_hp_bar^14
+			}
+			bar_pen_fight_leopold_hp_160 = {
+				frame = bar_fight_leopold_hp_bar^15
+			}
+			bar_pen_fight_leopold_hp_170 = {
+				frame = bar_fight_leopold_hp_bar^16
+			}
+			bar_pen_fight_leopold_hp_180 = {
+				frame = bar_fight_leopold_hp_bar^17
+			}
+			bar_pen_fight_leopold_hp_190 = {
+				frame = bar_fight_leopold_hp_bar^18
+			}
+			bar_pen_fight_leopold_hp_200 = {
+				frame = bar_fight_leopold_hp_bar^19
+			}
+			bar_pen_fight_leopold_hp_210 = {
+				frame = bar_fight_leopold_hp_bar^20
+			}
+			bar_pen_fight_leopold_hp_220 = {
+				frame = bar_fight_leopold_hp_bar^21
+			}
+			bar_pen_fight_leopold_in_1 = {
+				frame = bar_fight_leopold_initiative_bar^0
+			}
+			bar_pen_fight_leopold_in_2 = {
+				frame = bar_fight_leopold_initiative_bar^1
+			}
+			bar_pen_fight_leopold_in_3 = {
+				frame = bar_fight_leopold_initiative_bar^2
+			}
+			bar_pen_fight_leopold_in_4 = {
+				frame = bar_fight_leopold_initiative_bar^3
+			}
+			bar_pen_fight_leopold_in_5 = {
+				frame = bar_fight_leopold_initiative_bar^4
+			}
+			bar_pen_fight_leopold_in_6 = {
+				frame = bar_fight_leopold_initiative_bar^5
+			}
+			bar_pen_fight_leopold_in_7 = {
+				frame = bar_fight_leopold_initiative_bar^6
+			}
+			bar_pen_fight_leopold_in_8 = {
+				frame = bar_fight_leopold_initiative_bar^7
+			}
+			bar_pen_fight_leopold_in_9 = {
+				frame = bar_fight_leopold_initiative_bar^8
+			}
+			bar_pen_fight_leopold_in_10 = {
+				frame = bar_fight_leopold_initiative_bar^9
+			}
 		}
 	}
 	bar_pentarchy_fight_asinti = {
@@ -1037,40 +1199,96 @@ scripted_gui = {
 				BAR_pen_fight_asinti_heal = yes
 			}
 		}
-		properties = {			
-			bar_pen_fight_asinti_hp_10 = { frame = bar_fight_asinti_hp_bar^0 }
-			bar_pen_fight_asinti_hp_20 = { frame = bar_fight_asinti_hp_bar^1 }
-			bar_pen_fight_asinti_hp_30 = { frame = bar_fight_asinti_hp_bar^2 }
-			bar_pen_fight_asinti_hp_40 = { frame = bar_fight_asinti_hp_bar^3 }
-			bar_pen_fight_asinti_hp_50 = { frame = bar_fight_asinti_hp_bar^4 }
-			bar_pen_fight_asinti_hp_60 = { frame = bar_fight_asinti_hp_bar^5 }
-			bar_pen_fight_asinti_hp_70 = { frame = bar_fight_asinti_hp_bar^6 }
-			bar_pen_fight_asinti_hp_80 = { frame = bar_fight_asinti_hp_bar^7 }
-			bar_pen_fight_asinti_hp_90 = { frame = bar_fight_asinti_hp_bar^8 }
-			bar_pen_fight_asinti_hp_100 = { frame = bar_fight_asinti_hp_bar^9 }
-			bar_pen_fight_asinti_hp_110 = { frame = bar_fight_asinti_hp_bar^10 }
-			bar_pen_fight_asinti_hp_120 = { frame = bar_fight_asinti_hp_bar^11 }
-			bar_pen_fight_asinti_hp_130 = { frame = bar_fight_asinti_hp_bar^12 }
-			bar_pen_fight_asinti_hp_140 = { frame = bar_fight_asinti_hp_bar^13 }
-			bar_pen_fight_asinti_hp_150 = { frame = bar_fight_asinti_hp_bar^14 }
-			bar_pen_fight_asinti_hp_160 = { frame = bar_fight_asinti_hp_bar^15 }
-			bar_pen_fight_asinti_hp_170 = { frame = bar_fight_asinti_hp_bar^16 }
-			bar_pen_fight_asinti_hp_180 = { frame = bar_fight_asinti_hp_bar^17 }
-			bar_pen_fight_asinti_hp_190 = { frame = bar_fight_asinti_hp_bar^18 }
-
-			bar_pen_fight_asinti_in_1 = { frame = bar_fight_asinti_initiative_bar^0 }
-			bar_pen_fight_asinti_in_2 = { frame = bar_fight_asinti_initiative_bar^1 }
-			bar_pen_fight_asinti_in_3 = { frame = bar_fight_asinti_initiative_bar^2 }
-			bar_pen_fight_asinti_in_4 = { frame = bar_fight_asinti_initiative_bar^3 }
-			bar_pen_fight_asinti_in_5 = { frame = bar_fight_asinti_initiative_bar^4 }
-			bar_pen_fight_asinti_in_6 = { frame = bar_fight_asinti_initiative_bar^5 }
-			bar_pen_fight_asinti_in_7 = { frame = bar_fight_asinti_initiative_bar^6 }
-			bar_pen_fight_asinti_in_8 = { frame = bar_fight_asinti_initiative_bar^7 }
-			bar_pen_fight_asinti_in_9 = { frame = bar_fight_asinti_initiative_bar^8 }
-			bar_pen_fight_asinti_in_10 = { frame = bar_fight_asinti_initiative_bar^9 }
+		properties = {
+			bar_pen_fight_asinti_hp_10 = {
+				frame = bar_fight_asinti_hp_bar^0
+			}
+			bar_pen_fight_asinti_hp_20 = {
+				frame = bar_fight_asinti_hp_bar^1
+			}
+			bar_pen_fight_asinti_hp_30 = {
+				frame = bar_fight_asinti_hp_bar^2
+			}
+			bar_pen_fight_asinti_hp_40 = {
+				frame = bar_fight_asinti_hp_bar^3
+			}
+			bar_pen_fight_asinti_hp_50 = {
+				frame = bar_fight_asinti_hp_bar^4
+			}
+			bar_pen_fight_asinti_hp_60 = {
+				frame = bar_fight_asinti_hp_bar^5
+			}
+			bar_pen_fight_asinti_hp_70 = {
+				frame = bar_fight_asinti_hp_bar^6
+			}
+			bar_pen_fight_asinti_hp_80 = {
+				frame = bar_fight_asinti_hp_bar^7
+			}
+			bar_pen_fight_asinti_hp_90 = {
+				frame = bar_fight_asinti_hp_bar^8
+			}
+			bar_pen_fight_asinti_hp_100 = {
+				frame = bar_fight_asinti_hp_bar^9
+			}
+			bar_pen_fight_asinti_hp_110 = {
+				frame = bar_fight_asinti_hp_bar^10
+			}
+			bar_pen_fight_asinti_hp_120 = {
+				frame = bar_fight_asinti_hp_bar^11
+			}
+			bar_pen_fight_asinti_hp_130 = {
+				frame = bar_fight_asinti_hp_bar^12
+			}
+			bar_pen_fight_asinti_hp_140 = {
+				frame = bar_fight_asinti_hp_bar^13
+			}
+			bar_pen_fight_asinti_hp_150 = {
+				frame = bar_fight_asinti_hp_bar^14
+			}
+			bar_pen_fight_asinti_hp_160 = {
+				frame = bar_fight_asinti_hp_bar^15
+			}
+			bar_pen_fight_asinti_hp_170 = {
+				frame = bar_fight_asinti_hp_bar^16
+			}
+			bar_pen_fight_asinti_hp_180 = {
+				frame = bar_fight_asinti_hp_bar^17
+			}
+			bar_pen_fight_asinti_hp_190 = {
+				frame = bar_fight_asinti_hp_bar^18
+			}
+			bar_pen_fight_asinti_in_1 = {
+				frame = bar_fight_asinti_initiative_bar^0
+			}
+			bar_pen_fight_asinti_in_2 = {
+				frame = bar_fight_asinti_initiative_bar^1
+			}
+			bar_pen_fight_asinti_in_3 = {
+				frame = bar_fight_asinti_initiative_bar^2
+			}
+			bar_pen_fight_asinti_in_4 = {
+				frame = bar_fight_asinti_initiative_bar^3
+			}
+			bar_pen_fight_asinti_in_5 = {
+				frame = bar_fight_asinti_initiative_bar^4
+			}
+			bar_pen_fight_asinti_in_6 = {
+				frame = bar_fight_asinti_initiative_bar^5
+			}
+			bar_pen_fight_asinti_in_7 = {
+				frame = bar_fight_asinti_initiative_bar^6
+			}
+			bar_pen_fight_asinti_in_8 = {
+				frame = bar_fight_asinti_initiative_bar^7
+			}
+			bar_pen_fight_asinti_in_9 = {
+				frame = bar_fight_asinti_initiative_bar^8
+			}
+			bar_pen_fight_asinti_in_10 = {
+				frame = bar_fight_asinti_initiative_bar^9
+			}
 		}
 	}
-
 	bar_pentarchy_fight_silver = {
 		window_name = "bar_pentarchy_fight_silver_window"
 		parent_window_name = "bar_pentarchy_fight_window"
@@ -1129,37 +1347,89 @@ scripted_gui = {
 			}
 		}
 		properties = {
-			bar_pen_fight_silver_star_hp_10 = { frame = bar_fight_silver_star_hp_bar^0 }
-			bar_pen_fight_silver_star_hp_20 = { frame = bar_fight_silver_star_hp_bar^1 }
-			bar_pen_fight_silver_star_hp_30 = { frame = bar_fight_silver_star_hp_bar^2 }
-			bar_pen_fight_silver_star_hp_40 = { frame = bar_fight_silver_star_hp_bar^3 }
-			bar_pen_fight_silver_star_hp_50 = { frame = bar_fight_silver_star_hp_bar^4 }
-			bar_pen_fight_silver_star_hp_60 = { frame = bar_fight_silver_star_hp_bar^5 }
-			bar_pen_fight_silver_star_hp_70 = { frame = bar_fight_silver_star_hp_bar^6 }
-			bar_pen_fight_silver_star_hp_80 = { frame = bar_fight_silver_star_hp_bar^7 }
-			bar_pen_fight_silver_star_hp_90 = { frame = bar_fight_silver_star_hp_bar^8 }
-			bar_pen_fight_silver_star_hp_100 = { frame = bar_fight_silver_star_hp_bar^9 }
-			bar_pen_fight_silver_star_hp_110 = { frame = bar_fight_silver_star_hp_bar^10 }
-			bar_pen_fight_silver_star_hp_120 = { frame = bar_fight_silver_star_hp_bar^11 }
-			bar_pen_fight_silver_star_hp_130 = { frame = bar_fight_silver_star_hp_bar^12 }
-			bar_pen_fight_silver_star_hp_140 = { frame = bar_fight_silver_star_hp_bar^13 }
-			bar_pen_fight_silver_star_hp_150 = { frame = bar_fight_silver_star_hp_bar^14 }
-			bar_pen_fight_silver_star_hp_160 = { frame = bar_fight_silver_star_hp_bar^15 }
-			bar_pen_fight_silver_star_hp_170 = { frame = bar_fight_silver_star_hp_bar^16 }
-
-			bar_pen_fight_silver_star_in_1 = { frame = bar_fight_silver_star_initiative_bar^0 }
-			bar_pen_fight_silver_star_in_2 = { frame = bar_fight_silver_star_initiative_bar^1 }
-			bar_pen_fight_silver_star_in_3 = { frame = bar_fight_silver_star_initiative_bar^2 }
-			bar_pen_fight_silver_star_in_4 = { frame = bar_fight_silver_star_initiative_bar^3 }
-			bar_pen_fight_silver_star_in_5 = { frame = bar_fight_silver_star_initiative_bar^4 }
-			bar_pen_fight_silver_star_in_6 = { frame = bar_fight_silver_star_initiative_bar^5 }
-			bar_pen_fight_silver_star_in_7 = { frame = bar_fight_silver_star_initiative_bar^6 }
-			bar_pen_fight_silver_star_in_8 = { frame = bar_fight_silver_star_initiative_bar^7 }
-			bar_pen_fight_silver_star_in_9 = { frame = bar_fight_silver_star_initiative_bar^8 }
-			bar_pen_fight_silver_star_in_10 = { frame = bar_fight_silver_star_initiative_bar^9 }
+			bar_pen_fight_silver_star_hp_10 = {
+				frame = bar_fight_silver_star_hp_bar^0
+			}
+			bar_pen_fight_silver_star_hp_20 = {
+				frame = bar_fight_silver_star_hp_bar^1
+			}
+			bar_pen_fight_silver_star_hp_30 = {
+				frame = bar_fight_silver_star_hp_bar^2
+			}
+			bar_pen_fight_silver_star_hp_40 = {
+				frame = bar_fight_silver_star_hp_bar^3
+			}
+			bar_pen_fight_silver_star_hp_50 = {
+				frame = bar_fight_silver_star_hp_bar^4
+			}
+			bar_pen_fight_silver_star_hp_60 = {
+				frame = bar_fight_silver_star_hp_bar^5
+			}
+			bar_pen_fight_silver_star_hp_70 = {
+				frame = bar_fight_silver_star_hp_bar^6
+			}
+			bar_pen_fight_silver_star_hp_80 = {
+				frame = bar_fight_silver_star_hp_bar^7
+			}
+			bar_pen_fight_silver_star_hp_90 = {
+				frame = bar_fight_silver_star_hp_bar^8
+			}
+			bar_pen_fight_silver_star_hp_100 = {
+				frame = bar_fight_silver_star_hp_bar^9
+			}
+			bar_pen_fight_silver_star_hp_110 = {
+				frame = bar_fight_silver_star_hp_bar^10
+			}
+			bar_pen_fight_silver_star_hp_120 = {
+				frame = bar_fight_silver_star_hp_bar^11
+			}
+			bar_pen_fight_silver_star_hp_130 = {
+				frame = bar_fight_silver_star_hp_bar^12
+			}
+			bar_pen_fight_silver_star_hp_140 = {
+				frame = bar_fight_silver_star_hp_bar^13
+			}
+			bar_pen_fight_silver_star_hp_150 = {
+				frame = bar_fight_silver_star_hp_bar^14
+			}
+			bar_pen_fight_silver_star_hp_160 = {
+				frame = bar_fight_silver_star_hp_bar^15
+			}
+			bar_pen_fight_silver_star_hp_170 = {
+				frame = bar_fight_silver_star_hp_bar^16
+			}
+			bar_pen_fight_silver_star_in_1 = {
+				frame = bar_fight_silver_star_initiative_bar^0
+			}
+			bar_pen_fight_silver_star_in_2 = {
+				frame = bar_fight_silver_star_initiative_bar^1
+			}
+			bar_pen_fight_silver_star_in_3 = {
+				frame = bar_fight_silver_star_initiative_bar^2
+			}
+			bar_pen_fight_silver_star_in_4 = {
+				frame = bar_fight_silver_star_initiative_bar^3
+			}
+			bar_pen_fight_silver_star_in_5 = {
+				frame = bar_fight_silver_star_initiative_bar^4
+			}
+			bar_pen_fight_silver_star_in_6 = {
+				frame = bar_fight_silver_star_initiative_bar^5
+			}
+			bar_pen_fight_silver_star_in_7 = {
+				frame = bar_fight_silver_star_initiative_bar^6
+			}
+			bar_pen_fight_silver_star_in_8 = {
+				frame = bar_fight_silver_star_initiative_bar^7
+			}
+			bar_pen_fight_silver_star_in_9 = {
+				frame = bar_fight_silver_star_initiative_bar^8
+			}
+			bar_pen_fight_silver_star_in_10 = {
+				frame = bar_fight_silver_star_initiative_bar^9
+			}
 		}
 	}
-
 	###############################################
 	###############################################
 	###############################################
@@ -1178,19 +1448,18 @@ scripted_gui = {
 	###############################################
 	###############################################
 	###############################################
-
 	bar_silver_star_decisions_gui = {
 		window_name = "bar_silver_star_decisions_gui_container"
 		context_type = decision_category
-	}	
+	}
 	bar_leopold_decisions_gui = {
 		window_name = "bar_leopold_decisions_gui_container"
 		context_type = decision_category
-	}	
+	}
 	bar_asinti_decisions_gui = {
 		window_name = "bar_asinti_decisions_gui_container"
 		context_type = decision_category
-	}	
+	}
 	bar_viira_decisions_gui = {
 		window_name = "bar_viira_decisions_gui_container"
 		context_type = decision_category
@@ -1205,7 +1474,8 @@ scripted_gui = {
 						has_variable = bar_expedition_show
 					}
 					clear_variable = bar_expedition_show
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_show = 1
 					}
@@ -1380,7 +1650,7 @@ scripted_gui = {
 		}
 		triggers = {
 			BAR_asinti_knights_upgrade_1_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_knights
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1390,7 +1660,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_knights_upgrade_2_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_knights
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1400,7 +1670,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_knights_upgrade_3_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_knights
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1410,7 +1680,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_knights_upgrade_4_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_knights
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1420,7 +1690,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_knights_upgrade_5_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_knights
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1428,9 +1698,9 @@ scripted_gui = {
 				NOT = {
 					has_tech = tech_knights_c
 				}
-			}			
+			}
 			BAR_asinti_pegasi_upgrade_1_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_pegasi
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1440,7 +1710,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_pegasi_upgrade_2_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_pegasi
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1450,7 +1720,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_pegasi_upgrade_3_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_pegasi
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1460,7 +1730,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_pegasi_upgrade_4_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_pegasi
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1470,7 +1740,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_pegasi_upgrade_5_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_pegasi
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1528,9 +1798,9 @@ scripted_gui = {
 				NOT = {
 					has_tech = tech_spirit_warriors6
 				}
-			}	
+			}
 			BAR_asinti_ironpaws_upgrade_1_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1540,7 +1810,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_ironpaws_upgrade_2_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1550,7 +1820,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_ironpaws_upgrade_3_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1560,7 +1830,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_ironpaws_upgrade_4_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1570,7 +1840,7 @@ scripted_gui = {
 				}
 			}
 			BAR_asinti_ironpaws_upgrade_5_button_click_enabled = {
-				has_completed_focus = BAR_asinti_upgrade_ironpaws
+				has_completed_focus = BAR_asinti_super_drugs
 				check_variable = {
 					BAR_asinti_blood_resource > 9
 				}
@@ -1702,7 +1972,7 @@ scripted_gui = {
 					amount = 2
 					state = 624
 				}
-			}			
+			}
 			bar_strike_the_earth_excavation_5_click = {
 				set_country_flag = bar_strike_the_earth_excavation_5_done
 				add_political_power = -15
@@ -1758,7 +2028,7 @@ scripted_gui = {
 					amount = 4
 					state = 624
 				}
-			}	
+			}
 			bar_strike_the_earth_excavation_9_click = {
 				set_country_flag = bar_strike_the_earth_excavation_9_done
 				add_political_power = -15
@@ -2734,8 +3004,6 @@ scripted_gui = {
 			}
 		}
 	}
-
-
 	# @var bar_expedition_members array{
 	# 	0 => gąsienica
 	# 	1 => silver star
@@ -2766,11 +3034,21 @@ scripted_gui = {
 			has_variable = bar_expedition_show
 		}
 		properties = {
-			bar_expedition_members_captain_gasienica_frame = { frame = bar_expedition_members^0 }
-			bar_expedition_members_silver_star_frame = { frame = bar_expedition_members^1 }
-			bar_expedition_members_leopold_frame = { frame = bar_expedition_members^2 }
-			bar_expedition_members_asinti_frame = { frame = bar_expedition_members^3 }
-			bar_expedition_members_viira_frame = { frame = bar_expedition_members^4 }
+			bar_expedition_members_captain_gasienica_frame = {
+				frame = bar_expedition_members^0
+			}
+			bar_expedition_members_silver_star_frame = {
+				frame = bar_expedition_members^1
+			}
+			bar_expedition_members_leopold_frame = {
+				frame = bar_expedition_members^2
+			}
+			bar_expedition_members_asinti_frame = {
+				frame = bar_expedition_members^3
+			}
+			bar_expedition_members_viira_frame = {
+				frame = bar_expedition_members^4
+			}
 		}
 		triggers = {
 			bar_expedition_launch_click_enabled = {
@@ -2801,14 +3079,15 @@ scripted_gui = {
 						bar_expedition_members^0 = 2
 					}
 					bar_expedition_adding_members_effects = yes
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_members^0 = 1
 					}
 					bar_expedition_removing_members_effects = yes
 				}
 				bar_recalculate_expedition = yes
-			}			
+			}
 			bar_expedition_members_silver_star_click = {
 				if = {
 					limit = {
@@ -2820,14 +3099,15 @@ scripted_gui = {
 						bar_expedition_members^1 = 2
 					}
 					bar_expedition_adding_members_effects = yes
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_members^1 = 1
 					}
 					bar_expedition_removing_members_effects = yes
 				}
 				bar_recalculate_expedition = yes
-			}		
+			}
 			bar_expedition_members_leopold_click = {
 				if = {
 					limit = {
@@ -2839,14 +3119,15 @@ scripted_gui = {
 						bar_expedition_members^2 = 2
 					}
 					bar_expedition_adding_members_effects = yes
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_members^2 = 1
 					}
 					bar_expedition_removing_members_effects = yes
 				}
 				bar_recalculate_expedition = yes
-			}		
+			}
 			bar_expedition_members_asinti_click = {
 				if = {
 					limit = {
@@ -2858,14 +3139,15 @@ scripted_gui = {
 						bar_expedition_members^3 = 2
 					}
 					bar_expedition_adding_members_effects = yes
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_members^3 = 1
 					}
 					bar_expedition_removing_members_effects = yes
 				}
 				bar_recalculate_expedition = yes
-			}		
+			}
 			bar_expedition_members_viira_click = {
 				if = {
 					limit = {
@@ -2877,14 +3159,15 @@ scripted_gui = {
 						bar_expedition_members^4 = 2
 					}
 					bar_expedition_adding_members_effects = yes
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_members^4 = 1
 					}
 					bar_expedition_removing_members_effects = yes
 				}
 				bar_recalculate_expedition = yes
-			}	
+			}
 			bar_expedition_length_increase_click = {
 				if = {
 					limit = {
@@ -2910,7 +3193,7 @@ scripted_gui = {
 					}
 				}
 				bar_recalculate_expedition = yes
-			}	
+			}
 			bar_expedition_additional_equipment_increase_click = {
 				bar_expedition_additional_equipment_increase = yes
 			}
@@ -2929,7 +3212,9 @@ scripted_gui = {
 						bar_expedition_phase_length = 21
 					}
 					activate_mission = BAR_expedition_progresses
-					set_variable = { bar_expedition_week = 0 }
+					set_variable = {
+						bar_expedition_week = 0
+					}
 					set_country_flag = bar_expedition_launched
 					add_to_variable = {
 						bar_expedition_success_chance = bar_expedition_success_chance_bonus
@@ -2937,7 +3222,9 @@ scripted_gui = {
 				}
 			}
 			bar_expedition_select_target_click = {
-				set_variable = { bar_expedition_target = bar_expedition_selected_tag }
+				set_variable = {
+					bar_expedition_target = bar_expedition_selected_tag
+				}
 				if = {
 					limit = {
 						var:bar_expedition_target = {
@@ -2947,7 +3234,8 @@ scripted_gui = {
 					set_variable = {
 						bar_expedition_success_chance_bonus = 10
 					}
-				} else = {
+				}
+				else = {
 					set_variable = {
 						bar_expedition_success_chance_bonus = 0
 					}
@@ -2963,8 +3251,7 @@ scripted_gui = {
 				value = bar_expedition_selected_tag
 			}
 		}
-	}	
-	
+	}
 	bar_ending_dialogue_controlls_container = {
 		window_name = "bar_ending_dialogue_controlls_container"
 		dirty = bar_final_dialogue
@@ -2980,8 +3267,11 @@ scripted_gui = {
 							bar_final_dialogue < 30
 						}
 					}
-					add_to_variable = { bar_final_dialogue = 1 }
-				} else = {
+					add_to_variable = {
+						bar_final_dialogue = 1
+					}
+				}
+				else = {
 					clear_variable = bar_final_dialogue
 					increase_society_development_gradual = yes
 					set_party_name = {
@@ -3004,7 +3294,7 @@ scripted_gui = {
 					}
 					set_politics = {
 						ruling_party = democratic
-					}	
+					}
 					add_country_leader_role = {
 						character = BAR_silver_star
 						promote_leader = yes
@@ -3016,7 +3306,7 @@ scripted_gui = {
 				}
 			}
 		}
-	}	
+	}
 	bar_ending_dialogue_line_1 = {
 		window_name = "bar_ending_dialogue_line_1"
 		dirty = bar_final_dialogue
@@ -3064,7 +3354,7 @@ scripted_gui = {
 				check_variable = {
 					bar_final_dialogue = 5
 				}
-			}	
+			}
 		}
 	}
 	bar_ending_dialogue_line_5 = {
@@ -3441,7 +3731,6 @@ scripted_gui = {
 						}
 					}
 				}
-				
 			}
 			BAR_asinti_sigma_event_bg_3_visible = {
 				check_variable = {
@@ -3457,7 +3746,7 @@ scripted_gui = {
 				}
 			}
 		}
-	}	
+	}
 	bar_asinti_sigma_event_asinti = {
 		window_name = "bar_asinti_sigma_event_asinti"
 		dirty = bar_asinti_sigma_event
@@ -3477,7 +3766,7 @@ scripted_gui = {
 				}
 			}
 		}
-	}	
+	}
 	bar_asinti_sigma_event_follower_1 = {
 		window_name = "bar_asinti_sigma_event_follower_1"
 		dirty = bar_asinti_sigma_event
@@ -3578,7 +3867,8 @@ scripted_gui = {
 						}
 					}
 					clear_variable = bar_asinti_sigma_event
-				} else = {
+				}
+				else = {
 					add_to_variable = {
 						bar_asinti_sigma_event = 1
 					}
@@ -3586,5 +3876,427 @@ scripted_gui = {
 			}
 		}
 	}
+	bar_asinti_sigma_event_2_dialogue_box = {
+		window_name = "bar_asinti_sigma_event_2_dialogue_box"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			has_variable = bar_asinti_sigma_event_2
+		}
+		effects = {
+			bar_asinti_sigma_event_next_scene_click = {
+				if = {
+					limit = {
+						check_variable = {
+							bar_asinti_sigma_event_2 = 53
+						}
+					}
+					clear_variable = bar_asinti_sigma_event_2
+				}
+				else = {
+					add_to_variable = {
+						bar_asinti_sigma_event_2 = 1
+					}
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_bg = {
+		window_name = "bar_asinti_sigma_event_2_bg"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			has_variable = bar_asinti_sigma_event_2
+		}
+		triggers = {
+			BAR_asinti_sigma_event_2_bg_1_visible = {
+				OR = {
+					check_variable = {
+						bar_asinti_sigma_event_2 = 0
+					}
+					check_variable = {
+						bar_asinti_sigma_event_2 = 1
+					}
+				}
+			}
+			BAR_asinti_sigma_event_2_bg_2_visible = {
+				check_variable = {
+					bar_asinti_sigma_event_2 > 1
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_2 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_2"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event_2 > 0
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event_2 > 1
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon_eye = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon_eye"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {	
+			OR = {
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event_2 > 1
+					}
+					check_variable = {
+						bar_asinti_sigma_event_2 < 17
+					}
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 18
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 19
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 20
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 21
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 22
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 26
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 27
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 28
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 28
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 32
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 36
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 37
+				}
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event_2 > 39
+					}
+					check_variable = {
+						bar_asinti_sigma_event_2 < 52
+					}
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon_eye_2 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon_eye_2"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 17
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 30
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 31
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon_eye_3 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon_eye_3"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 25
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 29
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 35
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 38
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 39
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon_eye_4 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon_eye_4"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 23
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 24
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 33
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 34
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 52
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 53
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon_smile_1 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon_smile_1"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 14
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 15
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 16
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 20
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 21
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 23
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 24
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 25
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 26
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 27
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 28
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 29
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 30
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 31
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 33
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 34
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 35
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 36
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 46
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 47
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 48
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 49
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_demon_smile_2 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_demon_smile_2"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 30
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 31
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_exclaimation = {
+		window_name = "bar_asinti_sigma_event_2_asinti_exclaimation"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 5
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 6
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 22
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_annoyed_2 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_annoyed_2"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 8
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 9
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 13
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 26
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 37
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_suprised = {
+		window_name = "bar_asinti_sigma_event_2_asinti_suprised"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 28
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_eyes = {
+		window_name = "bar_asinti_sigma_event_2_asinti_eyes"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 10
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 11
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 15
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 16
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 17
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_eyes_2 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_eyes_2"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 12
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 13
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 18
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 19
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 22
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 26
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_eyes_3 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_eyes_3"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event_2 = 29
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 30
+				}
+				check_variable = {
+					bar_asinti_sigma_event_2 = 31
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_2_asinti_eyes_4 = {
+		window_name = "bar_asinti_sigma_event_2_asinti_eyes_4"
+		dirty = bar_asinti_sigma_event_2
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event_2 > 44
+			}
+		}
+	}
 }
-

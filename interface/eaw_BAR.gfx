@@ -380,6 +380,108 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_end_bg_1"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_end_bg_1.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_end_bg_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_end_bg_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon_eye"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon_eye.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon_eye_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon_eye_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon_eye_3"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon_eye_3.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon_eye_4"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon_eye_4.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon_smile_1"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon_smile_1.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_demon_smile_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_demon_smile_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_exclaimation"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_exclaimation.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_annoyed_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_annoyed_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_suprised"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_suprised.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_eyes"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_eyes.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_eyes_2"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_eyes_2.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_eyes_3"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_eyes_3.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_asinti_sigma_event_asinti_eyes_4"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_eyes_4.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
 		name = "GFX_bar_strike_the_earth_bg"
 		textureFile = "gfx/interface/bar/strike_the_earth/strike_the_earth_bg.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

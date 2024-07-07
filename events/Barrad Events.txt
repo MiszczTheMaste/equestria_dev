@@ -3820,6 +3820,7 @@ country_event = {
 	}
 }
 
+
 country_event = {
 	id = barrad_asinti.11
 	immediate = {
@@ -3854,7 +3855,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_asinti.12.a
-		add_ideas = BAR_asinti_end
+		add_manpower = -30
 		add_corps_commander_role = {
 			character = BAR_asinti_jr
 			traits = {

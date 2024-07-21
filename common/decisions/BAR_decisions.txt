@@ -2672,6 +2672,83 @@ BAR_silver_star_convert_cat = {
 }
 
 BAR_leopold_cat = {
+	bar_ongoing_activity_mission = {
+		visible = {
+			hidden_trigger = {
+				has_country_flag = bar_ongoing_activity
+			}
+		}
+		allowed = {
+			always = no
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					hidden_trigger = {
+						has_country_flag = barrad_early_game
+					}
+				}
+			}
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_sombra_tea
+		selectable_mission = yes
+		days_mission_timeout = 15
+		is_good = yes
+		days_remove = 0
+		fixed_random_seed = no
+		timeout_effect = {	
+			set_variable_to_random = {
+				var = activity_dice_roll
+				min = 0
+				max = 100
+				integer = yes
+			}
+		
+			if = {
+				limit = {
+					check_variable = {
+						activity_dice_roll > bar_activity_fail_check
+					}
+				}
+				country_event = { id = barrad_leopold_carousing.4 }
+			} else = {
+				country_event = { id = barrad_leopold_carousing.5 }
+			}
+			
+		}
+	}
+	bar_plan_activity = {
+		visible = {
+			hidden_trigger = {
+				has_country_flag = barrad_early_game
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = {
+					hidden_trigger = {
+						has_country_flag = barrad_early_game
+					}
+				}
+			}
+		}
+		available = {
+			always = yes
+		}
+		icon = GFX_decision_sombra_tea
+		days_remove = 0
+		complete_effect = {
+			set_variable = {
+				bar_friendship_activity_show = 1
+			}
+		}
+	}
 	BAR_reactor_build_leopold = {
 		icon = GFX_decision_generic_construction
 		days_remove = 7
@@ -9775,28 +9852,6 @@ BAR_asinti_pentarchs = {
 			add_stability = 0.1
 		}
 	}
-	BAR_asinti_pentarchs_kill_gasienica = {
-		icon = skullgriff
-		visible = {
-			tag = BAR
-			has_completed_focus = BAR_new_world_order
-			NOT = {
-				has_country_flag = BAR_asinti_gasienica_dealth
-			}
-		}
-		cost = 25
-		days_remove = 3
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 15
-		}
-		complete_effect = {
-			set_country_flag = BAR_asinti_gasienica_dealth
-		}
-		remove_effect = {
-			add_war_support = 0.05
-		}
-	}
 	BAR_asinti_pentarchs_indoctrinate_gasienica = {
 		icon = skullgriff
 		visible = {
@@ -9816,7 +9871,7 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_gasienica_dealth
 		}
 		remove_effect = {
-			clr_country_flag = BAR_gasienica_hidden
+			country_event = { id = barrad_asinti.13 }
 		}
 	}
 	BAR_asinti_pentarchs_kill_leopold = {
@@ -9869,9 +9924,7 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_leopold_dealth
 		}
 		remove_effect = {
-			add_war_support = 0.1
-			add_political_power = 50
-			one_random_arms_factory = yes
+			country_event = { id = barrad_asinti.15 }
 		}
 	}
 	BAR_asinti_pentarchs_indoctrinate_leopold = {
@@ -9903,14 +9956,7 @@ BAR_asinti_pentarchs = {
 			}
 		}
 		remove_effect = {
-			custom_effect_tooltip = BAR_leopold_general
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_leopold_alive = 0
-				}
-				clr_country_flag = BAR_leopold_general_hidden
-			}
+			country_event = { id = barrad_asinti.16 }
 		}
 	}
 	BAR_asinti_pentarchs_kill_silver_star = {
@@ -9963,9 +10009,7 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_silver_star_dealth
 		}
 		remove_effect = {
-			add_war_support = 0.1
-			add_political_power = 50
-			one_random_arms_factory = yes
+			country_event = { id = barrad_asinti.17 }
 		}
 	}
 	BAR_asinti_pentarchs_indoctrinate_silver_star = {
@@ -9991,14 +10035,7 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_silver_star_dealth
 		}
 		remove_effect = {
-			custom_effect_tooltip = BAR_silver_general
-			hidden_effect = {
-				set_technology = {
-					popup = no
-					barrad_silver_star_alive = 0
-				}
-				clr_country_flag = BAR_silver_general_hidden
-			}
+			country_event = { id = barrad_asinti.18 }
 		}
 	}
 }

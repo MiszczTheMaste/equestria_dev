@@ -1410,9 +1410,9 @@ guiTypes = {
 		Orientation = center
 		instantTextBoxType = {
 			name = "bar_new_journal_entry_window_text"
-			position = { x = -80 y = 0 }
+			position = { x = -30 y = 0 }
 			font = "hoi_36header"
-			maxWidth = 300
+			maxWidth = 400
 			format = left
 			text = bar_new_journal_entry_window_text
 		}
@@ -3677,6 +3677,19 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "bar_ending_dialogue_bg"
+		size = { width=1060 height=662 }
+		moveable = no
+		clipping = no
+		position = { x=0 y=60 }
+		
+		iconType ={
+			name ="bar_ending_dialogue_bg"
+			spriteType = "GFX_BAR_ending_dialogue_bg"
+			position = { x=17 y=18 }
+		}
+	}	
+	containerWindowType = {
 		name = "bar_ending_dialogue_controlls_container"
 		size = { width=630 height=118 }
 		moveable = no
@@ -3714,12 +3727,12 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_1_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_2_portrait"
 			spriteType = "GFX_BAR_dialogue_viira_portrait"
-			position = { x=17 y=18 }
+			position = { x=11 y=9 }
 		}
 		instantTextBoxType = {
 			name = "bar_ending_dialogue_line_1_text"
@@ -3747,12 +3760,12 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_2_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_2_portrait"
 			spriteType = "GFX_BAR_dialogue_silver_portrait"
-			position = { x=553 y=18 }
+			position = { x=544 y=9 }
 		}
 		instantTextBoxType = {
 			name = "bar_ending_dialogue_line_2_text"
@@ -3780,7 +3793,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_3_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_3_portrait"
@@ -3813,7 +3826,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_4_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_4_portrait"
@@ -3846,7 +3859,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_5_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_5_portrait"
@@ -3879,7 +3892,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_6_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_6_portrait"
@@ -3913,7 +3926,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_7_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_7_portrait"
@@ -3946,7 +3959,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_8_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_8_portrait"
@@ -3979,7 +3992,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_9_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_9_portrait"
@@ -4013,7 +4026,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_10_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_10_portrait"
@@ -4046,7 +4059,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_11_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_11_portrait"
@@ -4079,7 +4092,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_12_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_12_portrait"
@@ -4112,7 +4125,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_13_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_13_portrait"
@@ -4145,7 +4158,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_14_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_14_portrait"
@@ -4178,7 +4191,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_15_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_15_portrait"
@@ -4211,7 +4224,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_16_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_16_portrait"
@@ -4244,7 +4257,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_17_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_17_portrait"
@@ -4277,7 +4290,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_18_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_18_portrait"
@@ -4310,7 +4323,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_19_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_19_portrait"
@@ -4343,7 +4356,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_20_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_20_portrait"
@@ -4376,7 +4389,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_21_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_21_portrait"
@@ -4409,7 +4422,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_22_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_22_portrait"
@@ -4442,7 +4455,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_23_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_23_portrait"
@@ -4475,7 +4488,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_24_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_24_portrait"
@@ -4508,7 +4521,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_25_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_25_portrait"
@@ -4542,7 +4555,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_26_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_26_portrait"
@@ -4575,7 +4588,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_27_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_27_portrait"
@@ -4608,7 +4621,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_28_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_left"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_28_portrait"
@@ -4641,7 +4654,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_29_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_29_portrait"
@@ -4674,7 +4687,7 @@ guiTypes = {
 
 		Background = {
 			name = "bar_ending_dialogue_line_30_bg"
-			spriteType = "GFX_BAR_dialogue_box"
+			spriteType = "GFX_BAR_dialogue_box_right"
 		}
 		iconType ={
 			name ="bar_ending_dialogue_line_30_portrait"
@@ -4978,4 +4991,380 @@ guiTypes = {
 	containerWindowType = { name = "bar_asinti_sigma_event_2_asinti_eyes_2" size = { width=700 height=422 } moveable = no clipping = yes position = { x = 200 y = 202 } hide_position = { x = 200 y = 250 } show_position = { x = 200 y = 202 } show_animation_type = decelerated hide_animation_type = accelerated animation_time = 150 fade_time = 100 fade_type = linear iconType = { name = "BAR_asinti_sigma_event_asinti_eyes_2" spriteType = "GFX_BAR_asinti_sigma_event_asinti_eyes_2" position = {x=0 y=0} }}
 	containerWindowType = { name = "bar_asinti_sigma_event_2_asinti_eyes_3" size = { width=700 height=422 } moveable = no clipping = yes position = { x = 200 y = 202 } hide_position = { x = 200 y = 250 } show_position = { x = 200 y = 202 } show_animation_type = decelerated hide_animation_type = accelerated animation_time = 150 fade_time = 100 fade_type = linear iconType = { name = "BAR_asinti_sigma_event_asinti_eyes_3" spriteType = "GFX_BAR_asinti_sigma_event_asinti_eyes_3" position = {x=0 y=0} }}
 	containerWindowType = { name = "bar_asinti_sigma_event_2_asinti_eyes_4" size = { width=700 height=422 } moveable = no clipping = yes position = { x = 200 y = 202 } hide_position = { x = 200 y = 250 } show_position = { x = 200 y = 202 } show_animation_type = decelerated hide_animation_type = accelerated animation_time = 150 fade_time = 100 fade_type = linear iconType = { name = "BAR_asinti_sigma_event_asinti_eyes_4" spriteType = "GFX_BAR_asinti_sigma_event_asinti_eyes_4" position = {x=0 y=0} }} 
+
+	containerwindowtype = {
+		name = "bar_friendship_activities_container"
+		size = { width=1366 height=720 }
+		moveable = yes
+		clipping = no
+		Background = {
+			name = "bar_activities_container_bg"
+			spriteType = "GFX_bar_expedition_background"
+		}
+		instantTextBoxType = {
+			name = "bar_activities_title_text"
+			position = {x=10 y=10}
+			font = "hoi_36header"
+			maxWidth = 500
+			format = left
+			text = bar_activities_title_text
+		}	
+		containerWindowType = {
+			name = "bar_activities_members_select"
+			position = { x = 20 y = 75 }
+			instantTextBoxType = {
+				name = "bar_activities_members_text"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_members
+			}	
+			
+			iconType = {
+				name = "bar_activities_members_leopold_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 2
+				position = { x = 0 y = 50 }		
+			}
+			iconType = {
+				name = "bar_activities_members_leopold"
+				spriteType = "GFX_bar_leopold_portrait"
+				position = { x=2 y=52 }
+			}
+			iconType = {
+				name = "bar_activities_members_silver_star_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
+				position = { x = 168 y = 50 }		
+			}
+			buttonType = {
+				name = "bar_activities_members_silver_star"
+				spriteType = "GFX_bar_silver_star_portrait"
+				position = { x=170 y=52 }
+			}
+			iconType = {
+				name = "bar_activities_members_asinti_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
+				position = { x = 336 y = 50 }		
+			}
+			buttonType = {
+				name = "bar_activities_members_asinti"
+				spriteType = "GFX_bar_asinti_portrait"
+				position = { x=338 y=52 }
+			}
+			iconType = {
+				name = "bar_activities_members_viira_frame"
+				spriteType = "GFX_bar_expedition_member_frame"
+				frame = 1
+				position = { x = 504 y = 50 }		
+			}
+			buttonType = {
+				name = "bar_activities_members_viira"
+				spriteType = "GFX_bar_viira_portrait"
+				position = { x=506 y=52 }
+			}
+		}
+		containerWindowType = {
+			name = "bar_activity_relations_container"
+			Orientation = upper_left
+			size = {width=279 height=279}
+			position = { x = 404 y = 370 }
+			
+			iconType = {
+				name = "bar_activity_relations_frame"
+				spriteType = "GFX_bar_activity_relations_frame"
+				position = { x = 0 y = 0 }		
+			}	
+
+			iconType = {
+				name = "bar_activity_relations_leopold_icon1"
+				spriteType = "GFX_leopold_resources_text"
+				position = {x=75 y=20}
+			}		
+			iconType = {
+				name = "bar_activity_relations_silver_icon1"
+				spriteType = "GFX_silver_resources_text"
+				position = {x=130 y=20}
+			}	
+			iconType = {
+				name = "bar_activity_relations_asinti_icon1"
+				spriteType = "GFX_asinti_resources_text"
+				position = {x=185 y=20}
+			}	
+			iconType = {
+				name = "bar_activity_relations_viira_icon1"
+				spriteType = "GFX_viira_resources_text"
+				position = {x=240 y=20}
+			}		
+			
+			iconType = {
+				name = "bar_activity_relations_leopold_icon2"
+				spriteType = "GFX_leopold_resources_text"
+				position = {x=20 y=75}
+			}		
+			iconType = {
+				name = "bar_activity_relations_silver_icon2"
+				spriteType = "GFX_silver_resources_text"
+				position = {x=20 y=130}
+			}	
+			iconType = {
+				name = "bar_activity_relations_asinti_icon2"
+				spriteType = "GFX_asinti_resources_text"
+				position = {x=20 y=185}
+			}	
+			iconType = {
+				name = "bar_activity_relations_viira_icon2"
+				spriteType = "GFX_viira_resources_text"
+				position = {x=20 y=240}
+			}	
+
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_leopold_silver_text1"
+				position = {x=60 y=130}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_leopold_silver_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_leopold_silver_text2"
+				position = {x=115 y=75}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_leopold_silver_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_leopold_asinti_text1"
+				position = {x=170 y=75}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_leopold_asinti_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_leopold_asinti_text2"
+				position = {x=60 y=185}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_leopold_asinti_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_leopold_viira_text1"
+				position = {x=225 y=75}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_leopold_viira_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_leopold_viira_text2"
+				position = {x=60 y=240}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_leopold_viira_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_silver_asinti_text1"
+				position = {x=170 y=130}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_silver_asinti_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_silver_asinti_text2"
+				position = {x=115 y=185}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_silver_asinti_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_silver_viira_text1"
+				position = {x=225 y=130}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_silver_viira_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_silver_viira_text2"
+				position = {x=115 y=240}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_silver_viira_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_asinti_viira_text1"
+				position = {x=225 y=185}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_asinti_viira_text
+			}
+			instantTextBoxType = {
+				name = "bar_activity_relations_up_asinti_viira_text2"
+				position = {x=170 y=240}	
+				font = "hoi_16mbs"
+				maxWidth = 50
+				format = centre
+				text = bar_activity_relations_up_asinti_viira_text
+			}
+		}
+		containerWindowType = {
+			name = "bar_activities_type_container"
+			Orientation = upper_left
+			size = {width=270 height=300}
+			position = { x = 700 y = 75 }
+			
+			instantTextBoxType = {
+				name = "bar_activities_type_list_title"
+				position = {x=0 y=0}
+				font = "hoi_36header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_type_list_title
+			}	
+			buttonType = {
+				name = "bar_activities_type_list_1"
+				position = { x=0 y=52 }
+				buttonText = bar_activities_type_list_1_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_2"
+				position = { x=0 y=86 }
+				buttonText = bar_activities_type_list_2_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_3"
+				position = { x=0 y=120 }
+				buttonText = bar_activities_type_list_3_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_4"
+				position = { x=0 y=154 }
+				buttonText = bar_activities_type_list_4_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_5"
+				position = { x=0 y=188 }
+				buttonText = bar_activities_type_list_5_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_6"
+				position = { x=0 y=222 }
+				buttonText = bar_activities_type_list_6_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_7"
+				position = { x=0 y=256 }
+				buttonText = bar_activities_type_list_7_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_8"
+				position = { x=0 y=290 }
+				buttonText = bar_activities_type_list_8_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_9"
+				position = { x=0 y=324 }
+				buttonText = bar_activities_type_list_9_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+			buttonType = {
+				name = "bar_activities_type_list_10"
+				position = { x=0 y=358 }
+				buttonText = bar_activities_type_list_10_text
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+		}
+		containerWindowType = {
+			name = "bar_activities_chances_container"
+			position = {x=20 y=400}
+			instantTextBoxType = {
+				name = "bar_activities_success_chance_title"
+				position = {x=0 y=0}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_success_chance_title
+			}	
+			instantTextBoxType = {
+				name = "bar_activities_success_chance_text"
+				position = {x=0 y=30}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_success_chance_text
+			}		
+			instantTextBoxType = {
+				name = "bar_activities_combo"
+				position = {x=0 y=60}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_combo
+			}			
+			instantTextBoxType = {
+				name = "bar_activities_pp_cost_header"
+				position = {x=0 y=90}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_pp_cost_header
+			}		
+			instantTextBoxType = {
+				name = "bar_activities_pp_cost"
+				position = {x=0 y=120}
+				font = "hoi_24header"
+				maxWidth = 500
+				format = left
+				text = bar_activities_pp_cost_text
+			}	
+		}
+		containerWindowType = {
+			name = "bar_activities_controls_container"
+			position = { x = 20 y = 650 }
+			buttonType = {
+				name = "bar_activities_launch"
+				position = { x = 0 y = 0 }
+				buttonText = bar_start_activity
+				quadTextureSprite ="GFX_button_261x34"
+				buttonFont = "hoi_16mbs"
+			}
+		}
+		buttonType = {
+			name = "bar_activities_exit"
+			position = { x = 1334 y = 0 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
 }

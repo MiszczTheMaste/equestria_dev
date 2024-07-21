@@ -3,6 +3,7 @@ on_actions = {
 		effect = {
 			BAR = {
 				bar_expedition_init = yes
+				bar_activities_init = yes
 				set_variable = {
 					res_total = 0
 				}

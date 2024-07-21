@@ -10,7 +10,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_a_new_path
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_eye_2
 		cost = 4
 		x = 15
 		y = 0
@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_convert_population
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_shackles
 		cost = 4
 		x = -2
 		y = 1
@@ -41,11 +41,28 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.1
 			}
+			if = {
+				limit = {
+					has_country_flag = barrad_leopold_alive
+					has_country_flag = barrad_silver_star_alive
+				}
+				country_event = { id = barrad_asinti.28 }
+			} else_if = {
+				limit = {
+					has_country_flag = barrad_leopold_alive
+				}
+				country_event = { id = barrad_asinti.29 }
+			} else_if = {
+				limit = {
+					has_country_flag = barrad_silver_star_alive
+				}
+				country_event = { id = barrad_asinti.30 }
+			}
 		}
 	}
 	focus = {
 		id = BAR_food_drugs
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_bread
 		cost = 4
 		x = -1
 		y = 1
@@ -66,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_week_to_the_weak
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_dove
 		cost = 4
 		x = 1
 		y = 1
@@ -87,7 +104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_fleece_the_herd
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_knifes
 		cost = 4
 		x = 2
 		y = 2
@@ -142,7 +159,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_airborne_drugs
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_fan
 		cost = 4
 		x = -1
 		y = 1
@@ -348,6 +365,7 @@ focus_tree = {
 				remove_idea = BAR_asinti_drugs
 				add_idea = BAR_asinti_drugs_2
 			}
+			country_event = { id = barrad_asinti.24 }
 			custom_effect_tooltip = BAR_asinti_upgrade_special_units_tooltip
 		}
 	}
@@ -1053,6 +1071,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
+			country_event = { id = barrad_asinti.23 }
 			set_country_flag = BAR_asinti_kill_count
 			custom_effect_tooltip = BAR_blood_rituals_tooltip
 		}
@@ -1375,7 +1394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_second_grand_ritual
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_bar_asinti_eye
 		cost = 4
 		x = 0
 		y = 1

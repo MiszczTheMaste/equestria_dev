@@ -658,6 +658,33 @@ country_event = {
 		BAR_relations_increase_asinti_silver_5 = yes
 	}
 }
+country_event = {
+	id = barrad_leopold_carousing.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold_carousing.4"
+	}
+	title = barrad_leopold_carousing.4.t
+	desc = barrad_leopold_carousing.4.d
+	picture = GFX_event_carousing
+	is_triggered_only = yes
+	option = {
+		name = barrad_leopold_carousing.4.a
+		bar_relations_activity_add = yes
+	}
+}
+country_event = {
+	id = barrad_leopold_carousing.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold_carousing.5"
+	}
+	title = barrad_leopold_carousing.5.t
+	desc = barrad_leopold_carousing.5.d
+	picture = GFX_event_carousing
+	is_triggered_only = yes
+	option = {
+		name = barrad_leopold_carousing.5.a
+	}
+}
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -1934,6 +1961,7 @@ country_event = {
 		name = barrad_second.1.a
 		hidden_effect = {
 			set_country_flag = bar_viira_investigation_step_2
+			BAR_relations_decrease_silver_leopold_5 = yes
 			BAR_new_viira_note = yes
 			if = {
 				limit = {
@@ -3870,7 +3898,254 @@ country_event = {
 		}
 	}
 }
-
+country_event = {
+	id = barrad_asinti.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.13"
+	}
+	title = barrad_asinti.13.t
+	desc = barrad_asinti.13.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.13.a
+		set_country_flag = BAR_gasienica_hidden
+	}
+}
+country_event = {
+	id = barrad_asinti.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.15"
+	}
+	title = barrad_asinti.15.t
+	desc = barrad_asinti.15.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.15.a
+		add_war_support = 0.1
+		add_political_power = 100
+		two_random_arms_factory = yes
+	}
+}
+country_event = {
+	id = barrad_asinti.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.16"
+	}
+	title = barrad_asinti.16.t
+	desc = barrad_asinti.16.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.16.a
+		custom_effect_tooltip = BAR_leopold_general
+		hidden_effect = {
+			set_technology = {
+				popup = no
+				barrad_leopold_alive = 0
+			}
+			clr_country_flag = BAR_leopold_general_hidden
+		}
+	}
+}
+country_event = {
+	id = barrad_asinti.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.17"
+	}
+	title = barrad_asinti.17.t
+	desc = barrad_asinti.17.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.17.a
+		add_war_support = 0.1
+		add_political_power = 50
+		two_random_arms_factory = yes
+	}
+}
+country_event = {
+	id = barrad_asinti.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.18"
+	}
+	title = barrad_asinti.18.t
+	desc = barrad_asinti.18.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.18.a
+		custom_effect_tooltip = BAR_silver_general
+		hidden_effect = {
+			set_technology = {
+				popup = no
+				barrad_silver_star_alive = 0
+			}
+			clr_country_flag = BAR_silver_general_hidden
+		}
+	}
+}
+country_event = { # zes conquest
+	id = barrad_asinti.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.19"
+	}
+	title = barrad_asinti.19.t
+	desc = barrad_asinti.19.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.19.a
+		add_political_power = 25
+	}
+}
+country_event = { # wit conquest
+	id = barrad_asinti.20
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.20"
+	}
+	title = barrad_asinti.20.t
+	desc = barrad_asinti.20.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.20.a
+		add_political_power = 25
+	}
+}
+country_event = { # rivfed conquest
+	id = barrad_asinti.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.21"
+	}
+	title = barrad_asinti.21.t
+	desc = barrad_asinti.21.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.21.a
+		add_political_power = 25
+	}
+}
+country_event = { # colthage conquest
+	id = barrad_asinti.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.22"
+	}
+	title = barrad_asinti.22.t
+	desc = barrad_asinti.22.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.22.a
+		add_political_power = 25
+	}
+}
+country_event = { # demon wyjaśnia jak krew
+	id = barrad_asinti.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.23"
+	}
+	title = barrad_asinti.23.t
+	desc = barrad_asinti.23.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.23.a
+	}
+}
+country_event = {
+	id = barrad_asinti.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.24"
+	}
+	title = barrad_asinti.24.t
+	desc = barrad_asinti.24.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.24.a
+	}
+}
+country_event = { # zes core
+	id = barrad_asinti.25
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.25"
+	}
+	title = barrad_asinti.25.t
+	desc = barrad_asinti.25.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.24.a
+	}
+}
+country_event = { # wit core
+	id = barrad_asinti.26
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.26"
+	}
+	title = barrad_asinti.26.t
+	desc = barrad_asinti.26.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.26.a
+	}
+}
+country_event = { # rivfed core
+	id = barrad_asinti.27
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.27"
+	}
+	title = barrad_asinti.27.t
+	desc = barrad_asinti.27.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.27.a
+	}
+}
+country_event = { 
+	id = barrad_asinti.28
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.28"
+	}
+	title = barrad_asinti.28.t
+	desc = barrad_asinti.28.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.28.a
+	}
+}
+country_event = { 
+	id = barrad_asinti.29
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.29"
+	}
+	title = barrad_asinti.29.t
+	desc = barrad_asinti.29.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.29.a
+	}
+}
+country_event = { 
+	id = barrad_asinti.30
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.30"
+	}
+	title = barrad_asinti.30.t
+	desc = barrad_asinti.30.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_asinti.30.a
+	}
+}
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -4284,6 +4559,48 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_leopold.14.a
+	}
+}
+
+country_event = {
+	id = barrad_leopold.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.15"
+	}
+	title = barrad_leopold.15.t
+	desc = barrad_leopold.15.d
+	picture = GFX_event_forge_city
+	is_triggered_only = yes
+	option = {
+		name = barrad_leopold.15.a
+	}
+}
+
+country_event = {
+	id = barrad_leopold.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.16"
+	}
+	title = barrad_leopold.16.t
+	desc = barrad_leopold.16.d
+	picture = GFX_event_forge_city
+	is_triggered_only = yes
+	option = {
+		name = barrad_leopold.16.a
+	}
+}
+
+country_event = {
+	id = barrad_leopold.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.17"
+	}
+	title = barrad_leopold.17.t
+	desc = barrad_leopold.17.d
+	picture = GFX_event_forge_city
+	is_triggered_only = yes
+	option = {
+		name = barrad_leopold.17.a
 	}
 }
 

@@ -296,6 +296,24 @@ spriteTypes = {
 		alwaystransparent = no
 	}
 	spriteType = {
+		name = "GFX_BAR_dialogue_box_left"
+		textureFile = "gfx/interface/bar/super_dialogue/dialogue_box_left.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_dialogue_box_right"
+		textureFile = "gfx/interface/bar/super_dialogue/dialogue_box_right.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_BAR_ending_dialogue_bg"
+		textureFile = "gfx/interface/bar/super_dialogue/background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
 		name = "GFX_BAR_dialogue_silver_portrait"
 		textureFile = "gfx/interface/bar/super_dialogue/silver_portrait_1.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -1159,6 +1177,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/bar/goals/leopold/bar_leopold_fire.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_bar_asinti_eye"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_eye.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_asinti_eye_2"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_eye_2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_asinti_knifes"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_knifes.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_asinti_bread"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_bread.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_asinti_fan"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_fan.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_asinti_shackles"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_shackles.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_asinti_dove"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_dove.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_bar_screaming_viira"
 		texturefile = "gfx/interface/bar/goals/bar_screaming_viira.dds"
 	}
@@ -1196,6 +1242,90 @@ spriteTypes = {
 
 
 
+	SpriteType = {
+		name = "GFX_goal_bar_asinti_eye_shine"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_eye.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/bar/goals/bar_asinti_eye.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/bar/goals/asinti/bar_asinti_eye.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}		
+	SpriteType = {
+		name = "GFX_goal_bar_asinti_eye_2_shine"
+		texturefile = "gfx/interface/bar/goals/asinti/bar_asinti_eye_2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/bar/goals/bar_asinti_eye_2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/bar/goals/asinti/bar_asinti_eye_2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+			animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"			#add, multiply, overlay
+			animationtype = "scrolling"			#scrolling, rotating, pulsing
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}	
 	SpriteType = {
 		name = "GFX_goal_viira_crack_unbelivers_shine"
 		texturefile = "gfx/interface/bar/goals/viira_crack.dds"
@@ -3210,6 +3340,10 @@ spriteTypes = {
 		name = "GFX_bar_expedition_member_frame"
 		texturefile = "gfx/interface/bar/expedition/expedition_member_frame.dds"
 		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_bar_activity_relations_frame"
+		texturefile = "gfx/interface/bar/expedition/activity_relations_frame.dds"
 	}
 	spriteType = {
 		name = "GFX_unit_bar_leopold_clockwerk_icon_medium"

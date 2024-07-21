@@ -1039,6 +1039,7 @@ focus_tree = {
 		completion_reward = {
 			one_random_industrial_complex = yes
 			add_stability = 0.05
+			country_event = { id = barrad_leopold.16 }
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
@@ -1115,6 +1116,7 @@ focus_tree = {
 		completion_reward = {
 			one_random_arms_factory = yes
 			one_random_arms_factory = yes
+			country_event = { id = barrad_leopold.17 }
 		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -2010,7 +2012,7 @@ focus_tree = {
 			focus = BAR_leopold_surreal_mathematic_8
 		}
 		completion_reward = {
-			country_event = { id = barrad_leopold.10}
+			country_event = { id = barrad_leopold.10 }
 		}
 	}
 	focus = {
@@ -2187,6 +2189,7 @@ focus_tree = {
 					type = annex_everything
 				}
 			}
+			country_event = { id = barrad_leopold.15 }
 		}
 		search_filters = {
 			FOCUS_FILTER_PATCH_OF_WRATCH
@@ -2252,12 +2255,14 @@ focus_tree = {
 		cost = 4
 		x = 0
 		y = 1
-		relative_position_id = BAR_leopold_conquest_7
+		relative_position_id = BAR_leopold_conquest_12
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
-			focus = BAR_leopold_conquest_5
+			focus = BAR_leopold_conquest_12
+		}
+		prerequisite = {
 			focus = BAR_leopold_conquest_7
 		}
 		bypass = {
@@ -2518,7 +2523,7 @@ focus_tree = {
 		id = BAR_leopold_conquest_11
 		icon = GFX_goal_leopold_party_over
 		cost = 4
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = BAR_leopold_conquest_9
 		ai_will_do = {
@@ -2794,7 +2799,7 @@ focus_tree = {
 		id = BAR_leopold_conquest_12
 		icon = GFX_goal_leopold_party_over
 		cost = 4
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = BAR_leopold_conquest_10
 		ai_will_do = {

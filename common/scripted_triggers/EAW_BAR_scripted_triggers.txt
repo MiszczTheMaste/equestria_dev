@@ -197,6 +197,31 @@ BAR_expedition_can_be_launched = {
 	}
 }
 
+bar_activities_can_be_launched = {
+	AND = {
+		OR = {
+			check_variable = {
+				bar_friendship_activity_members^0 = 2
+			}
+			check_variable = {
+				bar_friendship_activity_members^1 = 2
+			}
+			check_variable = {
+				bar_friendship_activity_members^2 = 2
+			}
+		}
+		NOT = {
+			check_variable = {
+				bar_friendship_activity_type = 0
+			}
+		}
+		NOT = {
+			has_country_flag = bar_ongoing_activity
+		}
+		has_political_power > bar_friendship_activity_activities_cost^bar_friendship_activity_type
+	}
+}
+
 bar_is_chapter_1 = {
 	custom_trigger_tooltip = {
 		tooltip = BAR_story_phunt_progress

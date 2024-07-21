@@ -3054,18 +3054,6 @@ scripted_gui = {
 			bar_expedition_launch_click_enabled = {
 				BAR_expedition_can_be_launched = yes
 			}
-			bar_expedition_members_silver_star_click_enabled = {
-				has_country_flag = barrad_silver_star_alive
-			}
-			bar_expedition_members_leopold_click_enabled = {
-				has_country_flag = barrad_leopold_alive
-			}
-			bar_expedition_members_asinti_click_enabled = {
-				has_country_flag = barrad_asinti_alive
-			}
-			bar_expedition_members_viira_click_enabled = {
-				has_country_flag = barrad_viira_alive
-			}
 		}
 		effects = {
 			bar_expedition_members_captain_gasienica_click = {
@@ -3250,6 +3238,211 @@ scripted_gui = {
 				entry_container = "bar_expedition_targets"
 				value = bar_expedition_selected_tag
 			}
+		}
+	}
+
+
+
+
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+
+	## friendship activities
+
+	bar_friendship_activities_container = {
+		window_name = "bar_friendship_activities_container"
+		context_type = player_context
+		dirty = bar_friendship_activity_show
+		visible = {
+			has_variable = bar_friendship_activity_show
+		}
+		properties = {
+			bar_activities_members_silver_star_frame = {
+				frame = bar_friendship_activity_members^0
+			}
+			bar_activities_members_asinti_frame = {
+				frame = bar_friendship_activity_members^1
+			}
+			bar_activities_members_viira_frame = {
+				frame = bar_friendship_activity_members^2
+			}
+		}
+		triggers = {
+			bar_activities_launch_click_enabled = {
+				bar_activities_can_be_launched = yes
+			}
+		}
+		effects = {
+			bar_activities_exit_click = {
+				clear_variable = bar_friendship_activity_show
+			}
+			bar_activities_members_silver_star_click = {
+				if = {
+					limit = {
+						check_variable = {
+							bar_friendship_activity_members^0 = 1
+						}
+					}
+					set_variable = {
+						bar_friendship_activity_members^0 = 2
+					}
+				}
+				else = {
+					set_variable = {
+						bar_friendship_activity_members^0 = 1
+					}
+				}
+				bar_recalculate_activity = yes
+			}
+			bar_activities_members_asinti_click = {
+				if = {
+					limit = {
+						check_variable = {
+							bar_friendship_activity_members^1 = 1
+						}
+					}
+					set_variable = {
+						bar_friendship_activity_members^1 = 2
+					}
+				}
+				else = {
+					set_variable = {
+						bar_friendship_activity_members^1 = 1
+					}
+				}
+				bar_recalculate_activity = yes
+			}
+			bar_activities_members_viira_click = {
+				if = {
+					limit = {
+						check_variable = {
+							bar_friendship_activity_members^2 = 1
+						}
+					}
+					set_variable = {
+						bar_friendship_activity_members^2 = 2
+					}
+				}
+				else = {
+					set_variable = {
+						bar_friendship_activity_members^2 = 1
+					}
+				}
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_1_click = {
+				set_variable = { bar_friendship_activity_type = 1 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_2_click = {
+				set_variable = { bar_friendship_activity_type = 2 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_3_click = {
+				set_variable = { bar_friendship_activity_type = 3 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_4_click = {
+				set_variable = { bar_friendship_activity_type = 4 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_5_click = {
+				set_variable = { bar_friendship_activity_type = 5 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_6_click = {
+				set_variable = { bar_friendship_activity_type = 6 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_7_click = {
+				set_variable = { bar_friendship_activity_type = 7 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_8_click = {
+				set_variable = { bar_friendship_activity_type = 8 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_9_click = {
+				set_variable = { bar_friendship_activity_type = 9 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_type_list_10_click = {
+				set_variable = { bar_friendship_activity_type = 10 }
+				bar_recalculate_activity = yes
+			}
+			bar_activities_launch_click = {
+				set_country_flag = bar_ongoing_activity
+
+				set_temp_variable = {
+					bar_activity_pp_cost = bar_friendship_activity_activities_cost^bar_friendship_activity_type
+				}
+				multiply_temp_variable = {
+					bar_activity_pp_cost = -1
+				}
+
+				add_political_power = bar_activity_pp_cost
+				add_to_variable = {
+					bar_friendship_activity_activities_cost^bar_friendship_activity_type = 25
+				}
+
+				activate_mission = bar_ongoing_activity_mission
+				
+				bar_recalculate_activity = yes
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+	##################################################################################
+
+	## ending dialogue
+
+	bar_ending_dialogue_bg = {
+		window_name = "bar_ending_dialogue_bg"
+		dirty = bar_final_dialogue
+		context_type = player_context
+		visible = {
+			has_variable = bar_final_dialogue
 		}
 	}
 	bar_ending_dialogue_controlls_container = {
@@ -3684,6 +3877,16 @@ scripted_gui = {
 				check_variable = {
 					bar_final_dialogue = 30
 				}
+			}
+		}
+	}
+	bar_ending_dialogue_line_30 = {
+		window_name = "bar_ending_dialogue_line_30"
+		dirty = bar_final_dialogue
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_final_dialogue = 30
 			}
 		}
 	}

@@ -1,5 +1,4 @@
 @BAR_EXPEDITION_MAX_EQUIPMENT_LEVEL = 5;
-
 bar_load_sane_ambrosius = {
 	clr_country_flag = barrad_early_game
 	remove_ideas = BAR_pentarchy
@@ -25,7 +24,9 @@ bar_load_sane_ambrosius = {
 		country_leader = {
 			expire = "1965.1.1"
 			ideology = despotism
-			traits={ BAR_benevolent_ruler }
+			traits = {
+				BAR_benevolent_ruler
+			}
 		}
 	}
 	load_focus_tree = barrad_focus_tree_sane_ambrosius
@@ -498,22 +499,17 @@ BAR_relations_idea_swap = {
 	}
 }
 
-
- ######                                                          
- #     # ######  ####   ####  #    # #####   ####  ######  ####  
- #     # #      #      #    # #    # #    # #    # #      #      
- ######  #####   ####  #    # #    # #    # #      #####   ####  
- #   #   #           # #    # #    # #####  #      #           # 
- #    #  #      #    # #    # #    # #   #  #    # #      #    # 
- #     # ######  ####   ####   ####  #    #  ####  ######  ####  
-                                                                 
-
-
+######                                                          
+#     # ######  ####   ####  #    # #####   ####  ######  ####  
+#     # #      #      #    # #    # #    # #    # #      #      
+######  #####   ####  #    # #    # #    # #      #####   ####  
+#   #   #           # #    # #    # #####  #      #           # 
+#    #  #      #    # #    # #    # #   #  #    # #      #    # 
+#     # ######  ####   ####   ####  #    #  ####  ######  ####  
 #
 # @param BAR_resource_to_modify_ammount the amount that will be added/subtracted from the resources after executing functions
 # ALL actions on the resources MUST be done thought this methods due to bar_count_resources() neeeding to be called afterwards
 #
-
 bar_silver_resources_add = {
 	add_to_variable = {
 		var = BAR_resources_silver
@@ -545,8 +541,6 @@ bar_viira_resources_add = {
 	}
 	bar_count_resources = yes
 }
-
-
 
 bar_silver_resources_subtract = {
 	subtract_from_variable = {
@@ -580,7 +574,6 @@ bar_viira_resources_subtract = {
 	bar_count_resources = yes
 }
 
-
 #
 # wrappers for the resource modification, to not forget about @BAR_resource_to_modify_ammount and tooltip
 #
@@ -591,6 +584,7 @@ bar_silver_resources_add_250 = {
 	}
 	bar_silver_resources_add = yes
 }
+
 bar_silver_resources_add_500 = {
 	custom_effect_tooltip = bar_silver_resources_add_500_tooltip
 	set_variable = {
@@ -598,6 +592,7 @@ bar_silver_resources_add_500 = {
 	}
 	bar_silver_resources_add = yes
 }
+
 bar_silver_resources_add_750 = {
 	custom_effect_tooltip = bar_silver_resources_add_750_tooltip
 	set_variable = {
@@ -605,6 +600,7 @@ bar_silver_resources_add_750 = {
 	}
 	bar_silver_resources_add = yes
 }
+
 bar_silver_resources_add_1000 = {
 	custom_effect_tooltip = bar_silver_resources_add_1000_tooltip
 	set_variable = {
@@ -613,7 +609,6 @@ bar_silver_resources_add_1000 = {
 	bar_silver_resources_add = yes
 }
 
-
 bar_leopold_resources_add_250 = {
 	custom_effect_tooltip = bar_leopold_resources_add_250_tooltip
 	set_variable = {
@@ -621,6 +616,7 @@ bar_leopold_resources_add_250 = {
 	}
 	bar_leopold_resources_add = yes
 }
+
 bar_leopold_resources_add_500 = {
 	custom_effect_tooltip = bar_leopold_resources_add_500_tooltip
 	set_variable = {
@@ -628,6 +624,7 @@ bar_leopold_resources_add_500 = {
 	}
 	bar_leopold_resources_add = yes
 }
+
 bar_leopold_resources_add_750 = {
 	custom_effect_tooltip = bar_leopold_resources_add_750_tooltip
 	set_variable = {
@@ -635,6 +632,7 @@ bar_leopold_resources_add_750 = {
 	}
 	bar_leopold_resources_add = yes
 }
+
 bar_leopold_resources_add_1000 = {
 	custom_effect_tooltip = bar_leopold_resources_add_1000_tooltip
 	set_variable = {
@@ -643,7 +641,6 @@ bar_leopold_resources_add_1000 = {
 	bar_leopold_resources_add = yes
 }
 
-
 bar_asinti_resources_add_250 = {
 	custom_effect_tooltip = bar_asinti_resources_add_250_tooltip
 	set_variable = {
@@ -651,6 +648,7 @@ bar_asinti_resources_add_250 = {
 	}
 	bar_asinti_resources_add = yes
 }
+
 bar_asinti_resources_add_500 = {
 	custom_effect_tooltip = bar_asinti_resources_add_500_tooltip
 	set_variable = {
@@ -658,6 +656,7 @@ bar_asinti_resources_add_500 = {
 	}
 	bar_asinti_resources_add = yes
 }
+
 bar_asinti_resources_add_750 = {
 	custom_effect_tooltip = bar_asinti_resources_add_750_tooltip
 	set_variable = {
@@ -665,6 +664,7 @@ bar_asinti_resources_add_750 = {
 	}
 	bar_asinti_resources_add = yes
 }
+
 bar_asinti_resources_add_1000 = {
 	custom_effect_tooltip = bar_asinti_resources_add_1000_tooltip
 	set_variable = {
@@ -680,6 +680,7 @@ bar_viira_resources_add_250 = {
 	}
 	bar_viira_resources_add = yes
 }
+
 bar_viira_resources_add_500 = {
 	custom_effect_tooltip = bar_viira_resources_add_500_tooltip
 	set_variable = {
@@ -687,6 +688,7 @@ bar_viira_resources_add_500 = {
 	}
 	bar_viira_resources_add = yes
 }
+
 bar_viira_resources_add_750 = {
 	custom_effect_tooltip = bar_viira_resources_add_750_tooltip
 	set_variable = {
@@ -694,6 +696,7 @@ bar_viira_resources_add_750 = {
 	}
 	bar_viira_resources_add = yes
 }
+
 bar_viira_resources_add_1000 = {
 	custom_effect_tooltip = bar_viira_resources_add_1000_tooltip
 	set_variable = {
@@ -702,7 +705,6 @@ bar_viira_resources_add_1000 = {
 	bar_viira_resources_add = yes
 }
 
-
 bar_silver_resources_subtract_500 = {
 	custom_effect_tooltip = bar_silver_resources_subtract_500_tooltip
 	set_variable = {
@@ -710,6 +712,7 @@ bar_silver_resources_subtract_500 = {
 	}
 	bar_silver_resources_subtract = yes
 }
+
 bar_silver_resources_subtract_1000 = {
 	custom_effect_tooltip = bar_silver_resources_subtract_1000_tooltip
 	set_variable = {
@@ -717,6 +720,7 @@ bar_silver_resources_subtract_1000 = {
 	}
 	bar_silver_resources_subtract = yes
 }
+
 bar_silver_resources_subtract_1500 = {
 	custom_effect_tooltip = bar_silver_resources_subtract_1500_tooltip
 	set_variable = {
@@ -732,6 +736,7 @@ bar_leopold_resources_subtract_500 = {
 	}
 	bar_leopold_resources_subtract = yes
 }
+
 bar_leopold_resources_subtract_1000 = {
 	custom_effect_tooltip = bar_leopold_resources_subtract_1000_tooltip
 	set_variable = {
@@ -739,6 +744,7 @@ bar_leopold_resources_subtract_1000 = {
 	}
 	bar_leopold_resources_subtract = yes
 }
+
 bar_leopold_resources_subtract_1500 = {
 	custom_effect_tooltip = bar_leopold_resources_subtract_1500_tooltip
 	set_variable = {
@@ -754,6 +760,7 @@ bar_asinti_resources_subtract_500 = {
 	}
 	bar_asinti_resources_subtract = yes
 }
+
 bar_asinti_resources_subtract_1500 = {
 	custom_effect_tooltip = bar_asinti_resources_subtract_1500_tooltip
 	set_variable = {
@@ -769,6 +776,7 @@ bar_viira_resources_subtract_750 = {
 	}
 	bar_viira_resources_subtract = yes
 }
+
 bar_viira_resources_subtract_1000 = {
 	custom_effect_tooltip = bar_viira_resources_subtract_1000_tooltip
 	set_variable = {
@@ -777,39 +785,174 @@ bar_viira_resources_subtract_1000 = {
 	bar_viira_resources_subtract = yes
 }
 
- ######                                                    
- #     # ###### #        ##   ##### #  ####  #    #  ####  
- #     # #      #       #  #    #   # #    # ##   # #      
- ######  #####  #      #    #   #   # #    # # #  #  ####  
- #   #   #      #      ######   #   # #    # #  # #      # 
- #    #  #      #      #    #   #   # #    # #   ## #    # 
- #     # ###### ###### #    #   #   #  ####  #    #  ####  
-                                                           
- #
- # all relation changes MUST be made using those in order to prevent bugs in friendship path
- # @BAR_begun_friendship_path flag disables raising/lowering relations
- #
+######                                                    
+#     # ###### #        ##   ##### #  ####  #    #  ####  
+#     # #      #       #  #    #   # #    # ##   # #      
+######  #####  #      #    #   #   # #    # # #  #  ####  
+#   #   #      #      ######   #   # #    # #  # #      # 
+#    #  #      #      #    #   #   # #    # #   ## #    # 
+#     # ###### ###### #    #   #   #  ####  #    #  ####  
+#
+# all relation changes MUST be made using those in order to prevent bugs in friendship path
+# @BAR_begun_friendship_path flag disables raising/lowering relations
+#
+bar_activities_init = {
+	resize_array = {
+		array = bar_friendship_activity_members
+		value = 1
+		size = 3
+	}
+	set_variable = {
+		bar_friendship_activity_type = 0
+	}
+	set_variable = {
+		bar_activity_relations_up_leopold_silver = 0
+	}
+	set_variable = {
+		bar_activity_relations_up_leopold_asinti = 0
+	}
+	set_variable = {
+		bar_activity_relations_up_leopold_viira = 0
+	}
+	set_variable = {
+		bar_activity_relations_up_silver_asinti = 0
+	}
+	set_variable = {
+		bar_activity_relations_up_silver_viira = 0
+	}
+	set_variable = {
+		bar_activity_relations_up_asinti_viira = 0
+	}
+	set_variable = {
+		bar_activity_fail_check = 5
+	}
+	resize_array = {
+		array = bar_friendship_activity_activities_cost
+		value = 25
+		size = 11
+	}
+}
+
+bar_relations_activity_add = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = BAR_begun_friendship_path
+			}
+		}
+
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = bar_activity_relations_up_leopold_silver
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BAR_relations_silver_leopold > 10
+				}
+			}
+			set_variable = {
+				BAR_relations_silver_leopold = 100
+			}
+		}
+		
+		add_to_variable = {
+			var = BAR_relations_asinti_leopold
+			value = bar_activity_relations_up_leopold_asinti
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BAR_relations_asinti_leopold > 10
+				}
+			}
+			set_variable = {
+				BAR_relations_asinti_leopold = 100
+			}
+		}
+		
+		add_to_variable = {
+			var = BAR_relations_leopold_viira
+			value = bar_activity_relations_up_leopold_viira
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BAR_relations_leopold_viira > 10
+				}
+			}
+			set_variable = {
+				BAR_relations_leopold_viira = 100
+			}
+		}
+
+		add_to_variable = {
+			var = BAR_relations_asinti_silver
+			value = bar_activity_relations_up_silver_asinti
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BAR_relations_asinti_silver > 10
+				}
+			}
+			set_variable = {
+				BAR_relations_asinti_silver = 100
+			}
+		}
+		
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = bar_activity_relations_up_silver_viira
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BAR_relations_silver_viira > 10
+				}
+			}
+			set_variable = {
+				BAR_relations_silver_viira = 100
+			}
+		}
+		
+		add_to_variable = {
+			var = BAR_relations_asinti_viira
+			value = bar_activity_relations_up_asinti_viira
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BAR_relations_asinti_viira > 10
+				}
+			}
+			set_variable = {
+				BAR_relations_asinti_viira = 100
+			}
+		}	
+	}
+	BAR_relations_idea_swap = yes
+}
 
 BAR_relations_max_out = {
 	set_variable = {
 		BAR_relations_asinti_silver = 100
-	}	
+	}
 	set_variable = {
 		BAR_relations_asinti_leopold = 100
-	}	
+	}
 	set_variable = {
 		BAR_relations_asinti_viira = 100
-	}	
+	}
 	set_variable = {
 		BAR_relations_silver_leopold = 100
-	}	
+	}
 	set_variable = {
 		BAR_relations_silver_viira = 100
-	}	
+	}
 	set_variable = {
 		BAR_relations_leopold_viira = 100
 	}
-
 	BAR_relations_idea_swap = yes
 }
 
@@ -1237,24 +1380,20 @@ BAR_remove_cooperation = {
 	remove_ideas = BAR_relations_silver_viira_negative
 	remove_ideas = BAR_relations_leopold_viira_negative
 }
-                                                                                                                
- #    # # #      #      # #    #  ####      ####  #    #   ##   #####    ##    ####  ##### ###### #####   ####  
- #   #  # #      #      # ##   # #    #    #    # #    #  #  #  #    #  #  #  #    #   #   #      #    # #      
- ####   # #      #      # # #  # #         #      ###### #    # #    # #    # #        #   #####  #    #  ####  
- #  #   # #      #      # #  # # #  ###    #      #    # ###### #####  ###### #        #   #      #####       # 
- #   #  # #      #      # #   ## #    #    #    # #    # #    # #   #  #    # #    #   #   #      #   #  #    # 
- #    # # ###### ###### # #    #  ####      ####  #    # #    # #    # #    #  ####    #   ###### #    #  ####  
-                                                                                                                
 
-
+#    # # #      #      # #    #  ####      ####  #    #   ##   #####    ##    ####  ##### ###### #####   ####  
+#   #  # #      #      # ##   # #    #    #    # #    #  #  #  #    #  #  #  #    #   #   #      #    # #      
+####   # #      #      # # #  # #         #      ###### #    # #    # #    # #        #   #####  #    #  ####  
+#  #   # #      #      # #  # # #  ###    #      #    # ###### #####  ###### #        #   #      #####       # 
+#   #  # #      #      # #   ## #    #    #    # #    # #    # #   #  #    # #    #   #   #      #   #  #    # 
+#    # # ###### ###### # #    #  ####      ####  #    # #    # #    # #    #  ####    #   ###### #    #  ####  
 bar_debuff_leopold = {
-
 }
+
 bar_debuff_silver_star = {
-
 }
-bar_debuff_asinti = {
 
+bar_debuff_asinti = {
 }
 
 barrad_kill_leopold = {
@@ -1481,17 +1620,13 @@ change_all_province_names = {
 	}
 }
 
-
-  #####                                    #####                      
- #     # # #      #    # ###### #####     #     # #####   ##   #####  
- #       # #      #    # #      #    #    #         #    #  #  #    # 
-  #####  # #      #    # #####  #    #     #####    #   #    # #    # 
-       # # #      #    # #      #####           #   #   ###### #####  
- #     # # #       #  #  #      #   #     #     #   #   #    # #   #  
-  #####  # ######   ##   ###### #    #     #####    #   #    # #    # 
-                                                                      
-
-
+#####                                    #####                      
+#     # # #      #    # ###### #####     #     # #####   ##   #####  
+#       # #      #    # #      #    #    #         #    #  #  #    # 
+#####  # #      #    # #####  #    #     #####    #   #    # #    # 
+# # #      #    # #      #####           #   #   ###### #####  
+#     # # #       #  #  #      #   #     #     #   #   #    # #   #  
+#####  # ######   ##   ###### #    #     #####    #   #    # #    # 
 BAR_population_convert = {
 	THIS = {
 		set_state_category = rural
@@ -1723,17 +1858,13 @@ bar_kill_advisors = {
 	}
 }
 
-
- #     #                   
- #     # # # #####    ##   
- #     # # # #    #  #  #  
- #     # # # #    # #    # 
-  #   #  # # #####  ###### 
-   # #   # # #   #  #    # 
-    #    # # #    # #    # 
-                           
-
-
+#     #                   
+#     # # # #####    ##   
+#     # # # #    #  #  #  
+#     # # # #    # #    # 
+#   #  # # #####  ###### 
+# #   # # #   #  #    # 
+#    # # #    # #    # 
 bar_viira_spells_max_overload = {
 	hidden_effect = {
 		set_variable = {
@@ -1741,7 +1872,9 @@ bar_viira_spells_max_overload = {
 		}
 		every_owned_state = {
 			limit = {
-				check_variable = { building_level@nuclear_reactor > 0 }		
+				check_variable = {
+					building_level@nuclear_reactor > 0
+				}
 			}
 			BAR = {
 				add_to_variable = {
@@ -1773,7 +1906,8 @@ bar_viira_spells_overload_calculate_percentage = {
 		set_variable = {
 			viira_mana_overload_percentage = 0
 		}
-	} else_if ={
+	}
+	else_if = {
 		limit = {
 			check_variable = {
 				viira_max_overload = 0
@@ -1782,7 +1916,8 @@ bar_viira_spells_overload_calculate_percentage = {
 		set_variable = {
 			viira_mana_overload_percentage = 100
 		}
-	} else = {
+	}
+	else = {
 		set_variable = {
 			viira_mana_overload_percentage = viira_mana_overload
 		}
@@ -1802,7 +1937,9 @@ bar_viira_spells_overload_monthly_tickdown = {
 	}
 	every_owned_state = {
 		limit = {
-			check_variable = { building_level@nuclear_reactor > 0 }		
+			check_variable = {
+				building_level@nuclear_reactor > 0
+			}
 		}
 		BAR = {
 			add_to_temp_variable = {
@@ -1839,6 +1976,7 @@ BAR_new_viira_note = {
 		}
 	}
 }
+
 BAR_merge_commandments = {
 	hidden_effect = {
 		if = {
@@ -1932,11 +2070,12 @@ BAR_unlock_spells_7 = {
 	#conjure resources
 	modify_building_resources = {
 		building = nuclear_reactor
-		resource = aluminium 
+		resource = aluminium
 		amount = 2
-	}modify_building_resources = {
+	}
+	modify_building_resources = {
 		building = nuclear_reactor
-		resource = aluminium 
+		resource = aluminium
 		amount = 2
 	}
 	modify_building_resources = {
@@ -1976,6 +2115,7 @@ BAR_unlock_spells_8 = {
 	set_country_flag = BAR_spells_unlocked_8
 	set_country_flag = bar_viira_investigation_step_21
 }
+
 BAR_spell_upgrades_prepare = {
 	resize_array = {
 		array = bar_viira_mana_crystal_array
@@ -2001,16 +2141,13 @@ BAR_spell_upgrades_prepare = {
 	}
 }
 
-  #####                                            
- #     # #      ######   ##   #    # #    # #####  
- #       #      #       #  #  ##   # #    # #    # 
- #       #      #####  #    # # #  # #    # #    # 
- #       #      #      ###### #  # # #    # #####  
- #     # #      #      #    # #   ## #    # #      
-  #####  ###### ###### #    # #    #  ####  #      
-                                                   
-
-
+#####                                            
+#     # #      ######   ##   #    # #    # #####  
+#       #      #       #  #  ##   # #    # #    # 
+#       #      #####  #    # # #  # #    # #    # 
+#       #      #      ###### #  # # #    # #####  
+#     # #      #      #    # #   ## #    # #      
+#####  ###### ###### #    # #    #  ####  #      
 BAR_clear_mess_puppet = {
 	hidden_effect = {
 		set_country_flag = BAR_end_of_pentarchy
@@ -2065,30 +2202,25 @@ BAR_clear_mess_puppet = {
 	}
 }
 
-
-  #####           
- #     # #    # # 
- #       #    # # 
- #  #### #    # # 
- #     # #    # # 
- #     # #    # # 
-  #####   ####  # 
-
-
+#####           
+#     # #    # # 
+#       #    # # 
+#  #### #    # # 
+#     # #    # # 
+#     # #    # # 
+#####   ####  # 
 bar_gui_update = {
 	add_to_variable = {
 		bar_pen_screen_show = 1
 	}
 }
 
-                                                                                                                                        
-  ####  #    #   ##   #####    ##    ####  ##### ###### #####     #####  ######  ####  #####  #    # # ##### #    # ###### #    # ##### 
- #    # #    #  #  #  #    #  #  #  #    #   #   #      #    #    #    # #      #    # #    # #    # #   #   ##  ## #      ##   #   #   
- #      ###### #    # #    # #    # #        #   #####  #    #    #    # #####  #      #    # #    # #   #   # ## # #####  # #  #   #   
- #      #    # ###### #####  ###### #        #   #      #####     #####  #      #      #####  #    # #   #   #    # #      #  # #   #   
- #    # #    # #    # #   #  #    # #    #   #   #      #   #     #   #  #      #    # #   #  #    # #   #   #    # #      #   ##   #   
-  ####  #    # #    # #    # #    #  ####    #   ###### #    #    #    # ######  ####  #    #  ####  #   #   #    # ###### #    #   #   
-                                                                                                                                        
+####  #    #   ##   #####    ##    ####  ##### ###### #####     #####  ######  ####  #####  #    # # ##### #    # ###### #    # ##### 
+#    # #    #  #  #  #    #  #  #  #    #   #   #      #    #    #    # #      #    # #    # #    # #   #   ##  ## #      ##   #   #   
+#      ###### #    # #    # #    # #        #   #####  #    #    #    # #####  #      #    # #    # #   #   # ## # #####  # #  #   #   
+#      #    # ###### #####  ###### #        #   #      #####     #####  #      #      #####  #    # #   #   #    # #      #  # #   #   
+#    # #    # #    # #   #  #    # #    #   #   #      #   #     #   #  #      #    # #   #  #    # #   #   #    # #      #   ##   #   
+####  #    # #    # #    # #    #  ####    #   ###### #    #    #    # ######  ####  #    #  ####  #   #   #    # ###### #    #   #   
 BAR_hide_gasienica = {
 	set_country_flag = BAR_gasienica_hidden
 	remove_ideas = BAR_gasienica_advisor
@@ -2314,17 +2446,13 @@ BAR_add_gebleod_as_commander = {
 	custom_effect_tooltip = BAR_inner_circle_tooltip
 }
 
-
- #######                                                            
- #       #    # #####  ###### #####  # ##### #  ####  #    #  ####  
- #        #  #  #    # #      #    # #   #   # #    # ##   # #      
- #####     ##   #    # #####  #    # #   #   # #    # # #  #  ####  
- #         ##   #####  #      #    # #   #   # #    # #  # #      # 
- #        #  #  #      #      #    # #   #   # #    # #   ## #    # 
- ####### #    # #      ###### #####  #   #   #  ####  #    #  ####  
-                                                                    
-
-
+#######                                                            
+#       #    # #####  ###### #####  # ##### #  ####  #    #  ####  
+#        #  #  #    # #      #    # #   #   # #    # ##   # #      
+#####     ##   #    # #####  #    # #   #   # #    # # #  #  ####  
+#         ##   #####  #      #    # #   #   # #    # #  # #      # 
+#        #  #  #      #      #    # #   #   # #    # #   ## #    # 
+####### #    # #      ###### #####  #   #   #  ####  #    #  ####  
 bar_expedition_init = {
 	resize_array = {
 		array = bar_expedition_members
@@ -2348,6 +2476,2662 @@ bar_expedition_init = {
 	}
 	set_variable = {
 		bar_expedition_length = 1
+	}
+}
+
+bar_recalculate_activity = {
+	if = {
+		limit = {
+			has_country_flag = bar_ongoing_activity
+		}
+	} else = {
+
+		set_variable = {
+			bar_activity_relations_up_leopold_silver = 0
+		}
+		set_variable = {
+			bar_activity_relations_up_leopold_asinti = 0
+		}
+		set_variable = {
+			bar_activity_relations_up_leopold_viira = 0
+		}
+		set_variable = {
+			bar_activity_relations_up_silver_asinti = 0
+		}
+		set_variable = {
+			bar_activity_relations_up_silver_viira = 0
+		}
+		set_variable = {
+			bar_activity_relations_up_asinti_viira = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 3
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 8
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 4
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 5
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 12
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 5
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 6
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 7
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 1
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 2
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 3
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 4
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 5
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 5
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 4
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 4
+			}
+			set_variable = {
+				bar_activity_relations_combo = 8
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 6
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 7
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 2
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 5
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 2
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 8
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 9
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 1
+				}
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+				check_variable = {
+					bar_friendship_activity_type = 10
+				}
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_silver = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_asinti = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_leopold_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_asinti = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_silver_viira = 0
+			}
+			set_variable = {
+				bar_activity_relations_up_asinti_viira = 3
+			}
+			set_variable = {
+				bar_activity_relations_combo = 0
+			}
+		}
+	
+		set_variable = {
+			bar_activity_fail_check = 5
+		}
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^0 = 2
+				}
+			}
+			add_to_variable = {
+				bar_activity_fail_check = 5
+			}
+		}	
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^1 = 2
+				}
+			}
+			add_to_variable = {
+				bar_activity_fail_check = 5
+			}
+		}	
+		if = {
+			limit = {
+				check_variable = {
+					bar_friendship_activity_members^2 = 2
+				}
+			}
+			add_to_variable = {
+				bar_activity_fail_check = 5
+			}
+		}
+	}
+
+	add_to_variable = {
+		bar_friendship_activity_show = 1
 	}
 }
 
@@ -2521,24 +5305,24 @@ bar_expedition_week_end = {
 	set_variable = {
 		bar_expedition_phase_length = 7
 	}
-	add_to_variable = { bar_expedition_week = 1 }
-
+	add_to_variable = {
+		bar_expedition_week = 1
+	}
 	bar_expedition_success_phase = yes
-
 	set_variable_to_random = {
 		var = rolled_peril
 		min = 0
 		max = 100
 		integer = yes
-	}	
+	}
 	set_variable_to_random = {
 		var = rolled_cohesion
 		min = 0
 		max = 100
 		integer = yes
 	}
-
-	if = { #peril phase
+	if = {
+		#peril phase
 		limit = {
 			check_variable = {
 				var = bar_expedition_peril
@@ -2546,10 +5330,13 @@ bar_expedition_week_end = {
 				compare = greater_than_or_equals
 			}
 		}
-		
-		clear_array = bar_expedition_loot	
-		country_event = { id = bar_expedition.2 }
-	} else_if = { #cohesion phase
+		clear_array = bar_expedition_loot
+		country_event = {
+			id = bar_expedition.2
+		}
+	}
+	else_if = {
+		#cohesion phase
 		limit = {
 			check_variable = {
 				var = rolled_cohesion
@@ -2557,8 +5344,12 @@ bar_expedition_week_end = {
 				compare = greater_than_or_equals
 			}
 		}
-		country_event = { id = bar_expedition.3 }
-	} else_if = { #expedition end
+		country_event = {
+			id = bar_expedition.3
+		}
+	}
+	else_if = {
+		#expedition end
 		limit = {
 			check_variable = {
 				var = bar_expedition_week
@@ -2566,8 +5357,12 @@ bar_expedition_week_end = {
 				compare = greater_than_or_equals
 			}
 		}
-		country_event = { id = bar_expedition.4 }
-	} else = { #expedition continues
+		country_event = {
+			id = bar_expedition.4
+		}
+	}
+	else = {
+		#expedition continues
 		activate_mission = BAR_expedition_progresses
 	}
 }
@@ -2648,7 +5443,7 @@ bar_expedition_roll_gasienica_loot = {
 			add_to_array = {
 				bar_expedition_loot = 17
 			}
-		}	
+		}
 		10 = {
 			add_to_array = {
 				bar_expedition_loot = 18
@@ -3003,7 +5798,8 @@ bar_expedition_retrive_loot = {
 					producer = var:bar_expedition_target
 					amount = 2
 				}
-			} else = {
+			}
+			else = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					producer = var:bar_expedition_target
@@ -3052,13 +5848,14 @@ bar_expedition_retrive_loot = {
 					producer = var:bar_expedition_target
 					amount = 50
 				}
-			} else = {
+			}
+			else = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					producer = var:bar_expedition_target
 					amount = 500
 				}
-			}	
+			}
 		}
 		else_if = {
 			limit = {
@@ -3156,17 +5953,12 @@ bar_expedition_retrive_loot = {
 	}
 }
 
-
-                        
- #    # #  ####   ####  
- ##  ## # #      #    # 
- # ## # #  ####  #      
- #    # #      # #      
- #    # # #    # #    # 
- #    # #  ####   ####  
-                        
-
-
+#    # #  ####   ####  
+##  ## # #      #    # 
+# ## # #  ####  #      
+#    # #      # #      
+#    # # #    # #    # 
+#    # #  ####   ####  
 one_state_inf = {
 	if = {
 		limit = {

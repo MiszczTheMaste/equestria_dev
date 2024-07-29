@@ -1216,6 +1216,10 @@ spriteTypes = {
 		name = "GFX_goal_bar_silver_and_viira_2"
 		texturefile = "gfx/interface/bar/goals/bar_silver_and_viira_2.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_silver_closed"
+		texturefile = "gfx/interface/goals/bar/goal_silver_closed.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"
 		texturefile = "gfx/interface/bar/ideas/leopold_partial_ascesion.dds"

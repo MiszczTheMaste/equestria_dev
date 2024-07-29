@@ -2186,6 +2186,40 @@ country_event = { #silver and viira on party
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.11.a
+		if = {
+			limit = {
+				OR = {
+					check_variable = {
+						BAR_relations_asinti_silver > 69
+					}
+					check_variable = {
+						BAR_relations_silver_leopold > 69
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					country_event = { id = barrad_second.17 }
+				}
+				50 = {
+					country_event = { id = barrad_second.18 }
+				}
+			}
+		} else_if = {
+			limit = { 
+				check_variable = {
+					BAR_relations_asinti_silver > 69
+				}
+			}
+			country_event = { id = barrad_second.18 }
+		} else_if = {
+			limit = { 
+				check_variable = {
+					BAR_relations_silver_leopold > 69
+				}
+			}
+			country_event = { id = barrad_second.17 }
+		} 
 	}
 }
 
@@ -2217,25 +2251,7 @@ country_event = { #silver and asinti on party
 	}
 }
 
-country_event = {
-	id = barrad_second.14 #wish granter
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.14"
-	}
-	title = barrad_second.12.t
-	desc = barrad_second.12.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_second.14.a
-		add_political_power = 14
-		hidden_effect = {
-			country_event = { id = barrad_second.15 days = 3 }
-		}
-	}
-}
-
-country_event = { #gąsienica talking with someone about what he knows about cultists
+country_event = { #gąsienica get questioned by viira about what he knows about cultists
 	id = barrad_second.15
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
@@ -2249,6 +2265,7 @@ country_event = { #gąsienica talking with someone about what he knows about cul
 		add_political_power = 25
 	}
 }
+
 country_event = { #viira gets agry at asinti for trying to infiltrate the cult and messing with her work
 	id = barrad_second.16
 	immediate = {
@@ -2262,6 +2279,50 @@ country_event = { #viira gets agry at asinti for trying to infiltrate the cult a
 		name = barrad_second.16.a
 		add_political_power = 25
 		BAR_relations_decrease_asinti_viira_5 = yes
+	}
+}
+country_event = {
+	id = barrad_second.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
+	}
+	title = barrad_second.17.t
+	desc = barrad_second.17.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.17.a
+		BAR_relations_increase_silver_leopold_5 = yes
+		country_event = { id = barrad_second.19 }
+	}
+}
+country_event = {
+	id = barrad_second.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.18"
+	}
+	title = barrad_second.18.t
+	desc = barrad_second.18.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.18.a
+		BAR_relations_increase_asinti_silver_5 = yes
+		country_event = { id = barrad_second.19 }
+	}
+}
+country_event = { 
+	id = barrad_second.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.19"
+	}
+	title = barrad_second.19.t
+	desc = barrad_second.19.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = barrad_second.19.a
+		BAR_relations_increase_silver_viira_5 = yes
 	}
 }
 

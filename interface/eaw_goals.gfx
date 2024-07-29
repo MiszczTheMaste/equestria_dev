@@ -2473,7 +2473,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_ambrosius"
-		texturefile = "gfx/interface/goals/BAR/goal_ambrosius.tga"
+		texturefile = "gfx/interface/goals/BAR/goal_ambrosius.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_the_binds"

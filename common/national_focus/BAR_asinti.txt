@@ -236,7 +236,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_research
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_indy_technological_supremacy
 		cost = 4
 		x = 0
 		y = 1
@@ -253,7 +253,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_battlefield_drugs
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_continuous_research
 		cost = 4
 		x = -4
 		y = 1
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_enable_chargers
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_zebra_desert_army
 		cost = 4
 		x = -3
 		y = 1
@@ -289,7 +289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_enable_knights
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_griffon_knights
 		cost = 4
 		x = -1
 		y = 1
@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_enable_pegasi
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_pony_pegasus
 		cost = 4
 		x = 1
 		y = 1
@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_enable_ironpaws
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_DMT_mad_science
 		cost = 4
 		x = 3
 		y = 1
@@ -346,7 +346,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_super_drugs
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_white_magic_symbol
 		cost = 4
 		x = 0
 		y = 2
@@ -371,7 +371,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_mountaineers
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_GRE_a_land_of_mountains
 		cost = 4
 		x = -2
 		y = 2
@@ -410,7 +410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_marines
-		icon = GFX_goal_revolution_pony
+		icon = GFX_marinefocus
 		cost = 4
 		x = 2
 		y = 2
@@ -501,7 +501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_weapons
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		cost = 4
 		x = 3
 		y = 1
@@ -523,7 +523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_weapons_2
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_SMB_mountain_guns
 		cost = 4
 		x = -2
 		y = 1
@@ -545,7 +545,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_weapons_3
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_small_arms
 		cost = 4
 		x = 0
 		y = 1
@@ -567,7 +567,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_air
-		icon = GFX_goal_revolution_pony
+		icon = GFX_zebra_plane
 		cost = 4
 		x = 0
 		y = 1
@@ -608,7 +608,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_air_2
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_build_airforce
 		cost = 4
 		x = 0
 		y = 1
@@ -631,7 +631,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_air_3
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_pacification_of_the_planes
 		cost = 4
 		x = 1
 		y = 1
@@ -651,7 +651,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_support
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_pony_soldier
 		cost = 4
 		x = 2
 		y = 1
@@ -679,7 +679,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_hospitals
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_academy_of_medicine
 		cost = 4
 		x = 0
 		y = 1
@@ -701,7 +701,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_hospitals_1
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_academy_of_medicine
 		cost = 4
 		x = -1
 		y = 1
@@ -720,7 +720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_hospitals_2
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_academy_of_medicine
 		cost = 4
 		x = 1
 		y = 1
@@ -739,7 +739,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_hospitals_3
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_academy_of_medicine
 		cost = 4
 		x = 1
 		y = 1
@@ -761,7 +761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_poverty_ascetism
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_rice_field
 		cost = 4
 		x = -2
 		y = 1
@@ -778,7 +778,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_literacy_indoctrination
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_EQS_TNO_redefine_friendship
 		cost = 4
 		x = 2
 		y = 1
@@ -795,7 +795,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_grand_sanctuary
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_Generic_Temple
 		cost = 4
 		x = 0
 		y = 1
@@ -815,7 +815,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_capital_temple_0
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_new_temple
 		cost = 4
 		x = -3
 		y = 1
@@ -856,7 +856,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_capital_temple_1
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_new_temple
 		cost = 4
 		x = -1
 		y = 1
@@ -886,7 +886,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_capital_temple_2
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_new_temple
 		cost = 4
 		x = 1
 		y = 1
@@ -951,7 +951,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_capital_temple_3
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_new_temple
 		cost = 4
 		x = 3
 		y = 1
@@ -1056,7 +1056,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_blood_rituals
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_the_black_book
 		cost = 4
 		x = 0
 		y = 2
@@ -1078,7 +1078,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_new_economy
-		icon = GFX_goal_revolution_pony
+		icon = GFX_YAL_seize_the_means_of_production
 		cost = 4
 		x = -2
 		y = 1
@@ -1095,7 +1095,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_new_conscription
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_zebra_religion
 		cost = 4
 		x = 2
 		y = 1
@@ -1112,7 +1112,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_blood_for_better_future
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_indy_bound_by_blood
 		cost = 4
 		x = 0
 		y = 1
@@ -1129,7 +1129,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_attack_kasa
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_Kasa_Unrest
 		cost = 4
 		x = -1
 		y = 1
@@ -1155,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_core_kasa
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_Kasa
 		cost = 4
 		x = -2
 		y = 1
@@ -1245,7 +1245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_core_olv
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_enslave_the_deer
 		cost = 4
 		x = 2
 		y = 1
@@ -1264,7 +1264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_attack_gryphus
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_support_from_GRY
 		cost = 4
 		x = 0
 		y = 1
@@ -1309,7 +1309,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_attack_riverlands
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_river_fed_suppression
 		cost = 4
 		x = 1
 		y = 1
@@ -1413,7 +1413,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_where_it_all_began
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_Generic_Kill_Colthage
 		cost = 4
 		x = 0
 		y = 1
@@ -1439,7 +1439,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_find_exact_place
-		icon = GFX_goal_revolution_pony
+		icon = GFX_desert_gen
 		cost = 4
 		x = -1
 		y = 1
@@ -1473,7 +1473,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_get_jumpoints
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_MIT_Red_Bull_Rising
 		cost = 4
 		x = 1
 		y = 1
@@ -1540,7 +1540,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_industrial_pony
 		cost = 4
 		x = 7
 		y = 1
@@ -1562,7 +1562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_2
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_pony_labour
 		cost = 4
 		x = -1
 		y = 1
@@ -1579,7 +1579,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_3
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_improve_relations_pony_pony
 		cost = 4
 		x = 1
 		y = 1
@@ -1596,7 +1596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_4
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 4
 		x = -2
 		y = 1
@@ -1623,7 +1623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_5
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_bits_gun
 		cost = 4
 		x = 0
 		y = 1
@@ -1640,7 +1640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_6
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_lau_factory
 		cost = 4
 		x = 0
 		y = 1
@@ -1657,7 +1657,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_7
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_generic_industry_2
 		cost = 4
 		x = 2
 		y = 1
@@ -1684,7 +1684,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_10
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_generic_modernize_industry
 		cost = 4
 		x = 1
 		y = 1
@@ -1719,7 +1719,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_11
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_chn_red_military_factories
 		cost = 4
 		x = -1
 		y = 1
@@ -1759,7 +1759,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_industry_14
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_zebra_pony_friends
 		cost = 4
 		x = 1
 		y = 1
@@ -1777,7 +1777,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_fleet
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_navy_hat_ships
 		cost = 4
 		x = 13
 		y = 1
@@ -1809,7 +1809,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_fleet_1
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_generic_destroyer
 		cost = 4
 		x = -1
 		y = 1
@@ -1838,7 +1838,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_fleet_2
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_shipyard
 		cost = 4
 		x = 1
 		y = 1
@@ -1871,7 +1871,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_fleet_3
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_AF24_across_the_middle_sea
 		cost = 4
 		x = 1
 		y = 1
@@ -1935,7 +1935,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_fleet_4
-		icon = GFX_goal_revolution_pony
+		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 4
 		x = -1
 		y = 1
@@ -1967,7 +1967,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_asinti_fleet_5
-		icon = GFX_goal_revolution_pony
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 4
 		x = 1
 		y = 1

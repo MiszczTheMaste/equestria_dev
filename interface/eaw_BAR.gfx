@@ -1220,6 +1220,122 @@ spriteTypes = {
 		name = "GFX_goal_silver_closed"
 		texturefile = "gfx/interface/goals/bar/goal_silver_closed.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_army1"
+		texturefile = "gfx/interface/goals/bar/army1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_attack_zes"
+		texturefile = "gfx/interface/goals/bar/attack_zes.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_bandit_hunt"
+		texturefile = "gfx/interface/goals/bar/bandit_hunt.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_cultists1"
+		texturefile = "gfx/interface/goals/bar/cultists1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_cut_forest"
+		texturefile = "gfx/interface/goals/bar/cut_forest.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_deer_ded"
+		texturefile = "gfx/interface/goals/bar/deer_ded.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_enemies_within"
+		texturefile = "gfx/interface/goals/bar/enemies_within.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_enemies_without"
+		texturefile = "gfx/interface/goals/bar/enemies_without.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_gasienica"
+		texturefile = "gfx/interface/goals/bar/gasienica.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_griffon_friends"
+		texturefile = "gfx/interface/goals/bar/griffon_friends.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_gasienica_hammer"
+		texturefile = "gfx/interface/goals/bar/gasienica_hammer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_ignition"
+		texturefile = "gfx/interface/goals/bar/ignition.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_leopold_build"
+		texturefile = "gfx/interface/goals/bar/leopold_build.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_leopold_viking"
+		texturefile = "gfx/interface/goals/bar/leopold_viking.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_meet_ambrosius"
+		texturefile = "gfx/interface/goals/bar/meet_ambrosius.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_merc_money"
+		texturefile = "gfx/interface/goals/bar/merc_money.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_merc_money"
+		texturefile = "gfx/interface/goals/bar/merc_money.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_militia"
+		texturefile = "gfx/interface/goals/bar/militia.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_mountain_brush"
+		texturefile = "gfx/interface/goals/bar/mountain_brush.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_noble_bow"
+		texturefile = "gfx/interface/goals/bar/noble_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_occupy_sanctuary"
+		texturefile = "gfx/interface/goals/bar/occupy_sanctuary.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_pentarchy"
+		texturefile = "gfx/interface/goals/bar/pentarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_seize_gun_factories"
+		texturefile = "gfx/interface/goals/bar/seize_gun_factories.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_star"
+		texturefile = "gfx/interface/goals/bar/silver_star.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_star_knife"
+		texturefile = "gfx/interface/goals/bar/silver_star_knife.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_soldiers_gallow"
+		texturefile = "gfx/interface/goals/bar/soldiers_gallow.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_total_mob"
+		texturefile = "gfx/interface/goals/bar/total_mob.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_viira_knife"
+		texturefile = "gfx/interface/goals/bar/viira_knife.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_zebra_ded"
+		texturefile = "gfx/interface/goals/bar/zebra_ded.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_leopold_partial_ascesion"
 		texturefile = "gfx/interface/bar/ideas/leopold_partial_ascesion.dds"

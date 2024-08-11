@@ -11,7 +11,7 @@ focus_tree = {
 	shared_focus = RIV_dreams_of_a_federation
 	focus = {
 		id = BAR_friend_state_of_our_home
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_pentarchy
 		cost = 0.4
 		x = 11
 		y = 0
@@ -26,7 +26,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_join_gasienica
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_gasienica
 		cost = 3
 		x = 0
 		y = 1
@@ -45,9 +45,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_enemies_within
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_enemies_within
 		cost = 3
-		x = -6
+		x = -5
 		y = 1
 		relative_position_id = BAR_friend_join_gasienica
 		ai_will_do = {
@@ -62,7 +62,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_ultimatum_to_influential
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_silver_star_knife
 		cost = 3
 		x = -3
 		y = 1
@@ -79,7 +79,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_train_local_militias
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_militia
 		cost = 3
 		x = -2
 		y = 1
@@ -97,7 +97,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_griffon_friends
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_griffon_friends
 		cost = 3
 		x = 0
 		y = 1
@@ -116,7 +116,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_welcome_defectors
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_noble_bow
 		cost = 3
 		x = 2
 		y = 1
@@ -137,7 +137,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_operation_tempest
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_soldiers_gallow
 		cost = 3
 		x = 1
 		y = 1
@@ -161,7 +161,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_operation_lomnica
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_zebra_ded
 		cost = 3
 		x = -1
 		y = 1
@@ -185,7 +185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_prepare_reactor_ignition
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_viira_knife
 		cost = 3
 		x = 0
 		y = 1
@@ -204,7 +204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_ignite_reactor
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_ignition
 		cost = 3
 		x = 0
 		y = 3
@@ -232,7 +232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_meet_ambrosius
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_meet_ambrosius
 		cost = 3
 		x = 0
 		y = 1
@@ -251,7 +251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_cultist_strongholds
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_gasienica_hammer
 		cost = 3
 		x = 3
 		y = 1
@@ -271,7 +271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_cultist_strongholds_mountains
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_mountain_brush
 		cost = 3
 		x = -2
 		y = 1
@@ -289,7 +289,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_cultist_strongholds_elysium
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_cultists1
 		cost = 3
 		x = 0
 		y = 1
@@ -312,7 +312,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_cultist_strongholds_roughers
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_cut_forest
 		cost = 3
 		x = 2
 		y = 1
@@ -337,7 +337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_occupy_grand_sanctuary
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_occupy_sanctuary
 		cost = 3
 		x = 0
 		y = 1
@@ -362,9 +362,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_enemies_without
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_enemies_without
 		cost = 3
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = BAR_friend_join_gasienica
 		ai_will_do = {
@@ -379,7 +379,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_attack_zes
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_attack_zes
 		cost = 3
 		x = -2
 		y = 1
@@ -405,7 +405,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_attack_zes_bonus
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_zebra_ded
 		cost = 3
 		x = -1
 		y = 1
@@ -430,7 +430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_convert_factories
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_total_mob
 		cost = 3
 		x = 0
 		y = 1
@@ -459,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_seize_factories
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_seize_gun_factories
 		cost = 3
 		x = -1
 		y = 1
@@ -492,7 +492,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_employ_mercenaries
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_merc_money
 		cost = 3
 		x = 1
 		y = 1
@@ -509,7 +509,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_attack_olv
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_leopold_viking
 		cost = 3
 		x = 2
 		y = 1
@@ -535,7 +535,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_attack_olv_bonus
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_deer_ded
 		cost = 3
 		x = 1
 		y = 1
@@ -560,7 +560,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_fortify_border
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_leopold_build
 		cost = 3
 		x = 3
 		y = 1
@@ -665,7 +665,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_light_of_the_star
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_silver_star
 		cost = 3
 		x = 6
 		y = 1
@@ -693,7 +693,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_prince_of_wittenland
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -9
 		y = 1
@@ -710,7 +710,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_letter_to_sister
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -748,7 +748,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_fight_for_friendship
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -767,7 +767,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_serving_justice
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -800,7 +800,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_homecoming
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -828,7 +828,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_move_to_wittenburgh
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -928,7 +928,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_rejoin_rivelands
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -1020,7 +1020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_river_federation_membership
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1051,7 +1051,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_viira_and_silver_diplomacy
-		icon = GFX_goal_bar_silver_and_viira
+		icon = GFX_goal_bar_fren_GFX_goal_bar_silver_and_viira
 		cost = 3
 		x = 0
 		y = 1
@@ -1071,7 +1071,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_beg_for_stuff
-		icon = GFX_goal_bar_screaming_viira
+		icon = GFX_goal_bar_fren_GFX_goal_bar_screaming_viira
 		cost = 2
 		x = -1
 		y = 1
@@ -1092,7 +1092,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_evi_griffons_diplomacy
-		icon = GFX_goal_bar_screaming_viira
+		icon = GFX_goal_bar_fren_GFX_goal_bar_screaming_viira
 		cost = 2
 		x = 1
 		y = 1
@@ -1120,7 +1120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_diplomacy_getting_somebody_competent
-		icon = GFX_goal_bar_silver_and_viira_2
+		icon = GFX_goal_bar_fren_GFX_goal_bar_silver_and_viira_2
 		cost = 3
 		x = 0
 		y = 1
@@ -1140,7 +1140,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_riverlands_diplomacy
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 2
 		x = 5
 		y = 1
@@ -1162,7 +1162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_merchant_dynasty
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1180,7 +1180,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_one_hoof_washes_the_other
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -1218,7 +1218,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_buy_our_stuff
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1243,7 +1243,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_silver_tongue
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1272,7 +1272,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_regional_interventionism
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1302,7 +1302,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_capture_gryphus
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -1333,7 +1333,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_aproach_cossacs
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -1354,7 +1354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_free_towns_deal
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1375,7 +1375,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_bandits_and_communists
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1412,7 +1412,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_lushi_ultimatum
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1433,7 +1433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_bring_order_to_helquil
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1467,7 +1467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_ruin_has_come
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1484,7 +1484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_now_what
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 1
 		x = 7
 		y = 1
@@ -1501,7 +1501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_2
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -5
 		y = 1
@@ -1520,7 +1520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_3
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -3
 		y = 1
@@ -1537,7 +1537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_4
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1554,7 +1554,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_5
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1579,7 +1579,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_6
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1599,7 +1599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_7
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1619,7 +1619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_8
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 5
 		x = 1
 		y = 1
@@ -1639,7 +1639,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_first_census
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 5
 		y = 1
@@ -1663,7 +1663,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_country_side_census
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -1687,7 +1687,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_many_cultures_of_barrad
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1704,7 +1704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_common_undestanding
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -1726,7 +1726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_visit_in_asinti_temple
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -1743,7 +1743,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_clockwork_asisted_work
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1770,7 +1770,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_infrastructure
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -1797,7 +1797,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_land_reclamation
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 3
 		y = 1
@@ -1822,7 +1822,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_anti_anomaly_work
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -1864,7 +1864,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_civ_industry
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 6
 		x = 0
 		y = 1
@@ -1907,7 +1907,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mil_industry
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 5
 		x = 0
 		y = 1
@@ -1950,7 +1950,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_dev_up
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -1978,7 +1978,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_barradian_academy_of_applied_science
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2001,7 +2001,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_electrical_engineering_faculty
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -2023,7 +2023,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mechanical_engineering_faculty
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -2045,7 +2045,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_magical_engineering_faculty
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -2078,7 +2078,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_renowned_genius
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2096,7 +2096,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_high_automation
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2116,7 +2116,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_sharing_knowledge_of_arcane
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2141,7 +2141,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_invite_other_to_study_magic
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2184,7 +2184,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_everything_will_be_fine
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 2
@@ -2210,7 +2210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_agriculture_mechanization
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -2230,8 +2230,8 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_new_southern_friends
-		icon = GFX_goal_cry_com_sync
-		cost = 3
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = BAR_friend_ruin_has_come
@@ -2242,7 +2242,9 @@ focus_tree = {
 			focus = BAR_friend_ruin_has_come
 		}
 		completion_reward = {
-			add_stability = 0.05
+			ZES = {
+				add_to_ROOT_potential_cores = yes
+			}
 			hidden_effect = {
 				country_event = { id = barrad_friendship_tree.24 days = 63}
 			}
@@ -2250,7 +2252,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_kasa_1
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -2262,12 +2264,12 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = BAR_kasa_2
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2300,15 +2302,18 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_kasa_3
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
-		x = 0
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 0
 		}
 		prerequisite = {
 			focus = BAR_kasa_2
+		}
+		prerequisite = {
+			focus = BAR_kasa_5
 		}
 		relative_position_id = BAR_kasa_2
 		completion_reward = {
@@ -2333,7 +2338,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_kasa_4
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -2384,7 +2389,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_kasa_5
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2401,28 +2406,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_kasa_6
-		icon = GFX_goal_cry_com_sync
-		cost = 3
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 0
-		}
-		prerequisite = {
-			focus = BAR_kasa_5
-		}
-		relative_position_id = BAR_kasa_5
-		completion_reward = {
-			ZES = {
-				add_to_ROOT_potential_cores = yes
-			}
-		}
-	}
-	focus = {
 		id = BAR_our_deer_friends
-		icon = GFX_goal_cry_com_sync
-		cost = 3
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		cost = 2
 		x = -5
 		y = 1
 		prerequisite = {
@@ -2433,12 +2419,13 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-			add_stability = 0.05
+			OLV = { add_to_ROOT_potential_cores = yes }
+			
 		}
 	}
 	focus = {
 		id = BAR_olv_1
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -2450,12 +2437,12 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = BAR_olv_2
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2480,15 +2467,18 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_olv_3
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
-		x = 0
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 0
 		}
 		prerequisite = {
 			focus = BAR_olv_2
+		}	
+		prerequisite = {
+			focus = BAR_olv_5
 		}	
 		relative_position_id = BAR_olv_2
 		completion_reward = {
@@ -2505,7 +2495,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_olv_4
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -2533,7 +2523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_olv_5
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2545,31 +2535,15 @@ focus_tree = {
 		}	
 		relative_position_id = BAR_olv_4
 		completion_reward = {
-			add_political_power = -150
-		}
-	}
-	focus = {
-		id = BAR_olv_6
-		icon = GFX_goal_cry_com_sync
-		cost = 3
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 0
-		}
-		prerequisite = {
-			focus = BAR_olv_5
-		}	
-		relative_position_id = BAR_olv_5
-		completion_reward = {
-			OLV = { add_to_ROOT_potential_cores = yes }
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	focus = {
 		id = BAR_new_south
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
-		x = 1
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 0
@@ -2578,15 +2552,9 @@ focus_tree = {
 			focus = BAR_olv_3
 		}	
 		prerequisite = {
-			focus = BAR_olv_6
-		}	
-		prerequisite = {
 			focus = BAR_kasa_3
 		}	
-		prerequisite = {
-			focus = BAR_kasa_6
-		}	
-		relative_position_id = BAR_olv_6
+		relative_position_id = BAR_olv_3
 		completion_reward = {
 			if = {
 				limit = {
@@ -2600,9 +2568,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_miliatry_reform
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_bar_fren_army1
 		cost = 3
-		x = 26
+		x = 27
 		y = 0
 		ai_will_do = {
 			factor = 10
@@ -2616,7 +2584,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_desperate_employment
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2633,7 +2601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_employ_adventurers
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -2704,7 +2672,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_scavenger_army
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2721,7 +2689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_wake_up_sleeping_knights
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -2795,7 +2763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_convince_dragons
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2868,7 +2836,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_infantry_weapons
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -3
 		y = 1
@@ -2890,7 +2858,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_engineers_recon
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -2912,7 +2880,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_engineer_corps
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -2934,7 +2902,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_logistic
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -2962,7 +2930,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_radio
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -2990,7 +2958,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_anti_air
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -3014,7 +2982,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_infantry_weapons_2
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3038,7 +3006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_anti_tank
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -3062,7 +3030,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_artillery
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 3
 		y = 1
@@ -3084,7 +3052,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mil_buildup
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -3101,7 +3069,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_artillery_2
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -3123,7 +3091,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mil_buildup_2
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3140,7 +3108,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_light_tanks
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -3162,7 +3130,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_rocket_experiments
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -3186,7 +3154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mil_buildup_3
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3205,7 +3173,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_medium_tanks
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -3229,7 +3197,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_independent_military_units
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -3261,7 +3229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mountaineers
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -2
 		y = 1
@@ -3283,7 +3251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mountain_expertise
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3303,7 +3271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_conscription_system
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3320,7 +3288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_harmonic_conscription_system
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3343,7 +3311,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_mil_factories
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 2
 		y = 1
@@ -3360,7 +3328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_equipment_simplification
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
 		y = 1
@@ -3377,7 +3345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_air_warfare
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 26
 		y = 8
@@ -3437,7 +3405,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_light_planes
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
 		y = 1
@@ -3487,7 +3455,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_tac_bomber
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -3531,7 +3499,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_air_accidents_prevention
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 1
 		y = 1
@@ -3549,7 +3517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_plane_factories
-		icon = GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3.5
 		x = 1
 		y = 1

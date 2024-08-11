@@ -6171,37 +6171,6 @@ country_event = { #silver star is sad af but he cant leave his friends
 		name = barrad_friendship_tree.18.a
 	}
 }
-country_event = { #root gets ultimatium
-	id = barrad_friendship_tree.19
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.19"
-	}
-	title = barrad_friendship_tree.19.t
-	desc = barrad_friendship_tree.19.d
-	picture = GFX_event_green_mountain
-	is_triggered_only = yes
-	option = { 
-		ai_chance = {
-			factor = 1
-		}
-		name = barrad_friendship_tree.19.a
-		BAR = {
-			puppet = ROOT
-		}
-	}
-	option = { 
-		ai_chance = {
-			factor = 10
-		}
-		name = barrad_friendship_tree.19.b
-		BAR = {
-			create_wargoal = {
-				target = ROOT
-				type = puppet_wargoal_focus
-			}
-		}
-	}
-}
 country_event = { #silver star trying to learn diplomacy from a book
 	id = barrad_friendship_tree.20
 	immediate = {

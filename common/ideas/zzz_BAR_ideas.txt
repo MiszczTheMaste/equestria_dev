@@ -449,6 +449,12 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
+		bar_volunteers = {
+			picture = generic_central_management
+			modifier = {
+				send_volunteer_size = 5
+			}
+		}
 
     #                                                       
    # #   #    # #####  #####   ####   ####  # #    #  ####  

@@ -840,7 +840,6 @@ bar_relations_activity_add = {
 				has_country_flag = BAR_begun_friendship_path
 			}
 		}
-
 		add_to_variable = {
 			var = BAR_relations_silver_leopold
 			value = bar_activity_relations_up_leopold_silver
@@ -855,7 +854,6 @@ bar_relations_activity_add = {
 				BAR_relations_silver_leopold = 100
 			}
 		}
-		
 		add_to_variable = {
 			var = BAR_relations_asinti_leopold
 			value = bar_activity_relations_up_leopold_asinti
@@ -870,7 +868,6 @@ bar_relations_activity_add = {
 				BAR_relations_asinti_leopold = 100
 			}
 		}
-		
 		add_to_variable = {
 			var = BAR_relations_leopold_viira
 			value = bar_activity_relations_up_leopold_viira
@@ -885,7 +882,6 @@ bar_relations_activity_add = {
 				BAR_relations_leopold_viira = 100
 			}
 		}
-
 		add_to_variable = {
 			var = BAR_relations_asinti_silver
 			value = bar_activity_relations_up_silver_asinti
@@ -900,7 +896,6 @@ bar_relations_activity_add = {
 				BAR_relations_asinti_silver = 100
 			}
 		}
-		
 		add_to_variable = {
 			var = BAR_relations_silver_viira
 			value = bar_activity_relations_up_silver_viira
@@ -915,7 +910,6 @@ bar_relations_activity_add = {
 				BAR_relations_silver_viira = 100
 			}
 		}
-		
 		add_to_variable = {
 			var = BAR_relations_asinti_viira
 			value = bar_activity_relations_up_asinti_viira
@@ -929,7 +923,7 @@ bar_relations_activity_add = {
 			set_variable = {
 				BAR_relations_asinti_viira = 100
 			}
-		}	
+		}
 	}
 	BAR_relations_idea_swap = yes
 }
@@ -2484,26 +2478,8 @@ bar_recalculate_activity = {
 		limit = {
 			has_country_flag = bar_ongoing_activity
 		}
-	} else = {
-
-		set_variable = {
-			bar_activity_relations_up_leopold_silver = 0
-		}
-		set_variable = {
-			bar_activity_relations_up_leopold_asinti = 0
-		}
-		set_variable = {
-			bar_activity_relations_up_leopold_viira = 0
-		}
-		set_variable = {
-			bar_activity_relations_up_silver_asinti = 0
-		}
-		set_variable = {
-			bar_activity_relations_up_silver_viira = 0
-		}
-		set_variable = {
-			bar_activity_relations_up_asinti_viira = 0
-		}
+	}
+	else = {
 		if = {
 			limit = {
 				check_variable = {
@@ -5094,7 +5070,6 @@ bar_recalculate_activity = {
 				bar_activity_relations_combo = 0
 			}
 		}
-	
 		set_variable = {
 			bar_activity_fail_check = 5
 		}
@@ -5107,7 +5082,7 @@ bar_recalculate_activity = {
 			add_to_variable = {
 				bar_activity_fail_check = 5
 			}
-		}	
+		}
 		if = {
 			limit = {
 				check_variable = {
@@ -5117,7 +5092,7 @@ bar_recalculate_activity = {
 			add_to_variable = {
 				bar_activity_fail_check = 5
 			}
-		}	
+		}
 		if = {
 			limit = {
 				check_variable = {
@@ -5129,7 +5104,6 @@ bar_recalculate_activity = {
 			}
 		}
 	}
-
 	add_to_variable = {
 		bar_friendship_activity_show = 1
 	}

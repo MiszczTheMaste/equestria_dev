@@ -6092,6 +6092,122 @@ country_event = { #duel
 	option = { 
 		name = barrad_friendship_tree.14.a
 		add_to_variable = { var = RIV_fed_race value = WIT.RIV_fed_race }
+
+		hidden_effect = {
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_national_mining_company
+					}
+				}
+				unlock_national_focus = BAR_friend_national_mining_company
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_highmane_wittenburgh_rail
+					}
+				}
+				unlock_national_focus = BAR_friend_highmane_wittenburgh_rail
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_state_capitalism
+					}
+				}
+				unlock_national_focus = BAR_friend_state_capitalism
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_invite_eqs_scientists
+					}
+				}
+				unlock_national_focus = BAR_friend_invite_eqs_scientists
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_small_business_subsidies
+					}
+				}
+				unlock_national_focus = BAR_friend_small_business_subsidies
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_nationwide_electrification
+					}
+				}
+				unlock_national_focus = BAR_friend_nationwide_electrification
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_lakeish_arms_contract
+					}
+				}
+				unlock_national_focus = BAR_friend_lakeish_arms_contract
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_import_rijekan_machinery
+					}
+				}
+				unlock_national_focus = BAR_friend_import_rijekan_machinery
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_industrial_light_and_magic
+					}
+				}
+				unlock_national_focus = BAR_friend_industrial_light_and_magic
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_food_problem
+					}
+				}
+				unlock_national_focus = BAR_friend_food_problem
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_railway_tunnels
+					}
+				}
+				unlock_national_focus = BAR_friend_railway_tunnels
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_ivanhorn_dam
+					}
+				}
+				unlock_national_focus = BAR_friend_ivanhorn_dam
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_hire_diamond_dogs
+					}
+				}
+				unlock_national_focus = BAR_friend_hire_diamond_dogs
+			}
+			if = {
+				limit = {
+					WIT = {
+						has_completed_focus = WIT_invite_advisors
+					}
+				}
+				unlock_national_focus = BAR_friend_invite_advisors
+			}
+		}
+
 		annex_country = {
 			target = WIT
 		}

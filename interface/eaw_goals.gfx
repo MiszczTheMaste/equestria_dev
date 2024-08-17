@@ -17552,147 +17552,227 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/AF_24/goal_take_over_the_world.tga"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_zebra_ded"
-		texturefile = "gfx/interface/goals/bar/friendship/zebra_ded.dds"
+		name = "GFX_goal_bar_fren_amb_letter"
+		texturefile = "gfx/interface/goals/bar/friendship/amb_letter.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_viira_knife"
-		texturefile = "gfx/interface/goals/bar/friendship/viira_knife.dds"
+		name = "GFX_goal_bar_fren_ambrosius_alone"
+		texturefile = "gfx/interface/goals/bar/friendship/ambrosius_alone.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_total_mob"
-		texturefile = "gfx/interface/goals/bar/friendship/total_mob.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_soldiers_gallow"
-		texturefile = "gfx/interface/goals/bar/friendship/soldiers_gallow.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_silver_star_knife"
-		texturefile = "gfx/interface/goals/bar/friendship/silver_star_knife.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_silver_star"
-		texturefile = "gfx/interface/goals/bar/friendship/silver_star.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_seize_gun_factories"
-		texturefile = "gfx/interface/goals/bar/friendship/seize_gun_factories.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_occupy_sanctuary"
-		texturefile = "gfx/interface/goals/bar/friendship/occupy_sanctuary.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_noble_bow"
-		texturefile = "gfx/interface/goals/bar/friendship/noble_bow.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_mountain_brush"
-		texturefile = "gfx/interface/goals/bar/friendship/mountain_brush.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_militia"
-		texturefile = "gfx/interface/goals/bar/friendship/militia.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_merc_money"
-		texturefile = "gfx/interface/goals/bar/friendship/merc_money.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_meet_ambrosius"
-		texturefile = "gfx/interface/goals/bar/friendship/meet_ambrosius.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_leopold_build"
-		texturefile = "gfx/interface/goals/bar/friendship/leopold_build.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_leopold_viking"
-		texturefile = "gfx/interface/goals/bar/friendship/leopold_viking.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_ignition"
-		texturefile = "gfx/interface/goals/bar/friendship/ignition.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_gasienica_hammer"
-		texturefile = "gfx/interface/goals/bar/friendship/gasienica_hammer.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_enemies_without"
-		texturefile = "gfx/interface/goals/bar/friendship/enemies_without.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_enemies_within"
-		texturefile = "gfx/interface/goals/bar/friendship/enemies_within.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_deer_ded"
-		texturefile = "gfx/interface/goals/bar/friendship/deer_ded.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_cut_forest"
-		texturefile = "gfx/interface/goals/bar/friendship/cut_forest.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_cultists1"
-		texturefile = "gfx/interface/goals/bar/friendship/cultists1.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_pentarchy"
-		texturefile = "gfx/interface/goals/bar/friendship/pentarchy.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_bandit_hunt"
-		texturefile = "gfx/interface/goals/bar/friendship/bandit_hunt.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_attack_zes"
-		texturefile = "gfx/interface/goals/bar/friendship/attack_zes.dds"
+		name = "GFX_goal_bar_fren_amrosius_money"
+		texturefile = "gfx/interface/goals/bar/friendship/amrosius_money.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_fren_army1"
 		texturefile = "gfx/interface/goals/bar/friendship/army1.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_griffon_friends"
-		texturefile = "gfx/interface/goals/bar/friendship/griffon_friends.dds"
+		name = "GFX_goal_bar_fren_attack_zes"
+		texturefile = "gfx/interface/goals/bar/friendship/attack_zes.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_gasienica"
-		texturefile = "gfx/interface/goals/bar/friendship/gasienica.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_bar_fren_core_zes"
-		texturefile = "gfx/interface/goals/bar/friendship/core_zes.dds"
+		name = "GFX_goal_bar_fren_bandit_hunt"
+		texturefile = "gfx/interface/goals/bar/friendship/bandit_hunt.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_fren_core_olv"
 		texturefile = "gfx/interface/goals/bar/friendship/core_olv.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_amb_letter"
-		texturefile = "gfx/interface/goals/bar/friendship/amb_letter.dds"
+		name = "GFX_goal_bar_fren_core_zes"
+		texturefile = "gfx/interface/goals/bar/friendship/core_zes.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_railway"
-		texturefile = "gfx/interface/goals/bar/friendship/railway.dds"
+		name = "GFX_goal_bar_fren_cultists1"
+		texturefile = "gfx/interface/goals/bar/friendship/cultists1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_cut_forest"
+		texturefile = "gfx/interface/goals/bar/friendship/cut_forest.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_deer_ded"
+		texturefile = "gfx/interface/goals/bar/friendship/deer_ded.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_diplomacy_ambrosius"
+		texturefile = "gfx/interface/goals/bar/friendship/diplomacy_ambrosius.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_enemies_within"
+		texturefile = "gfx/interface/goals/bar/friendship/enemies_within.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_enemies_without"
+		texturefile = "gfx/interface/goals/bar/friendship/enemies_without.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_gasienica"
+		texturefile = "gfx/interface/goals/bar/friendship/gasienica.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_gasienica_crown"
+		texturefile = "gfx/interface/goals/bar/friendship/gasienica_crown.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_gasienica_gun"
+		texturefile = "gfx/interface/goals/bar/friendship/gasienica_gun.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_gasienica_hammer"
+		texturefile = "gfx/interface/goals/bar/friendship/gasienica_hammer.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_griffon_friends"
+		texturefile = "gfx/interface/goals/bar/friendship/griffon_friends.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_fren_happy_ponies"
 		texturefile = "gfx/interface/goals/bar/friendship/happy_ponies.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_bar_fren_zes_ship"
-		texturefile = "gfx/interface/goals/bar/friendship/zes_ship.dds"
+		name = "GFX_goal_bar_fren_ignition"
+		texturefile = "gfx/interface/goals/bar/friendship/ignition.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_leopold_build"
+		texturefile = "gfx/interface/goals/bar/friendship/leopold_build.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_leopold_university"
+		texturefile = "gfx/interface/goals/bar/friendship/leopold_university.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_leopold_viking"
+		texturefile = "gfx/interface/goals/bar/friendship/leopold_viking.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_meet_ambrosius"
+		texturefile = "gfx/interface/goals/bar/friendship/meet_ambrosius.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_merc_money"
+		texturefile = "gfx/interface/goals/bar/friendship/merc_money.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_militia"
+		texturefile = "gfx/interface/goals/bar/friendship/militia.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_mountain_brush"
+		texturefile = "gfx/interface/goals/bar/friendship/mountain_brush.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_multi_racial"
+		texturefile = "gfx/interface/goals/bar/friendship/multi_racial.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_noble_bow"
+		texturefile = "gfx/interface/goals/bar/friendship/noble_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_occupy_sanctuary"
+		texturefile = "gfx/interface/goals/bar/friendship/occupy_sanctuary.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_pentarchy"
+		texturefile = "gfx/interface/goals/bar/friendship/pentarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_ponies_together"
+		texturefile = "gfx/interface/goals/bar/friendship/ponies_together.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_railway"
+		texturefile = "gfx/interface/goals/bar/friendship/railway.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_seize_gun_factories"
+		texturefile = "gfx/interface/goals/bar/friendship/seize_gun_factories.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_bar_fren_self_govern"
 		texturefile = "gfx/interface/goals/bar/friendship/self_govern.dds"
 	}
 	spriteType = {
+		name = "GFX_goal_bar_fren_sibling_duel"
+		texturefile = "gfx/interface/goals/bar/friendship/sibling_duel.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_asinti_viira"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_asinti_viira.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_psyche"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_psyche.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_star"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_star.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_star_bow"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_star_bow.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_star_knife"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_star_knife.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_viira"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_viira.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_viira_2"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_viira_2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_soldiers_gallow"
+		texturefile = "gfx/interface/goals/bar/friendship/soldiers_gallow.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_total_mob"
+		texturefile = "gfx/interface/goals/bar/friendship/total_mob.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_viira_knife"
+		texturefile = "gfx/interface/goals/bar/friendship/viira_knife.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_viira_riv_fed"
+		texturefile = "gfx/interface/goals/bar/friendship/viira_riv_fed.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_white_star"
+		texturefile = "gfx/interface/goals/bar/friendship/white_star.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_white_star_black_ribbon"
+		texturefile = "gfx/interface/goals/bar/friendship/white_star_black_ribbon.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_white_star_letter"
+		texturefile = "gfx/interface/goals/bar/friendship/white_star_letter.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_white_star_shield"
+		texturefile = "gfx/interface/goals/bar/friendship/white_star_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_wit_prince"
+		texturefile = "gfx/interface/goals/bar/friendship/wit_prince.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_zebra_ded"
+		texturefile = "gfx/interface/goals/bar/friendship/zebra_ded.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_bar_fren_zebra_money"
 		texturefile = "gfx/interface/goals/bar/friendship/zebra_money.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_zes_ship"
+		texturefile = "gfx/interface/goals/bar/friendship/zes_ship.dds"
 	}
 }

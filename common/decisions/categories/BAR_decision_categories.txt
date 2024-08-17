@@ -294,3 +294,11 @@ bar_friendship_category = {
 		original_tag = BAR 
 	}
 }
+bar_friend_white_star_cat = {
+	priority = 50
+	icon = GFX_decision_scroll
+
+	allowed = { 
+		original_tag = BAR 
+	}
+}

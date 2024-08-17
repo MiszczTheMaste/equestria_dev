@@ -449,12 +449,6 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 			}
 		}
-		bar_volunteers = {
-			picture = generic_central_management
-			modifier = {
-				send_volunteer_size = 5
-			}
-		}
 
     #                                                       
    # #   #    # #####  #####   ####   ####  # #    #  ####  
@@ -1956,6 +1950,14 @@ ideas = {
 				send_volunteer_size = 3
 			}
 		}   
+		BAR_friend_global_interventionism_idea = {
+			picture = BAL_hell
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -0.50
+				send_volunteer_size = 8
+			}
+		}   
 		BAR_friend_favorable_export = {
 			picture = BAL_hell
 			modifier = {
@@ -1968,7 +1970,6 @@ ideas = {
 
 			modifier = {
 				compliance_gain = 0.02
-				democratic_drift = 0.01
 				war_support_factor = -0.05
 			}
 		}  
@@ -2110,7 +2111,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				war_support_factor = 0.1
-				political_power_factor = 0.25
+				political_power_factor = 0.15
 			}
 		} 
 		BAR_friend_gasienica = {
@@ -2124,7 +2125,7 @@ ideas = {
 			picture = BAL_hell
 			modifier = {
 				research_speed_factor = 0.025
-				democratic_drift = 0.02
+				political_power_factor = 0.1
 			}
 		} 
 		BAR_friend_leopold = {

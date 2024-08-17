@@ -60,7 +60,8 @@ BAR_ambrosius_boredoom = {
 					limit = {
 						has_country_flag = bar_ambrosius_protection
 					}
-				} else_if = {
+				}
+				else_if = {
 					limit = {
 						has_country_flag = bar_ambrosius_protection_only_good
 					}
@@ -938,7 +939,8 @@ BAR_ambrosius_boredoom = {
 							}
 						}
 					}
-				} else = {
+				}
+				else = {
 					random_list = {
 						20 = {
 							if = {
@@ -1612,10 +1614,10 @@ BAR_ambrosius_boredoom = {
 		}
 		available = {
 			always = no
-		}        
+		}
 		modifier = {
-            political_power_factor = -0.33
-        }
+			political_power_factor = -0.33
+		}
 		icon = pawn
 		selectable_mission = yes
 		days_mission_timeout = 128
@@ -1634,8 +1636,12 @@ BAR_ambrosius_boredoom = {
 			has_country_flag = barrad_early_game
 		}
 		available = {
-			not = { has_country_flag = bar_ambrosius_protection }
-			not = { has_country_flag = bar_ambrosius_protection_only_gppd }
+			not = {
+				has_country_flag = bar_ambrosius_protection
+			}
+			not = {
+				has_country_flag = bar_ambrosius_protection_only_gppd
+			}
 			has_country_flag = barrad_early_game
 		}
 		icon = daggers
@@ -1647,7 +1653,9 @@ BAR_ambrosius_boredoom = {
 		complete_effect = {
 			set_country_flag = bar_ambrosius_protection
 			activate_mission = bar_ambrosius_protection
-			add_to_variable = { BAR_protection_cost = 25 }
+			add_to_variable = {
+				BAR_protection_cost = 25
+			}
 		}
 	}
 	bar_gamble_ambrosius_protection = {
@@ -1658,8 +1666,12 @@ BAR_ambrosius_boredoom = {
 			has_country_flag = barrad_early_game
 		}
 		available = {
-			not = { has_country_flag = bar_ambrosius_protection }
-			not = { has_country_flag = bar_ambrosius_protection_only_good }
+			not = {
+				has_country_flag = bar_ambrosius_protection
+			}
+			not = {
+				has_country_flag = bar_ambrosius_protection_only_good
+			}
 			has_country_flag = barrad_early_game
 		}
 		icon = daggers
@@ -1675,11 +1687,12 @@ BAR_ambrosius_boredoom = {
 					set_country_flag = bar_ambrosius_protection_only_good
 				}
 				50 = {
-
 				}
 			}
 			activate_mission = bar_ambrosius_protection_only_good
-			add_to_variable = { BAR_protection_cost = 25 }
+			add_to_variable = {
+				BAR_protection_cost = 25
+			}
 		}
 	}
 	bar_create_intel_agency = {
@@ -1710,7 +1723,6 @@ BAR_ambrosius_boredoom = {
 		}
 	}
 }
-
 
 BAR_strike_the_earth_cat = {
 }
@@ -2141,7 +2153,7 @@ BAR_silver_star_cat = {
 				set_variable = {
 					BAR_nuclear_research = 100
 				}
-			}	
+			}
 			add_to_variable = {
 				var = BAR_resource_to_modify_ammount
 				value = 100
@@ -2699,25 +2711,28 @@ BAR_leopold_cat = {
 		is_good = yes
 		days_remove = 0
 		fixed_random_seed = no
-		timeout_effect = {	
+		timeout_effect = {
 			set_variable_to_random = {
 				var = activity_dice_roll
 				min = 0
 				max = 100
 				integer = yes
 			}
-		
 			if = {
 				limit = {
 					check_variable = {
 						activity_dice_roll > bar_activity_fail_check
 					}
 				}
-				country_event = { id = barrad_leopold_carousing.4 }
-			} else = {
-				country_event = { id = barrad_leopold_carousing.5 }
+				country_event = {
+					id = barrad_leopold_carousing.4
+				}
 			}
-			
+			else = {
+				country_event = {
+					id = barrad_leopold_carousing.5
+				}
+			}
 		}
 	}
 	bar_plan_activity = {
@@ -2796,7 +2811,9 @@ BAR_leopold_cat = {
 					BAR_nuclear_progress = 100
 				}
 			}
-			set_variable = { BAR_resource_to_modify_ammount = 100 }
+			set_variable = {
+				BAR_resource_to_modify_ammount = 100
+			}
 			bar_leopold_resources_subtract = yes
 		}
 	}
@@ -2857,7 +2874,9 @@ BAR_leopold_cat = {
 					BAR_nuclear_research = 100
 				}
 			}
-			set_variable = { BAR_resource_to_modify_ammount = 100 }
+			set_variable = {
+				BAR_resource_to_modify_ammount = 100
+			}
 			bar_leopold_resources_subtract = yes
 			custom_effect_tooltip = BAR_reactor_research_tooltip
 		}
@@ -3243,7 +3262,7 @@ BAR_asinti_cat = {
 	}
 }
 
-BAR_viira_cat = {		
+BAR_viira_cat = {
 	bar_vir_quest = {
 		allowed = {
 			original_tag = BAR
@@ -3268,7 +3287,7 @@ BAR_viira_cat = {
 				id = barrad_third.10
 			}
 		}
-	}	
+	}
 	BAR_search_in_silver_library = {
 		icon = GFX_decision_sombra_book
 		allowed = {
@@ -3289,7 +3308,9 @@ BAR_viira_cat = {
 			}
 		}
 		complete_effect = {
-			country_event = { id = bar_viira_murders.1 }
+			country_event = {
+				id = bar_viira_murders.1
+			}
 		}
 	}
 	BAR_collapse_temple = {
@@ -3541,8 +3562,8 @@ BAR_silver_undead_buffs = {
 		available = {
 			always = no
 		}
-		activation = { 
-			always = no 
+		activation = {
+			always = no
 		}
 		timeout_effect = {
 			clr_country_flag = bar_silver_star_undead_buff_cooldown
@@ -3653,7 +3674,7 @@ BAR_viira_spells = {
 		ai_will_do = {
 			factor = 0
 		}
-	}	
+	}
 	BAR_viira_spell_upgrade_2 = {
 		icon = GFX_BAR_viira_nuke_button
 		fire_only_once = yes
@@ -3678,7 +3699,7 @@ BAR_viira_spells = {
 		ai_will_do = {
 			factor = 0
 		}
-	}	
+	}
 	BAR_viira_spell_upgrade_3 = {
 		icon = GFX_BAR_viira_nuke_button
 		fire_only_once = yes
@@ -3804,7 +3825,8 @@ BAR_viira_spells = {
 			factor = 0
 		}
 	}
-	BAR_viira_spell_upgrade_8 = { #true goodhood
+	BAR_viira_spell_upgrade_8 = {
+		#true goodhood
 		icon = GFX_BAR_viira_nuke_button
 		fire_only_once = yes
 		allowed = {
@@ -3820,23 +3842,53 @@ BAR_viira_spells = {
 			nuclear_reactor > 30
 			custom_trigger_tooltip = {
 				tooltip = BAR_viira_spell_upgrade_8_unlock_tooltip
-				BAR_viira_lehtola = { has_trait = bar_viira_title_1 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_2 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_3 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_4 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_5 }
-				OR = {
-					BAR_viira_lehtola = { has_trait = bar_viira_title_6 }
-					BAR_viira_lehtola = { has_trait = bar_viira_title_6_bba }
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_1
 				}
-				BAR_viira_lehtola = { has_trait = bar_viira_title_7 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_8 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_9 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_10 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_11 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_12 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_13 }
-				BAR_viira_lehtola = { has_trait = bar_viira_title_14 }
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_2
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_3
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_4
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_5
+				}
+				OR = {
+					BAR_viira_lehtola = {
+						has_trait = bar_viira_title_6
+					}
+					BAR_viira_lehtola = {
+						has_trait = bar_viira_title_6_bba
+					}
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_7
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_8
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_9
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_10
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_11
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_12
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_13
+				}
+				BAR_viira_lehtola = {
+					has_trait = bar_viira_title_14
+				}
 			}
 		}
 		complete_effect = {
@@ -3885,7 +3937,7 @@ BAR_viira_spells = {
 					limit = {
 						ROOT = {
 							has_country_flag = BAR_spells_unlocked_4
-						}		
+						}
 					}
 					add_province_modifier = {
 						static_modifiers = {
@@ -3900,7 +3952,8 @@ BAR_viira_spells = {
 						occupier = BAR
 					}
 					add_compliance = 40
-				} else = {
+				}
+				else = {
 					add_province_modifier = {
 						static_modifiers = {
 							barrad_climate3
@@ -4019,7 +4072,8 @@ BAR_viira_spells = {
 								idea = BAR_viira_spell_x_decay_idea_2
 								days = 21
 							}
-						} else = {
+						}
+						else = {
 							add_timed_idea = {
 								idea = BAR_viira_spell_x_decay_idea
 								days = 14
@@ -4081,7 +4135,8 @@ BAR_viira_spells = {
 								idea = BAR_viira_spell_gas_idea_2
 								days = 21
 							}
-						} else = {
+						}
+						else = {
 							add_timed_idea = {
 								idea = BAR_viira_spell_gas_idea
 								days = 14
@@ -4140,7 +4195,8 @@ BAR_viira_spells = {
 							type = industrial_complex
 							damage = 10
 						}
-					} else = {
+					}
+					else = {
 						damage_building = {
 							type = infrastructure
 							damage = 4
@@ -4195,7 +4251,7 @@ BAR_viira_spells = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_psi_emission"
 				FROM = {
-					CONTROLLER = {	
+					CONTROLLER = {
 						if = {
 							limit = {
 								has_manpower > 1000000
@@ -4203,12 +4259,12 @@ BAR_viira_spells = {
 							set_temp_variable = {
 								cur_manpower = 1000000
 							}
-						} else = {
+						}
+						else = {
 							set_temp_variable = {
 								cur_manpower = manpower
 							}
 						}
-
 						if = {
 							limit = {
 								ROOT = {
@@ -4218,12 +4274,12 @@ BAR_viira_spells = {
 							multiply_temp_variable = {
 								cur_manpower = 0.1
 							}
-						} else = {
+						}
+						else = {
 							multiply_temp_variable = {
 								cur_manpower = 0.05
 							}
 						}
-
 						round_temp_variable = cur_manpower
 						BAR = {
 							add_manpower = cur_manpower
@@ -4289,7 +4345,8 @@ BAR_viira_spells = {
 								idea = BAR_viira_spell_incineration_idea_2
 								days = 21
 							}
-						} else = {
+						}
+						else = {
 							add_timed_idea = {
 								idea = BAR_viira_spell_incineration_idea
 								days = 14
@@ -4350,12 +4407,12 @@ BAR_viira_spells = {
 							set_temp_variable = {
 								cur_manpower = 1000000
 							}
-						} else = {
+						}
+						else = {
 							set_temp_variable = {
 								cur_manpower = manpower
 							}
 						}
-
 						if = {
 							limit = {
 								ROOT = {
@@ -4365,12 +4422,12 @@ BAR_viira_spells = {
 							multiply_temp_variable = {
 								cur_manpower = -0.07
 							}
-						} else = {
+						}
+						else = {
 							multiply_temp_variable = {
 								cur_manpower = -0.03
 							}
 						}
-
 						save_current_manpower = yes
 						round_temp_variable = cur_manpower
 						add_manpower = cur_manpower
@@ -4425,7 +4482,6 @@ BAR_viira_spells = {
 						}
 					}
 				}
-				
 			}
 		}
 		complete_effect = {
@@ -4443,7 +4499,8 @@ BAR_viira_spells = {
 								idea = BAR_viira_spell_global_psi_idea_2
 								days = 21
 							}
-						} else = {
+						}
+						else = {
 							add_timed_idea = {
 								idea = BAR_viira_spell_global_psi_idea
 								days = 14
@@ -4491,17 +4548,21 @@ BAR_viira_spells = {
 			hidden_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_spell_psi_migration"
 				FROM = {
-					set_temp_variable = { popToAdd = state_population }
-					multiply_temp_variable = { popToAdd = 0.2 }		
+					set_temp_variable = {
+						popToAdd = state_population
+					}
+					multiply_temp_variable = {
+						popToAdd = 0.2
+					}
 					save_current_manpower = yes
-					
 					626 = {
 						add_manpower = popToAdd
 					}
-
-					multiply_temp_variable = { popToAdd = -1 }
+					multiply_temp_variable = {
+						popToAdd = -1
+					}
 					add_manpower = popToAdd
-					restore_previous_manpower = yes	
+					restore_previous_manpower = yes
 				}
 				add_to_variable = {
 					viira_mana_overload = 20
@@ -4545,7 +4606,7 @@ BAR_viira_spells = {
 					popup = no
 					BAR_viira_spells_sub_zero = 0
 				}
-			}		
+			}
 		}
 		days_remove = 30
 		ai_will_do = {
@@ -4925,11 +4986,14 @@ BAR_viira_spells = {
 		}
 		remove_effect = {
 			if = {
-				limit = { has_dlc = "By Blood Alone" }
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
 				add_country_leader_trait = bar_viira_title_6_bba
-			} else = {
+			}
+			else = {
 				add_country_leader_trait = bar_viira_title_6
-			}	
+			}
 		}
 		days_remove = 30
 		ai_will_do = {
@@ -5023,7 +5087,8 @@ BAR_viira_spells = {
 			factor = 0
 		}
 	}
-	BAR_viira_spell_gate_of_heavens = { #unlocks spell upgrades
+	BAR_viira_spell_gate_of_heavens = {
+		#unlocks spell upgrades
 		icon = GFX_BAR_viira_gate_of_heaven_title
 		fire_only_once = yes
 		allowed = {
@@ -5315,8 +5380,10 @@ BAR_silver_queen = {
 				else = {
 					set_cosmetic_tag = BAR_WIT
 				}
-				
-				country_event = { id = barrad_silver.9 days = 26 }
+				country_event = {
+					id = barrad_silver.9
+					days = 26
+				}
 			}
 		}
 		ai_will_do = {
@@ -5335,7 +5402,6 @@ BAR_silver_queen = {
 				has_country_flag = BAR_undead_nation_flag
 			}
 			has_cosmetic_tag = BAR_WIT
-			
 		}
 		available = {
 			owns_state = 558
@@ -5363,7 +5429,10 @@ BAR_silver_queen = {
 			}
 			set_cosmetic_tag = BAR_WIT_high_kingdom
 			hidden_effect = {
-				country_event = { id = barrad_silver.10 days = 7 }
+				country_event = {
+					id = barrad_silver.10
+					days = 7
+				}
 			}
 		}
 		ai_will_do = {
@@ -5382,7 +5451,6 @@ BAR_silver_queen = {
 				has_country_flag = BAR_undead_nation_flag
 			}
 			has_cosmetic_tag = BAR_WIT_high_kingdom
-			
 		}
 		available = {
 			WIT = {
@@ -5419,7 +5487,10 @@ BAR_silver_queen = {
 			}
 			set_cosmetic_tag = BAR_RIV
 			hidden_effect = {
-				country_event = { id = barrad_silver.10 days = 7 }
+				country_event = {
+					id = barrad_silver.10
+					days = 7
+				}
 			}
 		}
 		ai_will_do = {
@@ -5668,15 +5739,15 @@ BAR_asinti_blood_sacrifices = {
 			original_tag = BAR
 		}
 		visible = {
-			has_cosmetic_tag =  BAR_free_state
+			has_cosmetic_tag = BAR_free_state
 		}
 		available = {
 			ZES = {
 				all_cores_owned_by_ROOT = yes
-			}	
+			}
 			OLV = {
 				all_cores_owned_by_ROOT = yes
-			}	
+			}
 			GRU = {
 				all_cores_owned_by_ROOT = yes
 			}
@@ -5693,7 +5764,7 @@ BAR_asinti_blood_sacrifices = {
 		ai_will_do = {
 			factor = 30
 		}
-	}	
+	}
 	BAR_call_for_blood = {
 		icon = daggers
 		fire_only_once = yes
@@ -9128,12 +9199,12 @@ BAR_viira_puppets = {
 							}
 						}
 					}
-					set_capital = { 
-						state = 377 
+					set_capital = {
+						state = 377
 						remember_old_capital = no
 					}
-					set_party_name = { 
-						ideology = fascism 
+					set_party_name = {
+						ideology = fascism
 						name = BAR_PUPPET_fash_WEST
 						long_name = BAR_PUPPET_fash_WEST_long
 					}
@@ -9871,7 +9942,9 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_gasienica_dealth
 		}
 		remove_effect = {
-			country_event = { id = barrad_asinti.13 }
+			country_event = {
+				id = barrad_asinti.13
+			}
 		}
 	}
 	BAR_asinti_pentarchs_kill_leopold = {
@@ -9924,7 +9997,9 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_leopold_dealth
 		}
 		remove_effect = {
-			country_event = { id = barrad_asinti.15 }
+			country_event = {
+				id = barrad_asinti.15
+			}
 		}
 	}
 	BAR_asinti_pentarchs_indoctrinate_leopold = {
@@ -9956,7 +10031,9 @@ BAR_asinti_pentarchs = {
 			}
 		}
 		remove_effect = {
-			country_event = { id = barrad_asinti.16 }
+			country_event = {
+				id = barrad_asinti.16
+			}
 		}
 	}
 	BAR_asinti_pentarchs_kill_silver_star = {
@@ -10009,7 +10086,9 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_silver_star_dealth
 		}
 		remove_effect = {
-			country_event = { id = barrad_asinti.17 }
+			country_event = {
+				id = barrad_asinti.17
+			}
 		}
 	}
 	BAR_asinti_pentarchs_indoctrinate_silver_star = {
@@ -10035,10 +10114,13 @@ BAR_asinti_pentarchs = {
 			set_country_flag = BAR_asinti_silver_star_dealth
 		}
 		remove_effect = {
-			country_event = { id = barrad_asinti.18 }
+			country_event = {
+				id = barrad_asinti.18
+			}
 		}
 	}
 }
+
 BAR_expeditions = {
 	BAR_expedition_progresses = {
 		visible = {
@@ -10050,8 +10132,8 @@ BAR_expeditions = {
 		available = {
 			always = no
 		}
-		activation = { 
-			always = no 
+		activation = {
+			always = no
 		}
 		icon = pawn
 		selectable_mission = yes
@@ -10064,12 +10146,13 @@ BAR_expeditions = {
 		}
 	}
 }
+
 bar_sane_ambrosius_balance_category = {
 	bar_sane_ambrosius_balance_cult_advisors = {
 		icon = pawn
-		allowed = { 
-			original_tag = BAR 
-		} 
+		allowed = {
+			original_tag = BAR
+		}
 		cost = 50
 		days_remove = 60
 		fire_only_once = yes
@@ -10083,12 +10166,12 @@ bar_sane_ambrosius_balance_category = {
 				value = -0.05
 			}
 		}
-	}		
+	}
 	bar_sane_ambrosius_balance_solidify_control = {
 		icon = pawn
-		allowed = { 
-			original_tag = BAR 
-		} 
+		allowed = {
+			original_tag = BAR
+		}
 		cost = 100
 		days_remove = 20
 		modifier = {
@@ -10097,12 +10180,12 @@ bar_sane_ambrosius_balance_category = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove bar_sane_ambrosius_balance_solidify_controll"
 		}
-	}	
+	}
 	bar_sane_ambrosius_balance_charity = {
 		icon = pawn
-		allowed = { 
-			original_tag = BAR 
-		} 
+		allowed = {
+			original_tag = BAR
+		}
 		cost = 30
 		days_remove = 29
 		fire_only_once = yes
@@ -10119,9 +10202,9 @@ bar_sane_ambrosius_balance_category = {
 	}
 	bar_sane_ambrosius_balance_cult_death_squads = {
 		icon = pawn
-		allowed = { 
-			original_tag = BAR 
-		} 
+		allowed = {
+			original_tag = BAR
+		}
 		cost = 100
 		days_remove = 60
 		fire_only_once = yes
@@ -10189,9 +10272,9 @@ bar_sane_ambrosius_balance_category = {
 	}
 	bar_sane_ambrosius_balance_mercenaries = {
 		icon = pawn
-		allowed = { 
-			original_tag = BAR 
-		} 
+		allowed = {
+			original_tag = BAR
+		}
 		cost = 100
 		days_remove = 29
 		fire_only_once = yes
@@ -10203,14 +10286,783 @@ bar_sane_ambrosius_balance_category = {
 				value = 0.03
 			}
 		}
-	}	
+	}
 }
+
+bar_friend_white_star_cat = {
+	bar_friend_white_star_focus_progress = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_idea = BAR_friend_white_star
+			NOT = {
+				AND = {
+					has_completed_focus = BAR_friend_national_mining_company
+					has_completed_focus = BAR_friend_highmane_wittenburgh_rail
+					has_completed_focus = BAR_friend_state_capitalism
+					has_completed_focus = BAR_friend_invite_eqs_scientists
+					has_completed_focus = BAR_friend_small_business_subsidies
+					has_completed_focus = BAR_friend_nationwide_electrification
+					has_completed_focus = BAR_friend_lakeish_arms_contract
+					has_completed_focus = BAR_friend_import_rijekan_machinery
+					has_completed_focus = BAR_friend_industrial_light_and_magic
+					has_completed_focus = BAR_friend_food_problem
+					has_completed_focus = BAR_friend_railway_tunnels
+					has_completed_focus = BAR_friend_ivanhorn_dam
+					has_completed_focus = BAR_friend_hire_diamond_dogs
+					has_completed_focus = BAR_friend_invite_advisors
+				}
+			}
+		}
+		available = {
+			has_completed_focus = BAR_friend_court_and_princess
+			hidden_trigger = {
+				NOT = {
+					AND = {
+						has_completed_focus = BAR_friend_national_mining_company
+						has_completed_focus = BAR_friend_highmane_wittenburgh_rail
+						has_completed_focus = BAR_friend_state_capitalism
+						has_completed_focus = BAR_friend_invite_eqs_scientists
+						has_completed_focus = BAR_friend_small_business_subsidies
+						has_completed_focus = BAR_friend_nationwide_electrification
+						has_completed_focus = BAR_friend_lakeish_arms_contract
+						has_completed_focus = BAR_friend_import_rijekan_machinery
+						has_completed_focus = BAR_friend_industrial_light_and_magic
+						has_completed_focus = BAR_friend_food_problem
+						has_completed_focus = BAR_friend_railway_tunnels
+						has_completed_focus = BAR_friend_ivanhorn_dam
+						has_completed_focus = BAR_friend_hire_diamond_dogs
+						has_completed_focus = BAR_friend_invite_advisors
+					}
+				}
+			}
+		}
+		cost = 75
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_white_star_focus_progress"
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_invite_advisors
+					}
+				}
+				complete_national_focus = BAR_friend_invite_advisors
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_hire_diamond_dogs
+					}
+				}
+				complete_national_focus = BAR_friend_hire_diamond_dogs
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_ivanhorn_dam
+					}
+				}
+				complete_national_focus = BAR_friend_ivanhorn_dam
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_railway_tunnels
+					}
+				}
+				complete_national_focus = BAR_friend_railway_tunnels
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_food_problem
+					}
+				}
+				complete_national_focus = BAR_friend_food_problem
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_industrial_light_and_magic
+					}
+				}
+				complete_national_focus = BAR_friend_industrial_light_and_magic
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_import_rijekan_machinery
+					}
+				}
+				complete_national_focus = BAR_friend_import_rijekan_machinery
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_lakeish_arms_contract
+					}
+				}
+				complete_national_focus = BAR_friend_lakeish_arms_contract
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_nationwide_electrification
+					}
+				}
+				complete_national_focus = BAR_friend_nationwide_electrification
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_small_business_subsidies
+					}
+				}
+				complete_national_focus = BAR_friend_small_business_subsidies
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_invite_eqs_scientists
+					}
+				}
+				complete_national_focus = BAR_friend_invite_eqs_scientists
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_state_capitalism
+					}
+				}
+				complete_national_focus = BAR_friend_state_capitalism
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_highmane_wittenburgh_rail
+					}
+				}
+				complete_national_focus = BAR_friend_highmane_wittenburgh_rail
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_completed_focus = BAR_friend_national_mining_company
+					}
+				}
+				complete_national_focus = BAR_friend_national_mining_company
+			}
+		}
+	}
+	bar_friend_estabilish_principality_of_three_nations = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = BAN
+			}
+			NOT = {
+				country_exists = LUS
+			}
+			NOT = {
+				country_exists = BRF
+			}
+			NOT = {
+				country_exists = GRW
+			}
+			all_of_scopes = {
+				array = BAN.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = LUS.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = BRF.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_principality_of_three_nations"
+			release_puppet = BRF
+			BRF = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = BAN
+							is_core_of = LUS
+							is_core_of = BRF
+						}
+					}
+					add_core_of = BRF
+					BRF = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = BAN
+						is_core_of = LUS
+						is_core_of = BRF
+					}
+				}
+				add_core_of = BRF
+				BRF = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_vartai = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = HLQ
+			}
+			NOT = {
+				country_exists = LNS
+			}
+			NOT = {
+				country_exists = LSC
+			}
+			NOT = {
+				country_exists = LSM
+			}
+			all_of_scopes = {
+				array = HLQ.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = LNS.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = LSC.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = LSM.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_principality_of_three_nations"
+			release_puppet = HLQ
+			HLQ = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem_LSC_vartai
+			}
+
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = HLQ
+							is_core_of = LNS
+						}
+					}
+					add_core_of = HLQ
+					HLQ = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = HLQ
+						is_core_of = LNS
+					}
+				}
+				add_core_of = HLQ
+				HLQ = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_mit = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = MIT
+			}
+			NOT = {
+				country_exists = CYA
+			}
+			all_of_scopes = {
+				array = MIT.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = CYA.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = MIT
+			MIT = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = MIT
+							is_core_of = CYA
+						}
+					}
+					add_core_of = MIT
+					MIT = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = MIT
+						is_core_of = CYA
+					}
+				}
+				MIT = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_sic = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = SIC
+			}
+			all_of_scopes = {
+				array = SIC.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = SIC
+			SIC = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = SIC
+					}
+					SIC = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					is_core_of = SIC
+				}
+				SIC = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_fal = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = FAL
+			}
+			all_of_scopes = {
+				array = FAL.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = FAL
+			FAL = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = FAL
+					}
+					FAL = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					is_core_of = FAL
+				}
+				FAL = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_WNG = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = WNG
+			}
+			all_of_scopes = {
+				array = WNG.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = WNG
+			WNG = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = WNG
+					}
+					WNG = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					is_core_of = WNG
+				}
+				WNG = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_BOI = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = BOI
+			}
+			all_of_scopes = {
+				array = BOI.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = BOI
+			BOI = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_owned_state = {
+				limit = {
+					is_core_of = BOI
+				}
+				BOI = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_TAL = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = TAL
+			}
+			all_of_scopes = {
+				array = TAL.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = TAL
+			TAL = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = TAL
+					}
+					TAL = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					is_core_of = TAL
+				}
+				TAL = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	bar_friend_estabilish_FRN = {
+		icon = pawn
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_completed_focus = BAR_friend_riverlands_protectors
+		}
+		available = {
+			NOT = {
+				country_exists = FRN
+			}
+			NOT = {
+				country_exists = ARA
+			}
+			all_of_scopes = {
+				array = FRN.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+			all_of_scopes = {
+				array = ARA.core_states
+				OR = {
+					is_fully_controlled_by = BAR
+					owner = {
+						is_subject_of = BAR
+					}
+				}
+			}
+		}
+		cost = 0
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove bar_friend_estabilish_asterion"
+			release_puppet = FRN
+			FRN = {
+				load_focus_tree = generic_griffon_focus
+				set_cosmetic_tag = RIV_federation_mem
+			}
+			
+			every_country = {
+				limit = {
+					is_subject_of = BAR
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_core_of = ARA
+							is_core_of = FRN
+						}
+					}
+					FRN = {
+						transfer_state = PREV
+					}
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = ARA
+						is_core_of = FRN
+					}
+				}
+				FRN = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+}
+
 RIV_political_decisions = {
 	bar_change_riverlands_flag = {
 		icon = pawn
-		allowed = { 
-			original_tag = BAR 
-		} 
+		allowed = {
+			original_tag = BAR
+		}
 		visible = {
 			has_country_flag = river_federation_founder
 		}
@@ -10219,7 +11071,7 @@ RIV_political_decisions = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove bar_change_riverlands_flag"
 			set_cosmetic_tag = BAR_rivfed
 		}
-	}	
+	}
 	BAR_rifved_mutual_invest = {
 		target_array = global.river_coalition_members
 		icon = pawn
@@ -10285,7 +11137,9 @@ RIV_political_decisions = {
 			has_completed_focus = BAR_friend_visit_in_asinti_temple
 		}
 		remove_effect = {
-			country_event = { id = barrad_friendship_tree.38 }
+			country_event = {
+				id = barrad_friendship_tree.38
+			}
 			RIV_add_to_fed_race = yes
 		}
 	}
@@ -10311,7 +11165,6 @@ RIV_political_decisions = {
 		icon = pawn
 		cost = 150
 		allowed = {
-
 		}
 		visible = {
 			is_river_fed_member = yes
@@ -10347,7 +11200,6 @@ RIV_political_decisions = {
 		icon = pawn
 		cost = 100
 		allowed = {
-
 		}
 		visible = {
 			is_river_fed_member = yes

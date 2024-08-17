@@ -5933,6 +5933,18 @@ bar_expedition_retrive_loot = {
 #    # #      # #      
 #    # # #    # #    # 
 #    # #  ####   ####  
+
+increase_society_development_or_civ = {
+	if = {
+		limit = {
+			has_idea = outdated_industry2
+		}
+		one_random_industrial_complex = yes
+	} else = {
+		increase_society_development_gradual = yes
+	}
+}
+
 one_state_inf = {
 	if = {
 		limit = {

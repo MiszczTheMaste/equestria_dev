@@ -688,14 +688,15 @@ focus_tree = {
 					id = barrad_friendship_tree.28
 					days = 21
 				}
+				remove_ideas = BAR_no_volunteers
 			}	
 		}
 	}
 	focus = {
 		id = BAR_friend_prince_of_wittenland
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_wit_prince
 		cost = 3
-		x = -9
+		x = -7
 		y = 1
 		relative_position_id = BAR_friend_light_of_the_star
 		ai_will_do = {
@@ -709,10 +710,85 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_friend_letter_to_sister
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		id = BAR_friend_alone_against_the_world
+		icon = GFX_goal_bar_fren_ambrosius_alone
 		cost = 3
-		x = 1
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_prince_of_wittenland
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			WIT = {
+				WIT_white_star = {
+					is_country_leader = no
+				}
+			}	
+		}
+		mutually_exclusive = {
+			focus = BAR_friend_serving_justice
+		}
+		mutually_exclusive = {
+			focus = BAR_friend_letter_to_sister
+		}
+		prerequisite = {
+			focus = BAR_friend_prince_of_wittenland
+		}
+		completion_reward = {
+			two_random_arms_factory = yes
+		}
+	}
+	focus = {
+		id = BAR_friend_capital_of_three_nations
+		icon = GFX_goal_bar_fren_silver_asinti_viira
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_alone_against_the_world
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = BAR_friend_alone_against_the_world
+		}
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			413 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			412 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BAR_friend_letter_to_sister
+		icon = GFX_goal_bar_fren_white_star_letter
+		cost = 3
+		x = 0
 		y = 1
 		relative_position_id = BAR_friend_prince_of_wittenland
 		ai_will_do = {
@@ -727,6 +803,9 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_serving_justice
+		}
+		mutually_exclusive = {
+			focus = BAR_friend_alone_against_the_world
 		}
 		prerequisite = {
 			focus = BAR_friend_prince_of_wittenland
@@ -748,7 +827,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_fight_for_friendship
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_sibling_duel
 		cost = 3
 		x = 0
 		y = 1
@@ -767,9 +846,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_serving_justice
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_white_star_black_ribbon
 		cost = 3
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = BAR_friend_prince_of_wittenland
 		ai_will_do = {
@@ -783,9 +862,13 @@ focus_tree = {
 					}
 				}
 			}
+			country_exists = WIT
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_letter_to_sister
+		}
+		mutually_exclusive = {
+			focus = BAR_friend_alone_against_the_world
 		}
 		prerequisite = {
 			focus = BAR_friend_prince_of_wittenland
@@ -800,7 +883,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_homecoming
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_silver_star_bow
 		cost = 3
 		x = 0
 		y = 1
@@ -828,9 +911,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_move_to_wittenburgh
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_gasienica_crown
 		cost = 3
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = BAR_friend_homecoming
 		ai_will_do = {
@@ -928,16 +1011,17 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_rejoin_rivelands
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_ponies_together
 		cost = 3
-		x = 2
+		x = 1
 		y = 1
-		relative_position_id = BAR_friend_homecoming
+		relative_position_id = BAR_friend_fight_for_friendship
 		ai_will_do = {
 			factor = 10
 		}
 		prerequisite = {
 			focus = BAR_friend_fight_for_friendship
+			focus = BAR_friend_capital_of_three_nations
 		}
 		available = {
 			has_country_flag = bar_friendship_wit_ally
@@ -1020,7 +1104,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_river_federation_membership
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_viira_riv_fed
 		cost = 3
 		x = 1
 		y = 1
@@ -1030,6 +1114,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_move_to_wittenburgh
+		}
+		prerequisite = {
+			focus = BAR_friend_rejoin_rivelands
 		}
 		completion_reward = {
 			random_country = {
@@ -1051,7 +1138,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_viira_and_silver_diplomacy
-		icon = GFX_goal_bar_fren_GFX_goal_bar_silver_and_viira
+		icon = GFX_goal_bar_fren_silver_viira
 		cost = 3
 		x = 0
 		y = 1
@@ -1061,7 +1148,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_river_federation_membership
-			focus = BAR_friend_rejoin_rivelands
 		}
 		completion_reward = {
 			country_event = {
@@ -1071,7 +1157,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_diplomacy_getting_somebody_competent
-		icon = GFX_goal_bar_fren_GFX_goal_bar_silver_and_viira_2
+		icon = GFX_goal_bar_fren_silver_viira_2
 		cost = 3
 		x = 0
 		y = 1
@@ -1088,9 +1174,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_ruin_has_come
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_amb_letter
 		cost = 3
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = BAR_friend_light_of_the_star
 		ai_will_do = {
@@ -1105,7 +1191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_now_what
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_silver_psyche
 		cost = 1
 		x = 7
 		y = 1
@@ -1187,14 +1273,7 @@ focus_tree = {
 			focus = BAR_friend_3
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = outdated_industry2
-				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
-			}
+			increase_society_development_or_civ = yes
 			decrease_poverty = yes
 		}
 	}
@@ -1574,7 +1653,7 @@ focus_tree = {
 		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = BAR_friend_civ_industry
 		ai_will_do = {
 			factor = 10
@@ -1586,20 +1665,13 @@ focus_tree = {
 			focus = BAR_friend_mil_industry
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = outdated_industry2
-				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
-			}
+			increase_society_development_or_civ = yes
 			country_event = { id = barrad_friendship_tree.26 days = 4 }
 		}
 	}
 	focus = {
 		id = BAR_friend_barradian_academy_of_applied_science
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_leopold_university
 		cost = 3
 		x = 0
 		y = 1
@@ -1687,30 +1759,7 @@ focus_tree = {
 				uses = 2
 				category = magical_tech
 			}
-			if = {
-				limit = {
-					has_idea = outdated_industry2
-				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
-			}
-		}
-	}
-	focus = {
-		id = BAR_friend_renowned_genius
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
-		cost = 3
-		x = 0
-		y = 1
-		relative_position_id = BAR_friend_magical_engineering_faculty
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_magical_engineering_faculty
-		}
-		completion_reward = {
+			increase_society_development_or_civ = yes
 			custom_effect_tooltip = BAR_friend_leopold_tooltip
 			add_ideas = BAR_friend_leopold
 		}
@@ -1739,7 +1788,7 @@ focus_tree = {
 		id = BAR_friend_sharing_knowledge_of_arcane
 		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = BAR_friend_7
 		ai_will_do = {
@@ -1773,9 +1822,6 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_friend_sharing_knowledge_of_arcane
 		}
-		prerequisite = {
-			focus = BAR_friend_viira_and_silver_diplomacy
-		}
 		completion_reward = {
 			if = {
 				limit = {
@@ -1808,7 +1854,7 @@ focus_tree = {
 		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = BAR_friend_8
 		ai_will_do = {
 			factor = 10
@@ -1824,6 +1870,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_friend_invite_other_to_study_magic
+		}
+		prerequisite = {
+			focus = BAR_friend_riverlands_diplomacy
 		}
 		completion_reward = {
 			country_event = { id = barrad_friendship_tree.25 }
@@ -2162,7 +2211,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_new_south
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_multi_racial
 		cost = 3
 		x = 2
 		y = 1
@@ -2177,19 +2226,12 @@ focus_tree = {
 		}	
 		relative_position_id = BAR_olv_3
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = outdated_industry2
-				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
-			}
+			increase_society_development_or_civ = yes
 		}
 	}
 	focus = {
 		id = BAR_friend_miliatry_reform
-		icon = GFX_goal_bar_fren_GFX_bar_fren_army1
+		icon = GFX_goal_bar_fren_army1
 		cost = 3
 		x = 27
 		y = 0
@@ -2968,7 +3010,7 @@ focus_tree = {
 		id = BAR_friend_air_warfare
 		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
 		cost = 3
-		x = 26
+		x = 27
 		y = 8
 		ai_will_do = {
 			factor = 10
@@ -3156,9 +3198,9 @@ focus_tree = {
 
 	focus = {
 		id = BAR_friend_riverlands_diplomacy
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_diplomacy_ambrosius
 		cost = 2
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = BAR_friend_diplomacy_getting_somebody_competent
 		ai_will_do = {
@@ -3178,7 +3220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_merchant_dynasty
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_amrosius_money
 		cost = 3
 		x = -1
 		y = 1
@@ -3196,7 +3238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_court_and_princess
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_white_star
 		cost = 3
 		x = 1
 		y = 1
@@ -3216,29 +3258,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = barrad_friendship_tree.35 }
 			RIV_add_to_fed_race = yes
-		}
-	}
-	focus = {
-		id = BAR_friend_magical_solidarity
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
-		cost = 3
-		x = 1
-		y = 1
-		relative_position_id = BAR_friend_court_and_princess
-		ai_will_do = {
-			factor = 10
-		}
-		prerequisite = {
-			focus = BAR_friend_court_and_princess
-		}
-		completion_reward = {
-			RIV_add_to_fed_race = yes
-			add_tech_bonus = {
-				name = magical_tech_bonus
-				bonus = 1
-				uses = 2
-				category = magical_tech
-			}
 		}
 	}
 	focus = {
@@ -3297,14 +3316,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = BAR_friend_favorable_export
-			if = {
-				limit = {
-					has_idea = outdated_industry2
-				}
-				one_random_industrial_complex = yes
-			} else = {
-				increase_society_development_gradual = yes
-			}
+			increase_society_development_or_civ = yes
 		}
 	}
 	focus = {
@@ -3338,9 +3350,9 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_regional_interventionism
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_gasienica_gun
 		cost = 3
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = BAR_friend_diplomacy_getting_somebody_competent
 		ai_will_do = {
@@ -3365,6 +3377,9 @@ focus_tree = {
 		relative_position_id = BAR_friend_regional_interventionism
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			owns_state = 617
 		}
 		will_lead_to_war_with = GRY
 		prerequisite = {
@@ -3400,7 +3415,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_riverlands_protectors
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_white_star_shield
 		cost = 3
 		x = 0
 		y = 1
@@ -3419,6 +3434,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			RIV_add_to_fed_race = yes
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -3483,7 +3499,11 @@ focus_tree = {
 			focus = BAR_friend_riverlands_protectors
 		}
 		completion_reward = {
-			add_ideas = bar_volunteers
+			swap_ideas = {
+				remove_idea = BAR_friend_regional_interventionism_idea
+				add_idea = BAR_friend_global_interventionism_idea
+			}
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -3553,5 +3573,476 @@ focus_tree = {
 				type = annex_everything
 			}
 		}
+	}
+
+
+	focus = {
+		id = BAR_friend_invite_advisors
+		icon = GFX_goal_generic_intelligence_exchange_pony
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = BAR_friend_court_and_princess
+		}
+		relative_position_id = BAR_friend_court_and_princess
+
+		cost = 7
+	
+		ai_will_do = {
+			factor = 18
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_invite_advisors"
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	
+	focus = {
+		id = BAR_friend_hire_diamond_dogs
+		icon = GFX_goal_DMT_mad_science
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_invite_advisors
+	
+		available = {
+			has_full_control_of_state = 629
+			has_full_control_of_state = 627
+		}
+		prerequisite = {
+			focus = BAR_friend_invite_advisors
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_hire_diamond_dogs"
+			629 = {
+				add_resource = {
+					type = tungsten
+					amount = 14
+				}
+			}
+			627 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	
+	focus = {
+		id = BAR_friend_ivanhorn_dam
+		icon = GFX_goal_dam_1
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_invite_advisors
+	
+		prerequisite = {
+			focus = BAR_friend_invite_advisors
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_ivanhorn_dam"
+			628 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			increase_society_development_or_civ = yes
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_railway_tunnels
+		icon = GFX_focus_indy_excavations
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_hire_diamond_dogs
+	
+		prerequisite = {
+			focus = BAR_friend_hire_diamond_dogs
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_railway_tunnels"
+			every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					infrastructure < 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			increase_society_development_or_civ = yes
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_food_problem
+		icon = GFX_goal_PAL_Food_Import
+		x = 0
+		y = 2
+		relative_position_id = BAR_friend_invite_advisors
+	
+		prerequisite = {
+			focus = BAR_friend_hire_diamond_dogs
+			focus = BAR_friend_ivanhorn_dam
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_food_problem"
+			country_event = wittenland.10
+		}
+	}
+	focus = {
+		id = BAR_friend_industrial_light_and_magic
+		icon = GFX_goal_stg_magic
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_ivanhorn_dam
+	
+		prerequisite = {
+			focus = BAR_friend_ivanhorn_dam
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_industrial_light_and_magic"
+			if = {
+				limit = {
+					NOT = {
+						has_tech = tech_earth_pony_b3
+					}
+				}
+				set_technology = {
+					tech_earth_pony_b3 = 1
+				}
+			}
+			custom_effect_tooltip = BAR_friend_industrial_tech_tt
+			hidden_effect = {
+				set_technology = {
+					tech_griffon_misc = 1
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_import_rijekan_machinery
+		icon = GFX_goal_generic_production2
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_food_problem
+	
+		available = {
+			NOT = {
+				has_war_with = RCT
+			}
+		}
+		prerequisite = {
+			focus = BAR_friend_food_problem
+		}
+		prerequisite = {
+			focus = BAR_friend_railway_tunnels
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_import_rijekan_machinery"
+			616 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction =
+				{
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			increase_society_development_or_civ = yes
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_lakeish_arms_contract
+		icon = GFX_goal_industry_air
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_food_problem
+	
+		available = {
+			NOT = {
+				has_war_with = LCT
+			}
+		}
+		prerequisite = {
+			focus = BAR_friend_food_problem
+		}
+		prerequisite = {
+			focus = BAR_friend_industrial_light_and_magic
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_lakeish_arms_contract"
+			615 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_nationwide_electrification
+		icon = GFX_goal_generic_lightbulb
+		x = 0
+		y = 2
+		relative_position_id = BAR_friend_food_problem
+	
+		available = {
+		}
+		prerequisite = {
+			focus = BAR_friend_lakeish_arms_contract
+		}
+		prerequisite = {
+			focus = BAR_friend_import_rijekan_machinery
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 9
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_nationwide_electrification"
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+			}
+			increase_society_development_or_civ = yes
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_WHITE_STAR }
+	}
+	
+	focus = {
+		id = BAR_friend_small_business_subsidies
+		icon = GFX_goal_endless_money
+		x = -2
+		y = 1
+		relative_position_id = BAR_friend_nationwide_electrification
+	
+		available = {
+			has_country_flag = BAR_friend_White_Stat_Won_Flag
+		}
+		prerequisite = {
+			focus = BAR_friend_nationwide_electrification
+		}
+		cost = 7
+	
+		ai_will_do = {
+			factor = 8
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_small_business_subsidies"
+			increase_society_development_or_civ = yes
+			two_random_industrial_complex = yes
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_invite_eqs_scientists
+		icon = GFX_goal_equestria
+		x = 0
+		y = 1
+		relative_position_id = BAR_friend_nationwide_electrification
+	
+		prerequisite = {
+			focus = BAR_friend_nationwide_electrification
+		}
+		cost = 7
+	
+		ai_will_do = {
+			factor = 8
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_invite_eqs_scientists"
+			increase_science_base = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_WHITE_STAR }
+	}
+	focus = {
+		id = BAR_friend_state_capitalism
+		icon = GFX_goal_state_economy
+		x = 2
+		y = 1
+		relative_position_id = BAR_friend_nationwide_electrification
+	
+		prerequisite = {
+			focus = BAR_friend_nationwide_electrification
+		}
+		cost = 7
+	
+		ai_will_do = {
+			factor = 8
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_state_capitalism"
+			increase_society_development_gradual = yes
+			one_random_industrial_complex = yes
+			one_random_arms_factory = yes
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	
+	focus = {
+		id = BAR_friend_highmane_wittenburgh_rail
+		icon = GFX_goal_generic_railroad
+		x = -1
+		y = 1
+		relative_position_id = BAR_friend_invite_eqs_scientists
+	
+		available = {
+			has_full_control_of_state = 617
+			has_full_control_of_state = 628
+			has_full_control_of_state = 614
+		}
+		prerequisite = {
+			focus = BAR_friend_invite_eqs_scientists
+			focus = BAR_friend_small_business_subsidies
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 8
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_highmane_wittenburgh_rail"
+			build_railway = {
+				level = 2
+				start_state = 617
+				target_state = 628
+				build_only_on_allied = yes
+			}
+			build_railway = {
+				level = 2
+				start_state = 628
+				target_state = 614
+				build_only_on_allied = yes
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WHITE_STAR }
+	}
+	
+	focus = {
+		id = BAR_friend_national_mining_company
+		icon = GFX_Steel
+		x = 1
+		y = 1
+		relative_position_id = BAR_friend_invite_eqs_scientists
+	
+		available = {
+			has_full_control_of_state = 629
+			has_full_control_of_state = 627
+		}
+		prerequisite = {
+			focus = BAR_friend_invite_eqs_scientists
+			focus = BAR_friend_state_capitalism
+		}
+	
+		cost = 7
+	
+		ai_will_do = {
+			factor = 8
+		}
+	
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus BAR_friend_national_mining_company"
+			629 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+			627 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_WHITE_STAR }
 	}
 }

@@ -2200,25 +2200,10 @@ country_event = { #silver and asinti on party
 	}
 }
 
-country_event = { #gąsienica get questioned by viira about what he knows about cultists
-	id = barrad_second.15
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
-	}
-	title = barrad_second.15.t
-	desc = barrad_second.15.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_second.15.a
-		add_political_power = 25
-	}
-}
-
 country_event = { #viira gets agry at asinti for trying to infiltrate the cult and messing with her work
 	id = barrad_second.16
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.16"
 	}
 	title = barrad_second.16.t
 	desc = barrad_second.16.d
@@ -2233,7 +2218,7 @@ country_event = { #viira gets agry at asinti for trying to infiltrate the cult a
 country_event = {
 	id = barrad_second.17
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_second.15"
+		log = "[GetDateText]: [Root.GetName]: event barrad_second.17"
 	}
 	title = barrad_second.17.t
 	desc = barrad_second.17.d
@@ -3973,45 +3958,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_asinti.24.a
-	}
-}
-country_event = { # zes core
-	id = barrad_asinti.25
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.25"
-	}
-	title = barrad_asinti.25.t
-	desc = barrad_asinti.25.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.24.a
-	}
-}
-country_event = { # wit core
-	id = barrad_asinti.26
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.26"
-	}
-	title = barrad_asinti.26.t
-	desc = barrad_asinti.26.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.26.a
-	}
-}
-country_event = { # rivfed core
-	id = barrad_asinti.27
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_asinti.27"
-	}
-	title = barrad_asinti.27.t
-	desc = barrad_asinti.27.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = barrad_asinti.27.a
 	}
 }
 country_event = { 

@@ -1024,7 +1024,10 @@ focus_tree = {
 			focus = BAR_friend_capital_of_three_nations
 		}
 		available = {
-			has_country_flag = bar_friendship_wit_ally
+			OR = {
+				has_country_flag = bar_friendship_wit_ally
+				has_completed_focus = BAR_friend_capital_of_three_nations
+			}	
 		}
 		mutually_exclusive = {
 			focus = BAR_friend_move_to_wittenburgh

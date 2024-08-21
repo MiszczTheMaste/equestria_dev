@@ -3240,10 +3240,6 @@ scripted_gui = {
 			}
 		}
 	}
-
-
-
-
 	##################################################################################
 	##################################################################################
 	##################################################################################
@@ -3262,9 +3258,7 @@ scripted_gui = {
 	##################################################################################
 	##################################################################################
 	##################################################################################
-
 	## friendship activities
-
 	bar_friendship_activities_container = {
 		window_name = "bar_friendship_activities_container"
 		context_type = player_context
@@ -3347,75 +3341,82 @@ scripted_gui = {
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_1_click = {
-				set_variable = { bar_friendship_activity_type = 1 }
+				set_variable = {
+					bar_friendship_activity_type = 1
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_2_click = {
-				set_variable = { bar_friendship_activity_type = 2 }
+				set_variable = {
+					bar_friendship_activity_type = 2
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_3_click = {
-				set_variable = { bar_friendship_activity_type = 3 }
+				set_variable = {
+					bar_friendship_activity_type = 3
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_4_click = {
-				set_variable = { bar_friendship_activity_type = 4 }
+				set_variable = {
+					bar_friendship_activity_type = 4
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_5_click = {
-				set_variable = { bar_friendship_activity_type = 5 }
+				set_variable = {
+					bar_friendship_activity_type = 5
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_6_click = {
-				set_variable = { bar_friendship_activity_type = 6 }
+				set_variable = {
+					bar_friendship_activity_type = 6
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_7_click = {
-				set_variable = { bar_friendship_activity_type = 7 }
+				set_variable = {
+					bar_friendship_activity_type = 7
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_8_click = {
-				set_variable = { bar_friendship_activity_type = 8 }
+				set_variable = {
+					bar_friendship_activity_type = 8
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_9_click = {
-				set_variable = { bar_friendship_activity_type = 9 }
+				set_variable = {
+					bar_friendship_activity_type = 9
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_type_list_10_click = {
-				set_variable = { bar_friendship_activity_type = 10 }
+				set_variable = {
+					bar_friendship_activity_type = 10
+				}
 				bar_recalculate_activity = yes
 			}
 			bar_activities_launch_click = {
 				set_country_flag = bar_ongoing_activity
-
 				set_temp_variable = {
 					bar_activity_pp_cost = bar_friendship_activity_activities_cost^bar_friendship_activity_type
 				}
 				multiply_temp_variable = {
 					bar_activity_pp_cost = -1
 				}
-
 				add_political_power = bar_activity_pp_cost
 				add_to_variable = {
 					bar_friendship_activity_activities_cost^bar_friendship_activity_type = 25
 				}
-
 				activate_mission = bar_ongoing_activity_mission
-				
 				bar_recalculate_activity = yes
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	##################################################################################
 	##################################################################################
 	##################################################################################
@@ -3434,9 +3435,7 @@ scripted_gui = {
 	##################################################################################
 	##################################################################################
 	##################################################################################
-
 	## ending dialogue
-
 	bar_ending_dialogue_bg = {
 		window_name = "bar_ending_dialogue_bg"
 		dirty = bar_final_dialogue
@@ -4153,7 +4152,7 @@ scripted_gui = {
 		window_name = "bar_asinti_sigma_event_2_asinti_demon_eye"
 		dirty = bar_asinti_sigma_event_2
 		context_type = player_context
-		visible = {	
+		visible = {
 			OR = {
 				AND = {
 					check_variable = {
@@ -4499,6 +4498,1920 @@ scripted_gui = {
 		visible = {
 			check_variable = {
 				bar_asinti_sigma_event_2 > 44
+			}
+		}
+	}
+	bar_minesweeper_container = {
+		window_name = "bar_minesweeper_container"
+		dirty = bar_minesweeper_visible
+		context_type = player_context
+		visible = {
+			has_variable = bar_minesweeper_visible
+		}
+		triggers = {
+			bar_minesweeper_map_field_0_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^0 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^0 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_1_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^1 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^1 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_2_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^2 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^2 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_3_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^3 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^3 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_4_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^4 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^4 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_5_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^5 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^5 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_6_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^6 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^6 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_7_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^7 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^7 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_8_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^8 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^8 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_9_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^9 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^9 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_10_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^10 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^10 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_11_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^11 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^11 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_12_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^12 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^12 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_13_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^13 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^13 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_14_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^14 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^14 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_15_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^15 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^15 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_16_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^16 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^16 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_17_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^17 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^17 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_18_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^18 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^18 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_19_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^19 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^19 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_20_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^20 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^20 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_21_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^21 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^21 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_22_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^22 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^22 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_23_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^23 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^23 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_24_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^24 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^24 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_25_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^25 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^25 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_26_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^26 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^26 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_27_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^27 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^27 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_28_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^28 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^28 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_29_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^29 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^29 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_30_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^30 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^30 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_31_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^31 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^31 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_32_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^32 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^32 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_33_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^33 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^33 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_34_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^34 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^34 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_35_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^35 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^35 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_36_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^36 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^36 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_37_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^37 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^37 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_38_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^38 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^38 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_39_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^39 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^39 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_40_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^40 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^40 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_41_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^41 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^41 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_42_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^42 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^42 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_43_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^43 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^43 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_44_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^44 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^44 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_45_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^45 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^45 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_46_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^46 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^46 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_47_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^47 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^47 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_48_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^48 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^48 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_49_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^49 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^49 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_50_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^50 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^50 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_51_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^51 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^51 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_52_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^52 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^52 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_53_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^53 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^53 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_54_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^54 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^54 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_55_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^55 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^55 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_56_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^56 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^56 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_57_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^57 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^57 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_58_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^58 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^58 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_59_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^59 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^59 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_60_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^60 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^60 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_61_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^61 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^61 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_62_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^62 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^62 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_63_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^63 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^63 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_64_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^64 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^64 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_65_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^65 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^65 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_66_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^66 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^66 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_67_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^67 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^67 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_68_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^68 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^68 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_69_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^69 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^69 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_70_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^70 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^70 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_71_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^71 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^71 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_72_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^72 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^72 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_73_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^73 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^73 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_74_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^74 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^74 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_75_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^75 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^75 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_76_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^76 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^76 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_77_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^77 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^77 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_78_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^78 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^78 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_79_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^79 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^79 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_80_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^80 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^80 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_81_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^81 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^81 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_82_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^82 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^82 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_83_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^83 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^83 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_84_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^84 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^84 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_85_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^85 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^85 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_86_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^86 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^86 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_87_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^87 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^87 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_88_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^88 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^88 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_89_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^89 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^89 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_90_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^90 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^90 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_91_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^91 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^91 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_92_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^92 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^92 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_93_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^93 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^93 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_94_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^94 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^94 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_95_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^95 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^95 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_96_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^96 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^96 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_97_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^97 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^97 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_98_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^98 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^98 > 0
+					}
+				}
+			}
+			bar_minesweeper_map_field_99_text_visible = {
+				AND = {
+					check_variable = {
+						bar_minesweeper_map^99 = 2
+					}
+					check_variable = {
+						bar_minesweeper_mine_map^99 > 0
+					}
+				}
+			}
+		}
+		properties = {
+			bar_minesweeper_map_field_0 = {
+				frame = bar_minesweeper_map^0
+			}
+			bar_minesweeper_map_field_1 = {
+				frame = bar_minesweeper_map^1
+			}
+			bar_minesweeper_map_field_2 = {
+				frame = bar_minesweeper_map^2
+			}
+			bar_minesweeper_map_field_3 = {
+				frame = bar_minesweeper_map^3
+			}
+			bar_minesweeper_map_field_4 = {
+				frame = bar_minesweeper_map^4
+			}
+			bar_minesweeper_map_field_5 = {
+				frame = bar_minesweeper_map^5
+			}
+			bar_minesweeper_map_field_6 = {
+				frame = bar_minesweeper_map^6
+			}
+			bar_minesweeper_map_field_7 = {
+				frame = bar_minesweeper_map^7
+			}
+			bar_minesweeper_map_field_8 = {
+				frame = bar_minesweeper_map^8
+			}
+			bar_minesweeper_map_field_9 = {
+				frame = bar_minesweeper_map^9
+			}
+			bar_minesweeper_map_field_10 = {
+				frame = bar_minesweeper_map^10
+			}
+			bar_minesweeper_map_field_11 = {
+				frame = bar_minesweeper_map^11
+			}
+			bar_minesweeper_map_field_12 = {
+				frame = bar_minesweeper_map^12
+			}
+			bar_minesweeper_map_field_13 = {
+				frame = bar_minesweeper_map^13
+			}
+			bar_minesweeper_map_field_14 = {
+				frame = bar_minesweeper_map^14
+			}
+			bar_minesweeper_map_field_15 = {
+				frame = bar_minesweeper_map^15
+			}
+			bar_minesweeper_map_field_16 = {
+				frame = bar_minesweeper_map^16
+			}
+			bar_minesweeper_map_field_17 = {
+				frame = bar_minesweeper_map^17
+			}
+			bar_minesweeper_map_field_18 = {
+				frame = bar_minesweeper_map^18
+			}
+			bar_minesweeper_map_field_19 = {
+				frame = bar_minesweeper_map^19
+			}
+			bar_minesweeper_map_field_20 = {
+				frame = bar_minesweeper_map^20
+			}
+			bar_minesweeper_map_field_21 = {
+				frame = bar_minesweeper_map^21
+			}
+			bar_minesweeper_map_field_22 = {
+				frame = bar_minesweeper_map^22
+			}
+			bar_minesweeper_map_field_23 = {
+				frame = bar_minesweeper_map^23
+			}
+			bar_minesweeper_map_field_24 = {
+				frame = bar_minesweeper_map^24
+			}
+			bar_minesweeper_map_field_25 = {
+				frame = bar_minesweeper_map^25
+			}
+			bar_minesweeper_map_field_26 = {
+				frame = bar_minesweeper_map^26
+			}
+			bar_minesweeper_map_field_27 = {
+				frame = bar_minesweeper_map^27
+			}
+			bar_minesweeper_map_field_28 = {
+				frame = bar_minesweeper_map^28
+			}
+			bar_minesweeper_map_field_29 = {
+				frame = bar_minesweeper_map^29
+			}
+			bar_minesweeper_map_field_30 = {
+				frame = bar_minesweeper_map^30
+			}
+			bar_minesweeper_map_field_31 = {
+				frame = bar_minesweeper_map^31
+			}
+			bar_minesweeper_map_field_32 = {
+				frame = bar_minesweeper_map^32
+			}
+			bar_minesweeper_map_field_33 = {
+				frame = bar_minesweeper_map^33
+			}
+			bar_minesweeper_map_field_34 = {
+				frame = bar_minesweeper_map^34
+			}
+			bar_minesweeper_map_field_35 = {
+				frame = bar_minesweeper_map^35
+			}
+			bar_minesweeper_map_field_36 = {
+				frame = bar_minesweeper_map^36
+			}
+			bar_minesweeper_map_field_37 = {
+				frame = bar_minesweeper_map^37
+			}
+			bar_minesweeper_map_field_38 = {
+				frame = bar_minesweeper_map^38
+			}
+			bar_minesweeper_map_field_39 = {
+				frame = bar_minesweeper_map^39
+			}
+			bar_minesweeper_map_field_40 = {
+				frame = bar_minesweeper_map^40
+			}
+			bar_minesweeper_map_field_41 = {
+				frame = bar_minesweeper_map^41
+			}
+			bar_minesweeper_map_field_42 = {
+				frame = bar_minesweeper_map^42
+			}
+			bar_minesweeper_map_field_43 = {
+				frame = bar_minesweeper_map^43
+			}
+			bar_minesweeper_map_field_44 = {
+				frame = bar_minesweeper_map^44
+			}
+			bar_minesweeper_map_field_45 = {
+				frame = bar_minesweeper_map^45
+			}
+			bar_minesweeper_map_field_46 = {
+				frame = bar_minesweeper_map^46
+			}
+			bar_minesweeper_map_field_47 = {
+				frame = bar_minesweeper_map^47
+			}
+			bar_minesweeper_map_field_48 = {
+				frame = bar_minesweeper_map^48
+			}
+			bar_minesweeper_map_field_49 = {
+				frame = bar_minesweeper_map^49
+			}
+			bar_minesweeper_map_field_50 = {
+				frame = bar_minesweeper_map^50
+			}
+			bar_minesweeper_map_field_51 = {
+				frame = bar_minesweeper_map^51
+			}
+			bar_minesweeper_map_field_52 = {
+				frame = bar_minesweeper_map^52
+			}
+			bar_minesweeper_map_field_53 = {
+				frame = bar_minesweeper_map^53
+			}
+			bar_minesweeper_map_field_54 = {
+				frame = bar_minesweeper_map^54
+			}
+			bar_minesweeper_map_field_55 = {
+				frame = bar_minesweeper_map^55
+			}
+			bar_minesweeper_map_field_56 = {
+				frame = bar_minesweeper_map^56
+			}
+			bar_minesweeper_map_field_57 = {
+				frame = bar_minesweeper_map^57
+			}
+			bar_minesweeper_map_field_58 = {
+				frame = bar_minesweeper_map^58
+			}
+			bar_minesweeper_map_field_59 = {
+				frame = bar_minesweeper_map^59
+			}
+			bar_minesweeper_map_field_60 = {
+				frame = bar_minesweeper_map^60
+			}
+			bar_minesweeper_map_field_61 = {
+				frame = bar_minesweeper_map^61
+			}
+			bar_minesweeper_map_field_62 = {
+				frame = bar_minesweeper_map^62
+			}
+			bar_minesweeper_map_field_63 = {
+				frame = bar_minesweeper_map^63
+			}
+			bar_minesweeper_map_field_64 = {
+				frame = bar_minesweeper_map^64
+			}
+			bar_minesweeper_map_field_65 = {
+				frame = bar_minesweeper_map^65
+			}
+			bar_minesweeper_map_field_66 = {
+				frame = bar_minesweeper_map^66
+			}
+			bar_minesweeper_map_field_67 = {
+				frame = bar_minesweeper_map^67
+			}
+			bar_minesweeper_map_field_68 = {
+				frame = bar_minesweeper_map^68
+			}
+			bar_minesweeper_map_field_69 = {
+				frame = bar_minesweeper_map^69
+			}
+			bar_minesweeper_map_field_70 = {
+				frame = bar_minesweeper_map^70
+			}
+			bar_minesweeper_map_field_71 = {
+				frame = bar_minesweeper_map^71
+			}
+			bar_minesweeper_map_field_72 = {
+				frame = bar_minesweeper_map^72
+			}
+			bar_minesweeper_map_field_73 = {
+				frame = bar_minesweeper_map^73
+			}
+			bar_minesweeper_map_field_74 = {
+				frame = bar_minesweeper_map^74
+			}
+			bar_minesweeper_map_field_75 = {
+				frame = bar_minesweeper_map^75
+			}
+			bar_minesweeper_map_field_76 = {
+				frame = bar_minesweeper_map^76
+			}
+			bar_minesweeper_map_field_77 = {
+				frame = bar_minesweeper_map^77
+			}
+			bar_minesweeper_map_field_78 = {
+				frame = bar_minesweeper_map^78
+			}
+			bar_minesweeper_map_field_79 = {
+				frame = bar_minesweeper_map^79
+			}
+			bar_minesweeper_map_field_80 = {
+				frame = bar_minesweeper_map^80
+			}
+			bar_minesweeper_map_field_81 = {
+				frame = bar_minesweeper_map^81
+			}
+			bar_minesweeper_map_field_82 = {
+				frame = bar_minesweeper_map^82
+			}
+			bar_minesweeper_map_field_83 = {
+				frame = bar_minesweeper_map^83
+			}
+			bar_minesweeper_map_field_84 = {
+				frame = bar_minesweeper_map^84
+			}
+			bar_minesweeper_map_field_85 = {
+				frame = bar_minesweeper_map^85
+			}
+			bar_minesweeper_map_field_86 = {
+				frame = bar_minesweeper_map^86
+			}
+			bar_minesweeper_map_field_87 = {
+				frame = bar_minesweeper_map^87
+			}
+			bar_minesweeper_map_field_88 = {
+				frame = bar_minesweeper_map^88
+			}
+			bar_minesweeper_map_field_89 = {
+				frame = bar_minesweeper_map^89
+			}
+			bar_minesweeper_map_field_90 = {
+				frame = bar_minesweeper_map^90
+			}
+			bar_minesweeper_map_field_91 = {
+				frame = bar_minesweeper_map^91
+			}
+			bar_minesweeper_map_field_92 = {
+				frame = bar_minesweeper_map^92
+			}
+			bar_minesweeper_map_field_93 = {
+				frame = bar_minesweeper_map^93
+			}
+			bar_minesweeper_map_field_94 = {
+				frame = bar_minesweeper_map^94
+			}
+			bar_minesweeper_map_field_95 = {
+				frame = bar_minesweeper_map^95
+			}
+			bar_minesweeper_map_field_96 = {
+				frame = bar_minesweeper_map^96
+			}
+			bar_minesweeper_map_field_97 = {
+				frame = bar_minesweeper_map^97
+			}
+			bar_minesweeper_map_field_98 = {
+				frame = bar_minesweeper_map^98
+			}
+			bar_minesweeper_map_field_99 = {
+				frame = bar_minesweeper_map^99
+			}
+		}
+		effects = {
+			bar_minesweeper_map_field_0_click = {
+				set_variable = {
+					click_position = 0
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_1_click = {
+				set_variable = {
+					click_position = 1
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_2_click = {
+				set_variable = {
+					click_position = 2
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_3_click = {
+				set_variable = {
+					click_position = 3
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_4_click = {
+				set_variable = {
+					click_position = 4
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_5_click = {
+				set_variable = {
+					click_position = 5
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_6_click = {
+				set_variable = {
+					click_position = 6
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_7_click = {
+				set_variable = {
+					click_position = 7
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_8_click = {
+				set_variable = {
+					click_position = 8
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_9_click = {
+				set_variable = {
+					click_position = 9
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_10_click = {
+				set_variable = {
+					click_position = 10
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_11_click = {
+				set_variable = {
+					click_position = 11
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_12_click = {
+				set_variable = {
+					click_position = 12
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_13_click = {
+				set_variable = {
+					click_position = 13
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_14_click = {
+				set_variable = {
+					click_position = 14
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_15_click = {
+				set_variable = {
+					click_position = 15
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_16_click = {
+				set_variable = {
+					click_position = 16
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_17_click = {
+				set_variable = {
+					click_position = 17
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_18_click = {
+				set_variable = {
+					click_position = 18
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_19_click = {
+				set_variable = {
+					click_position = 19
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_20_click = {
+				set_variable = {
+					click_position = 20
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_21_click = {
+				set_variable = {
+					click_position = 21
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_22_click = {
+				set_variable = {
+					click_position = 22
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_23_click = {
+				set_variable = {
+					click_position = 23
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_24_click = {
+				set_variable = {
+					click_position = 24
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_25_click = {
+				set_variable = {
+					click_position = 25
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_26_click = {
+				set_variable = {
+					click_position = 26
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_27_click = {
+				set_variable = {
+					click_position = 27
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_28_click = {
+				set_variable = {
+					click_position = 28
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_29_click = {
+				set_variable = {
+					click_position = 29
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_30_click = {
+				set_variable = {
+					click_position = 30
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_31_click = {
+				set_variable = {
+					click_position = 31
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_32_click = {
+				set_variable = {
+					click_position = 32
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_33_click = {
+				set_variable = {
+					click_position = 33
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_34_click = {
+				set_variable = {
+					click_position = 34
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_35_click = {
+				set_variable = {
+					click_position = 35
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_36_click = {
+				set_variable = {
+					click_position = 36
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_37_click = {
+				set_variable = {
+					click_position = 37
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_38_click = {
+				set_variable = {
+					click_position = 38
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_39_click = {
+				set_variable = {
+					click_position = 39
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_40_click = {
+				set_variable = {
+					click_position = 40
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_41_click = {
+				set_variable = {
+					click_position = 41
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_42_click = {
+				set_variable = {
+					click_position = 42
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_43_click = {
+				set_variable = {
+					click_position = 43
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_44_click = {
+				set_variable = {
+					click_position = 44
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_45_click = {
+				set_variable = {
+					click_position = 45
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_46_click = {
+				set_variable = {
+					click_position = 46
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_47_click = {
+				set_variable = {
+					click_position = 47
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_48_click = {
+				set_variable = {
+					click_position = 48
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_49_click = {
+				set_variable = {
+					click_position = 49
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_50_click = {
+				set_variable = {
+					click_position = 50
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_51_click = {
+				set_variable = {
+					click_position = 51
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_52_click = {
+				set_variable = {
+					click_position = 52
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_53_click = {
+				set_variable = {
+					click_position = 53
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_54_click = {
+				set_variable = {
+					click_position = 54
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_55_click = {
+				set_variable = {
+					click_position = 55
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_56_click = {
+				set_variable = {
+					click_position = 56
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_57_click = {
+				set_variable = {
+					click_position = 57
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_58_click = {
+				set_variable = {
+					click_position = 58
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_59_click = {
+				set_variable = {
+					click_position = 59
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_60_click = {
+				set_variable = {
+					click_position = 60
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_61_click = {
+				set_variable = {
+					click_position = 61
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_62_click = {
+				set_variable = {
+					click_position = 62
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_63_click = {
+				set_variable = {
+					click_position = 63
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_64_click = {
+				set_variable = {
+					click_position = 64
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_65_click = {
+				set_variable = {
+					click_position = 65
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_66_click = {
+				set_variable = {
+					click_position = 66
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_67_click = {
+				set_variable = {
+					click_position = 67
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_68_click = {
+				set_variable = {
+					click_position = 68
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_69_click = {
+				set_variable = {
+					click_position = 69
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_70_click = {
+				set_variable = {
+					click_position = 70
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_71_click = {
+				set_variable = {
+					click_position = 71
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_72_click = {
+				set_variable = {
+					click_position = 72
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_73_click = {
+				set_variable = {
+					click_position = 73
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_74_click = {
+				set_variable = {
+					click_position = 74
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_75_click = {
+				set_variable = {
+					click_position = 75
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_76_click = {
+				set_variable = {
+					click_position = 76
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_77_click = {
+				set_variable = {
+					click_position = 77
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_78_click = {
+				set_variable = {
+					click_position = 78
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_79_click = {
+				set_variable = {
+					click_position = 79
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_80_click = {
+				set_variable = {
+					click_position = 80
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_81_click = {
+				set_variable = {
+					click_position = 81
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_82_click = {
+				set_variable = {
+					click_position = 82
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_83_click = {
+				set_variable = {
+					click_position = 83
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_84_click = {
+				set_variable = {
+					click_position = 84
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_85_click = {
+				set_variable = {
+					click_position = 85
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_86_click = {
+				set_variable = {
+					click_position = 86
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_87_click = {
+				set_variable = {
+					click_position = 87
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_88_click = {
+				set_variable = {
+					click_position = 88
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_89_click = {
+				set_variable = {
+					click_position = 89
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_90_click = {
+				set_variable = {
+					click_position = 90
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_91_click = {
+				set_variable = {
+					click_position = 91
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_92_click = {
+				set_variable = {
+					click_position = 92
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_93_click = {
+				set_variable = {
+					click_position = 93
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_94_click = {
+				set_variable = {
+					click_position = 94
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_95_click = {
+				set_variable = {
+					click_position = 95
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_96_click = {
+				set_variable = {
+					click_position = 96
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_97_click = {
+				set_variable = {
+					click_position = 97
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_98_click = {
+				set_variable = {
+					click_position = 98
+				}
+				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_map_field_99_click = {
+				set_variable = {
+					click_position = 99
+				}
+				bar_minesweeper_click_field = yes
 			}
 		}
 	}

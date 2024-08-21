@@ -1,0 +1,459 @@
+bar_minesweeper_game_init = {
+	set_variable = {
+		bar_minesweeper_visible = 1
+	}
+	set_variable = {
+		bar_minesweeper_won_rounds = 0
+	}
+	set_variable = {
+		bar_minesweeper_rounds_to_win = 3
+	}
+	if = {
+		limit = {
+			check_variable = {
+				BAR_relations_leopold_viira > 69
+			}
+		}
+		subtract_from_temp_variable = {
+			bar_minesweeper_rounds_to_win = 1
+		}
+	}
+
+	bar_minesweeper_map_init = yes
+}
+
+# @var bar_minesweeper_map_row
+# 1 - unclicked field
+# 2 - clicked empty
+# 3 - clicked mine
+# 4 - clicked flagged
+#
+# @var bar_minesweeper_mine_map
+# < 0 - mine
+# 0-8 - number of mines around
+bar_minesweeper_map_init = {
+	resize_array = {
+		array = bar_minesweeper_map
+		value = 1
+		size = 100
+	}	
+	
+	resize_array = {
+		array = bar_minesweeper_mine_map
+		value = 0
+		size = 100
+	}	
+
+	resize_array = {
+		array = bar_minesweeper_mine_positions
+		value = 0
+		size = 10
+	}
+
+	for_each_loop = {
+		array = bar_minesweeper_mine_positions
+		index = mine_index
+		
+		set_variable_to_random = {
+			var = bar_minesweeper_mine_positions^mine_index
+			min = 0
+			max = 100
+			integer = yes
+		}
+
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+		if = {
+			limit = {
+				is_in_array = { bar_minesweeper_mine_positions = bar_minesweeper_mine_positions^mine_index }
+			}
+
+			set_variable_to_random = {
+				var = bar_minesweeper_mine_positions^mine_index
+				min = 0
+				max = 100
+				integer = yes
+			}
+		}
+	}
+
+	for_each_loop = {
+		array = bar_minesweeper_mine_positions
+		value = mine_position
+
+		set_variable = {
+			bar_minesweeper_mine_map^mine_position = -100
+		}		
+		
+		set_temp_variable = {
+			mine_position_left_index = mine_position
+		}	
+		subtract_from_temp_variable = {
+			mine_position_left_index = 1
+		}
+
+		set_temp_variable = {
+			mine_position_right_index = mine_position
+		}
+		add_to_temp_variable = {
+			mine_position_right_index = 1
+		}
+
+		set_temp_variable = {
+			mine_position_top_index = mine_position
+		}
+		subtract_from_temp_variable = {
+			mine_position_top_index = 10
+		}
+
+		set_temp_variable = {
+			mine_position_bot_index = mine_position
+		}
+		add_to_temp_variable = {
+			mine_position_bot_index = 10
+		}
+
+		if = {
+			limit = {
+				check_variable = {
+					mine_position_left_index > -1
+				}
+			}
+
+			set_temp_variable = {
+				mine_position_left_index_divisible = mine_position
+			}
+			modulo_temp_variable  = { mine_position_left_index_divisible = 10 }
+
+			if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							mine_position_left_index_divisible = 0
+						}
+					}
+				}
+				add_to_variable = {
+					bar_minesweeper_mine_map^mine_position_left_index = 1
+				}	
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					mine_position_right_index < 100
+				}
+			}
+
+			
+			set_temp_variable = {
+				mine_position_right_index_divisible = mine_position
+			}
+			modulo_temp_variable  = { mine_position_right_index_divisible = 10 }
+
+			if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							mine_position_right_index_divisible = 9
+						}
+					}
+				}
+				add_to_variable = {
+					bar_minesweeper_mine_map^mine_position_right_index = 1
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				check_variable = {
+					mine_position_top_index > -1
+				}
+			}
+			add_to_variable = {
+				bar_minesweeper_mine_map^mine_position_top_index = 1
+			}
+		}		
+		if = {
+			limit = {
+				check_variable = {
+					mine_position_bot_index < 100
+				}
+			}	
+			add_to_variable = {
+				bar_minesweeper_mine_map^mine_position_bot_index = 1
+			}	
+		}	
+	}
+}
+
+bar_minesweeper_click_field = {
+	if = {
+		limit = {
+			check_variable = {
+				bar_minesweeper_mine_map^click_position < 0
+			}
+		}
+
+		bar_minesweeper_game_over = yes
+	} else = {
+		resize_array = {
+			array = map_fields_to_reveal
+			size = 1
+			value = click_position
+		}	
+
+		bar_minesweeper_reveal_empty_fields = yes
+	}
+}
+
+bar_minesweeper_reveal_empty_fields = {
+	for_each_loop = {
+		array = map_fields_to_reveal
+		value = clicked_field
+	
+		if = {
+			limit = {
+				check_variable = {
+					bar_minesweeper_map^clicked_field = 1
+				}
+			}
+
+			set_variable = {
+				bar_minesweeper_map^clicked_field = 2
+			}
+
+			if = {
+				limit = {
+					check_variable = {
+						bar_minesweeper_mine_map^clicked_field = 0
+					}
+				}
+
+				set_temp_variable = {
+					field_left_index = clicked_field
+				}	
+				subtract_from_temp_variable = {
+					field_left_index = 1
+				}
+			
+				set_temp_variable = {
+					clicked_field_right_index = clicked_field
+				}
+				add_to_temp_variable = {
+					clicked_field_right_index = 1
+				}
+			
+				set_temp_variable = {
+					clicked_field_top_index = clicked_field
+				}
+				subtract_from_temp_variable = {
+					clicked_field_top_index = 10
+				}
+			
+				set_temp_variable = {
+					clicked_field_bot_index = clicked_field
+				}
+				add_to_temp_variable = {
+					clicked_field_bot_index = 10
+				}
+				
+				if = {
+					limit = {
+						check_variable = {
+							field_left_index > 0
+						}
+					}
+		
+					set_temp_variable = {
+						field_left_index_divisible = clicked_field
+					}
+					modulo_temp_variable  = { field_left_index_divisible= 10 }
+		
+					if = {
+						limit = {
+							NOT = {
+								check_variable = {
+									field_left_index_divisible = 0
+								}
+							}
+						}
+						add_to_array = { map_fields_to_reveal = field_left_index }
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							clicked_field_right_index < 100
+						}
+					}
+		
+					
+					set_temp_variable = {
+						clicked_field_right_index_divisible = clicked_field
+					}
+					modulo_temp_variable  = { clicked_field_right_index_divisible = 10 }
+		
+					if = {
+						limit = {
+							NOT = {
+								check_variable = {
+									clicked_field_right_index_divisible = 9
+								}
+							}
+						}
+						add_to_array = { map_fields_to_reveal = clicked_field_right_index }
+					}
+				}	
+				if = {
+					limit = {
+						check_variable = {
+							clicked_field_top_index > -1
+						}
+					}
+					add_to_array = { map_fields_to_reveal = clicked_field_top_index }
+				}		
+				if = {
+					limit = {
+						check_variable = {
+							clicked_field_bot_index < 101
+						}
+					}	
+					add_to_array = { map_fields_to_reveal = clicked_field_bot_index }
+				}
+			}
+		}
+		remove_from_array = { map_fields_to_reveal = clicked_field }
+	}
+	add_to_variable = {
+		bar_minesweeper_visible = 1
+	}
+
+	if = {
+		limit = {
+			any_of = {
+				array = map_fields_to_reveal
+				value = field_pos
+				check_variable = {
+					field_pos > -1
+				}
+			}
+		}
+		bar_minesweeper_reveal_empty_fields = yes
+	}
+}
+
+bar_minesweeper_game_over = {
+	set_variable = {
+		bar_minesweeper_map^click_position = 3
+	}
+	add_to_variable = {
+		bar_minesweeper_visible = 1
+	}
+}

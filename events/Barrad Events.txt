@@ -2,7 +2,7 @@
 add_namespace = barrad_death
 add_namespace = barrad_friends
 add_namespace = barrad_friendship_tree
-add_namespace = barrad_leopold_carousing
+add_namespace = barrad_friends_activites
 add_namespace = barrad_first
 add_namespace = barrad_second
 add_namespace = barrad_third
@@ -386,6 +386,33 @@ country_event = {
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 
+country_event = {
+	id = barrad_friends_activites.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends_activites.1"
+	}
+	title = barrad_friends_activites.1.t
+	desc = barrad_friends_activites.1.d
+	picture = GFX_event_carousing
+	is_triggered_only = yes
+	option = {
+		name = barrad_friends_activites.1.a
+		bar_relations_activity_add = yes
+	}
+}
+country_event = {
+	id = barrad_friends_activites.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friends_activites.2"
+	}
+	title = barrad_friends_activites.2.t
+	desc = barrad_friends_activites.2.d
+	picture = GFX_event_carousing
+	is_triggered_only = yes
+	option = {
+		name = barrad_friends_activites.2.a
+	}
+}
 
 country_event = {
 	#pentarchy embraces harmony (nightmare)

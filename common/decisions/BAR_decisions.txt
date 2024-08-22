@@ -2394,12 +2394,12 @@ BAR_leopold_cat = {
 					}
 				}
 				country_event = {
-					id = barrad_leopold_carousing.4
+					id = barrad_friends_activites.1
 				}
 			}
 			else = {
 				country_event = {
-					id = barrad_leopold_carousing.5
+					id = barrad_friends_activites.2
 				}
 			}
 		}
@@ -2548,90 +2548,6 @@ BAR_leopold_cat = {
 			}
 			bar_leopold_resources_subtract = yes
 			custom_effect_tooltip = BAR_reactor_research_tooltip
-		}
-	}
-	BAR_leopold_carousing_silver = {
-		icon = GFX_decision_sombra_tea
-		days_remove = 30
-		cost = 50
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-			has_country_flag = barrad_silver_star_alive
-		}
-		available = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-			has_country_flag = barrad_silver_star_alive
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_carousing_silver"
-			country_event = {
-				id = barrad_leopold_carousing.3
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_leopold_carousing_asinti = {
-		icon = GFX_decision_sombra_tea
-		days_remove = 30
-		cost = 50
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-			has_country_flag = barrad_asinti_alive
-		}
-		available = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-			has_country_flag = barrad_asinti_alive
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_carousing_asinti"
-			country_event = {
-				id = barrad_leopold_carousing.2
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	BAR_leopold_carousing_viira = {
-		icon = GFX_decision_sombra_tea
-		days_remove = 30
-		cost = 50
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-			has_country_flag = barrad_viira_alive
-		}
-		available = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-			has_country_flag = barrad_viira_alive
-		}
-		fixed_random_seed = no
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_carousing_viira"
-			country_event = {
-				id = barrad_leopold_carousing.1
-			}
-		}
-		ai_will_do = {
-			factor = 0
 		}
 	}
 	BAR_leopold_dev_up = {

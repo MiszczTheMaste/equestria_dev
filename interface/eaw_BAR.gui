@@ -5375,1518 +5375,1562 @@ guiTypes = {
 		clipping = no
 		Background = {
 			name = "bar_activities_container_bg"
-			spriteType = "GFX_bar_expedition_background"
+			spriteType = "GFX_bar_minesweeper_background"
+		}
+		instantTextBoxType = {
+			name = "bar_minesweeper_title_text"
+			position = {x=10 y=10}
+			font = "hoi_36header"
+			maxWidth = 500
+			format = left
+			text = bar_minesweeper_title_text
+		}	
+		instantTextBoxType = {
+			name = "bar_minesweeper_title_text_2"
+			position = {x=20 y=40}
+			font = "hoi_24header"
+			maxWidth = 500
+			format = left
+			text = bar_minesweeper_title_text_2
+		}	
+		instantTextBoxType = {
+			name = "bar_minesweeper_rounds_leopold_text"
+			position = {x=690 y=100}
+			font = "hoi_18mbs"
+			maxWidth = 500
+			format = right
+			text = bar_minesweeper_rounds_leopold_text
+		}	
+		instantTextBoxType = {
+			name = "bar_minesweeper_rounds_viira_text"
+			position = {x=740 y=400}
+			font = "hoi_18mbs"
+			maxWidth = 500
+			format = left
+			text = bar_minesweeper_rounds_viira_text
+		}		
+		iconType = {
+			name = "bar_minesweeper_rounds_leopold_head"
+			spriteType = "GFX_bar_minesweeper_leopold_head"
+			position = { x=1200 y=80 }
+		}	
+		iconType = {
+			name = "bar_minesweeper_rounds_viira_head"
+			spriteType = "GFX_bar_minesweeper_viira_head"
+			position = { x=590 y=350 }
+		}
+		buttonType = {
+			name = "bar_minesweeper_next_round"
+			position = { x = 50 y = 560 }
+			buttonText = bar_minesweeper_next_round
+			quadTextureSprite ="GFX_button_261x34"
+			buttonFont = "hoi_18mbs"
 		}
 		containerWindowType = {
 			name = "bar_minesweeper_map"
-			position = { x = 20 y = 25 }
-
-
-
-			iconType = {
-			name = "bar_minesweeper_map_field_0"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_1"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_2"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_3"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_4"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_5"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_6"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_7"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_8"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_9"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=0 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_10"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_11"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_12"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_13"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_14"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_15"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_16"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_17"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_18"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_19"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=40 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_20"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_21"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_22"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_23"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_24"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_25"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_26"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_27"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_28"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_29"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=80 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_30"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_31"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_32"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_33"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_34"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_35"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_36"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_37"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_38"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_39"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=120 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_40"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_41"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_42"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_43"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_44"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_45"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_46"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_47"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_48"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_49"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=160 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_50"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_51"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_52"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_53"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_54"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_55"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_56"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_57"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_58"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_59"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=200 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_60"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_61"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_62"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_63"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_64"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_65"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_66"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_67"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_68"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_69"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=240 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_70"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_71"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_72"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_73"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_74"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_75"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_76"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_77"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_78"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_79"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=280 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_80"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_81"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_82"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_83"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_84"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_85"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_86"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_87"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_88"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_89"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=320 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_90"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=0 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_91"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=40 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_92"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=80 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_93"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=120 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_94"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=160 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_95"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=200 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_96"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=240 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_97"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=280 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_98"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=320 y=360 }
-			frame = 0
-			}
-			iconType = {
-			name = "bar_minesweeper_map_field_99"
-			spriteType = "GFX_bar_minesweeper_field"
-			position = { x=360 y=360 }
-			frame = 0
-			}
-				
-
+			position = { x = 20 y = 80 }
 			
-			instantTextboxType = {
+			iconType = {
+				name = "bar_minesweeper_map_field_0"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_1"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_2"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_3"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_4"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_5"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_6"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_7"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_8"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_9"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=0 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_10"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_11"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_12"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_13"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_14"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_15"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_16"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_17"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_18"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_19"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=50 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_20"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_21"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_22"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_23"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_24"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_25"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_26"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_27"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_28"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_29"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=100 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_30"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_31"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_32"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_33"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_34"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_35"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_36"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_37"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_38"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_39"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=150 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_40"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_41"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_42"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_43"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_44"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_45"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_46"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_47"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_48"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_49"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=200 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_50"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_51"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_52"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_53"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_54"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_55"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_56"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_57"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_58"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_59"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=250 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_60"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_61"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_62"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_63"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_64"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_65"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_66"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_67"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_68"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_69"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=300 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_70"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_71"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_72"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_73"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_74"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_75"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_76"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_77"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_78"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_79"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=350 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_80"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_81"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_82"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_83"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_84"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_85"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_86"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_87"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_88"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_89"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=400 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_90"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=0 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_91"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=50 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_92"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=100 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_93"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=150 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_94"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=200 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_95"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=250 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_96"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=300 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_97"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=350 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_98"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=400 y=450 }
+				frame = 1
+				}
+				iconType = {
+				name = "bar_minesweeper_map_field_99"
+				spriteType = "GFX_bar_minesweeper_field"
+				position = { x=450 y=450 }
+				frame = 1
+				}
+				instantTextboxType = {
 				name = "bar_minesweeper_map_field_0_text"
 				text = "bar_minesweeper_map_field_0_text"
-				position = { x=0 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_1_text"
 				text = "bar_minesweeper_map_field_1_text"
-				position = { x=40 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_2_text"
 				text = "bar_minesweeper_map_field_2_text"
-				position = { x=80 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_3_text"
 				text = "bar_minesweeper_map_field_3_text"
-				position = { x=120 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_4_text"
 				text = "bar_minesweeper_map_field_4_text"
-				position = { x=160 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_5_text"
 				text = "bar_minesweeper_map_field_5_text"
-				position = { x=200 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_6_text"
 				text = "bar_minesweeper_map_field_6_text"
-				position = { x=240 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_7_text"
 				text = "bar_minesweeper_map_field_7_text"
-				position = { x=280 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_8_text"
 				text = "bar_minesweeper_map_field_8_text"
-				position = { x=320 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_9_text"
 				text = "bar_minesweeper_map_field_9_text"
-				position = { x=360 y=0 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=7 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_10_text"
 				text = "bar_minesweeper_map_field_10_text"
-				position = { x=0 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_11_text"
 				text = "bar_minesweeper_map_field_11_text"
-				position = { x=40 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_12_text"
 				text = "bar_minesweeper_map_field_12_text"
-				position = { x=80 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_13_text"
 				text = "bar_minesweeper_map_field_13_text"
-				position = { x=120 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_14_text"
 				text = "bar_minesweeper_map_field_14_text"
-				position = { x=160 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_15_text"
 				text = "bar_minesweeper_map_field_15_text"
-				position = { x=200 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_16_text"
 				text = "bar_minesweeper_map_field_16_text"
-				position = { x=240 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_17_text"
 				text = "bar_minesweeper_map_field_17_text"
-				position = { x=280 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_18_text"
 				text = "bar_minesweeper_map_field_18_text"
-				position = { x=320 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_19_text"
 				text = "bar_minesweeper_map_field_19_text"
-				position = { x=360 y=40 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=57 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_20_text"
 				text = "bar_minesweeper_map_field_20_text"
-				position = { x=0 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_21_text"
 				text = "bar_minesweeper_map_field_21_text"
-				position = { x=40 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_22_text"
 				text = "bar_minesweeper_map_field_22_text"
-				position = { x=80 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_23_text"
 				text = "bar_minesweeper_map_field_23_text"
-				position = { x=120 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_24_text"
 				text = "bar_minesweeper_map_field_24_text"
-				position = { x=160 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_25_text"
 				text = "bar_minesweeper_map_field_25_text"
-				position = { x=200 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_26_text"
 				text = "bar_minesweeper_map_field_26_text"
-				position = { x=240 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_27_text"
 				text = "bar_minesweeper_map_field_27_text"
-				position = { x=280 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_28_text"
 				text = "bar_minesweeper_map_field_28_text"
-				position = { x=320 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_29_text"
 				text = "bar_minesweeper_map_field_29_text"
-				position = { x=360 y=80 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=107 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_30_text"
 				text = "bar_minesweeper_map_field_30_text"
-				position = { x=0 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_31_text"
 				text = "bar_minesweeper_map_field_31_text"
-				position = { x=40 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_32_text"
 				text = "bar_minesweeper_map_field_32_text"
-				position = { x=80 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_33_text"
 				text = "bar_minesweeper_map_field_33_text"
-				position = { x=120 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_34_text"
 				text = "bar_minesweeper_map_field_34_text"
-				position = { x=160 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_35_text"
 				text = "bar_minesweeper_map_field_35_text"
-				position = { x=200 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_36_text"
 				text = "bar_minesweeper_map_field_36_text"
-				position = { x=240 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_37_text"
 				text = "bar_minesweeper_map_field_37_text"
-				position = { x=280 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_38_text"
 				text = "bar_minesweeper_map_field_38_text"
-				position = { x=320 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_39_text"
 				text = "bar_minesweeper_map_field_39_text"
-				position = { x=360 y=120 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=157 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_40_text"
 				text = "bar_minesweeper_map_field_40_text"
-				position = { x=0 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_41_text"
 				text = "bar_minesweeper_map_field_41_text"
-				position = { x=40 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_42_text"
 				text = "bar_minesweeper_map_field_42_text"
-				position = { x=80 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_43_text"
 				text = "bar_minesweeper_map_field_43_text"
-				position = { x=120 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_44_text"
 				text = "bar_minesweeper_map_field_44_text"
-				position = { x=160 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_45_text"
 				text = "bar_minesweeper_map_field_45_text"
-				position = { x=200 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_46_text"
 				text = "bar_minesweeper_map_field_46_text"
-				position = { x=240 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_47_text"
 				text = "bar_minesweeper_map_field_47_text"
-				position = { x=280 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_48_text"
 				text = "bar_minesweeper_map_field_48_text"
-				position = { x=320 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_49_text"
 				text = "bar_minesweeper_map_field_49_text"
-				position = { x=360 y=160 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=207 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_50_text"
 				text = "bar_minesweeper_map_field_50_text"
-				position = { x=0 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_51_text"
 				text = "bar_minesweeper_map_field_51_text"
-				position = { x=40 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_52_text"
 				text = "bar_minesweeper_map_field_52_text"
-				position = { x=80 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_53_text"
 				text = "bar_minesweeper_map_field_53_text"
-				position = { x=120 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_54_text"
 				text = "bar_minesweeper_map_field_54_text"
-				position = { x=160 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_55_text"
 				text = "bar_minesweeper_map_field_55_text"
-				position = { x=200 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_56_text"
 				text = "bar_minesweeper_map_field_56_text"
-				position = { x=240 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_57_text"
 				text = "bar_minesweeper_map_field_57_text"
-				position = { x=280 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_58_text"
 				text = "bar_minesweeper_map_field_58_text"
-				position = { x=320 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_59_text"
 				text = "bar_minesweeper_map_field_59_text"
-				position = { x=360 y=200 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=257 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_60_text"
 				text = "bar_minesweeper_map_field_60_text"
-				position = { x=0 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_61_text"
 				text = "bar_minesweeper_map_field_61_text"
-				position = { x=40 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_62_text"
 				text = "bar_minesweeper_map_field_62_text"
-				position = { x=80 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_63_text"
 				text = "bar_minesweeper_map_field_63_text"
-				position = { x=120 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_64_text"
 				text = "bar_minesweeper_map_field_64_text"
-				position = { x=160 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_65_text"
 				text = "bar_minesweeper_map_field_65_text"
-				position = { x=200 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_66_text"
 				text = "bar_minesweeper_map_field_66_text"
-				position = { x=240 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_67_text"
 				text = "bar_minesweeper_map_field_67_text"
-				position = { x=280 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_68_text"
 				text = "bar_minesweeper_map_field_68_text"
-				position = { x=320 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_69_text"
 				text = "bar_minesweeper_map_field_69_text"
-				position = { x=360 y=240 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=307 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_70_text"
 				text = "bar_minesweeper_map_field_70_text"
-				position = { x=0 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_71_text"
 				text = "bar_minesweeper_map_field_71_text"
-				position = { x=40 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_72_text"
 				text = "bar_minesweeper_map_field_72_text"
-				position = { x=80 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_73_text"
 				text = "bar_minesweeper_map_field_73_text"
-				position = { x=120 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_74_text"
 				text = "bar_minesweeper_map_field_74_text"
-				position = { x=160 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_75_text"
 				text = "bar_minesweeper_map_field_75_text"
-				position = { x=200 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_76_text"
 				text = "bar_minesweeper_map_field_76_text"
-				position = { x=240 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_77_text"
 				text = "bar_minesweeper_map_field_77_text"
-				position = { x=280 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_78_text"
 				text = "bar_minesweeper_map_field_78_text"
-				position = { x=320 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_79_text"
 				text = "bar_minesweeper_map_field_79_text"
-				position = { x=360 y=280 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=357 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_80_text"
 				text = "bar_minesweeper_map_field_80_text"
-				position = { x=0 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_81_text"
 				text = "bar_minesweeper_map_field_81_text"
-				position = { x=40 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_82_text"
 				text = "bar_minesweeper_map_field_82_text"
-				position = { x=80 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_83_text"
 				text = "bar_minesweeper_map_field_83_text"
-				position = { x=120 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_84_text"
 				text = "bar_minesweeper_map_field_84_text"
-				position = { x=160 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_85_text"
 				text = "bar_minesweeper_map_field_85_text"
-				position = { x=200 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_86_text"
 				text = "bar_minesweeper_map_field_86_text"
-				position = { x=240 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_87_text"
 				text = "bar_minesweeper_map_field_87_text"
-				position = { x=280 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_88_text"
 				text = "bar_minesweeper_map_field_88_text"
-				position = { x=320 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_89_text"
 				text = "bar_minesweeper_map_field_89_text"
-				position = { x=360 y=320 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=407 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_90_text"
 				text = "bar_minesweeper_map_field_90_text"
-				position = { x=0 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=0 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_91_text"
 				text = "bar_minesweeper_map_field_91_text"
-				position = { x=40 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=50 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_92_text"
 				text = "bar_minesweeper_map_field_92_text"
-				position = { x=80 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=100 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_93_text"
 				text = "bar_minesweeper_map_field_93_text"
-				position = { x=120 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=150 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_94_text"
 				text = "bar_minesweeper_map_field_94_text"
-				position = { x=160 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=200 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_95_text"
 				text = "bar_minesweeper_map_field_95_text"
-				position = { x=200 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=250 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_96_text"
 				text = "bar_minesweeper_map_field_96_text"
-				position = { x=240 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=300 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_97_text"
 				text = "bar_minesweeper_map_field_97_text"
-				position = { x=280 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=350 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_98_text"
 				text = "bar_minesweeper_map_field_98_text"
-				position = { x=320 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=400 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
 				instantTextboxType = {
 				name = "bar_minesweeper_map_field_99_text"
 				text = "bar_minesweeper_map_field_99_text"
-				position = { x=360 y=360 }
-				maxWidth = 40
-				maxHeight = 40
+				position = { x=450 y=457 }
+				maxWidth = 50
+				maxHeight = 50
 				format = center
-				font = "hoi_16mbs"
+				font = "hoi_36header"
 				}
-				
+					
 		}
 	}
 }

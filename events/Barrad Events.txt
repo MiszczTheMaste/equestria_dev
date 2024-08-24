@@ -814,7 +814,6 @@ country_event = {
 ##############################################################################################################################################################################
 
 country_event = {
-	#EARTH STRIKE BACK - event chain
 	id = bar_titan_fight.1
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: bar_titan_fight.1"
@@ -831,8 +830,7 @@ country_event = {
 	}	
 }
 
-country_event = {
-	#EARTH STRIKE BACK - titan falls dead
+country_event = { #game over
 	id = bar_titan_fight.2
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: bar_titan_fight.2"
@@ -842,22 +840,13 @@ country_event = {
 	picture = GFX_event_griffon_with_gun
 	is_triggered_only = yes
 	option = {
-		#dismantle a titan for resources
 		name = bar_titan_fight.2.a
-		bar_leopold_resources_add_1000 = yes
-		one_random_arms_factory = yes
-		one_random_arms_factory = yes
-	}
-	option = {
-		#dismantle a titan for leopolds new body
-		name = bar_titan_fight.2.b
-		set_country_flag = bar_titan_tech
-		custom_effect_tooltip = BAR_next_focus_prerequisite
+		bar_minesweeper_clear = yes
+		clear_variable = bar_minesweeper_visible
 	}
 }
 
-country_event = {
-	#EARTH STRIKE BACK - titan falls dead - with viira help
+country_event = { #you win
 	id = bar_titan_fight.3
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: bar_titan_fight.2"

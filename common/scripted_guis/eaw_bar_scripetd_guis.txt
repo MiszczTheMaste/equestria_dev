@@ -5509,6 +5509,11 @@ scripted_gui = {
 					}
 				}
 			}
+			bar_minesweeper_next_round_visible = {
+				check_variable = {
+					bar_minesweeper_round_ended = 1
+				}
+			}
 		}
 		properties = {
 			bar_minesweeper_map_field_0 = {
@@ -6412,6 +6417,27 @@ scripted_gui = {
 					click_position = 99
 				}
 				bar_minesweeper_click_field = yes
+			}
+			bar_minesweeper_next_round_click = {
+				clear_variable = bar_minesweeper_round_ended
+				bar_minesweeper_clear = yes
+				bar_minesweeper_map_init = yes
+				add_to_variable = {
+					bar_minesweeper_won_rounds = 1
+				}
+				add_to_variable = {
+					bar_minesweeper_visible = 1
+				}
+
+				if = {
+					limit = {
+						check_variable = {
+							bar_minesweeper_won_rounds = bar_minesweeper_rounds_to_win
+						}
+					}
+
+					country_event = { id = bar_titan_fight.3 }
+				}
 			}
 		}
 	}

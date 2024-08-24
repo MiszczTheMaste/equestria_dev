@@ -1628,4 +1628,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/bar/minesweeper/field.dds"
 		noOfFrames = 4
 	}
+	spriteType = {
+		name = "GFX_bar_minesweeper_background"
+		textureFile = "gfx/interface/bar/minesweeper/minesweeper_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_minesweeper_leopold_head"
+		textureFile = "gfx/interface/bar/minesweeper/leopold_head.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_minesweeper_viira_head"
+		textureFile = "gfx/interface/bar/minesweeper/viira_head.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
 }

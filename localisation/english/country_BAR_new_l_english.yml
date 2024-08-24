@@ -3010,7 +3010,13 @@
 
 
 
-
+bar_minesweeper_title_text:0 "Earth Strike Back!"
+bar_minesweeper_title_text_2:0 "Enforce your rule over it!"
+bar_minesweeper_rounds_text:0 "Rounds:"
+bar_minesweeper_rounds_text_2:0 "[?bar_minesweeper_won_rounds]/[?bar_minesweeper_rounds_to_win]"
+bar_minesweeper_rounds_leopold_text:0 "What is this creature?!\nI need to collapse the lower levels before it escapes!\nGladly I thought of it and ordered to plant mines around.\nAlthought... I should have asked miners for the map...\n...\n...\n...\nDarn I need to be careful with it to not blow whole mine...\n...or myself...\nI think arming three sets of ffifteen mines should be enough."
+bar_minesweeper_rounds_viira_text:0 "Sounds like somegriff got in troubles.\nLuckily for you I have arrived!\nLet me help with the first set of mines, you handle the rest."
+bar_minesweeper_next_round:0 "Off to set more mines!"
 
 bar_minesweeper_map_field_0_text:0 "[?bar_minesweeper_mine_map^0]"
 bar_minesweeper_map_field_1_text:0 "[?bar_minesweeper_mine_map^1]"

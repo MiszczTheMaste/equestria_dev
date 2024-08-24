@@ -4416,6 +4416,20 @@ country_event = {
 		clr_country_flag = BAR_gasienica_hidden
 	}
 }
+country_event = {
+	id = barrad_viira.18
+	title = barrad_viira.18.t
+	desc = barrad_viira.18.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.18"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.18.a
+		#TODO: idea dla górali że napierdalają mocniej
+	}
+}
 
 country_event = {
 	id = bar_viira_murders.1
@@ -4692,6 +4706,7 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.25
 		}
+		add_ideas = BAR_singularity_idea
 	}
 }
 
@@ -4792,8 +4807,6 @@ country_event = {
 		set_technology = {
 			tech_knights_magical2 = 1
 		}
-
-		add_political_power = -100
 	}
 	option = {
 		name = bar_sane_ambrosius.1001.b

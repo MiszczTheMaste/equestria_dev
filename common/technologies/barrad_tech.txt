@@ -2311,7 +2311,7 @@ technologies = {
 		}
 		category_army = {
 			plains = {
-				movement = 0.1
+				movement = 0.25
 				attack = 0.15
 				defence = 0.15
 			}

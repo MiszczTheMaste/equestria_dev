@@ -51,47 +51,6 @@
 
 
 
-  #######                       
-  #       #  ####  #    # ##### 
-  #       # #    # #    #   #   
-  #####   # #      ######   #   
-  #       # #  ### #    #   #   
-  #       # #    # #    #   #   
-  #       #  ####  #    #   #   
-                                
-
-
-  barrad_viira_fight.6.t:0 "The Pentarchy Is Dead"
-  barrad_viira_fight.7.t:0 "The Pentarchy Wins!"
-  barrad_viira_fight.9.t:0 "Viira Is Dead"
-  barrad_viira_fight.10.t:0 "Viira Wins!"
-
-  BAR_fight_viira_turn_summary_0:0 "Viira lets loose a thundering shout as she shifts into a fighting stance, her body glowing with latent magic. She advances towards you slowly and menacingly. The crazed Seer must be stopped!"
-  BAR_fight_viira_turn_summary_1:0 "After being stunned, Viira remains dazed and is unable to act."
-  BAR_fight_viira_turn_summary_2:0 "Viira strikes a defensive posture and hangs back to recover her strength."
-  BAR_fight_viira_turn_summary_3:0 "Feeling the pressure, Viira casts a restorative spell to heal her wounds."
-  BAR_fight_viira_turn_summary_4:0 "Viira charges forward recklessly, striking out and landing a blow on Asinti."
-  BAR_fight_viira_turn_summary_5:0 "Viira charges forward recklessly, striking out and landing a savage blow on Asinti."
-  BAR_fight_viira_turn_summary_6:0 "Viira charges forward recklessly, striking out and landing a blow on Leopold."
-  BAR_fight_viira_turn_summary_7:0 "Viira charges forward recklessly, striking out and landing a savage blow on Leopold."
-  BAR_fight_viira_turn_summary_8:0 "Viira charges forward recklessly, striking out and landing a blow on Silver Star."
-  BAR_fight_viira_turn_summary_9:0 "Viira charges forward recklessly, striking out and landing a savage blow on Silver Star."
-
-  BAR_fight_vpentarchy_turn_summary_0:0 "Before Viira, the pathetic remnants of Barrad's decaying order stand athwart progress. They stand firm and refuse to yield. Such agents of ignorance must all be slain!"
-  BAR_fight_vpentarchy_turn_summary_1:0 "Asinti swiftily dodges before striking and landing a blow on Viira."
-  BAR_fight_vpentarchy_turn_summary_2:0 "Asinti channels his spirit, casting a debilitating curse on Viira."
-  BAR_fight_vpentarchy_turn_summary_3:0 "Asinti casts a restorative spell to heal the Pentarchy."
-  BAR_fight_vpentarchy_turn_summary_4:0 "The Pentarchy strikes a defensive posture and hangs back to recover their strength."
-  BAR_fight_vpentarchy_turn_summary_5:0 "Leopold advances with machine-like precision before striking and landing a blow on Viira."
-  BAR_fight_vpentarchy_turn_summary_6:0 "Leopold advances with machine-like precision before striking and landing a devastating blow on Viira."
-  BAR_fight_vpentarchy_turn_summary_7:0 "Leopold makes use of a strange augmentation, emitting a blinding flash of light and stunning Viira."
-  BAR_fight_vpentarchy_turn_summary_8:0 "Silver Star lights up his horn and lets loose a blast of magical energy, landing a blow on Viira."
-  BAR_fight_vpentarchy_turn_summary_9:0 "Silver Star lights up his horn and lets loose a magical attack, draining Viira of her life essence and absorbing it himself."
-  BAR_fight_vpentarchy_turn_summary_10:0 "Feeling the pressure, Silver Star casts a restorative spell to heal Leopold's wounds."
-  BAR_fight_vpentarchy_turn_summary_11:0 "Feeling the pressure, Silver Star casts a restorative spell to heal Asinti's wounds."
-  BAR_fight_vpentarchy_turn_summary_12:0 "Feeling the pressure, Silver Star casts a restorative spell to heal his wounds."
-
-
 
   #######                              
     #    #####    ##   # #####  ####  
@@ -680,6 +639,7 @@
   BAR_pen_high_command:0 "Leofric Stearcstan"
   BAR_pen_theorist:0 "Cyneweard Stangaet"
   BAR_aelfraed_bealdbeorn:0 "Aelfraed Bealdbeorn"
+  BAR_nahum:0 "Nahum"
 
   ##### designers ######
   bar_tank:0 "Stearcstan"
@@ -1058,7 +1018,6 @@
   BAR_pen_fight_missed_text_3:0 "Asinti missed Viira"
 
   BAR_pen_fight_missed_text_f:0 "[This.BAR_pen_fight_missed_text]"
-  BAR_ruin_has_come:0 "...wake up my Lord, I've heard you scream..."
 
   bar_leopold_equipment:0 "Leopold's Armour"
   bar_leopold_clockwerk:0 "Leopold Schmeller"

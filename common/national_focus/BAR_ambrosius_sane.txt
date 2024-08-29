@@ -1357,6 +1357,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 25
+			hidden_effect = {
+				country_event = {
+					id = bar_sane_ambrosius.8	
+					days = 4
+				}
+			}
 		}
 	}
 	focus = {
@@ -3109,7 +3115,7 @@ focus_tree = {
 		icon = GFX_goal_industrial_pony
 		cost = 5
 		x = 0
-		y = 6
+		y = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -3126,6 +3132,7 @@ focus_tree = {
 			focus = BAR_amb_commonwealth
 		}
 		completion_reward = {
+			set_cosmetic_tag = BAR_AMB_commonwealth
 			country_event = { id = bar_sane_ambrosius.7 }
 		}
 	}
@@ -3477,7 +3484,7 @@ focus_tree = {
 				}
 				add_core_of = BAR
 			}
-			set_cosmetic_tag = BAR_WIT
+			set_cosmetic_tag = BAR_AMB_WIT
 			hidden_effect = {
 				BAR_count_ambrosius = {
 					set_character_name = BAR_ambrosius_king
@@ -3834,7 +3841,7 @@ focus_tree = {
 			set_technology = {
 				BAR_amb_mountaineers_buff = 1
 			}
-			set_cosmetic_tag = BAR_WIT_high_kingdom
+			set_cosmetic_tag = BAR_AMB_high_kingdom
 		}
 	}
 	focus = {
@@ -4033,7 +4040,7 @@ focus_tree = {
 		icon = GFX_goal_industrial_pony
 		cost = 5
 		x = 0
-		y = 2
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -4045,6 +4052,7 @@ focus_tree = {
 			focus = BAR_amb_never_ending_ambition
 		}
 		completion_reward = {
+			set_cosmetic_tag = BAR_AMB_rivfed
 			#TODO: giga event
 		}
 	}

@@ -88,6 +88,22 @@ focus_tree = {
 			}
 			BAR_add_wigberht_as_commander = yes
 			BAR_add_gebleod_as_commander = yes
+			BAR_gebleod = {
+				set_portraits = {
+					army = {
+						large = "gfx/leaders/BAR/gebleod_viira.tga"
+						small = "gfx/interface/ideas/Advisors/BAR/gebleod_viira.tga"
+					}
+				}
+			}
+			BAR_wigberht = {
+				set_portraits = {
+					army = {
+						large = "gfx/leaders/BAR/wigberht_viira.tga"
+						small = "gfx/interface/ideas/Advisors/BAR/wigberht_viira.tga"
+					}
+				}
+			}
 		}
 	}
 	focus = {

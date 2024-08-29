@@ -139,6 +139,7 @@ recruit_character = BAR_gasienica
 recruit_character = BAR_aelfraed_bealdbeorn
 recruit_character = BAR_amber_aurora
 recruit_character = BAR_asinti_jr
+recruit_character = BAR_nahum
 
 add_ideas = {
 	pre_industrial_society

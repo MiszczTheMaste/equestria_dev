@@ -891,7 +891,9 @@ country_event = { #you win
 			value = BAR_resources_leopold
 		}
 		bar_viira_resources_add = yes
-		bar_debuff_leopold = yes
+		set_variable = {
+			bar_leopold_wounded = 1
+		}
 		one_random_arms_factory = yes
 		one_random_arms_factory = yes
 		custom_effect_tooltip = bar_viira_kills_leopold_tooltip
@@ -2516,6 +2518,9 @@ country_event = {
 	}
 	option = {
 		#fight - viira side
+		trigger = {
+			has_country_flag = bar_viira_investigation_step_11
+		}
 		hidden_effect = {
 			bar_fight_initialisation_viira_side = yes
 		}
@@ -3298,6 +3303,18 @@ country_event = {
 		add_popularity = { 
 			ideology = communism 	
 			popularity = 0.06
+		}	
+		add_corps_commander_role = {
+			character = BAR_nahum
+			traits = {
+				zebra_race_trait
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 		add_political_power = 50
 		set_cosmetic_tag = BAR_free_state
@@ -3416,11 +3433,11 @@ country_event = {
 				zebra_race_trait
 				infantry_officer
 			}
-			skill = 2
+			skill = 3
 			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 }
@@ -3692,7 +3709,7 @@ country_event = {
 					}
 					army = {
 						large = "gfx/leaders/BAR/Leopold_Schmeller_Cyborg.tga"
-						small = "gfx/interface/ideas/Advisors/BAR/idea_Leopold_Schmeller_Cyborg.tga"
+						small = "gfx/interface/ideas/Advisors/BAR/Leopold_Schmeller_Cyborg.tga"
 					}
 				}
 				add_trait = {
@@ -4491,7 +4508,9 @@ country_event = {
 			value = BAR_resources_silver
 		}
 		bar_viira_resources_add = yes
-		bar_debuff_silver_star = yes
+		set_variable = {
+			bar_silver_star_wounded = 1
+		}
 	}
 }
 
@@ -4511,7 +4530,9 @@ country_event = {
 			value = BAR_resources_asinti
 		}
 		bar_viira_resources_add = yes
-		bar_debuff_asinti = yes
+		set_variable = {
+			bar_asinti_wounded = 1
+		}
 		if = {
 			limit = {
 				has_idea = BAR_temple_construct_z_f_p
@@ -4721,9 +4742,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.7.a
-		custom_effect_tooltip = BAR_ruin_has_come
 		add_ideas = modern_society
-		kill_country_leader = yes
+		hidden_effect = {
+			kill_country_leader = yes
+			sound_effect = bar_amb_gunshot
+			set_variable = {
+				bar_amb_gunshot_visible = 1
+			}
+		}
 		add_country_leader_role = {
 			character = BAR_gasienica
 			promote_leader = yes
@@ -4774,6 +4800,33 @@ country_event = {
 				country_event = { id = bar_sane_ambrosius.1013 days = 7 }
 			} else = { #duels for crown continue
 				country_event = { id = bar_sane_ambrosius.1014 days = 7 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bar_sane_ambrosius.8	
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.8"
+	}
+	title = bar_sane_ambrosius.8.t
+	desc = bar_sane_ambrosius.8.d
+	picture = GFX_event_cave
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.8.a
+		BAR_amber_aurora = {
+			add_corps_commander_role = {
+				traits = {
+					pony_race_trait
+					hill_fighter
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 4
 			}
 		}
 	}
@@ -6085,6 +6138,14 @@ country_event = {
 			logistics_skill = 3
 			legacy_id = 997001
 		}
+		BAR_gebleod = {
+			set_portraits = {
+				army = {
+					large = "gfx/leaders/BAR/gebleod_fren.tga"
+					small = "gfx/interface/ideas/Advisors/BAR/gebleod_fren.tga"
+				}
+			}
+		}
 	}
 }
 country_event = { #whitepeace
@@ -6182,6 +6243,36 @@ country_event = {
 			ideology = democratic
 			popularity = 0.02
 		}	
+	}	
+}
+country_event = { 
+	id = barrad_friendship_tree.40
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.40"
+	}
+	title = barrad_friendship_tree.40.t
+	desc = barrad_friendship_tree.40.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.40.a	
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+		BAR_amber_aurora = {
+			add_corps_commander_role = {
+				traits = {
+					pony_race_trait
+					hill_fighter
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 4
+			}
+		}
 	}	
 }
 

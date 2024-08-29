@@ -2408,6 +2408,9 @@ BAR_leopold_cat = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = barrad_early_game
+				NOT = {
+					has_completed_focus = BAR_begin_building
+				}
 			}
 		}
 		allowed = {

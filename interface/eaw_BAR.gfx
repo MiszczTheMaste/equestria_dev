@@ -149,19 +149,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_bg_1"
-		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg.dds"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_bg_2"
-		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_2.dds"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_2.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_bg_3"
-		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_3.dds"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_bg_3.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
@@ -173,13 +173,13 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_asinti"
-		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti.dds"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_asinti_annoyed"
-		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_annoyed.dds"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_asinti_annoyed.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
@@ -215,7 +215,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_BAR_asinti_sigma_event_end_bg_1"
-		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_end_bg_1.dds"
+		textureFile = "gfx/interface/bar/sigma_event/asinti_sigma_event_end_bg_1.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
@@ -1241,13 +1241,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_bar_asinti_portrait"
-		texturefile = "gfx/leaders/BAR/Asinti.tga"
+		texturefile = "gfx/leaders/BAR/Asinti_standart.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
 	spriteType = {
 		name = "GFX_bar_viira_portrait"
-		texturefile = "gfx/leaders/BAR/viira.dds"
+		texturefile = "gfx/leaders/BAR/viira.tga"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_viira_portrait_psycho"
+		texturefile = "gfx/leaders/BAR/viira_psycho.tga"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
 	}
@@ -1340,6 +1346,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_bar_fight_viira_stronk"
 		texturefile = "gfx/interface/bar/fight/viira_stronk.dds"
+	}
+	spriteType = {
+		name = "GFX_bar_fight_gravely_wounded"
+		texturefile = "gfx/interface/bar/fight/gravely_wounded.tga"
+	}
+	spriteType = {
+		name = "GFX_bar_fight_silver_star_buff"
+		texturefile = "gfx/interface/bar/fight/silver_star_buff.tga"
+	}
+	spriteType = {
+		name = "GFX_bar_fight_asinti_buff"
+		texturefile = "gfx/interface/bar/fight/asinti_buff.tga"
+	}
+	spriteType = {
+		name = "GFX_bar_fight_leopold_buff"
+		texturefile = "gfx/interface/bar/fight/leopold_buff.tga"
 	}
 	spriteType = {
 		name = "GFX_bar_fight_self_heal"
@@ -1645,5 +1667,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/bar/minesweeper/viira_head.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 		alwaystransparent = no
+	}
+	spriteType = {
+		name = "GFX_bar_amb_gunshot_bg"
+		textureFile = "gfx/interface/bar/red_field.dds"
 	}
 }

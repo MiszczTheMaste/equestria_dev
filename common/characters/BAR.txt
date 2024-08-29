@@ -49,7 +49,7 @@ characters={
 		portraits={
 			army={
 				small="gfx/interface/ideas/Advisors/BAR/idea_Viira.tga"
-				large="gfx/leaders/BAR/viira.dds"
+				large="gfx/leaders/BAR/viira.tga"
 			}
 		}
 		corps_commander={
@@ -184,8 +184,8 @@ characters={
 		name=BAR_asinti
 		portraits={
 			army={
-				small="gfx/interface/ideas/Advisors/BAR/idea_Asinti.tga"
-				large="gfx/leaders/BAR/Asinti.tga"
+				small="gfx/interface/ideas/Advisors/BAR/idea_Asinti.tga" #TODO: zmienić tutaj też
+				large="gfx/leaders/BAR/Asinti_standart.tga"
 			}
 		}
 		corps_commander={
@@ -281,8 +281,8 @@ characters={
 		name=BAR_wigberht
 		portraits={
 			army={
-				small="gfx/interface/ideas/Advisors/BAR/idea_wigberht.tga"
-				large="gfx/leaders/BAR/wigberht.tga"
+				small="gfx/interface/ideas/Advisors/BAR/wigberht_amb.dds"
+				large="gfx/leaders/BAR/wigberht_amb.dds"
 			}
 		}
 	}
@@ -290,8 +290,8 @@ characters={
 		name=BAR_gebleod
 		portraits={
 			army={
-				small="gfx/interface/ideas/Advisors/BAR/idea_gebleod.tga"
-				large="gfx/leaders/BAR/gebleod.tga"
+				small="gfx/interface/ideas/Advisors/BAR/gebleod_amb.dds"
+				large="gfx/leaders/BAR/gebleod_amb.dds"
 			}
 		}
 		gender = female
@@ -309,17 +309,9 @@ characters={
 		name=BAR_amber_aurora
 		portraits={
 			army={
-				small="gfx/interface/ideas/Advisors/BAR/amber_aurora.tga"
-				large="gfx/leaders/BAR/amber_aurora.dds"
+				small="gfx/interface/ideas/Advisors/BAR/amber_aurora.dds"
+				large="gfx/leaders/BAR/amber_aurora.tga"
 			}
-		}
-		navy_leader={
-			traits={ pony_race_trait ironside }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=2
 		}
 		gender = female
 	}
@@ -634,7 +626,7 @@ characters={
 		name=BAR_valentino_hereweald
 		portraits={
 			army={
-				small="gfx/interface/ideas/Advisors/BAR/valentino.tga"
+				small="gfx/interface/ideas/Advisors/BAR/valentino.dds"
 				large="gfx/leaders/BAR/valentino.tga"
 			}
 		}
@@ -672,6 +664,15 @@ characters={
 			}
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	}
+	BAR_nahum={
+		name=BAR_nahum
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/BAR/Nahum.tga"
+				large="gfx/leaders/BAR/Nahum.tga"
 			}
 		}
 		advisor={
@@ -767,5 +768,11 @@ characters={
 	}
 	BAR_asinti_jr={
 		name=BAR_asinti_jr
+		portraits={
+			army={
+				small="gfx/interface/ideas/Advisors/BAR/asinti_jr.tga"
+				large="gfx/leaders/BAR/asinti_jr.tga"
+			}
+		}
 	}
 }

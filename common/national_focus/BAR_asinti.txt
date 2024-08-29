@@ -155,6 +155,15 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			country_event = { id = barrad_asinti.12 }
+			BAR_add_wigberht_as_commander = yes
+			BAR_wigberht = {
+				set_portraits = {
+					army = {
+						large = "gfx/leaders/BAR/wigberht_asinti.tga"
+						small = "gfx/interface/ideas/Advisors/BAR/wigberht_asinti.tga"
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -176,6 +185,26 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_war_support = 0.1
+			
+			BAR_amber_aurora = {
+				add_corps_commander_role = {
+					traits = {
+						pony_race_trait
+						hill_fighter
+					}
+					skill = 3
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 4
+				}
+				set_portraits = {
+					army = {
+						large = "gfx/leaders/BAR/amber_aurora_asinti.tga"
+						small = "gfx/interface/ideas/Advisors/BAR/amber_aurora_asinti.tga"
+					}
+				}
+			}
 		}
 	}
 	focus = {

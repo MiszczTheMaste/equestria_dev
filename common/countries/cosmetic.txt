@@ -1479,6 +1479,10 @@ BAR_WIT = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
 }
+BAR_AMB_WIT = {
+	color = rgb { 0 67 111 }
+	color_ui = rgb { 0 52 86 }
+}
 BAR_WIT_magocracy = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
@@ -1491,11 +1495,23 @@ BAR_WIT_high_kingdom = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
 }
+BAR_AMB_high_kingdom = {
+	color = rgb { 0 67 111 }
+	color_ui = rgb { 0 52 86 }
+}
+BAR_AMB_rivfed = {
+	color = rgb { 0 67 111 }
+	color_ui = rgb { 0 52 86 }
+}
 BAR_rivfed = {
 	color = rgb { 58 190 95 }
 	color_ui = rgb { 58 190 95 }
 }
 BAR_grand_county = {
+	color = rgb { 0 67 111 }
+	color_ui = rgb { 0 52 86 }
+}
+BAR_AMB_commonwealth = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
 }

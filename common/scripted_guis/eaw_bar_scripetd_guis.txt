@@ -1027,6 +1027,12 @@ scripted_gui = {
 					BAR_resources_leopold > 99
 				}
 			}
+			bar_leopold_wounded_visible = {
+				has_variable = bar_leopold_wounded
+			}
+			bar_leopold_buff_visible = {
+				has_variable = bar_leopold_wounded
+			}
 		}
 		effects = {
 			bar_pen_fight_leopold_portrait_click = {
@@ -1183,6 +1189,12 @@ scripted_gui = {
 					BAR_resources_asinti > 99
 				}
 			}
+			bar_asinti_wounded_visible = {
+				has_variable = bar_asinti_wounded
+			}
+			bar_asinti_buff_visible = {
+				has_variable = bar_asinti_wounded
+			}
 		}
 		effects = {
 			bar_pen_fight_asinti_portrait_click = {
@@ -1320,15 +1332,11 @@ scripted_gui = {
 					BAR_resources_silver > 49
 				}
 			}
-			bar_silver_heal_click_enabled = {
-				has_country_flag = bar_fight_pentarchy_side
-				has_country_flag = barrad_silver_star_alive
-				check_variable = {
-					s_in > 1
-				}
-				check_variable = {
-					BAR_resources_silver > 99
-				}
+			bar_silver_wounded_visible = {
+				has_variable = bar_silver_star_wounded
+			}
+			bar_silver_buff_visible = {
+				has_variable = bar_silver_star_wounded
 			}
 		}
 		effects = {
@@ -3963,8 +3971,21 @@ scripted_gui = {
 						bar_asinti_sigma_event < 4
 					}
 				}
-				check_variable = {
-					bar_asinti_sigma_event > 8
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event > 8
+					}
+					check_variable = {
+						bar_asinti_sigma_event < 10
+					}
+				}
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event > 15
+					}
+					check_variable = {
+						bar_asinti_sigma_event < 18
+					}
 				}
 			}
 		}
@@ -4001,29 +4022,21 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			OR = {
-				check_variable = {
-					bar_asinti_sigma_event = 10
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event > 9
+					}
+					check_variable = {
+						bar_asinti_sigma_event < 14
+					}
 				}
-				check_variable = {
-					bar_asinti_sigma_event = 11
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 12
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 13
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 18
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 19
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 20
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 21
+				AND = {
+					check_variable = {
+						bar_asinti_sigma_event > 17
+					}
+					check_variable = {
+						bar_asinti_sigma_event < 22
+					}
 				}
 			}
 		}
@@ -6438,6 +6451,19 @@ scripted_gui = {
 
 					country_event = { id = bar_titan_fight.3 }
 				}
+			}
+		}
+	}
+	bar_amb_gunshot_container = {
+		window_name = "bar_amb_gunshot_container"
+		dirty = bar_amb_gunshot_visible
+		context_type = player_context
+		visible = {
+			has_variable = bar_amb_gunshot_visible
+		}		
+		effects = {
+			bar_activities_container_bg_click = {
+				clear_variable = bar_amb_gunshot_visible
 			}
 		}
 	}

@@ -2309,19 +2309,21 @@
   bar_sane_ambrosius.6.d:0 "Gąsienica descended back underground to rejoin the Count, now that he was at last ready to exorcise Barrad's ancient curse. When Gąsienica reached him, Ambrosius looked tired, having studied magical texts nearly nonstop preparing the ritual to heal the being that had driven him to madness and back. Gąsienica held his breath as Ambrosius approached the reactor to perform the ritual. When he began the ritual in earnest, power started swirling all around them until suddenly, everything stopped, and the world became still.\n\nA voice spoke to both of them, but it was not the elusive, shifting voice Ambrosius was used to hearing. It was a calm voice, low and quiet but at the same time not difficult to hear. "I am awake." The presence in the air washed over them like an ocean current. "My actions have wrought so much pain, so much destruction. For that, I can not express the magnitude of my sorrow." The room seemed to somehow fill with sadness. "But now I am freed from hunger and chaos, and I wish to do now what I have been unable to do for far too long. Let us make this world a better place."\n\nGąsienica was in shock from what he was witnessing and was completely unsure how to react. Ambrosius, however, smiled. "Yes, let's.""
   bar_sane_ambrosius.6.d:0 "Gąsienica descended back underground to rejoin the Count, now that he was at last ready to exorcise Barrad's ancient curse. When Gąsienica reached him, Ambrosius looked tired, having studied magical texts nearly nonstop preparing the ritual to heal the being that had driven him to madness and back. Gąsienica held his breath as Ambrosius approached the reactor to perform the ritual. When he began the ritual in earnest, power started swirling all around them until suddenly, everything stopped, and the world became still.\n\nA voice spoke to both of them, but it was not the elusive, shifting voice Ambrosius was used to hearing. It was a calm voice, low and quiet but at the same time not difficult to hear. "I am awake." The presence in the air washed over them like an ocean current. "My actions have wrought so much pain, so much destruction. For that, I can not express the magnitude of my sorrow." The room seemed to somehow fill with sadness. "But now I am freed from hunger and chaos, and I wish to do now what I have been unable to do for far too long. Let us make this world a better place."\n\nGąsienica was in shock from what he was witnessing and was completely unsure how to react. Ambrosius, however, smiled. "Yes, let's.""
   bar_sane_ambrosius.6.a:0 "We will overcome our past mistakes, and build a bright new future!"
-  bar_sane_ambrosius.7.t:0 "Ruin"
-  bar_sane_ambrosius.7.d:0 "#TODO: (rewrite so it fits more with the fact that ambrosius kills himself from the guilt in that event) Ruin has come to our family.\n\nYou remember our venerable house, opulent and imperial, gazing proudly from its stoic perch above the moor.\n\nI lived all my years in that ancient rumour shadowed manor, fattened by decadence and luxury, and yet I began to tire of... conventional extravagance. Singular unsettling tales suggested the mansion itself was a gateway to some fabulous and unnameable power. With relic and ritual, I bent every effort towards the excavation and recovery of those long buried secrets, exhausting what remained of our family fortune on... swarthy workponies and... sturdy shovels. At last, in the salt soaked crags beneath the lowest foundations, we unearthed that damnable portal of antediluvian evil. Our every step unsettled the ancient earth, but we were in a realm of death and madness. In the end, I alone fled, laughing and wailing through those blackened arcades of antiquity. Until consciousness failed me.\n\nYou remember our venerable house, opulent and imperial."
-  bar_sane_ambrosius.7.a:0 "It is a festering abomination!"
-
+  bar_sane_ambrosius.7.t:0 "A Letter."
+  bar_sane_ambrosius.7.d:0 "My dear friend,\n\n    I’ve brought ruin to our family.\n\n    You remember our venerable house, opulent and imperial, gazing proudly from its stoic perch above the moor. I lived all my years in that ancient rumour shadowed manor, fattened by decadence and luxury. Yet singular unsettling whisper suggested my very land was a gateway to some fabulous and unnameable power. With charisma and gold, I bent every effort towards gathering most capable individuals to help me recover the secrets sang in my dreams, exhausting what remained of my sanity. At last, in the blood soaked crags of forgotten caves, we unearthed that damnable device of antediluvian evil. Our every next move unsettled the ancient earth, but we were in a realm of death and madness. In the end, I alone survived, no longer laughing and yet to understand implications of our deeds and my crimes.\n\n    You remember our beautiful home – the hills of Barrad, flourishing and lively. It is a festering abomination! My friend I beg you, help those blood stained cursed lands, do not delve into what mortals should not ever see, and deliver our realm from the ravenous clutching shadows of..."
+  bar_sane_ambrosius.7.a:0 "...the madness that is yet to come"
+  bar_sane_ambrosius.8.t:0 "Indomitable Mare Spirit"
+  bar_sane_ambrosius.8.d:0 "#TODO: leader of adventurers from the begining uses the chaos ambrosius created among the cultists to escape and she continues her mission to kill evil pentarchy but when she finally reaches ambrosius she is too weak to fight. He takes care of her."
+  bar_sane_ambrosius.8.a:0 ""
 #new stuff
   bar_sane_ambrosius.1001.t:0 "Fate of the Order"
   bar_sane_ambrosius.1001.d:0 "#TODO: after conquering gryphus Ambrosius needs to deside what to to with the knightly order, obvious solution would be to disband it and change into something else (his griffon friends really hate the order). The second solution would be to let cultist manage it as they are eager to do so (both of them are fanatics so works for me)"
   bar_sane_ambrosius.1001.a:0 "Let cultists manage it"
   bar_sane_ambrosius.1001.b:0 "Disband and change"
   bar_sane_ambrosius.1002.t:0 "Heavy Toll"
-  bar_sane_ambrosius.1002.d:0 "#TODO: after estabilithing grand county there is party to celebrate that, but Ambrosius does not want to attend. Instead he sits alone in the room in fron of his dead wife portrait contemplating about if what he had acomplished is an acomplishemnt at all. Gąsienica comes to see if he is alright, and Ambrosius asks if he can stay with him instead. The griffon urges that either they both or atleast him should attend the party."
-  bar_sane_ambrosius.1002.a:0 "Ambrosius agrees and Gąsienica goes in his name"
-  bar_sane_ambrosius.1002.b:0 "They both stay and play chess "
+  bar_sane_ambrosius.1002.d:0 "    The room was cold and silent, dust swirling in the faint beams of moonlight that slipped through the old curtains. A single candle casted flickering shadows across the faded, peeling wallpaper. Ambrosius sat on a bed in middle of the room, his eyes fixed on the portrait hanging in front of him. It was of him and a mare, her beauty immortalized in vibrant colors. Yet, the painting, just like Ambrosius himself, had withered over the years. Her gaze seemed to follow him, full of life and warmth - a ghost of better days. \n    He took a deep breath, as he stared at her face, her smile, her eyes, and could only wonder: why had it had to come to this? The mad count of a broken land, a thief and a murderer. His voice little more than a whisper. "I can’t stop now…"\n    The silence of the room pressed in on him. Minutes passed, or perhaps hours, time had little meaning for him right now. The quiet was all-encompassing, a weight that hung over him like a shroud.\n    Then, from behind, he felt as if somepony was watching him. Ambrosius didn’t move, didn’t look up. He knew who it was. He had learned how to sense him. Gąsienica simply stood there, watching his master. Without a word, he moved next to Ambrosius and squatted down. He did not speak, for there were no words needed between them.\n    Ambrosius did not look at him. His gaze remained fixed on the portrait, though his voice trembled slightly when he finally spoke. "How is the party?" Ambrosius murmured.\n    “Tame,” Gąsienica replied, glancing at the mare in the portrait. "Is something wrong, my lord?"\n    Ambrosius was silent for a long moment. Slowly, he lifted his head and looked at the portrait one last time, then let out a long, weary sigh. "I never apologized to you," he said quietly.\n    "I owe my life to you," Gąsienica responded.\n    "Your mother begged me to save you after you were wounded," Ambrosius said, staring directly at the griffon. "I could have done it in so many different ways. Yet because of my ambition, I had to try the dark magic that was shown to me in my dreams." A single tear fell from his eye. "I can still hear your screams to this very day. No creature should have to endure what you did."\n    Gąsienica extended one of his massive talons and gently placed it on Ambrosius’ shoulder. "I forgive you," he said in a low voice, "for that and the other things you had in mind."\n    Ambrosius was not ready for that answer. His mind had created so many different scenarios, but he could not have predicted this one. He reached up and patted Gąsienica’s talon in gratitude, the only gesture he could think of at that moment.\n    "My lord, do you wish me to go back and entertain the guests in your name, or fetch a bottle for us?" Gąsienica asked firmly."
+  bar_sane_ambrosius.1002.a:0 "Go my friend, our duty calls"
+  bar_sane_ambrosius.1002.b:0 "Bottle or two of wine won't hurt..."
   bar_sane_ambrosius.1003.t:0 "The Call"
   bar_sane_ambrosius.1003.d:0 "#TODO: the ancient entity calls Ambrosius about his recent actions (you can get it only when you own more than 3 states), it says that it is concerned about him but belives that he can still do good."
   bar_sane_ambrosius.1003.a:0 "I'll do what is in my power"
@@ -2486,7 +2488,9 @@
   barrad_friendship_tree.39.t:0 "On the Edge"
   barrad_friendship_tree.39.d:0 "    The room echoed with loud knocking. No one answered. Silver Star knocked again. Silence. Growing worried, he pushed the door open. A dim candle flickered inside, casting shadows on the walls. Viira sat on the bed, staring into the flame. She hadn’t noticed him come in so he stepped closer.\n    “Hey…” Silver Star began, his voice soft. “Mind if I sit?” He paused at the edge of the bed, waiting. After a long silence, she nodded. He sat, leaving a wide gap between them. “Is everything alright?” he asked, though he already knew the answer.\n    “Nothing is,” she replied, turning toward him. Her eyes glimmered with an intensity he couldn’t place - fear, anger, sorrow? He wasn’t sure. “I… I don’t know what’s happening to me,” she whispered, leaning closer.\n    “What do you—” His heart raced as her eyes widened.\n    Suddenly, a knife gleamed in her hoof, its tip pointed at his throat. “Remember when I broke into your tower? You found me in your library,” she said, and not waiting for his response added. “Then I kissed you.” Her grin grew wild. “I wasn’t supposed to. I was supposed to stab you with this knife.” She waved it fur length from his skin.\n    Silver Star froze, panic gripping him. The knife hovered too close for him to move. He stayed silent, waiting, trapped by her will. “I saw that moment in a vision,” Viira continued, laughing to herself. “I’ve seen so much. Things you’d never believe.” The blade touched his throat now, a cold point pressing into his skin. “But now… I see nothing. No future, only now and the past.” Her grin faded. Her pupils shrank. Her hooves trembled giving him a tiny cut.\n    A drop of blood appeared. She gasped and let the knife fall, her eyes filling with tears. She collapsed on the bed, covering her head with her hooves, sobbing. Silver Star, still in shock, checked the cut—it was barely there, already drying.\n    He turned his attention to Viira. She lay curled up, still crying and muttering incoherently. Gently, he placed a hoof on her and began stroking her mane. “It’s alright,” he said softly. “You’re scared… so am I.” He sighed, continuing to brush her mane, not knowing what else to say.\n    They sat like that for a long time, Viira’s sobs slowly fading into silence. Finally, she raised her head and looked at him. “Nothing… I can’t see… can’t control,” she whispered.\n    Silver Star struggled for words. “I… You… There is…” He shook his head. “I don’t know.”\n    Viira’s voice, though weak, cut through his thoughts. “Yet you’re here,” she said. “Why?”\n    Caught off guard, Silver Star answered without thinking. “I felt like you might need somepony… to be here with you.” His words sounded foolish to his own ears.\n    Viira gazed at him, her expression softening. “And if I asked you to stay, would you?”\n    “Of course,” Silver Star said, without hesitation."
   barrad_friendship_tree.39.a:0 "Then please do"
-
+  barrad_friendship_tree.40.t:0 "Unexpected Ally"
+  barrad_friendship_tree.40.t:0 "#TODO: they find leader of the adventurers from the the beggining of the tree and she joins them"
+  barrad_friendship_tree.40.t:0 ""
     #ending event
   bar_ending_dialogue_line_1_text:0 "Found you!"
   bar_ending_dialogue_line_2_text:0 "... !"
@@ -2725,12 +2729,12 @@
   bar_pen_screen_ambrosius_info_first_name:0 "First name:  Ambrosius"
   bar_pen_screen_ambrosius_info_last_name:0 "Last name:  of Barrad"
   bar_pen_screen_ambrosius_info_birthplace:0 "Birthplace:  Wittenland, Dunburh"
-  bar_pen_screen_ambrosius_info_birthyear:0 "Birthyear:  927"
+  bar_pen_screen_ambrosius_info_birthyear:0 "Birthyear:  945"
   bar_pen_screen_ambrosius_info_status:0 "Status:  [bar_ambrosius_status]"
   bar_pen_screen_leopold_info_first_name:0 "First name:  Leopold"
   bar_pen_screen_leopold_info_last_name:0 "Last name:  Schmeller"
   bar_pen_screen_leopold_info_birthplace:0 "Birthplace:  Griffon Empire, Gamia"
-  bar_pen_screen_leopold_info_birthyear:0 "Birthyear:  962"
+  bar_pen_screen_leopold_info_birthyear:0 "Birthyear:  966"
   bar_pen_screen_leopold_info_status:0 "Status:  [bar_leopold_status]"
   bar_pen_screen_viira_info_first_name:0 "First name:  Viira"
   bar_pen_screen_viira_info_last_name:0 "Last name:  Lehtola"
@@ -3012,7 +3016,7 @@
 
 
 
-
+#minesweeper
 
 bar_minesweeper_title_text:0 "Earth Strike Back!"
 bar_minesweeper_title_text_2:0 "Enforce your rule over it!"
@@ -3122,3 +3126,49 @@ bar_minesweeper_map_field_96_text:0 "[?bar_minesweeper_mine_map^96]"
 bar_minesweeper_map_field_97_text:0 "[?bar_minesweeper_mine_map^97]"
 bar_minesweeper_map_field_98_text:0 "[?bar_minesweeper_mine_map^98]"
 bar_minesweeper_map_field_99_text:0 "[?bar_minesweeper_mine_map^99]"
+
+
+  #######                       
+  #       #  ####  #    # ##### 
+  #       # #    # #    #   #   
+  #####   # #      ######   #   
+  #       # #  ### #    #   #   
+  #       # #    # #    #   #   
+  #       #  ####  #    #   #   
+                                
+
+
+  barrad_viira_fight.6.t:0 "The Pentarchy Is Dead"
+  barrad_viira_fight.7.t:0 "The Pentarchy Wins!"
+  barrad_viira_fight.9.t:0 "Viira Is Dead"
+  barrad_viira_fight.10.t:0 "Viira Wins!"
+
+  BAR_fight_viira_turn_summary_0:0 "Viira lets loose a thundering shout as she shifts into a fighting stance, her body glowing with latent magic. She advances towards you slowly and menacingly. The crazed Seer must be stopped!"
+  BAR_fight_viira_turn_summary_1:0 "After being stunned, Viira remains dazed and is unable to act."
+  BAR_fight_viira_turn_summary_2:0 "Viira strikes a defensive posture and hangs back to recover her strength."
+  BAR_fight_viira_turn_summary_3:0 "Feeling the pressure, Viira casts a restorative spell to heal her wounds."
+  BAR_fight_viira_turn_summary_4:0 "Viira charges forward recklessly, striking out and landing a blow on Asinti."
+  BAR_fight_viira_turn_summary_5:0 "Viira charges forward recklessly, striking out and landing a savage blow on Asinti."
+  BAR_fight_viira_turn_summary_6:0 "Viira charges forward recklessly, striking out and landing a blow on Leopold."
+  BAR_fight_viira_turn_summary_7:0 "Viira charges forward recklessly, striking out and landing a savage blow on Leopold."
+  BAR_fight_viira_turn_summary_8:0 "Viira charges forward recklessly, striking out and landing a blow on Silver Star."
+  BAR_fight_viira_turn_summary_9:0 "Viira charges forward recklessly, striking out and landing a savage blow on Silver Star."
+
+  BAR_fight_vpentarchy_turn_summary_0:0 "Before Viira, the pathetic remnants of Barrad's decaying order stand athwart progress. They stand firm and refuse to yield. Such agents of ignorance must all be slain!"
+  BAR_fight_vpentarchy_turn_summary_1:0 "Asinti swiftily dodges before striking and landing a blow on Viira."
+  BAR_fight_vpentarchy_turn_summary_2:0 "Asinti channels his spirit, casting a debilitating curse on Viira."
+  BAR_fight_vpentarchy_turn_summary_3:0 "Asinti casts a restorative spell to heal the Pentarchy."
+  BAR_fight_vpentarchy_turn_summary_4:0 "The Pentarchy strikes a defensive posture and hangs back to recover their strength."
+  BAR_fight_vpentarchy_turn_summary_5:0 "Leopold advances with machine-like precision before striking and landing a blow on Viira."
+  BAR_fight_vpentarchy_turn_summary_6:0 "Leopold advances with machine-like precision before striking and landing a devastating blow on Viira."
+  BAR_fight_vpentarchy_turn_summary_7:0 "Leopold makes use of a strange augmentation, emitting a blinding flash of light and stunning Viira."
+  BAR_fight_vpentarchy_turn_summary_8:0 "Silver Star lights up his horn and lets loose a blast of magical energy, landing a blow on Viira."
+  BAR_fight_vpentarchy_turn_summary_9:0 "Silver Star lights up his horn and lets loose a magical attack, draining Viira of her life essence and absorbing it himself."
+  BAR_fight_vpentarchy_turn_summary_10:0 "Feeling the pressure, Silver Star casts a restorative spell to heal Leopold's wounds."
+  BAR_fight_vpentarchy_turn_summary_11:0 "Feeling the pressure, Silver Star casts a restorative spell to heal Asinti's wounds."
+  BAR_fight_vpentarchy_turn_summary_12:0 "Feeling the pressure, Silver Star casts a restorative spell to heal his wounds."
+
+  bar_fight_wounded_tooltip:0 "Gravely wounded\n\nAfter the fight this character will die no matter who wins."
+  bar_asinti_buff_tooltip:0 "Overdose\n\nKnowing his time is counted this character will use everything from his alchemical arsenal.\nResing grants double initiative to all party members."
+  bar_leopold_buff_tooltip:0 "Akimbo\n\nHaving nothing to lose this character will do additional basic attack each turn."
+  bar_silver_buff_tooltip:0 "Arch Betrayal\n\nThis character was betrayed during his most vulnerable moment, now he wants vengance.\nDeals §G+50%§! damage with all attacks."

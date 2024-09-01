@@ -3683,7 +3683,25 @@ country_event = {
 				popup = no
 				bar_leopold_new_body = 1
 			}
-			add_ideas = BAR_leopold_partial
+			if = {
+				limit = {
+
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back" 
+				}
+				set_technology = {
+					bar_leopold_basic_parts = 1
+				}
+				set_technology = {
+					bar_leopold_unlock_all = 1
+				}
+			} else = {
+				add_ideas = BAR_leopold_partial
+			}
+			
 			division_template = {
 				name = "Leopold Schmeller"
 				is_locked = yes
@@ -3853,6 +3871,16 @@ country_event = {
 			}
 		}
 		remove_ideas = BAR_leopold_partial
+		if = {
+			limit = {
+				has_dlc = "No Step Back" 
+			}
+			set_technology = {
+				bar_leopold_end_upgrades = 1
+			}
+		} else = {
+			remove_ideas = BAR_leopold_partial	
+		}
 	}
 	option = {
 		name = barrad_leopold.3.b
@@ -3876,8 +3904,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_leopold.4.a
-		add_ideas = BAR_leopold_titan_armor
-		remove_ideas = BAR_leopold_partial
+		if = {
+			limit = {
+				has_dlc = "No Step Back" 
+			}
+			set_technology = {
+				bar_leopold_end_upgrades = 1
+			}
+			set_technology = {
+				bar_leopold_titan_armor = 1
+			}
+		} else = {
+			add_ideas = BAR_leopold_titan_armor
+			remove_ideas = BAR_leopold_partial	
+		}
 	}
 }
 

@@ -3937,22 +3937,22 @@ scripted_gui = {
 							bar_asinti_sigma_event > 6
 						}
 						check_variable = {
-							bar_asinti_sigma_event < 16
+							bar_asinti_sigma_event < 17
 						}
 					}
 				}
 			}
 			BAR_asinti_sigma_event_bg_3_visible = {
 				check_variable = {
-					bar_asinti_sigma_event > 15
+					bar_asinti_sigma_event > 16
 				}
 				check_variable = {
-					bar_asinti_sigma_event < 25
+					bar_asinti_sigma_event < 26
 				}
 			}
 			BAR_asinti_sigma_event_bg_4_visible = {
 				check_variable = {
-					bar_asinti_sigma_event > 24
+					bar_asinti_sigma_event > 25
 				}
 			}
 		}
@@ -3963,13 +3963,8 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			OR = {
-				AND = {
-					check_variable = {
-						bar_asinti_sigma_event > 0
-					}
-					check_variable = {
-						bar_asinti_sigma_event < 4
-					}
+				check_variable = {
+					bar_asinti_sigma_event = 1
 				}
 				AND = {
 					check_variable = {
@@ -3984,35 +3979,9 @@ scripted_gui = {
 						bar_asinti_sigma_event > 15
 					}
 					check_variable = {
-						bar_asinti_sigma_event < 18
+						bar_asinti_sigma_event < 20
 					}
 				}
-			}
-		}
-	}
-	bar_asinti_sigma_event_follower_1 = {
-		window_name = "bar_asinti_sigma_event_follower_1"
-		dirty = bar_asinti_sigma_event
-		context_type = player_context
-		visible = {
-			check_variable = {
-				bar_asinti_sigma_event > 9
-			}
-			check_variable = {
-				bar_asinti_sigma_event < 14
-			}
-		}
-	}
-	bar_asinti_sigma_event_follower_2 = {
-		window_name = "bar_asinti_sigma_event_follower_2"
-		dirty = bar_asinti_sigma_event
-		context_type = player_context
-		visible = {
-			check_variable = {
-				bar_asinti_sigma_event > 10
-			}
-			check_variable = {
-				bar_asinti_sigma_event < 14
 			}
 		}
 	}
@@ -4030,14 +3999,98 @@ scripted_gui = {
 						bar_asinti_sigma_event < 14
 					}
 				}
+				check_variable = {
+					bar_asinti_sigma_event = 15
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 20
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 23
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_asinti_angry = {
+		window_name = "bar_asinti_sigma_event_asinti_angry"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event = 14
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 16
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 21
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 22
+				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_asinti_normal_open_mouth = {
+		window_name = "bar_asinti_sigma_event_asinti_normal_open_mouth"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			OR = {
+				check_variable = {
+					bar_asinti_sigma_event = 2
+				}
+				check_variable = {
+					bar_asinti_sigma_event = 3
+				}
 				AND = {
 					check_variable = {
-						bar_asinti_sigma_event > 17
+						bar_asinti_sigma_event > 22
 					}
 					check_variable = {
-						bar_asinti_sigma_event < 22
+						bar_asinti_sigma_event < 26
 					}
 				}
+			}
+		}
+	}
+	bar_asinti_sigma_event_follower_1 = {
+		window_name = "bar_asinti_sigma_event_follower_1"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event > 9
+			}
+			check_variable = {
+				bar_asinti_sigma_event < 15
+			}
+		}
+	}
+	bar_asinti_sigma_event_follower_2 = {
+		window_name = "bar_asinti_sigma_event_follower_2"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event > 10
+			}
+			check_variable = {
+				bar_asinti_sigma_event < 15
+			}
+		}
+	}
+	bar_asinti_sigma_event_follower_2 = {
+		window_name = "bar_asinti_sigma_event_follower_3"
+		dirty = bar_asinti_sigma_event
+		context_type = player_context
+		visible = {
+			check_variable = {
+				bar_asinti_sigma_event > 11
+			}
+			check_variable = {
+				bar_asinti_sigma_event < 15
 			}
 		}
 	}
@@ -4047,7 +4100,7 @@ scripted_gui = {
 		context_type = player_context
 		visible = {
 			check_variable = {
-				bar_asinti_sigma_event > 25
+				bar_asinti_sigma_event > 26
 			}
 		}
 	}
@@ -4056,13 +4109,8 @@ scripted_gui = {
 		dirty = bar_asinti_sigma_event
 		context_type = player_context
 		visible = {
-			OR = {
-				check_variable = {
-					bar_asinti_sigma_event = 27
-				}
-				check_variable = {
-					bar_asinti_sigma_event = 28
-				}
+			check_variable = {
+				bar_asinti_sigma_event > 27
 			}
 		}
 	}

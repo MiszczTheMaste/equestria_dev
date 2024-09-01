@@ -14,21 +14,77 @@ equipments = {
 		interface_category = interface_category_armor
 
 		#Misc Abilities
-		maximum_speed = 8
-		reliability = 1
+		maximum_speed = 4
+		reliability = 0.8
+		hardness = 0.8
+		armor_value = 10
 
-		#Defensive Abilities
-		defense = 600
-		breakthrough = 1000
-		hardness = 0.99
-		armor_value = 300
+		build_cost_ic = 10
 
-		#Offensive Abilities
-		soft_attack = 1000
-		hard_attack = 1000
-		ap_attack = 150
-		air_attack = 20
-		build_cost_ic = 100
+		module_slots = {
+			leopold_external_armor_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_external_armor_module
+				}
+			}
+
+			leopold_skeleton_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_skeleton_module
+				}
+			}
+
+			leopold_arms_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_arms_module
+				}
+			}
+
+			leopold_claws_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_claws_module
+				}
+			}
+
+			leopold_wings_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_wings_module
+				}
+			}
+
+			leopold_life_sustain_system_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_life_sustain_system_module
+				}
+			}
+
+			leopold_eye_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_eye_module
+				}
+			}	
+
+			leopold_misc_1_slot = {
+				required = no
+				allowed_module_categories = {
+					leopold_misc_module
+				}
+			}
+
+			leopold_misc_2_slot = {
+				required = no
+				allowed_module_categories = {
+					leopold_misc_module
+				}
+			}
+		}
 
 		resources = {
 			crystals = 2
@@ -42,5 +98,7 @@ equipments = {
 		archetype = bar_leopold_equipment
 		priority = 130
 		visual_level = 0
+
+		module_slots = inherit
 	}
 }

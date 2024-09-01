@@ -1047,6 +1047,12 @@ defined_text = {
 		localization_key = bar_asinti_sigma_event_dialogue_text_28
 	}
 	text = {
+		trigger = {
+			check_variable = { bar_asinti_sigma_event = 29 }
+		}
+		localization_key = bar_asinti_sigma_event_dialogue_text_29
+	}
+	text = {
 		localization_key = bar_asinti_sigma_event_dialogue_text_empty
 	}
 }

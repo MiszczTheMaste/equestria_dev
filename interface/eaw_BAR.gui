@@ -4704,15 +4704,12 @@ guiTypes = {
 	containerWindowType = {
 		name = "bar_asinti_sigma_event_bg"
 		size = { width=700 height=422 }
-		moveable = no
 		clipping = no
 		position = { x=200 y=200 }
 
 		containerWindowType = {
 			name = "BAR_asinti_sigma_event_bg_border"
 			size = { width=700 height=422 }
-			moveable = no
-			clipping = no
 			position = { x=-12 y=-12 }
 			iconType = {
 				name = "BAR_asinti_sigma_event_bg_border"
@@ -4723,8 +4720,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "BAR_asinti_sigma_event_bg_1"
 			size = { width=700 height=422 }
-			moveable = no
-			clipping = no
 			position = { x=0 y=0 }
 			iconType = {
 				name = "BAR_asinti_sigma_event_bg_1"
@@ -4735,8 +4730,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "BAR_asinti_sigma_event_bg_2"
 			size = { width=700 height=422 }
-			moveable = no
-			clipping = no
 			position = { x=0 y=0 }
 			iconType = {
 				name = "BAR_asinti_sigma_event_bg_2"
@@ -4747,8 +4740,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "BAR_asinti_sigma_event_bg_3"
 			size = { width=700 height=422 }
-			moveable = no
-			clipping = no
 			position = { x=0 y=0 }
 			iconType = {
 				name = "BAR_asinti_sigma_event_bg_3"
@@ -4759,8 +4750,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "BAR_asinti_sigma_event_bg_4"
 			size = { width=700 height=422 }
-			moveable = no
-			clipping = no
 			position = { x=0 y=0 }
 			iconType = {
 				name = "BAR_asinti_sigma_event_bg_4"
@@ -4772,16 +4761,16 @@ guiTypes = {
 		
 	containerWindowType = {
 		name = "bar_asinti_sigma_event_asinti"
-		size = { width=156 height=210 }
+		size = { width=233 height=300 }
 		moveable = no
 		clipping = yes
 		position = { x = 200 y = 200 }
-		hide_position = { x = 700 y = 420 }
-		show_position = { x = 700 y = 416 }
+		hide_position = { x = 650 y = 325 }
+		show_position = { x = 650 y = 321 }
 		show_animation_type = decelerated
 		hide_animation_type = decelerated
-		animation_time = 400
-		fade_time = 400
+		animation_time = 500
+		fade_time = 500
 		fade_type = linear
 		iconType = {
 			name = "BAR_asinti_sigma_event_asinti"
@@ -4791,16 +4780,16 @@ guiTypes = {
 	}	
 	containerWindowType = {
 		name = "bar_asinti_sigma_event_asinti_annoyed"
-		size = { width=156 height=210 }
+		size = { width=233 height=300 }
 		moveable = no
 		clipping = yes
 		position = { x = 200 y = 200 }
-		hide_position = { x = 700 y = 420 }
-		show_position = { x = 700 y = 416 }
+		hide_position = { x = 650 y = 325 }
+		show_position = { x = 650 y = 321 }
 		show_animation_type = decelerated
 		hide_animation_type = decelerated
-		animation_time = 400
-		fade_time = 400
+		animation_time = 1000
+		fade_time = 1000
 		fade_type = linear
 		iconType = {
 			name = "BAR_asinti_sigma_event_asinti_annoyed"
@@ -4809,17 +4798,55 @@ guiTypes = {
 		}
 	}	
 	containerWindowType = {
-		name = "bar_asinti_sigma_event_follower_1"
-		size = { width=700 height=422 }
+		name = "bar_asinti_sigma_event_asinti_angry"
+		size = { width=233 height=300 }
 		moveable = no
 		clipping = yes
 		position = { x = 200 y = 200 }
-		hide_position = { x = 200 y = 250 }
-		show_position = { x = 200 y = 202 }
+		hide_position = { x = 650 y = 325 }
+		show_position = { x = 650 y = 321 }
 		show_animation_type = decelerated
 		hide_animation_type = decelerated
-		animation_time = 400
-		fade_time = 400
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+		iconType = {
+			name = "bar_asinti_sigma_event_asinti_angry"
+			spriteType = "GFX_BAR_asinti_sigma_event_asinti_angry"
+			position = {x=0 y=0}
+		}
+	}
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_asinti_normal_open_mouth"
+		size = { width=233 height=300 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		hide_position = { x = 650 y = 325 }
+		show_position = { x = 650 y = 321 }
+		show_animation_type = decelerated
+		hide_animation_type = decelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+		iconType = {
+			name = "bar_asinti_sigma_event_asinti_normal_open_mouth"
+			spriteType = "GFX_BAR_asinti_sigma_event_asinti_normal_open_mouth"
+			position = {x=0 y=0}
+		}
+	}	
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_follower_1"
+		size = { width=233 height=300 }
+		moveable = no
+		clipping = yes
+		position = { x = 200 y = 200 }
+		hide_position = { x = 200 y = 325 }
+		show_position = { x = 200 y = 321 }
+		show_animation_type = decelerated
+		hide_animation_type = decelerated
+		animation_time = 1000
+		fade_time = 1000
 		fade_type = linear
 		iconType = {
 			name = "BAR_asinti_sigma_event_follower_1"
@@ -4829,20 +4856,39 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "bar_asinti_sigma_event_follower_2"
-		size = { width=700 height=422 }
+		size = { width=233 height=300 }
 		moveable = no
 		clipping = yes
 		position = { x = 200 y = 200 }
-		hide_position = { x = 200 y = 250 }
-		show_position = { x = 200 y = 202 }
+		hide_position = { x = 300 y = 325 }
+		show_position = { x = 300 y = 321 }
 		show_animation_type = decelerated
 		hide_animation_type = decelerated
-		animation_time = 400
-		fade_time = 400
+		animation_time = 1000
+		fade_time = 1000
 		fade_type = linear
 		iconType = {
 			name = "BAR_asinti_sigma_event_follower_2"
 			spriteType = "GFX_BAR_asinti_sigma_event_follower_2"
+			position = {x=0 y=0}
+		}
+	}
+	containerWindowType = {
+		name = "bar_asinti_sigma_event_follower_3"
+		size = { width=233 height=300 }
+		moveable = no
+		clipping = yes
+		position = { x = 300 y = 200 }
+		hide_position = { x = 400 y = 325 }
+		show_position = { x = 400 y = 321 }
+		show_animation_type = decelerated
+		hide_animation_type = decelerated
+		animation_time = 1000
+		fade_time = 1000
+		fade_type = linear
+		iconType = {
+			name = "BAR_asinti_sigma_event_follower_3"
+			spriteType = "GFX_BAR_asinti_sigma_event_follower_3"
 			position = {x=0 y=0}
 		}
 	}

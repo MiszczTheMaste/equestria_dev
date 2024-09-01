@@ -2069,6 +2069,74 @@ technologies = {
 		}
 		research_cost = 1
 	}
+	bar_leopold_basic_parts = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_steel_armor
+			leopold_basic_magical_exoskeleton
+			leopold_basic_mechanical_arms
+			leopold_basic_mechanical_legs
+			leopold_steel_claws
+			leopold_tungsten_claws
+			leopold_mechanical_wings
+			leopold_crystal_eye
+			leopold_basic_liquid_crystal_life_sustain
+			leopold_teapot
+		}
+		research_cost = 1
+	}
+	bar_leopold_titan_armor = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_living_crystal_armor
+		}
+		research_cost = 1
+	}
+	bar_leopold_end_upgrades = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_living_crystal_armor
+		}
+		research_cost = 1
+	}
+	bar_leopold_unlock_all = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_steel_armor
+			leopold_crystal_armor
+			leopold_crystal_alloy_armor
+			leopold_living_crystal_armor
+			leopold_basic_magical_exoskeleton
+			leopold_basic_electro_mechanical_exoskeleton
+			leopold_basic_electro_magical_exoskeleton
+			leopold_basic_mechanical_arms
+			leopold_pocket_rocket_launcher_arms
+			leopold_steel_claws
+			leopold_tungsten_claws
+			leopold_crystal_claws
+			leopold_crystal_alloy_claws
+			leopold_mechanical_wings
+			leopold_magico_mechanical_wings
+			leopold_electro_mechanical_wings
+			leopold_electro_magical_wings
+			leopold_esoterical_propulsion
+			leopold_crystal_eye
+			leopold_outer_world_polished_crystal_eye
+			leopold_electro_magical_crystal_eye
+			leopold_basic_liquid_crystal_life_sustain
+			leopold_crystal_blood_life_sustain
+			leopold_teapot
+		}
+		research_cost = 1
+	}
 
     #                            
    # #    ####  # #    # ##### # 

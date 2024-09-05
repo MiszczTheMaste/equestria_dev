@@ -179,6 +179,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			decrease_poverty = yes
+			hidden_effect = {
+				country_event = {
+					id = barrad_viira.18
+					days = 68
+				}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -561,6 +567,10 @@ focus_tree = {
 					state = 626
 				}
 				add_country_leader_trait = bar_viira_title_13
+				country_event = {
+					id = barrad_viira.19
+					days = 17
+				}
 			}
 		}
 	}

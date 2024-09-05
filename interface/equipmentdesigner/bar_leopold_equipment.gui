@@ -7,7 +7,7 @@ guiTypes = {
 
 		iconType = {
 			name = "equipment_image_overlay"
-			spriteType = "GFX_TC_medium_tank_chassis"
+			spriteType = "GFX_leopold_blueprint"
 			position = { x=0 y=0 }
 		}
 
@@ -17,53 +17,47 @@ guiTypes = {
 			size = { width=100% height=100% }
 
 			containerWindowType = {
-				name = "leopold_external_armor_slot"
-				position = { x=0 y=0 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_arms_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_wings_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_legs_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_eye_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_skeleton_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_claws_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-			containerWindowType = {
-				name = "leopold_life_sustain_system_slot"
-				position = { x=0 y=20 }
-				size = { width=100% height=100% }
-			}
-
-			containerWindowType = {
 				name = "leopold_misc_1_slot"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 			}
 			containerWindowType = {
 				name = "leopold_misc_2_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_external_armor_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_power_source_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_weapon_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_misc_3_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_misc_4_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_misc_5_slot"
+				position = { x=0 y=20 }
+				size = { width=100% height=100% }
+			}
+			containerWindowType = {
+				name = "leopold_misc_6_slot"
 				position = { x=0 y=0 }
 				size = { width=100% height=100% }
 			}

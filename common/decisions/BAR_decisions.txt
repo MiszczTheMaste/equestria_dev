@@ -5116,14 +5116,16 @@ BAR_leopold_decisions = {
 		}
 		visible = {
 			hidden_trigger = {
-				check_variable = {
-					num_battalions_with_type@bar_leopold_clockwerk = 0
-				}
 				has_tech = bar_leopold_new_body
 			}
 		}
+		available = {
+			check_variable = {
+				num_battalions_with_type@bar_leopold_clockwerk = 0
+			}
+		}
 		modifier = {
-			civilian_factory_use = 2
+			civilian_factory_use = 10
 		}
 		days_remove = 40
 		days_re_enable = 90
@@ -5132,7 +5134,7 @@ BAR_leopold_decisions = {
 			hidden_effect = {
 				random_owned_controlled_state = {
 					create_unit = {
-						division = "name = \"Leopold Schmeller\" division_template = \"Leopold Schmeller\" start_experience_factor = 0.5 start_equipment_factor = 0.8"
+						division = "name = \"Leopold Schmeller\" division_template = \"Leopold Schmeller\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
 						owner = BAR
 					}
 				}

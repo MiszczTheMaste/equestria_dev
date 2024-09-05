@@ -4570,6 +4570,12 @@ scripted_gui = {
 			has_variable = bar_minesweeper_visible
 		}
 		triggers = {
+			bar_minesweeper_rounds_viira_head_visible = {
+				has_variable = bar_minesweeper_viira_help
+			}
+			bar_minesweeper_rounds_viira_text_visible = {
+				has_variable = bar_minesweeper_viira_help
+			}
 			bar_minesweeper_map_field_0_text_visible = {
 				AND = {
 					check_variable = {

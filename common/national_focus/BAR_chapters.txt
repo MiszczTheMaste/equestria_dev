@@ -56,7 +56,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_silver_gets_pep_talk
+		id = BAR_campfire_meeting
 		icon = GFX_goal_griffon_chair
 		cost = 1
 		x = 0
@@ -86,9 +86,9 @@ focus_tree = {
 		cost = 1
 		x = -1
 		y = 1
-		relative_position_id = BAR_silver_gets_pep_talk
+		relative_position_id = BAR_campfire_meeting
 		prerequisite = {
-			focus = BAR_silver_gets_pep_talk
+			focus = BAR_campfire_meeting
 		}
 		prerequisite = {
 			focus = BAR_put_an_effort

@@ -14,74 +14,88 @@ equipments = {
 		interface_category = interface_category_armor
 
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.8
+		maximum_speed = 6
+		reliability = 0
 		hardness = 0.8
 		armor_value = 10
 
 		build_cost_ic = 10
 
 		module_slots = {
+			leopold_misc_1_slot = {
+				required = no
+				allowed_module_categories = {
+					leopold_misc_module
+					leopold_speed_module
+					leopold_additional_wepons_module
+					leopold_aa_module
+					leopold_radar_module
+					leopold_gas_module
+				}
+			}
+			leopold_misc_2_slot = {
+				required = no
+				allowed_module_categories = {
+					leopold_misc_module
+					leopold_speed_module
+					leopold_additional_wepons_module
+					leopold_aa_module
+				}
+			}
+
 			leopold_external_armor_slot = {
 				required = yes
 				allowed_module_categories = {
 					leopold_external_armor_module
 				}
 			}
-
-			leopold_skeleton_slot = {
+			leopold_power_source_slot = {
 				required = yes
 				allowed_module_categories = {
-					leopold_skeleton_module
+					leopold_power_source_module
+				}
+			}
+			leopold_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					leopold_weapon_module
 				}
 			}
 
-			leopold_arms_slot = {
-				required = yes
-				allowed_module_categories = {
-					leopold_arms_module
-				}
-			}
-
-			leopold_claws_slot = {
-				required = yes
-				allowed_module_categories = {
-					leopold_claws_module
-				}
-			}
-
-			leopold_wings_slot = {
-				required = yes
-				allowed_module_categories = {
-					leopold_wings_module
-				}
-			}
-
-			leopold_life_sustain_system_slot = {
-				required = yes
-				allowed_module_categories = {
-					leopold_life_sustain_system_module
-				}
-			}
-
-			leopold_eye_slot = {
-				required = yes
-				allowed_module_categories = {
-					leopold_eye_module
-				}
-			}	
-
-			leopold_misc_1_slot = {
+			leopold_misc_3_slot = {
 				required = no
 				allowed_module_categories = {
 					leopold_misc_module
+					leopold_speed_module
+					leopold_additional_wepons_module
+					leopold_aa_module
 				}
 			}
-
-			leopold_misc_2_slot = {
+			leopold_misc_4_slot = {
 				required = no
 				allowed_module_categories = {
 					leopold_misc_module
+					leopold_speed_module
+					leopold_additional_wepons_module
+					leopold_aa_module
+				}
+			}
+			leopold_misc_5_slot = {
+				required = no
+				allowed_module_categories = {
+					leopold_misc_module
+					leopold_speed_module
+					leopold_additional_wepons_module
+					leopold_aa_module
+				}
+			}
+			leopold_misc_6_slot = {
+				required = no
+				allowed_module_categories = {
+					leopold_misc_module
+					leopold_speed_module
+					leopold_additional_wepons_module
+					leopold_aa_module
 				}
 			}
 		}

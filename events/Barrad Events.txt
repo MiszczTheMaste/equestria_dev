@@ -4429,31 +4429,15 @@ country_event = {
 		name = barrad_viira.16.a
 		hidden_effect = {
 			BAR_viira_lehtola = {
-				retire = yes
-			}
-			add_country_leader_role = {
-				character = BAR_no_one
-				promote_leader = yes
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = magocracy
-					traits = {
-						bar_viira_title_1
-						bar_viira_title_2
-						bar_viira_title_3
-						bar_viira_title_4
-						bar_viira_title_5
-						bar_viira_title_6
-						bar_viira_title_7
-						bar_viira_title_8
-						bar_viira_title_9
-						bar_viira_title_10
-						bar_viira_title_11
-						bar_viira_title_12
-						bar_viira_title_13
-						bar_viira_title_14
+				set_portraits = {
+					army = {
+						large = "gfx/leaders/BAR/Viira_ending.tga"
+					}
+					civilian = {
+						large = "gfx/leaders/BAR/Viira_ending.tga"
 					}
 				}
+				set_character_name = BAR_viira_lehtola_eternal_spirit
 			}
 		}
 	}
@@ -4485,6 +4469,20 @@ country_event = {
 	option = {
 		name = barrad_viira.18.a
 		#TODO: idea dla górali że napierdalają mocniej
+	}
+}
+country_event = {
+	id = barrad_viira.19
+	title = barrad_viira.19.t
+	desc = barrad_viira.19.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_viira.19"
+	}
+	is_triggered_only = yes
+	picture = GFX_event_medieval_village_2
+	option = {
+		name = barrad_viira.19.a
+		add_political_power = 15
 	}
 }
 

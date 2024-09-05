@@ -2111,29 +2111,57 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			leopold_steel_armor
+			leopold_dense_steel_armor
+			leopold_composite_armor
 			leopold_crystal_armor
 			leopold_crystal_alloy_armor
+			leopold_composite_crystal_alloy_armor
 			leopold_living_crystal_armor
-			leopold_basic_magical_exoskeleton
-			leopold_basic_electro_mechanical_exoskeleton
-			leopold_basic_electro_magical_exoskeleton
-			leopold_basic_mechanical_arms
-			leopold_pocket_rocket_launcher_arms
+			leopold_crystal_battery
+			leopold_corrupted_crystal_battery
+			leopold_magico_mechanical_battery
+			leopold_electro_magical_battery
+			leopold_calibrated_electro_magical_battery
+			leopold_living_crystal_battery
 			leopold_steel_claws
-			leopold_tungsten_claws
+			leopold_dense_metal_claws
+			leopold_composite_claws
 			leopold_crystal_claws
-			leopold_crystal_alloy_claws
-			leopold_mechanical_wings
-			leopold_magico_mechanical_wings
-			leopold_electro_mechanical_wings
-			leopold_electro_magical_wings
-			leopold_esoterical_propulsion
-			leopold_crystal_eye
-			leopold_outer_world_polished_crystal_eye
-			leopold_electro_magical_crystal_eye
-			leopold_basic_liquid_crystal_life_sustain
-			leopold_crystal_blood_life_sustain
+			leopold_composite_crystal_alloy_claws
 			leopold_teapot
+			leopold_anti_air_gun_1
+			leopold_anti_air_gun_2
+			leopold_anti_air_gun_3
+			leopold_anti_air_gun_4
+			leopold_anti_air_gun_5
+			leopold_sam_launcher
+			leopold_rocket_launcher_1
+			leopold_rocket_launcher_2
+			leopold_rocket_launcher_3
+			leopold_rocket_launcher_4
+			leopold_nuke_launcher_1
+			leopold_nuke_launcher_2
+			leopold_crystal_bomb_launcher
+			leopold_flamethrower
+			leopold_repair_clockworks
+			leopold_ancient_machine_computer_support
+			leopold_clockwork_precision_crystal_eye_polish
+			leopold_esoteric_crystal_eye_calibration
+			leopold_hard_kill_system
+			leopold_overclock_protocols
+			leopold_living_crystal_blood
+			leopold_infra_red_vision
+			leopold_rocket_boots
+			leopold_jetpack
+			leopold_surreal_physics_propulsion
+			leopold_smoke
+			leopold_poison_gas_smoke
+			leopold_combat_gas
+			leopold_radar_1
+			leopold_radar_2
+			leopold_radar_3
+			leopold_radar_4
+			leopold_radar_5
 		}
 		research_cost = 1
 	}

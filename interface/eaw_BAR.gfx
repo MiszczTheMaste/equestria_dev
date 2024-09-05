@@ -1684,4 +1684,8 @@ spriteTypes = {
 		name = "GFX_bar_amb_gunshot_bg"
 		textureFile = "gfx/interface/bar/red_field.dds"
 	}
+	spriteType = {
+		name = "GFX_leopold_blueprint"
+		textureFile = "gfx/interface/bar/tank_leopold_blueprint.tga"
+	}
 }

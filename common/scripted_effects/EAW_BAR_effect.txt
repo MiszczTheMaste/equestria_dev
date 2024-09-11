@@ -1918,7 +1918,7 @@ bar_viira_spells_overload_calculate_percentage = {
 }
 
 bar_viira_spells_overload_monthly_tickdown = {
-	set_temp_variable = {
+	set_variable = {
 		viira_mana_tickdown = 0
 	}
 	every_owned_state = {
@@ -1928,7 +1928,7 @@ bar_viira_spells_overload_monthly_tickdown = {
 			}
 		}
 		BAR = {
-			add_to_temp_variable = {
+			add_to_variable = {
 				viira_mana_tickdown = 9
 			}
 		}
@@ -1936,6 +1936,11 @@ bar_viira_spells_overload_monthly_tickdown = {
 	subtract_from_variable = {
 		viira_mana_overload = viira_mana_tickdown
 	}
+	
+	add_to_variable = {
+		viira_mana_overload = viira_monthly_mana_unkeep
+	}
+
 	if = {
 		limit = {
 			check_variable = {
@@ -2492,6 +2497,1088 @@ bar_count_resources = {
 		}
 		add_to_variable = {
 			res_total = BAR_resources_silver
+		}
+	}
+}
+
+
+#viira map
+viira_map_click_tile_2 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = WIT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^1 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = WIT } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_3 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = FRE.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^2 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 3
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FRE } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_4 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = RCT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^3 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = RCT } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_5 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = NIM.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^4 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = NIM } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_6 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = GRU.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^5 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = GRU } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_7 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = GRY.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = BRF.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = LUS.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^6 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 12
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = GRY } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = BRF } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = LUS } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_8 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = BAN.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = BOI.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = LAK.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^7 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = BAN } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = BOI } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = LAK } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_9 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = CYA.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = MIT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^8 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = CYA } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = MIT } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_10 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = SIC.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^9 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = SIC } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_11 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = FAL.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^10 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FAL } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_12 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = WNG.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^11 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 18
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = WNG } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_13 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = EQC.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^12 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = EQC } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_14 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = TAL.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^13 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 4
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = TAL } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_15 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = FRN.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = ARA.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^14 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 5
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FRN } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = ARA } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_16 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = AVI.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = ERI.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = EYR.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^15 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = AVI } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = ERI } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = EYR } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_17 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = JFT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = VIN.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = JRR.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = JEB.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = JER.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^16 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 18
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = JFT } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = VIN } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = JRR } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = JEB } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = JER } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_18 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = AET.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = HEL.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = FLO.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = POM.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^17 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = AET } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = HEL } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FLO } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = POM } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_19 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = PYT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = ROU.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^18 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 4
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = PYT } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = ROU } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_20 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = YAL.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = ANG.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = KAT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^19 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = YAL } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = ANG } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = KAT } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_21 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = GRI.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^20 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = GRI } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_22 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = HLQ.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = LNS.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^21 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = HLQ } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = LNS } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_23 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = BAK.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = NCH.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^22 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = BAK } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = NCH } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_24 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = DMT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^23 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 4
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = DMT } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_25 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = TRD.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = FEZ.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^24 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = TRD } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FEZ } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_26 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = FEA.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^25 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FEA } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_27 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = BRZ.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^26 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 4
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = BRZ } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_28 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = STW.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^27 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = STW } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_29 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = MNC.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^28 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 4
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = MNC } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_30 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = FAT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^29 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FAT } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_31 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = VED.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = HAU.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^30 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = VED } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = HAU } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_32 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = LCT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = DEP.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^31 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = LCT } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = DEP } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_33 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = SRS.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = NTR.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^32 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = SRS } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = NTR } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_34 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = HLR.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = DED.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^33 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 9
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = HLR } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = DED } }
+			add_core_of = BAR
+		}
+	}
+}
+viira_map_click_tile_35 = {
+	if = {
+		limit = {
+			all_of_scopes = {
+				array = FIR.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = FBK.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+			all_of_scopes = {
+				array = WAT.original_cores
+				owner = {
+					tag = BAR
+				}
+				has_state_flag = BAR_climate
+			}
+		}
+		set_variable = {
+			bar_viira_map_tiles^34 = 2
+		}
+		add_to_variable = {
+			viira_monthly_mana_unkeep = 6
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FIR } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = FBK } }
+			add_core_of = BAR
+		}
+		every_state = {
+			limit = { is_in_array = { state_original_cores = WAT } }
+			add_core_of = BAR
 		}
 	}
 }

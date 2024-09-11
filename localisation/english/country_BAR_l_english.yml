@@ -1399,9 +1399,7 @@
   BAR_ambrosius_gry_cosmetic:0 "Formalize our rule in Gryphia"
   BAR_ambrosius_wit_cosmetic:0 "Formalize our rule in Wittenland"
 
-  BAR_viira_coring:0 "Enforcing §OMind Control§!"
-  BAR_viira_coring_desc:0 "          Viira does not rule through love, or laws, or even fear. Her              method of control is far more direct: once a region has been           secured by her armies, she walks across the\n          newly-conquered land, spreading her magic to every city,               every town and every farmer's hut. \n\n           Once the spell is complete, the inhabitants of the land will            be forever bound to Viira's will by powerful magic, unable              to even think of resisting her commands."
-  viira_coring_progress:0 "Already pacifying another state"
+  BAR_viira_coring:0 "Neverending Ambition"
   BAR_viira_core_deer:0 "Shackle Austurland [OLV.GetFlag]"
   BAR_viira_core_kasa:0 "Shackle Kása [ZES.GetFlag]"
   BAR_viira_core_gryphus:0 "Pacify the Gryphus [GRU.GetFlag] Region"

@@ -2378,6 +2378,19 @@ technologies = {
 			irregular_infantry
 		}
 	}
+	BAR_viira_griff_mountaineers = {
+		allow = {
+			always = no
+		}		
+		research_cost = 1
+	
+		mountaineers = {
+			soft_attack = 0.15
+			breakthrough = 0.5
+			max_organisation = 15
+		}
+	}
+	
 
 	# Friendship
 

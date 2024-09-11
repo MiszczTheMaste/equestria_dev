@@ -6521,4 +6521,228 @@ scripted_gui = {
 			}
 		}
 	}
+	BAR_viira_coring_gui = {
+		window_name = "BAR_viira_coring_gui"
+		context_type = decision_category	
+		properties = {
+			bar_viira_map_tile_1 = {
+			frame = bar_viira_map_tiles^0
+			}
+			bar_viira_map_tile_2 = {
+			frame = bar_viira_map_tiles^1
+			}
+			bar_viira_map_tile_3 = {
+			frame = bar_viira_map_tiles^2
+			}
+			bar_viira_map_tile_4 = {
+			frame = bar_viira_map_tiles^3
+			}
+			bar_viira_map_tile_5 = {
+			frame = bar_viira_map_tiles^4
+			}
+			bar_viira_map_tile_6 = {
+			frame = bar_viira_map_tiles^5
+			}
+			bar_viira_map_tile_7 = {
+			frame = bar_viira_map_tiles^6
+			}
+			bar_viira_map_tile_8 = {
+			frame = bar_viira_map_tiles^7
+			}
+			bar_viira_map_tile_9 = {
+			frame = bar_viira_map_tiles^8
+			}
+			bar_viira_map_tile_10 = {
+			frame = bar_viira_map_tiles^9
+			}
+			bar_viira_map_tile_11 = {
+			frame = bar_viira_map_tiles^10
+			}
+			bar_viira_map_tile_12 = {
+			frame = bar_viira_map_tiles^11
+			}
+			bar_viira_map_tile_13 = {
+			frame = bar_viira_map_tiles^12
+			}
+			bar_viira_map_tile_14 = {
+			frame = bar_viira_map_tiles^13
+			}
+			bar_viira_map_tile_15 = {
+			frame = bar_viira_map_tiles^14
+			}
+			bar_viira_map_tile_16 = {
+			frame = bar_viira_map_tiles^15
+			}
+			bar_viira_map_tile_17 = {
+			frame = bar_viira_map_tiles^16
+			}
+			bar_viira_map_tile_18 = {
+			frame = bar_viira_map_tiles^17
+			}
+			bar_viira_map_tile_19 = {
+			frame = bar_viira_map_tiles^18
+			}
+			bar_viira_map_tile_20 = {
+			frame = bar_viira_map_tiles^19
+			}
+			bar_viira_map_tile_21 = {
+			frame = bar_viira_map_tiles^20
+			}
+			bar_viira_map_tile_22 = {
+			frame = bar_viira_map_tiles^21
+			}
+			bar_viira_map_tile_23 = {
+			frame = bar_viira_map_tiles^22
+			}
+			bar_viira_map_tile_24 = {
+			frame = bar_viira_map_tiles^23
+			}
+			bar_viira_map_tile_25 = {
+			frame = bar_viira_map_tiles^24
+			}
+			bar_viira_map_tile_26 = {
+			frame = bar_viira_map_tiles^25
+			}
+			bar_viira_map_tile_27 = {
+			frame = bar_viira_map_tiles^26
+			}
+			bar_viira_map_tile_28 = {
+			frame = bar_viira_map_tiles^27
+			}
+			bar_viira_map_tile_29 = {
+			frame = bar_viira_map_tiles^28
+			}
+			bar_viira_map_tile_30 = {
+			frame = bar_viira_map_tiles^29
+			}
+			bar_viira_map_tile_31 = {
+			frame = bar_viira_map_tiles^30
+			}
+			bar_viira_map_tile_32 = {
+			frame = bar_viira_map_tiles^31
+			}
+			bar_viira_map_tile_33 = {
+			frame = bar_viira_map_tiles^32
+			}
+			bar_viira_map_tile_34 = {
+			frame = bar_viira_map_tiles^33
+			}
+			bar_viira_map_tile_35 = {
+			frame = bar_viira_map_tiles^34
+			}			
+		}
+		effects = {
+			bar_viira_map_tile_2_click = {
+			viira_map_click_tile_2 = yes
+			}
+			bar_viira_map_tile_3_click = {
+			viira_map_click_tile_3 = yes
+			}
+			bar_viira_map_tile_4_click = {
+			viira_map_click_tile_4 = yes
+			}
+			bar_viira_map_tile_5_click = {
+			viira_map_click_tile_5 = yes
+			}
+			bar_viira_map_tile_6_click = {
+			viira_map_click_tile_6 = yes
+			}
+			bar_viira_map_tile_7_click = {
+			viira_map_click_tile_7 = yes
+			}
+			bar_viira_map_tile_8_click = {
+			viira_map_click_tile_8 = yes
+			}
+			bar_viira_map_tile_9_click = {
+			viira_map_click_tile_9 = yes
+			}
+			bar_viira_map_tile_10_click = {
+			viira_map_click_tile_10 = yes
+			}
+			bar_viira_map_tile_11_click = {
+			viira_map_click_tile_11 = yes
+			}
+			bar_viira_map_tile_12_click = {
+			viira_map_click_tile_12 = yes
+			}
+			bar_viira_map_tile_13_click = {
+			viira_map_click_tile_13 = yes
+			}
+			bar_viira_map_tile_14_click = {
+			viira_map_click_tile_14 = yes
+			}
+			bar_viira_map_tile_15_click = {
+			viira_map_click_tile_15 = yes
+			}
+			bar_viira_map_tile_16_click = {
+			viira_map_click_tile_16 = yes
+			}
+			bar_viira_map_tile_17_click = {
+			viira_map_click_tile_17 = yes
+			}
+			bar_viira_map_tile_18_click = {
+			viira_map_click_tile_18 = yes
+			}
+			bar_viira_map_tile_19_click = {
+			viira_map_click_tile_19 = yes
+			}
+			bar_viira_map_tile_20_click = {
+			viira_map_click_tile_20 = yes
+			}
+			bar_viira_map_tile_21_click = {
+			viira_map_click_tile_21 = yes
+			}
+			bar_viira_map_tile_22_click = {
+			viira_map_click_tile_22 = yes
+			}
+			bar_viira_map_tile_23_click = {
+			viira_map_click_tile_23 = yes
+			}
+			bar_viira_map_tile_24_click = {
+			viira_map_click_tile_24 = yes
+			}
+			bar_viira_map_tile_25_click = {
+			viira_map_click_tile_25 = yes
+			}
+			bar_viira_map_tile_26_click = {
+			viira_map_click_tile_26 = yes
+			}
+			bar_viira_map_tile_27_click = {
+			viira_map_click_tile_27 = yes
+			}
+			bar_viira_map_tile_28_click = {
+			viira_map_click_tile_28 = yes
+			}
+			bar_viira_map_tile_29_click = {
+			viira_map_click_tile_29 = yes
+			}
+			bar_viira_map_tile_30_click = {
+			viira_map_click_tile_30 = yes
+			}
+			bar_viira_map_tile_31_click = {
+			viira_map_click_tile_31 = yes
+			}
+			bar_viira_map_tile_32_click = {
+			viira_map_click_tile_32 = yes
+			}
+			bar_viira_map_tile_33_click = {
+			viira_map_click_tile_33 = yes
+			}
+			bar_viira_map_tile_34_click = {
+			viira_map_click_tile_34 = yes
+			}
+			bar_viira_map_tile_35_click = {
+			viira_map_click_tile_35 = yes
+			}
+				
+		}
+	}
+	BAR_viira_mana_container = {
+		window_name = "BAR_viira_mana_container"
+		context_type = player_context	
+		dirty = viira_mana_overload
+		visible = {
+			has_variable = viira_mana_overload
+		}
+	}
 }

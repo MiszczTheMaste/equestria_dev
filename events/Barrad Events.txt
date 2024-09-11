@@ -881,9 +881,7 @@ country_event = { #you win
 		name = bar_titan_fight.3.c
 		trigger = {
 			NOT = {
-				check_variable = {
-					BAR_relations_leopold_viira > 69
-				}
+				has_country_flag = BAR_begun_friendship_path
 			}
 		}
 		add_to_variable = {
@@ -4175,6 +4173,11 @@ country_event = {
 	desc = barrad_viira.1.d
 	picture = GFX_event_reactor_ignition
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = barrad_early_game
+		}
+	}
 	option = {
 		name = barrad_viira.1.a
 		trigger = {
@@ -4189,10 +4192,6 @@ country_event = {
 		}
 		custom_effect_tooltip = bar_virra_becomes_leader
 		hidden_effect = {
-			clr_country_flag = barrad_early_game
-			set_variable = {
-				viira_mana_overload = 0
-			}
 			country_event = {
 				id = barrad_viira.11
 			}
@@ -4203,7 +4202,7 @@ country_event = {
 		trigger = {
 			has_country_flag = bar_viira_investigation_step_11
 			check_variable = {
-				BAR_resources_viira > 1990
+				BAR_resources_viira > 1999
 			}
 		}
 		country_event = {
@@ -4275,9 +4274,17 @@ country_event = {
 			set_variable = {
 				BAR_viira_godhood = 1
 			}
-			clr_country_flag = barrad_early_game
+			set_variable = {
+				viira_max_overload = 0
+			}
 			set_variable = {
 				viira_mana_overload = 0
+			}
+			set_variable = {
+				viira_monthly_mana_unkeep = 0
+			}
+			set_variable = {
+				viira_mana_tickdown = 9
 			}
 			bar_viira_spells_max_overload = yes
 			bar_viira_spells_overload_calculate_percentage = yes
@@ -4468,7 +4475,9 @@ country_event = {
 	picture = GFX_event_medieval_village_2
 	option = {
 		name = barrad_viira.18.a
-		#TODO: idea dla górali że napierdalają mocniej
+		set_technology = {
+			BAR_viira_griff_mountaineers = 1
+		}
 	}
 }
 country_event = {

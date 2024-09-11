@@ -725,16 +725,10 @@
   BAR_party_best_guests_desc:0 "#TODO: Ambrosius eagerly waited for his favorite creatures in Barrad to arrive and entertain him and his guests."
   BAR_party_viira:0 "Party Trick"
   BAR_party_viira_desc:0 "Viira knows that the best way to get support from wealthy ponies is by impressing them. A little performance can go a long way, it makes them lower their guard and open their coin purses."
-  BAR_party_viira_2:0 "Prolonged Discussion"
-  BAR_party_viira_2_desc:0 "#TODO: party chain, Viira talks with everyone around, gets magic research bonus"
   BAR_party_leopold:0 "Griff from High Places"
   BAR_party_leopold_desc:0 "#TODO: party chain, Leopold is a center of the party, gets resources"
-  BAR_party_leopold_2:0 "Partygriff"
-  BAR_party_leopold_2_desc:0 "#TODO: party chain, Leopold is still in centre of attention, gets pp"
   BAR_party_asinti:0 "Stripped Cabal"
   BAR_party_asinti_desc:0 "#TODO: party chain, Asinti and his zebra followers get quite bit of attention, but they are only interested in aquiring more resources"
-  BAR_party_asinti_2:0 "New Meaning of Fun"
-  BAR_party_asinti_2_desc:0 "#TODO: party chain, Asinti and his followers show some fucked up shit that gets them lots of praise from other guests, and even more resources"
 
   BAR_campfire_meeting:0 "Pre-hunt Meeting"
   BAR_silver_and_viira_forest_adventure:0 "Anomaly Hunt"
@@ -2014,7 +2008,6 @@
   barrad_fourth.2.d:0 ""Everyone's been so serious around here, Gąsienica. I can't stand it!" Count Ambrosius leaned back from his desk, annoyed. He tapped his hoof in contemplation for a few moments. "It's time we had some real fun. You know what's fun? Fire!" Ambrosius focused on the candle in front of him and fed it a scrap of paper. He was engrossed as the flames consumed the paper, watching it with fascination. Gąsienica was mostly nonplussed.\n\n"But not this little flame, no. Something bigger. Much bigger." Ambrosius smiled contemplating the spectacle. "An inferno that sweeps through all the land, and lights up the sky!" He jumped up from his desk. "Let's go out and set the kindling. Come now, Gąsienica, we're burning daylight!" The Count rushed to gather his things for the excursion while Gąsienica lagged behind.\n\n"Hopefully he doesn't cause too much damage..." Gąsienica muttered."
   barrad_fourth.2.a:0 "It's getting hot in here!"
   
-  #leopold vs titan fight, minigame got removed bc it was annoying so instead we need 2 events to conclude the fight
   bar_titan_fight.2.t:0 "REPLACE_ME"
   bar_titan_fight.2.d:0 "#TODO: leopold vs titan fight, leopold beats up the titan alone"
   bar_titan_fight.2.a:0 "#TODO: scrap for resources"
@@ -2156,7 +2149,7 @@
   barrad_asinti.23.d:0 "    "Can’t you see the answer?” The voice echoed in Asinti's mind, its tone dripping with a blend of patience and frustration.\n    “If that reactor could not bring us enough magical power...” Asinti muttered to the empty room, his thoughts a whirlwind of confusion and determination.\n    “You need to think outside the box, my dear,” the voice continued. “This device of yours is a great start. But think, if you want to bring a spirit to the mortal realm, what would it be missing?”\n    “I don’t understand,” Asinti replied, his brow furrowing as he paced back and forth.\n    “Let me put it in different words,” the voice maintained its patient tone. “What is the difference between a spirit and a mortal?”\n    “The flesh?” Asinti ventured , realization began to dawn on him.\n    “Exactly,” the voice responded, sounding almost proud. “How could I take physical form if there was no flesh I could wear?”\n    “What do I need to do then?” Asinti asked, his voice filled with newfound determination.\n    “Gather your faithful followers and collect the blood of our enemies,” the voice instructed with a note of triumph. “Who knows? Maybe we could also consider its usage in smaller rituals.”"
   barrad_asinti.23.a:0 "It shall be done" 
   barrad_asinti.24.t:0 "Alchemical Secrets"
-  barrad_asinti.24.d:0 "    Asinti sat alone, surrounded by ancient tomes and yellowed scrolls. Before him lay Ambrosius' alchemical notes, bound in a thick, leather volume. He could barely believe it was written by him - it was incredibly detailed, meticulous, and most surprisingly, extremely well organized.\n    From the moment they met, Asinti had been suspicious about Ambrosius' alchemical prowess. Now, his suspicions were confirmed. Through means yet unknown to him, Ambrosius had managed to learn the secrets of potions used by the Chargers and fuse them with their local pony alchemy. According to the notes, these potions could even be used by weaker creatures, provided they had a strong enough will.\n    Reading further, Asinti stumbled upon a detailed description of an experiment designed to confirm this theory. It described how Gąsienica underwent the process. The subject was of above-average size and strength but was gravely wounded, simulating how a weaker creature's body would react to the potions. The next pages explained in great detail the changes his body underwent—how it was broken down and rebuilt from scratch. All this happened amidst excruciating pain, described by Ambrosius: "When trying to ask about the amount of pain the subject feels, he let out a scream so loud, so pleading, so... incomprehensible... I’ve never heard such a scream in my entire life.""
+  barrad_asinti.24.d:0 "    Asinti sat alone, surrounded by ancient tomes and yellowed scrolls. Before him lay Ambrosius' alchemical notes, bound in a thick, leather volume. He could barely believe it was written by him - it was incredibly detailed, meticulous, and most surprisingly, extremely well organized.\n    From the moment they met, Asinti had been suspicious about Ambrosius' alchemical prowess. Now, his suspicions were confirmed. Through means yet unknown to him, Ambrosius had managed to learn the secrets of potions used by the Chargers and fuse them with that Asinti could not recognise. According to the notes, these potions could even be used by weaker creatures, provided they had a strong enough will.\n    Reading further, Asinti stumbled upon a detailed description of an experiment designed to confirm this theory. It described how Gąsienica underwent the process. The subject was of above-average size and strength but was gravely wounded, simulating how a weaker creature's body would react to the potions. The next pages explained in great detail the changes his body underwent—how it was broken down and rebuilt from scratch. All this happened amidst excruciating pain, described by Ambrosius: "When trying to ask about the amount of pain the subject feels, he let out a scream so loud, so pleading, so... incomprehensible... I’ve never heard such a scream in my entire life.""
   barrad_asinti.24.a:0 "Sounds terribly... useful"
   barrad_asinti.28.t:0 "Loose ends"
   barrad_asinti.28.d:0 "    The night was unnervingly quiet, the usual sounds of Elysium muffled under a blanket of foreboding silence. Leopold stood in front of the massive doors. He pounded on the wood, "Silver Star, if you won't open up, I'll get inside anyway." Seeing there is no answer he considered possible ways to bypass the enchantments, the doors creaked open. "What do you want?" Silver Star's voice was barely audible, his face only partially visible through the crack.\n    Leopold looked at him with confusion. "What do I... Silver Star, we need to retake the reactor before that zebra does something idiotic with it!"\n    "Just the two of us?" Silver Star leaned forward, his face more visible now. "Against how many of those creepy zebras?"\n    "It doesn't matter," the griffon responded. "First, we're smarter. Second, we'll catch them by surprise."\n    But as he finished speaking, a sudden movement caught Silver Star's eye. "Get down, Leopold!" he yelled, but it was too late. Before either could react further, each was struck by the blow on the head, rendering them unconscious."
@@ -2723,27 +2716,22 @@
   bar_pen_screen_silver_info_last_name:0 "Last name:  of Wittenland"
   bar_pen_screen_silver_info_birthplace:0 "Birthplace:  Wittenland, High Mane"
   bar_pen_screen_silver_info_birthyear:0 "Birthyear:  979"
-  bar_pen_screen_silver_info_status:0 "Status:  [bar_silver_star_status]"
   bar_pen_screen_asinti_info_first_name:0 "First name:  Asinti"
   bar_pen_screen_asinti_info_last_name:0 "Last name:  ??"
   bar_pen_screen_asinti_info_birthplace:0 "Birthplace:  North Zebrica, ??"
   bar_pen_screen_asinti_info_birthyear:0 "Birthyear:  ??"
-  bar_pen_screen_asinti_info_status:0 "Status:  [bar_asinti_status]"
   bar_pen_screen_ambrosius_info_first_name:0 "First name:  Ambrosius"
   bar_pen_screen_ambrosius_info_last_name:0 "Last name:  of Barrad"
   bar_pen_screen_ambrosius_info_birthplace:0 "Birthplace:  Wittenland, Dunburh"
   bar_pen_screen_ambrosius_info_birthyear:0 "Birthyear:  945"
-  bar_pen_screen_ambrosius_info_status:0 "Status:  [bar_ambrosius_status]"
   bar_pen_screen_leopold_info_first_name:0 "First name:  Leopold"
   bar_pen_screen_leopold_info_last_name:0 "Last name:  Schmeller"
   bar_pen_screen_leopold_info_birthplace:0 "Birthplace:  Griffon Empire, Gamia"
   bar_pen_screen_leopold_info_birthyear:0 "Birthyear:  966"
-  bar_pen_screen_leopold_info_status:0 "Status:  [bar_leopold_status]"
   bar_pen_screen_viira_info_first_name:0 "First name:  Viira"
   bar_pen_screen_viira_info_last_name:0 "Last name:  Lehtola"
   bar_pen_screen_viira_info_birthplace:0 "Birthplace:  Austurland(?), ??"
   bar_pen_screen_viira_info_birthyear:0 "Birthyear:  978"
-  bar_pen_screen_viira_info_status:0 "Status:  [bar_viira_status]"
   BAR_status_alive:0 "alive"
   BAR_status_dead:0 "dead"
   BAR_threat_low:0 "low"
@@ -2765,7 +2753,7 @@
   ##### deet magic ######
   BAR_viira_spells:0 "Viira's New Powers"
 
-  BAR_viira_spells_desc:0 "After getting hold of the reactor power and binding the ancient Entity to her will Viira had aquired a set of new powers, but with such great power goes great power gets great responsibility. One wrong decision can have §Rdire consequences§!\n\nBut for now...\n[Root.BAR_viira_magic_tired]"
+  BAR_viira_spells_desc:0 "After getting hold of the reactor power and binding the ancient Entity to her will Viira had aquired a set of new powers, but with such great power goes great power gets great responsibility. One wrong decision can have §Rdire consequences§!\n\nBut for now...\n[Root.BAR_viira_magic_tired]\n\nThe reactor is source of Viira's new power. Losing hold of it will cripple her abilities, while gaining new reactors will increase her magical potential\n\nCurrently Viira's power limit is: §2[?viira_max_overload]§!£viira_mana_text\n\nHer current power usage is: §2[?viira_mana_overload]§!£viira_mana_text\n\nAmount of power she regenerates monthly from reactors: §G[?viira_mana_tickdown]§!£viira_mana_text (§G9§!£viira_mana_text per reactor)\n\nMonthly power required to maintain her current endeavors: §R[?viira_monthly_mana_unkeep]§!£viira_mana_text"
   BAR_viira_magic_tired_0:0 "§2...Viira is rested and ready to put her powers to use.§!"
   BAR_viira_magic_tired_1:0 "§3...Viira has not even broken a sweat yet.§!"
   BAR_viira_magic_tired_2:0 "§4...Viira had her fun, maybe a little break won't hurt...§!"
@@ -2798,9 +2786,6 @@
   BAR_viira_spell_teleport:0 "Teleport"
   BAR_viira_spell_global_psi_emission:0 "Global Psi Emission"
 
-  #TODO rewite text below
-  bar_viira_spells_mana_help:0 "Write in cool way that 1 reactor == 100 mana."
-
   #spell tooltips
   bar_viira_nukes_button_tooltip:0 "Let them feel my wrath of thousand thunders!"
   bar_viira_zone_button_tooltip:0 "Spread your home"
@@ -2827,6 +2812,11 @@
   BAR_viira_spell_gate_of_heavens:0 "§CGate of Heaven§! pray for us!"
   BAR_viira_spell_comfort_of_afflicted:0 "§CComfort of the Afflicted§! pray for us!"
 
+  #viira coring
+  BAR_viira_coring_gui_info_text:0 "Viira's ambition knows no borders. Ruling over a backward, forgotten scrap of land like Barrad, even as a goddess to its inhabitants, is far from enough. Expanding her realm alone won't satisfy her hunger for power — no, the ungrateful creatures will still defy her. Conquest by the sword is only the first step; to truly dominate, her voice must resonate across new lands, weaving the same melody thats sings in minds of her loyal subjects. Their head must be filled with her influence, bending to their new purpose. But even Viira must tread carefully—such a task, even for a goddess, demands caution."
+
+  bar_viira_map_tile_2_tooltip:0 "Requires to hold all provinces in the region and has them have Barrad Climate.\n\nWill add §R6§! points of unkeep and core all provinces!"
+  bar_viira_map_tile_3_tooltip:0 "Requires to hold all provinces in the region and has them have Barrad Climate.\n\nWill add §R3§! points of unkeep and core all provinces!"
 
  #######                              
     #    #####    ##   # #####  ####  

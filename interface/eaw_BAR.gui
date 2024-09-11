@@ -6999,4 +6999,257 @@ guiTypes = {
 		fade_time = 500
 		fade_type = linear
 	}
+	containerwindowtype = {
+		name = "BAR_viira_coring_gui"
+		size = { width=490 height=570 }
+		position = { x=0 y=0 }
+		
+		
+		instantTextboxType = {
+		name = "BAR_viira_coring_gui_info"
+		text = "BAR_viira_coring_gui_info_text"
+		position = { x=0 y=420 }
+		maxWidth = 490
+		maxHeight = 150
+		format = LEFT
+		font = "hoi_16mbs"
+		}
+
+		buttonType = {
+		name = "bar_viira_map_tile_1"
+		spriteType = "GFX_bar_viira_map_tile_1"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_2"
+		spriteType = "GFX_bar_viira_map_tile_2"
+		position = { x=0 y=0 }
+		frame = 1
+		pdx_tooltip = bar_viira_map_tile_2_tooltip
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_3"
+		spriteType = "GFX_bar_viira_map_tile_3"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_4"
+		spriteType = "GFX_bar_viira_map_tile_4"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_5"
+		spriteType = "GFX_bar_viira_map_tile_5"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_6"
+		spriteType = "GFX_bar_viira_map_tile_6"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_7"
+		spriteType = "GFX_bar_viira_map_tile_7"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_8"
+		spriteType = "GFX_bar_viira_map_tile_8"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_9"
+		spriteType = "GFX_bar_viira_map_tile_9"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_10"
+		spriteType = "GFX_bar_viira_map_tile_10"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_11"
+		spriteType = "GFX_bar_viira_map_tile_11"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_12"
+		spriteType = "GFX_bar_viira_map_tile_12"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_13"
+		spriteType = "GFX_bar_viira_map_tile_13"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_14"
+		spriteType = "GFX_bar_viira_map_tile_14"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_15"
+		spriteType = "GFX_bar_viira_map_tile_15"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_16"
+		spriteType = "GFX_bar_viira_map_tile_16"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_17"
+		spriteType = "GFX_bar_viira_map_tile_17"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_18"
+		spriteType = "GFX_bar_viira_map_tile_18"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_19"
+		spriteType = "GFX_bar_viira_map_tile_19"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_20"
+		spriteType = "GFX_bar_viira_map_tile_20"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_21"
+		spriteType = "GFX_bar_viira_map_tile_21"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_22"
+		spriteType = "GFX_bar_viira_map_tile_22"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_23"
+		spriteType = "GFX_bar_viira_map_tile_23"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_24"
+		spriteType = "GFX_bar_viira_map_tile_24"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_25"
+		spriteType = "GFX_bar_viira_map_tile_25"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_26"
+		spriteType = "GFX_bar_viira_map_tile_26"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_27"
+		spriteType = "GFX_bar_viira_map_tile_27"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_28"
+		spriteType = "GFX_bar_viira_map_tile_28"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_29"
+		spriteType = "GFX_bar_viira_map_tile_29"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_30"
+		spriteType = "GFX_bar_viira_map_tile_30"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_31"
+		spriteType = "GFX_bar_viira_map_tile_31"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_32"
+		spriteType = "GFX_bar_viira_map_tile_32"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_33"
+		spriteType = "GFX_bar_viira_map_tile_33"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_34"
+		spriteType = "GFX_bar_viira_map_tile_34"
+		position = { x=0 y=0 }
+		frame = 1
+		}
+		buttonType = {
+		name = "bar_viira_map_tile_35"
+		spriteType = "GFX_bar_viira_map_tile_35"
+		position = { x=0 y=0 }
+		frame = 1
+		}			
+	}
+
+	containerWindowType = {
+		name = "BAR_viira_mana_container"
+		position = { x = 966 y = 6 }
+		size = { width = 124 height = 26 }
+		iconType = {
+			name ="bar_viira_mana_icon"
+			spriteType = "GFX_viira_mana_text"
+			position = { x= 5 y = 2 }
+		}
+		background ={
+			name ="background"
+			spriteType = "GFX_generic_box_125"
+		}
+		
+		instantTextBoxType = {
+			name ="BAR_viira_mana_container_text"
+			position = { x = 0 y = 5 }
+			font = "hoi_16mbs"
+			text = "[?viira_mana_overload]/[?viira_max_overload]"
+			format = right
+			maxWidth = 116
+			maxHeight = 26
+		}
+	}
 }

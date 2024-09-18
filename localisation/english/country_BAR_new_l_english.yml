@@ -3244,6 +3244,8 @@ bar_minesweeper_map_field_99_text:0 "[?bar_minesweeper_mine_map^99]"
 
 
 #leopold parts
+tank_designer_bar_leopold_equipment:0 ""
+
 EQ_MOD_CAT_leopold_misc_module_TITLE:0 "Misc"
 EQ_MOD_CAT_leopold_speed_module_TITLE:0 "Speed Acceleration"
 EQ_MOD_CAT_leopold_additional_wepons_module_TITLE:0 "Back-mounted Weaponry"
@@ -3264,4 +3266,3 @@ leopold_external_armor_slot:0 "External Amor"
 leopold_power_source_slot:0 "Power Source"
 leopold_weapon_slot:0 "Primary Weapon"
 
-tank_designer_bar_leopol_equipment:0 ""

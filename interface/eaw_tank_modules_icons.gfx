@@ -276,4 +276,29 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_gas_module.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_leopold_radar_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_leopold_radar_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_leopold_radar_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_leopold_radar_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_leopold_radar_5"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
+		legacy_lazy_load = no
+	}
 }

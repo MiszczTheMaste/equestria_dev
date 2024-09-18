@@ -14,7 +14,6 @@ add_namespace = barrad_leopold
 add_namespace = barrad_viira
 add_namespace = barrad_ai
 add_namespace = barrad_wit
-add_namespace = barrad_monthy_relation_hit_event
 add_namespace = barrad_viira_amb
 add_namespace = bar_titan_fight
 add_namespace = bar_sane_ambrosius
@@ -214,112 +213,6 @@ country_event = {
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
 
- #     #                                            ######                                                       #     #                
- ##   ##  ####  #    # ##### #    # #      #   #    #     # ###### #        ##   ##### #  ####  #    #  ####     #     # # #####  ####  
- # # # # #    # ##   #   #   #    # #       # #     #     # #      #       #  #    #   # #    # ##   # #         #     # #   #   #      
- #  #  # #    # # #  #   #   ###### #        #      ######  #####  #      #    #   #   # #    # # #  #  ####     ####### #   #    ####  
- #     # #    # #  # #   #   #    # #        #      #   #   #      #      ######   #   # #    # #  # #      #    #     # #   #        # 
- #     # #    # #   ##   #   #    # #        #      #    #  #      #      #    #   #   # #    # #   ## #    #    #     # #   #   #    # 
- #     #  ####  #    #   #   #    # ######   #      #     # ###### ###### #    #   #   #  ####  #    #  ####     #     # #   #    ####  
-                                                                                                                                        
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-
-country_event = {
-	id = barrad_monthy_relation_hit_event.1
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_monthy_relation_hit_event.1"
-	}
-	title = barrad_monthy_relation_hit_event.1.t
-	desc = barrad_monthy_relation_hit_event.1.d
-	picture = GFX_event_atree_lighting
-	is_triggered_only = yes
-	option = {
-		name = barrad_monthy_relation_hit_event.1.a
-		BAR_relations_decrease_asinti_leopold_5 = yes
-	}
-}
-
-country_event = {
-	id = barrad_monthy_relation_hit_event.2
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_monthy_relation_hit_event.2"
-	}
-	title = barrad_monthy_relation_hit_event.2.t
-	desc = barrad_monthy_relation_hit_event.2.d
-	picture = GFX_event_atree_lighting
-	is_triggered_only = yes
-	option = {
-		name = barrad_monthy_relation_hit_event.2.a
-		BAR_relations_decrease_asinti_silver_5 = yes
-	}
-}
-
-country_event = {
-	id = barrad_monthy_relation_hit_event.3
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_monthy_relation_hit_event.3"
-	}
-	title = barrad_monthy_relation_hit_event.3.t
-	desc = barrad_monthy_relation_hit_event.3.d
-	picture = GFX_event_atree_lighting
-	is_triggered_only = yes
-	option = {
-		name = barrad_monthy_relation_hit_event.3.a
-		BAR_relations_decrease_asinti_viira_5 = yes
-	}
-}
-
-country_event = {
-	id = barrad_monthy_relation_hit_event.4
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_monthy_relation_hit_event.4"
-	}
-	title = barrad_monthy_relation_hit_event.4.t
-	desc = barrad_monthy_relation_hit_event.4.d
-	picture = GFX_event_atree_lighting
-	is_triggered_only = yes
-	option = {
-		name = barrad_monthy_relation_hit_event.4.a
-		BAR_relations_decrease_leopold_viira_5 = yes
-	}
-}
-
-country_event = {
-	id = barrad_monthy_relation_hit_event.5
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_monthy_relation_hit_event.5"
-	}
-	title = barrad_monthy_relation_hit_event.5.t
-	desc = barrad_monthy_relation_hit_event.5.d
-	picture = GFX_event_atree_lighting
-	is_triggered_only = yes
-	option = {
-		name = barrad_monthy_relation_hit_event.5.a
-		BAR_relations_decrease_silver_viira_5 = yes
-	}
-}
-
-country_event = {
-	id = barrad_monthy_relation_hit_event.6
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_monthy_relation_hit_event.6"
-	}
-	title = barrad_monthy_relation_hit_event.6.t
-	desc = barrad_monthy_relation_hit_event.6.d
-	picture = GFX_event_atree_lighting
-	is_triggered_only = yes
-	option = {
-		name = barrad_monthy_relation_hit_event.6.a
-		BAR_relations_decrease_silver_leopold_5 = yes
-	}
-}
-
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-##############################################################################################################################################################################
-
  #     #                                                          
  ##    # #  ####  #    # ##### #    #   ##   #####  ######  ####  
  # #   # # #    # #    #   #   ##  ##  #  #  #    # #      #      
@@ -465,7 +358,11 @@ country_event = {
 	option = {
 		#:)
 		name = barrad_friends.1.a
-		BAR_relations_increase_silver_viira_5 = yes
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		set_country_flag = BAR_silver_friendship_viira
 	}
 }
@@ -483,7 +380,11 @@ country_event = {
 	option = {
 		#:)
 		name = barrad_friends.2.a
-		BAR_relations_increase_silver_leopold_5 = yes
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		set_country_flag = BAR_silver_friendship_leopold
 	}
 }
@@ -501,7 +402,11 @@ country_event = {
 	option = {
 		#:)
 		name = barrad_friends.3.a
-		BAR_relations_increase_asinti_silver_5 = yes
+		add_to_variable = {
+			var = BAR_relations_asinti_silver
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		set_country_flag = BAR_silver_friendship_asinti
 	}
 }
@@ -922,403 +827,698 @@ country_event = {
 	}
 	title = bar_ambrosius_madness.1.t
 	desc = {
-		text = bar_ambrosius_madness.1.a
-		trigger = {
-			check_variable = {
-				amb_bor = 1
-			}
-		}
+	text = bar_ambrosius_madness.1.d1
+	trigger = {
+	check_variable = {
+	amb_bor = 1
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.b
-		trigger = {
-			check_variable = {
-				amb_bor = 2
-			}
-		}
+	text = bar_ambrosius_madness.1.d2
+	trigger = {
+	check_variable = {
+	amb_bor = 2
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.c
-		trigger = {
-			check_variable = {
-				amb_bor = 3
-			}
-		}
+	text = bar_ambrosius_madness.1.d3
+	trigger = {
+	check_variable = {
+	amb_bor = 3
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.e1
-		trigger = {
-			check_variable = {
-				amb_bor = 41
-			}
-		}
+	text = bar_ambrosius_madness.1.d4
+	trigger = {
+	check_variable = {
+	amb_bor = 4
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.e2
-		trigger = {
-			check_variable = {
-				amb_bor = 42
-			}
-		}
+	text = bar_ambrosius_madness.1.d5
+	trigger = {
+	check_variable = {
+	amb_bor = 5
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.e3
-		trigger = {
-			check_variable = {
-				amb_bor = 43
-			}
-		}
+	text = bar_ambrosius_madness.1.d6
+	trigger = {
+	check_variable = {
+	amb_bor = 6
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.e4
-		trigger = {
-			check_variable = {
-				amb_bor = 44
-			}
-		}
+	text = bar_ambrosius_madness.1.d7
+	trigger = {
+	check_variable = {
+	amb_bor = 7
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.e5
-		trigger = {
-			check_variable = {
-				amb_bor = 45
-			}
-		}
+	text = bar_ambrosius_madness.1.d8
+	trigger = {
+	check_variable = {
+	amb_bor = 8
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.e6
-		trigger = {
-			check_variable = {
-				amb_bor = 46
-			}
-		}
+	text = bar_ambrosius_madness.1.d9
+	trigger = {
+	check_variable = {
+	amb_bor = 9
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.f
-		trigger = {
-			check_variable = {
-				amb_bor = 5
-			}
-		}
+	text = bar_ambrosius_madness.1.d10
+	trigger = {
+	check_variable = {
+	amb_bor = 10
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.g1
-		trigger = {
-			check_variable = {
-				amb_bor = 61
-			}
-		}
+	text = bar_ambrosius_madness.1.d11
+	trigger = {
+	check_variable = {
+	amb_bor = 11
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.g2
-		trigger = {
-			check_variable = {
-				amb_bor = 62
-			}
-		}
+	text = bar_ambrosius_madness.1.d12
+	trigger = {
+	check_variable = {
+	amb_bor = 12
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.g3
-		trigger = {
-			check_variable = {
-				amb_bor = 63
-			}
-		}
+	text = bar_ambrosius_madness.1.d13
+	trigger = {
+	check_variable = {
+	amb_bor = 13
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.g4
-		trigger = {
-			check_variable = {
-				amb_bor = 64
-			}
-		}
+	text = bar_ambrosius_madness.1.d14
+	trigger = {
+	check_variable = {
+	amb_bor = 14
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.g5
-		trigger = {
-			check_variable = {
-				amb_bor = 65
-			}
-		}
+	text = bar_ambrosius_madness.1.d15
+	trigger = {
+	check_variable = {
+	amb_bor = 15
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.g6
-		trigger = {
-			check_variable = {
-				amb_bor = 66
-			}
-		}
+	text = bar_ambrosius_madness.1.d16
+	trigger = {
+	check_variable = {
+	amb_bor = 16
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.h
-		trigger = {
-			check_variable = {
-				amb_bor = 7
-			}
-		}
+	text = bar_ambrosius_madness.1.d17
+	trigger = {
+	check_variable = {
+	amb_bor = 17
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.i
-		trigger = {
-			check_variable = {
-				amb_bor = 8
-			}
-		}
+	text = bar_ambrosius_madness.1.d18
+	trigger = {
+	check_variable = {
+	amb_bor = 18
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.j
-		trigger = {
-			check_variable = {
-				amb_bor = 9
-			}
-		}
+	text = bar_ambrosius_madness.1.d19
+	trigger = {
+	check_variable = {
+	amb_bor = 19
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.k
-		trigger = {
-			check_variable = {
-				amb_bor = 10
-			}
-		}
+	text = bar_ambrosius_madness.1.d20
+	trigger = {
+	check_variable = {
+	amb_bor = 20
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.l
-		trigger = {
-			check_variable = {
-				amb_bor = 11
-			}
-		}
+	text = bar_ambrosius_madness.1.d21
+	trigger = {
+	check_variable = {
+	amb_bor = 21
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.m
-		trigger = {
-			check_variable = {
-				amb_bor = 12
-			}
-		}
+	text = bar_ambrosius_madness.1.d22
+	trigger = {
+	check_variable = {
+	amb_bor = 22
+	}
+	}
 	}
 	desc = {
-		text = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 13
-			}
-		}
+	text = bar_ambrosius_madness.1.d23
+	trigger = {
+	check_variable = {
+	amb_bor = 23
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d24
+	trigger = {
+	check_variable = {
+	amb_bor = 24
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d25
+	trigger = {
+	check_variable = {
+	amb_bor = 25
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d26
+	trigger = {
+	check_variable = {
+	amb_bor = 26
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d27
+	trigger = {
+	check_variable = {
+	amb_bor = 27
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d28
+	trigger = {
+	check_variable = {
+	amb_bor = 28
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d29
+	trigger = {
+	check_variable = {
+	amb_bor = 29
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d30
+	trigger = {
+	check_variable = {
+	amb_bor = 30
+	}
+	}
+	}
+	desc = {
+	text = bar_ambrosius_madness.1.d31
+	trigger = {
+	check_variable = {
+	amb_bor = 31
+	}
+	}
 	}
 	picture = GFX_event_dice
 	is_triggered_only = yes
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 1
 			}
 		}
-		add_political_power = -50
+		add_political_power = -10
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 2
 			}
 		}
-		add_political_power = -100
+		add_political_power = -25
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 3
+			}
+		}
+		add_manpower = -100
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 4
+			}
+		}
+		add_manpower = -500
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 5
 			}
 		}
 		add_manpower = -1000
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
-				amb_bor = 41
-			}
-		}
-		BAR_relations_decrease_asinti_leopold_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 42
-			}
-		}
-		BAR_relations_decrease_asinti_silver_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 43
-			}
-		}
-		BAR_relations_decrease_asinti_viira_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 44
-			}
-		}
-		BAR_relations_decrease_leopold_viira_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 45
-			}
-		}
-		BAR_relations_decrease_silver_viira_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 46
-			}
-		}
-		BAR_relations_decrease_silver_leopold_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 5
+				amb_bor = 6
 			}
 		}
 		add_timed_idea = {
 			idea = BAR_ambrosius_research_negative
-			days = 70
+			days = 30
 		}
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 61
-			}
-		}
-		BAR_relations_increase_asinti_silver_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 62
-			}
-		}
-		BAR_relations_increase_asinti_silver_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 63
-			}
-		}
-		BAR_relations_increase_asinti_viira_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 64
-			}
-		}
-		BAR_relations_increase_leopold_viira_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 65
-			}
-		}
-		BAR_relations_increase_silver_viira_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
-		trigger = {
-			check_variable = {
-				amb_bor = 66
-			}
-		}
-		BAR_relations_increase_silver_leopold_5 = yes
-	}
-	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 7
 			}
 		}
-		add_timed_idea = {
-			idea = BAR_ambrosius_research_positive
-			days = 70
+		subtract_from_variable = {
+			var = BAR_relations_asinti_silver
+			value = 1
 		}
+		subtract_from_variable = {
+			var = BAR_relations_asinti_viira
+			value = 1
+		}
+		subtract_from_variable = {
+			var = BAR_relations_asinti_leopold
+			value = 1
+		}
+		subtract_from_variable = {
+			var = BAR_relations_silver_leopold
+			value = 1
+		}
+		subtract_from_variable = {
+			var = BAR_relations_silver_viira
+			value = 1
+		}
+		subtract_from_variable = {
+			var = BAR_relations_leopold_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 8
 			}
 		}
-		one_random_industrial_complex = yes
+		subtract_from_variable = {
+			var = BAR_relations_asinti_silver
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 9
 			}
 		}
-		bar_silver_resources_add_250 = yes
+		subtract_from_variable = {
+			var = BAR_relations_asinti_leopold
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 10
 			}
 		}
-		bar_asinti_resources_add_250 = yes
+		subtract_from_variable = {
+			var = BAR_relations_asinti_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 11
 			}
 		}
-		bar_viira_resources_add_250 = yes
+		subtract_from_variable = {
+			var = BAR_relations_silver_leopold
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 12
 			}
 		}
-		bar_leopold_resources_add_250 = yes
+		subtract_from_variable = {
+			var = BAR_relations_silver_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
 	}
 	option = {
-		name = bar_ambrosius_madness.1.n
+		name = bar_ambrosius_madness.1.a
 		trigger = {
 			check_variable = {
 				amb_bor = 13
 			}
 		}
-		add_political_power = 50
+		subtract_from_variable = {
+			var = BAR_relations_leopold_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 14
+			}
+		}
+		one_random_arms_factory = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 15
+			}
+		}
+		one_random_industrial_complex = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 16
+			}
+		}
+		add_stability = -0.01
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 17
+			}
+		}
+		add_political_power = -10
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 18
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_silver
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_viira
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_leopold
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_leopold_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 19
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_silver
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 20
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_leopold
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 21
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 22
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 23
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 24
+			}
+		}
+		add_to_variable = {
+			var = BAR_relations_leopold_viira
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 25
+			}
+		}
+		every_owned_state = {
+			if = {
+				limit = {
+					infrastructure > 0
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 0.1
+				}
+			}
+		}
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 26
+			}
+		}
+		every_owned_state = {
+			if = {
+				limit = {
+					arms_factory > 0
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 0.1
+				}
+			}
+		}
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 27
+			}
+		}
+		every_owned_state = {
+			if = {
+				limit = {
+					industrial_complex > 0
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 0.1
+				}
+			}
+		}
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 28
+			}
+		}
+		bar_viira_resources_add_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 29
+			}
+		}
+		bar_silver_resources_add_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 30
+			}
+		}
+		bar_asinti_resources_add_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 31
+			}
+		}
+		bar_leopold_resources_add_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 28
+			}
+		}
+		bar_viira_resources_subtract_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 29
+			}
+		}
+		bar_silver_resources_subtract_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 30
+			}
+		}
+		bar_asinti_resources_subtract_250 = yes
+	}
+	option = {
+		name = bar_ambrosius_madness.1.a
+		trigger = {
+			check_variable = {
+				amb_bor = 31
+			}
+		}
+		bar_leopold_resources_subtract_250 = yes
 	}
 }
 
@@ -1501,13 +1701,23 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_first.6.a
-		BAR_relations_decrease_asinti_silver_5 = yes
-		BAR_relations_decrease_asinti_leopold_5 = yes
-		BAR_relations_increase_silver_leopold_5 = yes
+		subtract_from_variable = {
+			var = BAR_relations_asinti_silver
+			value = 5
+		}
+		subtract_from_variable = {
+			var = BAR_relations_asinti_leopold
+			value = 5
+		}
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 	}
 }
 country_event = {
-	id = barrad_first.7	#silver star get pep talk from leopold
+	id = barrad_first.7	#silver star meets with others
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_first.7"
 	}
@@ -1517,7 +1727,20 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_first.7.a
-		BAR_relations_increase_silver_leopold_5 = yes
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = 1
+		}
+		add_to_variable = {
+			var = BAR_relations_asinti_silver
+			value = 1
+		}
+		BAR_relations_idea_swap = yes
+	}
 	}
 }
 country_event = {
@@ -1531,7 +1754,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_first.8.a
-		BAR_relations_increase_silver_viira_5 = yes
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		bar_silver_resources_add_250 = yes
 		bar_viira_resources_add_250 = yes
 	}
@@ -1547,7 +1774,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_first.9.a
-		BAR_relations_increase_asinti_viira_5 = yes
+		add_to_variable = {
+			var = BAR_relations_asinti_viira
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 	}
 }
 country_event = {
@@ -1561,7 +1792,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_first.10.a
-		BAR_relations_increase_leopold_viira_5 = yes
+		add_to_variable = {
+			var = BAR_relations_leopold_viira
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 	}
 }
 
@@ -1595,7 +1830,11 @@ country_event = {
 		name = barrad_second.1.a
 		hidden_effect = {
 			set_country_flag = bar_viira_investigation_step_2
-			BAR_relations_decrease_silver_leopold_5 = yes
+			subtract_from_variable = {
+				var = BAR_relations_silver_leopold
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 			BAR_new_viira_note = yes
 			if = {
 				limit = {
@@ -1726,7 +1965,11 @@ country_event = {
 	picture = TO_CHANGE
 	is_triggered_only = yes
 	option = {
-		BAR_relations_increase_asinti_leopold_5 = yes
+		add_to_variable = {
+			var = BAR_relations_asinti_leopold
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		name = barrad_second.8.a
 	}
 }
@@ -1846,7 +2089,11 @@ country_event = { #viira gets agry at asinti for trying to infiltrate the cult a
 	option = {
 		name = barrad_second.16.a
 		add_political_power = 25
-		BAR_relations_decrease_asinti_viira_5 = yes
+		subtract_from_variable = {
+			var = BAR_relations_asinti_viira
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 	}
 }
 country_event = {
@@ -1860,7 +2107,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.17.a
-		BAR_relations_increase_silver_leopold_5 = yes
+		add_to_variable = {
+			var = BAR_relations_silver_leopold
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		country_event = { id = barrad_second.19 }
 	}
 }
@@ -1875,7 +2126,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.18.a
-		BAR_relations_increase_asinti_silver_5 = yes
+		add_to_variable = {
+			var = BAR_relations_asinti_silver
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 		country_event = { id = barrad_second.19 }
 	}
 }
@@ -1890,7 +2145,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_second.19.a
-		BAR_relations_increase_silver_viira_5 = yes
+		add_to_variable = {
+			var = BAR_relations_silver_viira
+			value = 5
+		}
+		BAR_relations_idea_swap = yes
 	}
 }
 
@@ -3680,11 +3939,6 @@ country_event = {
 			set_technology = {
 				popup = no
 				bar_leopold_new_body = 1
-			}
-			if = {
-				limit = {
-
-				}
 			}
 			if = {
 				limit = {

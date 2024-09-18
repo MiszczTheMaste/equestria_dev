@@ -17780,4 +17780,24 @@ spriteTypes = {
 		name = "GFX_goal_bar_fren_zes_ship"
 		texturefile = "gfx/interface/goals/bar/friendship/zes_ship.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_common_ground"
+		texturefile = "gfx/interface/goals/bar/friendship/common_ground.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_leopold_viira_fruit"
+		texturefile = "gfx/interface/goals/bar/friendship/leopold_viira_fruit.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_pony_shovel"
+		texturefile = "gfx/interface/goals/bar/friendship/pony_shovel.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_star_contract"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_star_contract.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_bar_fren_silver_viira_fall"
+		texturefile = "gfx/interface/goals/bar/friendship/silver_viira_fall.dds"
+	}
 }

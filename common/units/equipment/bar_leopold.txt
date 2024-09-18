@@ -40,6 +40,8 @@ equipments = {
 					leopold_speed_module
 					leopold_additional_wepons_module
 					leopold_aa_module
+					leopold_radar_module
+					leopold_gas_module
 				}
 			}
 
@@ -69,6 +71,8 @@ equipments = {
 					leopold_speed_module
 					leopold_additional_wepons_module
 					leopold_aa_module
+					leopold_radar_module
+					leopold_gas_module
 				}
 			}
 			leopold_misc_4_slot = {
@@ -78,6 +82,8 @@ equipments = {
 					leopold_speed_module
 					leopold_additional_wepons_module
 					leopold_aa_module
+					leopold_radar_module
+					leopold_gas_module
 				}
 			}
 			leopold_misc_5_slot = {
@@ -87,6 +93,8 @@ equipments = {
 					leopold_speed_module
 					leopold_additional_wepons_module
 					leopold_aa_module
+					leopold_radar_module
+					leopold_gas_module
 				}
 			}
 			leopold_misc_6_slot = {
@@ -96,6 +104,8 @@ equipments = {
 					leopold_speed_module
 					leopold_additional_wepons_module
 					leopold_aa_module
+					leopold_radar_module
+					leopold_gas_module
 				}
 			}
 		}

@@ -211,8 +211,8 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		add_stats = {
 			ap_attack = 30
-			soft_attack = 100
-			hard_attack = 50
+			soft_attack = 300
+			hard_attack = 300
 		}
 		build_cost_resources = {
 			steel = 2
@@ -226,8 +226,8 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		add_stats = {
 			ap_attack = 50
-			soft_attack = 150
-			hard_attack = 75
+			soft_attack = 450
+			hard_attack = 500
 		}
 		build_cost_resources = {
 			chromium = 1
@@ -242,8 +242,8 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		add_stats = {
 			ap_attack = 75
-			soft_attack = 200
-			hard_attack = 150
+			soft_attack = 600
+			hard_attack = 700
 		}
 		build_cost_resources = {
 			chromium = 1
@@ -257,9 +257,9 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			ap_attack = 200
-			soft_attack = 150
-			hard_attack = 400
+			ap_attack = 500
+			soft_attack = 600
+			hard_attack = 1000
 			breakthrough = -100
 			defense = -100
 		}
@@ -275,8 +275,8 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		add_stats = {
 			ap_attack = 175
-			soft_attack = 250
-			hard_attack = 350
+			soft_attack = 1000
+			hard_attack = 1200
 		}
 		build_cost_resources = {
 			chromium = 1
@@ -368,7 +368,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 50
+			soft_attack = 400
 			reliability = -0.05
 		}
 	}	
@@ -379,7 +379,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 100
+			soft_attack = 600
 			reliability = -0.1
 		}
 	}	
@@ -390,7 +390,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 150
+			soft_attack = 800
 			reliability = -0.15
 		}
 	}	
@@ -401,7 +401,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 200
+			soft_attack = 1000
 			reliability = -0.2
 		}
 	}	
@@ -412,7 +412,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 1000
+			soft_attack = 1500
 			reliability = -0.5
 			defense = -100
 			breakthrough = -100
@@ -425,7 +425,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 1500
+			soft_attack = 3000
 			reliability = -0.6
 			defense = -100
 			breakthrough = -100
@@ -438,7 +438,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 500
+			soft_attack = 1000
 			reliability = -0.8
 			defense = -100
 			breakthrough = -100
@@ -451,7 +451,7 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			soft_attack = 100
+			soft_attack = 400
 			reliability = -0.1
 		}
 	}	
@@ -518,8 +518,8 @@ equipment_modules = {
 		xp_cost = 5
 		dismantle_cost_ic = 1
 		add_stats = {
-			breakthrough = 150
-			defense = 150
+			breakthrough = 500
+			defense = 500
 			reliability = -0.1
 		}
 	}		

@@ -261,5 +261,19 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_modern_fixed_superstructure.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_EMI_leopold_aa_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_aa_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_leopold_radar_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_leopold_gas_module"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_gas_module.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -419,7 +419,11 @@ focus_tree = {
 			country_event = {
 				id = barrad_first.9
 			}
-			BAR_relations_increase_asinti_viira_5 = yes
+			add_to_variable = {
+				var = BAR_relations_asinti_viira
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 			bar_viira_resources_add_250 = yes
 		}
 		search_filters = {
@@ -777,7 +781,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_relations_decrease_asinti_silver_5 = yes
+			subtract_from_variable = {
+				var = BAR_relations_asinti_silver
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 			626 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -845,7 +853,11 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			BAR_relations_decrease_asinti_silver_5 = yes
+			subtract_from_variable = {
+				var = BAR_relations_asinti_silver
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 			bar_asinti_resources_add_250 = yes
 			add_political_power = 50
 		}
@@ -1122,7 +1134,11 @@ focus_tree = {
 			country_event = {
 				id = barrad_second.11
 			}
-			BAR_relations_increase_silver_viira_5 = yes
+			add_to_variable = {
+				var = BAR_relations_silver_viira
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1152,7 +1168,11 @@ focus_tree = {
 			country_event = {
 				id = barrad_second.12
 			}
-			BAR_relations_increase_silver_leopold_5 = yes
+			add_to_variable = {
+				var = BAR_relations_silver_leopold
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2
@@ -1182,7 +1202,11 @@ focus_tree = {
 			country_event = {
 				id = barrad_second.13
 			}
-			BAR_relations_increase_asinti_silver_5 = yes
+			add_to_variable = {
+				var = BAR_relations_asinti_silver
+				value = 5
+			}
+			BAR_relations_idea_swap = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_BAR_CHAPTER_2

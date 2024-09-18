@@ -3,7 +3,6 @@
 oob = "BAR_1007"
 
 set_research_slots = 2
-activate_mission = BAR_ambrosius_boredom
 
 set_technology = {
 	pony_race = 1

@@ -1223,7 +1223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_2
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_silver_star_contract
 		cost = 3
 		x = -5
 		y = 1
@@ -1242,7 +1242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_3
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_common_ground
 		cost = 3
 		x = -3
 		y = 1
@@ -1259,7 +1259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_4
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_silver_viira_fall
 		cost = 3
 		x = 0
 		y = 1
@@ -1276,7 +1276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_5
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_pony_shovel
 		cost = 3
 		x = 0
 		y = 1
@@ -1294,7 +1294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_friend_6
-		icon = GFX_goal_bar_fren_GFX_goal_cry_com_sync
+		icon = GFX_goal_bar_fren_leopold_viira_fruit
 		cost = 3
 		x = 0
 		y = 1

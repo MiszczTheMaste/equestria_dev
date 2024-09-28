@@ -2075,14 +2075,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			leopold_steel_armor
-			leopold_basic_magical_exoskeleton
-			leopold_basic_mechanical_arms
-			leopold_basic_mechanical_legs
 			leopold_steel_claws
-			leopold_tungsten_claws
-			leopold_mechanical_wings
-			leopold_crystal_eye
-			leopold_basic_liquid_crystal_life_sustain
+			leopold_crystal_battery
 			leopold_teapot
 		}
 		research_cost = 1
@@ -2162,6 +2156,16 @@ technologies = {
 			leopold_radar_3
 			leopold_radar_4
 			leopold_radar_5
+		}
+		research_cost = 1
+	}
+	bar_leopold_dense_metal_parts = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_dense_steel_armor
+			leopold_dense_metal_claws
 		}
 		research_cost = 1
 	}

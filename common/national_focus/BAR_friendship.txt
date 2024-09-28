@@ -291,11 +291,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			hidden_effect = {
-				country_event = {
-					id = barrad_friendship_tree.40
-					days = 6
-				}
+			country_event = {
+				id = barrad_friendship_tree.40
+				days = 12
 			}
 		}
 	}
@@ -701,7 +699,7 @@ focus_tree = {
 					days = 21
 				}
 				remove_ideas = BAR_no_volunteers
-			}	
+			}
 		}
 	}
 	focus = {
@@ -1775,8 +1773,6 @@ focus_tree = {
 				category = magical_tech
 			}
 			increase_society_development_or_civ = yes
-			custom_effect_tooltip = BAR_friend_leopold_tooltip
-			add_ideas = BAR_friend_leopold
 		}
 	}
 	focus = {

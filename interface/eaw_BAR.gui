@@ -2811,7 +2811,7 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "bar_expedition_controls_container"
-			position = { x = 1050 y = 600 }
+			position = { x = 1050 y = 610 }
 			buttonType = {
 				name = "bar_expedition_launch"
 				position = { x = 0 y = 50 }

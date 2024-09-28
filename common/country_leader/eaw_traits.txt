@@ -3341,6 +3341,10 @@ apn_time_queen= {
 			send_volunteer_size = -1
 		}
 	}
+	bar_silver_star_brave = {
+		random = no
+		stability_factor = 0.1
+	}
 	bar_viira_title_1 = {
 		random = no
 		war_support_factor = 0.1

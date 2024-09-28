@@ -111,7 +111,7 @@ BAR_silver_star_cat = {
 		}
 		visible = {
 			has_country_flag = BAR_nuclear_construction
-			has_country_flag = barrad_silver_star_alive
+			
 			check_variable = {
 				BAR_nuclear_progress < 100
 			}
@@ -160,7 +160,7 @@ BAR_silver_star_cat = {
 			hidden_trigger = {
 				has_country_flag = BAR_nuclear_research
 			}
-			has_country_flag = barrad_silver_star_alive
+			
 			NOT = {
 				has_tech = nuclear_reactor
 			}
@@ -206,39 +206,6 @@ BAR_silver_star_cat = {
 			custom_effect_tooltip = BAR_reactor_research_tooltip
 		}
 	}
-	BAR_silver_dev_up = {
-		icon = GFX_decision_modern_city
-		days_remove = 120
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			hidden_trigger = {
-				has_country_flag = barrad_early_game
-				has_country_flag = barrad_silver_star_alive
-			}
-			has_pre_industrial_society = yes
-		}
-		available = {
-			BAR_resources_above_silver_1500 = yes
-		}
-		custom_cost_trigger = {
-			BAR_resources_above_silver_1500 = yes
-		}
-		custom_cost_text = silver_resources_over_1500_text
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_dev_up"
-			increase_society_development_gradual = yes
-			bar_silver_resources_subtract_1500 = yes
-		}
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				has_country_flag = BAR_ai_amb_default
-				factor = 5
-			}
-		}
-	}
 	BAR_silver_doc_bonus = {
 		icon = GFX_decision_generic_army_support
 		days_remove = 30
@@ -247,7 +214,6 @@ BAR_silver_star_cat = {
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
 		}
 		available = {
 			BAR_resources_above_silver_1000 = yes
@@ -260,10 +226,10 @@ BAR_silver_star_cat = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_silver_dev_up"
 			bar_silver_resources_subtract_1000 = yes
 			add_doctrine_cost_reduction = {
-				name = cat_grand_battle_plan
+				name = land_doc_bonus
 				cost_reduction = 0.5
 				uses = 1
-				category = cat_grand_battle_plan
+				category = land_doctrine
 			}
 		}
 		ai_will_do = {
@@ -278,7 +244,6 @@ BAR_silver_star_cat = {
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
 		}
 		available = {
 			BAR_resources_above_silver_500 = yes
@@ -318,9 +283,6 @@ BAR_silver_star_cat = {
 			original_tag = BAR
 		}
 		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_leopold_alive
 			check_variable = {
 				BAR_relations_silver_leopold > 30
 			}
@@ -368,9 +330,6 @@ BAR_silver_star_cat = {
 			original_tag = BAR
 		}
 		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_asinti_alive
 			check_variable = {
 				BAR_relations_asinti_silver > 30
 			}
@@ -418,9 +377,6 @@ BAR_silver_star_cat = {
 			original_tag = BAR
 		}
 		available = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_viira_alive
 			check_variable = {
 				BAR_relations_silver_viira > 30
 			}
@@ -468,9 +424,6 @@ BAR_silver_star_cat = {
 			original_tag = BAR
 		}
 		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_leopold_alive
 			check_variable = {
 				BAR_relations_silver_leopold < 31
 			}
@@ -518,9 +471,6 @@ BAR_silver_star_cat = {
 			original_tag = BAR
 		}
 		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_asinti_alive
 			check_variable = {
 				BAR_relations_asinti_silver < 31
 			}
@@ -568,9 +518,6 @@ BAR_silver_star_cat = {
 			original_tag = BAR
 		}
 		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_silver_star_alive
-			has_country_flag = barrad_viira_alive
 			check_variable = {
 				BAR_relations_silver_viira < 31
 			}
@@ -663,6 +610,7 @@ BAR_leopold_cat = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_ongoing_activity
+				has_country_flag = barrad_early_game
 			}
 		}
 		allowed = {
@@ -750,7 +698,7 @@ BAR_leopold_cat = {
 		}
 		visible = {
 			has_country_flag = BAR_nuclear_construction
-			has_country_flag = barrad_leopold_alive
+			
 			check_variable = {
 				BAR_nuclear_progress < 100
 			}
@@ -763,7 +711,7 @@ BAR_leopold_cat = {
 				check_variable = {
 					BAR_nuclear_progress < 100
 				}
-				has_country_flag = barrad_leopold_alive
+				
 				has_country_flag = BAR_nuclear_construction
 			}
 		}
@@ -808,7 +756,7 @@ BAR_leopold_cat = {
 			NOT = {
 				has_tech = nuclear_reactor
 			}
-			has_country_flag = barrad_leopold_alive
+			
 			check_variable = {
 				BAR_nuclear_research < 100
 			}
@@ -824,7 +772,7 @@ BAR_leopold_cat = {
 				check_variable = {
 					BAR_nuclear_research < 100
 				}
-				has_country_flag = barrad_leopold_alive
+				
 				hidden_trigger = {
 					has_country_flag = BAR_nuclear_research
 				}
@@ -867,7 +815,7 @@ BAR_leopold_cat = {
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
+			
 			has_pre_industrial_society = yes
 		}
 		available = {
@@ -891,37 +839,6 @@ BAR_leopold_cat = {
 			}
 		}
 	}
-	BAR_leopold_doc_bonus = {
-		icon = GFX_decision_generic_army_support
-		days_remove = 50
-		allowed = {
-			original_tag = BAR
-		}
-		visible = {
-			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
-		}
-		available = {
-			BAR_resources_above_leopold_1000 = yes
-		}
-		custom_cost_trigger = {
-			BAR_resources_above_leopold_1000 = yes
-		}
-		custom_cost_text = leopold_resources_over_1000_text
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
-			bar_leopold_resources_subtract_1000 = yes
-			add_doctrine_cost_reduction = {
-				name = cat_superior_firepower
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_superior_firepower
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	BAR_leopold_weapon_tinkerink = {
 		icon = GFX_decision_generic_prepare_civil_war
 		days_remove = 14
@@ -930,7 +847,7 @@ BAR_leopold_cat = {
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_leopold_alive
+			
 		}
 		available = {
 			BAR_resources_above_leopold_500 = yes
@@ -952,6 +869,66 @@ BAR_leopold_cat = {
 			}
 		}
 	}
+	BAR_leopold_air_xp = {
+		icon = GFX_decision_generic_prepare_civil_war
+		days_remove = 14
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = barrad_early_game
+			
+		}
+		available = {
+			BAR_resources_above_leopold_500 = yes
+		}
+		custom_cost_trigger = {
+			BAR_resources_above_leopold_500 = yes
+		}
+		custom_cost_text = leopold_resources_over_500_text
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
+			bar_leopold_resources_subtract_500 = yes
+			air_experience = 30
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_country_flag = BAR_ai_amb_default
+				factor = 1
+			}
+		}
+	}
+	BAR_leopold_naval_xp = {
+		icon = GFX_decision_generic_prepare_civil_war
+		days_remove = 14
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = barrad_early_game
+			
+		}
+		available = {
+			BAR_resources_above_leopold_500 = yes
+		}
+		custom_cost_trigger = {
+			BAR_resources_above_leopold_500 = yes
+		}
+		custom_cost_text = leopold_resources_over_500_text
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BAR_leopold_info"
+			bar_leopold_resources_subtract_500 = yes
+			navy_experience = 30
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_country_flag = BAR_ai_amb_default
+				factor = 1
+			}
+		}
+	}
 }
 
 BAR_asinti_cat = {
@@ -963,7 +940,7 @@ BAR_asinti_cat = {
 		}
 		visible = {
 			has_country_flag = BAR_nuclear_construction
-			has_country_flag = barrad_asinti_alive
+			
 			check_variable = {
 				BAR_nuclear_progress < 100
 			}
@@ -974,7 +951,7 @@ BAR_asinti_cat = {
 				check_variable = {
 					BAR_nuclear_progress < 100
 				}
-				has_country_flag = barrad_asinti_alive
+				
 				has_country_flag = BAR_nuclear_construction
 			}
 		}
@@ -1015,7 +992,7 @@ BAR_asinti_cat = {
 			hidden_trigger = {
 				has_country_flag = BAR_nuclear_research
 			}
-			has_country_flag = barrad_asinti_alive
+			
 			check_variable = {
 				BAR_nuclear_research < 100
 			}
@@ -1032,7 +1009,7 @@ BAR_asinti_cat = {
 				check_variable = {
 					BAR_nuclear_research < 100
 				}
-				has_country_flag = barrad_asinti_alive
+				
 				hidden_trigger = {
 					has_country_flag = BAR_nuclear_research
 				}
@@ -1074,21 +1051,21 @@ BAR_asinti_cat = {
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_asinti_alive
+			
 			has_pre_industrial_society = yes
 		}
 		available = {
 			has_pre_industrial_society = yes
-			BAR_resources_above_asinti_1500 = yes
+			BAR_resources_above_asinti_1000 = yes
 		}
 		custom_cost_trigger = {
-			BAR_resources_above_asinti_1500 = yes
+			BAR_resources_above_asinti_1000 = yes
 		}
 		custom_cost_text = asinti_resources_over_1500_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
 			increase_society_development_gradual = yes
-			bar_asinti_resources_subtract_1500 = yes
+			bar_asinti_resources_subtract_1000 = yes
 		}
 		ai_will_do = {
 			factor = 20
@@ -1106,7 +1083,7 @@ BAR_asinti_cat = {
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_asinti_alive
+			
 		}
 		available = {
 			BAR_resources_above_asinti_500 = yes
@@ -1121,30 +1098,74 @@ BAR_asinti_cat = {
 			bar_asinti_resources_subtract_500 = yes
 			hidden_effect = {
 				random_list = {
-					15 = {
+					20 = {
+						add_stability = 0.01
+					}
+					20 = {
+						add_stability = 0.02
+					}
+					20 = {
+						add_stability = 0.03
+					}
+					20 = {
 						add_stability = 0.04
 					}
-					15 = {
+					20 = {
 						add_stability = 0.05
-					}
-					15 = {
-						add_stability = 0.06
-					}
-					15 = {
-						add_stability = 0.07
-					}
-					15 = {
-						add_stability = 0.08
-					}
-					15 = {
-						add_stability = 0.09
-					}
-					10 = {
-						add_stability = 0.1
 					}
 				}
 			}
 			custom_effect_tooltip = BAR_asinti_summon_more_demons_tooltip
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				has_country_flag = BAR_ai_amb_default
+				factor = 0.2
+			}
+		}
+	}
+	BAR_asinti_rally_for_the_cause = {
+		icon = GFX_decision_sombra_crystals
+		days_remove = 30
+		allowed = {
+			original_tag = BAR
+		}
+		visible = {
+			has_country_flag = barrad_early_game
+			
+		}
+		available = {
+			BAR_resources_above_asinti_500 = yes
+		}
+		custom_cost_trigger = {
+			BAR_resources_above_asinti_500 = yes
+		}
+		custom_cost_text = asinti_resources_over_500_text
+		fixed_random_seed = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision BAR_asinti_info"
+			bar_asinti_resources_subtract_500 = yes
+			hidden_effect = {
+				random_list = {
+					20 = {
+						add_war_support = 0.01
+					}
+					20 = {
+						add_war_support = 0.02
+					}
+					20 = {
+						add_war_support = 0.03
+					}
+					20 = {
+						add_war_support = 0.04
+					}
+					20 = {
+						add_war_support = 0.05
+					}
+				}
+			}
+			custom_effect_tooltip = BBAR_asinti_rally_for_the_cause_tooltip
 		}
 		ai_will_do = {
 			factor = 50
@@ -1190,15 +1211,15 @@ BAR_viira_cat = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_investigation_step_10
-				has_country_flag = barrad_viira_alive
-				has_country_flag = barrad_silver_star_alive
+				
+				
 			}
 		}
 		available = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_investigation_step_10
-				has_country_flag = barrad_viira_alive
-				has_country_flag = barrad_silver_star_alive
+				
+				
 			}
 		}
 		complete_effect = {
@@ -1215,11 +1236,11 @@ BAR_viira_cat = {
 		visible = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_investigation_step_11
-				has_country_flag = barrad_viira_alive
-				has_country_flag = barrad_asinti_alive
+				
+				
 				NOT = {
-					has_country_flag = barrad_silver_star_alive
-					has_country_flag = barrad_leopold_alive
+					
+					
 				}
 				OR = {
 					has_idea = BAR_temple_construct_z_f_p
@@ -1237,11 +1258,11 @@ BAR_viira_cat = {
 		available = {
 			hidden_trigger = {
 				has_country_flag = bar_viira_investigation_step_11
-				has_country_flag = barrad_viira_alive
-				has_country_flag = barrad_asinti_alive
+				
+				
 				NOT = {
-					has_country_flag = barrad_silver_star_alive
-					has_country_flag = barrad_leopold_alive
+					
+					
 				}
 				OR = {
 					has_idea = BAR_temple_construct_z_f_p
@@ -1270,7 +1291,7 @@ BAR_viira_cat = {
 		}
 		visible = {
 			has_country_flag = BAR_nuclear_construction
-			has_country_flag = barrad_viira_alive
+			
 			check_variable = {
 				BAR_nuclear_progress < 100
 			}
@@ -1283,7 +1304,7 @@ BAR_viira_cat = {
 				check_variable = {
 					BAR_nuclear_progress < 100
 				}
-				has_country_flag = barrad_viira_alive
+				
 				has_country_flag = BAR_nuclear_construction
 			}
 		}
@@ -1327,7 +1348,7 @@ BAR_viira_cat = {
 			NOT = {
 				has_tech = nuclear_reactor
 			}
-			has_country_flag = barrad_viira_alive
+			
 			check_variable = {
 				BAR_nuclear_research < 100
 			}
@@ -1343,7 +1364,7 @@ BAR_viira_cat = {
 				check_variable = {
 					BAR_nuclear_research < 100
 				}
-				has_country_flag = barrad_viira_alive
+				
 				hidden_trigger = {
 					has_country_flag = BAR_nuclear_research
 				}
@@ -1377,29 +1398,26 @@ BAR_viira_cat = {
 			custom_effect_tooltip = BAR_reactor_research_tooltip
 		}
 	}
-	BAR_viira_dev_up = {
+	BAR_viira_trade_with_cultists_mil = {
 		icon = GFX_decision_modern_city
-		days_remove = 112
+		days_remove = 60
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_viira_alive
-			has_pre_industrial_society = yes
 		}
 		available = {
-			has_pre_industrial_society = yes
-			BAR_resources_above_viira_1000 = yes
+			BAR_resources_above_viira_1500 = yes
 		}
 		custom_cost_trigger = {
-			BAR_resources_above_viira_1000 = yes
+			BAR_resources_above_viira_1500 = yes
 		}
 		custom_cost_text = viira_resources_over_1000_text
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_dev_up"
-			increase_society_development_gradual = yes
-			bar_viira_resources_subtract_1000 = yes
+			one_random_arms_factory = yes
+			bar_viira_resources_subtract_1500 = yes
 		}
 		ai_will_do = {
 			factor = 20
@@ -1409,35 +1427,33 @@ BAR_viira_cat = {
 			}
 		}
 	}
-	BAR_viira_doc_bonus = {
-		icon = GFX_decision_generic_army_support
+	BAR_viira_trade_with_cultists_civ = {
+		icon = GFX_decision_modern_city
 		days_remove = 60
 		allowed = {
 			original_tag = BAR
 		}
 		visible = {
 			has_country_flag = barrad_early_game
-			has_country_flag = barrad_viira_alive
 		}
 		available = {
-			BAR_resources_above_viira_750 = yes
+			BAR_resources_above_viira_1500 = yes
 		}
 		custom_cost_trigger = {
-			BAR_resources_above_viira_750 = yes
+			BAR_resources_above_viira_1500 = yes
 		}
-		custom_cost_text = viira_resources_over_750_text
+		custom_cost_text = viira_resources_over_1000_text
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_doc_bonus"
-			bar_viira_resources_subtract_750 = yes
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
+			log = "[GetDateText]: [Root.GetName]: Decision BAR_viira_dev_up"
+			one_random_arms_factory = yes
+			bar_viira_resources_subtract_1500 = yes
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 20
+			modifier = {
+				has_country_flag = BAR_ai_amb_default
+				factor = 5
+			}
 		}
 	}
 }
@@ -3457,19 +3473,23 @@ BAR_leopold_decisions = {
 		allowed = {
 			original_tag = BAR
 		}
+		available = {
+			has_tech = BAR_clockwerks
+			NOT = {
+				has_tech = BAR_clockwerks_upgrade
+			}
+			OR = {
+				has_tech = magical_weapons
+				has_tech = magical_weapons1
+				has_tech = magical_weapons2
+				has_tech = magical_weapons3
+			}
+		}
 		visible = {
-			hidden_trigger = {
-				has_tech = BAR_clockwerks
+			has_tech = BAR_clockwerks
 				NOT = {
 					has_tech = BAR_clockwerks_upgrade
 				}
-				OR = {
-					has_tech = magical_weapons
-					has_tech = magical_weapons1
-					has_tech = magical_weapons2
-					has_tech = magical_weapons3
-				}
-			}
 		}
 		cost = 20
 		complete_effect = {
@@ -3490,13 +3510,16 @@ BAR_leopold_decisions = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = BAR
+			NOT = { has_dlc = "No Step Back" }
 		}
 		available = {
 			has_tech = tech_bar_leopold_metal_denser_than_platinium
+			has_tech = BAR_clockwerks
+			NOT = { has_tech = BAR_leopold_armor_upgrade_1 }
 		}
 		visible = {
 			hidden_trigger = {
-				has_tech = BAR_clockwerks
+				has_tech = bar_leopold_new_body
 			}
 		}
 		cost = 20
@@ -3518,13 +3541,16 @@ BAR_leopold_decisions = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = BAR
+			NOT = { has_dlc = "No Step Back" }
 		}
 		available = {
 			has_tech = tech_bar_leopold_transparent_metal
+			has_tech = BAR_clockwerks
+			NOT = { has_tech = BAR_leopold_armor_upgrade_2 }
 		}
 		visible = {
 			hidden_trigger = {
-				has_tech = BAR_clockwerks
+				has_tech = bar_leopold_new_body
 			}
 		}
 		cost = 20
@@ -3546,13 +3572,16 @@ BAR_leopold_decisions = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = BAR
+			NOT = { has_dlc = "No Step Back" }
 		}
 		available = {
 			has_tech = tech_bar_leopold_crystalic_metal
+			has_tech = BAR_clockwerks
+			NOT = { has_tech = BAR_leopold_armor_upgrade_3 }
 		}
 		visible = {
 			hidden_trigger = {
-				has_tech = BAR_clockwerks
+				has_tech = bar_leopold_new_body
 			}
 		}
 		cost = 20
@@ -3574,13 +3603,16 @@ BAR_leopold_decisions = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = BAR
+			NOT = { has_dlc = "No Step Back" }
 		}
 		available = {
 			has_tech = tech_bar_leopold_new_steel
+			has_tech = BAR_clockwerks
+			NOT = { has_tech = BAR_leopold_armor_upgrade_4 }
 		}
 		visible = {
 			hidden_trigger = {
-				has_tech = BAR_clockwerks
+				has_tech = bar_leopold_new_body
 			}
 		}
 		cost = 20
@@ -3602,13 +3634,16 @@ BAR_leopold_decisions = {
 		fire_only_once = yes
 		allowed = {
 			original_tag = BAR
+			NOT = { has_dlc = "No Step Back" }
 		}
 		available = {
 			has_tech = tech_bar_leopold_metal_lighter_than_air
+			has_tech = BAR_clockwerks
+			NOT = { has_tech = BAR_leopold_armor_upgrade_5 }
 		}
 		visible = {
 			hidden_trigger = {
-				has_tech = BAR_clockwerks
+				has_tech = bar_leopold_new_body
 			}
 		}
 		cost = 20
@@ -3620,6 +3655,31 @@ BAR_leopold_decisions = {
 				}
 			}
 			custom_effect_tooltip = BAR_leopold_armor_upgrade_5_tooltip
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_armor_1 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = tech_bar_leopold_metal_lighter_than_air
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_dense_metal_parts }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				tech_bar_leopold_metal_denser_than_platinium = 1
+				popup = no
+			}
 		}
 		ai_will_do = {
 			factor = 100
@@ -4145,7 +4205,7 @@ BAR_asinti_pentarchs = {
 		visible = {
 			tag = BAR
 			has_completed_focus = BAR_new_world_order
-			has_country_flag = barrad_leopold_alive
+			
 			check_variable = {
 				BAR_relations_asinti_leopold < 70
 			}
@@ -4172,7 +4232,7 @@ BAR_asinti_pentarchs = {
 		visible = {
 			tag = BAR
 			has_completed_focus = BAR_new_world_order
-			has_country_flag = barrad_leopold_alive
+			
 			check_variable = {
 				BAR_relations_asinti_leopold > 69
 			}
@@ -4200,7 +4260,7 @@ BAR_asinti_pentarchs = {
 		visible = {
 			tag = BAR
 			has_completed_focus = BAR_new_world_order
-			has_country_flag = barrad_leopold_alive
+			
 			check_variable = {
 				BAR_relations_asinti_leopold > 69
 			}
@@ -4234,7 +4294,7 @@ BAR_asinti_pentarchs = {
 		visible = {
 			tag = BAR
 			has_completed_focus = BAR_new_world_order
-			has_country_flag = barrad_silver_star_alive
+			
 			check_variable = {
 				BAR_relations_asinti_silver < 70
 			}
@@ -4261,7 +4321,7 @@ BAR_asinti_pentarchs = {
 		visible = {
 			tag = BAR
 			has_completed_focus = BAR_new_world_order
-			has_country_flag = barrad_silver_star_alive
+			
 			check_variable = {
 				BAR_relations_asinti_silver > 69
 			}
@@ -4289,7 +4349,7 @@ BAR_asinti_pentarchs = {
 		visible = {
 			tag = BAR
 			has_completed_focus = BAR_new_world_order
-			has_country_flag = barrad_silver_star_alive
+			
 			check_variable = {
 				BAR_relations_asinti_silver > 69
 			}

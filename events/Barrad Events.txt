@@ -363,7 +363,6 @@ country_event = {
 			value = 5
 		}
 		BAR_relations_idea_swap = yes
-		set_country_flag = BAR_silver_friendship_viira
 	}
 }
 
@@ -385,7 +384,6 @@ country_event = {
 			value = 5
 		}
 		BAR_relations_idea_swap = yes
-		set_country_flag = BAR_silver_friendship_leopold
 	}
 }
 
@@ -407,7 +405,6 @@ country_event = {
 			value = 5
 		}
 		BAR_relations_idea_swap = yes
-		set_country_flag = BAR_silver_friendship_asinti
 	}
 }
 
@@ -4257,6 +4254,17 @@ country_event = {
 			remove_idea = BAR_leopold_surreal_mathematic_idea_2
 			add_idea = BAR_leopold_surreal_mathematic_idea_3
 		}
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						BAR_relations_silver_leopold > 69
+					}
+					has_country_flag = barrad_silver_star_alive
+				}
+				country_event = { id = barrad_leopold.18 days = 4}
+			}
+		}
 	}
 }
 country_event = {
@@ -4373,33 +4381,18 @@ country_event = {
 }
 
 country_event = {
-	id = barrad_leopold.16
+	id = barrad_leopold.18
 	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.16"
+		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.18"
 	}
-	title = barrad_leopold.16.t
-	desc = barrad_leopold.16.d
+	title = barrad_leopold.18.t
+	desc = barrad_leopold.18.d
 	picture = GFX_event_forge_city
 	is_triggered_only = yes
 	option = {
-		name = barrad_leopold.16.a
+		name = barrad_leopold.18.a
 	}
 }
-
-country_event = {
-	id = barrad_leopold.17
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event barrad_leopold.17"
-	}
-	title = barrad_leopold.17.t
-	desc = barrad_leopold.17.d
-	picture = GFX_event_forge_city
-	is_triggered_only = yes
-	option = {
-		name = barrad_leopold.17.a
-	}
-}
-
 
 ##############################################################################################################################################################################
 ##############################################################################################################################################################################
@@ -5230,30 +5223,6 @@ country_event = {
 	}
 }
 country_event = { 
-	id = bar_sane_ambrosius.1006
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1006"
-	}
-	title = bar_sane_ambrosius.1006.t
-	desc = bar_sane_ambrosius.1006.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1006.a
-		add_power_balance_value = {
-			id = bar_sane_ambrosius_balance
-			value = 0.05
-		}
-	}	
-	option = {
-		name = bar_sane_ambrosius.1006.b
-		add_power_balance_value = {
-			id = bar_sane_ambrosius_balance
-			value = -0.05
-		}
-	}
-}
-country_event = { 
 	id = bar_sane_ambrosius.1007
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1007"
@@ -5413,6 +5382,97 @@ country_event = {
 	option = {
 		name = bar_sane_ambrosius.1014.a
 		add_country_leader_trait = BAR_despot
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1015
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1015"
+	}
+	title = bar_sane_ambrosius.1015.t
+	desc = bar_sane_ambrosius.1015.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1015.a
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1016
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1016"
+	}
+	title = bar_sane_ambrosius.1016.t
+	desc = bar_sane_ambrosius.1016.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1016.a
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1017
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1017"
+	}
+	title = bar_sane_ambrosius.1017.t
+	desc = bar_sane_ambrosius.1017.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1017.a
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1018
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1018"
+	}
+	title = bar_sane_ambrosius.1018.t
+	desc = bar_sane_ambrosius.1018.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1018.a
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1019
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1019"
+	}
+	title = bar_sane_ambrosius.1019.t
+	desc = bar_sane_ambrosius.1019.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1019.a
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1020
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1020"
+	}
+	title = bar_sane_ambrosius.1020.t
+	desc = bar_sane_ambrosius.1020.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1020.a
+	}	
+}
+country_event = {
+	id = bar_sane_ambrosius.1021
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1021"
+	}
+	title = bar_sane_ambrosius.1021.t
+	desc = bar_sane_ambrosius.1021.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1021.a
 	}	
 }
 
@@ -5627,11 +5687,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = barrad_friendship_tree.5.a
-		add_political_power = 75
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.05
 		}
+		custom_effect_tooltip = BAR_friend_viira_tooltip
+		add_ideas = BAR_friend_viira
 	}
 }
 country_event = {
@@ -5720,7 +5781,7 @@ country_event = {
 		add_ideas = BAR_relations_combined
 	}
 }
-country_event = { #cultist make flood, common ponies work together to fix its effects (flood of 97')
+country_event = { #cultist make flood, common ponies work together to fix its effects
 	id = barrad_friendship_tree.9
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.9"
@@ -6220,8 +6281,6 @@ country_event = { #barrad sex event bottom text
 	is_triggered_only = yes
 	option = { 
 		name = barrad_friendship_tree.26.a
-		custom_effect_tooltip = BAR_friend_viira_tooltip
-		add_ideas = BAR_friend_viira
 	}
 }
 country_event = { #viira and silver star visits asinti in temple he had built and discovers that its been converted to charity, and that asinti took care of the filly from previous event
@@ -6328,6 +6387,7 @@ country_event = { #gąsienica nachodzi silvera w nocy
 			ideology = democratic
 			popularity = 0.05
 		}
+		add_country_leader_trait = bar_silver_star_brave
 	}
 }
 country_event = { #silver i white gadają o pierdolecie
@@ -6370,6 +6430,12 @@ country_event = {
 		add_popularity = {
 			ideology = democratic
 			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = barrad_friendship_tree.41
+				days = 49
+			}	
 		}
 	}
 }
@@ -6574,6 +6640,25 @@ country_event = {
 				logistics_skill = 4
 			}
 		}
+	}	
+}
+country_event = { 
+	id = barrad_friendship_tree.41
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event barrad_friendship_tree.41"
+	}
+	title = barrad_friendship_tree.41.t
+	desc = barrad_friendship_tree.41.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = { 
+		name = barrad_friendship_tree.41.a	
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.01
+		}
+		custom_effect_tooltip = BAR_friend_leopold_tooltip
+		add_ideas = BAR_friend_leopold
 	}	
 }
 

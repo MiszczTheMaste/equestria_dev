@@ -905,7 +905,9 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
-			has_country_flag = BAR_silver_friendship_leopold
+			check_variable = {
+				BAR_relations_silver_leopold > 69
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
@@ -1055,7 +1057,6 @@ focus_tree = {
 		completion_reward = {
 			one_random_industrial_complex = yes
 			add_stability = 0.05
-			country_event = { id = barrad_leopold.16 }
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION
@@ -1529,7 +1530,9 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
-			has_country_flag = BAR_silver_friendship_leopold
+			check_variable = {
+				BAR_relations_silver_leopold > 69
+			}
 		}
 		completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -1561,7 +1564,9 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = barrad_silver_star_alive
-			has_country_flag = BAR_silver_friendship_leopold
+			check_variable = {
+				BAR_relations_silver_leopold > 69
+			}
 		}
 		completion_reward = {
 			army_experience = 75

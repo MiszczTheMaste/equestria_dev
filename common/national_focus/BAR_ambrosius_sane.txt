@@ -3141,17 +3141,17 @@ focus_tree = {
 		icon = GFX_goal_industrial_pony
 		cost = 5
 		x = 0
-		y = 1
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
-		relative_position_id = BAR_amb_age_of_monsters
+		relative_position_id = BAR_amb_interpret_visions
 		prerequisite = {
 			focus = BAR_amb_lifetime_of_war
 			focus = BAR_amb_conqueror_bent_on_conquest
 		}
 		prerequisite = {
-			focus = BAR_amb_age_of_monsters
+			focus = BAR_amb_interpret_visions
 		}
 		completion_reward = {
 			country_event = { id = bar_sane_ambrosius.7 }
@@ -3971,6 +3971,9 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_never_ending_ambition
 		}
+		mutually_exclusive = {
+			focus = BAR_amb_song_of_spirits
+		}
 		completion_reward = {
 			three_random_arms_factory = yes
 			add_power_balance_value = {
@@ -4008,6 +4011,9 @@ focus_tree = {
 		relative_position_id = BAR_amb_never_ending_ambition
 		prerequisite = {
 			focus = BAR_amb_never_ending_ambition
+		}
+		mutually_exclusive = {
+			focus = BAR_amb_hoof_and_iron
 		}
 		completion_reward = {
 			#TODO: bonus do armii
@@ -4061,7 +4067,7 @@ focus_tree = {
 		icon = GFX_goal_industrial_pony
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -4082,8 +4088,8 @@ focus_tree = {
 		id = BAR_amb_asinti_studies
 		icon = GFX_goal_industrial_pony
 		cost = 5
-		x = -3
-		y = 1
+		x = -2
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -4092,6 +4098,11 @@ focus_tree = {
 			focus = BAR_amb_unveil_machine_god_mystery
 		}
 		completion_reward = {
+			set_technology = {
+				barrad_asinti_alive = 1
+				no_popup = no
+			}
+			country_event = { id = bar_sane_ambrosius.1021 }
 		}
 	}
 	focus = {
@@ -4108,6 +4119,11 @@ focus_tree = {
 			focus = BAR_amb_unveil_machine_god_mystery
 		}
 		completion_reward = {
+			set_technology = {
+				barrad_silver_star_alive = 1
+				no_popup = no
+			}
+			country_event = { id = bar_sane_ambrosius.1020 }
 		}
 	}
 	focus = {
@@ -4124,14 +4140,19 @@ focus_tree = {
 			focus = BAR_amb_unveil_machine_god_mystery
 		}
 		completion_reward = {
+			set_technology = {
+				barrad_viira_alive = 1
+				no_popup = no
+			}
+			country_event = { id = bar_sane_ambrosius.1019 }
 		}
 	}
 	focus = {
 		id = BAR_amb_leopold_studies
 		icon = GFX_goal_industrial_pony
 		cost = 5
-		x = 3
-		y = 1
+		x = 2
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -4140,6 +4161,11 @@ focus_tree = {
 			focus = BAR_amb_unveil_machine_god_mystery
 		}
 		completion_reward = {
+			set_technology = {
+				barrad_leopold_alive = 1
+				no_popup = no
+			}
+			country_event = { id = bar_sane_ambrosius.1018 }
 		}
 	}
 	focus = {
@@ -4147,7 +4173,7 @@ focus_tree = {
 		icon = GFX_goal_industrial_pony
 		cost = 5
 		x = 0
-		y = 2
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -4166,127 +4192,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = BAR_amb_leopold_studies
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_interpret_visions_of_past
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_interpret_visions
-		prerequisite = {
-			focus = BAR_amb_interpret_visions
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_interpret_visions_of_now
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_interpret_visions
-		prerequisite = {
-			focus = BAR_amb_interpret_visions
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_surreal_math
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_interpret_visions_of_now
-		prerequisite = {
-			focus = BAR_amb_interpret_visions_of_now
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_age_of_unknown
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_interpret_visions_of_past
-		prerequisite = {
-			focus = BAR_amb_interpret_visions_of_past
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_age_of_magic
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_interpret_visions_of_past
-		prerequisite = {
-			focus = BAR_amb_interpret_visions_of_past
-		}
-		prerequisite = {
-			focus = BAR_amb_interpret_visions_of_now
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_reoccuring_number
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_age_of_magic
-		prerequisite = {
-			focus = BAR_amb_age_of_unknown
-		}
-		prerequisite = {
-			focus = BAR_amb_age_of_magic
-		}
-		prerequisite = {
-			focus = BAR_amb_surreal_math
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = BAR_amb_age_of_monsters
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_reoccuring_number
-		prerequisite = {
-			focus = BAR_amb_reoccuring_number
 		}
 		completion_reward = {
 		}

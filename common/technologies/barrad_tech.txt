@@ -1751,6 +1751,36 @@ technologies = {
 			max_organisation = 5
 		}
 	}
+	bar_cossac_units = {
+		allow = {
+			always = no
+		}		
+		research_cost = 1
+	
+		plains = {
+			attack = 0.1
+			movement = 0.15
+		}
+		desert = {
+			attack = 0.1
+			movement = 0.15
+		}
+		category_recon = {
+			recon = 2
+			max_organisation = 20
+		}
+	}
+	bar_amb_magic_inf = {
+		allow = {
+			always = no
+		}		
+		research_cost = 1
+	
+		magical_infantry = {
+			soft_attack = 0.2
+			max_organisation = 5
+		}
+	}
 	
 	#############################################################################################
 	#############################################################################################

@@ -5395,6 +5395,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.1015.a
+		country_event = { id = bar_sane_ambrosius.1016 }
 	}	
 }
 country_event = {
@@ -5408,6 +5409,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.1016.a
+		country_event = { id = bar_sane_ambrosius.1017 }
 	}	
 }
 country_event = {
@@ -5421,6 +5423,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.1017.a
+		add_ideas = BAR_visions_of_past
 	}	
 }
 country_event = {
@@ -5473,6 +5476,45 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.1021.a
+		add_war_support = 0.05
+	}	
+}
+
+country_event = {
+	id = bar_sane_ambrosius.1022
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1022"
+	}
+	title = bar_sane_ambrosius.1022.t
+	desc = bar_sane_ambrosius.1022.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1022.a
+		add_war_support = 0.05
+	}	
+}
+
+country_event = {
+	id = bar_sane_ambrosius.1023
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1023"
+	}
+	title = bar_sane_ambrosius.1023.t
+	desc = bar_sane_ambrosius.1023.d
+	picture = TO_CHANGE
+	is_triggered_only = yes
+	option = {
+		name = bar_sane_ambrosius.1023.a
+		FRE = { add_to_ROOT_potential_cores = yes }
+		LCT = { add_to_ROOT_potential_cores = yes }
+		RCT = { add_to_ROOT_potential_cores = yes }
+		NIM = { add_to_ROOT_potential_cores = yes }
+		BAK = { add_to_ROOT_potential_cores = yes }
+		DMT = { add_to_ROOT_potential_cores = yes }
+		WAT = { add_to_ROOT_potential_cores = yes }
+		FBK = { add_to_ROOT_potential_cores = yes }
+		FIR = { add_to_ROOT_potential_cores = yes }
 	}	
 }
 

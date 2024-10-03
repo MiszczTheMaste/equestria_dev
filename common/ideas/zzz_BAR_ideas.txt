@@ -768,19 +768,25 @@ ideas = {
 		BAR_leopold_surreal_mathematic_idea_1 = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.03
 			}
 		}
 		BAR_leopold_surreal_mathematic_idea_2 = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.08
 			}
 		}
 		BAR_leopold_surreal_mathematic_idea_3 = {
 			picture = generic_research_bonus
 			modifier = {
-				research_speed_factor = 0.15
+				research_speed_factor = 0.12
+			}
+		}
+		BAR_leopold_surreal_mathematic_idea_4 = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.2
 			}
 		}
 		BAR_leopold_cult_fanatism = {

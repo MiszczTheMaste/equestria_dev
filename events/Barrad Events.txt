@@ -4124,9 +4124,6 @@ country_event = {
 			limit = {
 				has_dlc = "No Step Back" 
 			}
-			set_technology = {
-				bar_leopold_end_upgrades = 1
-			}
 		} else = {
 			remove_ideas = BAR_leopold_partial	
 		}
@@ -4156,9 +4153,6 @@ country_event = {
 		if = {
 			limit = {
 				has_dlc = "No Step Back" 
-			}
-			set_technology = {
-				bar_leopold_end_upgrades = 1
 			}
 			set_technology = {
 				bar_leopold_titan_armor = 1
@@ -4279,6 +4273,10 @@ country_event = {
 	option = {
 		name = barrad_leopold.10.a
 		increase_science_base = yes
+		swap_ideas = {
+			remove_idea = BAR_leopold_surreal_mathematic_idea_3
+			add_idea = BAR_leopold_surreal_mathematic_idea_4
+		}
 	}
 }
 country_event = {

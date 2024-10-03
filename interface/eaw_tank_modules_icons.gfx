@@ -301,4 +301,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_radar_module.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_leopold_crystal_battery"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/leopold/leopold_crystal_battery.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -3614,6 +3614,7 @@ BAR_leopold_decisions = {
 			hidden_trigger = {
 				has_tech = bar_leopold_new_body
 			}
+			not = { has_tech = tech_bar_leopold_magnetic_glass }
 		}
 		cost = 20
 		complete_effect = {
@@ -3668,7 +3669,7 @@ BAR_leopold_decisions = {
 			has_dlc = "No Step Back"
 		}
 		available = {
-			has_tech = tech_bar_leopold_metal_lighter_than_air
+			has_tech = tech_bar_leopold_metal_denser_than_platinium
 		}
 		visible = {
 			has_tech = bar_leopold_new_body
@@ -3677,7 +3678,975 @@ BAR_leopold_decisions = {
 		cost = 20
 		complete_effect = {
 			set_technology = {
-				tech_bar_leopold_metal_denser_than_platinium = 1
+				bar_leopold_dense_metal_parts = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_armor_2 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = tech_bar_leopold_metal_denser_than_platinium
+			has_tech = tech_bar_leopold_new_steel
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_composite_parts }
+			NOT = { has_tech = tech_bar_leopold_magnetic_glass }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_composite_parts = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_armor_3 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_resources_4
+			has_tech = tech_bar_leopold_crystalic_metal
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_crystal_alloy_parts }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_crystal_alloy_parts = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_upgrade_armor_3 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_resources_4
+			has_tech = tech_bar_leopold_new_steel
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_composite_crystal_alloy_parts }
+			NOT = { has_tech = tech_bar_leopold_magnetic_glass }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_composite_crystal_alloy_parts = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_cheaper_production = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_resources_4
+			has_tech = tech_bar_leopold_transparent_metal
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_cheaper_production }
+			NOT = { has_tech = tech_bar_leopold_new_steel }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_cheaper_production = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_magico_mechanical_battery = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = assembly_line_production
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_magico_mechanical_battery }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_magico_mechanical_battery = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_electro_magical_battery = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = future_computing_machine
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_electro_magical_battery }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_electro_magical_battery = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_surreal_battery = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_surreal_mathematic_9
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			has_tech = bar_leopold_electro_magical_battery
+			NOT = { has_tech = bar_leopold_calibrated_electro_magical_battery }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_calibrated_electro_magical_battery = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_surreal_battery = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_surreal_mathematic_9
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			has_tech = bar_leopold_electro_magical_battery
+			NOT = { has_tech = bar_leopold_calibrated_electro_magical_battery }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_calibrated_electro_magical_battery = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_leopold_surreal_titan_battery = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_surreal_mathematic_9
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			has_tech = bar_leopold_electro_magical_battery
+			has_tech = bar_leopold_titan_armor
+			NOT = { has_tech = bar_leopold_living_crystal_battery }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_living_crystal_battery = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_anti_air_gun_1 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = interwar_antiair
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_anti_air_gun_1 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_anti_air_gun_1 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_anti_air_gun_2 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = antiair2
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_anti_air_gun_2 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_anti_air_gun_2 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_anti_air_gun_3 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = antiair5
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_anti_air_gun_3 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_anti_air_gun_3 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_anti_air_gun_4 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = antiair_c
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_anti_air_gun_4 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_anti_air_gun_4 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_anti_air_gun_5 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = antiair_f
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_anti_air_gun_5 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_anti_air_gun_5 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_rocket_launcher_1 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_rocket_launcher_1 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_rocket_launcher_1 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_rocket_launcher_2 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery4
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_rocket_launcher_2 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_rocket_launcher_2 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_rocket_launcher_3 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery_c
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_rocket_launcher_3 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_rocket_launcher_3 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_rocket_launcher_4 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery_f
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_rocket_launcher_4 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_rocket_launcher_4 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_crystal_bomb_launcher = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery
+			has_tech = nukes
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_crystal_bomb_launcher }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_crystal_bomb_launcher = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_nuke_launcher_1 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery
+			has_tech = nukes_2
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_nuke_launcher_1 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_nuke_launcher_1 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_nuke_launcher_2 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_artillery
+			has_tech = nukes_3
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_nuke_launcher_2 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_nuke_launcher_2 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_flamethrower = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = tech_engineers2
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_flamethrower }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_flamethrower = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_repair_clockworks = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_clockworks
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_repair_clockworks }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_repair_clockworks = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_ancient_machine_computer_support = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_surreal_mathematic_1
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_ancient_machine_computer_support }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_ancient_machine_computer_support = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_clockwork_precision_crystal_eye_polish = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_clockworks_12
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_clockwork_precision_crystal_eye_polish }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_clockwork_precision_crystal_eye_polish = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_esoteric_crystal_eye_calibration = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_surreal_mathematic_9
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			has_tech = bar_leopold_esoteric_crystal_eye_calibration
+			NOT = { has_tech = bar_leopold_clockwork_precision_crystal_eye_polish }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_clockwork_precision_crystal_eye_polish = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_hard_kill_system = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = future_computing_machine
+			has_tech = rocket_engines
+			has_completed_focus = BAR_leopold_surreal_mathematic_1
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_hard_kill_system }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_hard_kill_system = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_infra_red_vision = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = night_vision2
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_infra_red_vision }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_infra_red_vision = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_rocket_boots = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = rocket_engines
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_rocket_boots }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_rocket_boots = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_jetpack= {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = improved_rocket_engines
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_jetpack }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_jetpack = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_surreal_physics_propulsions = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_surreal_mathematic_9
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			has_tech = bar_leopold_jetpack
+			NOT = { has_tech = bar_leopold_surreal_physics_propulsion }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_surreal_physics_propulsion = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_poison_gas_smoke = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_cultist_warriors
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_poison_gas_smoke }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_poison_gas_smoke = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_combat_gas = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_completed_focus = BAR_leopold_cultist_warriors_5
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_combat_gas }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_combat_gas = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_radar_1 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = radio_detection
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_radar_1 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_radar_1 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_radar_2 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = decimetric_radar
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_radar_2 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_radar_2 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_radar_3 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = improved_decimetric_radar
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_radar_3 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_radar_3 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_radar_4 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = centimetric_radar
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_radar_4 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_radar_4 = 1
+				popup = no
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	BAR_bar_leopold_radar_5 = {
+		icon = rifles
+		fire_only_once = yes
+		allowed = {
+			original_tag = BAR
+			has_dlc = "No Step Back"
+		}
+		available = {
+			has_tech = improved_centimetric_radar
+		}
+		visible = {
+			has_tech = bar_leopold_new_body
+			NOT = { has_tech = bar_leopold_radar_5 }
+		}
+		cost = 20
+		complete_effect = {
+			set_technology = {
+				bar_leopold_radar_5 = 1
 				popup = no
 			}
 		}

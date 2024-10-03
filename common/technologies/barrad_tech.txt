@@ -2108,24 +2108,10 @@ technologies = {
 			leopold_steel_claws
 			leopold_crystal_battery
 			leopold_teapot
-		}
-		research_cost = 1
-	}
-	bar_leopold_titan_armor = {
-		allow = {
-			always = no
-		}
-		enable_equipment_modules = {
-			leopold_living_crystal_armor
-		}
-		research_cost = 1
-	}
-	bar_leopold_end_upgrades = {
-		allow = {
-			always = no
-		}
-		enable_equipment_modules = {
-			leopold_living_crystal_armor
+			leopold_crystal_armor
+			leopold_crystal_claws
+			leopold_overclock_protocols
+			leopold_smoke
 		}
 		research_cost = 1
 	}
@@ -2158,7 +2144,6 @@ technologies = {
 			leopold_anti_air_gun_3
 			leopold_anti_air_gun_4
 			leopold_anti_air_gun_5
-			leopold_sam_launcher
 			leopold_rocket_launcher_1
 			leopold_rocket_launcher_2
 			leopold_rocket_launcher_3
@@ -2196,6 +2181,353 @@ technologies = {
 		enable_equipment_modules = {
 			leopold_dense_steel_armor
 			leopold_dense_metal_claws
+		}
+		research_cost = 1
+	}
+	bar_leopold_composite_parts = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_composite_armor
+			leopold_composite_claws
+		}
+		research_cost = 1
+	}
+	bar_leopold_crystal_alloy_parts = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_crystal_alloy_armor
+			leopold_crystal_alloy_claws
+		}
+		research_cost = 1
+	}
+	bar_leopold_composite_crystal_alloy_parts = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_composite_crystal_alloy_armor
+			leopold_composite_crystal_alloy_claws
+		}
+		research_cost = 1
+	}
+	bar_leopold_titan_armor = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_living_crystal_armor
+			leopold_corrupted_crystal_battery
+			leopold_living_crystal_blood
+		}
+		research_cost = 1
+	}
+	bar_leopold_cheaper_production = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_production_optimization
+		}
+		research_cost = 1
+	}
+	bar_leopold_magico_mechanical_battery = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_magico_mechanical_battery
+		}
+		research_cost = 1
+	}
+	bar_leopold_electro_magical_battery = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_electro_magical_battery
+		}
+		research_cost = 1
+	}
+	bar_leopold_calibrated_electro_magical_battery= {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_calibrated_electro_magical_battery
+		}
+		research_cost = 1
+	}
+	bar_leopold_living_crystal_battery = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_living_crystal_battery
+		}
+		research_cost = 1
+	}
+	bar_leopold_anti_air_gun_1 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_anti_air_gun_1
+		}
+		research_cost = 1
+	}
+	bar_leopold_anti_air_gun_2 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_anti_air_gun_2
+		}
+		research_cost = 1
+	}
+	bar_leopold_anti_air_gun_3 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_anti_air_gun_3
+		}
+		research_cost = 1
+	}
+	bar_leopold_anti_air_gun_4 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_anti_air_gun_4
+		}
+		research_cost = 1
+	}
+	bar_leopold_anti_air_gun_5 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_anti_air_gun_5
+		}
+		research_cost = 1
+	}
+	bar_leopold_rocket_launcher_1 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_rocket_launcher_1
+		}
+		research_cost = 1
+	}
+	bar_leopold_rocket_launcher_2 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_rocket_launcher_2
+		}
+		research_cost = 1
+	}
+	bar_leopold_rocket_launcher_3 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_rocket_launcher_3
+		}
+		research_cost = 1
+	}
+	bar_leopold_rocket_launcher_4 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_rocket_launcher_4
+		}
+		research_cost = 1
+	}
+	bar_leopold_nuke_launcher_1 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_nuke_launcher_1
+		}
+		research_cost = 1
+	}
+	bar_leopold_nuke_launcher_2 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_nuke_launcher_2
+		}
+		research_cost = 1
+	}
+	bar_leopold_crystal_bomb_launcher = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_crystal_bomb_launcher
+		}
+		research_cost = 1
+	}
+	bar_leopold_flamethrower = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_flamethrower
+		}
+		research_cost = 1
+	}
+	bar_leopold_repair_clockworks = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_repair_clockworks
+		}
+		research_cost = 1
+	}
+	bar_leopold_ancient_machine_computer_support = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_ancient_machine_computer_support
+		}
+		research_cost = 1
+	}
+	bar_leopold_clockwork_precision_crystal_eye_polish = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_clockwork_precision_crystal_eye_polish
+		}
+		research_cost = 1
+	}
+	bar_leopold_esoteric_crystal_eye_calibration = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_esoteric_crystal_eye_calibration
+		}
+		research_cost = 1
+	}
+	bar_leopold_hard_kill_system = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_hard_kill_system
+		}
+		research_cost = 1
+	}
+	bar_leopold_infra_red_vision = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_infra_red_vision
+		}
+		research_cost = 1
+	}
+	bar_leopold_rocket_boots = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_rocket_boots
+		}
+		research_cost = 1
+	}
+	bar_leopold_jetpack = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_jetpack
+		}
+		research_cost = 1
+	}
+	bar_leopold_surreal_physics_propulsion = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_surreal_physics_propulsion
+		}
+		research_cost = 1
+	}
+	bar_leopold_poison_gas_smoke = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_poison_gas_smoke
+		}
+		research_cost = 1
+	}
+	bar_leopold_combat_gas = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_combat_gas
+		}
+		research_cost = 1
+	}
+	bar_leopold_radar_1 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_radar_1
+		}
+		research_cost = 1
+	}
+	bar_leopold_radar_2 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_radar_2
+		}
+		research_cost = 1
+	}
+	bar_leopold_radar_3 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_radar_3
+		}
+		research_cost = 1
+	}
+	bar_leopold_radar_4 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_radar_4
+		}
+		research_cost = 1
+	}
+	bar_leopold_radar_5 = {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			leopold_radar_5
 		}
 		research_cost = 1
 	}

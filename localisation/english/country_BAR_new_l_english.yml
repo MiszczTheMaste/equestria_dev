@@ -2415,8 +2415,8 @@
   bar_sane_ambrosius.1015.a:0 "Ambrosius wakes up"  
   bar_sane_ambrosius.1016.t:0 "Age of Monsters"
   bar_sane_ambrosius.1016.d:0 "    Another vision came suddenly, carving new cracks into his mind. Like a drop breaking through stone to give way to a destructive flood. And so, like a wave, it enveloped him, a fog as black as tar, drowning out everything around him until he no longer felt even his own body.\n    Being in the void of existence, the first thing to reach him was sound. It was neither a voice nor melody, but a primal word, which rippled through the abyss of nothingness, casting luminous shadows upon fading stars. It transformed into a heat blazing like the greatest of furnaces, and its glow gave birth to new life. Yet it was not born, but forged in agonies that veiled the stars above. For it was not a uniform creature, but something that continuously changed its shape—limbs transforming into others, disappearing, growing, forming new beings. Each change sent a scream through the strings encircling the known world, and the melody they played was like the cry of hundreds of beings.\n    The ground on which they stood began to tremble in fear, yet the new inhabitants had come not to live, but to reap the harvest of death. The waters became filled with eyes, blinking in rhythm, united in an eternal pact, waiting to once again witness the sparkling blue stars. But the screams of the land blinded them, long and silent, echoing off the sky. And no other melody could drown them out, no matter how beautifully it was played.\n    And yet, in the depths of the unutterable, something stirred behind the veil of unseen forms. Movements, impossible to perceive but known to exist, reverberated through the wastelands of void, creating vibrations too subtle to comprehend their origin. A shadow, which had never had a beginning, writhed within this unspeakable silence, and its presence, though invisible, felt like the weight of space itself. There, where everything seemed both created and yet never fully existing, a thought that had entwined reality pulsed with unyielding force, reaching beyond time. An immutable and eternal rhythm, each sound both a forgetting and a remembering, without beginning and without end."
-  bar_sane_ambrosius.1016.a:0 ""    
-  bar_sane_ambrosius.1017.t:0 "Age of Hope"
+  bar_sane_ambrosius.1016.a:0 "The visions has not ended yet..."    
+  bar_sane_ambrosius.1017.t:0 "Age of Hope?"
   bar_sane_ambrosius.1017.d:0 ""
   bar_sane_ambrosius.1017.a:0 ""
 
@@ -3350,3 +3350,4 @@ leopold_external_armor_slot:0 "External Amor"
 leopold_power_source_slot:0 "Power Source"
 leopold_weapon_slot:0 "Primary Weapon"
 
+bar_leopold_unlock_occupation_law:0 "Unlocks new occupation law centered around industrial exploitation"

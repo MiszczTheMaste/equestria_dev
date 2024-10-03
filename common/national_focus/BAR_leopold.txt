@@ -1057,6 +1057,7 @@ focus_tree = {
 		completion_reward = {
 			one_random_industrial_complex = yes
 			add_stability = 0.05
+			custom_effect_tooltip = bar_leopold_unlock_occupation_law
 		}
 		search_filters = {
 			FOCUS_FILTER_LEOPOLD_ASCESION

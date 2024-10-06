@@ -56,7 +56,7 @@ focus_tree = {
 	
 	focus = {
 		id = BAR_wittenland_contacts
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_improve_relations_pony_pony
 		cost = 5
 		x = -3
 		y = 1
@@ -80,7 +80,7 @@ focus_tree = {
 	
 	focus = {
 		id = BAR_wit_help
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_generic_intelligence_exchange_pony_griffon
 		cost = 5
 		x = 0
 		y = 1
@@ -98,7 +98,7 @@ focus_tree = {
 	
 	focus = {
 		id = BAR_scraps_of_legitimacy
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_goal_conscription_pony
 		cost = 5
 		x = 0
 		y = 1
@@ -1345,7 +1345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_extend_of_my_tragedy
-		icon = GFX_goal_construction_engineering
+		icon = GFX_goal_ambrosius
 		cost = 5
 		x = 16
 		y = 7
@@ -1417,7 +1417,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ambrosius_buy_mils
-		icon = GFX_goal_gold_reserve_2
+		icon = GFX_goal_industry_air
 		cost = 5
 		x = -2
 		y = 1
@@ -1444,7 +1444,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ambrosius_foreign_experts
-		icon = GFX_goal_gold_reserve_2
+		icon = GFX_DAH_Topke
 		cost = 5
 		x = 0
 		y = 1
@@ -1465,7 +1465,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ambrosius_buy_civs
-		icon = GFX_goal_gold_reserve_2
+		icon = GFX_focus_generic_industry_3
 		cost = 5
 		x = 2
 		y = 1
@@ -1492,7 +1492,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ambrosius_mercs
-		icon = GFX_goal_gold_reserve_2
+		icon = GFX_focus_secret_rearmament
 		cost = 5
 		x = -1
 		y = 2
@@ -1578,7 +1578,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = BAR_ambrosius_buy_refinery
-		icon = GFX_goal_gold_reserve_2
+		icon = GFX_goal_oil_derrick
 		cost = 5
 		x = 1
 		y = 2
@@ -1605,7 +1605,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_ambrosius_buy_experts
-		icon = GFX_goal_gold_reserve_2
+		icon = GFX_goal_foreign_diplomacy
 		cost = 5
 		x = 0
 		y = 2
@@ -1985,13 +1985,17 @@ focus_tree = {
 		icon = GFX_goal_ITA_urban
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
 		relative_position_id = BAR_most_open_closed_community
 		prerequisite = {
 			focus = BAR_most_open_closed_community
+		}
+		prerequisite = {
+			focus = BAR_amb_claim_wit_crown
+			focus = BAR_amb_commonwealth
 		}
 		available = {
 			num_of_controlled_states > 3
@@ -2002,7 +2006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_western_focus
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_griffon_harmony_char
 		cost = 5
 		x = -12
 		y = 1
@@ -2025,7 +2029,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_west_east_railroad
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_railroad
 		cost = 5
 		x = 0
 		y = 1
@@ -2048,7 +2052,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_around_mountains
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_Kasa
 		cost = 5
 		x = 1
 		y = 1
@@ -2069,7 +2073,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_deliver_promise
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_GRU_shield
 		cost = 5
 		x = -1
 		y = 1
@@ -2090,7 +2094,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_grand_county
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_rom_royal_dictatorship
 		cost = 5
 		x = 1
 		y = 1
@@ -2122,7 +2126,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_old_subjects
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_DOM_The_Trial
 		cost = 5
 		x = -4
 		y = 1
@@ -2158,7 +2162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_kasan_shipbuilding
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5
 		x = -2
 		y = 1
@@ -2190,7 +2194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_kasa_connect_railway
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 5
 		x = 2
 		y = 1
@@ -2225,7 +2229,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_griffon_administration
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_diplomatic_treaty_pony_griffon
 		cost = 5
 		x = 0
 		y = 1
@@ -2243,7 +2247,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_kasa_barrad_laws
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_constitutional_guarantees
 		cost = 5
 		x = 0
 		y = 1
@@ -2260,7 +2264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_kasa_advisors
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_Kasa_Orators
 		cost = 5
 		x = 0
 		y = 1
@@ -2325,7 +2329,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_connect_realms
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_KTG_Jungle_Railroad
 		cost = 5
 		x = 4
 		y = 1
@@ -2366,7 +2370,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_free_city
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 5
 		x = -1
 		y = 2
@@ -2406,7 +2410,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_fate_of_the_order
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_split_helmet
 		cost = 5
 		x = -2
 		y = 1
@@ -2428,7 +2432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_adapt_old_imperial_bureaucracy
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_government_icon
 		cost = 5
 		x = 0
 		y = 1
@@ -2459,7 +2463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_all_hail_liberator
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_revolution
 		cost = 5
 		x = 2
 		y = 1
@@ -2609,7 +2613,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_oil_extraction
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_further_oil
 		cost = 5
 		x = 1
 		y = 2
@@ -2648,7 +2652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_call_of_steppes
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_support_from_GRY
 		cost = 5
 		x = 1
 		y = 1
@@ -2669,7 +2673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_pacify_steppes
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_authority
 		cost = 5
 		x = 0
 		y = 2
@@ -2696,7 +2700,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_secure_the_flank
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_enslave_the_deer
 		cost = 5
 		x = -1
 		y = 1
@@ -2717,7 +2721,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_integrate_olv
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_new_treaty
 		cost = 5
 		x = 0
 		y = 2
@@ -2739,7 +2743,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_commonwealth
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_home_defense
 		cost = 5
 		x = 1
 		y = 1
@@ -2786,7 +2790,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_into_the_steppe
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_AUS_agriculture
 		cost = 5
 		x = 3
 		y = 1
@@ -2824,7 +2828,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_estabilish_cossaac_units
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_military_mission
 		cost = 5
 		x = -1
 		y = 2
@@ -2847,7 +2851,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_open_plains_combat
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_position_armies
 		cost = 5
 		x = 1
 		y = 2
@@ -2868,7 +2872,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_new_military_administrative_division
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_government_deals
 		cost = 5
 		x = 0
 		y = 1
@@ -2885,7 +2889,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_rebuild_kaiv
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_ITA_urban
 		cost = 5
 		x = -2
 		y = 1
@@ -2914,7 +2918,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_infrastructure_projects
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_railway_construction
 		cost = 5
 		x = 2
 		y = 1
@@ -2941,7 +2945,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_olv_zes_railroad
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_railroad
 		cost = 5
 		x = -2
 		y = 1
@@ -3013,7 +3017,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_build_up_olv_1
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_endless_money
 		cost = 5
 		x = 1
 		y = 1
@@ -3045,7 +3049,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_olv_zes_factories
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_industry_air
 		cost = 5
 		x = 1
 		y = 1
@@ -3088,7 +3092,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_olv_zes_combined_naval_experience
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5
 		x = 0
 		y = 1
@@ -3115,10 +3119,10 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_lifetime_of_war
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_revolution_pony
 		cost = 5
 		x = 0
-		y = 7
+		y = 6
 		ai_will_do = {
 			factor = 10
 		}
@@ -3141,10 +3145,10 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_final_letter
-		icon = GFX_goal_industrial_pony
+		icon = GFX_TBK_ales_letter
 		cost = 5
 		x = 0
-		y = 3
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -3162,7 +3166,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_old_homeland
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_support_the_left_right
 		cost = 5
 		x = 12
 		y = 1
@@ -3185,7 +3189,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_fortify_border
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_nested_fortifications
 		cost = 5
 		x = -1
 		y = 1
@@ -3240,7 +3244,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_military_build_up
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_factory_complex
 		cost = 5
 		x = 1
 		y = 1
@@ -3265,7 +3269,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_unite_south
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_major_war
 		cost = 5
 		x = 1
 		y = 1
@@ -3294,7 +3298,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_kasa_build
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_industry_2
 		cost = 5
 		x = -1
 		y = 1
@@ -3321,7 +3325,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_kasa_build_1
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_industry_3
 		cost = 5
 		x = 0
 		y = 1
@@ -3348,7 +3352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_olv_build
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 5
 		x = 1
 		y = 1
@@ -3375,7 +3379,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_olv_build_1
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_munitions_factories
 		cost = 5
 		x = 0
 		y = 1
@@ -3402,7 +3406,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_core_olv
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_secret_agents
 		cost = 5
 		x = 1
 		y = 1
@@ -3421,7 +3425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_core_kasa
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_constitutional_guarantees
 		cost = 5
 		x = -1
 		y = 1
@@ -3440,7 +3444,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_attack_wit
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_fre_wittenland_army
 		cost = 5
 		x = 1
 		y = 1
@@ -3464,7 +3468,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_claim_wit_crown
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_crown_and_swords
 		cost = 5
 		x = 0
 		y = 2
@@ -3487,17 +3491,27 @@ focus_tree = {
 				}
 				add_core_of = BAR
 			}
-			set_cosmetic_tag = BAR_AMB_WIT
+			set_cosmetic_tag = BAR_WIT
 			hidden_effect = {
 				BAR_count_ambrosius = {
 					set_character_name = BAR_ambrosius_king
 				}
 			}
+			create_wargoal = {
+				type = annex_everything
+				target = FRE
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRE
+				}
+				add_claim_by = BAR
+			}
 		}
 	}
 	focus = {
 		id = BAR_amb_realm_reunion
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_railroad
 		cost = 5
 		x = 4
 		y = 1
@@ -3529,7 +3543,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_nationwide_electrification
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_lightbulb
 		cost = 5
 		x = 0
 		y = 1
@@ -3551,7 +3565,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_restore_guilds
-		icon = GFX_goal_industrial_pony
+		icon = GFX_IRE_heavy_industry
 		cost = 5
 		x = -2
 		y = 1
@@ -3569,7 +3583,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_patronage
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_double_research
 		cost = 5
 		x = 0
 		y = 1
@@ -3586,7 +3600,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_state_controlled_trade
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_bag_of_money_pony
 		cost = 5
 		x = 2
 		y = 1
@@ -3614,7 +3628,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_public_works
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_lau_construction
 		cost = 5
 		x = 1
 		y = 1
@@ -3643,7 +3657,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_expand_silver_mine
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_silver_reserve
 		cost = 5
 		x = 1
 		y = 1
@@ -3671,7 +3685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_royal_university
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_KTG_Bookstack
 		cost = 5
 		x = 1
 		y = 1
@@ -3695,7 +3709,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_ancient_regime
-		icon = GFX_goal_industrial_pony
+		icon = GFX_focus_generic_home_defense
 		cost = 5
 		x = -3
 		y = 1
@@ -3718,7 +3732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_royal_pardon
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_griffon_crown
 		cost = 5
 		x = 1
 		y = 1
@@ -3748,7 +3762,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_divine_guidance
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_unicorn_soldier
 		cost = 5
 		x = -1
 		y = 1
@@ -3777,7 +3791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_cult_in_high_places
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_TEM_raise_the_cults
 		cost = 5
 		x = 1
 		y = 1
@@ -3798,8 +3812,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_amb_high_kingdom_claims
-		icon = GFX_goal_industrial_pony
+		id = BAR_amb_king_of_mountains
+		icon = GFX_goal_monarchism
 		cost = 5
 		x = 0
 		y = 1
@@ -3810,72 +3824,28 @@ focus_tree = {
 		prerequisite = {
 			focus = BAR_amb_claim_wit_crown
 		}
-		will_lead_to_war_with = FRE
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = FRE
+			set_technology = {
+				BAR_amb_mountaineers_buff = 1
 			}
-			every_state = {
-				limit = {
-					is_core_of = FRE
-				}
-				add_claim_by = BAR
-			}
+			set_cosmetic_tag = BAR_WIT_high_kingdom
 			FRE = {
 				add_to_ROOT_potential_original_cores = yes
 			}
 		}
 	}
 	focus = {
-		id = BAR_amb_king_of_mountains
-		icon = GFX_goal_industrial_pony
+		id = BAR_amb_never_ending_ambition
+		icon = GFX_goal_OTT_Land_Reform
 		cost = 5
 		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_high_kingdom_claims
-		prerequisite = {
-			focus = BAR_amb_high_kingdom_claims
-		}
-		completion_reward = {
-			set_technology = {
-				BAR_amb_mountaineers_buff = 1
-			}
-			set_cosmetic_tag = BAR_WIT_high_kingdom
-		}
-	}
-	focus = {
-		id = BAR_amb_what_we_once_took #...we shall never give up
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 0
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
 		relative_position_id = BAR_amb_king_of_mountains
 		prerequisite = {
 			focus = BAR_amb_king_of_mountains
-		}
-		completion_reward = {
-			add_ideas = BAR_defend_high_kingdom
-		}
-	}
-	focus = {
-		id = BAR_amb_never_ending_ambition
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_what_we_once_took
-		prerequisite = {
-			focus = BAR_amb_what_we_once_took
 		}
 		bypass = {
 			has_war_with = FRE
@@ -4002,7 +3972,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_hoof_and_iron
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_pony_labour
 		cost = 5
 		x = -1
 		y = 1
@@ -4026,7 +3996,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_blood_of_meere_creatures
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_pony_soldier
 		cost = 5
 		x = -1
 		y = 1
@@ -4043,7 +4013,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_song_of_spirits
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_forest_spirit
 		cost = 5
 		x = 1
 		y = 1
@@ -4066,8 +4036,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_amb_song_of_spirits
-		icon = GFX_goal_industrial_pony
+		id = BAR_amb_supremacy_of_magic
+		icon = GFX_goal_eqs_magic_horn
 		cost = 5
 		x = 1
 		y = 1
@@ -4088,7 +4058,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_conqueror_bent_on_conquest
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_TEM_sabotage_factories
 		cost = 5
 		x = 0
 		y = 3
@@ -4113,7 +4083,7 @@ focus_tree = {
 	}
 	focus = {
 		id = BAR_amb_unveil_machine_god_mystery
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_supremacy_of_will
 		cost = 5
 		x = 0
 		y = 2
@@ -4134,113 +4104,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = BAR_amb_asinti_studies
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = -2
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_unveil_machine_god_mystery
-		prerequisite = {
-			focus = BAR_amb_unveil_machine_god_mystery
-		}
-		completion_reward = {
-			set_technology = {
-				barrad_asinti_alive = 1
-				no_popup = no
-			}
-			country_event = { id = bar_sane_ambrosius.1021 }
-		}
-	}
-	focus = {
-		id = BAR_amb_silver_star_studies
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_unveil_machine_god_mystery
-		prerequisite = {
-			focus = BAR_amb_unveil_machine_god_mystery
-		}
-		completion_reward = {
-			set_technology = {
-				barrad_silver_star_alive = 1
-				no_popup = no
-			}
-			country_event = { id = bar_sane_ambrosius.1020 }
-		}
-	}
-	focus = {
-		id = BAR_amb_viira_studies
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_unveil_machine_god_mystery
-		prerequisite = {
-			focus = BAR_amb_unveil_machine_god_mystery
-		}
-		completion_reward = {
-			set_technology = {
-				barrad_viira_alive = 1
-				no_popup = no
-			}
-			country_event = { id = bar_sane_ambrosius.1019 }
-		}
-	}
-	focus = {
-		id = BAR_amb_leopold_studies
-		icon = GFX_goal_industrial_pony
-		cost = 5
-		x = 2
-		y = 2
-		ai_will_do = {
-			factor = 10
-		}
-		relative_position_id = BAR_amb_unveil_machine_god_mystery
-		prerequisite = {
-			focus = BAR_amb_unveil_machine_god_mystery
-		}
-		completion_reward = {
-			set_technology = {
-				barrad_leopold_alive = 1
-				no_popup = no
-			}
-			country_event = { id = bar_sane_ambrosius.1018 }
-		}
-	}
-	focus = {
 		id = BAR_amb_interpret_visions
-		icon = GFX_goal_industrial_pony
+		icon = GFX_goal_generic_magic
 		cost = 5
 		x = 0
-		y = 3
+		y = 2
 		ai_will_do = {
 			factor = 10
 		}
 		relative_position_id = BAR_amb_unveil_machine_god_mystery
 		prerequisite = {
 			focus = BAR_amb_unveil_machine_god_mystery
-		}
-		prerequisite = {
-			focus = BAR_amb_asinti_studies
-		}
-		prerequisite = {
-			focus = BAR_amb_silver_star_studies
-		}
-		prerequisite = {
-			focus = BAR_amb_viira_studies
-		}
-		prerequisite = {
-			focus = BAR_amb_leopold_studies
 		}
 		completion_reward = {
 			country_event = { id = bar_sane_ambrosius.1015 }

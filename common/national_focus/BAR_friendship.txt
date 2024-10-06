@@ -1672,6 +1672,9 @@ focus_tree = {
 			factor = 10
 		}
 		prerequisite = {
+			focus = BAR_friend_visit_in_asinti_temple
+		}
+		prerequisite = {
 			focus = BAR_friend_civ_industry
 		}
 		prerequisite = {

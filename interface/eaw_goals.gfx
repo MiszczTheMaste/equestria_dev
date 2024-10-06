@@ -2470,7 +2470,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_ambrosius"
-		texturefile = "gfx/interface/goals/BAR/goal_ambrosius.dds"
+		texturefile = "gfx/interface/goals/BAR/starting_tree/goal_ambrosius.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_the_binds"
@@ -17799,5 +17799,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_bar_fren_silver_viira_fall"
 		texturefile = "gfx/interface/goals/bar/friendship/silver_viira_fall.dds"
+	}	
+	spriteType = {
+		name = "GFX_goal_silver_closed"
+		texturefile = "gfx/interface/goals/BAR/starting_tree/goal_silver_closed.dds"
 	}
 }

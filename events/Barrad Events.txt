@@ -5257,7 +5257,7 @@ country_event = {
 		}
 	}	
 }
-country_event = { #ambrosius ma rozkminę nad życiem że wszystko co ma sobie wywalczył
+country_event = {
 	id = bar_sane_ambrosius.1008
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1008"
@@ -5268,8 +5268,22 @@ country_event = { #ambrosius ma rozkminę nad życiem że wszystko co ma sobie w
 	is_triggered_only = yes
 	option = {
 		name = bar_sane_ambrosius.1008.a
-		add_manpower = 10000
-		add_country_leader_trait = BAR_amb_title_lifetime_warrior
+		set_technology = {
+			barrad_leopold_alive = 1
+			no_popup = no
+		}
+		set_technology = {
+			barrad_asinti_alive = 1
+			no_popup = no
+		}
+		set_technology = {
+			barrad_silver_star_alive = 1
+			no_popup = no
+		}
+		set_technology = {
+			barrad_viira_alive = 1
+			no_popup = no
+		}
 	}	
 }
 country_event = {
@@ -5422,59 +5436,6 @@ country_event = {
 	option = {
 		name = bar_sane_ambrosius.1017.a
 		add_ideas = BAR_visions_of_past
-	}	
-}
-country_event = {
-	id = bar_sane_ambrosius.1018
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1018"
-	}
-	title = bar_sane_ambrosius.1018.t
-	desc = bar_sane_ambrosius.1018.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1018.a
-	}	
-}
-country_event = {
-	id = bar_sane_ambrosius.1019
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1019"
-	}
-	title = bar_sane_ambrosius.1019.t
-	desc = bar_sane_ambrosius.1019.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1019.a
-	}	
-}
-country_event = {
-	id = bar_sane_ambrosius.1020
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1020"
-	}
-	title = bar_sane_ambrosius.1020.t
-	desc = bar_sane_ambrosius.1020.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1020.a
-	}	
-}
-country_event = {
-	id = bar_sane_ambrosius.1021
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event bar_sane_ambrosius.1021"
-	}
-	title = bar_sane_ambrosius.1021.t
-	desc = bar_sane_ambrosius.1021.d
-	picture = TO_CHANGE
-	is_triggered_only = yes
-	option = {
-		name = bar_sane_ambrosius.1021.a
-		add_war_support = 0.05
 	}	
 }
 

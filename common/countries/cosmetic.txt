@@ -1479,10 +1479,6 @@ BAR_WIT = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
 }
-BAR_AMB_WIT = {
-	color = rgb { 0 67 111 }
-	color_ui = rgb { 0 52 86 }
-}
 BAR_WIT_magocracy = {
 	color = rgb { 0 67 111 }
 	color_ui = rgb { 0 52 86 }
